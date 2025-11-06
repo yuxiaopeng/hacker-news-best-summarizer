@@ -2,7 +2,7 @@
     
 这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-06.md)
 
-*最后自动更新时间: 2025-11-06 03:42:50*
+*最后自动更新时间: 2025-11-06 07:15:54*
 ## 1. Mr TIFF
 
 **原文标题**: Mr TIFF
@@ -43,11 +43,11 @@
 
 ---
 
-## 5. My Truck Desk
+## 5. New gel restores dental enamel and could revolutionise tooth repair
 
-**原文标题**: My Truck Desk
+**原文标题**: New gel restores dental enamel and could revolutionise tooth repair
 
-**原文链接**: [https://www.theparisreview.org/blog/2025/10/29/truck-desk/](https://www.theparisreview.org/blog/2025/10/29/truck-desk/)
+**原文链接**: [https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair](https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair)
 
 生成摘要时出错
 
@@ -83,21 +83,21 @@
 
 ---
 
-## 9. NoLongerEvil-Thermostat – Nest Generation 1 and 2 Firmware
+## 9. UPS plane crashes near Louisville airport
 
-**原文标题**: NoLongerEvil-Thermostat – Nest Generation 1 and 2 Firmware
+**原文标题**: UPS plane crashes near Louisville airport
 
-**原文链接**: [https://github.com/codykociemba/NoLongerEvil-Thermostat](https://github.com/codykociemba/NoLongerEvil-Thermostat)
+**原文链接**: [https://avherald.com/h?article=52f5748f&opt=0](https://avherald.com/h?article=52f5748f&opt=0)
 
 生成摘要时出错
 
 ---
 
-## 10. What is a manifold?
+## 10. End of Japanese community
 
-**原文标题**: What is a manifold?
+**原文标题**: End of Japanese community
 
-**原文链接**: [https://www.quantamagazine.org/what-is-a-manifold-20251103/](https://www.quantamagazine.org/what-is-a-manifold-20251103/)
+**原文链接**: [https://support.mozilla.org/en-US/forums/contributors/717446](https://support.mozilla.org/en-US/forums/contributors/717446)
 
 生成摘要时出错
 
@@ -108,4 +108,3 @@
 | 序号 | 文件 |
 | --- | --- |
 | 1 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 2 | [2025-11-05](output/hacker_news_summary_2025-11-05.md) |

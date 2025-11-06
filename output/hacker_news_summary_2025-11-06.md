@@ -42,11 +42,11 @@
 
 ---
 
-## 5. My Truck Desk
+## 5. New gel restores dental enamel and could revolutionise tooth repair
 
-**原文标题**: My Truck Desk
+**原文标题**: New gel restores dental enamel and could revolutionise tooth repair
 
-**原文链接**: [https://www.theparisreview.org/blog/2025/10/29/truck-desk/](https://www.theparisreview.org/blog/2025/10/29/truck-desk/)
+**原文链接**: [https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair](https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair)
 
 生成摘要时出错
 
@@ -82,27 +82,7 @@
 
 ---
 
-## 9. NoLongerEvil-Thermostat – Nest Generation 1 and 2 Firmware
-
-**原文标题**: NoLongerEvil-Thermostat – Nest Generation 1 and 2 Firmware
-
-**原文链接**: [https://github.com/codykociemba/NoLongerEvil-Thermostat](https://github.com/codykociemba/NoLongerEvil-Thermostat)
-
-生成摘要时出错
-
----
-
-## 10. What is a manifold?
-
-**原文标题**: What is a manifold?
-
-**原文链接**: [https://www.quantamagazine.org/what-is-a-manifold-20251103/](https://www.quantamagazine.org/what-is-a-manifold-20251103/)
-
-生成摘要时出错
-
----
-
-## 11. UPS plane crashes near Louisville airport
+## 9. UPS plane crashes near Louisville airport
 
 **原文标题**: UPS plane crashes near Louisville airport
 
@@ -112,7 +92,47 @@
 
 ---
 
-## 12. Google Removed 749M Anna's Archive URLs from Its Search Results
+## 10. End of Japanese community
+
+**原文标题**: End of Japanese community
+
+**原文链接**: [https://support.mozilla.org/en-US/forums/contributors/717446](https://support.mozilla.org/en-US/forums/contributors/717446)
+
+生成摘要时出错
+
+---
+
+## 11. What is a manifold?
+
+**原文标题**: What is a manifold?
+
+**原文链接**: [https://www.quantamagazine.org/what-is-a-manifold-20251103/](https://www.quantamagazine.org/what-is-a-manifold-20251103/)
+
+生成摘要时出错
+
+---
+
+## 12. NoLongerEvil-Thermostat – Nest Generation 1 and 2 Firmware
+
+**原文标题**: NoLongerEvil-Thermostat – Nest Generation 1 and 2 Firmware
+
+**原文链接**: [https://github.com/codykociemba/NoLongerEvil-Thermostat](https://github.com/codykociemba/NoLongerEvil-Thermostat)
+
+生成摘要时出错
+
+---
+
+## 13. I was right about dishwasher pods and now I can prove it [video]
+
+**原文标题**: I was right about dishwasher pods and now I can prove it [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=DAX2_mPr9W8](https://www.youtube.com/watch?v=DAX2_mPr9W8)
+
+生成摘要时出错
+
+---
+
+## 14. Google Removed 749M Anna's Archive URLs from Its Search Results
 
 **原文标题**: Google Removed 749M Anna's Archive URLs from Its Search Results
 
@@ -122,7 +142,7 @@
 
 ---
 
-## 13. Pg_lake: Postgres with Iceberg and data lake access
+## 15. Pg_lake: Postgres with Iceberg and data lake access
 
 **原文标题**: Pg_lake: Postgres with Iceberg and data lake access
 
@@ -132,7 +152,7 @@
 
 ---
 
-## 14. Uncle Sam wants to scan your iris and collect your DNA, citizen or not
+## 16. Uncle Sam wants to scan your iris and collect your DNA, citizen or not
 
 **原文标题**: Uncle Sam wants to scan your iris and collect your DNA, citizen or not
 
@@ -142,17 +162,7 @@
 
 ---
 
-## 15. New gel restores dental enamel and could revolutionise tooth repair
-
-**原文标题**: New gel restores dental enamel and could revolutionise tooth repair
-
-**原文链接**: [https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair](https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair)
-
-生成摘要时出错
-
----
-
-## 16. Show HN: A CSS-Only Terrain Generator
+## 17. Show HN: A CSS-Only Terrain Generator
 
 **原文标题**: Show HN: A CSS-Only Terrain Generator
 
@@ -162,7 +172,7 @@
 
 ---
 
-## 17. Norway reviews cybersecurity after remote-access feature found in Chinese buses
+## 18. Norway reviews cybersecurity after remote-access feature found in Chinese buses
 
 **原文标题**: Norway reviews cybersecurity after remote-access feature found in Chinese buses
 
@@ -172,7 +182,7 @@
 
 ---
 
-## 18. Direct File won't happen in 2026, IRS tells states
+## 19. Direct File won't happen in 2026, IRS tells states
 
 **原文标题**: Direct File won't happen in 2026, IRS tells states
 
@@ -182,21 +192,11 @@
 
 ---
 
-## 19. iOS 26.2 to allow third-party app stores in Japan ahead of regulatory deadline
+## 20. iOS 26.2 to allow third-party app stores in Japan ahead of regulatory deadline
 
 **原文标题**: iOS 26.2 to allow third-party app stores in Japan ahead of regulatory deadline
 
 **原文链接**: [https://www.macrumors.com/2025/11/05/ios-26-2-third-party-app-stores-japan/](https://www.macrumors.com/2025/11/05/ios-26-2-third-party-app-stores-japan/)
-
-生成摘要时出错
-
----
-
-## 20. I was right about dishwasher pods and now I can prove it [video]
-
-**原文标题**: I was right about dishwasher pods and now I can prove it [video]
-
-**原文链接**: [https://www.youtube.com/watch?v=DAX2_mPr9W8](https://www.youtube.com/watch?v=DAX2_mPr9W8)
 
 生成摘要时出错
 
@@ -212,27 +212,7 @@
 
 ---
 
-## 22. Bluetui – A TUI for managing Bluetooth on Linux
-
-**原文标题**: Bluetui – A TUI for managing Bluetooth on Linux
-
-**原文链接**: [https://github.com/pythops/bluetui](https://github.com/pythops/bluetui)
-
-生成摘要时出错
-
----
-
-## 23. The shadows lurking in the equations
-
-**原文标题**: The shadows lurking in the equations
-
-**原文链接**: [https://gods.art/articles/equation_shadows.html](https://gods.art/articles/equation_shadows.html)
-
-生成摘要时出错
-
----
-
-## 24. Dillo, a multi-platform graphical web browser
+## 22. Dillo, a multi-platform graphical web browser
 
 **原文标题**: Dillo, a multi-platform graphical web browser
 
@@ -242,17 +222,17 @@
 
 ---
 
-## 25. Microsoft Can't Keep EU Data Safe from US Authorities
+## 23. Why aren't smart people happier?
 
-**原文标题**: Microsoft Can't Keep EU Data Safe from US Authorities
+**原文标题**: Why aren't smart people happier?
 
-**原文链接**: [https://www.forbes.com/sites/emmawoollacott/2025/07/22/microsoft-cant-keep-eu-data-safe-from-us-authorities/](https://www.forbes.com/sites/emmawoollacott/2025/07/22/microsoft-cant-keep-eu-data-safe-from-us-authorities/)
+**原文链接**: [https://www.theseedsofscience.pub/p/why-arent-smart-people-happier](https://www.theseedsofscience.pub/p/why-arent-smart-people-happier)
 
 生成摘要时出错
 
 ---
 
-## 26. ChatGPT terms disallow its use in providing legal and medical advice to others
+## 24. ChatGPT terms disallow its use in providing legal and medical advice to others
 
 **原文标题**: ChatGPT terms disallow its use in providing legal and medical advice to others
 
@@ -262,7 +242,7 @@
 
 ---
 
-## 27. NY school phone ban has made lunch loud again
+## 25. NY school phone ban has made lunch loud again
 
 **原文标题**: NY school phone ban has made lunch loud again
 
@@ -272,21 +252,41 @@
 
 ---
 
-## 28. Hypothesis: Property-Based Testing for Python
+## 26. The shadows lurking in the equations
 
-**原文标题**: Hypothesis: Property-Based Testing for Python
+**原文标题**: The shadows lurking in the equations
 
-**原文链接**: [https://hypothesis.readthedocs.io/en/latest/](https://hypothesis.readthedocs.io/en/latest/)
+**原文链接**: [https://gods.art/articles/equation_shadows.html](https://gods.art/articles/equation_shadows.html)
 
 生成摘要时出错
 
 ---
 
-## 29. Why aren't smart people happier?
+## 27. Bluetui – A TUI for managing Bluetooth on Linux
 
-**原文标题**: Why aren't smart people happier?
+**原文标题**: Bluetui – A TUI for managing Bluetooth on Linux
 
-**原文链接**: [https://www.theseedsofscience.pub/p/why-arent-smart-people-happier](https://www.theseedsofscience.pub/p/why-arent-smart-people-happier)
+**原文链接**: [https://github.com/pythops/bluetui](https://github.com/pythops/bluetui)
+
+生成摘要时出错
+
+---
+
+## 28. Microsoft Can't Keep EU Data Safe from US Authorities
+
+**原文标题**: Microsoft Can't Keep EU Data Safe from US Authorities
+
+**原文链接**: [https://www.forbes.com/sites/emmawoollacott/2025/07/22/microsoft-cant-keep-eu-data-safe-from-us-authorities/](https://www.forbes.com/sites/emmawoollacott/2025/07/22/microsoft-cant-keep-eu-data-safe-from-us-authorities/)
+
+生成摘要时出错
+
+---
+
+## 29. Hypothesis: Property-Based Testing for Python
+
+**原文标题**: Hypothesis: Property-Based Testing for Python
+
+**原文链接**: [https://hypothesis.readthedocs.io/en/latest/](https://hypothesis.readthedocs.io/en/latest/)
 
 生成摘要时出错
 
@@ -302,17 +302,7 @@
 
 ---
 
-## 31. Bloom filters are good for search that does not scale
-
-**原文标题**: Bloom filters are good for search that does not scale
-
-**原文链接**: [https://notpeerreviewed.com/blog/bloom-filters/](https://notpeerreviewed.com/blog/bloom-filters/)
-
-生成摘要时出错
-
----
-
-## 32. Carice TC2 – A non-digital electric car
+## 31. Carice TC2 – A non-digital electric car
 
 **原文标题**: Carice TC2 – A non-digital electric car
 
@@ -322,57 +312,17 @@
 
 ---
 
-## 33. Michael Burry a.k.a. "Big Short",discloses $1.1B bet against Nvidia&Palantir
+## 32. Bloom filters are good for search that does not scale
 
-**原文标题**: Michael Burry a.k.a. "Big Short",discloses $1.1B bet against Nvidia&Palantir
+**原文标题**: Bloom filters are good for search that does not scale
 
-**原文链接**: [https://sherwood.news/markets/michael-burry-big-short-discloses-1-1-billion-options-bet-against-nvidia-palantir-puts/](https://sherwood.news/markets/michael-burry-big-short-discloses-1-1-billion-options-bet-against-nvidia-palantir-puts/)
-
-生成摘要时出错
-
----
-
-## 34. Grayskull: A tiny computer vision library in C for embedded systems, etc.
-
-**原文标题**: Grayskull: A tiny computer vision library in C for embedded systems, etc.
-
-**原文链接**: [https://github.com/zserge/grayskull](https://github.com/zserge/grayskull)
+**原文链接**: [https://notpeerreviewed.com/blog/bloom-filters/](https://notpeerreviewed.com/blog/bloom-filters/)
 
 生成摘要时出错
 
 ---
 
-## 35. Deepnote, a Jupyter alternative, is going open source
-
-**原文标题**: Deepnote, a Jupyter alternative, is going open source
-
-**原文链接**: [https://deepnote.com/blog/were-open-sourcing-the-successor-of-jupyter-notebook](https://deepnote.com/blog/were-open-sourcing-the-successor-of-jupyter-notebook)
-
-生成摘要时出错
-
----
-
-## 36. Ruby and Its Neighbors: Smalltalk
-
-**原文标题**: Ruby and Its Neighbors: Smalltalk
-
-**原文链接**: [https://noelrappin.com/blog/2025/11/ruby-and-its-neighbors-smalltalk/](https://noelrappin.com/blog/2025/11/ruby-and-its-neighbors-smalltalk/)
-
-生成摘要时出错
-
----
-
-## 37. This Month in Ladybird – October 2025
-
-**原文标题**: This Month in Ladybird – October 2025
-
-**原文链接**: [https://ladybird.org/newsletter/2025-10-31/](https://ladybird.org/newsletter/2025-10-31/)
-
-生成摘要时出错
-
----
-
-## 38. Radiant Computer
+## 33. Radiant Computer
 
 **原文标题**: Radiant Computer
 
@@ -382,7 +332,27 @@
 
 ---
 
-## 39. The state of SIMD in Rust in 2025
+## 34. Ruby and Its Neighbors: Smalltalk
+
+**原文标题**: Ruby and Its Neighbors: Smalltalk
+
+**原文链接**: [https://noelrappin.com/blog/2025/11/ruby-and-its-neighbors-smalltalk/](https://noelrappin.com/blog/2025/11/ruby-and-its-neighbors-smalltalk/)
+
+生成摘要时出错
+
+---
+
+## 35. Michael Burry a.k.a. "Big Short",discloses $1.1B bet against Nvidia&Palantir
+
+**原文标题**: Michael Burry a.k.a. "Big Short",discloses $1.1B bet against Nvidia&Palantir
+
+**原文链接**: [https://sherwood.news/markets/michael-burry-big-short-discloses-1-1-billion-options-bet-against-nvidia-palantir-puts/](https://sherwood.news/markets/michael-burry-big-short-discloses-1-1-billion-options-bet-against-nvidia-palantir-puts/)
+
+生成摘要时出错
+
+---
+
+## 36. The state of SIMD in Rust in 2025
 
 **原文标题**: The state of SIMD in Rust in 2025
 
@@ -392,7 +362,47 @@
 
 ---
 
-## 40. Removing XSLT for a more secure browser
+## 37. Grayskull: A tiny computer vision library in C for embedded systems, etc.
+
+**原文标题**: Grayskull: A tiny computer vision library in C for embedded systems, etc.
+
+**原文链接**: [https://github.com/zserge/grayskull](https://github.com/zserge/grayskull)
+
+生成摘要时出错
+
+---
+
+## 38. Deepnote, a Jupyter alternative, is going open source
+
+**原文标题**: Deepnote, a Jupyter alternative, is going open source
+
+**原文链接**: [https://deepnote.com/blog/were-open-sourcing-the-successor-of-jupyter-notebook](https://deepnote.com/blog/were-open-sourcing-the-successor-of-jupyter-notebook)
+
+生成摘要时出错
+
+---
+
+## 39. This Month in Ladybird – October 2025
+
+**原文标题**: This Month in Ladybird – October 2025
+
+**原文链接**: [https://ladybird.org/newsletter/2025-10-31/](https://ladybird.org/newsletter/2025-10-31/)
+
+生成摘要时出错
+
+---
+
+## 40. Internet Archive's legal fights are over, but its founder mourns what was lost
+
+**原文标题**: Internet Archive's legal fights are over, but its founder mourns what was lost
+
+**原文链接**: [https://arstechnica.com/tech-policy/2025/11/the-internet-archive-survived-major-copyright-losses-whats-next/](https://arstechnica.com/tech-policy/2025/11/the-internet-archive-survived-major-copyright-losses-whats-next/)
+
+生成摘要时出错
+
+---
+
+## 41. Removing XSLT for a more secure browser
 
 **原文标题**: Removing XSLT for a more secure browser
 
@@ -402,21 +412,11 @@
 
 ---
 
-## 41. FDA described as a "clown show" amid latest scandal; top drug regulator is out
+## 42. FDA described as a "clown show" amid latest scandal; top drug regulator is out
 
 **原文标题**: FDA described as a "clown show" amid latest scandal; top drug regulator is out
 
 **原文链接**: [https://arstechnica.com/health/2025/11/fda-described-as-a-clown-show-amid-latest-scandal-top-drug-regulator-is-out/](https://arstechnica.com/health/2025/11/fda-described-as-a-clown-show-amid-latest-scandal-top-drug-regulator-is-out/)
-
-生成摘要时出错
-
----
-
-## 42. Internet Archive's legal fights are over, but its founder mourns what was lost
-
-**原文标题**: Internet Archive's legal fights are over, but its founder mourns what was lost
-
-**原文链接**: [https://arstechnica.com/tech-policy/2025/11/the-internet-archive-survived-major-copyright-losses-whats-next/](https://arstechnica.com/tech-policy/2025/11/the-internet-archive-survived-major-copyright-losses-whats-next/)
 
 生成摘要时出错
 
@@ -452,11 +452,11 @@
 
 ---
 
-## 46. Why AC is cheap, but AC repair is a luxury
+## 46. Ratatui – App Showcase
 
-**原文标题**: Why AC is cheap, but AC repair is a luxury
+**原文标题**: Ratatui – App Showcase
 
-**原文链接**: [https://a16z.substack.com/p/why-ac-is-cheap-but-ac-repair-is](https://a16z.substack.com/p/why-ac-is-cheap-but-ac-repair-is)
+**原文链接**: [https://ratatui.rs/showcase/apps/](https://ratatui.rs/showcase/apps/)
 
 生成摘要时出错
 
@@ -482,7 +482,17 @@
 
 ---
 
-## 49. YouTube AI error costs creator his channel over alleged link to Japanese account
+## 49. FAA to cut flights by 10% at 40 major airports due to government shutdown
+
+**原文标题**: FAA to cut flights by 10% at 40 major airports due to government shutdown
+
+**原文链接**: [https://www.cnbc.com/2025/11/05/faa-cuts-flight-capacity-shutdown.html](https://www.cnbc.com/2025/11/05/faa-cuts-flight-capacity-shutdown.html)
+
+生成摘要时出错
+
+---
+
+## 50. YouTube AI error costs creator his channel over alleged link to Japanese account
 
 **原文标题**: YouTube AI error costs creator his channel over alleged link to Japanese account
 
@@ -492,7 +502,7 @@
 
 ---
 
-## 50. Epic vs. Google settlement: Opening up Android
+## 51. Epic vs. Google settlement: Opening up Android
 
 **原文标题**: Epic vs. Google settlement: Opening up Android
 
@@ -502,7 +512,7 @@
 
 ---
 
-## 51. What Happened to Piracy? Copyright Enforcement Fades as AI Giants Rise
+## 52. What Happened to Piracy? Copyright Enforcement Fades as AI Giants Rise
 
 **原文标题**: What Happened to Piracy? Copyright Enforcement Fades as AI Giants Rise
 
@@ -512,21 +522,11 @@
 
 ---
 
-## 52. Lessons from interviews on deploying AI Agents in production
+## 53. Lessons from interviews on deploying AI Agents in production
 
 **原文标题**: Lessons from interviews on deploying AI Agents in production
 
 **原文链接**: [https://mmc.vc/research/state-of-agentic-ai-founders-edition/](https://mmc.vc/research/state-of-agentic-ai-founders-edition/)
-
-生成摘要时出错
-
----
-
-## 53. Google Cloud suspended customer's account 3 times, for 3 different reasons
-
-**原文标题**: Google Cloud suspended customer's account 3 times, for 3 different reasons
-
-**原文链接**: [https://www.theregister.com/2025/11/04/google_cloud_suspended_customers_account/](https://www.theregister.com/2025/11/04/google_cloud_suspended_customers_account/)
 
 生成摘要时出错
 
@@ -542,17 +542,7 @@
 
 ---
 
-## 55. Chaining FFmpeg with a Browser Agent
-
-**原文标题**: Chaining FFmpeg with a Browser Agent
-
-**原文链接**: [https://100x.bot/a/chaining-ffmpeg-with-browser-agent](https://100x.bot/a/chaining-ffmpeg-with-browser-agent)
-
-生成摘要时出错
-
----
-
-## 56. How devtools map minified JS code back to your TypeScript source code
+## 55. How devtools map minified JS code back to your TypeScript source code
 
 **原文标题**: How devtools map minified JS code back to your TypeScript source code
 
@@ -562,7 +552,27 @@
 
 ---
 
-## 57. Studio Ghibli, Bandai Namco, Square Enix Demand OpenAI to Stop Using Their IP
+## 56. Google Cloud suspended customer's account 3 times, for 3 different reasons
+
+**原文标题**: Google Cloud suspended customer's account 3 times, for 3 different reasons
+
+**原文链接**: [https://www.theregister.com/2025/11/04/google_cloud_suspended_customers_account/](https://www.theregister.com/2025/11/04/google_cloud_suspended_customers_account/)
+
+生成摘要时出错
+
+---
+
+## 57. Chaining FFmpeg with a Browser Agent
+
+**原文标题**: Chaining FFmpeg with a Browser Agent
+
+**原文链接**: [https://100x.bot/a/chaining-ffmpeg-with-browser-agent](https://100x.bot/a/chaining-ffmpeg-with-browser-agent)
+
+生成摘要时出错
+
+---
+
+## 58. Studio Ghibli, Bandai Namco, Square Enix Demand OpenAI to Stop Using Their IP
 
 **原文标题**: Studio Ghibli, Bandai Namco, Square Enix Demand OpenAI to Stop Using Their IP
 
@@ -572,7 +582,7 @@
 
 ---
 
-## 58. The grim truth behind the Pied Piper (2020)
+## 59. The grim truth behind the Pied Piper (2020)
 
 **原文标题**: The grim truth behind the Pied Piper (2020)
 
@@ -582,7 +592,7 @@
 
 ---
 
-## 59. Patching 68K Software – SimpleText
+## 60. Patching 68K Software – SimpleText
 
 **原文标题**: Patching 68K Software – SimpleText
 
@@ -592,27 +602,7 @@
 
 ---
 
-## 60. An individual can change an organization
-
-**原文标题**: An individual can change an organization
-
-**原文链接**: [https://notes.eatonphil.com/2025-11-03-an-individual-can-change-an-organization.html](https://notes.eatonphil.com/2025-11-03-an-individual-can-change-an-organization.html)
-
-生成摘要时出错
-
----
-
-## 61. Amazon Demands Perplexity Stop AI Agent from Making Purchases
-
-**原文标题**: Amazon Demands Perplexity Stop AI Agent from Making Purchases
-
-**原文链接**: [https://www.bloomberg.com/news/articles/2025-11-04/amazon-demands-perplexity-stop-ai-agent-from-making-purchases](https://www.bloomberg.com/news/articles/2025-11-04/amazon-demands-perplexity-stop-ai-agent-from-making-purchases)
-
-生成摘要时出错
-
----
-
-## 62. Optimism associated with exceptional longevity (2019)
+## 61. Optimism associated with exceptional longevity (2019)
 
 **原文标题**: Optimism associated with exceptional longevity (2019)
 
@@ -622,7 +612,27 @@
 
 ---
 
-## 63. A P2P Vision for QUIC (2024)
+## 62. Amazon Demands Perplexity Stop AI Agent from Making Purchases
+
+**原文标题**: Amazon Demands Perplexity Stop AI Agent from Making Purchases
+
+**原文链接**: [https://www.bloomberg.com/news/articles/2025-11-04/amazon-demands-perplexity-stop-ai-agent-from-making-purchases](https://www.bloomberg.com/news/articles/2025-11-04/amazon-demands-perplexity-stop-ai-agent-from-making-purchases)
+
+生成摘要时出错
+
+---
+
+## 63. I may have found a way to spot U.S. at-sea strikes before they're announced
+
+**原文标题**: I may have found a way to spot U.S. at-sea strikes before they're announced
+
+**原文链接**: [https://old.reddit.com/r/OSINT/comments/1opjjyv/i_may_have_found_a_way_to_spot_us_atsea_strikes/](https://old.reddit.com/r/OSINT/comments/1opjjyv/i_may_have_found_a_way_to_spot_us_atsea_strikes/)
+
+生成摘要时出错
+
+---
+
+## 64. A P2P Vision for QUIC (2024)
 
 **原文标题**: A P2P Vision for QUIC (2024)
 
@@ -632,7 +642,7 @@
 
 ---
 
-## 64. Preventing Kubernetes from pulling the pause image from the internet
+## 65. Preventing Kubernetes from pulling the pause image from the internet
 
 **原文标题**: Preventing Kubernetes from pulling the pause image from the internet
 
@@ -642,7 +652,7 @@
 
 ---
 
-## 65. Over $70T of inherited wealth over next decade will widen inequality, economists
+## 66. Over $70T of inherited wealth over next decade will widen inequality, economists
 
 **原文标题**: Over $70T of inherited wealth over next decade will widen inequality, economists
 
@@ -652,21 +662,11 @@
 
 ---
 
-## 66. How AGI became the most consequential conspiracy theory of our time
+## 67. How AGI became the most consequential conspiracy theory of our time
 
 **原文标题**: How AGI became the most consequential conspiracy theory of our time
 
 **原文链接**: [https://www.technologyreview.com/2025/10/30/1127057/agi-conspiracy-theory-artifcial-general-intelligence/](https://www.technologyreview.com/2025/10/30/1127057/agi-conspiracy-theory-artifcial-general-intelligence/)
-
-生成摘要时出错
-
----
-
-## 67. Show HN: I built a local-first daily planner for iOS
-
-**原文标题**: Show HN: I built a local-first daily planner for iOS
-
-**原文链接**: [https://apps.apple.com/ca/app/to-do-list-planner-zesfy/id6479947874](https://apps.apple.com/ca/app/to-do-list-planner-zesfy/id6479947874)
 
 生成摘要时出错
 
@@ -682,7 +682,17 @@
 
 ---
 
-## 69. Launch HN: Plexe (YC X25) – Build production-grade ML models from prompts
+## 69. Show HN: I built a local-first daily planner for iOS
+
+**原文标题**: Show HN: I built a local-first daily planner for iOS
+
+**原文链接**: [https://apps.apple.com/ca/app/to-do-list-planner-zesfy/id6479947874](https://apps.apple.com/ca/app/to-do-list-planner-zesfy/id6479947874)
+
+生成摘要时出错
+
+---
+
+## 70. Launch HN: Plexe (YC X25) – Build production-grade ML models from prompts
 
 **原文标题**: Launch HN: Plexe (YC X25) – Build production-grade ML models from prompts
 
@@ -692,47 +702,7 @@
 
 ---
 
-## 70. Longtime Mozilla Support Japanese Community Shuts Down over AI Translation Usage
-
-**原文标题**: Longtime Mozilla Support Japanese Community Shuts Down over AI Translation Usage
-
-**原文链接**: [https://support.mozilla.org/en-US/forums/contributors/717446](https://support.mozilla.org/en-US/forums/contributors/717446)
-
-生成摘要时出错
-
----
-
-## 71. Former US Vice-President Cheney Dies
-
-**原文标题**: Former US Vice-President Cheney Dies
-
-**原文链接**: [https://www.reuters.com/world/us/former-us-vp-dick-cheney-dead-84-punchbowl-news-says-2025-11-04/](https://www.reuters.com/world/us/former-us-vp-dick-cheney-dead-84-punchbowl-news-says-2025-11-04/)
-
-生成摘要时出错
-
----
-
-## 72. US gives local police a face-scanning app similar to one used by ICE agents
-
-**原文标题**: US gives local police a face-scanning app similar to one used by ICE agents
-
-**原文链接**: [https://arstechnica.com/tech-policy/2025/11/us-gives-local-police-a-face-scanning-app-similar-to-one-used-by-ice-agents/](https://arstechnica.com/tech-policy/2025/11/us-gives-local-police-a-face-scanning-app-similar-to-one-used-by-ice-agents/)
-
-生成摘要时出错
-
----
-
-## 73. CPUs and GPUs to Become More Expensive After TSMC Price Hike in 2026
-
-**原文标题**: CPUs and GPUs to Become More Expensive After TSMC Price Hike in 2026
-
-**原文链接**: [https://www.guru3d.com/story/cpus-and-gpus-to-become-more-expensive-after-tsmc-price-hike-in-2026/](https://www.guru3d.com/story/cpus-and-gpus-to-become-more-expensive-after-tsmc-price-hike-in-2026/)
-
-生成摘要时出错
-
----
-
-## 74. Tesla's ‘Robotaxis' Keep Crashing—Even With Human ‘Safety Monitors' Onboard
+## 71. Tesla's ‘Robotaxis' Keep Crashing—Even With Human ‘Safety Monitors' Onboard
 
 **原文标题**: Tesla's ‘Robotaxis' Keep Crashing—Even With Human ‘Safety Monitors' Onboard
 
@@ -742,27 +712,37 @@
 
 ---
 
-## 75. Singapore to cane scammers as billions lost in financial crimes
+## 72. Former US Vice-President Cheney Dies
 
-**原文标题**: Singapore to cane scammers as billions lost in financial crimes
+**原文标题**: Former US Vice-President Cheney Dies
 
-**原文链接**: [https://www.freemalaysiatoday.com/category/highlight/2025/11/04/singapore-to-cane-scammers-as-billions-lost-in-financial-crimes](https://www.freemalaysiatoday.com/category/highlight/2025/11/04/singapore-to-cane-scammers-as-billions-lost-in-financial-crimes)
-
-生成摘要时出错
-
----
-
-## 76. Analyzing the Performance of WebAssembly vs. Native Code
-
-**原文标题**: Analyzing the Performance of WebAssembly vs. Native Code
-
-**原文链接**: [https://ar5iv.labs.arxiv.org/html/1901.09056](https://ar5iv.labs.arxiv.org/html/1901.09056)
+**原文链接**: [https://www.reuters.com/world/us/former-us-vp-dick-cheney-dead-84-punchbowl-news-says-2025-11-04/](https://www.reuters.com/world/us/former-us-vp-dick-cheney-dead-84-punchbowl-news-says-2025-11-04/)
 
 生成摘要时出错
 
 ---
 
-## 77. Why Your Best Engineers Are Interviewing Elsewhere, CodeGood
+## 73. US gives local police a face-scanning app similar to one used by ICE agents
+
+**原文标题**: US gives local police a face-scanning app similar to one used by ICE agents
+
+**原文链接**: [https://arstechnica.com/tech-policy/2025/11/us-gives-local-police-a-face-scanning-app-similar-to-one-used-by-ice-agents/](https://arstechnica.com/tech-policy/2025/11/us-gives-local-police-a-face-scanning-app-similar-to-one-used-by-ice-agents/)
+
+生成摘要时出错
+
+---
+
+## 74. CPUs and GPUs to Become More Expensive After TSMC Price Hike in 2026
+
+**原文标题**: CPUs and GPUs to Become More Expensive After TSMC Price Hike in 2026
+
+**原文链接**: [https://www.guru3d.com/story/cpus-and-gpus-to-become-more-expensive-after-tsmc-price-hike-in-2026/](https://www.guru3d.com/story/cpus-and-gpus-to-become-more-expensive-after-tsmc-price-hike-in-2026/)
+
+生成摘要时出错
+
+---
+
+## 75. Why Your Best Engineers Are Interviewing Elsewhere, CodeGood
 
 **原文标题**: Why Your Best Engineers Are Interviewing Elsewhere, CodeGood
 
@@ -772,47 +752,7 @@
 
 ---
 
-## 78. GM Deprecating In-Car App Store for Models as Recent as 2020
-
-**原文标题**: GM Deprecating In-Car App Store for Models as Recent as 2020
-
-**原文链接**: [https://gmauthority.com/blog/2025/11/these-gm-vehicles-can-no-longer-download-apps-through-their-infotainment-system/](https://gmauthority.com/blog/2025/11/these-gm-vehicles-can-no-longer-download-apps-through-their-infotainment-system/)
-
-生成摘要时出错
-
----
-
-## 79. USDA Threatens Stores Giving Discounts to People on Food Stamps
-
-**原文标题**: USDA Threatens Stores Giving Discounts to People on Food Stamps
-
-**原文链接**: [https://newrepublic.com/post/202604/usda-threatens-grocery-stores-discounts-people-food-stamps](https://newrepublic.com/post/202604/usda-threatens-grocery-stores-discounts-people-food-stamps)
-
-生成摘要时出错
-
----
-
-## 80. The Rust Foundation Maintainers Fund
-
-**原文标题**: The Rust Foundation Maintainers Fund
-
-**原文链接**: [https://rustfoundation.org/media/announcing-the-rust-foundation-maintainers-fund/](https://rustfoundation.org/media/announcing-the-rust-foundation-maintainers-fund/)
-
-生成摘要时出错
-
----
-
-## 81. Fiber reduces overall mortality by 23%
-
-**原文标题**: Fiber reduces overall mortality by 23%
-
-**原文链接**: [https://www.empirical.health/blog/dietary-fiber-reduces-all-cause-morality/](https://www.empirical.health/blog/dietary-fiber-reduces-all-cause-morality/)
-
-生成摘要时出错
-
----
-
-## 82. A Lost IBM PC/at Model? Analyzing a Newfound Old Bios
+## 76. A Lost IBM PC/at Model? Analyzing a Newfound Old Bios
 
 **原文标题**: A Lost IBM PC/at Model? Analyzing a Newfound Old Bios
 
@@ -822,7 +762,47 @@
 
 ---
 
-## 83. Tesla's German car sales more than halve in October as wider EV sales jump
+## 77. Singapore to cane scammers as billions lost in financial crimes
+
+**原文标题**: Singapore to cane scammers as billions lost in financial crimes
+
+**原文链接**: [https://www.freemalaysiatoday.com/category/highlight/2025/11/04/singapore-to-cane-scammers-as-billions-lost-in-financial-crimes](https://www.freemalaysiatoday.com/category/highlight/2025/11/04/singapore-to-cane-scammers-as-billions-lost-in-financial-crimes)
+
+生成摘要时出错
+
+---
+
+## 78. Analyzing the Performance of WebAssembly vs. Native Code
+
+**原文标题**: Analyzing the Performance of WebAssembly vs. Native Code
+
+**原文链接**: [https://ar5iv.labs.arxiv.org/html/1901.09056](https://ar5iv.labs.arxiv.org/html/1901.09056)
+
+生成摘要时出错
+
+---
+
+## 79. OpenAI asks U.S. for loan guarantees to fund $1T AI expansion
+
+**原文标题**: OpenAI asks U.S. for loan guarantees to fund $1T AI expansion
+
+**原文链接**: [https://investinglive.com/stock-market-update/icymi-openai-asks-us-for-loan-guarantees-to-fund-1-trillion-ai-expansion-20251105/](https://investinglive.com/stock-market-update/icymi-openai-asks-us-for-loan-guarantees-to-fund-1-trillion-ai-expansion-20251105/)
+
+生成摘要时出错
+
+---
+
+## 80. The Basic Laws of Human Stupidity (1987) [pdf]
+
+**原文标题**: The Basic Laws of Human Stupidity (1987) [pdf]
+
+**原文链接**: [https://gandalf.fee.urv.cat/professors/AntonioQuesada/Curs1920/Cipolla_laws.pdf](https://gandalf.fee.urv.cat/professors/AntonioQuesada/Curs1920/Cipolla_laws.pdf)
+
+生成摘要时出错
+
+---
+
+## 81. Tesla's German car sales more than halve in October as wider EV sales jump
 
 **原文标题**: Tesla's German car sales more than halve in October as wider EV sales jump
 
@@ -832,57 +812,27 @@
 
 ---
 
-## 84. Zohran Mamdani wins NYC mayor's race, capping an ascent
+## 82. GM Deprecating In-Car App Store for Models as Recent as 2020
 
-**原文标题**: Zohran Mamdani wins NYC mayor's race, capping an ascent
+**原文标题**: GM Deprecating In-Car App Store for Models as Recent as 2020
 
-**原文链接**: [https://apnews.com/article/mamdani-cuomo-sliwa-nyc-mayor-af8b9790e7cb4e023d0984a0207cbcca](https://apnews.com/article/mamdani-cuomo-sliwa-nyc-mayor-af8b9790e7cb4e023d0984a0207cbcca)
-
-生成摘要时出错
-
----
-
-## 85. Cargo plane crashes at Kentucky airport
-
-**原文标题**: Cargo plane crashes at Kentucky airport
-
-**原文链接**: [https://www.bbc.com/news/live/c201kgq59qgt](https://www.bbc.com/news/live/c201kgq59qgt)
+**原文链接**: [https://gmauthority.com/blog/2025/11/these-gm-vehicles-can-no-longer-download-apps-through-their-infotainment-system/](https://gmauthority.com/blog/2025/11/these-gm-vehicles-can-no-longer-download-apps-through-their-infotainment-system/)
 
 生成摘要时出错
 
 ---
 
-## 86. Michael Burry is back with two bets against Nvidia and Palantir
+## 83. USDA Threatens Stores Giving Discounts to People on Food Stamps
 
-**原文标题**: Michael Burry is back with two bets against Nvidia and Palantir
+**原文标题**: USDA Threatens Stores Giving Discounts to People on Food Stamps
 
-**原文链接**: [https://www.cnn.com/2025/11/05/business/nvidia-palantir-michael-burry-stock](https://www.cnn.com/2025/11/05/business/nvidia-palantir-michael-burry-stock)
-
-生成摘要时出错
-
----
-
-## 87. I Stopped Being a Climate Catastrophist
-
-**原文标题**: I Stopped Being a Climate Catastrophist
-
-**原文链接**: [https://www.breakthroughjournal.org/p/why-i-stopped-being-a-climate-catastrophist](https://www.breakthroughjournal.org/p/why-i-stopped-being-a-climate-catastrophist)
+**原文链接**: [https://newrepublic.com/post/202604/usda-threatens-grocery-stores-discounts-people-food-stamps](https://newrepublic.com/post/202604/usda-threatens-grocery-stores-discounts-people-food-stamps)
 
 生成摘要时出错
 
 ---
 
-## 88. I want a good parallel language [video]
-
-**原文标题**: I want a good parallel language [video]
-
-**原文链接**: [https://www.youtube.com/watch?v=0-eViUyPwso](https://www.youtube.com/watch?v=0-eViUyPwso)
-
-生成摘要时出错
-
----
-
-## 89. Microsoft and Google overstate job creation at Chile data centers
+## 84. Microsoft and Google overstate job creation at Chile data centers
 
 **原文标题**: Microsoft and Google overstate job creation at Chile data centers
 
@@ -892,7 +842,77 @@
 
 ---
 
-## 90. Some software bloat is OK
+## 85. Fiber reduces overall mortality by 23%
+
+**原文标题**: Fiber reduces overall mortality by 23%
+
+**原文链接**: [https://www.empirical.health/blog/dietary-fiber-reduces-all-cause-morality/](https://www.empirical.health/blog/dietary-fiber-reduces-all-cause-morality/)
+
+生成摘要时出错
+
+---
+
+## 86. The Rust Foundation Maintainers Fund
+
+**原文标题**: The Rust Foundation Maintainers Fund
+
+**原文链接**: [https://rustfoundation.org/media/announcing-the-rust-foundation-maintainers-fund/](https://rustfoundation.org/media/announcing-the-rust-foundation-maintainers-fund/)
+
+生成摘要时出错
+
+---
+
+## 87. I want a good parallel language [video]
+
+**原文标题**: I want a good parallel language [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=0-eViUyPwso](https://www.youtube.com/watch?v=0-eViUyPwso)
+
+生成摘要时出错
+
+---
+
+## 88. I Stopped Being a Climate Catastrophist
+
+**原文标题**: I Stopped Being a Climate Catastrophist
+
+**原文链接**: [https://www.breakthroughjournal.org/p/why-i-stopped-being-a-climate-catastrophist](https://www.breakthroughjournal.org/p/why-i-stopped-being-a-climate-catastrophist)
+
+生成摘要时出错
+
+---
+
+## 89. Zohran Mamdani wins NYC mayor's race, capping an ascent
+
+**原文标题**: Zohran Mamdani wins NYC mayor's race, capping an ascent
+
+**原文链接**: [https://apnews.com/article/mamdani-cuomo-sliwa-nyc-mayor-af8b9790e7cb4e023d0984a0207cbcca](https://apnews.com/article/mamdani-cuomo-sliwa-nyc-mayor-af8b9790e7cb4e023d0984a0207cbcca)
+
+生成摘要时出错
+
+---
+
+## 90. Cargo plane crashes at Kentucky airport
+
+**原文标题**: Cargo plane crashes at Kentucky airport
+
+**原文链接**: [https://www.bbc.com/news/live/c201kgq59qgt](https://www.bbc.com/news/live/c201kgq59qgt)
+
+生成摘要时出错
+
+---
+
+## 91. Michael Burry is back with two bets against Nvidia and Palantir
+
+**原文标题**: Michael Burry is back with two bets against Nvidia and Palantir
+
+**原文链接**: [https://www.cnn.com/2025/11/05/business/nvidia-palantir-michael-burry-stock](https://www.cnn.com/2025/11/05/business/nvidia-palantir-michael-burry-stock)
+
+生成摘要时出错
+
+---
+
+## 92. Some software bloat is OK
 
 **原文标题**: Some software bloat is OK
 
@@ -902,7 +922,17 @@
 
 ---
 
-## 91. Building blobd: single-machine object store with sub-ms reads and 15 GB/s upload
+## 93. Recursive macros in C, demystified (once the ugly crying stops)
+
+**原文标题**: Recursive macros in C, demystified (once the ugly crying stops)
+
+**原文链接**: [https://h4x0r.org/big-mac-ro-attack/](https://h4x0r.org/big-mac-ro-attack/)
+
+生成摘要时出错
+
+---
+
+## 94. Building blobd: single-machine object store with sub-ms reads and 15 GB/s upload
 
 **原文标题**: Building blobd: single-machine object store with sub-ms reads and 15 GB/s upload
 
@@ -912,7 +942,7 @@
 
 ---
 
-## 92. Data breach at major Swedish software supplier impacts 1.5M
+## 95. Data breach at major Swedish software supplier impacts 1.5M
 
 **原文标题**: Data breach at major Swedish software supplier impacts 1.5M
 
@@ -922,17 +952,7 @@
 
 ---
 
-## 93. Pain Points of OCaml
-
-**原文标题**: Pain Points of OCaml
-
-**原文链接**: [https://quamserena.com/2025-11-03/pain-points-of-ocaml](https://quamserena.com/2025-11-03/pain-points-of-ocaml)
-
-生成摘要时出错
-
----
-
-## 94. 74% of CEOs worry AI failures could cost them their jobs
+## 96. 74% of CEOs worry AI failures could cost them their jobs
 
 **原文标题**: 74% of CEOs worry AI failures could cost them their jobs
 
@@ -942,31 +962,11 @@
 
 ---
 
-## 95. Apple nears $1B Google deal for custom Gemini model to power Siri
+## 97. Apple nears $1B Google deal for custom Gemini model to power Siri
 
 **原文标题**: Apple nears $1B Google deal for custom Gemini model to power Siri
 
 **原文链接**: [https://9to5mac.com/2025/11/05/google-gemini-1-billion-deal-apple-siri/](https://9to5mac.com/2025/11/05/google-gemini-1-billion-deal-apple-siri/)
-
-生成摘要时出错
-
----
-
-## 96. Paramount blacklists actors for pro-Palestinian activism
-
-**原文标题**: Paramount blacklists actors for pro-Palestinian activism
-
-**原文链接**: [https://www.worldofreel.com/blog/2025/11/4/paramount-has-blacklisted-talent-deemed-overtly-antisemitic](https://www.worldofreel.com/blog/2025/11/4/paramount-has-blacklisted-talent-deemed-overtly-antisemitic)
-
-生成摘要时出错
-
----
-
-## 97. Kosmos: An AI Scientist for Autonomous Discovery
-
-**原文标题**: Kosmos: An AI Scientist for Autonomous Discovery
-
-**原文链接**: [https://arxiv.org/abs/2511.02824](https://arxiv.org/abs/2511.02824)
 
 生成摘要时出错
 
@@ -982,21 +982,21 @@
 
 ---
 
-## 99. Cheaper MacBook powered by iPhone chip coming in 2026, per new report
+## 99. Paramount blacklists actors for pro-Palestinian activism
 
-**原文标题**: Cheaper MacBook powered by iPhone chip coming in 2026, per new report
+**原文标题**: Paramount blacklists actors for pro-Palestinian activism
 
-**原文链接**: [https://9to5mac.com/2025/11/04/cheaper-macbook-powered-by-iphone-chip-coming-in-2026-per-new-report/](https://9to5mac.com/2025/11/04/cheaper-macbook-powered-by-iphone-chip-coming-in-2026-per-new-report/)
+**原文链接**: [https://www.worldofreel.com/blog/2025/11/4/paramount-has-blacklisted-talent-deemed-overtly-antisemitic](https://www.worldofreel.com/blog/2025/11/4/paramount-has-blacklisted-talent-deemed-overtly-antisemitic)
 
 生成摘要时出错
 
 ---
 
-## 100. The Basic Laws of Human Stupidity (1987) [pdf]
+## 100. Kosmos: An AI Scientist for Autonomous Discovery
 
-**原文标题**: The Basic Laws of Human Stupidity (1987) [pdf]
+**原文标题**: Kosmos: An AI Scientist for Autonomous Discovery
 
-**原文链接**: [https://gandalf.fee.urv.cat/professors/AntonioQuesada/Curs1920/Cipolla_laws.pdf](https://gandalf.fee.urv.cat/professors/AntonioQuesada/Curs1920/Cipolla_laws.pdf)
+**原文链接**: [https://arxiv.org/abs/2511.02824](https://arxiv.org/abs/2511.02824)
 
 生成摘要时出错
 
