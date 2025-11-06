@@ -25,7 +25,7 @@ def fetch_top_stories(limit=100):
     """获取 Hacker News 上的热门文章链接"""
     print(f"正在获取 Hacker News 上的前 {limit} 篇热门文章...")
     
-    hn_url = "https://news.ycombinator.com/news?p="
+    hn_url = "https://news.ycombinator.com/best?p="
     stories = []
     page = 1
     
