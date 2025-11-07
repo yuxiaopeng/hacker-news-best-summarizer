@@ -1,9 +1,9 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-06.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-07.md)
 
-*最后自动更新时间: 2025-11-06 19:43:14*
-## 1. Solarpunk is happening in Africa
+*最后自动更新时间: 2025-11-07 19:43:17*
+## 1. 太阳朋克正在非洲发生。
 
 **原文标题**: Solarpunk is happening in Africa
 
@@ -14,11 +14,11 @@ Unable to access the article link.
 
 ---
 
-## 2. Mr TIFF
+## 2. FBI tries to unmask owner of archive.is
 
-**原文标题**: Mr TIFF
+**原文标题**: FBI tries to unmask owner of archive.is
 
-**原文链接**: [https://inventingthefuture.ghost.io/mr-tiff/](https://inventingthefuture.ghost.io/mr-tiff/)
+**原文链接**: [https://www.heise.de/en/news/Archive-today-FBI-Demands-Data-from-Provider-Tucows-11066346.html](https://www.heise.de/en/news/Archive-today-FBI-Demands-Data-from-Provider-Tucows-11066346.html)
 
 生成摘要时出错
 
@@ -34,17 +34,27 @@ Unable to access the article link.
 
 ---
 
-## 4. Zohran Mamdani wins the New York mayoral race
+## 4. You should write an agent
 
-**原文标题**: Zohran Mamdani wins the New York mayoral race
+**原文标题**: You should write an agent
 
-**原文链接**: [https://www.nbcnews.com/politics/elections/new-york-city-mayor-election-winner-2025-race-rcna238909](https://www.nbcnews.com/politics/elections/new-york-city-mayor-election-winner-2025-race-rcna238909)
+**原文链接**: [https://fly.io/blog/everyone-write-an-agent/](https://fly.io/blog/everyone-write-an-agent/)
 
 生成摘要时出错
 
 ---
 
-## 5. Ratatui – App Showcase
+## 5. Kimi K2 Thinking, a SOTA open-source trillion-parameter reasoning model
+
+**原文标题**: Kimi K2 Thinking, a SOTA open-source trillion-parameter reasoning model
+
+**原文链接**: [https://moonshotai.github.io/Kimi-K2/thinking.html](https://moonshotai.github.io/Kimi-K2/thinking.html)
+
+生成摘要时出错
+
+---
+
+## 6. Ratatui – App Showcase
 
 **原文标题**: Ratatui – App Showcase
 
@@ -54,7 +64,7 @@ Unable to access the article link.
 
 ---
 
-## 6. New gel restores dental enamel and could revolutionise tooth repair
+## 7. New gel restores dental enamel and could revolutionise tooth repair
 
 **原文标题**: New gel restores dental enamel and could revolutionise tooth repair
 
@@ -64,41 +74,31 @@ Unable to access the article link.
 
 ---
 
-## 7. I was right about dishwasher pods and now I can prove it [video]
+## 8. Leaving Meta and PyTorch
 
-**原文标题**: I was right about dishwasher pods and now I can prove it [video]
+**原文标题**: Leaving Meta and PyTorch
 
-**原文链接**: [https://www.youtube.com/watch?v=DAX2_mPr9W8](https://www.youtube.com/watch?v=DAX2_mPr9W8)
-
-生成摘要时出错
-
----
-
-## 8. I took all my projects off the cloud, saving thousands of dollars
-
-**原文标题**: I took all my projects off the cloud, saving thousands of dollars
-
-**原文链接**: [https://rameerez.com/send-this-article-to-your-friend-who-still-thinks-the-cloud-is-a-good-idea/](https://rameerez.com/send-this-article-to-your-friend-who-still-thinks-the-cloud-is-a-good-idea/)
+**原文链接**: [https://soumith.ch/blog/2025-11-06-leaving-meta-and-pytorch.md.html](https://soumith.ch/blog/2025-11-06-leaving-meta-and-pytorch.md.html)
 
 生成摘要时出错
 
 ---
 
-## 9. Why aren't smart people happier?
+## 9. ICC ditches Microsoft 365 for openDesk
 
-**原文标题**: Why aren't smart people happier?
+**原文标题**: ICC ditches Microsoft 365 for openDesk
 
-**原文链接**: [https://www.theseedsofscience.pub/p/why-arent-smart-people-happier](https://www.theseedsofscience.pub/p/why-arent-smart-people-happier)
+**原文链接**: [https://www.binnenlandsbestuur.nl/digitaal/internationaal-strafhof-neemt-afscheid-van-microsoft-365](https://www.binnenlandsbestuur.nl/digitaal/internationaal-strafhof-neemt-afscheid-van-microsoft-365)
 
 生成摘要时出错
 
 ---
 
-## 10. I’m worried that they put co-pilot in Excel
+## 10. Two billion email addresses were exposed
 
-**原文标题**: I’m worried that they put co-pilot in Excel
+**原文标题**: Two billion email addresses were exposed
 
-**原文链接**: [https://simonwillison.net/2025/Nov/5/brenda/](https://simonwillison.net/2025/Nov/5/brenda/)
+**原文链接**: [https://www.troyhunt.com/2-billion-email-addresses-were-exposed-and-we-indexed-them-all-in-have-i-been-pwned/](https://www.troyhunt.com/2-billion-email-addresses-were-exposed-and-we-indexed-them-all-in-have-i-been-pwned/)
 
 生成摘要时出错
 
@@ -108,4 +108,5 @@ Unable to access the article link.
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 1 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 2 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
