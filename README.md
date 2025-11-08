@@ -1,80 +1,46 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-07.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-08.md)
 
-*最后自动更新时间: 2025-11-07 19:43:17*
-## 1. 太阳朋克正在非洲发生。
-
-**原文标题**: Solarpunk is happening in Africa
-
-**原文链接**: [https://climatedrift.substack.com/p/why-solarpunk-is-already-happening](https://climatedrift.substack.com/p/why-solarpunk-is-already-happening)
-
-Unable to access the article link.
-
-
----
-
-## 2. FBI tries to unmask owner of archive.is
-
-**原文标题**: FBI tries to unmask owner of archive.is
-
-**原文链接**: [https://www.heise.de/en/news/Archive-today-FBI-Demands-Data-from-Provider-Tucows-11066346.html](https://www.heise.de/en/news/Archive-today-FBI-Demands-Data-from-Provider-Tucows-11066346.html)
-
-生成摘要时出错
-
----
-
-## 3. End of Japanese community
-
-**原文标题**: End of Japanese community
-
-**原文链接**: [https://support.mozilla.org/en-US/forums/contributors/717446](https://support.mozilla.org/en-US/forums/contributors/717446)
-
-生成摘要时出错
-
----
-
-## 4. You should write an agent
+*最后自动更新时间: 2025-11-08 19:41:02*
+## 1. You should write an agent
 
 **原文标题**: You should write an agent
 
 **原文链接**: [https://fly.io/blog/everyone-write-an-agent/](https://fly.io/blog/everyone-write-an-agent/)
 
-生成摘要时出错
+Thomas Ptacek argues that writing LLM agents is surprisingly easy and valuable for understanding the technology, regardless of one's opinion on their ultimate utility. He demonstrates this by providing code snippets to create a simple ChatGPT-like engine and then extending it to include tools, allowing the agent to interact with the real world (e.g., pinging a host).
+
+Ptacek emphasizes that an "agent" is essentially an LLM running in a loop, often utilizing tools. The context window, which is the history of interactions, is managed by the programmer, creating the illusion of a stateful conversation with a stateless LLM.
+
+He critiques the overemphasis on "MCP" (plugin interfaces) in platforms like Claude Code, arguing that they abstract away control and security, and encourage developers to deal with APIs rather than plugins. He also downplays "Prompt Engineering," instead highlighting the importance of "Context Engineering," the strategic management of tokens within the context window.
+
+Ptacek urges readers to experiment with agents, build their own tools, and explore different design choices like sub-agents. He highlights open engineering problems in agent design, such as balancing unpredictability with structured programming, connecting agents to ground truth, and facilitating multi-stage operations. He concludes that practical experience is crucial for understanding and forming informed opinions about this rapidly evolving technology.
+
 
 ---
 
-## 5. Kimi K2 Thinking, a SOTA open-source trillion-parameter reasoning model
+## 2. YouTube Removes Windows 11 Bypass Tutorials, Claims 'Risk of Physical Harm'
 
-**原文标题**: Kimi K2 Thinking, a SOTA open-source trillion-parameter reasoning model
+**原文标题**: YouTube Removes Windows 11 Bypass Tutorials, Claims 'Risk of Physical Harm'
 
-**原文链接**: [https://moonshotai.github.io/Kimi-K2/thinking.html](https://moonshotai.github.io/Kimi-K2/thinking.html)
-
-生成摘要时出错
-
----
-
-## 6. Ratatui – App Showcase
-
-**原文标题**: Ratatui – App Showcase
-
-**原文链接**: [https://ratatui.rs/showcase/apps/](https://ratatui.rs/showcase/apps/)
-
-生成摘要时出错
-
----
-
-## 7. New gel restores dental enamel and could revolutionise tooth repair
-
-**原文标题**: New gel restores dental enamel and could revolutionise tooth repair
-
-**原文链接**: [https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair](https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair)
+**原文链接**: [https://news.itsfoss.com/youtube-removes-windows-11-bypass-tutorials/](https://news.itsfoss.com/youtube-removes-windows-11-bypass-tutorials/)
 
 生成摘要时出错
 
 ---
 
-## 8. Leaving Meta and PyTorch
+## 3. Meta projected 10% of 2024 revenue came from scams
+
+**原文标题**: Meta projected 10% of 2024 revenue came from scams
+
+**原文链接**: [https://sherwood.news/tech/meta-projected-10-of-2024-revenue-came-from-scams-and-banned-goods-reuters/](https://sherwood.news/tech/meta-projected-10-of-2024-revenue-came-from-scams-and-banned-goods-reuters/)
+
+生成摘要时出错
+
+---
+
+## 4. Leaving Meta and PyTorch
 
 **原文标题**: Leaving Meta and PyTorch
 
@@ -84,17 +50,7 @@ Unable to access the article link.
 
 ---
 
-## 9. ICC ditches Microsoft 365 for openDesk
-
-**原文标题**: ICC ditches Microsoft 365 for openDesk
-
-**原文链接**: [https://www.binnenlandsbestuur.nl/digitaal/internationaal-strafhof-neemt-afscheid-van-microsoft-365](https://www.binnenlandsbestuur.nl/digitaal/internationaal-strafhof-neemt-afscheid-van-microsoft-365)
-
-生成摘要时出错
-
----
-
-## 10. Two billion email addresses were exposed
+## 5. Two billion email addresses were exposed
 
 **原文标题**: Two billion email addresses were exposed
 
@@ -104,9 +60,60 @@ Unable to access the article link.
 
 ---
 
+## 6. A Fond Farewell
+
+**原文标题**: A Fond Farewell
+
+**原文链接**: [https://www.farmersalmanac.com/fond-farewell-from-farmers-almanac](https://www.farmersalmanac.com/fond-farewell-from-farmers-almanac)
+
+生成摘要时出错
+
+---
+
+## 7. Game design is simple
+
+**原文标题**: Game design is simple
+
+**原文链接**: [https://www.raphkoster.com/2025/11/03/game-design-is-simple-actually/](https://www.raphkoster.com/2025/11/03/game-design-is-simple-actually/)
+
+生成摘要时出错
+
+---
+
+## 8. Rockstar employee shares account of the company's union-busting efforts
+
+**原文标题**: Rockstar employee shares account of the company's union-busting efforts
+
+**原文链接**: [https://gtaforums.com/topic/1004182-rockstar-games-alleged-union-busting/](https://gtaforums.com/topic/1004182-rockstar-games-alleged-union-busting/)
+
+生成摘要时出错
+
+---
+
+## 9. Denmark's government aims to ban access to social media for children under 15
+
+**原文标题**: Denmark's government aims to ban access to social media for children under 15
+
+**原文链接**: [https://apnews.com/article/denmark-social-media-ban-children-7862d2a8cc590b4969c8931a01adc7f4](https://apnews.com/article/denmark-social-media-ban-children-7862d2a8cc590b4969c8931a01adc7f4)
+
+生成摘要时出错
+
+---
+
+## 10. Apple is crossing a Steve Jobs red line
+
+**原文标题**: Apple is crossing a Steve Jobs red line
+
+**原文链接**: [https://kensegall.com/2025/11/07/apple-is-crossing-a-steve-jobs-red-line/](https://kensegall.com/2025/11/07/apple-is-crossing-a-steve-jobs-red-line/)
+
+生成摘要时出错
+
+---
+
 ## 历史记录
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 1 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
 | 2 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 3 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
