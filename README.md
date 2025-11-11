@@ -1,56 +1,20 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-10.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-11.md)
 
-*最后自动更新时间: 2025-11-10 19:43:11*
-## 1. I Am Mark Zuckerberg
+*最后自动更新时间: 2025-11-11 19:43:24*
+## 1. The 'Toy Story' You Remember
 
-**原文标题**: I Am Mark Zuckerberg
+**原文标题**: The 'Toy Story' You Remember
 
-**原文链接**: [https://iammarkzuckerberg.com/](https://iammarkzuckerberg.com/)
+**原文链接**: [https://animationobsessive.substack.com/p/the-toy-story-you-remember](https://animationobsessive.substack.com/p/the-toy-story-you-remember)
 
-This website, iammarkzuckerg.com, belongs to Mark S. Zuckerberg, an Indiana bankruptcy attorney, and *not* the famous founder of Facebook (Mark E. Zuckerberg). The site aims to clarify this common point of confusion and introduce visitors to the "original" Mark Zuckerberg of Indiana.
-
-The site emphasizes that the Indiana Zuckerberg focuses on helping people with their finances, offering human-involved advice powered by coffee (instead of AI), and dealing with local legal questions, not tech scandals. He humorously acknowledges the daily mistaken identity and the absence of a shared fortune with the tech mogul.
-
-The website highlights the many inconveniences the lawyer Zuckerberg has faced due to his name: mistaken identity lawsuits, constant hacking attempts on his Facebook accounts, forced account deactivations, inundation with calls and emails related to Facebook scams, daily tech support requests, constant friend requests, suggestions for Facebook improvements, death threats and harassment via Messenger, and Venmo solicitations. He was even kicked off the Nextdoor app for using a "fake name."
-
-Despite the constant confusion and occasional harassment, the Indiana Zuckerberg maintains a good-natured approach. He vows to "rule the search" for "Mark Zuckerberg bankruptcy" and even jokingly offers to represent the Facebook founder should he ever need bankruptcy assistance in Indiana. The site encourages visitors to learn more about the "non-billionaire" Mark and emphasizes that "no login is required."
+Unable to access the article link.
 
 
 ---
 
-## 2. Marble Fountain
-
-**原文标题**: Marble Fountain
-
-**原文链接**: [https://willmorrison.net/posts/marble-fountain/](https://willmorrison.net/posts/marble-fountain/)
-
-生成摘要时出错
-
----
-
-## 3. I Want You to Understand Chicago
-
-**原文标题**: I Want You to Understand Chicago
-
-**原文链接**: [https://aphyr.com/posts/397-i-want-you-to-understand-chicago](https://aphyr.com/posts/397-i-want-you-to-understand-chicago)
-
-生成摘要时出错
-
----
-
-## 4. AI isn't replacing jobs. AI spending is
-
-**原文标题**: AI isn't replacing jobs. AI spending is
-
-**原文链接**: [https://www.fastcompany.com/91435192/chatgpt-llm-openai-jobs-amazon](https://www.fastcompany.com/91435192/chatgpt-llm-openai-jobs-amazon)
-
-生成摘要时出错
-
----
-
-## 5. XSLT RIP
+## 2. XSLT RIP
 
 **原文标题**: XSLT RIP
 
@@ -60,17 +24,27 @@ Despite the constant confusion and occasional harassment, the Indiana Zuckerberg
 
 ---
 
-## 6. Montana becomes first state to enshrine 'right to compute' into law
+## 3. Unexpected things that are people
 
-**原文标题**: Montana becomes first state to enshrine 'right to compute' into law
+**原文标题**: Unexpected things that are people
 
-**原文链接**: [https://montananewsroom.com/montana-becomes-first-state-to-enshrine-right-to-compute-into-law/](https://montananewsroom.com/montana-becomes-first-state-to-enshrine-right-to-compute-into-law/)
+**原文链接**: [https://bengoldhaber.substack.com/p/unexpected-things-that-are-people](https://bengoldhaber.substack.com/p/unexpected-things-that-are-people)
 
 生成摘要时出错
 
 ---
 
-## 7. Work after work: Notes from an unemployed new grad watching the job market break
+## 4. Time to start de-Appling
+
+**原文标题**: Time to start de-Appling
+
+**原文链接**: [https://heatherburns.tech/2025/11/10/time-to-start-de-appling/](https://heatherburns.tech/2025/11/10/time-to-start-de-appling/)
+
+生成摘要时出错
+
+---
+
+## 5. Work after work: Notes from an unemployed new grad watching the job market break
 
 **原文标题**: Work after work: Notes from an unemployed new grad watching the job market break
 
@@ -80,31 +54,51 @@ Despite the constant confusion and occasional harassment, the Indiana Zuckerberg
 
 ---
 
-## 8. Largest cargo sailboat completes first Atlantic crossing
+## 6. The lazy Git UI you didn't know you need
 
-**原文标题**: Largest cargo sailboat completes first Atlantic crossing
+**原文标题**: The lazy Git UI you didn't know you need
 
-**原文链接**: [https://www.marineinsight.com/shipping-news/worlds-largest-cargo-sailboat-completes-historic-first-atlantic-crossing/](https://www.marineinsight.com/shipping-news/worlds-largest-cargo-sailboat-completes-historic-first-atlantic-crossing/)
-
-生成摘要时出错
-
----
-
-## 9. Ironclad – formally verified, real-time capable, Unix-like OS kernel
-
-**原文标题**: Ironclad – formally verified, real-time capable, Unix-like OS kernel
-
-**原文链接**: [https://ironclad-os.org/](https://ironclad-os.org/)
+**原文链接**: [https://www.bwplotka.dev/2025/lazygit/](https://www.bwplotka.dev/2025/lazygit/)
 
 生成摘要时出错
 
 ---
 
-## 10. Marko – A declarative, HTML‑based language
+## 7. LLMs are steroids for your Dunning-Kruger
 
-**原文标题**: Marko – A declarative, HTML‑based language
+**原文标题**: LLMs are steroids for your Dunning-Kruger
 
-**原文链接**: [https://markojs.com/](https://markojs.com/)
+**原文链接**: [https://bytesauna.com/post/dunning-kruger](https://bytesauna.com/post/dunning-kruger)
+
+生成摘要时出错
+
+---
+
+## 8. Vibe Code Warning – A personal casestudy
+
+**原文标题**: Vibe Code Warning – A personal casestudy
+
+**原文链接**: [https://github.com/jackdoe/pico2-swd-riscv](https://github.com/jackdoe/pico2-swd-riscv)
+
+生成摘要时出错
+
+---
+
+## 9. Warren Buffett's final shareholder letter [pdf]
+
+**原文标题**: Warren Buffett's final shareholder letter [pdf]
+
+**原文链接**: [https://berkshirehathaway.com/news/nov1025.pdf](https://berkshirehathaway.com/news/nov1025.pdf)
+
+生成摘要时出错
+
+---
+
+## 10. Redmond, WA, turns off Flock Safety cameras after ICE arrests
+
+**原文标题**: Redmond, WA, turns off Flock Safety cameras after ICE arrests
+
+**原文链接**: [https://www.seattletimes.com/seattle-news/law-justice/redmond-turns-off-flock-safety-cameras-after-ice-arrests/](https://www.seattletimes.com/seattle-news/law-justice/redmond-turns-off-flock-safety-cameras-after-ice-arrests/)
 
 生成摘要时出错
 
@@ -114,8 +108,9 @@ Despite the constant confusion and occasional harassment, the Indiana Zuckerberg
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 2 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 3 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 4 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 5 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 1 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 2 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 3 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 4 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 5 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 6 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
