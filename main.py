@@ -22,8 +22,8 @@ genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-2.5-flash')
 
 def fetch_top_stories(limit=100):
-    """获取 Hacker News 上的热门文章链接"""
-    print(f"正在获取 Hacker News 上的前 {limit} 篇热门文章...")
+    """获取 Hacker News Best 上的热门文章链接"""
+    print(f"正在获取 Hacker News Best 上的前 {limit} 篇热门文章...")
     
     hn_url = "https://news.ycombinator.com/best?p="
     stories = []
@@ -335,7 +335,7 @@ def write_head_contents(stories_with_summaries):
     print("README.md 更新完成")
 
 def main():
-    print("开始运行 Hacker News 文章摘要提取器...")
+    print("开始运行 Hacker News Best 文章摘要提取器...")
     
     # 获取热门文章
     stories = fetch_top_stories(limit=100)
