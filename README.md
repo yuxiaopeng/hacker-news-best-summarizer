@@ -1,163 +1,160 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-20.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-21.md)
 
-*最后自动更新时间: 2025-11-20 20:11:16*
-## 1. Cloudflare 2025年11月18日故障复盘
-
-**原文标题**: Cloudflare outage on November 18, 2025 post mortem
-
-**原文链接**: [https://blog.cloudflare.com/18-november-2025-outage/](https://blog.cloudflare.com/18-november-2025-outage/)
-
-2025年11月18日，Cloudflare发生了一次严重的网络中断，始于UTC时间11:20，大部分问题于UTC时间14:30解决，所有系统于UTC时间17:06恢复正常。此事件导致用户访问客户网站时出现普遍的HTTP 5xx错误，并影响了核心CDN、安全服务、Workers KV、Turnstile、控制面板登录和Access身份验证。
-
-此次中断并非网络攻击。它源于UTC时间11:05在ClickHouse集群中发生的数据库权限变更。这一变更无意中导致一个由Bot管理系统使用的查询将重复条目输出到其“特征文件”中，使其大小翻倍。
-
-当这个过大的特征文件传播到Cloudflare网络中时，负责流量路由的软件（该软件对该文件有内存预分配限制，即200个特征）遇到了超出预期大小的文件。这触发了软件恐慌和故障，导致服务中断。
-
-最初的症状，包括波动的错误率以及Cloudflare*外部*状态页面恰好中断，最初让团队怀疑是超大规模DDoS攻击。在正确识别出核心问题后，Cloudflare停止了错误特征文件的生成和传播，手动插入了一个已知的良好版本，并强制进行了核心代理重启。Workers KV于UTC时间13:04被修补以绕过核心代理，控制面板的可用性于UTC时间15:30恢复。Cloudflare对此次重大影响表示歉意，并正在实施后续措施以强化系统，防止发生类似故障。
-
----
-
-## 2. Blender 5.0
-
-**原文标题**: Blender 5.0
-
-**原文链接**: [https://www.blender.org/download/releases/5-0/](https://www.blender.org/download/releases/5-0/)
-
-Blender 5.0 是一个重要版本，专注于优化用户体验、提升性能并在其各个领域引入强大的新功能。
-
-主要亮点包括：
-
-*   **渲染：** Cycles 引入了**光照链接**，让艺术家能够精确控制哪些灯光照亮特定物体，以及实验性的**光谱渲染**，用于实现高精度的光照交互。GPU 光线追踪性能也得到了进一步优化。EEVEE 和视图受益于改进的光照、更高质量的体积渲染，并新增了**视口合成器**，可在实时进行直接合成。
-*   **建模：** “挤出流形”等新工具以及对阵列修改器的全面改进，简化了网格编辑和创建工作流程。
-*   **动画与绑定：** 强大的新**姿态库**提供了一个直观的系统，用于存储和重用角色姿态。动画功能通过改进的运动路径工具和对 NLA 编辑器的更新得到进一步增强。
-*   **节点：** 几何节点获得了显著的性能提升和新功能，包括引入了**模拟节点**，用于创建动态效果。
-*   **用户界面与体验：** 该版本包含众多 UI 改进，例如改进的字体渲染、增强的色彩管理和更快的启动时间，有助于实现更灵敏、更愉悦的工作流程。
-*   **性能：** 整个软件的整体性能都有显著提升，使 Blender 5.0 在各方面都更快、更稳定。
-
----
-
-## 3. 欧洲缩减GDPR并放松人工智能法规
-
-**原文标题**: Europe is scaling back GDPR and relaxing AI laws
-
-**原文链接**: [https://www.theverge.com/news/823750/european-union-ai-act-gdpr-changes](https://www.theverge.com/news/823750/european-union-ai-act-gdpr-changes)
-
-欧洲正在放宽其具有里程碑意义的《通用数据保护条例》（GDPR），并放宽或推迟其人工智能法律（包括《人工智能法案》）的关键要素。此举是在科技巨头、美国政府以及马里奥·德拉吉等欧盟内部人士的巨大压力下作出的，因为布鲁塞尔旨在削减繁文缛节、恢复疲软的经济增长，并解决其在人工智能竞赛中全球竞争力方面的担忧。
-
-由欧盟委员会提出的这些修改包括：简化GDPR无处不在的Cookie许可弹窗，使公司更容易共享匿名化和假名化的个人数据集，以及允许人工智能公司在特定条件下合法使用个人数据来训练人工智能模型。
-
-关于《人工智能法案》，该提案延长了针对“高风险”人工智能系统的规则的宽限期，这些规则现在只有在必要的标准和支持工具可用后才会实施。“数字综合法案”中的其他修正案包括：简化小型公司的人工智能文档要求、统一的网络安全事件报告界面，以及将欧盟内部的人工智能监管集中到其人工智能办公室。
-
-欧盟委员会将这些调整描述为“简化欧盟法律”和促进创新，同时声称保护用户的基本权利。然而，该提案预计将面临公民权利团体和政界人士的强烈反对，他们指责欧盟委员会削弱了保障措施。这些修改现在将提交给欧洲议会和成员国批准，这个过程可能在未来几个月内引入重大修改。
-
----
-
-## 4. 元万物分割模型 3
-
-**原文标题**: Meta Segment Anything Model 3
-
-**原文链接**: [https://ai.meta.com/sam3/](https://ai.meta.com/sam3/)
-
-Meta发布了Segment Anything Model 3 (SAM-3)，标志着通用图像分割领域的一项重大进展。这一新版本在基础的SAM和SAM-2之上进一步发展，旨在对海量视觉数据中的物体进行更细粒度、更精确的描绘。
-
-SAM-3强调对图像中任何物体进行高质量分割，无论其新颖性、纹理或背景复杂程度如何。主要改进包括在区分细粒度细节以及处理遮挡或低对比度区域等挑战性场景方面增强的准确性。该模型在扩展且更多样化的数据集上进行训练，这有助于其在不同图像类型和领域中展现出强大的泛化能力。
-
-Meta强调SAM-3有潜力赋能广泛的AI应用，从改进的计算机视觉系统和增强现实体验，到高级图像编辑和内容创作工具。其以更高精度“分割万物”的能力，预计将加速需要详细场景理解领域的研发。
-
-此次发布凸显了Meta对开放科学的承诺，使研究人员和开发者能够使用SAM-3，以促进AI社区的创新。这一迭代延续了提供理解视觉信息基础工具的使命，不断拓展自动化图像分割的可能边界。
-
----
-
-## 5. HN 展示：我制作了一个宕机检测器的宕机检测器
-
-**原文标题**: Show HN: I made a down detector for down detector
-
-**原文链接**: [https://downdetectorsdowndetector.com](https://downdetectorsdowndetector.com)
-
-一位Hacker News用户开发了一款监控工具，专门用于检查downdetector.com自身的运行状态。该项目被称为“downdetector的宕机探测器”，旨在解决一个旨在报告服务中断的网站自身也可能出现中断的讽刺局面。
-
-该工具提供实时状态更新，详细列出不同地区的HTTP响应和延迟指标，以确保全面监控。其目的是确认downdetector.com从不同地理位置是否可访问并正常运行，实质上是为这个可靠性检查器提供了一层保障。
-
----
-
-## 6. 专利局即将让劣质专利无法被撼动。
-
-**原文标题**: The patent office is about to make bad patents untouchable
-
-**原文链接**: [https://www.eff.org/deeplinks/2025/11/patent-office-about-make-bad-patents-untouchable](https://www.eff.org/deeplinks/2025/11/patent-office-about-make-bad-patents-untouchable)
-
-美国专利商标局 (USPTO) 提出了新规定，这将严重削弱当事人间复审 (IPR)，从而实际终结公众在专利局内部质疑不当授权专利的能力。此举被批评为通过使劣质专利无法被挑战来赋能“专利流氓”，使被诉方几乎没有经济实惠的辩护选择。
-
-IPR 由专利审判和上诉委员会 (PTAB) 裁决，是挑战专利的关键、相对经济且更快捷的替代方案，可替代昂贵的联邦法院诉讼。它已成功宣告无效了诸如“播客专利”和SportBrain数据上传专利等问题专利，造福了整个行业。
-
-拟议的新规带来了三项危险的改变：
-1.  **强制选择：** 被告必须放弃在法庭上质疑专利有效性，才能使用IPR。
-2.  **“不可挑战”的专利：** 即使之后出现新证据，一项专利在仅进行一次先前的有效性争议后，也可能对IPR免疫。
-3.  **地方法院优先：** 如果预计地方法院案件进展更快，IPR将被阻止，从而迫使被告卷入昂贵且长达数年的诉讼。
-
-USPTO声称地方法院的挑战是足够的，这具有误导性，因为此类诉讼耗资数百万美元，且大多数人难以负担。批评者认为，这些规定违背了国会设立IPR的初衷，即提供一个便捷的途径来纠正专利局的错误。
-
-电子前沿基金会 (EFF) 敦促公众在12月2日前发表评论，反对这些规定，并强调公众有权挑战劣质专利以保护创新。
-
----
-
-## 7. 纳米香蕉 Pro
+*最后自动更新时间: 2025-11-21 20:10:15*
+## 1. 纳米香蕉Pro
 
 **原文标题**: Nano Banana Pro
 
 **原文链接**: [https://blog.google/technology/ai/nano-banana-pro/](https://blog.google/technology/ai/nano-banana-pro/)
 
-Google DeepMind推出了Nano Banana Pro，这是一款由Gemini 3 Pro提供支持的全新最先进图像生成和编辑模型。该版本在之前的Nano Banana模型基础上，利用Gemini 3增强的推理能力和真实世界知识，提供更准确、更富上下文的视觉内容。
+谷歌DeepMind推出了Nano Banana Pro，这是一款基于Gemini 3 Pro构建的全新尖端图像生成和编辑模型。这个先进模型提供前所未有的控制力、改进的文本渲染和增强的世界知识，接替了之前的Nano Banana。
 
-Nano Banana Pro擅长可视化想法，通过Google搜索从笔记或实时数据创建信息图表，以及生成图表。一个突出特点是它能够生成带有准确渲染且清晰可读的多语言文本的图像，支持多种字体、纹理和本地化，适用于模型图和国际内容。
+Nano Banana Pro擅长创建准确、内容丰富的视觉效果，包括基于提供内容或真实世界事实（通过谷歌搜索）的信息图表和图示，以及直接嵌入多语言清晰可辨文本的模型图和海报。它还能实现具有一致品牌标识的高保真视觉效果，允许用户组合多达14个输入，并在复杂构图中保持多达5个人物的相似性。
 
-该模型还提供了升级的创意控制，用于生成高保真视觉效果。用户可以通过混合多达14张图像并保留多达5个人的肖像相似度来保持品牌一致性。高级编辑功能包括局部调整、摄像机角度更改、焦点控制、精密的色彩分级、场景光照变换（例如，白天到夜晚），以及在各种宽高比下输出高达4K的分辨率。
+用户可获得工作室级的创意控制，包括本地化编辑、调整摄像机角度、焦点、色彩分级，以及转换场景照明（例如，从白天到夜晚），输出支持2K和4K分辨率。
 
-Nano Banana Pro正被整合到谷歌的生态系统之中。消费者和学生可以在Gemini应用、搜索中的AI模式（针对订阅用户）和NotebookLM中访问它。专业人士将在Google Ads和Workspace（Slides、Vids）中找到它，而开发者和企业则可以通过Gemini API、Google AI Studio、Google Antigravity和Vertex AI使用它。创作者可以在Flow中利用它。
+Nano Banana Pro正在全球范围内推出，并在Gemini应用、Google Ads、Workspace、Google AI Studio和Vertex AI等谷歌产品中普及，服务于消费者、专业人士、开发者和创意工作者。
 
-所有生成的媒体都嵌入了不可察觉的SynthID数字水印，以保持透明度，Gemini应用可以识别谷歌AI创建的图像。免费和Google AI Pro等级用户还将看到一个可见的“Gemini闪光”水印，该水印对Ultra订阅用户和在Google AI Studio中用于专业用途时会被移除。
+透明度通过嵌入所有生成媒体中的不可察觉的SynthID数字水印得到保持。免费用户和Google AI Pro用户也会看到一个可见的Gemini闪光水印，但Ultra订阅用户和开发者工具将移除此水印。用户可以通过将图像上传到Gemini应用来验证其是否由谷歌AI生成。最初的Nano Banana仍可用于快速、休闲的编辑。
 
 ---
 
-## 8. Linux游戏从未如此易于上手。
+## 2. Android 和 iPhone 用户现在可以共享文件了，从 Pixel 10 开始。
+
+**原文标题**: Android and iPhone users can now share files, starting with the Pixel 10
+
+**原文链接**: [https://blog.google/products/android/quick-share-airdrop/](https://blog.google/products/android/quick-share-airdrop/)
+
+谷歌正在推出一项新功能，允许安卓和 iPhone 用户无缝共享文件，以满足长期以来对更便捷跨平台传输的需求。这项集成使得安卓设备上的“快速分享”（Quick Share）可以直接与苹果的 AirDrop 协同工作。
+
+该功能将从今天开始推出，率先支持 Pixel 10 系列设备。这项新功能在设计时内置了强大的安全措施以保护用户数据，并已通过独立专家的严格测试。继此前在 RCS 消息和未知追踪器警报方面的工作之后，这一举措标志着谷歌在增强不同操作系统兼容性方面又迈出了新的一步。谷歌计划未来将这一文件共享功能推广到更广泛的安卓设备上。
+
+---
+
+## 3. 美国海关边境保护局正在监控美国司机，并拘留行程可疑者。
+
+**原文标题**: CBP is monitoring US drivers and detaining those with suspicious travel patterns
+
+**原文链接**: [https://apnews.com/article/immigration-border-patrol-surveillance-drivers-ice-trump-9f5d05469ce8c629d6fecf32d32098cd](https://apnews.com/article/immigration-border-patrol-surveillance-drivers-ice-trump-9f5d05469ce8c629d6fecf32d32098cd)
+
+美国边境巡逻队 (CBP) 运行着一个秘密的全国性项目，监控数百万美国司机，根据“可疑”的出行模式识别并拘留个人。这个预测性情报系统利用隐藏的车牌识别器 (LPR) 和算法，根据车辆的始发地、目的地和行驶路线进行标记。联邦特工随后会通知当地执法部门，后者通常以轻微的交通违规为借口拦下司机，进行盘问和搜查，而司机并不知道自己已被监控系统标记。
+
+该项目最初旨在打击边境相关活动和走私贩运，但在过去五年中已大幅扩张，深入美国内陆，影响到芝加哥、底特律、菲尼克斯、圣安东尼奥和休斯顿等主要城市的居民，其范围常常超出CBP通常100英里的管辖范围。CBP获得了资金以利用人工智能和其他技术进行扩张，并与美国缉毒局 (DEA) 等机构、私营公司和当地警方合作，甚至通过非正式聊天分享美国公民的个人数据。
+
+法律专家和隐私倡导者对该项目提出了重大的《第四修正案》担忧，认为这是对普通美国民众的大规模监控。该项目的保密性极高，CBP甚至曾撤销指控，以阻止其细节在法庭上被披露。例如，卡车司机洛伦佐·古铁雷斯·卢戈 (Lorenzo Gutierrez Lugo) 因边境巡逻队的线报，在得克萨斯州因超速被拦下，随后因携带现金被搜查和逮捕，但后来被无罪释放。同样，亚历克斯·肖特 (Alek Schott) 在边境巡逻队标记了他边境附近的行程后，被得克萨斯州副警长拦下，车辆被搜查但一无所获。批评者认为，这些系统并不能增强社区安全。
+
+---
+
+## 4. 微软将祖克开源
+
+**原文标题**: Microsoft makes Zork open-source
+
+**原文链接**: [https://opensource.microsoft.com/blog/2025/11/20/preserving-code-that-shaped-generations-zork-i-ii-and-iii-go-open-source](https://opensource.microsoft.com/blog/2025/11/20/preserving-code-that-shaped-generations-zork-i-ii-and-iii-go-open-source)
+
+微软通过其开源项目办公室（OSPO）、Xbox 团队和动视公司宣布，Zork I、Zork II 和 Zork III 现已在 MIT 许可证下开源。此举旨在保护这一游戏历史的基石，让具有历史意义的代码可供学生、教师和开发者研究、学习和游玩。
+
+Zork 是一款革命性的文字冒险游戏，挑战玩家在没有图形或声音的情况下进行想象。其底层的 Z-Machine 引擎是一项开创性创新，通过在 Apple II 和 IBM PC 等各种计算机上解释故事文件，使游戏能够实现跨平台。
+
+为了这项保护工作，微软正与互联网档案馆的数字档案管理员 Jason Scott 合作，向 Zork I、II 和 III 现有的历史源代码存储库提交拉取请求。这些贡献增加了 MIT 许可证、源代码、随附文档和明确的归属。此次发布纯粹关注代码本身，有意排除了商业包装、营销材料和商标，以保持历史准确性。
+
+即使在今天，Zork 仍然可以游玩。虽然市面上仍有商业版本，但爱好者可以使用 ZILF（Z-Machine 解释器）以及 Frotz 或 Fic 等各种 Z-machine 运行器等现代工具在本地编译和运行这些游戏。
+
+微软欢迎对 Zork 开源存储库的贡献，鼓励那些有助于学习和保存而非现代化的、小型且有良好文档记录的改进。此举旨在致敬 Infocom 的原创者、互联网档案馆的尽职管理以及使此次开源发布成为可能的所有合作伙伴，确保 Zork 的遗产能够继续激励后人。
+
+---
+
+## 5. 专利局即将使劣质专利变得不可撤销。
+
+**原文标题**: The patent office is about to make bad patents untouchable
+
+**原文链接**: [https://www.eff.org/deeplinks/2025/11/patent-office-about-make-bad-patents-untouchable](https://www.eff.org/deeplinks/2025/11/patent-office-about-make-bad-patents-untouchable)
+
+美国专利商标局 (USPTO) 针对双方复审 (IPR) 提出了新规，电子前沿基金会 (EFF) 警告称，这些新规将严重限制公众挑战不当授予专利的能力。这些改变将使“专利蟑螂”受益，让不良专利几乎无法被撼动，从而使个人、小型公司和非营利组织无法负担得起针对滥诉的辩护。
+
+由专利审判和上诉委员会 (PTAB) 裁决的双方复审 (IPR) 是国会设立的一种比联邦法院更快、更经济、更具技术专业性的替代方案，旨在使虚假专利失效。它已成功撤销了诸如“播客专利”和“SportBrain”的数据上传专利等，从而保护了创新。
+
+拟议的新规将通过以下方式，严重削弱双方复审 (IPR)：
+1.  要求被告在寻求双方复审 (IPR) 时，必须放弃其在联邦法院挑战专利有效性的权利。
+2.  规定专利一旦在任何先前的有效性争议中幸存，即便论证不充分，也变得“不可挑战”，无论是否有新证据，都将阻止未来的双方复审。
+3.  如果预计地方法院案件进展更快，则完全阻止双方复审，迫使被告卷入代价高昂的联邦诉讼。
+
+USPTO 声称地方法院仍是一种选择的说法具有误导性，因为此类诉讼耗资数百万美元且耗时数年。EFF 认为，这些规则颠覆了国会设立双方复审 (IPR) 的初衷，错误地假设被告正在滥用该系统。EFF 敦促公众在12月2日前提交反对这些规则的意见，强调公众有权挑战不良专利以保护创新。
+
+---
+
+## 6. Linux上的游戏从未如此平易近人。
 
 **原文标题**: Gaming on Linux has never been more approachable
 
 **原文链接**: [https://www.theverge.com/tech/823337/switching-linux-gaming-desktop-cachyos](https://www.theverge.com/tech/823337/switching-linux-gaming-desktop-cachyos)
 
-Nathan Edwards，一位资深评测编辑，正将其主要游戏电脑从Windows 11切换到Linux，原因是对微软日益侵扰的功能感到沮恼，包括Recall、Copilot、持续推送Edge浏览器以及强制硬件升级。他认为Windows正变得越来越烦人，并且不会有所改善。
+资深评测编辑Nathan Edwards计划在他的游戏电脑上安装Linux，原因是他对Windows 11日益不满，并且Linux在游戏方面的可行性有所提高。他批评Windows 11的“骇人听闻的废话”，包括Copilot等侵入性功能、Edge浏览器强推Bing、OneDrive、Recall，以及微软普遍的AI集成趋势和强制硬件升级。
 
-尽管他有长达数十年的Windows使用历史，且之前使用Linux的经验大多充满挑战（例如，树莓派、WSL问题），Edwards仍认为现在是做出改变的最佳时机。Valve在Steam Deck上的努力显著改善了Linux上的游戏体验，使其成为一个可行的替代方案，在某些运行基于Fedora的发行版（如Bazzite）的掌机上表现出更好的性能。
+Edwards强调，Valve在Steam Deck方面的工作极大地推动了Linux游戏的发展，据报道，一些掌上设备在Bazzite等基于Linux的发行版上运行表现优于Windows。受同事积极体验和即将推出的Steam Machine的启发，他觉得现在是做出改变的绝佳时机。
 
-Edwards计划在他的高端台式电脑上安装CachyOS，这是一个基于Arch、针对现代游戏硬件优化的发行版，该电脑配备了AMD Ryzen 7 9800X3D和Nvidia GeForce RTX 4070 Super。他预计会遇到困难，因为他的Linux专业知识有限，且Linux在PC游戏领域的市场份额很小（约占Steam用户的3%），但他已准备好频繁查阅论坛和进行故障排除。鉴于有备用机器用于工作，他将这一学习过程视为对其自由时间的宝贵利用，并且好奇他究竟会成为“革命的先知”，还是最终回归Windows。
+尽管他之前的Linux经验有限且常常充满挑战（例如，在树莓派上运行Homebridge，使用WSL刷键盘固件），但Edwards仍致力于进行这次转换。他打算在他的台式机上安装CachyOS——一个基于Arch、针对现代游戏硬件优化的发行版。这台电脑配备AMD Ryzen 7 9800X3D处理器和Nvidia GeForce RTX 4070 Super显卡。
+
+他承认自己经验不足，并且Linux在PC游戏市场份额很小（约占Steam用户的3%），他预计会遇到潜在的困难，但鉴于他有其他工作用电脑，他认为这次尝试的“风险中等”。Edwards不确定自己会成为Linux的拥护者还是会回归Windows，但他已准备好去探索。
 
 ---
 
-## 9. 人工智能是集中资源和权力的幌子。
+## 7. AI是资源和权力集中的幌子。
 
 **原文标题**: AI is a front for consolidation of resources and power
 
 **原文链接**: [https://www.chrbutler.com/what-ai-is-really-for](https://www.chrbutler.com/what-ai-is-really-for)
 
-作者认为AI被严重过分炒作，可能形成一场灾难性的金融泡沫。借鉴他作为设计师和AI初创公司联合创始人的经验，他发现AI对于信息整合等小型、独立任务是有效的，但对于大型的端到端工作流程来说，它在很大程度上是低效且不切实际的，往往事倍功半。这与企业界普遍期望的全面、统一的变革相悖。
+作者作为一名深耕人工智能领域的设计师，认为这项技术被严重过度炒作，很可能正在形成一个灾难性的泡沫。他发现许多承诺的人工智能应用，特别是在设计和大规模工作流自动化方面，不切实际，并且效率低于传统方法。他承认人工智能对于信息整合等特定小型任务的实用性，但也指出，对人工智能的大量投资往往收效甚微，节省下来的时间只是被重新分配到其他与人工智能相关的工作上。
 
-他指出，当前的AI市场与过去的泡沫（如互联网泡沫、赛格威）如出一辙，但规模空前，投资集中在少数相互依赖的公司，这些公司缺乏与其估值相称的可行变现模式。除了经济考量之外，生成式AI还带来了严重的社会风险，使得更快、更精准的操控成为可能，从而侵蚀真相和信任。
+从财务角度看，人工智能市场投机性极强，集中在少数几家公司手中，缺乏可行的盈利模式来支撑其庞大的估值。这反映了过去的一些泡沫（如互联网泡沫、赛格威），但规模前所未有，使得不可避免的市场调整可能带来毁灭性的后果。除了经济担忧，生成式人工智能通过促进更快、更精确的真相操纵，对社会完整性构成严重威胁，进一步侵蚀了信任。
 
-作者质疑向亿万富翁投资者兜售的AGI（通用人工智能）承诺，认为它只是一种抽象的幻想，而非一个连贯的科学目标。他的核心理论是，AI泡沫实际上是整合土地、能源和水资源（即AI所需的大规模数据中心的关键资源）的幌子。这些基础设施项目赋予了私人公司巨大的政治和经济权力，创造了一种“私有主义”（Privatism），在这种主义下，对关键资源的控制权比AI本身的功能成功更为重要。
+作者提出一种“阴谋论”，认为人工智能泡沫的真正目的不仅仅是技术进步，也不是追求向亿万富翁投资者推销的抽象的通用人工智能（AGI）幻想。相反，他认为人工智能是土地、能源和水资源整合的幌子。人工智能所需的庞大数据中心需要广阔的土地、大量的能源和水，这导致了政治上强大的交易，将这些关键资源集中到私人手中。
 
-最终，作者担心支撑AI的基础设施将变得比AI本身更有价值，从而将巨大的权力从民选政府手中转移到少数私人实体，从根本上改变社会。
+这种“私有主义”，即私营公司在缺乏公共问责制的情况下建设“能源城市”，正在从内部侵蚀国家治理。作者担心，为人工智能提供动力的基础设施最终将比人工智能本身更有价值，使得控制这些基础设施的人对政策和资源的影响力超越民选政府，从根本上改变社会。无论人工智能的技术是否成功，这些权力与资源控制的转变已经真实发生，并且令人深感担忧。
 
 ---
 
-## 10. 用 GPT-5.1-Codex-Max 构建更多
+## 8. 红警2网页版
 
-**原文标题**: Building more with GPT-5.1-Codex-Max
+**原文标题**: Red Alert 2 in web browser
 
-**原文链接**: [https://openai.com/index/gpt-5-1-codex-max/](https://openai.com/index/gpt-5-1-codex-max/)
+**原文链接**: [https://chronodivide.com/](https://chronodivide.com/)
 
-无法访问文章链接。
+Chrono Divide 是一个玩家自制项目，旨在为网页浏览器完整重现经典即时战略游戏《红色警戒2》。最初只是一个实验项目，目前已推出一个可试玩的 Beta 版，无需插件即可直接在网页浏览器中访问，目标是实现与原版游戏相同的功能。
+
+该测试版目前支持功能完善的多人模式、所有原版地图，并提供涵盖 PC、手机和平板电脑的跨平台兼容性。它采用客户端-服务器模型，无需端口转发；其现代化的游戏客户端提供经典或现代操作选项，并具备录像回放功能。该项目也支持模组。
+
+最低系统要求包括英特尔凌动 Z3700+ CPU、4GB 内存、64位操作系统以及 1024x768 的显示分辨率。支持主流网页浏览器，但为了获得更好的性能，推荐使用 Chrome、Edge 和 Safari，而非 Firefox。
+
+Chrono Divide 完全依赖玩家捐款来支付基础设施费用并支持持续开发。玩家可以在 Discord 上加入社区，参与讨论并获取最新动态。该项目鼓励用户通过游玩可用的 Beta 版来体验《红色警戒2》的经典玩法。
+
+---
+
+## 9. 阿杜伊诺之死？
+
+**原文标题**: The Death of Arduino?
+
+**原文链接**: [https://www.linkedin.com/posts/adafruit_opensource-privacy-techpolicy-activity-7396903362237054976-r14H](https://www.linkedin.com/posts/adafruit_opensource-privacy-techpolicy-activity-7396903362237054976-r14H)
+
+Adafruit Industries 报告称，高通旗下的 Arduino 已悄然修订其服务条款（ToS）和隐私政策，这标志着其与最初的开放硬件精神的显著背离。
+
+新政策引入了对用户上传内容的不可撤销的永久许可、为人工智能功能进行的广泛监控、一项阻止用户识别潜在专利侵权的条款、用户名删除后的长期保留，以及将所有用户数据（包括未成年人）整合到高通的全球数据生态系统。最值得注意的是，未经 Arduino 明确许可，用户现在被禁止对平台进行逆向工程或理解。这一转变将 Arduino 从一个开放社区重新定义为一个专注于数据提取的、受到严格控制的企业服务。
+
+这一声明引发了社区的广泛批评，他们认为这是对学术研究、创客文化和开源原则的严重打击。许多评论者宣称“RIP Arduino”，并提倡使用 RP2040、ESP32 或带有 PlatformIO 的 VSC 等替代方案。批评者指责高通误解了开源社区，并做出了可能导致用户流失的“愚蠢举动”。
+
+然而，一项关键的澄清浮出水面：这些有争议的变更*仅适用于可选的 Arduino 云服务*，并且不影响核心的开源硬件和软件项目，该项目仍受 AGPL 和 GPL 3 许可证的约束。尽管如此，这一举动仍被视为新开源替代方案出现的契机。
+
+---
+
+## 10. 电线松动导致停电，并与弗朗西斯·斯科特·基大桥发生接触。
+
+**原文标题**: Loose wire leads to blackout, contact with Francis Scott Key bridge
+
+**原文链接**: [https://www.ntsb.gov:443/news/press-releases/Pages/NR20251118.aspx](https://www.ntsb.gov:443/news/press-releases/Pages/NR20251118.aspx)
+
+导致达利号集装箱船撞上巴尔的摩弗朗西斯·斯科特·基大桥的停电事故，已被查明是由于船上的一根松动电线所引起。此次事故涉及达利号断电，导致其与大桥结构发生接触。
 
 ---
 
@@ -165,18 +162,19 @@ Edwards计划在他的高端台式电脑上安装CachyOS，这是一个基于Arc
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 2 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 1 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 2 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
 | 3 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 4 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 5 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 6 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 7 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 8 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 9 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 10 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 11 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 12 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 13 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 14 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 15 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 4 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 5 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 6 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 7 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 8 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 9 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 10 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 11 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 12 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 13 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 14 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 15 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 16 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
