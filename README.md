@@ -1,117 +1,121 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-24.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-25.md)
 
-*最后自动更新时间: 2025-11-24 20:08:59*
-## 1. Fran Sans – 灵感源自旧金山轻轨显示屏的字体
+*最后自动更新时间: 2025-11-25 20:14:00*
+## 1. Pebble 手表软件现已开源
 
-**原文标题**: Fran Sans – font inspired by San Francisco light rail displays
+**原文标题**: Pebble Watch software is now open source
 
-**原文链接**: [https://emilysneddon.com/fran-sans-essay](https://emilysneddon.com/fran-sans-essay)
+**原文链接**: [https://ericmigi.com/blog/pebble-watch-software-is-now-100percent-open-source](https://ericmigi.com/blog/pebble-watch-software-is-now-100percent-open-source)
 
-Fran Sans 是一款由 Emily Sneddon 设计的新型显示字体，其灵感来源于旧金山 Muni Breda 轻轨列车上独特的 LCD 面板目的地显示器。Sneddon 被它们机械化却又富有个性的特点所吸引，这些特点由 3x5 网格上的几何模块构成，体现了旧金山随处可见的实用性与魅力的独特融合。
+文章宣布Pebble手表软件现已100%开源，相较于之前的95%有了显著提升，并包含了新的Pebble移动应用程序的源代码。这项由Core Devices主导的举措，旨在确保Pebble手表在2025年1月重新发布后的长期可持续性。
 
-她的研究包括参观旧金山交通局（SFMTA）电子维修店，技术员 Armando Lumbad 在那里演示了列车操作员如何使用三位数字代码来激活目的地显示。她发现这些显示器是 Trans-Lite, Inc. 公司在 1999 年由工程师 Gary Wallberg 设计的。Wallberg 在设计时注重“足够性”，采用了固定分段，由此创造出虽不完美但充满魅力的字母形式，并省略了 Q 和 X 等不常用字符。
+为此，Core Devices依靠自有资金，并专注于盈利能力以继续生产手表，使Pebble Time 2等新型号更易于维修，采用螺丝固定式后盖方便更换电池。他们还发布了Pebble 2 Duo的电气和机械设计文件。
 
-这种工程驱动的简洁性启发了 Sneddon 创造 Fran Sans。她与 Dave Foster 合作，将模块化设计转化为数字字体，开发了三种样式（Solid、Tile 和 Panel）的大写字母、数字和核心标点符号。虽然有些字形并非完美符合 3x5 逻辑，Sneddon 仍保留了原设计的“非正统之处”，例如 N/零中粗斜线和 Z/7 中细斜线，她认为这些特点定义了其独特的字符。
+软件可持续性至关重要：PebbleOS自一月起已100%开源。适用于iOS和Android的新型跨平台Pebble移动配套应用现也已在GitHub上100%开源，解决了过去用户缺乏官方应用的问题。开发者工具和SDK已针对现代系统进行了更新。Pebble应用商店正在去中心化，支持多“源”，允许任何人创建应用商店。Core Devices已推出自己的源，并将内容备份到Archive.org，确保可靠性。尽管存在一些非开源组件（例如心率传感器、Memfault），但核心软件堆栈仍保持开源，且这些组件是可选的。
 
-进一步的灵感来源于 Bell Shakespeare 多功能的 Hotspur 字体和 Letterform Archive 的模块化排版范例。
-
-值得注意的是，这些富有启发性的 Breda 显示器将在 2025 年底前逐步淘汰，取而代之的是现代 LED 设备。Sneddon 希望 Fran Sans 能培养人们对赋予我们城市和生活特色的“不完美”的欣赏，并倡导重视魅力而非仅仅追求效率。
+Pebble Time 2正处于设计验证测试（DVT）阶段。少量产品可能会在1月下旬的中国农历新年前发货，但大部分预计将在3月/4月到货。将提供四种颜色选项，选购邮件将在几周内发出。新一期“Tick Talk”节目提供了PT2的演示。
 
 ---
 
-## 2. 我爸爸去世后，我们发现了情书。
+## 2. 克劳德 Opus 4.5
 
-**原文标题**: After my dad died, we found the love letters
+**原文标题**: Claude Opus 4.5
 
-**原文链接**: [https://www.jenn.site/after-my-dad-died-we-found-the-love-letters/](https://www.jenn.site/after-my-dad-died-we-found-the-love-letters/)
+**原文链接**: [https://www.anthropic.com/news/claude-opus-4-5](https://www.anthropic.com/news/claude-opus-4-5)
 
-父亲去世后，叙述者和家人发现了一些情书，揭示了他秘密的一生。她的父母是包办婚姻，并不幸福。父亲经常不在家，履行职责却显得毫无乐趣。叙述者与他有着疏远的联系，认为他是一个敏感的人，被社会期望所困，无法获得幸福。
+Anthropic 于 2025 年 11 月 24 日发布了 Claude Opus 4.5，称其为全球在编码、智能体和计算机使用方面表现最佳的模型，并在深度研究以及处理幻灯片/电子表格方面有显著提升。它在真实世界的软件工程基准测试中取得了最先进的成果，超越了其前身 Sonnet 4.5 和竞争对手，通常用显著更少的 tokens。
 
-然而，叙述者很快见到了爱德华，她父亲的爱人。爱德华分享了他们三年的恋情故事，描述了一段深厚的爱，促使他为了她父亲搬到加拿大。他们计划结婚，父亲打算离婚并与爱德华公开生活。照片显示了一个笑容灿烂、充满喜悦的男人，与叙述者所认识的“阴沉悲伤的男人”判若两人。
+Opus 4.5 可通过 Anthropic 的应用程序、API 和主要云平台访问，目前定价为每百万 tokens $5/$25，使其先进功能得以广泛应用。早期测试者和客户一致指出它能够处理模糊性、复杂错误和长周期任务，赞扬其前沿的任务规划、工具调用和高质量代码生成能力。它在多种应用中表现出色，从自我改进的 AI 智能体和代码重构，到长上下文故事创作和 Excel 自动化。值得注意的是，它在一次高难度工程考试中得分高于任何人类考生。
 
-叙述者得知父亲隐瞒性向近四十年，从大学时期就知道自己是同性恋。这重新诠释了多年前她向他出柜的经历，当时他出人意料地给予支持，鼓励她无论社会规范如何都要追求幸福。爱德华的深切悲痛显而易见，他来告别父亲的骨灰时，布置了一个私人祭坛，哭得比父亲的亲生家人还要悲伤。
+Opus 4.5 还展示了创造性解决问题的能力，有时能找到超出基准预期的、合理且意想不到的解决方案。它是 Anthropic 对齐最稳健的模型，表现出对提示注入攻击的强大抵抗力。
 
-叙述者承认父亲将妻子作为抵挡审视的“怯懦”行为，但也理解他在生命的最后三年里终于获得的巨大喜悦。然而，她的母亲表达了怨恨，觉得他们两人的生命都被浪费了。这个故事对隐藏的身份、牺牲以及苦乐参半地发现父母真实而未曾实现自我的过程，进行了深刻的反映。
-
----
-
-## 3. 美国法院文件指控Meta掩盖了社交媒体危害的“因果”证据。
-
-**原文标题**: Meta buried 'causal' evidence of social media harm, US court filings allege
-
-**原文链接**: [https://www.reuters.com/sustainability/boards-policy-regulation/meta-buried-causal-evidence-social-media-harm-us-court-filings-allege-2025-11-23/](https://www.reuters.com/sustainability/boards-policy-regulation/meta-buried-causal-evidence-social-media-harm-us-court-filings-allege-2025-11-23/)
-
-无法访问文章链接。
+更新后的 Claude 开发者平台引入了一个新的“投入参数”，用于平衡成本/时间与能力，同时增强了多智能体系统的上下文管理。产品更新包括 Claude Code 的改进版规划模式和桌面应用程序、消费者应用程序中的持续长对话功能，以及扩展了 Claude 在 Chrome 和 Excel 上的访问权限，并提高了 Opus 4.5 用户的用量限制。
 
 ---
 
-## 4. 厄拉科斯巨虫卷土重来：超300个NPM包被感染
+## 3. 沙虫归来：逾300个NPM包被感染
 
 **原文标题**: Shai-Hulud Returns: Over 300 NPM Packages Infected
 
 **原文链接**: [https://helixguard.ai/blog/malicious-sha1hulud-2025-11-24](https://helixguard.ai/blog/malicious-sha1hulud-2025-11-24)
 
-HelixGuard的开源安全研究人员揭露了一次重大的供应链攻击，该攻击被命名为“Shai-Hulud”，已感染了npm注册表中300多个软件包。这种广泛的感染对依赖这些受感染依赖项的开发者和项目构成了严重威胁。
+HelixGuard，一家开源安全研究公司，报告了一起影响Node.js包管理器（NPM）生态系统中超过300个软件包的重大供应链攻击。
 
-“Shai-Hulud”行动似乎利用恶意代码注入，旨在窃取敏感信息、注入更多恶意软件或在受感染系统上建立后门。这种对开源组件的大规模破坏凸显了软件供应链中固有的关键漏洞。
+这起被不祥地命名为“沙虫归来”（Shai-Hulud Returns）的事件，暗示着一个重大且可能反复出现的威胁，或一次深层隐藏的入侵，如同《沙丘》传说中巨大的沙虫。这次感染表明恶意代码已被植入到这些广泛使用的软件组件中。
 
-HelixGuard的调查强调，开发者迫切需要审计其项目依赖项，在安装新软件包时保持谨慎，并实施强大的安全实践以降低风险。该研究强调，需要持续保持警惕，以防范针对现代软件开发基础元素的复杂攻击。
-
----
-
-## 5. 垄断互联网服务提供商拒绝修复上游基础设施
-
-**原文标题**: A monopoly ISP refuses to fix upstream infrastructure
-
-**原文链接**: [https://sacbear.com/xfinity-wont-fix-internet/](https://sacbear.com/xfinity-wont-fix-internet/)
-
-一位萨克拉门托居民，以“萨克拉门托之熊”的笔名发表文章，详细描述了其Xfinity互联网服务长期存在的问题，该问题自2024年6月以来表现为持续且可预测的网络中断。据报道，这家垄断性的互联网服务提供商拒绝修复或调查此问题。
-
-该用户每天经历6-7次网络中断，每次中断精确持续125秒。在过去的17个月里，这已累计超过3300次事件和超过117小时的累计停机时间。至关重要的是，一位邻居也在同一时间经历着相同的网络中断，这表明问题出在普遍的基础设施上，而非个别设备故障。
-
-大量证据支持这些说法：
-*   **在线时间监控（OPNSense dpinger日志）：** 显示每次中断的精确持续时间为123-127秒。分钟标记集中在:29和:44，加上中午、凌晨3点和深夜的峰值时间，强烈表明这些中断是由基于cron的自动化调度触发的。
-*   **调制解调器DOCSIS日志：** 揭示了“UCD无效或信道不可用”和“SYNC时序同步失败”等关键错误，指出上游电缆基础设施问题是根本原因。
-
-尽管有这些关于有计划的网络层面故障的有力证据，Xfinity据称未能升级该问题或启动适当的调查。
+这对依赖这些组件的开发者和应用程序构成了巨大风险，可能导致数据泄露、后门、凭据窃取，或在开发和生产环境中进一步部署恶意软件。HelixGuard的发现强调了确保开源供应链安全的持续挑战，因为一个软件包的受损可能影响到众多下游项目。NPM用户被敦促保持警惕，仔细审查他们的依赖项，并等待HelixGuard提供的详细修复指导。
 
 ---
 
-## 6. 法国威胁GrapheneOS，若拒绝提供后门，将逮捕其人员或查封其服务器。
+## 4. 断电的固态硬盘会缓慢丢失数据
+
+**原文标题**: Unpowered SSDs slowly lose data
+
+**原文链接**: [https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/](https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/)
+
+未通电的固态硬盘（SSD）在长期闲置后，由于其NAND闪存单元中的电荷逐渐消散，容易导致数据丢失。与使用磁性存储的硬盘不同，SSD通过电压水平存储数据，而未通电时电压会衰减，从而导致信息损坏或丢失。
+
+数据保留寿命因NAND类型而异：QLC NAND（大多数消费级SSD中常见）在未通电状态下可能只能保留数据1-2年，而TLC则可达3年。更昂贵的MLC和SLC NAND则分别提供5年和10年的保留期。因此，SSD不适合用于“冷存储”（长期未通电归档），传统硬盘、磁带或M-Disc是更合适的替代方案。
+
+然而，文章澄清，这种担忧主要针对将数据长期存储在未通电硬盘上的企业用户、发烧友或独立创业者。大多数普通用户，他们的SSD在PC中会定期通电，在更换硬盘之前不太可能遇到这个问题。
+
+无论存储介质如何，最关键的建议是实施一个强大的备份策略。遵循3-2-1备份规则（数据三份，至少存储在两种不同介质上，其中一份异地存放）等原则，能够让人安心，并防范硬盘故障和数据丢失，包括未通电SSD的数据保留限制。
+
+---
+
+## 5. 克劳德高级工具使用
+
+**原文标题**: Claude Advanced Tool Use
+
+**原文链接**: [https://www.anthropic.com/engineering/advanced-tool-use](https://www.anthropic.com/engineering/advanced-tool-use)
+
+Anthropic 针对 Claude 推出了三项高级功能，旨在增强其 AI 代理能力：工具搜索工具、程序化工具调用和工具使用示例。这些创新旨在克服复杂代理工作流中上下文窗口饱和、推理开销大以及工具使用不精确等局限性。
+
+**工具搜索工具**允许 Claude 访问庞大的工具库，而不会消耗过多的上下文。它无需预先加载所有工具定义（这在多服务器设置中很容易超过 50,000 个 token），而是按需发现并加载相关工具。这显著减少了初始 token 消耗（高达 85%），提高了工具选择的准确性，并为核心任务保留了上下文。
+
+**程序化工具调用 (PTC)** 解决了多步骤工作流中的上下文污染和高推理成本问题。传统上，每次工具调用都需要进行一次推理，所有中间结果都会累积在 Claude 的上下文中。借助 PTC，Claude 可以编写 Python 代码，在沙盒执行环境中编排工具调用。中间数据处理发生在 Claude 的上下文之外，只有最终的、合成的结果才会返回给模型。这显著降低了 token 使用量（例如，在研究任务中可减少 37%），通过最小化推理次数减少了延迟，并通过明确的基于代码的控制流提高了准确性，从而能够高效处理数千行电子表格等任务。
+
+**工具使用示例**通过提供一个通用标准来演示正确的工具使用模式，补充了模式定义，包括可选参数和 API 约定，这些是仅凭 JSON 模式无法传达的。
+
+总体而言，这些功能使 Claude 能够构建更具可扩展性、更高效、更准确的 AI 代理，从而能够跨无限工具库管理复杂任务。
+
+---
+
+## 6. 法国威胁GrapheneOS，因拒绝后门将逮捕或查封其服务器。
 
 **原文标题**: France threatens GrapheneOS with arrests / server seizure for refusing backdoors
 
 **原文链接**: [https://mamot.fr/@LaQuadrature/115581775965025042](https://mamot.fr/@LaQuadrature/115581775965025042)
 
-所提供的内容是法国数字权利倡导组织 La Quadrature du Net 的一条 Mastodon 帖子。
+提供的內容是來自法國數字權利倡導組織“La Quadrature du Net”的一篇長毛象（Mastodon）帖子。該帖子簡要提及他們引用了“昨天《巴黎人報》的兩篇文章，今天接著……”
 
-该帖子写道：“Deux articles du Parisien hier, suivis aujourd'hui…”（《巴黎人报》昨天有两篇文章，今天接着……）。这表明正在发生的新闻进展，可能与数字权利或政府行动有关，并且 La Quadrature du Net 正在对此进行监测和讨论。
+關鍵是，所提供的內容不包含任何信息或證據來支持標題中關於法國威脅GrapheneOS，稱如果拒絕後門將面臨逮捕或服務器扣押的說法。
 
-然而，所提供的片段**不包含任何关于** GrapheneOS、逮捕威胁、服务器查封或拒绝后门的信息。文本的其余部分是一段技术说明，内容关于启用 JavaScript 以使用 Mastodon 网络应用程序或建议使用原生应用程序。
+帖子本身只提及《巴黎人報》中未具體的文章，所給文本中沒有提到GrapheneOS、法國政府的威脅、後門、逮捕或服務器扣押。
 
-因此，仅凭所提供的文本，无法证实或详细阐述标题中提及的针对 GrapheneOS 的具体指控。该内容仅指出《巴黎人报》的近期报道以及 La Quadrature du Net 的持续讨论。
+額外提供的中文文本是一條關於啟用JavaScript以使用網絡應用程序或選擇特定平台應用程序的通用長毛象消息，與所述主題無關。
+
+實質上，所提供的文章內容不包含任何關於GrapheneOS、法國威脅、後門、逮捕或服務器扣押的細節。
 
 ---
 
-## 7. X的新账号来源地功能揭示许多“美国”账号实为境外运营。
+## 7. X新的国家来源地功能揭示，许多“美国”账户实为境外运营
 
 **原文标题**: X's new country-of-origin feature reveals many 'US' accounts to be foreign-run
 
 **原文链接**: [https://www.hindustantimes.com/world-news/us-news/xs-new-country-of-origin-feature-shakes-maga-and-democrat-circles-as-many-us-accounts-revealed-to-be-foreignrun-101763857104296.html](https://www.hindustantimes.com/world-news/us-news/xs-new-country-of-origin-feature-shakes-maga-and-democrat-circles-as-many-us-accounts-revealed-to-be-foreignrun-101763857104296.html)
 
-X，前身为推特，推出了一项新的“原籍国”功能，可显示账号的运营地点，在MAGA和民主党在线社群中都引起了轰动。该功能通过点击个人资料上的“加入时间”标签即可找到，它揭示了许多自称总部设在美国并影响美国政治话语权的账号，实际上是由外国人运营的。
+X（前身为推特）推出了一项新的“原籍国”功能，允许用户通过其“加入时间”选项卡查看某个账号的运营地点。这一进展在MAGA和民主党在线社区中引起了轩然大波，因为许多积极参与美国政治讨论并自称美国人的账号被揭示为从国外运营。
 
-例如，几个著名的与MAGA结盟的账号：拥有39.2万粉丝的“MAGA NATION”位于东欧；拥有1.5万粉丝的“Dark Maga”在泰国；拥有5.1万粉丝的“MAGA Scope”在尼日利亚；拥有6.7万粉丝的“America First”在孟加拉国。
+值得注意的例子包括与MAGA结盟的账号，如“MAGA NATION”（东欧）、“MAGA Scope”（尼日利亚）和“America First”（孟加拉国）。在民主党方面，自称“骄傲的民主党人”的“Ron Smith”被追踪到肯尼亚，而反特朗普页面“Republicans Against Trump”最初被发现位于奥地利（尽管现在据报使用VPN）。一个亲以色列账号“Mariana Times”也被链接到印度。
 
-这种趋势并非局限于某一政治阵营。一个名为“Ron Smith”的账号，自称是“自豪的民主党人”和“专业的MAGA猎手”（5.2万粉丝），则是在肯尼亚运营。拥有97.8万粉丝的反唐纳德·特朗普页面“Republicans against Trump”，据称最初位于奥地利，尽管现在显示美国所在地，但X指出VPN可以模糊真实来源。另一个发布亲以色列内容的账号“Mariana Times”（7.8万粉丝），被发现位于印度。
-
-这些披露引起了美国各界人士的强烈反响。国会议员安娜·保利娜·卢娜强调“外国骗子”正在煽动内斗，而亚历克西斯·威尔金斯则表示“敌人就在门外”，旨在破坏美国的稳定。这一功能引发了关于外国影响力及政治叙事真实性的广泛网络辩论。
+这些披露引发了“外国骗子”和“外国反对派”试图影响并破坏美国政治稳定的指控。众议员安娜·保利娜·卢娜和亚历克西斯·威尔金斯等人士表达了对外部势力散布分裂的担忧，并强调了外国运营账号以及使用VPN来掩盖真实位置所带来的挑战。
 
 ---
 
-## 8. 艾奥瓦城公交免费了。交通顺畅了，空气也清新了。
+## 8. 爱荷华市公交免费了。交通顺畅了，空气也清新了。
 
 **原文标题**: Iowa City made its buses free. Traffic cleared, and so did the air
 
@@ -121,33 +125,27 @@ X，前身为推特，推出了一项新的“原籍国”功能，可显示账�
 
 ---
 
-## 9. macOS 原生安全隔区支持的 SSH 密钥
+## 9. HN 展示：我构建了一个交互式HN模拟器
 
-**原文标题**: Native Secure Enclave backed SSH keys on macOS
+**原文标题**: Show HN: I built an interactive HN Simulator
 
-**原文链接**: [https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb4acf](https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb4acf)
+**原文链接**: [https://news.ysimulator.run/news](https://news.ysimulator.run/news)
 
-文章介绍了macOS中一项新发现的原生功能，用于生成和使用由安全隔区（Secure Enclave）支持的SSH密钥，有效取代了第三方工具。这一功能通过`/usr/lib/ssh-keychain.dylib`实现，该文件现在充当一个`SecurityKeyProvider`——这是一种通常用于FIDO2设备的机制。
-
-密钥生成涉及`sc_auth`命令。要生成受生物识别保护的不可导出密钥，可运行命令`sc_auth create-ctk-identity -l ssh -k p-256-ne -t bio`。可以使用`sc_auth list-ctk-identities`列出密钥，使用`sc_auth delete-ctk-identity`删除密钥。
-
-使用SSH时，生成的“私钥”仅是对安全隔区凭证的一个引用。可以使用`ssh-keygen -w /usr/lib/ssh-keychain.dylib -K -N ""`“下载”此引用。为了进行身份验证，`ssh`命令需要指定`SecurityKeyProvider=/usr/lib/ssh-keychain.dylib`。虽然可能会出现PIN码提示，但如果使用生物识别技术，输入空字符串即可。
-
-此外，密钥也可以直接通过`ssh-add -K -S /usr/lib/ssh-keychain.dylib`添加到`ssh-agent`中。为了简化使用，在您的shell配置文件中设置`export SSH_SK_PROVIDER=/usr/lib/ssh-keychain.dylib`，将使该提供程序成为`ssh`、`ssh-add`和`ssh-keygen`的默认提供程序。
-
-文章还描述了一种“可导出”的密钥变体（使用`-k p-256`参数），其中私钥由安全隔区加密以用于备份。虽然不如不可导出密钥安全，但可以通过`sc_auth export-ctk-identity`导出并在其他设备上导入。
+这篇“Show HN”公告介绍了一个交互式Hacker News模拟器。作者构建了一个旨在模拟热门Hacker News平台的工具，更多详情可另行查阅。
 
 ---
 
-## 10. Forty.News – 每日新闻，却有四十年滞后
+## 10. PS5现价低于64GB DDR5内存。内存因短缺飙升至600美元。
 
-**原文标题**: Show HN: Forty.News – Daily news, but on a 40-year delay
+**原文标题**: PS5 now costs less than 64GB of DDR5 memory. RAM jumps to $600 due to shortage
 
-**原文链接**: [https://forty.news](https://forty.news)
+**原文链接**: [https://www.tomshardware.com/pc-components/ddr5/64gb-of-ddr5-memory-now-costs-more-than-an-entire-ps5-even-after-a-discount-trident-z5-neo-kit-jumps-to-usd600-due-to-dram-shortage-and-its-expected-to-get-worse-into-2026](https://www.tomshardware.com/pc-components/ddr5/64gb-of-ddr5-memory-now-costs-more-than-an-entire-ps5-even-after-a-discount-trident-z5-neo-kit-jumps-to-usd600-due-to-dram-shortage-and-its-expected-to-get-worse-into-2026)
 
-Forty.News 是一个创新的在线新闻服务，其独特之处在于它以长达40年的延迟发布每日新闻。该平台作为一个“Show HN”项目推出，为用户提供独特的历史视角：它不提供当天的时事，而是呈现四十年前发生的头条新闻和故事。
+人工智能热潮正导致内存和存储价格空前飙升，使得DDR5内存等常见组件对终端消费者来说变得极其昂贵。一套64GB的芝奇幻锋戟Z5 Neo 6000 MT/s DDR5内存目前标价599.99美元，比几个月前205-220美元的价格大幅上涨——自10月底以来上涨了近190%。这使得这款内存套件比PS5 Slim或Xbox Series S更贵，几乎与PS5 Pro一样昂贵。
 
-其核心理念是每天提供一份来自过去的“新闻”，让读者能够像亲身经历当前事件一样地参与历史事件。这种方法提供了一个引人入胜的视角，通过它我们可以观察全球事务、科技、文化和社会关注点随时间的演变。通过将历史呈现为当代新闻，Forty.News 鼓励人们反思过去的发展如何塑造了现在，并提供了一种独特的方式来分析长期趋势和某些问题的持久性。它旨在就新闻的持续循环和时间的流逝提供一个全新的视角。
+此前，类似的64GB套件价格曾低至140美元，凸显了惊人的通货膨胀。“AI需求激增”正在优先满足AI客户的需求，导致广泛的供应问题。除了内存，硬盘也正在消失，大容量硬盘的订单已排到两年后，这促使人们抢购QLC固态硬盘。甚至microSD卡也被考虑作为硬盘替代品，分销商正在将内存与主板捆绑销售以应对。Valve即将推出的Steam Machine预计也将涨价。
+
+专家预测，随着科技巨头追求通用人工智能（AGI），DRAM和NAND的供应紧张将持续到2026年。尽管目前价格处于令人担忧的水平，但内存市场历来经历“过山车”式的周期，这表明到2027年DDR5内存可能再次出现廉价。
 
 ---
 
@@ -155,22 +153,23 @@ Forty.News 是一个创新的在线新闻服务，其独特之处在于它以长
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 1 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
 | 2 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 3 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 4 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 5 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 6 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 7 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 8 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 9 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 10 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 11 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 12 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 13 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 14 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 15 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 16 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 17 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 18 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 19 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 3 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 4 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 5 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 6 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 7 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 8 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 9 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 10 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 11 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 12 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 13 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 14 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 15 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 16 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 17 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 18 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 19 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 20 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
