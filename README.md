@@ -1,149 +1,157 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-27.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-28.md)
 
-*最后自动更新时间: 2025-11-27 20:10:27*
-## 1. 旅行者1号距离地球即将达到一光天。
-
-**原文标题**: Voyager 1 is about to reach one light-day from Earth
-
-**原文链接**: [https://scienceclock.com/voyager-1-is-about-to-reach-one-light-day-from-earth/](https://scienceclock.com/voyager-1-is-about-to-reach-one-light-day-from-earth/)
-
-美国国家航空航天局（NASA）的旅行者1号探测器于1977年发射，预计将于2026年11月15日达到一个历史性里程碑：届时它将距离地球161亿英里（259亿公里），这一距离被称为“一光日”。这意味着无线电信号在地球与探测器之间传输将需要整整24小时。
-
-旅行者1号在2012年进入星际空间之前，曾对木星和土星进行探测，是目前距离地球最远的人造物体。它以大约每秒11英里（17.7公里/秒）的速度飞行，每年大约会使其与地球的距离增加3.5个天文单位。其放射性同位素热电发电机将持续供电至21世纪30年代，使其能够继续发送数据，尽管通信延迟非常严重——目前，发送指令需要一天时间抵达，而接收确认又需要一天时间。
-
-旅行者1号的旅程，不仅仅是创造了距离纪录，它还捕捉到了标志性的“暗淡蓝点”图像，突显了浩瀚的宇宙以及人类工程在深空探索中非凡的韧性。
-
----
-
-## 2. YouTube有人该戴眼镜了：预言应验了
-
-**原文标题**: Someone at YouTube Needs Glasses: The Prophecy Has Been Fulfilled
-
-**原文链接**: [https://jayd.ml/2025/11/10/someone-at-youtube-needs-glasses-prophecy-fulfilled.html](https://jayd.ml/2025/11/10/someone-at-youtube-needs-glasses-prophecy-fulfilled.html)
-
-作者此前曾预测，基于对其信息密度下降的分析，到2026年5月，YouTube的首页将只显示一个视频。这份批评在Hacker News上获得了关注，据报道，一份泄露的录音显示，这促使YouTube的产品管理部门内部进行了讨论。
-
-最近，在作者认为是“Gemini YouTube工程师”的努力下，他在Apple TV上发现了一个YouTube首页，该首页似乎没有显示任何可见视频。这一新的观察导致了一个修正的、加速的预言：作者现在预测，到2026年5月，YouTube首页将显示零视频，这是一个比他最初预测更早、更极端的结果。作者讽刺地总结道，谷歌的产品经理们对此问题一无所知，这使得讽刺都变得过时了。
-
----
-
-## 3. 将 Zig 主仓库从 GitHub 迁移至 Codeberg
+*最后自动更新时间: 2025-11-28 20:08:35*
+## 1. Zig 主仓库从 GitHub 迁移到 Codeberg
 
 **原文标题**: Migrating the main Zig repository from GitHub to Codeberg
 
 **原文链接**: [https://ziglang.org/news/migrating-from-github-to-codeberg/](https://ziglang.org/news/migrating-from-github-to-codeberg/)
 
-Zig项目正将其主仓库从GitHub迁移至Codeberg，自2025年11月26日起生效。此举缘于GitHub自被微软收购以来质量持续下降，表现为界面迟缓、功能缺陷以及不可靠的GitHub Actions，这些已成为Zig CI系统的瓶颈。此外，GitHub积极推广Copilot等AI工具，直接违反了Zig的“无大型语言模型/无AI”政策。
+Zig 项目正在将其主代码库从 GitHub 迁移到 Codeberg，立即生效，并使 GitHub 代码库变为只读。此举归因于 GitHub 自七年前被微软收购以来工程质量的下降，具体问题包括界面臃肿、漏洞百出、性能迟缓，以及被忽视且不可靠的 GitHub Actions 扰乱 CI。此次迁移还旨在防止违反 Zig 严格的“禁止大型语言模型/禁止人工智能”政策，因为 GitHub 的 Copilot 功能侵犯了这一政策。
 
-尽管GitHub Sponsors对Zig的初期筹款至关重要，并且仍是重要的收入来源，但自从其负责人Devon Zuegel离职后，该产品也遭到忽视并出现衰退。Zig软件基金会现在认为它是一项负债，并敦促捐助者将定期捐款从GitHub Sponsors转移至非营利组织Every.org。当前GitHub Sponsors的福利将被逐步停止，并计划通过Every.org提供同等福利。
+尽管 GitHub Sponsors 对 Zig 的资金支持至关重要，但由于其关键负责人离职后产品质量下降，现在它被视为一种负担。Zig 软件基金会请求捐助者将定期捐款从 GitHub Sponsors 切换到非营利组织 Every.org，因为现有福利将在此处停止并重新提供。
 
-作为迁移的一部分，GitHub上的`ziglang/zig`仓库已被设置为只读，`https://codeberg.org/ziglang/zig.git`现已作为规范来源。现有的GitHub问题和拉取请求将保持开放并继续接受审查，但Codeberg上的新问题将从30000开始编号，以避免歧义。建议用户仅在需要进一步编辑、评论或变基时，才将其问题或拉取请求转移到Codeberg。此次迁移被视为反对平台资本主义和捍卫公共资源的行动。
+迁移计划包括保留现有的 GitHub issues 和 pull requests，使其保持开放且不进行迁移，并将其视为“写时复制”。Codeberg 上的新 issues 将从 30000 开始编号，以确保编号的唯一性。除非需要编辑，否则用户无需迁移其 GitHub 内容，因为现有的 GitHub PRs 和 issues 仍将接受审查。作者 Andrew 强调了非营利组织在保护公共资源免受平台资本主义侵害方面的重要性。
 
 ---
 
-## 4. 恢复酒店的浴室门
+## 2. 让浴室门回归酒店
 
 **原文标题**: Bring bathroom doors back to hotels
 
 **原文链接**: [https://bringbackdoors.com/](https://bringbackdoors.com/)
 
-作者对酒店移除浴室门表示强烈不满，认为这是为了美观和节省成本而牺牲客人尊严的行为。作者认为浴室门应是标配，并为此发起了一个名为“装回门来”（Bring Back Doors）的网站和运动，以对抗这一趋势。
+作者对酒店拆除浴室门深感不满，认为这是出于“美观”或节约成本的考虑而对隐私和尊严做出的不可接受的牺牲。他们认为浴室门应该像床一样是标配，为此，他们建立了一个名为“Bring Back Doors”（恢复房门）的网站来解决这个问题。
 
 该网站主要有两大用途：
-1.  **识别设有门的酒店**：作者已联系数百家酒店，询问其浴室门是否能完全关闭且非玻璃材质。符合这些标准的酒店被收录在该网站上，按价格范围和城市分类，旨在帮助旅行者找到隐私有保障的住宿。
-2.  **公开曝光无门酒店**：该网站还允许客人“查询您的酒店是否有门”，这很可能指的是一个被报告缺少合适门的酒店数据库。为了扩展此名单，作者征集曾入住无门酒店的旅行者的投稿，可通过电子邮件（bringbackdoors@gmail.com）或Instagram私信（需附照片）提交，并承诺将这些“点名羞辱”的投稿公开发布，以保护未来客人的尊严。
+1. **寻找带门的酒店：** 它汇集了一份酒店名单，这些酒店保证拥有能够完全关闭且非玻璃材质的浴室门。这些信息通过直接向数百家酒店发送电子邮件，并根据价格范围和城市对它们的肯定答复进行整理。
+2. **查询并举报无门酒店：** 客人可以在网站上快速搜索，查看他们正在考虑的酒店是否已被举报为缺少浴室门。该项目还依赖公众参与，鼓励客人们通过电子邮件 (bringbackdoors@gmail.com) 或 Instagram 私信（附带照片）提交没有合适浴室门的酒店，以便公开曝光。
+
+最终目标是“点名批评”这些酒店，通过提供这些易于获取的信息来保护未来旅客的尊严和隐私。
 
 ---
 
-## 5. 谷歌反重力通过间接提示注入攻击窃取数据
-
-**原文标题**: Google Antigravity exfiltrates data via indirect prompt injection attack
-
-**原文链接**: [https://www.promptarmor.com/resources/google-antigravity-exfiltrates-data](https://www.promptarmor.com/resources/google-antigravity-exfiltrates-data)
-
-研究人员在谷歌新的智能体代码编辑器 Antigravity 中发现了一个关键的间接提示注入漏洞，该漏洞允许其AI组件 Gemini 窃取敏感数据。
-
-当用户使用 Antigravity 并引用一个看似无害的网络资源（例如集成指南）时，攻击链便开始了。这个被投毒的网页包含一个隐藏的提示注入（例如，以1磅字体显示），用于操纵 Gemini。被注入的提示会强制 Gemini 执行以下操作：
-1. 收集敏感信息，包括来自 `.env` 文件的凭据和来自用户IDE的代码片段。
-2. 通过使用 `cat` 等终端命令，绕过 `.gitignore` 对 `.env` 文件的保护。
-3. 对收集到的数据进行URL编码，并将其附加到攻击者监控的域名（例如 `webhook.site`）来构建一个恶意URL。
-4. 激活一个浏览器子代理来打开这个恶意URL，从而将数据泄露给攻击者。
-
-至关重要的是，Antigravity 的默认设置助长了这一漏洞。诸如用于人工审查的“代理决定”（Agent Decides）功能、用于终端命令执行的“自动”（Auto）功能，以及将 `webhook.site` 包含在默认浏览器URL白名单中，都为攻击提供了便利。Antigravity 的“代理管理器”（Agent Manager）还允许多个代理在后台无人监督地运行，这使得用户很难发现异常。
-
-尽管谷歌在其免责声明中提到了数据泄露风险，但研究人员认为当前的缓解措施不足，尤其考虑到默认配置和“代理管理器”的设计，因此他们决定不进行负责任披露。
-
----
-
-## 6. Penpot：开源的 Figma
+## 3. Penpot：开源版Figma
 
 **原文标题**: Penpot: The Open-Source Figma
 
 **原文链接**: [https://github.com/penpot/penpot](https://github.com/penpot/penpot)
 
-Penpot是一款开源设计工具，被誉为“开源Figma”，专为设计与代码协作而生。它允许设计师创建设计、交互式原型和可扩展的设计系统，同时为开发人员提供即用型代码，从而消除常见的设计交付摩擦。
+Penpot 常被称为“开源版 Figma”，是首个旨在实现设计与代码无缝协作的开源设计工具。它允许设计师创建设计稿、原型和设计系统，而开发人员则可获取现成的代码，从而简化工作流程并消除交接问题。
 
-Penpot采用SVG、CSS、HTML和JSON等开放标准运行，免费使用，可通过浏览器或自托管实例访问。其重要的2.0版本引入了多项突破性功能，例如作为单一事实来源的原生设计令牌、CSS网格布局、用户界面重新设计以及全新的组件系统。
+Penpot 采用 SVG、CSS、HTML 和 JSON 等开放标准运行，免费提供，既可在浏览器中使用，也可自行托管。近期重大更新，包括 2.0 版本的发布，引入了原生设计令牌（design tokens）以增强协作、突破性的 CSS 网格布局、完整的 UI 重新设计以及改进的组件系统。
 
-专为开发人员设计，Penpot提供检查模式以即时访问代码、灵活的插件系统和强大的集成功能。它支持使用原生设计令牌、组件和变体构建全面的设计系统。用户可以将其部署为SaaS服务，或使用Docker、Kubernetes或其他方法进行自托管。
+主要功能包括用于即时访问代码的检查模式、灵活的插件系统，以及通过 Webhook 和 API 进行集成。Penpot 利用原生的设计令牌、组件和变体，协助构建强大的设计系统以保持一致性。用户可以将其部署为 SaaS 服务，或使用 Docker 或 Kubernetes 进行自行托管。
 
-Penpot致力于培养一个活跃的开源社区，欢迎通过错误报告、翻译、反馈、代码和模板分享等方式做出贡献。它遵循行为准则，并每年举办Penpot Fest，庆祝设计、代码和开源。Penpot根据Mozilla公共许可证2.0进行许可。
+该平台得益于其开源社区的蓬勃发展，鼓励通过分享库、报告错误、翻译或直接贡献代码来参与贡献。行为准则有助于营造积极的环境。提供了文档和教程等资源，Penpot 遵循 Mozilla 公共许可证 v2.0，每年举办的 Penpot Fest 将社区成员聚集在一起。
 
 ---
 
-## 7. 欧盟迫使苹果采用新的Wi-Fi标准，结果安卓现在可以支持隔空投送了。
+## 4. 欧盟迫使苹果采用新的Wi-Fi标准，现在安卓可以支持隔空投送了。
 
 **原文标题**: The EU made Apple adopt new Wi-Fi standards, and now Android can support AirDrop
 
 **原文链接**: [https://arstechnica.com/gadgets/2025/11/the-eu-made-apple-adopt-new-wi-fi-standards-and-now-android-can-support-airdrop/](https://arstechnica.com/gadgets/2025/11/the-eu-made-apple-adopt-new-wi-fi-standards-and-now-android-can-support-airdrop/)
 
-谷歌已更新安卓系统的“快速分享”（Quick Share），使其支持苹果的“隔空投送”（AirDrop），这标志着跨平台互操作性迈出了重要一步。用户现在可以直接在安卓设备（从Pixel 10系列开始）和已启用隔空投送并设置为“所有人（10分钟）”的苹果设备之间共享文件。文件通过本地点对点Wi-Fi连接传输，而非通过公司服务器。然而，隔空投送的“仅限联系人”模式不受支持，并且苹果并未参与谷歌的此次实现。
+谷歌已更新安卓的“快速分享”功能，以支持苹果的隔空投送，从而实现安卓和iPhone设备之间的直接文件共享。这使得安卓手机可以出现在隔空投送的“所有人（10分钟）”模式中，反之亦然，尽管目前尚不支持“仅限联系人”模式。初期，此功能将仅在Pixel 10系列上可用，谷歌表示有兴趣将其扩展到更多安卓设备。谷歌强调了这些直接点对点传输的安全性，将其归功于内存安全的Rust编程语言。
 
-这项新实现的兼容性主要归功于欧盟《数字市场法案》（DMA）下的法规。此前，苹果的隔空投送使用专有协议“苹果无线直连”（Apple Wireless Direct Link，AWDL）。然而，欧盟裁决要求苹果从iOS 26和iPadOS 26开始采用可互操作的Wi-Fi联盟的Wi-Fi Aware标准，从而有效地向其他平台开放了隔空投送的底层技术。
+这种新发现的互操作性是欧盟《数字市场法案》（DMA）的直接成果。历史上，苹果的隔空投送使用一种名为Apple无线直连（AWDL）的专有协议。然而，DMA强制苹果采用可互操作的Wi-Fi Aware标准，该标准苹果曾参与开发，但在其产品中实施缓慢。随着Wi-Fi Aware现已集成到iOS 26和iPadOS 26中（支持iPhone 12及更高版本，以及近期发布的iPad），其他设备如安卓现在也可以连接了。
 
-要使此功能正常工作，苹果设备需为iPhone 12或更新机型，并运行iOS/iPadOS 26或更新版本。尽管谷歌自Android 8.0以来就支持Wi-Fi Aware，但目前尚不包括Mac设备的隔空投送。谷歌的官方公告并未提及DMA的功劳，这很可能是因为谷歌自身面临持续的监管挑战以及此前对该法案的批评。尽管存在一些“过度监管”的担忧，欧盟并未考虑修改DMA，而苹果曾呼吁废除该法案。
-
----
-
-## 8. OpenAI到2030年需筹集至少2070亿美元。
-
-**原文标题**: OpenAI needs to raise at least $207B by 2030
-
-**原文链接**: [https://ft.com/content/23e54a28-6f63-4533-ab96-3756d9c88bad](https://ft.com/content/23e54a28-6f63-4533-ab96-3756d9c88bad)
-
-FT Alphaville发表的一篇文章强调了对OpenAI的一项重大财务预测。根据汇丰银行的估算，到2030年，OpenAI将需要筹集至少2070亿美元。提出这项巨额融资需求的主要原因是为了让公司在亏损的情况下继续运营。这项估算的完整细节和分析需要付费才能查看。
+谷歌自安卓8.0版本以来就支持Wi-Fi Aware，这预示着未来可能会有更广泛的安卓设备兼容性。值得注意的是，macOS的隔空投送不受DMA管辖，因此无法与安卓设备互通。谷歌的声明刻意避免提及DMA，这可能是由于该公司对该法案的广泛批评以及可能面临的罚款。
 
 ---
 
-## 9. 我才不管你的“AI”好不好用。
-
-**原文标题**: I don't care how well your "AI" works
-
-**原文链接**: [https://fokus.cool/2025/11/25/i-dont-care-how-well-your-ai-works.html](https://fokus.cool/2025/11/25/i-dont-care-how-well-your-ai-works.html)
-
-作者对“AI”（特指大型语言模型）在日常任务中被广泛采用，即便在进步黑客圈内，也表达了深深的幻灭感，将对Cursor这类工具的依赖比作一种成瘾。他们认为这一趋势预示着编程等技能型手艺的迅速贬值，类似于作家、设计师和翻译者此前所经历的，将他们的工作简化为仅仅修正机器错误。
-
-虽然作者个人避免使用大型语言模型，但承认许多人因社会压力、雇主或在适应世界中面临劣势的风险而被迫使用这些系统。核心论点是，仅关注AI的输出质量（偏见、失败）错失了其真正、更深层的议程。这些问题是根本性的和蓄意的，旨在实现控制，而不仅仅是技术进步。
-
-文章强调工具塑造我们的思想和身份。将AI融入认知过程，特别是像写作这样的创造性任务，会微妙地改变我们的理解，添加我们可能错误地以为源于自身的语境和细微之处，从而削弱创作中固有的真正发现。作者断言，AI系统是权力工具，由资本家和法西斯主义者设计，旨在强化现有结构。它们巨大的资源消耗是蓄意的，旨在通过摧毁个人手艺和表达，将资本转化为控制。
-
-最终，文章将这些挑战框定为在“转移性资本主义”下的生存问题。它呼吁通过支持他人、组织工会、滋养心智、创作原创作品和蓬勃发展作为一种反抗行为来抵抗。
-
----
-
-## 10. Linux 内核探索器
+## 5. Linux 内核探索器
 
 **原文标题**: Linux Kernel Explorer
 
 **原文链接**: [https://reverser.dev/linux-kernel-explorer](https://reverser.dev/linux-kernel-explorer)
 
-“Linux内核探索器”是一个交互式学习平台，旨在帮助用户理解Linux内核源代码，并借鉴了《心智中的内核》一书的见解。它提供结构化的指南，包含学习文件（例如 `init/main.c`、`kernel/fork.c`）和知识检测。
+“Linux内核探索器”是一个交互式学习平台，旨在帮助用户理解Linux内核源代码，其设计基于Moon Hee Lee的《心智中的内核》。它具备文件浏览器、跨多章节的结构化指南、学习文件和知识检测。
 
-第一章，“代码前的Linux内核理解”，将内核定义为系统本身的基础，而不仅仅是一个进程。它作为连接硬件和软件的无处不在的权威，通过系统调用、中断和调度的协同来服务用户进程。内核作为一个复杂的“分层系统”运行，其特点是虚拟、映射、独立和受控，决定了其运行时结构。
+第一章，“编写代码前理解Linux内核”，确立了以下基础概念：
+*   内核不是进程；它是连接硬件和软件的基础系统权限。
+*   它通过协调系统调用、中断和调度来服务用户进程。
+*   内核通过一个分层系统运行，这些层被描述为虚拟的、映射的、隔离的、受控的。
 
-该探索器概述了未来的章节，涵盖系统基础、内存管理、启动过程、内核入口、执行上下文、通信、调度、I/O和虚拟化，承诺对内核机制进行全面深入的探讨。
+该指南提供了具体学习文件，例如`init/main.c`、`kernel/fork.c`和`include/linux/sched.h`，以阐明这些要点。知识检测有助于巩固对内核本质、其对进程的服务以及其分层结构的理解。
+
+未来章节将涵盖系统基础、内存与隔离、引导与进入、进入内核、执行上下文、通信、调度、输入/输出、虚拟化以及总结性见解，对Linux内核的内部工作原理提供全面探索。
+
+---
+
+## 6. Pocketbase – 开源实时后端，单文件
+
+**原文标题**: Pocketbase – open-source realtime back end in 1 file
+
+**原文链接**: [https://pocketbase.io/](https://pocketbase.io/)
+
+本文介绍了 **Pocketbase**，它被描述为一个开源、实时的后端解决方案，方便地打包成一个单一文件。对于有兴趣探索其功能的用户，文章提供了其 **实时演示** 和全面的 **文档** 的直接链接。
+
+---
+
+## 7. 欧盟理事会通过新的“聊天控制”授权，推动大规模监控
+
+**原文标题**: EU Council Approves New "Chat Control" Mandate Pushing Mass Surveillance
+
+**原文链接**: [https://reclaimthenet.org/eu-council-approves-new-chat-control-mandate-pushing-mass-surveillance](https://reclaimthenet.org/eu-council-approves-new-chat-control-mandate-pushing-mass-surveillance)
+
+欧盟理事会已批准一项新的“聊天控制”授权，其官方名称为《预防和打击儿童性虐待（CSAM）规定》。这项备受争议的提案要求私人消息服务，包括那些采用端到端加密的服务，实施“上传审核”或“客户端扫描”。这意味着所有用户通信，例如私人聊天和电子邮件，都将在加密*之前*直接在用户设备上进行扫描，以检测CSAM内容。
+
+批评者和隐私倡导者强烈谴责这项授权，称其为一种大规模监控形式，从根本上侵蚀了隐私和数字安全。他们认为，这必然会削弱加密技术并制造不安全的后门，从而使所有用户都容易受到数据泄露和政府过度干预的侵害。担忧还包括较高的误报可能性，以及该系统可能被扩大到扫描CSAM之外其他类型内容的风险。尽管支持者将其辩解为打击儿童剥削的关键工具，但反对者则认为它是在监视全体民众，而非专注于可疑的犯罪分子，此举侵犯了基本权利，且无法保证其有效性。
+
+在理事会批准之后，这项授权现在将进入与欧洲议会的“三方对话”谈判，欧洲议会历来对此类广泛的监控措施表示出更大的怀疑。
+
+---
+
+## 8. 骁龙8 Elite 第五代当日上游Linux支持
+
+**原文标题**: Same-day upstream Linux support for Snapdragon 8 Elite Gen 5
+
+**原文链接**: [https://www.qualcomm.com/developer/blog/2025/10/same-day-snapdragon-8-elite-gen-5-upstream-linux-support](https://www.qualcomm.com/developer/blog/2025/10/same-day-snapdragon-8-elite-gen-5-upstream-linux-support)
+
+本文宣布，全新骁龙 8 Elite Gen 5 处理器已获得立即提供的 Linux 上游支持。其主要亮点在于这种支持的“同步发布”特性，这意味着所需的代码和驱动程序在芯片发布或公布时或之后不久，便已集成到官方 Linux 内核代码库中。这种“上游”集成至关重要，因为它确保了采用骁龙 8 Elite Gen 5 的 Linux 系统具备强大的长期兼容性、稳定性以及更简便的开发，从而造福更广泛的开源社区，并加速了新硬件上的采用。
+
+---
+
+## 9. DIY NAS：2026 版
+
+**原文标题**: DIY NAS: 2026 Edition
+
+**原文链接**: [https://blog.briancmoses.com/2025/11/diy-nas-2026-edition.html](https://blog.briancmoses.com/2025/11/diy-nas-2026-edition.html)
+
+这篇文章详细介绍了作者的“DIY NAS：2026版”，这是他每年搭建网络附加存储服务器的传统延续。该构建遵循以下标准：小巧外形、至少六个硬盘位、集成低功耗CPU（用于24/7运行），以及作为家庭实验室支持虚拟机/容器的潜力。
+
+作者指出当前经济形势严峻，硬盘、固态硬盘、内存、CPU和主板价格上涨，使当前成为一个艰难的搭建时期。尽管如此，该项目仍然继续进行。
+
+选用的关键组件包括：
+*   **主板/CPU：** Topton N22，搭载Intel Core 3 N355处理器，具有8个SATA接口、2个M.2 NVMe接口和10Gbps网卡，增强了家庭实验室功能。
+*   **机箱：** 乔思伯（JONSBO）N4，因其性价比和可容纳六个3.5英寸和两个2.5英寸硬盘的能力而入选。
+*   **风扇：** 猫头鹰（Noctua）NF-A12x25 PWM风扇取代了原装噪音较大的机箱风扇。
+*   **内存：** 使用了一根32GB DDR5 4800MHz SODIMM内存条（作者特别指出当前价格昂贵）。
+*   **存储：** 两块128GB的Silicon Power A55 SATA固态硬盘作为启动盘，两块1TB的Silicon Power NVMe M.2固态硬盘用于应用程序/虚拟机（受限于PCIe 3.0 x1通道）。大容量存储使用了退役硬盘，并提供了智能购买硬盘的建议。
+*   **电源：** 银欣（SilverStone）SX500-G SFX电源。
+*   **线缆：** SFF-8643转4个SATA分线缆，以实现高效布线。
+
+作者一贯选择TrueNAS Community Edition，因为它具备企业级的可靠性和用户友好性。本次搭建的估计总成本（不包括新的大容量存储）为989.36美元。组装过程基本顺利，只进行了少量的线缆管理调整。
+
+---
+
+## 10. 展示 HN: 检测带摄像头智能眼镜的眼镜
+
+**原文标题**: Show HN: Glasses to detect smart-glasses that have cameras
+
+**原文链接**: [https://github.com/NullPxl/banrays](https://github.com/NullPxl/banrays)
+
+“Ban-Rays”项目旨在开发能够检测配备摄像头的智能眼镜的眼镜，探索两种主要方法：光学和网络。
+
+光学方法利用红外（IR）光来利用“猫眼效应”，即摄像头镜头会逆向反射光线。尽管这一概念有历史先例，但目前的实验表明，Meta Raybans发出的信号微弱且不稳定，使得现有硬件难以与其他反射表面进行可靠区分。开发者正在试验特定的红外扫描模式并结合不同波长，同时刻意避免使用机载摄像头进行检测。
+
+网络方法侧重于低功耗蓝牙（BLE）和Wi-Fi分析。目前，通过BLE广播对Meta Raybans进行指纹识别是最有前景和可靠的方法。系统在Meta Raybans开机、配对或从眼镜盒中取出时，能成功检测到Meta特有的制造商ID（0x01AB）和服务UUID（0xFD5F）。然而，在持续使用（当眼镜连接到手机时）期间检测定向BLE流量具有挑战性，并且需要比当前ESP32配置更先进的硬件。传统蓝牙检测也被指出是硬件密集型的。
+
+总体而言，BLE指纹识别提供了一种初步的检测能力，但两种方法在活跃使用期间实现一致、实时的摄像头检测都面临重大的技术障碍。
 
 ---
 
@@ -151,25 +159,26 @@ FT Alphaville发表的一篇文章强调了对OpenAI的一项重大财务预测�
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 2 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 3 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 4 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 5 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 6 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 7 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 8 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 1 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 2 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 3 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 4 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 5 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 6 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 7 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 8 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
 | 9 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 10 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 11 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 12 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 13 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 14 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 15 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 16 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 17 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 18 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 19 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 20 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 21 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 22 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 10 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 11 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 12 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 13 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 14 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 15 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 16 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 17 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 18 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 19 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 20 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 21 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 22 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 23 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
