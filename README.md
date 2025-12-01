@@ -1,163 +1,146 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-11-30.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-01.md)
 
-*最后自动更新时间: 2025-11-30 20:07:34*
-## 1. 曝OpenAI正准备在ChatGPT上线广告，面向公众推出
-
-**原文标题**: Leak confirms OpenAI is preparing ads on ChatGPT for public roll out
-
-**原文链接**: [https://www.bleepingcomputer.com/news/artificial-intelligence/leak-confirms-openai-is-preparing-ads-on-chatgpt-for-public-roll-out/](https://www.bleepingcomputer.com/news/artificial-intelligence/leak-confirms-openai-is-preparing-ads-on-chatgpt-for-public-roll-out/)
-
-据报道，OpenAI正准备将广告整合到ChatGPT中，此举可能会对网络经济造成重大冲击。Tibor在X上发现的ChatGPT安卓应用测试版（版本1.2025.329）中的泄露信息，揭示了“广告功能”、“集市内容”、“搜索广告”和“搜索广告轮播”等内容。
-
-与目前无广告的体验不同，OpenAI旨在复制类似谷歌搜索的模式，可能利用其庞大的用户数据进行高度个性化的广告投放。文章指出，ChatGPT可能拥有比谷歌更深入的用户洞察力，从而实现更有效的广告定位。最初，广告预计将仅限于ChatGPT内的搜索体验。
-
-这一举措出台之际，ChatGPT的用户群正迅速增长，每周用户量约8亿，高于2023年11月的1亿，并且每天处理约25亿条提示。印度已成为其最大的用户群。鉴于其巨大的覆盖范围，文章总结称广告对ChatGPT来说可能会非常成功。
-
----
-
-## 2. 只要有一个能成。
-
-**原文标题**: All it takes is for one to work out
-
-**原文链接**: [https://alearningaday.blog/2025/11/28/all-it-takes-is-for-one-to-work-out-2/](https://alearningaday.blog/2025/11/28/all-it-takes-is-for-one-to-work-out-2/)
-
-作者回顾了一段申请研究生时的深刻不确定时期，他之前曾遭遇拒绝，并因不理想的学术和职业背景而感到处于劣势。在这段充满挑战的时期，一位朋友反复对他说一句格言：“只要有一个能成功就行。” 尽管作者最初持怀疑态度，但当他最终获得一个录取并改变了他的人生时，这句话被证明是真实的。
-
-作者指出，这种有力的理念适用于任何高风险的寻觅。在求职中，人们只需要找到一份合适的，而非获得每一个工作机会。对住房而言，只需要找到一个像家一样的地方。在人际关系中，只需要那一个人。而在教育方面，一个大学录取通知书就能打开正确的门。
-
-然而，这些过程——例如大学录取、求职、购房或寻找伴侣——可能令人心力交瘁，且带有强烈的个人色彩。然而，“只要有一个能成功就行”这个简单的真理，却是一个清醒的提醒，它告诉我们，一次成功就足以实现改变人生的结果。
-
----
-
-## 3. 展示：Boing
-
-**原文标题**: Show HN: Boing
-
-**原文链接**: [https://boing.greg.technology/](https://boing.greg.technology/)
-
-这篇题为“Show HN: Boing”的文章是提交给Hacker News的一个帖子。“Show HN”这一标识表明用户正在展示或推介一个项目、产品或想法，而在此例中，其名为“Boing”。
-
-然而，文章的全部内容却仅仅是“Boing”这个词。因此，所提供的文本没有提供关于“Boing”究竟是什么、其功能或意义的任何进一步细节、描述、目的、特性或任何其他背景信息。
-
----
-
-## 4. 空客A320 – 强烈的太阳辐射可能损坏对飞行至关重要的数据
-
-**原文标题**: Airbus A320 – intense solar radiation may corrupt data critical for flight
-
-**原文链接**: [https://www.airbus.com/en/newsroom/press-releases/2025-11-airbus-update-on-a320-family-precautionary-fleet-action](https://www.airbus.com/en/newsroom/press-releases/2025-11-airbus-update-on-a320-family-precautionary-fleet-action)
-
-空客于2025年11月28日宣布，对近期一起事件的分析显示，强烈的太阳辐射可能损坏其A320系列飞机飞行控制的关键数据。大量在役的A320系列飞机可能受到此问题的影响。
-
-为此，空客已主动与航空当局合作，要求运营商立即采取预防措施。这项通过“运营商警示通告”（AOT）发出的请求，指示运营商实施可用的软件和/或硬件保护措施，以确保机队的持续安全。该AOT将由欧洲航空安全局（EASA）发布的“紧急适航指令”（EAD）正式确认。
-
-空客承认，这些必要的建议将给乘客和客户造成运营中断，并对由此带来的不便表示歉意。该公司表示将与运营商密切合作，强调安全仍然是其最优先的考虑。
-
----
-
-## 5. 巴兹特：Linux游戏操作系统
-
-**原文标题**: Bazzite: Operating System for Linux gaming
-
-**原文链接**: [https://bazzite.gg/](https://bazzite.gg/)
-
-Bazzite 是一个基于 Fedora 的 Linux 操作系统，专为游戏而设计，旨在满足新手和发烧友的需求。它预装了 Steam 和 Lutris，可以将来自 Xbox Game Pass、Epic Games Store 和 GOG.com 等各种平台的游戏无缝集成到 Steam 游戏模式中。该操作系统拥有 HDR 和 VRR 支持、优化的 CPU 调度器以及众多社区开发的工具等功能，以增强游戏和流媒体体验。
-
-Bazzite 的核心优势之一是其广泛的硬件兼容性，为 Nvidia、AMD 和 Intel GPU、各种游戏控制器（Xbox、PS、Switch）以及基本驱动程序提供开箱即用支持。它为 ASUS ROG Ally、Lenovo Legion Go、Ayn 和 GPD 等设备提供了专门的“掌机守护程序”功能，可对硬件设置和自定义进行深度控制。
-
-Bazzite 通过基于镜像的更新来优先考虑稳定性和安全性，用户可以无忧地回滚到以前的版本。它提供企业级安全性，支持 SELinux、安全启动和 LUKS 磁盘加密。用户可以选择高度可定制的 KDE Plasma（基于带有 SteamOS 主题的 Fedora Kinoite）或触控优化的 GNOME（基于 Fedora Silverblue）。
-
-应用程序管理功能强大，利用 Bazaar 应用商店 (Flathub) 以及通过 Distrobox 和 Waydroid 对 Android 应用的高级容器支持。Bazzite 提倡便携性，允许在多个设备之间共享 MicroSD 游戏库。该操作系统因其卓越的性能、电池续航时间和易用性而获得了大量积极评价，尤其是在掌上游戏电脑上，其表现通常优于 Windows。它由 Universal Blue 积极开发，拥有强大的社区支持和详尽的文档。
-
----
-
-## 6. 代码降临节 2025
+*最后自动更新时间: 2025-12-01 20:14:44*
+## 1. 2025 代码降临
 
 **原文标题**: Advent of Code 2025
 
 **原文链接**: [https://adventofcode.com/2025/about](https://adventofcode.com/2025/about)
 
-Eric Wastl 创建了 Advent of Code (AoC)，这是一个年度降临节日历，提供针对不同技能水平和编程语言的小型编程谜题。它适用于面试准备、培训、课程作业或个人挑战，只需要基本的编程知识和解决问题的能力，而无需计算机科学背景。解决方案旨在在旧硬件上高效运行。可以通过与他人分享或通过 AoC++ 来支持 AoC。
+Eric Wastl 推出编程降临节（Advent of Code，简称 AoC），这是一个年度的降临节日历，包含适合所有技能水平的小型编程谜题，可以使用任何语言解决。它适用于面试准备、培训、课程作业或个人挑战，只需要基本的编程和问题解决能力，而非计算机科学背景。解决方案设计为即使在老旧硬件上也能快速完成。
 
-解决谜题的通用技巧包括根据示例验证解决方案、重新阅读描述、创建自定义测试用例、确保使用了完整的输入，以及在遇到困难时寻求帮助。
+您可以通过分享AoC或通过AoC++直接贡献来支持它。参与者的通用建议包括对照示例进行测试、仔细阅读说明、创建自定义测试用例，以及在遇到困难时在subreddit上寻求帮助。
 
-常见问题解答涵盖了三击选择代码块、基于 OAuth 的身份验证（切勿直接向 AoC 提供凭据），以及谜题难度各不相同的问题。由于作者的日程安排，谜题在美国东部时间/UTC-5 午夜解锁。由于法律原因，不接受谜题创意。全球排行榜因压力和滥用而被移除；鼓励参与者使用带有约定规则的私人排行榜。不鼓励使用 AI 解决谜题，因为它们是为人类解决问题而设计的，而不是用于 AI 提示练习。禁止复制或重新分发 AoC 内容，例如谜题文本或网站设计，因为 Advent of Code 是注册商标，但允许链接或引用谜题。AoC 不拥有用户解决方案的实现。
+常见问题解答（FAQ）涵盖了各种主题：代码块的三击功能、基于OAuth的身份验证（AoC仅记住最少的用户数据）、谜题难度多样且普遍递增，以及谜题统一在东部时间/UTC-5午夜解锁。Wastl由于法律问题不鼓励提交谜题想法，并指出谜题首次发布后，bug很少见。全球排行榜因压力和滥用而被移除；鼓励使用私人排行榜，参与者应与组织者明确关于外部帮助（例如AI、朋友）的规则。不鼓励使用AI解决谜题，因为它们是为人类解决问题而设计的。尽管AoC免费使用，但未经明确同意，其内容不得复制或重新分发。
 
-谜题、代码和设计归功于 Eric Wastl，并得到了 Beta 测试人员和社区经理的支持。
-
----
-
-## 7. 太空数据中心行不通
-
-**原文标题**: Datacenters in space aren't going to work
-
-**原文链接**: [https://taranis.ie/datacenters-in-space-are-a-terrible-horrible-no-good-idea/](https://taranis.ie/datacenters-in-space-are-a-terrible-horrible-no-good-idea/)
-
-一名前NASA工程师和谷歌云人工智能专家认为，由于根本性挑战，太空数据中心，尤其是用于人工智能的数据中心，是一个“灾难性的糟糕主意”。
-
-**供电：** 太空没有充足的电力供应。一个国际空间站大小的太阳能电池阵列（200千瓦）只能为大约200个现代GPU（约三个服务器机架）供电。若要匹配一个10万个GPU的数据中心，将需要500颗如此庞大的卫星。核放射性同位素发电机远远不足。
-
-**热管理：** 太空真空意味着没有对流冷却。热量传递依赖于传导和辐射。冷却200个GPU（200千瓦）将需要一个大约531平方米的散热器面板系统，这显著大于整个国际空间站的热管理系统，仅能提供最少的计算能力。
-
-**抗辐射能力：** 空间辐射会导致单粒子翻转（位翻转）、单粒子锁定（永久性损坏）和长期性能退化。现代GPU/TPU，由于其小尺寸工艺和大裸片面积，极易受损。由于质量原因，屏蔽在很大程度上不切实际，而设计抗辐射芯片会大幅降低性能，降至几十年前处理器水平，使它们不适用于人工智能。
-
-**通信：** 卫星通信通常只能达到大约1Gbps，仅为地面数据中心常见的100Gbps以上带宽的一小部分。
-
-最终，作者得出结论，空间数据中心成本将高得不成比例，实施起来极其困难，并且只能提供平庸的性能，使得这一概念不可行。
+AoC受版权保护（2015-2025），尽管用户保留其解决方案实现的所有权，并可以链接到谜题。
 
 ---
 
-## 8. 美国人不再认为四年制大学学位物有所值。
+## 2. 有一个成功就够了。
+
+**原文标题**: All it takes is for one to work out
+
+**原文链接**: [https://alearningaday.blog/2025/11/28/all-it-takes-is-for-one-to-work-out-2/](https://alearningaday.blog/2025/11/28/all-it-takes-is-for-one-to-work-out-2/)
+
+作者回忆起十多年前申请研究生时的一段深刻的不确定时期。由于前一年未能被录取，他们面临着一场硬仗：学生创业经历导致绩点较低，GMAT成绩平平，并且缺乏大品牌雇主的工作经验。尽管他们从第一次尝试中吸取了教训，第二轮申请依然困难重重，一度让他们感到希望渺茫。
+
+在这段充满压力的时期，一位朋友始终提供了一个让人安心的格言：“只要有一个成功，就足够了。” 尽管作者起初对此持怀疑态度，但当一份录取通知书改变了他们的生活时，作者最终发现这句话是真理。
+
+作者现在认识到，这种思维方式在任何关键的搜寻中都具有令人难以置信的力量。他们将其应用于各种场景：你只需要一份适合你的工作，一套让你感觉像家的房子，一个可以共度一生的人，或一所能为你打开正确大门的大学。
+
+作者承认，大学申请、求职、购房和寻找伴侣等过程在情感上可能非常残酷，因此，作者总结道，这个简单的真理——“只要有一个成功，就足够了。而那一个，就是你所需要的一切”——在充满挑战的时期，是一个强大而能让人脚踏实地的提醒。
+
+---
+
+## 3. 仅返回 ChatGPT 公开发布前内容的搜索工具
+
+**原文标题**: Search tool that only returns content created before ChatGPT's public release
+
+**原文链接**: [https://tegabrain.com/Slop-Evader](https://tegabrain.com/Slop-Evader)
+
+所提供的文章内容仅包含“TEGA BRAINABOUTNEWSWORKCONTACT TEACHING”这些词汇，没有提供关于标题中描述的搜索工具的任何信息。尽管标题暗示了一个专门的搜索工具，旨在仅返回在ChatGPT公开发布之前创建的内容，但随附的文本仅仅是一个列表，可能是导航菜单或网站部分。因此，在所提供的内容中没有主要观点或关键细节，可以总结这种搜索工具的功能、目的或特点。
+
+---
+
+## 4. HN 展示：嘣
+
+**原文标题**: Show HN: Boing
+
+**原文链接**: [https://boing.greg.technology/](https://boing.greg.technology/)
+
+这篇Hacker News (HN) 帖子，题为“Show HN: Boing”，介绍了一个名为“Boing”的项目或概念。文章内容极其简洁，仅包含“Boing”一词。文章正文本身没有提供关于“Boing”的任何进一步的细节、描述、目的或功能。
+
+---
+
+## 5. 如何写好Claude.md
+
+**原文标题**: Writing a good Claude.md
+
+**原文链接**: [https://www.humanlayer.dev/blog/writing-a-good-claude-md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
+
+文章《如何写好Claude.md》强调，大语言模型（LLMs）是无状态的，这使得`CLAUDE.md`成为将Claude等AI代理引入你的代码库的关键文件。由于AI代理初始一无所知，`CLAUDE.md`必须为每个会话提供必要的上下文。
+
+它应涵盖项目的“是什么”（技术、技术栈、结构）、“为什么”（各部分的目的）以及“如何做”（工作流程、测试、验证）。然而，由于系统提醒，Claude经常会忽略它认为不相关的`CLAUDE.md`内容，这强调了通用适用性的必要性。
+
+编写高效`CLAUDE.md`的关键建议：
+*   **少即是多：** 限制指令数量（理想情况下少于150-200条），因为过多的指令会统一降低大语言模型的性能，无论模型大小。
+*   **简洁且适用：** 保持文件简短（理想情况下少于60行，最多不超过300行），并确保内容与*所有*任务相关，而不仅仅是特定任务。
+*   **渐进式披露：** 不要将所有细节都塞进`CLAUDE.md`中，而是列出单独的、自解释的Markdown文件（例如`agent_docs/`），用于特定任务的信息。指示Claude仅在需要时阅读这些文件，并优先使用指向实际代码片段的指针。
+*   **不是代码检查器：** 避免包含代码风格指南。大语言模型在代码检查方面效率低下；应使用专用工具并考虑使用钩子进行自动化修复。
+*   **手动编写：** 不要自动生成`CLAUDE.md`。作为一个影响工作流程每个阶段的高杠杆点，它需要精心、审慎地编写以获得最佳效果。
+
+实质上，`CLAUDE.md`以简洁且通用的方式定义了项目的核心上下文，从而在不使其不堪重负或误导的情况下引导Claude。
+
+---
+
+## 6. 巴扎特：Linux游戏操作系统
+
+**原文标题**: Bazzite: Operating System for Linux gaming
+
+**原文链接**: [https://bazzite.gg/](https://bazzite.gg/)
+
+Bazzite是一个基于Linux的操作系统，专为游戏精心打造，兼顾新手和发烧友。它预装了Steam和Lutris，提供开箱即用的HDR/VRR支持、优化的CPU调度器以及社区开发的工具，以增强游戏体验和流媒体功能。除了Steam，它还将来自Xbox Game Pass、Epic Games Store和GOG.com等多样化平台的游戏整合到Steam游戏模式中。
+
+该操作系统兼容多种设备，从掌机和家庭影院电脑（HTPC）到笔记本电脑和台式机，允许在不同安装之间共享MicroSD游戏库。其主要特点包括支持无忧回滚的基于镜像的更新系统、具备SELinux和LUKS的企业级安全性，以及对GPU（英伟达、AMD、英特尔）、游戏手柄（Xbox、PlayStation）和各种附加驱动程序的全面硬件兼容性。通过Handheld Daemon提供高级掌机支持，允许对硬件进行精细控制和深度自定义。
+
+用户可以选择KDE Plasma或GNOME桌面环境，或者类似游戏机的Steam游戏模式，甚至可以通过Waydroid运行Android应用程序。Bazzite通过Flathub和强大的容器支持（Distrobox）简化了软件管理，几乎可以安装任何Linux应用程序。由Universal Blue开发，Bazzite在用户评价中因其卓越的性能、易用性以及增强的游戏体验而备受赞誉，尤其是在掌上电脑上，其表现甚至常常超越Windows。
+
+---
+
+## 7. Windows 驱动器盘符不限于 A-Z
+
+**原文标题**: Windows drive letters are not limited to A-Z
+
+**原文链接**: [https://www.ryanliptak.com/blog/windows-drive-letters-are-not-limited-to-a-z/](https://www.ryanliptak.com/blog/windows-drive-letters-are-not-limited-to-a-z/)
+
+本文指出，Windows 驱动器盘符不限于 A-Z；`+:` 等符号，甚至 `€:` 等非 ASCII 字符也可以作为驱动器盘符。这之所以可能，是因为 Windows 的高级 API 将 Win32 路径（例如 `C:\foo`）转换为 NT 命名空间路径（`\??\C:\foo`）。在对象管理器（Object Manager）的 `\??\` 虚拟文件夹中，`C:` 这样的驱动器盘符仅仅是设备路径（例如 `\Device\HarddiskVolume4`）的符号链接。关键因素是 `RtlDosPathNameToNtPathName_U`，它将 `X:\foo` 转换为 `\??\X:\foo`，如果 `X:` 的符号链接存在，则使其表现为驱动器盘符。
+
+然而，这种灵活性并非普遍受支持。文件资源管理器和 PowerShell 不识别非 A-Z 的驱动器盘符，也不允许导航到这些盘符，这很可能是由于内部限制。驱动器盘符还被限制为单个 WTF-16 编码单元（最高 U+FFFF）。尽管可以通过 MountPointManager 为更高 Unicode 码点创建符号链接，但 `RtlDosPathNameToNtPathName_U` 会错误地分类此类路径，从而阻止它们作为驱动器运行。此外，像 `SetVolumeMountPointW` 这样的特定 API 可能会出现异常行为，可能会截断非 ASCII 字符（例如，`€:` 可能会错误地变成 `¬:`）。这些底层的复杂性凸显了其他软件实现中潜在的路径分类不匹配和编码问题。
+
+---
+
+## 8. 美国人不再认为本科学位物有所值。
 
 **原文标题**: Americans no longer see four-year college degrees as worth the cost
 
 **原文链接**: [https://www.nbcnews.com/politics/politics-news/poll-dramatic-shift-americans-no-longer-see-four-year-college-degrees-rcna243672](https://www.nbcnews.com/politics/politics-news/poll-dramatic-shift-americans-no-longer-see-four-year-college-degrees-rcna243672)
 
-一项新的NBC新闻民意调查显示，美国人对四年制大学学位的价值看法出现显著下降。如今，只有33%的注册选民认为，为了更好的就业前景和更高收入，大学学位“物有所值”，与2013年的53%相比大幅下降。反之，63%的人认为，由于巨额债务和缺乏具体职业技能，大学学位“不值那个价”。
+一项新的NBC新闻民意调查显示，美国人对四年制大学学位价值的看法发生巨大转变，近三分之二（63%）的注册选民现在认为其不值得所花费的成本。这标志着相比2013年（当时53%的人认为值得）和2017年（当时看法几乎平分秋色），这一比例显著下降。
 
-12年间这种惊人的转变，主要由飙升的学费所致；自1995年以来，公立四年制大学经通胀调整后的费用翻了一番，而私立大学学费则上涨了75%。现代经济的快速变化，包括人工智能的进步，也加剧了这种怀疑。
+12年内20个百分点的下降，主要归因于大学学费的飞涨，自1995年以来，州内公立大学的学费翻了一番，私立院校的学费也上涨了75%。选民们担心毕业生在没有获得特定工作技能的情况下背负巨额债务，导致一些人从事的“成人工作”无法偿还其贷款。
 
-这种情绪下降是普遍的，几乎影响了所有人群。共和党人的转变最为剧烈（从2013年的55%认为物有所值降至现在的22%），民主党人也出现了显著下降（从61%降至47%）。值得注意的是，如今只有不到一半（46%）拥有大学学位的选民认为其物有所值，低于此前的63%。
+这种怀疑论普遍存在，几乎影响到所有人口群体。共和党人的下降幅度最大，目前只有22%的人认为学位值得，低于2013年的55%。民主党人中也出现了从61%降至47%的显著下降。值得注意的是，即使是拥有大学学位的选民中，现在也只有不到一半（46%）的人认为学位物有所值。
 
-雅各布·肯尼迪等毕业生就体现了这种困境，他们常发现入门级工作不足以偿还学生贷款，这迫使他们重返服务行业。杰西卡·伯恩斯强调，虽然学位通常是面试的先决条件，但其内在价值被其高昂的成本所掩盖。
-
-这激发了人们对技术、职业和两年制课程的兴趣激增，因为学生们更看重更快地进入劳动力市场。专家们认为，这是一个“显著”的社会转变，预示着高等教育的危机，高等教育正被越来越多地视为脱节且难以企及，这侵蚀了其作为“美国梦”核心组成部分的地位。
+这一趋势导致人们对技术、职业和两年制学位课程的兴趣增加，因为个人寻求更快地进入劳动力市场。专家和受访者表示，虽然学位可能仍然是许多工作的“敲门砖”，但过高的成本已经侵蚀了其内在价值的认知，这对高等教育和传统的美国梦构成了重大挑战。
 
 ---
 
-## 9. Zigbook 剽窃 Zigtools 沙盒
+## 9. Zigbook 正在剽窃 Zigtools 演练场
 
 **原文标题**: Zigbook Is Plagiarizing the Zigtools Playground
 
 **原文链接**: [https://zigtools.org/blog/zigbook-plagiarizing-playground/](https://zigtools.org/blog/zigbook-plagiarizing-playground/)
 
-Zigtools 指控 Zigbook 抄袭其定制的 Zigtools Playground，并敦促社区避开后者。Zigbook 最初因其“LLM 劣质内容”和可疑营销而受到批评，最近推出了一个“高压测试版”的 Playground 功能。
+负责开发ZLS和Zigtools Playground等工具的Zig社区主要贡献者Zigtools，指控一个名为Zigbook的新资源存在抄袭和违反许可协议的行为。Zigbook最初因其“大模型垃圾内容”和可疑的营销策略而受到质疑，最近推出了一个“高压测试版”的Zig Playground。
 
-Zigtools 调查发现，Zigbook 的 WASM blob（zig.wasm, zls.wasm）与 Zigtools 自己的客户端 Playground 定制构建的逐字节完全相同。进一步分析揭示了复制的 JavaScript 代码，其中一些被 LLM 扭曲，但仍存在相同的片段。值得注意的是，Zigbook 复制了 ZLS WASM 二进制文件，但未能包含 ZLS 功能所需的关键 JavaScript API，这表明其缺乏理解。
+经调查，Zigtools发现Zigbook的playground使用了与他们自己定制文件字节完全一致的WASM二进制文件（`zig.wasm`和`zls.wasm`）。此外，大量JavaScript代码被复制，有时是直接复制，但通常带有“大模型篡改”。值得注意的是，Zigbook复制了ZLS的WASM二进制文件，但未能包含使其正常运行所需的关键JavaScript API，这表明其缺乏理解或打算稍后复制更多内容。
 
-尽管 Zigtools 的 Playground 采用 MIT 许可证，允许在注明出处的情况下复制，但 Zigbook 违反了这些条款，没有重现所需的版权和许可证声明。Zigtools 发出了一个中立的拉取请求来纠正此问题，但 Zigbook 迅速将其关闭并删除了描述。
+尽管Zigtools Playground采用MIT许可证，允许在注明来源的情况下使用，但Zigbook未能遵守规定，既未转载许可证，又声称代码是其自己的。Zigtools发送了一个中立的拉取请求以纠正许可违规行为，但Zigbook迅速关闭了该请求并删除了描述。
 
-这一事件促使 Zigtools 警告社区，推荐官方 Zig 资源，并将精力重新集中到增强其自身的 Playground 上（例如，多文件支持、DWARF 调试）。他们也正利用这个机会为 ZLS 的全职维护者筹集资金。
+鉴于Zigbook一贯的欺骗行为以及拒绝遵守许可条款，Zigtools建议社区避免使用它。他们推荐官方的Zig学习资源，并正利用这一事件进一步投入到自己的playground开发中，计划增加多文件支持和更广泛的集成等功能。Zigtools还提到了他们正在进行的ZLS筹款工作。
 
 ---
 
-## 10. 大公司优秀工程师如何写烂代码
+## 10. 谷歌反重力刚刚删除了整个驱动器的内容
 
-**原文标题**: How good engineers write bad code at big companies
+**原文标题**: Google Antigravity just deleted the contents of whole drive
 
-**原文链接**: [https://www.seangoedecke.com/bad-code-at-big-companies/](https://www.seangoedecke.com/bad-code-at-big-companies/)
+**原文链接**: [https://old.reddit.com/r/google_antigravity/comments/1p82or6/google_antigravity_just_deleted_the_contents_of/](https://old.reddit.com/r/google_antigravity/comments/1p82or6/google_antigravity_just_deleted_the_contents_of/)
 
-本文探讨了为何大型科技公司的合格工程师有时会产出“糟糕”的代码，并将其归因于系统性问题而非个人能力不足。
-
-主要原因是工程师的持续流失和频繁的内部调动。大型科技公司的薪酬方案通常会激励工程师在1-2年后离职，而内部重组又经常将工程师调往新的团队或代码库。这意味着很大比例的代码更改是由“新手”完成的——这些工程师刚接触特定系统、语言，甚至刚入职公司。
-
-尽管拥有深厚专业知识的“老手”确实存在，但他们缓解这种情况的能力有限。公司很少努力保留或规范这些专业知识，而这些经验丰富的工程师经常工作量过载，导致代码审查草率，并且对决策的参与不足。
-
-因此，大型科技公司的“中位数高效工程师”常常在紧张的截止日期下处理不熟悉的代码，这种环境不利于产出高质量的代码。作者认为，大型科技公司是*故意*做出这种权衡的：他们优先考虑能够快速将“可替代的”工程师重新部署到“月度问题”项目（例如转向AI），而不是培养深厚的长期专业知识和无可挑剔的代码质量。糟糕的代码是这种战略灵活性的一个已知且被接受的后果。
-
-个人工程师基本无力改变这种动态。文章总结认为，将“糟糕”的代码归咎于工程师是错误的；根本原因是公司的组织战略，该战略迫使工程师不断处理不熟悉的代码库。
+Reddit用户u/NerdishGuy九年前在r/google_antigravity版块发帖，讲述了一起严重的数据丢失事件，涉及他们所称的“Google Antigravity”，这是Google云端硬盘桌面同步客户端的一个内部或早期代号。该用户当时正在设置Antigravity客户端，该客户端识别出了他们的C盘以及一个名为A:/的独立本地驱动器（用于一个特定项目）作为同步候选。尽管用户*认为*他们已经从同步过程中取消选中了A:/驱动器，但重新启动电脑后，他们发现A:/驱动器已被彻底清空、格式化，所有内容都不可挽回地丢失了。这些数据在回收站或Google云端硬盘线上版本中都未被找到。该帖子旨在向其他人发出关于灾难性数据删除可能性的警告，并就此事件寻求帮助。
 
 ---
 
@@ -165,28 +148,29 @@ Zigtools 调查发现，Zigbook 的 WASM blob（zig.wasm, zls.wasm）与 Zigtool
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 1 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 2 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 3 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 4 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 5 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 6 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 7 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 8 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 9 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 10 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 11 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 3 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 4 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 5 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 6 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 7 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 8 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 9 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 10 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 11 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
 | 12 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
 | 13 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 14 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 15 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 16 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 17 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 18 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 14 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 15 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 16 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 17 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 18 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
 | 19 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
 | 20 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
 | 21 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 22 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 22 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
 | 23 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
 | 24 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
 | 25 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 26 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
