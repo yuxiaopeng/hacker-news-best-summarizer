@@ -1,146 +1,163 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-01.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-02.md)
 
-*最后自动更新时间: 2025-12-01 20:14:44*
-## 1. 2025 代码降临
+*最后自动更新时间: 2025-12-02 20:12:57*
+## 1. DeepSeek-v3.2：推动开源大语言模型前沿 [pdf]
 
-**原文标题**: Advent of Code 2025
+**原文标题**: DeepSeek-v3.2: Pushing the frontier of open large language models [pdf]
 
-**原文链接**: [https://adventofcode.com/2025/about](https://adventofcode.com/2025/about)
+**原文链接**: [https://huggingface.co/deepseek-ai/DeepSeek-V3.2/resolve/main/assets/paper.pdf](https://huggingface.co/deepseek-ai/DeepSeek-V3.2/resolve/main/assets/paper.pdf)
 
-Eric Wastl 推出编程降临节（Advent of Code，简称 AoC），这是一个年度的降临节日历，包含适合所有技能水平的小型编程谜题，可以使用任何语言解决。它适用于面试准备、培训、课程作业或个人挑战，只需要基本的编程和问题解决能力，而非计算机科学背景。解决方案设计为即使在老旧硬件上也能快速完成。
+所提供的内容是原始PDF流，它是机器可读的二进制数据，而非人类可读的文本。它包含PDF对象定义、压缩流数据以及交叉引用表，而不是文章的实际内容。
 
-您可以通过分享AoC或通过AoC++直接贡献来支持它。参与者的通用建议包括对照示例进行测试、仔细阅读说明、创建自定义测试用例，以及在遇到困难时在subreddit上寻求帮助。
-
-常见问题解答（FAQ）涵盖了各种主题：代码块的三击功能、基于OAuth的身份验证（AoC仅记住最少的用户数据）、谜题难度多样且普遍递增，以及谜题统一在东部时间/UTC-5午夜解锁。Wastl由于法律问题不鼓励提交谜题想法，并指出谜题首次发布后，bug很少见。全球排行榜因压力和滥用而被移除；鼓励使用私人排行榜，参与者应与组织者明确关于外部帮助（例如AI、朋友）的规则。不鼓励使用AI解决谜题，因为它们是为人类解决问题而设计的。尽管AoC免费使用，但未经明确同意，其内容不得复制或重新分发。
-
-AoC受版权保护（2015-2025），尽管用户保留其解决方案实现的所有权，并可以链接到谜题。
+因此，我无法从此输入中提取任何有意义的信息，也无法提供关于“DeepSeek-v3.2：推动开放大型语言模型的边界”的摘要。若要总结该文章，请提供论文的实际文本内容。
 
 ---
 
-## 2. 有一个成功就够了。
-
-**原文标题**: All it takes is for one to work out
-
-**原文链接**: [https://alearningaday.blog/2025/11/28/all-it-takes-is-for-one-to-work-out-2/](https://alearningaday.blog/2025/11/28/all-it-takes-is-for-one-to-work-out-2/)
-
-作者回忆起十多年前申请研究生时的一段深刻的不确定时期。由于前一年未能被录取，他们面临着一场硬仗：学生创业经历导致绩点较低，GMAT成绩平平，并且缺乏大品牌雇主的工作经验。尽管他们从第一次尝试中吸取了教训，第二轮申请依然困难重重，一度让他们感到希望渺茫。
-
-在这段充满压力的时期，一位朋友始终提供了一个让人安心的格言：“只要有一个成功，就足够了。” 尽管作者起初对此持怀疑态度，但当一份录取通知书改变了他们的生活时，作者最终发现这句话是真理。
-
-作者现在认识到，这种思维方式在任何关键的搜寻中都具有令人难以置信的力量。他们将其应用于各种场景：你只需要一份适合你的工作，一套让你感觉像家的房子，一个可以共度一生的人，或一所能为你打开正确大门的大学。
-
-作者承认，大学申请、求职、购房和寻找伴侣等过程在情感上可能非常残酷，因此，作者总结道，这个简单的真理——“只要有一个成功，就足够了。而那一个，就是你所需要的一切”——在充满挑战的时期，是一个强大而能让人脚踏实地的提醒。
-
----
-
-## 3. 仅返回 ChatGPT 公开发布前内容的搜索工具
+## 2. 仅返回 ChatGPT 公开发布前创建内容的搜索工具
 
 **原文标题**: Search tool that only returns content created before ChatGPT's public release
 
 **原文链接**: [https://tegabrain.com/Slop-Evader](https://tegabrain.com/Slop-Evader)
 
-所提供的文章内容仅包含“TEGA BRAINABOUTNEWSWORKCONTACT TEACHING”这些词汇，没有提供关于标题中描述的搜索工具的任何信息。尽管标题暗示了一个专门的搜索工具，旨在仅返回在ChatGPT公开发布之前创建的内容，但随附的文本仅仅是一个列表，可能是导航菜单或网站部分。因此，在所提供的内容中没有主要观点或关键细节，可以总结这种搜索工具的功能、目的或特点。
+所提供的文本不包含一篇描述“一个只返回ChatGPT公开发布前创建内容的搜索工具”的文章。
+
+相反，内容“TEGA BRAINABOUTNEWSWORKCONTACT TEACHING”似乎是导航链接或类别列表，可能来自某个网站。
+
+因此，无法提供关于该搜索工具文章的摘要，因为所提供的文本中没有此类文章。
 
 ---
 
-## 4. HN 展示：嘣
+## 3. 印度命令智能手机制造商预装国有网络安全应用程序
 
-**原文标题**: Show HN: Boing
+**原文标题**: India orders smartphone makers to preload state-owned cyber safety app
 
-**原文链接**: [https://boing.greg.technology/](https://boing.greg.technology/)
+**原文链接**: [https://www.reuters.com/sustainability/boards-policy-regulation/india-orders-mobile-phones-preloaded-with-government-app-ensure-cyber-safety-2025-12-01/](https://www.reuters.com/sustainability/boards-policy-regulation/india-orders-mobile-phones-preloaded-with-government-app-ensure-cyber-safety-2025-12-01/)
 
-这篇Hacker News (HN) 帖子，题为“Show HN: Boing”，介绍了一个名为“Boing”的项目或概念。文章内容极其简洁，仅包含“Boing”一词。文章正文本身没有提供关于“Boing”的任何进一步的细节、描述、目的或功能。
+印度已强制要求，自2025年1月起，在该国销售的所有智能手机必须预装一款国有网络安全应用。印度电子和信息技术部发布了一项命令，要求制造商内置由印度计算机应急响应小组（CERT-In）开发的“Cybersafe”应用。
 
----
+政府表示，该应用旨在提升用户的网络安全和意识，提供实时威胁警报、安全浏览工具以及关于最佳网络安全实践的教育内容等功能。尽管官员们强调此举是为了保护用户，但这一举动已在一些活动家和行业观察家中间引发了隐私担忧，他们担心国家可能具备的监控能力或数据收集。
 
-## 5. 如何写好Claude.md
-
-**原文标题**: Writing a good Claude.md
-
-**原文链接**: [https://www.humanlayer.dev/blog/writing-a-good-claude-md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
-
-文章《如何写好Claude.md》强调，大语言模型（LLMs）是无状态的，这使得`CLAUDE.md`成为将Claude等AI代理引入你的代码库的关键文件。由于AI代理初始一无所知，`CLAUDE.md`必须为每个会话提供必要的上下文。
-
-它应涵盖项目的“是什么”（技术、技术栈、结构）、“为什么”（各部分的目的）以及“如何做”（工作流程、测试、验证）。然而，由于系统提醒，Claude经常会忽略它认为不相关的`CLAUDE.md`内容，这强调了通用适用性的必要性。
-
-编写高效`CLAUDE.md`的关键建议：
-*   **少即是多：** 限制指令数量（理想情况下少于150-200条），因为过多的指令会统一降低大语言模型的性能，无论模型大小。
-*   **简洁且适用：** 保持文件简短（理想情况下少于60行，最多不超过300行），并确保内容与*所有*任务相关，而不仅仅是特定任务。
-*   **渐进式披露：** 不要将所有细节都塞进`CLAUDE.md`中，而是列出单独的、自解释的Markdown文件（例如`agent_docs/`），用于特定任务的信息。指示Claude仅在需要时阅读这些文件，并优先使用指向实际代码片段的指针。
-*   **不是代码检查器：** 避免包含代码风格指南。大语言模型在代码检查方面效率低下；应使用专用工具并考虑使用钩子进行自动化修复。
-*   **手动编写：** 不要自动生成`CLAUDE.md`。作为一个影响工作流程每个阶段的高杠杆点，它需要精心、审慎地编写以获得最佳效果。
-
-实质上，`CLAUDE.md`以简洁且通用的方式定义了项目的核心上下文，从而在不使其不堪重负或误导的情况下引导Claude。
+智能手机制造商将需要在制造过程中将该应用集成到其设备中，这进一步增加了该国日益增长的数字法规。印度庞大且快速增长的智能手机市场使得这一政策转变意义重大，对消费者和制造商都将产生广泛影响。
 
 ---
 
-## 6. 巴扎特：Linux游戏操作系统
+## 4. 为什么 xor eax, eax？
 
-**原文标题**: Bazzite: Operating System for Linux gaming
+**原文标题**: Why xor eax, eax?
 
-**原文链接**: [https://bazzite.gg/](https://bazzite.gg/)
+**原文链接**: [https://xania.org/202512/01-xor-eax-eax](https://xania.org/202512/01-xor-eax-eax)
 
-Bazzite是一个基于Linux的操作系统，专为游戏精心打造，兼顾新手和发烧友。它预装了Steam和Lutris，提供开箱即用的HDR/VRR支持、优化的CPU调度器以及社区开发的工具，以增强游戏体验和流媒体功能。除了Steam，它还将来自Xbox Game Pass、Epic Games Store和GOG.com等多样化平台的游戏整合到Steam游戏模式中。
+文章解释了在x86 Linux汇编中常见的`xor eax, eax`指令，尽管`xor`传统上与加密或图形处理相关联。这条指令是一种将寄存器清零的编译器优化。
 
-该操作系统兼容多种设备，从掌机和家庭影院电脑（HTPC）到笔记本电脑和台式机，允许在不同安装之间共享MicroSD游戏库。其主要特点包括支持无忧回滚的基于镜像的更新系统、具备SELinux和LUKS的企业级安全性，以及对GPU（英伟达、AMD、英特尔）、游戏手柄（Xbox、PlayStation）和各种附加驱动程序的全面硬件兼容性。通过Handheld Daemon提供高级掌机支持，允许对硬件进行精细控制和深度自定义。
+相较于更直观的`mov eax, 0x0`（它需要占用5个字节），`xor eax, eax`仅用2个字节（`31 c0`）就能达到同样的效果。这种字节节省使得程序更小，并能更高效地利用指令缓存。
 
-用户可以选择KDE Plasma或GNOME桌面环境，或者类似游戏机的Steam游戏模式，甚至可以通过Waydroid运行Android应用程序。Bazzite通过Flathub和强大的容器支持（Distrobox）简化了软件管理，几乎可以安装任何Linux应用程序。由Universal Blue开发，Bazzite在用户评价中因其卓越的性能、易用性以及增强的游戏体验而备受赞誉，尤其是在掌上电脑上，其表现甚至常常超越Windows。
+此外，现代x86 CPU在其流水线早期就能识别`xor reg, reg`为一种“清零惯用法”（zeroing idiom）。它们可以完全优化掉这个操作，分配一个新的、无依赖的零寄存器重命名槽，并从执行队列中移除该指令。这意味着`xor`指令实际上不占用任何执行周期。
 
----
+即使在处理64位寄存器时，`xor eax, eax`也比`xor rax, rax`更受青睐。这是因为对32位`e`寄存器（如`eax`）的写入会自动将对应64位`r`寄存器（如`rax`）的高32位清零，使得`xor eax, eax`足以清零整个64位寄存器。对于扩展编号寄存器（例如`r8`），像GCC这样的编译器仍然使用其32位变体（`xor r8d, r8d`），这可能是为了简化编译器实现。
 
-## 7. Windows 驱动器盘符不限于 A-Z
-
-**原文标题**: Windows drive letters are not limited to A-Z
-
-**原文链接**: [https://www.ryanliptak.com/blog/windows-drive-letters-are-not-limited-to-a-z/](https://www.ryanliptak.com/blog/windows-drive-letters-are-not-limited-to-a-z/)
-
-本文指出，Windows 驱动器盘符不限于 A-Z；`+:` 等符号，甚至 `€:` 等非 ASCII 字符也可以作为驱动器盘符。这之所以可能，是因为 Windows 的高级 API 将 Win32 路径（例如 `C:\foo`）转换为 NT 命名空间路径（`\??\C:\foo`）。在对象管理器（Object Manager）的 `\??\` 虚拟文件夹中，`C:` 这样的驱动器盘符仅仅是设备路径（例如 `\Device\HarddiskVolume4`）的符号链接。关键因素是 `RtlDosPathNameToNtPathName_U`，它将 `X:\foo` 转换为 `\??\X:\foo`，如果 `X:` 的符号链接存在，则使其表现为驱动器盘符。
-
-然而，这种灵活性并非普遍受支持。文件资源管理器和 PowerShell 不识别非 A-Z 的驱动器盘符，也不允许导航到这些盘符，这很可能是由于内部限制。驱动器盘符还被限制为单个 WTF-16 编码单元（最高 U+FFFF）。尽管可以通过 MountPointManager 为更高 Unicode 码点创建符号链接，但 `RtlDosPathNameToNtPathName_U` 会错误地分类此类路径，从而阻止它们作为驱动器运行。此外，像 `SetVolumeMountPointW` 这样的特定 API 可能会出现异常行为，可能会截断非 ASCII 字符（例如，`€:` 可能会错误地变成 `¬:`）。这些底层的复杂性凸显了其他软件实现中潜在的路径分类不匹配和编码问题。
+总之，`xor eax, eax`是一种巧妙的编译器优化，既节省了代码空间，又节省了执行时间。
 
 ---
 
-## 8. 美国人不再认为本科学位物有所值。
+## 5. 安索罗匹克收购Bun
 
-**原文标题**: Americans no longer see four-year college degrees as worth the cost
+**原文标题**: Anthropic acquires Bun
 
-**原文链接**: [https://www.nbcnews.com/politics/politics-news/poll-dramatic-shift-americans-no-longer-see-four-year-college-degrees-rcna243672](https://www.nbcnews.com/politics/politics-news/poll-dramatic-shift-americans-no-longer-see-four-year-college-degrees-rcna243672)
+**原文链接**: [https://bun.com/blog/bun-joins-anthropic](https://bun.com/blog/bun-joins-anthropic)
 
-一项新的NBC新闻民意调查显示，美国人对四年制大学学位价值的看法发生巨大转变，近三分之二（63%）的注册选民现在认为其不值得所花费的成本。这标志着相比2013年（当时53%的人认为值得）和2017年（当时看法几乎平分秋色），这一比例显著下降。
+Anthropic 已收购 Bun，这款集JavaScript运行时、打包工具和包管理器于一体的工具。Anthropic 计划利用 Bun 作为 Claude Code、Claude Agent SDK 和未来人工智能编码产品的核心基础设施，看重其快速启动和单文件可执行特性，以便分发命令行工具和代理。
 
-12年内20个百分点的下降，主要归因于大学学费的飞涨，自1995年以来，州内公立大学的学费翻了一番，私立院校的学费也上涨了75%。选民们担心毕业生在没有获得特定工作技能的情况下背负巨额债务，导致一些人从事的“成人工作”无法偿还其贷款。
+Bun 的关键方面将保持不变：它仍将保持开源和 MIT 许可，现有团队将继续在 GitHub 上积极开发，其发展路线图仍将优先考虑高性能 JavaScript 工具和 Node.js 兼容性。
 
-这种怀疑论普遍存在，几乎影响到所有人口群体。共和党人的下降幅度最大，目前只有22%的人认为学位值得，低于2013年的55%。民主党人中也出现了从61%降至47%的显著下降。值得注意的是，即使是拥有大学学位的选民中，现在也只有不到一半（46%）的人认为学位物有所值。
+这次收购带来了多项优势：它将使人工智能编码工具更快速、更精简，为 Bun 提供对未来人工智能发展的前瞻性洞察，并确保 Bun 的长期稳定性和资源，从而消除此前对商业化的担忧。Bun 的诞生源于 Jarred Sumner 旨在解决缓慢的开发周期问题，并从一个快速的转译器发展成为一个全面的运行时。
 
-这一趋势导致人们对技术、职业和两年制学位课程的兴趣增加，因为个人寻求更快地进入劳动力市场。专家和受访者表示，虽然学位可能仍然是许多工作的“敲门砖”，但过高的成本已经侵蚀了其内在价值的认知，这对高等教育和传统的美国梦构成了重大挑战。
-
----
-
-## 9. Zigbook 正在剽窃 Zigtools 演练场
-
-**原文标题**: Zigbook Is Plagiarizing the Zigtools Playground
-
-**原文链接**: [https://zigtools.org/blog/zigbook-plagiarizing-playground/](https://zigtools.org/blog/zigbook-plagiarizing-playground/)
-
-负责开发ZLS和Zigtools Playground等工具的Zig社区主要贡献者Zigtools，指控一个名为Zigbook的新资源存在抄袭和违反许可协议的行为。Zigbook最初因其“大模型垃圾内容”和可疑的营销策略而受到质疑，最近推出了一个“高压测试版”的Zig Playground。
-
-经调查，Zigtools发现Zigbook的playground使用了与他们自己定制文件字节完全一致的WASM二进制文件（`zig.wasm`和`zls.wasm`）。此外，大量JavaScript代码被复制，有时是直接复制，但通常带有“大模型篡改”。值得注意的是，Zigbook复制了ZLS的WASM二进制文件，但未能包含使其正常运行所需的关键JavaScript API，这表明其缺乏理解或打算稍后复制更多内容。
-
-尽管Zigtools Playground采用MIT许可证，允许在注明来源的情况下使用，但Zigbook未能遵守规定，既未转载许可证，又声称代码是其自己的。Zigtools发送了一个中立的拉取请求以纠正许可违规行为，但Zigbook迅速关闭了该请求并删除了描述。
-
-鉴于Zigbook一贯的欺骗行为以及拒绝遵守许可条款，Zigtools建议社区避免使用它。他们推荐官方的Zig学习资源，并正利用这一事件进一步投入到自己的playground开发中，计划增加多文件支持和更广泛的集成等功能。Zigtools还提到了他们正在进行的ZLS筹款工作。
+此举是水到渠成的，因为人工智能编码工具正日益依赖 Bun。随着人工智能代理未来有望编写和测试大部分代码，底层运行时和工具的重要性变得尤为突出。Bun 对速度和开发者效率的关注与人工智能驱动开发的各项需求完美契合，确保了其在不断发展的软件生态系统中的关键作用。
 
 ---
 
-## 10. 谷歌反重力刚刚删除了整个驱动器的内容
+## 6. 谷歌反重力刚刚删除了整个硬盘的内容。
 
 **原文标题**: Google Antigravity just deleted the contents of whole drive
 
 **原文链接**: [https://old.reddit.com/r/google_antigravity/comments/1p82or6/google_antigravity_just_deleted_the_contents_of/](https://old.reddit.com/r/google_antigravity/comments/1p82or6/google_antigravity_just_deleted_the_contents_of/)
 
-Reddit用户u/NerdishGuy九年前在r/google_antigravity版块发帖，讲述了一起严重的数据丢失事件，涉及他们所称的“Google Antigravity”，这是Google云端硬盘桌面同步客户端的一个内部或早期代号。该用户当时正在设置Antigravity客户端，该客户端识别出了他们的C盘以及一个名为A:/的独立本地驱动器（用于一个特定项目）作为同步候选。尽管用户*认为*他们已经从同步过程中取消选中了A:/驱动器，但重新启动电脑后，他们发现A:/驱动器已被彻底清空、格式化，所有内容都不可挽回地丢失了。这些数据在回收站或Google云端硬盘线上版本中都未被找到。该帖子旨在向其他人发出关于灾难性数据删除可能性的警告，并就此事件寻求帮助。
+无法访问文章链接。
+
+---
+
+## 7. Mistral 3 系列模型发布
+
+**原文标题**: Mistral 3 family of models released
+
+**原文链接**: [https://mistral.ai/news/mistral-3](https://mistral.ai/news/mistral-3)
+
+Mistral AI 宣布发布其 Mistral 3 系列模型，包含新一代开放、多模态、多语言AI，所有模型均采用 Apache 2.0 许可证。
+
+旗舰模型是 **Mistral Large 3**，一个稀疏的混合专家 (MoE) 模型，拥有 410 亿活跃参数和 6750 亿总参数。该模型使用 NVIDIA H200 GPU 训练，实现了与最佳指令微调开源模型相当的领先性能，在图像理解和多语言对话方面表现出色。在 LMArena 非推理开源模型排行榜上，它排名第二，基础版和指令微调版现已推出，推理版即将发布。
+
+除了 Large 3，**Ministral 3 系列** 还推出了三款小型密集模型（30 亿、80 亿和 140 亿参数）。这些模型在其类别中提供最佳的性能成本比，包含基础版、指令版和推理版，所有版本均具备图像理解和原生多模态/多语言能力。Ministral 指令模型以更少的生成 token 实现相当的性能，而推理版则展现出与其规模相符的高准确率，例如 140 亿参数版本在 AIME '25 上达到 85%。
+
+Mistral 与 NVIDIA、vLLM 和 Red Hat 合作，旨在确保在从数据中心到边缘设备等各种硬件上实现优化性能和可访问性。Mistral 3 模型现已在 Mistral AI Studio、Hugging Face、Amazon Bedrock 及其他平台上线，NVIDIA NIM 和 AWS SageMaker 支持即将推出。Mistral AI 还提供定制训练服务，以满足企业的个性化解决方案需求。此次发布凸显了 Mistral AI 在 AI 领域的开放访问、前沿性能、可扩展性和适应性方面的承诺。
+
+---
+
+## 8. 2026年什么将进入公有领域？
+
+**原文标题**: What will enter the public domain in 2026?
+
+**原文链接**: [https://publicdomainreview.org/features/entering-the-public-domain/2026/](https://publicdomainreview.org/features/entering-the-public-domain/2026/)
+
+《公共领域评论》宣布了2026年1月1日将进入公共领域的内容，并指出“公共领域”因国际版权法不同而异。
+
+具体而言，在2026年：
+*   在版权保护期为“作者有生之年加70年”的国家（例如英国、欧盟大部分国家、俄罗斯），**1955年去世者的作品**将进入公共领域。
+*   在版权保护期为“作者有生之年加50年”的国家（例如新西兰、非洲和亚洲大部分国家），**1975年去世者的作品**将进入公共领域。
+*   在美国，**1930年出版的电影和书籍（包括其中特色艺术作品）**将进入公共领域。
+
+该文章通过一种降临节日历（倒数日历）的形式突出介绍了知名作品，在12月每天揭示一个条目。主要例子包括：
+
+*   **对于“作者有生之年加70/50年”类别：**阿尔伯特·爱因斯坦、罗杰·梅斯、萨阿达特·哈桑·曼托、查理·帕克、皮埃尔·特哈德·德·沙尔丹、华莱士·史蒂文斯、芭芭拉·赫普沃斯、汉娜·阿伦特、托马斯·曼、兰斯顿·休斯、阿加莎·克里斯蒂、P·G·伍德豪斯、西格蒙德·弗洛伊德、T·S·艾略特、赫尔曼·黑塞、弗拉基米尔·纳博科夫、罗伯特·穆齐尔和斯特拉·本森。
+*   **对于美国1930年出版物：**威廉·福克纳的《我弥留之际》、达希尔·哈米特的《马耳他之鹰》、伊夫林·沃的《罪恶的躯体》、亚瑟·兰瑟姆的《燕子与亚马逊》、欧内斯特·海明威的《永别了，武器》（暗示为1930年出版）、1930年电影《西线无战事》，以及阿加莎·克里斯蒂的《牧师公馆谋杀案》。
+
+《公共领域评论》鼓励人们探索这些新的公共领域作品，并强调公共领域的重要性。
+
+---
+
+## 9. 这一年非常艰难。
+
+**原文标题**: It’s been a very hard year
+
+**原文链接**: [https://bell.bz/its-been-a-very-hard-year/](https://bell.bz/its-been-a-very-hard-year/)
+
+作者Andy，白手起家的公司Set Studio/Piccalilli的创始人，将2025年描述为“非常艰难的一年”。挑战源于经济疲软、政治不稳定、生活成本危机以及科技行业普遍存在的“AI能搞定一切”的态度。Set Studio专注于道德网页设计和设计系统，由于其道德上拒绝承接AI产品营销（一项常见需求），在获取项目方面面临困难。
+
+Piccalilli是一个前端开发教育平台，依靠高级课程销售来维持运营。关键的“黑色星期五”促销期表现不佳，这危及了全职运营Piccalilli的梦想。早前的社区资助模式也因支持不足而失败，凸显了个人和公司预算紧张的现状。
+
+Andy坦诚地列出了读者可以提供帮助的方式：
+1.  **利用“黑色星期五”优惠：** 购买他们的高质量课程（人人学JavaScript、全心设计、完整CSS），这些对公司维持运营至关重要。
+2.  **分享课程和Set Studio：** 在社交网络中推广他们的作品，并提供推荐语，以增加知名度和社会认同。
+3.  **为项目雇佣Set Studio：** 该工作室提供价格合理、高效且道德的网页设计和设计系统服务，专注于用户体验和可访问性，新年后即可提供服务。他们的与众不同之处在于不剥削用户，也不收取过高的费用。
+4.  **聘请Andy进行咨询：** 他从新年起也将提供CSS和前端咨询/工程支持服务。
+
+Andy强调这是一次坦诚的呼吁，承认其中涉及的“放下尊严”，并希望与经历类似困境的人们产生共鸣。他感谢读者，并向同样面临困难的人们致以力量。
+
+---
+
+## 10. 一封致 FreeBSD 的情书
+
+**原文标题**: A Love Letter to FreeBSD
+
+**原文链接**: [https://www.tara.sh/posts/2025/2025-11-25_freebsd_letter/](https://www.tara.sh/posts/2025/2025-11-25_freebsd_letter/)
+
+在一封饱含深情的“情书”中，一位新人表达了对 FreeBSD 的深切钦佩，将其连贯、深思熟虑且沉静强大的本质与喧嚣、炒作驱动的现代计算世界形成对比。作者赞扬了 FreeBSD 的基础系统和启动环境，设想它是一个“开源大型机”——一个为长期信任而构建的平台，与硬件生命周期保持一致，并映照出 Solaris 在鼎盛时期的稳定性。
+
+这封信热情倡导将千日正常运行时间（uptimes）作为正常的設計目標，而非异常，允许无惧地进行更新，并且只在严格必要时才重新启动。为了平衡其日益增长的桌面端存在与服务器基石地位，作者建议为 CURRENT（桌面）和 RELEASE（服务器）渠道保持不同的发展步调。此外，随着 `pkgbase` 的应用，呼吁为软件包提供清晰、稳定的“生产级”渠道，确保其可靠性与基础系统相匹配。
+
+在文化上，作者敦促 FreeBSD 保持其深思熟虑的工程、协作和企业专注精神，远离自我之争。在实践中，信中鼓励继续与戴尔、惠普企业等硬件供应商保持紧密联系，提供固件更新工具，并使主要版本与真实的硬件周期保持一致。
+
+最终，作者希望 FreeBSD 保持其独特性，通过持久性和可靠性而非追逐潮流来赢得信任。他们梦想着一个未来，FreeBSD 驱动着一个现代的“开源大型机”，以其沉静、持久的存在而受人敬仰，为短暂的技术提供一个坚定的替代方案。这封信以感谢和长期坚守的承诺作结。
 
 ---
 
@@ -148,29 +165,30 @@ Reddit用户u/NerdishGuy九年前在r/google_antigravity版块发帖，讲述了
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 2 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 1 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 2 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 3 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
 | 4 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 5 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 6 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 7 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 8 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 9 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 10 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 11 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 12 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 13 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 14 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 15 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 16 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 17 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 18 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 19 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 20 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 21 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 22 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 23 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 24 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 25 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 26 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 5 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 6 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 7 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 8 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 9 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 10 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 11 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 12 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 13 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 14 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 15 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 16 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 17 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 18 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 19 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 20 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 21 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 22 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 23 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 24 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 25 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 26 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 27 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
