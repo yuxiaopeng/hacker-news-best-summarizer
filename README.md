@@ -1,163 +1,141 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-04.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-05.md)
 
-*最后自动更新时间: 2025-12-04 20:12:35*
-## 1. Ghostty 现已转为非营利
+*最后自动更新时间: 2025-12-05 20:10:16*
+## 1. Ghostty 现已成为非营利组织
 
 **原文标题**: Ghostty is now non-profit
 
 **原文链接**: [https://mitchellh.com/writing/ghostty-non-profit](https://mitchellh.com/writing/ghostty-non-profit)
 
-米切尔·桥本于2025年12月3日宣布，Ghostty现已获得Hack Club（一家注册的501(c)(3)非营利组织）的财政赞助。这一安排使Ghostty能够作为一个慈善项目运作，利用Hack Club的免税地位，并委托其负责合规、捐赠、会计和治理监督。
+Ghostty 终端项目已于 2025 年 12 月 3 日正式成为一个非营利实体，由注册的 501(c)(3) 非营利组织 Hack Club 提供财政赞助。这项安排使 Ghostty 能够作为一项慈善倡议运作，利用 Hack Club 的免税地位来处理合规、捐赠、会计和治理事宜。
 
-此举巩固了Ghostty保持免费和开源的承诺，旨在实现独立于桥本个人参与的可持续发展。它提供了法律保障，通过将Ghostty绑定到其公益使命上，防止“跑路”，确保资金不被滥用，项目不被出售以获取商业利益。桥本认为，终端等基础架构应由使命驱动的非商业实体来管理，以建立信任并鼓励采用。
+创始人 Mitchell Hashimoto 表示，此举巩固了 Ghostty 对所有人免费和开源的承诺。它旨在建立一个超越他个人参与的可持续发展模式，为社区提供法律保护，并通过确保其使命不被改变或资金不被挪作私用，防范潜在的“卷款跑路”。Hashimoto 认为，终端等基础架构应由使命驱动的非商业实体来管理。
 
-从技术上讲，Ghostty的目标和MIT许可证保持不变。在财务上，它现在可以在美国接受可抵税捐款，为补偿贡献者、支持上游依赖项和支付运营成本开辟了途径。所有财务交易将通过Hack Club Bank上的公共账本透明公开。尽管相关的知识产权转移给Hack Club，但个人贡献者的版权依然保留。桥本仍担任项目负责人，但这种结构为未来的领导模式铺平了道路。他明确表示，任何项目资金都不会使他个人受益。
+从技术上讲，Ghostty 没有变化；其目标、MIT 许可和开发计划保持不变。在财务上，Ghostty 现在可以在美国接受可抵税的捐赠，从而能够补偿贡献者、支持上游依赖项、社区活动和运营成本。所有财务交易都将通过 Hack Club Bank 透明化。与 Ghostty 相关的知识产权已转让给 Hack Club，但个人贡献者的版权仍受保留。Mitchell Hashimoto 仍担任项目负责人，至关重要的是，任何项目资金都不会使他个人受益。
 
-Hack Club获得7%的捐款，用于其行政服务和支持其赋能青年科技人才的使命。此外，桥本的家人还个人向Hack Club直接捐赠了15万美元。文章鼓励捐款，承诺未来会公布资金目标和预算的详细信息，并强调捐款将支持Ghostty的公益目标。
-
----
-
-## 2. Zig 退出 GitHub，称微软对人工智能的痴迷毁了这项服务
-
-**原文标题**: Zig quits GitHub, says Microsoft's AI obsession has ruined the service
-
-**原文链接**: [https://www.theregister.com/2025/12/02/zig_quits_github_microsoft_ai_obsession/](https://www.theregister.com/2025/12/02/zig_quits_github_microsoft_ai_obsession/)
-
-Zig软件基金会正将其编程语言项目从GitHub迁移到Codeberg，后者是一个非营利性的git托管服务。Zig总裁Andrew Kelly将此举归因于他认为GitHub工程卓越性的下降，并特别指责微软的“AI痴迷”。
-
-Kelly指出GitHub Actions中严重且被忽视的bug是主要原因，其中包括一个“safe_sleep.sh”脚本，该脚本导致CI系统在运行器机器上无限期挂起，消耗100%的CPU，持续数百小时。这个bug于2022年2月首次被用户发现，但直到2025年8月才合入修复，尽管其性质明显且对持续集成工作流程影响巨大。Kelly批评GitHub Actions的“vibe-scheduling”（随机作业执行）以及无法手动干预，导致CI积压。
-
-Answer.AI和Fast.AI的Jeremy Howard支持这些说法，他称这种情况是“一系列令人拍案叫绝的离谱事件”，表明该组织功能失调。
-
-Zig并非唯一离开的项目；Dillo浏览器项目也计划离开，理由是担心GitHub过度依赖JavaScript、可用性下降、审查不足以及“过度关注LLMs和生成式AI”。在这种不满情绪下，Codeberg的会员数量翻了一番。
-
-尽管GitHub未予置评，但微软的财报电话会议强调GitHub Copilot订阅量显著增长，这表明其对AI的关注存在强大的经济驱动力，而一些开发者认为这牺牲了核心服务的可靠性。
+Hack Club 作为财政赞助商，将获得所有捐赠的 7%，以支付行政费用并支持其赋能年轻人在科技领域的使命。Hashimoto 的家人还将单独向 Hack Club 捐赠 15 万美元。文章鼓励捐赠，并向贡献者保证资金将用于公共利益目标。
 
 ---
 
-## 3. Valve透露，它正是推动Windows游戏登陆Arm平台的幕后推手。
+## 2. 奈飞收购华纳兄弟
 
-**原文标题**: Valve reveals it’s the architect behind a push to bring Windows games to Arm
+**原文标题**: Netflix to Acquire Warner Bros
 
-**原文链接**: [https://www.theverge.com/report/820656/valve-interview-arm-gaming-steamos-pierre-loup-griffais](https://www.theverge.com/report/820656/valve-interview-arm-gaming-steamos-pierre-loup-griffais)
+**原文链接**: [https://about.netflix.com/en/news/netflix-to-acquire-warner-bros](https://about.netflix.com/en/news/netflix-to-acquire-warner-bros)
 
-Valve 透露，它是一项旨在将 Windows 游戏引入基于 Arm 的设备倡议的幕后推动力。在一次独家采访中，Valve 的 Pierre-Loup Griffais 证实，该公司自 2016-2017 年以来一直在悄悄资助并策划关键开源技术的开发。
-
-其目标是通过消除游戏开发者将作品移植到不同架构的需要，将 PC 游戏扩展到更广泛的硬件范围，包括 Arm 手机、笔记本电脑和台式机。Valve 认为 Arm 芯片在价格和功耗方面具有竞争优势，尤其适用于超便携设备和掌机。
-
-核心技术栈包括 Valve 用于 Windows 游戏的 Linux 兼容层 Proton（一个高度开发的 Wine 发行版），以及 x86-到-Arm 模拟器 Fex。Valve 大力资助 Proton 的开发，而 Fex 则是他们 *发起* 的，并且其核心开发者获得了 Valve 的全额资助。这种组合使得 x86 Windows 游戏能够在基于 Arm 的 Linux 系统上运行。Fex 负责翻译游戏的 x86 代码，而 API 调用则由 Arm 原生 Proton 代码处理，从而最大限度地减少了性能影响。
-
-该技术栈为 Valve 新推出的 Steam Frame VR 头显提供支持，并为 SteamOS 在各种 Arm 设备（包括未来的手机和笔记本电脑）上运行奠定了基础。这些技术的开源性质意味着其他开发者可以利用 Valve 的投资，将 Windows 游戏引入他们自己的基于 Arm 的产品。
+无法访问文章链接。
 
 ---
 
-## 4. 西雅图的每个人都恨AI
+## 3. 西雅图人人都讨厌AI
 
 **原文标题**: Everyone in Seattle hates AI
 
 **原文链接**: [https://jonready.com/blog/posts/everyone-in-seattle-hates-ai.html](https://jonready.com/blog/posts/everyone-in-seattle-hates-ai.html)
 
-作者在开发一款AI驱动的地图时，观察到西雅图工程师对AI普遍存在敌意，这与在其他全球科技中心遇到的好奇心形成鲜明对比。文章认为，这种负面情绪源于西雅图大型科技公司，特别是微软内部出现的有害文化转变。
+作者在构建一个由AI驱动的地图时，观察到西雅图工程师对“AI”表现出惊人的敌意，这与其他科技中心的强烈好奇心形成鲜明对比。一位前微软同事的强烈负面情绪并非源于作者的产品，而是因为工作中被强制使用的、无处不在的、且无效的AI工具，如Copilot 365。她透露，甚至有一位产品经理因“未能有效使用Copilot 365”而被解雇，这凸显了一种惩罚性的文化。
 
-在经历了一段时间的裁员和“AI恐慌”之后，微软将非AI人才贬低为价值较低者。工程师随后被迫采用微软的AI工具，如Copilot，这些工具通常不如手动方法或竞争对手的产品，但他们却被禁止修复这些问题。一个关键事件是一名项目经理因“未能有效使用Copilot 365”而被解雇，这引发了强烈的不满。
+文章详细描述了西雅图大型科技公司，尤其是微软，出现的文化崩溃。裁员后的指令优先考虑被归类为“AI”的项目，使得其他项目显得无关紧要。工程师被迫使用他们无法修复的劣质微软AI工具，这培养了普遍的挫败感。AI团队成为“受保护的阶层”，而其他员工如果“不拥抱AI”，则面临薪酬停滞和糟糕的绩效评估。
 
-这形成了一个双轨制系统，AI团队成为“受保护阶层”，拥有更好的薪酬，而其他工程师则面临职业停滞，并因未能“拥抱AI”而受到指责。这种环境助长了一种“自我设限的信念”体系：工程师们因此得出结论，他们既不适合AI工作，AI本身也毫无用处。
-
-作者认为，这种文化通过扼杀创新损害了公司，通过阻碍工程师的职业发展损害了工程师，并通过对AI驱动的项目产生即时敌意损害了新的开发者。西雅图尽管人才济济，但现在却缺乏旧金山等地普遍存在的对改变世界的创新的信念，陷入了一种玩世不恭和停滞不前的恶性循环。
+这种环境在西雅图催生了一种有害的信念体系：AI毫无用处，而本地工程师也无法胜任。这扼杀了创新，让工程师们心怀不满和自我怀疑，阻碍了他们的职业发展。结果，公司失去了创新能力，西雅图的新AI企业也面临着即时的敌意。作者总结道，尽管西雅图人才济济，但其科技文化现在却扼杀了改变世界的信念，这与更乐观的科技生态系统截然不同。
 
 ---
 
-## 5. 采纳美国汽车标准将危及欧洲生命
+## 4. Cloudflare 宕机了
 
-**原文标题**: Accepting US car standards would risk European lives
+**原文标题**: Cloudflare was down
 
-**原文链接**: [https://etsc.eu/accepting-us-car-standards-would-risk-european-lives-warn-cities-and-civil-society/](https://etsc.eu/accepting-us-car-standards-would-risk-european-lives-warn-cities-and-civil-society/)
+**原文链接**: [https://www.cloudflare.com/](https://www.cloudflare.com/)
 
-巴黎、布鲁塞尔和阿姆斯特丹等城市，联合超过75个公民社会组织，正敦促欧盟立法者重新考虑与美国的贸易协议，该协议中欧盟“打算接受”美国较低的汽车标准。他们警告称，这种做法将损害欧洲在道路安全、公共卫生、气候政策和竞争力方面的全球领导地位。
+Cloudflare的“互联互通云”是一个统一的全球平台，提供超过60项服务，用于连接、保护和构建。它使组织能够安全地连接用户、应用程序和AI代理，通过SASE和零信任现代化网络，并防御网络浏览攻击和网络钓鱼等网络威胁。
 
-在道路安全方面，自2010年以来，得益于行人保护、自动紧急制动和车道保持辅助等强制性功能，欧盟法规已使欧洲道路死亡人数减少了36%。相反，同期美国道路死亡人数增加了30%，其中行人死亡人数和骑自行车者死亡人数分别增加了80%和50%。目前的欧盟标准甚至认为，由于安全要求，特斯拉Cybertruck等车辆在欧盟属于不合规车辆。
+对于网站、应用程序和API，Cloudflare提供行业领先的WAF、DDoS和僵尸网络防护，同时通过其超快的CDN加速性能。开发人员可以利用其平台构建和扩展应用程序，包括无服务器代码、AI代理、数据库和存储，无需运营开销。
 
-这些团体还强调了欧洲空气质量和健康面临的风险。欧盟计划从2026年起限制刹车和轮胎磨损造成的污染，而美国却正在放宽其车辆空气污染法规。接受更宽松的美国标准将增加人们接触有害污染物的风险，这些污染物与各种严重的健康问题有关。
+在遍布330多个城市的独特全球网络支持下，Cloudflare每天拦截2340亿次网络威胁，并保护全球20%的网站。Discord、Zendesk和Investec等领先公司都信赖其能力。具体优势包括加速网站性能、阻止僵尸流量、优化视频体验、在边缘部署无服务器和AI应用程序，以及消除对象存储的出口流量费用。
 
-从经济角度看，此举威胁到欧洲就业。如果接受美国较低的标准，欧盟品牌的汽车生产可能会从欧洲转移到美国，从而导致欧盟汽车工厂和整个汽车供应链的重大失业。签署者还认为，这将加剧现有的进口漏洞，使不符合标准的美国车辆得以进入欧盟市场。
-
-他们恳请欧盟立法者反对这一意图，并公开声明欧盟车辆标准不容妥协。
+Cloudflare在Gartner和Forrester关于WAF、SASE、SSE和无服务器开发等类别的各种报告中，经常被评为“领导者”、“挑战者”或“远见者”。用户可以免费开始使用、探索演示或联系销售寻求专家帮助。
 
 ---
 
-## 6. 国会山上的“收获队长”
+## 5. 为什么38%的斯坦福学生自称残疾？
 
-**原文标题**: “Captain Gains” on Capitol Hill
+**原文标题**: Why are 38 percent of Stanford students saying they're disabled?
 
-**原文链接**: [https://www.nber.org/papers/w34524](https://www.nber.org/papers/w34524)
+**原文链接**: [https://reason.com/2025/12/04/why-are-38-percent-of-stanford-students-saying-theyre-disabled/](https://reason.com/2025/12/04/why-are-38-percent-of-stanford-students-saying-theyre-disabled/)
 
-NBER 工作论文 34524 号，魏尚进和周轶凡撰写的《国会山上的“领导者收益”》，调查了美国国会议员的股票交易表现。研究人员利用交易层面数据发现，晋升为领导职位的立法者在成为领导者后，其股票收益显著超越了与之匹配的同僚，实现了每年47个百分点的超额收益。在他们晋升之前，其表现与同僚相似。
+文章探讨了精英大学学生声称有残疾的比例惊人地高，引用了斯坦福大学38%、阿默斯特学院34%以及布朗大学/哈佛大学20%的数据。这些申报中的大多数是针对焦虑症、抑郁症和注意力缺陷多动障碍（ADHD）等心理健康问题。作者对此表示质疑，认为如此严格录取的学府会有这么多真正有学习障碍的学生是“荒谬的”，尤其是社区大学的比例要低得多。教授们普遍认为，这些特殊照顾不过是“富家子弟在考试中获得额外时间”的手段。
 
-该研究确定了驱动这种卓越表现的两种主要机制。“政治影响力渠道”体现在当其所在政党控制立法机构时获得更高的收益，在监管行动之前及时出售股票，以及购买那些获得政府合同或在法案上获得政党有利支持的公司的股票。“企业接触渠道”表明，领导者的交易预示着未来的企业新闻，并从捐赠者拥有的公司或位于其家乡州的公司获得更高的收益。
-
-这项研究于2025年11月发表，并被Market Watch提及，它从金融经济学、公司金融和政治经济学中汲取见解，强调了政治领导地位与个人在股市中的经济收益之间存在显著联系。
+导致这一趋势的因素有以下几点。《美国残疾人法案》规定，仅凭医生证明即可获得广泛的特殊照顾。将心理健康和神经发育状况视为身份标志的趋势日益盛行。在线平台，尤其是TikTok，广泛描述这些状况，导致年轻人将正常的困境（例如时间管理不善、注意力难以集中）解读为可诊断疾病的迹象，从而形成对“正常”的“严重扭曲的看法”。2013年，《精神疾病诊断与统计手册》（DSM）降低了ADHD的诊断门槛，这进一步加剧了上述现象。最后，精英学生中普遍存在的极度规避风险和害怕失败的心态，促使他们寻求诊断和特殊照顾，以避免差成绩和自我怀疑，将常见的学业挑战误认为是残疾。作者总结道，这些不必要的特殊照顾阻碍了真正的智力成长和成年生活所需的关键应对技能的发展，本质上构成了对同龄人和对自己的一种欺骗。
 
 ---
 
-## 7. 逆向工程一款十亿美元的法律AI工具，致逾十万份机密文件泄露
+## 6. 是时候解放 JavaScript 了 (2024)
 
-**原文标题**: Reverse engineering a $1B Legal AI tool exposed 100k+ confidential files
+**原文标题**: It’s time to free JavaScript (2024)
 
-**原文链接**: [https://alexschapiro.com/security/vulnerability/2025/12/02/filevine-api-100k](https://alexschapiro.com/security/vulnerability/2025/12/02/filevine-api-100k)
+**原文链接**: [https://javascript.tm/letter](https://javascript.tm/letter)
 
-一位安全研究员对价值10亿美元的法律AI平台Filevine进行了逆向工程，发现了一个严重漏洞，导致超过10万份机密法律文件泄露。2025年10月27日，该研究员发现了一个特定的子域名：`margolis.filevine.com`。通过分析JavaScript，他们识别出一个API端点，该端点在被一个简单的载荷（例如`{"projectName":"非常敏感项目"}`）查询时，无需任何身份验证就返回了一个管理员`boxToken`。
+本文认为，甲骨文应该放弃其“JavaScript”商标，声称该商标因不使用和通用化而已被合法放弃，造成了广泛的混淆。该商标是甲骨文在2009年收购Sun Microsystems（后者最初与网景公司合作创建了JavaScript）后遗留的产物，尽管JavaScript已成为全球最流行的编程语言并被数百万人独立使用，但甲骨文仍持有该商标。
 
-这个`boxToken`授予了访问一家律师事务所整个Box文件系统（类似于Google Drive）的最高管理员权限。它提供了对所有机密文件、日志和用户信息的完全访问权限。该研究员通过搜索“机密”文件证实了其严重性，结果得到了近10万个。
+作者们认为，甲骨文并未真正将“JavaScript”作为其核心产品的商标使用。在2019年美国专利商标局（USPTO）的一份文件中提及Node.js（非甲骨文产品）和Oracle JET（一套JavaScript库），以及GraalVM对该语言的隐藏支持，都被认为是不足以证明其善意使用的。
 
-这个漏洞可能允许恶意行为者提取数百万份高度敏感的文件，包括受HIPAA保护的数据、内部备忘录、工资单和受法院保护的信息。该研究员立即停止了测试，并负责任地向Filevine披露了该问题。该公司反应迅速，专业，并于2025年11月21日之前迅速修复了该缺陷。
+此外，“JavaScript”已成为一个通用术语。Sun公司拒绝为标准化释放该名称，导致了“ECMAScript”的创建。甲骨文在执行其商标权方面的一贯不作为，使得该术语被普遍使用，迫使社区组织（如“JSConf”）煞费苦心地避免使用完整名称。
 
-该研究员警告采用AI工具的公司应优先考虑其供应商的数据安全。文章澄清指出，受影响的律师事务所并非Margolis PLLC。
-
----
-
-## 8. 美光宣布退出英睿达消费业务
-
-**原文标题**: Micron Announces Exit from Crucial Consumer Business
-
-**原文链接**: [https://investors.micron.com/news-releases/news-release-details/micron-announces-exit-crucial-consumer-business](https://investors.micron.com/news-releases/news-release-details/micron-announces-exit-crucial-consumer-business)
-
-美光科技已宣布其战略决定，将退出其Crucial消费级业务。此举标志着这家内存和存储巨头的一项重大转变，因为它将停止直接参与以广受认可的Crucial品牌销售的RAM模块和固态硬盘（SSD）等消费级产品的市场。
-
-尽管所提供内容中未详细说明退出的具体原因，但此类企业重组通常旨在精简运营、专注于利润更高的企业和数据中心领域，或将资源重新分配到更具战略意义的增长区域。行业趋势通常表明，消费电子市场激烈的竞争、波动的消费者需求以及日益收窄的利润空间可能会促使此类决策。
-
-美光预计将加大对其核心企业对企业（B2B）业务领域的关注，为服务器、人工智能（AI）应用、汽车、工业和其他专业市场提供高性能内存和存储解决方案。这一战略转向将使美光能够将其投资和创新集中于这些高增长、高附加值的领域，摆脱直接面向消费者销售和营销的复杂性。此次宣布后，Crucial品牌及其在美光旗下的现有消费级产品线的未来仍不明朗。
+信中敦促甲骨文（据信其对该商标没有实际商业利益）自愿将其释放到公共领域。如果这一此前曾被置之不理的请求再次被忽视，包括JavaScript创始人Brendan Eich在内的作者们计划向美国专利商标局提交一份商标撤销申请，并寻求社区支持和无偿法律援助。
 
 ---
 
-## 9. 页换出
+## 7. 随着人工智能降低说服成本，精英将如何塑造大众偏好
 
-**原文标题**: Paged Out
+**原文标题**: How elites could shape mass preferences as AI reduces persuasion costs
 
-**原文链接**: [https://pagedout.institute](https://pagedout.institute)
+**原文链接**: [https://arxiv.org/abs/2512.04047](https://arxiv.org/abs/2512.04047)
 
-“Paged Out!”是一本免费、实验性、非营利性的技术杂志，由社区创建并服务于社区。每期杂志每页刊登一篇独立文章，内容涵盖编程技巧、黑客技术、网络安全、复古及现代计算机、电子产品和演示场景等主题。所有期刊均可免费下载、分享和打印。
+纳达夫·库涅夫斯基的论文《设计极化：随着人工智能降低说服成本，精英如何塑造大众偏好》探讨了人工智能驱动的说服技术如何通过降低成本和提高精准度，使政治精英能够策略性地设计公共舆论。历史上，精英们利用大众媒体等有限工具影响偏好；而现在，人工智能使得偏好的分布成为蓄意设计的目标。
 
-该杂志提供网页版PDF期刊和配套壁纸（JPG/PNG）。印刷版可通过活动或按需印刷书店（如lulu.com）获取，其中包括“普通版”和各种“赞助”级别（金级、白金级、钻石级）。
+作者开发了一个动态模型，其中精英选择重塑政策偏好，权衡说服成本与争取多数支持的需求。该模型揭示，在存在**单一精英**的情况下，最优干预措施倾向于将社会推向更极化的意见分布——一种“极化拉力”——而改进的说服技术会加速这一过程。
 
-内容列出了七期杂志，详细说明了发布日期、标题、下载次数，其中一些还列出了印刷次数。例如，第7期（25年10月）“Best kind of readme”有151,675次下载，第1期（19年8月）“The first Paged Out! issue has arrived!”有262,047次下载。许多PDF版本被标注为“测试版”，目前正持续努力提供改进版本和专用的可印刷PDF（A4+出血）。
+然而，当**两个对立精英**轮流执政时，同样的技术会促使他们创建“半锁定”区域，使民众意见更加凝聚，并抵制对手的影响。因此，说服技术的进步可能加剧，或者出人意料地，抑制极化，这取决于具体的政治环境。
 
-该杂志鼓励社区为未来的文章投稿。读者可以通过订阅pagedout-notifications Google Groups邮件列表或RSS/Atom订阅源来获取新期刊发布通知。
+该研究总结，更廉价的说服技术将极化从一种新兴的社会副产品转变为一种战略性的治理工具。随着人工智能能力的不断进步，这对于民主稳定具有深远影响，从根本上改变了政治权力可能被行使和维持的方式。
 
 ---
 
-## 10. React和Next.js中的RCE漏洞
+## 8. PGlite – 可嵌入的 Postgres
 
-**原文标题**: RCE Vulnerability in React and Next.js
+**原文标题**: PGlite – Embeddable Postgres
 
-**原文链接**: [https://github.com/vercel/next.js/security/advisories/GHSA-9qr9-h5gf-34mp](https://github.com/vercel/next.js/security/advisories/GHSA-9qr9-h5gf-34mp)
+**原文链接**: [https://pglite.dev/](https://pglite.dev/)
 
-在 React 服务端组件中发现了一个严重的远程代码执行 (RCE) 漏洞 (CVE-2025-66478)，影响 React 19.0.0 至 19.2.0 版本。此问题影响使用这些组件的框架，特别是使用 App Router 的 Next.js 15.x 和 16.x 版本，以及从 14.3.0-canary.77 开始的实验性 canary 版本。
+PGlite 是一个可嵌入的 Postgres 解决方案，以其轻量级特性而著称。它提供一个完整的 Postgres WebAssembly (WASM) 构建，该构建在经过 gzip 压缩后，体积惊人地小于 3MB。
 
-该漏洞被评为严重 (Critical) 级别，CVSS 评分达到 10.0。它可通过网络以低复杂性利用，无需任何权限或用户交互。该漏洞被归类为 CWE-502（不可信数据反序列化），对保密性、完整性和可用性造成严重影响，并伴随范围变更。
+---
 
-已修补的版本包括 React 19.0.1、19.1.2、19.2.1，以及 Next.js 15.0.5、15.1.9、15.2.6、15.3.6、15.4.8、15.5.7 和 16.0.7。所有受影响的 Next.js 稳定版用户均被敦促立即升级。易受攻击的 canary 构建版用户应降级到 14.x 稳定版或 14.3.0-canary.76。该漏洞由 lachlan2k 报告，并于 2025 年 12 月 3 日发布。
+## 9. 作为资深工程师，我不爱出风头。
+
+**原文标题**: I ignore the spotlight as a staff engineer
+
+**原文链接**: [https://lalitm.com/software-engineering-outside-the-spotlight/](https://lalitm.com/software-engineering-outside-the-spotlight/)
+
+谷歌的一位高级资深工程师，作者挑战了Sean Goedecke关于Staff+工程师的“聚光灯”模型，提出了一个替代路径，该路径侧重于系统和管理职责，而非可替代性。与受季度变化和外部客户驱动的产品团队不同，作者在开发者工具和基础设施领域工作，服务于内部工程师。在这里，成功是“自下而上”的，建立在深厚的背景知识和长期所有权之上，而非高层领导的突发奇想。
+
+尽责管理带来复利效应：通过模式匹配和系统性创新提升效率。作者的Bigtrace项目是一个每月处理数十亿条追踪的分布式查询引擎，是多年观察问题后诞生的，如果团队频繁轮岗，这将是不可能完成的壮举。这种长期信任也赋予了政治资本，使其能够对那些不稳定、高知名度的项目（例如将AI仓促整合到Perfetto中）说“不”，这些项目会威胁产品质量和用户信任。
+
+职业发展不依赖于高层的可见性。取而代之的是一种“影响力替代货币”的出现：一个“影子层级”，其中关键客户团队（例如需要Perfetto的Pixel工程师）的拥护推动着晋升，以及一个“效用分类账”，它跟踪工程健康指标，如修复的bug数量、关键性、普适性和规模。这些共同提供了一个强大且技术驱动的晋升依据。
+
+这种方法与Will Larson的架构师或技术主管原型相符。作者承认最初找到这样的团队有运气成分，但他强调留下是一种选择，而且这些不那么显眼但稳定的基础设施团队比人们想象的更常见，为那些愿意放弃外部认可的人提供了深厚的技术所有权。这条路径强调深度、耐心，以及构建持久基础，而非追逐聚光灯。
+
+---
+
+## 10. 近18个月DRAM美元均价
+
+**原文标题**: Average DRAM price in USD over last 18 months
+
+**原文链接**: [https://pcpartpicker.com/trends/price/memory/](https://pcpartpicker.com/trends/price/memory/)
+
+无法访问文章链接
 
 ---
 
@@ -165,32 +143,33 @@ NBER 工作论文 34524 号，魏尚进和周轶凡撰写的《国会山上的�
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 2 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 3 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 4 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 5 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 6 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 7 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 8 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 9 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 10 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 11 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 12 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 13 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 14 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 15 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 16 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 17 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 18 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 19 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 20 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 21 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 22 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 23 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 24 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 25 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 26 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 27 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 28 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 29 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 1 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 2 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 3 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 4 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 5 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 6 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 7 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 8 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 9 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 10 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 11 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 12 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 13 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 14 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 15 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 16 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 17 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 18 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 19 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 20 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 21 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 22 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 23 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 24 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 25 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 26 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 27 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 28 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 29 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 30 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
