@@ -1,139 +1,156 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-08.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-09.md)
 
-*最后自动更新时间: 2025-12-08 19:48:56*
-## 1. 在Oxide使用LLM
+*最后自动更新时间: 2025-12-09 19:45:05*
+## 1. HN展示：Gemini Pro 3 幻觉出十年后的HN首页
 
-**原文标题**: Using LLMs at Oxide
+**原文标题**: Show HN: Gemini Pro 3 hallucinates the HN front page 10 years from now
 
-**原文链接**: [https://rfd.shared.oxide.computer/rfd/0576](https://rfd.shared.oxide.computer/rfd/0576)
+**原文链接**: [https://dosaygo-studio.github.io/hn-front-page-2035/news](https://dosaygo-studio.github.io/hn-front-page-2035/news)
 
-Oxide的RFD 576提供了使用大型语言模型（LLM）的指南，它认识到LLM的变革潜力，同时优先考虑负责任的应用。公司的价值观，尤其是**责任**，是其指导原则：员工对所有产出负责，人工判断始终全程参与。
+这份设想的十年后Hacker News首页，展示了重大技术进步与持续社会争论的融合。
 
-公司鼓励在各项职能中使用LLM：
-*   **作为阅读者：** 擅长总结和理解。用户在使用托管模型时必须确保数据隐私，并避免在社会普遍认为需要人工进行关键阅读的场合，用LLM取代人工。
-*   **作为编辑者：** 有助于润色已写好的草稿，提供关于结构和措辞的反馈，而不失作者原有的风格。警惕在早期阶段使用或过度依赖LLM的“讨好”倾向。
-*   **作为撰写者：** 通常不鼓励。LLM生成的文本往往陈词滥调，损害真实性，侵蚀信任，并破坏了作者与读者之间的社会契约。Oxide期望其员工（因其写作能力而被选拔）创作自己的作品。
-*   **作为代码审查者：** 可以针对特定问题提供有益反馈，但不应取代人工审查。
-*   **作为调试者：** 作为“橡皮鸭”或启发新探究方向时出奇地有用，但不能完全依赖。
-*   **作为程序员：** 对于生成实验性、辅助性或“一次性”代码非常高效。然而，工程师需对任何LLM生成的代码承担全部责任，这要求在同行评审前进行严格的自查，并避免在迭代评审中进行整体重新生成。
+主要主题包括：
+*   **太空探索：** 星舰从静海（月球）成功发回遥测数据。
+*   **下一代计算：** 100% Rust编写的Linux内核，RISC-V集群，在WASM支持下于隐形眼镜上运行LLaMA-12，用于五维可视化的WebGPU 2.0，以及光子电路（后硅时代计算）的介绍。
+*   **人工智能与自动化：** 自主编码代理（Nia），关于“原始代码”与提示式编译器的辩论，服务器端渲染的“意外回归”，以及对AI进展的怀疑（“人类等效性是海市蜃楼”）。有趣的是，一个不使用AI的文本编辑器的“Show HN”也赫然在列。
+*   **生物技术与健康：** FDA批准用于乳糖不耐症的非处方CRISPR，以及逆向工程Neuralink V4蓝牙协议。
+*   **能源：** ITER连续20分钟实现净能量增益。
+*   **隐私与监管：** 欧盟的《人类验证权法案》，对AR眼镜中广告注入的担忧，以及深度伪造检测指南。
+*   **行业新闻：** 谷歌终止Gemini云服务，IBM收购OpenAI的传闻，以及微软Office 365价格上涨。
+*   **开发者文化：** 围绕新语言（Zig, Rust）、数据库更新（SQLite 4.0）以及函数式编程等常青话题的持续讨论。
 
-总的来说，Oxide鼓励使用LLM，前提是它符合公司对其产品、客户和同事所承担的深切责任感。
-
----
-
-## 2. 我在币圈浪费了好几年生命。
-
-**原文标题**: I wasted years of my life in crypto
-
-**原文链接**: [https://twitter.com/kenchangh/status/1994854381267947640](https://twitter.com/kenchangh/status/1994854381267947640)
-
-所提供的“文章内容”尽管有给定的标题，但并未包含关于在加密货币上虚度光阴的个人叙述。相反，这段文字显示的是来自 x.com（前身为 Twitter）的一条标准技术错误消息。
-
-它告知用户他们的浏览器中 JavaScript 已被禁用，并指示他们启用它或切换到受支持的浏览器以继续使用该平台。该消息还提供了指向各种政策和信息的链接，包括帮助中心、服务条款、隐私政策、Cookie 政策、版本说明和广告信息，以及 © 2025 X Corp. 的版权声明。
-
-因此，基于所提供的内容，不可能总结一篇题为“我在加密货币上虚度了多年生命”的文章，因为它仅仅是一个浏览器功能错误通知。
+该页面描绘了一个先进技术融入日常生活的未来，但关于隐私、编码实践和人工智能真实能力范围的基本问题仍是核心。
 
 ---
 
-## 3. 石勒苏益格-荷尔斯泰因州始终倚重开源
+## 2. 菜单图标泛滥 — 救命
 
-**原文标题**: The state of Schleswig-Holstein is consistently relying on open source
+**原文标题**: Icons in Menus Everywhere – Send Help
 
-**原文链接**: [https://www.heise.de/en/news/Goodbye-Microsoft-Schleswig-Holstein-relies-on-Open-Source-and-saves-millions-11105459.html](https://www.heise.de/en/news/Goodbye-Microsoft-Schleswig-Holstein-relies-on-Open-Source-and-saves-millions-11105459.html)
+**原文链接**: [https://blog.jim-nielsen.com/2025/icons-in-menus/](https://blog.jim-nielsen.com/2025/icons-in-menus/)
 
-德国石勒苏益格-荷尔斯泰因州正在实施一项全面的转型，从专有的微软软件转向开源替代方案，旨在实现数字主权和显著的成本节约。州政府计划到2030年前，在其整个行政部门用开源解决方案取代微软365和Windows，这将影响大约30,000个工作站。
+作者对“默认在每个菜单项中都包含图标”这一无处不在的设计理念表示强烈不满，将其描述为“额外噪音”和不必要的认知负荷来源。他们将这种以Google Sheets为例的模板化方法，与一种深思熟虑的设计流程形成对比，后者会考虑图标是否真正有助于用户。
 
-这项举措的动力来自于减少对单一供应商的依赖、增强数据安全性以及加强对其IT基础设施的控制。尽管此次迁移的初步投资估计约为1400万欧元，但该州预计仅许可费用每年就能节省80万欧元，几年内累计可达数百万欧元。
+从历史上看，macOS一直避免这种默认做法，但作者遗憾地指出，macOS Tahoe现在已普遍采用它。他们指出Tahoe菜单（如Safari的菜单）中的不一致之处，一些项目有图标，另一些则没有，且缺乏明确的理由。图标的加入经常与现有元素（如切换勾选标记）发生冲突，造成视觉混乱和对齐问题。作者质疑，以增加视觉解析成本为代价，许多这些图标究竟能为用户带来什么实际益处。
 
-此次转换的关键组成部分包括用LibreOffice取代微软Office，并将通信工具从微软Teams迁移到Matrix和Element。该州还打算使用GNU/Linux作为其操作系统，并探索专业应用程序的开源替代方案。此举是德国更广泛的“数字主权”战略的一部分，并效仿了慕尼黑等其他市政当局的类似举措。该项目强调可持续性、透明度，以及公共行政部门对共享资源的承诺。
+在批评这种默认做法的同时，作者承认，如果经过深思熟虑地应用，图标会非常有用。他们引用Finder的窗口排列菜单作为一个积极的例子，其中视觉符号能比文本更有效地即时传达功能。
 
----
-
-## 4. 基拉韦亚火山喷发，摧毁网络摄像头 [视频]
-
-**原文标题**: Kilauea erupts, destroying webcam [video]
-
-**原文链接**: [https://www.youtube.com/watch?v=TK2N99BDw7A](https://www.youtube.com/watch?v=TK2N99BDw7A)
-
-所提供的文章标题表明了一项重大事件：基拉韦厄火山已经喷发，并且这次喷发威力强大到足以摧毁一个网络摄像头。“[视频]”标签表明，该事件的视觉片段（可能包括网络摄像头被毁的画面）最初是可用的。
-
-然而，所提供的“内容”仅包含标准的YouTube页脚信息和法律免责声明（例如：“YouTube关于新闻版权联系我们创作者广告开发者条款隐私权政策与安全YouTube 的运作方式测试新功能NFL Sunday Ticket© 2025 Google LLC”）。这段文字不包含任何关于基拉韦厄火山喷发、其对网络摄像头以外的影响，或视频相关情况的详细信息或描述性内容。
-
-因此，由于缺少实际的新闻主体内容，无法根据所提供的文本提供文章标题以外的全面总结。
+关键的是，作者强调Apple新的设计方向与其自身长期存在的《人机界面指南》（1992年、2005年和2020年版）相矛盾，这些指南明确警告不要在菜单中使用“任意符号”，因为它会导致视觉混乱和潜在的困惑。作者最后表达了对这种普遍趋势的厌倦，认为越来越难以倡导一种更克制、更有意图的菜单设计方法。
 
 ---
 
-## 5. 谷歌泰坦架构，助力AI拥有长期记忆
+## 3. 马：人工智能稳步发展，达到人类水平却是一瞬之间。
 
-**原文标题**: Google Titans architecture, helping AI have long-term memory
+**原文标题**: Horses: AI progress is steady. Human equivalence is sudden
 
-**原文链接**: [https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/](https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/)
+**原文链接**: [https://andyljones.com/posts/horses.html](https://andyljones.com/posts/horses.html)
 
-谷歌新的Titans架构和MIRAS框架旨在为AI模型配备长期记忆，以解决当前Transformer和固定大小循环网络在处理海量上下文时的局限性。
+这篇文章最初是2025年的一次闪电演讲，探讨了稳定的技术进步如何导致突然的、颠覆性的转变，特别是在人工智能领域。作者以历史类比开篇：
 
-Titans是一种融合了RNN速度和Transformer精度的架构。它引入了一种新颖的深度神经网络作为其长期记忆模块，提供比固定大小记忆更强大的表达能力。一个关键创新是“惊喜度量”，它使Titans能够选择性地仅用新颖或意外的信息更新其记忆，就像人类记住令人惊讶的事件一样。这种机制利用内部误差信号（梯度），并结合动量和自适应遗忘（权重衰减）来实现高效的记忆管理。
+1.  **马匹**：蒸汽机自1700年起经历了200年的稳定改进。马匹直到1930-1950年才受到影响，当时美国90%的马匹数量突然消失，这表明稳定的进步最终会导致突然的淘汰。
+2.  **国际象棋**：计算机国际象棋自1985年起每年稳定提升50个Elo等级分。虽然人类国际象棋大师在2000年赢得了90%的比赛，但到2010年，他们输掉了90%的比赛，再次表明稳定的进步最终突然超越了人类水平。
 
-MIRAS是一个统一了序列建模的理论框架，将所有架构视为管理关联记忆的不同方式。它通过记忆架构、注意力偏置、保留门和记忆算法来定义模型。通过超越传统的均方误差（MSE）目标，MIRAS允许进行更鲁棒、非欧几里得的优化，从而产生了YAAD、MONETA和MEMORA等模型。
+将这种模式应用于人工智能，作者指出全球在AI上的资本支出正稳定地翻倍。作为Anthropic的一名研究员，作者描述了一次亲身经历：在2024年初，他们工作的一个重要部分是每月回答4,000个新员工的技术问题。到2024年12月，Claude开始提供帮助，并且在六个月内，80%的问题消失了。Claude现在每月回答30,000个问题——是人类峰值的八倍——而成本却比作者低一千倍。
 
-这些创新使得模型更快、能处理更大的上下文，并能动态更新记忆。实验表明，Titans和MIRAS的变体始终比Mamba-2和Transformer++等领先模型实现更高的准确性和更低的困惑度。关键的是，它们在极端长上下文召回方面表现出色，在BABILong等基准测试中，以显著更少的参数超越了GPT-4，证明了其可扩展性超过200万个token。深度记忆架构被证明至关重要，它保持了高效、可并行化的训练和快速推理，为具有增强长期记忆的AI铺平了道路。
-
----
-
-## 6. 我未能用 Claude 重现1996年空中大灌篮网站
-
-**原文标题**: I failed to recreate the 1996 Space Jam website with Claude
-
-**原文链接**: [https://j0nah.com/i-failed-to-recreate-the-1996-space-jam-website-with-claude/](https://j0nah.com/i-failed-to-recreate-the-1996-space-jam-website-with-claude/)
-
-作者尝试使用Claude Opus 4.1，根据截图和原始素材，重现1996年的《空中大灌篮》网站，但最终未能成功。起初，Claude生成了一个“有点像”原版但缺乏精确度的布局，尤其是在行星的轨道模式上，尽管它自信地声称成功并进行了准确分析。
-
-进一步调查显示，Claude无法测量精确的像素坐标，只能进行“视觉估算”，并且对实现精确度信心不足。为了协助，作者提供了网格覆盖、标注像素坐标和迭代比较截图等工具。Claude“喜欢这些网格”，但将其视为装饰，继续对其*自身*不正确的布局进行细微但不准确的调整，尽管有自我批评和看似精确的测量，但仍自信地趋向于错误的答案。作者将Claude描述为一个“不可靠的叙述者”，并将其过度自信归因于可能将其自身生成的内容视为事实。
-
-作者推测，Claude的视觉编码器使用16x16像素的图像块，这导致了良好的语义理解（识别行星、轨道），但缺乏精细的几何精度。即使是使用2倍放大的截图进行的最后尝试也失败了。该项目以作者的沮丧告终，由于Claude无法处理精确的空间关系，即使提供了大量工具和提示，也未能实现忠实的重现。作者仍在寻求解决方案。
+作者最后反思了马匹的类比，其中庞大的种群迅速消失。鉴于AI加速的步伐，他们担心人类角色被取代的速度可能比马匹那二十年还要快得多，预见到工作岗位的快速自动化。
 
 ---
 
-## 7. ICLR 2026 投稿中的五十多个新幻觉
+## 4. 滚蛋联系页面
 
-**原文标题**: Over fifty new hallucinations in ICLR 2026 submissions
+**原文标题**: The fuck off contact page
 
-**原文链接**: [https://gptzero.me/news/iclr-2026/](https://gptzero.me/news/iclr-2026/)
+**原文链接**: [https://www.nicchan.me/blog/the-f-off-contact-page/](https://www.nicchan.me/blog/the-f-off-contact-page/)
 
-GPTZero团队报告称，大量由大型语言模型 (LLM) 生成的幻觉论文——他们称之为“AI糟粕”——正在冲击着学术同行评审，甚至在国际学习表征会议 (ICLR) 等知名场合也是如此。他们利用其“幻觉检测”工具，扫描了300篇ICLR 2026投稿，发现了50篇论文，其中至少包含一个明显且此前未被报告的幻觉。
+作者回顾了一个服务型机构的客户重设计项目，该机构的联系页面存在问题。客户受到一些美观但功能不当的案例启发，坚持采用作者称之为“劝退式联系页面”的设计。
 
-一个关键发现是，这些投稿中的每一篇都已由3到5位同行专家审阅过，但大多数审稿人未能检测出其中捏造的引用或虚假信息。令人担忧的是，一些论文甚至获得了很高的平均评分（例如8/10），这表明它们在未经干预的情况下本将获得发表。
+这种页面在大SaaS公司中很常见，旨在劝退用户直接联系，将他们引导至自助服务资源或销售团队，从而降低支持成本。对于一个旨在获取潜在客户并显得乐于助人的服务机构而言，采用这种方法适得其反，导致销售漏斗中出现摩擦，因为一般查询很难直接联系到真人。“联系销售”选项通常是唯一显眼的真人联系方式，对于有非销售咨询的潜在客户来说，感觉就像是“核废料”。
 
-ICLR的编辑政策指出，即使只有一个明确的幻觉也构成伦理违规。鉴于仅扫描了总投稿量（20,000篇中的300篇）的一小部分，GPTZero预计还将发现数百篇幻觉论文。经证实的幻觉例子包括真实论文的作者信息错误、虚构作者列表、标题不符、出版年份错误以及错误的arXiv ID。
+设计团队忙于客户驱动的其他范围变更，最终让这个不恰当的联系页面设计通过了。尽管客户满意，作者仍感到失望，认为他们妥协了自己的设计原则。
+
+吸取的教训包括：正确评估自身专业价值的重要性（避免打折费率，因为那会暗示可被利用），以及向客户充分解释设计流程，强调用户体验和战略目标而非仅仅是美学。作者现在通过撰写博客来阐明自己的价值观，希望吸引那些重视以用户为中心的设计并能建立基于信任的合作关系的客户。
 
 ---
 
-## 8. Dollar-stores overcharge customers while promising low prices
+## 5. 微软上调 Office 365 和 Microsoft 365 许可价格
 
-**原文标题**: Dollar-stores overcharge customers while promising low prices
+**原文标题**: Microsoft increases Office 365 and Microsoft 365 license prices
 
-**原文链接**: [https://www.theguardian.com/us-news/2025/dec/03/customers-pay-more-rising-dollar-store-costs](https://www.theguardian.com/us-news/2025/dec/03/customers-pay-more-rising-dollar-store-costs)
+**原文链接**: [https://office365itpros.com/2025/12/08/microsoft-365-pricing-increase/](https://office365itpros.com/2025/12/08/microsoft-365-pricing-increase/)
+
+微软于2025年12月4日宣布上调Office 365和Microsoft 365月度许可证的价格，此次调价将于2026年7月1日生效。此举标志着微软2027财年的开始，被宣称是为了给客户提供规划时间，尽管文章指出，对于已深度集成的租户而言，他们几乎别无选择，只能接受新定价。
+
+此前，微软曾在2022年3月进行过一次调价。本次月度涨幅从零（Office 365 E1）到3美元（Office 365 E3、Microsoft 365 E5）不等，估计在4.46亿付费用户中平均每席位上涨2美元，每年可能额外带来107亿美元的收入。这些价格上涨适用于商业云及其他行业。
+
+微软将此次涨价归因于新增的功能和特性，包括为E5提供的Security Copilot，为E3/E5提供的Intune Suite功能，以及Loop、Clipchamp和Places等新应用。他们还指出，Microsoft 365、Copilot和SharePoint共新增了1100项功能。文章认为，这些额外收入可能旨在抵消“对AI的投资”，这些投资已影响到微软云的运营利润率。
+
+作者质疑许多新功能的实用性，特别是对于非Copilot用户而言的Copilot相关功能，并对软件质量、变化速度、微软的AI战略推进以及沟通方式表示担忧。尽管存在这些担忧，Microsoft 365仍被认为具有竞争力，即使基础企业许可证已达到每用户每年312美元，E5则达到每用户每年720美元。建议租户审查其许可证组合，以寻找潜在的节省空间。
+
+---
+
+## 6. IBM将收购Confluent
+
+**原文标题**: IBM to acquire Confluent
+
+**原文链接**: [https://www.confluent.io/blog/ibm-to-acquire-confluent/](https://www.confluent.io/blog/ibm-to-acquire-confluent/)
+
+IBM宣布已达成最终协议，以每股31.00美元的全现金交易收购Confluent。该协议于2025年12月7日签署，预计在满足惯例成交条件并获得监管批准后，交易将于2026年中旬完成。
+
+交易完成后，Confluent将在IBM内部作为一个独立的品牌和业务部门运营。此次收购旨在通过利用Confluent的数据流平台，为云/微服务解锁数据、加速价值实现，并建立对企业级AI扩展至关重要的实时数据基础，从而统一全球最大型企业。
+
+Confluent首席执行官Jay Kreps告知员工，IBM与他们共享事件驱动未来的愿景，了解开源，并与主要的混合型企业合作。他强调，成为IBM的一部分将扩大Confluent的使命，在全球范围内扩大其影响力，并加速向实时和AI驱动运营的转变。Kreps指出，IBM通过收购Red Hat和HashiCorp等公司，在支持开源方面有着悠久的历史。
+
+在交易正式完成之前，Confluent将继续独立运营，维持当前的职位、管理、薪酬、福利和政策。公司当前的首要任务仍然是履行对客户、合作伙伴和员工的承诺。
+
+---
+
+## 7. GitHub Actions 有个包管理器，而且可能糟透了。
+
+**原文标题**: GitHub Actions has a package manager, and it might be the worst
+
+**原文链接**: [https://nesbitt.io/2025/12/06/github-actions-package-manager.html](https://nesbitt.io/2025/12/06/github-actions-package-manager.html)
+
+该文章批评GitHub Actions的包管理存在严重缺陷，缺乏npm或Cargo等成熟系统所具备的关键安全特性。核心问题在于缺少锁文件，导致构建不可复现，因为动作版本（例如 `@v4`）可能会悄无声息地改变，重复运行可能会执行不同且未经验证的代码。
+
+主要问题包括：
+*   **缺乏完整性哈希、传递性依赖固定和依赖树可见性。**
+*   **易受供应链攻击：** 研究表明，未经验证和不安全的动作被广泛使用，来自不可见的传递性依赖存在显著的代码注入风险。
+*   **可变版本：** 标签可以被重新指向，损害稳定性。GitHub的缓解措施只解决了顶层依赖问题，而非传递性依赖这一主要攻击载体。
+*   **没有完整性验证：** 下载内容被隐式信任。
+*   **未记录的解析语义：** 该过程不透明，缺乏基本安全保障。
+*   **其他缺陷：** 没有中央注册表、共享的可变环境、没有离线支持，以及一个容易受到账户劫持的命名空间。
+
+这些缺陷源于GitHub在没有进行充分安全反思的情况下，将内部Azure DevOps的信任模型应用于公共生态系统。这具有更广泛的影响，因为其他包注册表的受信任发布正日益依赖GitHub Actions。尽管像GitLab CI这样的竞争对手已经实现了完整性验证，GitHub却关闭了关于锁文件的请求，认为其“不在计划之内”，从而让用户不得不依赖不足的变通方案。
+
+---
+
+## 8. Jepsen: NATS 2.12.1
+
+**原文标题**: Jepsen: NATS 2.12.1
+
+**原文链接**: [https://jepsen.io/analyses/nats-2.12.1](https://jepsen.io/analyses/nats-2.12.1)
 
 生成摘要时出错
 
 ---
 
-## 9. Screenshots from developers: 2002 vs. 2015 (2015)
+## 9. Microsoft has a problem: lack of demand for its AI products
 
-**原文标题**: Screenshots from developers: 2002 vs. 2015 (2015)
+**原文标题**: Microsoft has a problem: lack of demand for its AI products
 
-**原文链接**: [https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/](https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/)
+**原文链接**: [https://www.windowscentral.com/artificial-intelligence/microsoft-has-a-problem-nobody-wants-to-buy-or-use-its-shoddy-ai](https://www.windowscentral.com/artificial-intelligence/microsoft-has-a-problem-nobody-wants-to-buy-or-use-its-shoddy-ai)
 
 生成摘要时出错
 
 ---
 
-## 10. The past was not that cute
+## 10. Has the cost of building software dropped 90%?
 
-**原文标题**: The past was not that cute
+**原文标题**: Has the cost of building software dropped 90%?
 
-**原文链接**: [https://juliawise.net/the-past-was-not-that-cute/](https://juliawise.net/the-past-was-not-that-cute/)
+**原文链接**: [https://martinalderson.com/posts/has-the-cost-of-software-just-dropped-90-percent/](https://martinalderson.com/posts/has-the-cost-of-software-just-dropped-90-percent/)
 
 生成摘要时出错
 
@@ -143,36 +160,37 @@ ICLR的编辑政策指出，即使只有一个明确的幻觉也构成伦理违�
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 1 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
 | 2 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 3 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 4 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 5 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 6 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 7 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 8 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 9 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 10 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 11 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 12 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 13 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 14 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 15 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 16 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 17 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 18 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 19 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 20 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 21 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 22 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 23 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 3 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 4 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 5 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 6 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 7 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 8 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 9 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 10 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 11 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 12 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 13 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 14 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 15 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 16 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 17 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 18 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 19 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 20 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 21 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 22 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 23 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
 | 24 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
 | 25 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
 | 26 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
 | 27 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
 | 28 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
 | 29 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 30 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 31 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 32 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 33 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 30 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 31 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 32 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 33 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 34 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
