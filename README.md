@@ -1,141 +1,141 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-13.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-14.md)
 
-*最后自动更新时间: 2025-12-13 19:44:44*
-## 1. 苹果已锁定我的Apple ID，我申诉无门。求助
+*最后自动更新时间: 2025-12-14 19:45:22*
+## 1. 我的Apple ID被苹果锁定了，我束手无策。求助。
 
 **原文标题**: Apple has locked my Apple ID, and I have no recourse. A plea for help
 
 **原文链接**: [https://hey.paris/posts/appleid/](https://hey.paris/posts/appleid/)
 
-资深苹果用户兼开发者巴黎（Paris）的Apple ID被永久锁定，导致价值超过3万美元的设备形同“砖块”，并失去对数十年数据、已购软件和其专业数字身份的访问权限。此事源于他试图兑换一张购自大型实体零售商的500美元苹果礼品卡，但兑换失败，并被怀疑可能已被盗用。苹果随后以违反“Apple媒体服务条款和条件”为由禁用了其账户。
+忠实的苹果用户兼专业开发者帕里斯报告称，他拥有25年之久的Apple ID已被永久锁定，这事实上已使他的数字生活陷入瘫痪，并导致其价值超过3万美元的苹果硬件形同废铁。该问题源于他尝试兑换一张价值500美元的苹果礼品卡，这张卡购自一家大型实体零售店，但据苹果公司称，该卡被标记为已被盗用。
 
-尽管苹果声称受影响的仅是媒体服务，但巴黎（Paris）因认证错误，已无法使用iMessage、退出iCloud或访问关键的苹果支持服务。数TB的家庭照片和信息历史记录均无法访问，且目前没有实际方法可以恢复。
+此举已导致他的iPhone、iPad、Mac电脑和Apple Watch基本无法使用，并阻止了他访问数TB的家庭照片、消息历史记录以及数千美元的已购软件和媒体内容。他无法退出iCloud、无法使用iMessage、无法下载他的数据，也无法访问许多需要活跃Apple ID的苹果支持系统。
 
-苹果支持部门态度冷漠，毫无帮助，拒绝提供禁用的具体原因或升级处理该案件。他们甚至建议创建一个新的Apple ID，但巴黎（Paris）认为这是一个技术上灾难性的解决方案，并可能导致进一步的封禁，尤其考虑到他作为苹果开发者以及苹果编程技术书籍作者的专业身份。
+苹果支持部门没有提供任何关于此次封禁的解释，拒绝升级处理，并且不屑一顾地建议他“创建一个新的Apple账户”。这一建议是灾难性的，存在硬件被标记、因规避安全措施而导致账户进一步被禁用，以及他作为一名苹果开发者可能被列入黑名单的风险。
 
-作为近30年的忠实用户和苹果开发者社区的知名人物，巴黎（Paris）认为一次自动化的欺诈标记触发了“核打击式”的回应。他正在恳求人工审查他的案件，以恢复他的数字生活，强调了他绝望的处境以及由此造成的巨大个人和职业损失。
-
----
-
-## 2. 厌倦智能电视？你的最佳选择。
-
-**原文标题**: Sick of smart TVs? Here are your best options
-
-**原文链接**: [https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/](https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/)
-
-对智能电视的隐私问题、广告和复杂性感到沮丧？本文提供了一些替代方案，以获得更简单的观看体验。首要建议是将智能电视离线，并连接一个Apple TV机顶盒。这种设置用苹果更简洁、无广告的tvOS取代了电视内置的侵入性操作系统，确保了更好的隐私、可靠性和易用性，同时仍可访问先进的显示技术。用户可以通过路由器阻止电视的互联网访问，或者在Google TV上使用“基本电视”模式。
-
-对于那些寻求真正“非智能”显示器的人来说，像Emerson、Westinghouse和Sceptre这样的品牌提供非智能型号，不过这些通常在图像和音质方面有所妥协，缺乏高端功能。在亚马逊上搜索也可以帮助找到这些选项。
-
-替代的显示解决方案包括投影仪，它们提供大屏幕尺寸，但需要昏暗的环境；以及电脑显示器，它们提供详细的规格和高刷新率，尤其适用于小屏幕，但缺乏电视调谐器和通常没有内置扬声器。数字标牌显示器经久耐用，但往往更昂贵，且不适合家庭娱乐优化。
-
-为了驱动这些非智能显示器，用户可以连接笔记本电脑或手机等设备。笔记本电脑提供广泛的自定义选项、广泛的流媒体服务访问（尽管4K/HDR流媒体可能对浏览器/GPU有特定要求）以及多视图功能。从沙发上舒适地控制可能需要蓝牙鼠标/键盘或空中鼠标。手机可以通过适配器连接，但通常面临分辨率限制（例如，iPhone上的Netflix仅支持1080p），并且与某些服务的屏幕镜像存在不一致性。
-
-至关重要的是，任何旨在播放4K或HDR内容的设置，都必须确保显示器和连接设备都符合HDCP 2.2标准。
+作为苹果编程语言技术书籍的作者和大型开发者活动的组织者，帕里斯强调了他长期以来对苹果生态系统的投入。他认为，是自动欺诈标记错误地触发了这种“核打击”，他恳求对他的案件进行人工审查，以恢复他的数字身份和访问权限。
 
 ---
 
-## 3. OpenAI 悄然采用技能，现已登陆 ChatGPT 和 Codex CLI
+## 2. OpenAI正在悄悄采用技能，现已在ChatGPT和Codex CLI中可用
 
 **原文标题**: OpenAI are quietly adopting skills, now available in ChatGPT and Codex CLI
 
 **原文链接**: [https://simonwillison.net/2025/Dec/12/openai-skills/](https://simonwillison.net/2025/Dec/12/openai-skills/)
 
-2025年12月12日，这篇文章宣布OpenAI正在悄然将“技能（skills）”集成到ChatGPT的Code Interpreter和Codex CLI工具中，此举模仿了Anthropic早期的实现方式。技能的实现方式很简单：一个包含Markdown文件和可选资源的文件夹，旨在让能够进行文件系统导航的LLM轻松采用。
+OpenAI正在悄然整合一套类似于Anthropic的“技能”机制，到ChatGPT的Code Interpreter（代码解释器）和其Codex CLI工具中，截至2025年12月。这一采用验证了作者之前将技能视为AI重大发展的评估。
 
-在ChatGPT中，技能位于一个新的`/home/oai/skills`文件夹中，支持电子表格、DOCX和PDF文件。对于文档和PDF文件，OpenAI的方法是将页面转换为PNG图片，然后使用具备视觉能力的GPT模型进行处理，以保留布局和图形细节。一个例子展示了GPT-5.2精心创建了一个PDF摘要，包括对字体兼容性的自我修正。
+技能被构造成文件夹，包含一个Markdown文件（`skill.md`）和可选的资源/脚本，使大型语言模型（LLM）易于实现。
 
-另外，OpenAI的开源Codex CLI最近增加了对技能的实验性支持。`~/.codex/skills`中的任何文件夹都可以作为一项技能，通过`--enable skills`选项激活。作者成功地使用Codex CLI生成了一个Datasette插件，展示了其实际应用。
+在**ChatGPT**中，技能可以通过`/home/oai/skills`文件夹在Code Interpreter（代码解释器）内部访问。当前技能涵盖电子表格、DOCX和PDF。值得注意的是，对于PDF和文档，OpenAI将页面转换为PNG，利用支持视觉的GPT模型来保留布局和图形，而不仅仅是提取文本。一个示例展示了GPT-5.2精心创建了一份关于新西兰红松（rimu trees）和鸮鹦鹉（kakapo）的PDF，甚至能自我纠正长音符号（macrons）的字体问题。
 
-作者强调，OpenAI的迅速采纳验证了他此前对技能是一项非常重要的发展的评估，并呼吁对其进行正式的文档编写，最好由Agentic AI Foundation来完成。
+对于**Codex CLI**，两周前引入了技能的实验性支持。用户可以将技能安装到`~/.codex/skills`中，并通过`--enable skills`选项激活它们。一个示例展示了使用自定义技能完美生成了一个Datasette插件。
+
+文章强调，OpenAI迅速采纳这种“轻量级规范”进一步证实了技能概念的强大。作者建议，对技能规范进行正式文档化将大有裨益，这可能由Agentic AI Foundation牵头。
 
 ---
 
-## 4. macOS 26.2 支持基于雷雳RDMA的快速AI集群
+## 3. 欧洲健康数据售予前以色列间谍掌管的美国公司
+
+**原文标题**: Europeans' health data sold to US firm run by ex-Israeli spies
+
+**原文链接**: [https://www.ftm.eu/articles/europe-health-data-us-firm-israel-spies](https://www.ftm.eu/articles/europe-health-data-us-firm-israel-spies)
+
+欧洲通讯服务Zivver，被欧盟和英国政府、医院及法院用于机密通讯，现已被出售给一家与以色列情报机构有密切联系的美国公司Kiteworks，这引发了严重关切。
+
+荷兰公司Zivver，经调查发现，尽管声称“零访问”，但其能够读取客户的“加密”内容。这意味着包括医疗和政府通讯在内的敏感欧洲数据，Zivver本身就已经可能访问。
+
+Kiteworks的此次收购带来了两个主要问题：
+1.  **美国司法管辖权：** 这些数据现在受制于侵入性的美国法律，这意味着无论数据存储在哪里，美国政府都可以要求访问。
+2.  **与以色列情报机构的联系：** Kiteworks的首席执行官乔纳森·亚伦（Jonathan Yaron）和几位高级管理人员都曾是以色列精英军事情报8200部队的成员，该部队以窃听闻名。专家警告称，以色列情报机构与科技行业之间存在“旋转门”现象，这造成了一个漏洞，Zivver的敏感数据“金矿”可能被外国情报机构利用。
+
+荷兰当局未能阻止或适当评估此次收购，将Zivver归类为非关键基础设施——专家称这一决定是“巨大失误”。批评人士强调，欧洲对其数字基础设施缺乏战略控制，呼吁加强监管，以保护重要的通讯服务免受外国影响和潜在的数据滥用。
+
+---
+
+## 4. macOS 26.2 通过 Thunderbolt RDMA 实现快速 AI 集群
 
 **原文标题**: macOS 26.2 enables fast AI clusters with RDMA over Thunderbolt
 
 **原文链接**: [https://developer.apple.com/documentation/macos-release-notes/macos-26_2-release-notes#RDMA-over-Thunderbolt](https://developer.apple.com/documentation/macos-release-notes/macos-26_2-release-notes#RDMA-over-Thunderbolt)
 
-所提供的内容不包含题为“macOS 26.2 通过雷电上的RDMA实现快速AI集群”的文章。相反，它显示一条消息，指出该页面需要JavaScript且无法查看。
+标题为“macOS 26.2 enables fast AI clusters with RDMA over Thunderbolt”的文章内容无法访问。页面没有显示文章，而是显示了一条错误消息，表明需要JavaScript才能查看其内容。
 
-因此，无法总结该预期文章的主要观点和关键信息。该标题表明，文章将详细介绍macOS 26.2（可能代号为“Tahoe”）如何通过在雷电技术上实现远程直接内存访问（RDMA）来促进高速AI集群，这将显著增强AI工作负载的数据传输和处理能力。然而，支持这一点的实际内容却无法获取。
-
----
-
-## 5. 诺基亚 N900 起死回生
-
-**原文标题**: Nokia N900 Necromancy
-
-**原文链接**: [https://yaky.dev/2025-12-11-nokia-n900-necromancy/](https://yaky.dev/2025-12-11-nokia-n900-necromancy/)
-
-该项目详细介绍了朋友的诺基亚N900“起死回生”的过程，该手机电池已失效，无法启动。作者摒弃了不可靠的替代电池，最初使用超级电容器和电阻器制作了一个原型“假电池”，成功启动了该设备。
-
-后来，这项设计演变为一个定制的3D打印外壳，可容纳十个小型超级电容器（总计0.5F），并能适配电池仓。在测试过程中，电源波动损坏了内部操作系统，这促使作者改为从SD卡启动。
-
-试图通过N900原装micro-USB端口统一供电却适得其反，造成了严重后果。该端口本身已知的脆弱性，再加上意外损坏，导致主板上一个关键的+5V焊盘被毁坏，使得原装USB端口彻底失效。
-
-作者并未气馁，进行了“彻底的改造”。一个小型USB-C端口经过物理改造以适应N900的机身。由于空间限制，仅连接了5V和地线，将充电电流限制在0.5A，仅支持基本的USB-A转USB-C线缆充电。随后设计了一个新的3D打印“电池”，用于容纳一个大电容器、一个二极管以及从报废原装电池中取出的控制模块，通过新的USB-C端口供电。
-
-这种定制的解决方案成功地“复活”了N900，使其能够从SD卡启动，并以网络收音机设备的身份找到了新的用途。
+因此，无法提供关于macOS 26.2、其实现快速AI集群的能力以及通过Thunderbolt使用RDMA的实际文章内容的摘要。根据输入，文章本身的要点和关键信息均无法获取。
 
 ---
 
-## 6. 谷歌取消收录了熊博客，我不知道为什么。
+## 5. VPN宣称的位置与实际流量出口不符
 
-**原文标题**: Google de-indexed Bear Blog and I don't know why
+**原文标题**: VPN location claims don't match real traffic exits
 
-**原文链接**: [https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/](https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/)
+**原文链接**: [https://ipinfo.io/blog/vpn-location-mismatch-report](https://ipinfo.io/blog/vpn-location-mismatch-report)
 
-詹姆斯·詹在blog.james-zhan.com上的Bear Blog，尽管最初成功收录，但由于未知原因，其在Google上被完全取消索引。问题始于10月14日，当时詹不小心为RSS订阅源URL启动了Google Search Console (GSC) 验证。截至10月20日，他除一篇博文外，所有文章都已被取消索引，显示状态为“已抓取 - 当前未编入索引”，最后一篇文章也在11月3日被取消索引。
+IPinfo 的研究显示，在 20 个热门 VPN 中，有 17 个谎报了其流量出口位置。通过分析 137 个国家/地区的 15 万个出口 IP，他们发现许多提供商声称支持超过 100 个国家/地区，但实际上却通过少数几个物理数据中心（主要位于美国或欧洲）路由流量。其中有 38 个声称的国家/地区是“纯虚拟”的，意味着没有实际流量从这些地方出口。只有 Mullvad、IVPN 和 Windscribe 展现了完全可验证的位置。
 
-詹进行了大量的故障排除工作。他通过在另一个子域名 (www.james-zhan.com) 上成功索引另一个Bear Blog，排除了域名问题。内容质量或数量也被排除，因为其他极简主义的Bear博客收录正常。同样，URL结构也不是原因，这已通过使用相同默认设置的其他Bear博客证实。Bear Blog的创始人Herman也确认博客或其CSS代码没有阻止索引的技术问题。关键是，该博客仍被DuckDuckGo、Bing和Brave等其他搜索引擎正常索引，这表明网站本身没有内在的技术缺陷。
+当 VPN 应用甚至 IP 注册数据声称是“国家 X”，但活跃网络测量却显示流量从“国家 Y”出口时，就会出现虚拟位置，两者通常相隔数千公里（例如，巴哈马的流量从美国出口，索马里的流量从法国/英国出口）。传统的 IP 数据提供商常常依赖于自报数据，从而延续了这些错误，其位置中位数误差高达 3100 公里。
 
-詹无法解决这个神秘的取消索引问题，于是将他的博客迁移到一个新的子域名journal.james-zhan.com（当前网站），将域名转发转移到Porkbun，并设置了重定向。对于新博客，他决定不再手动向GSC提交站点地图，希望其能自然索引。詹现在寻求公众的帮助，以了解最初取消索引的原因。
-
----
-
-## 7. Epic在iOS支付案胜诉后，庆祝“苹果税”的终结。
-
-**原文标题**: Epic celebrates "the end of the Apple Tax" after court win in iOS payments case
-
-**原文链接**: [https://arstechnica.com/tech-policy/2025/12/epic-celebrates-the-end-of-the-apple-tax-after-appeals-court-win-in-ios-payments-case/](https://arstechnica.com/tech-policy/2025/12/epic-celebrates-the-end-of-the-apple-tax-after-appeals-court-win-in-ios-payments-case/)
-
-The Ninth Circuit Court of Appeals has largely upheld a lower court's ruling finding Apple in "willful violation" of a 2021 injunction concerning iOS App Store payments. Epic Games CEO Tim Sweeney hailed the decision as "the end of the Apple Tax" in the USA, anticipating "untaxed competition" on iOS payments worldwide.
-
-The appeals court affirmed that Apple's initial 27 percent fee for external payment options was "prohibitive" and its restrictions on external links were "overly broad." It also agreed that Apple acted in "bad faith" by resisting compliance. However, the appellate court did modify the lower court's blanket ban on fees, suggesting Apple *can* charge a "reasonable fee" based on its "actual costs to ensure user security and privacy." Sweeney believes these should be minimal, covering only app review costs.
-
-Sweeney expects "rapid adoption" of outside payment processors, including Epic Web Shops, predicting web payments will be the norm by next year. He also highlighted a widespread "fear of retaliation" among developers, where Apple allegedly uses "soft power"—like delaying app reviews or burying products—against those using alternative payment methods. Sweeney called this "totally illegal" and urged regulators to address this pervasive fear, stating, "everybody’s afraid of Apple." Apple has not yet commented.
+尽管虚拟位置存在技术原因（风险、成本），但缺乏透明度和大规模的不匹配现象造成了严重的信任问题，影响了用户、记者和反欺诈系统。IPinfo 通过“测量优先”的方法来解决这个问题，利用其 ProbeNet（1200 多个全球 PoP）进行主动 RTT 测量，以验证真实的物理位置。用户应对过长的国家列表持怀疑态度，并寻找透明标注虚拟位置的提供商。
 
 ---
 
-## 8. UK House of Lords attempting to ban use of VPNs by anyone under 16
-
-**原文标题**: UK House of Lords attempting to ban use of VPNs by anyone under 16
-
-**原文链接**: [https://alecmuffett.com/article/134925](https://alecmuffett.com/article/134925)
-
-生成摘要时出错
-
----
-
-## 9. Rats Play DOOM
+## 6. 老鼠玩毁灭战士
 
 **原文标题**: Rats Play DOOM
 
 **原文链接**: [https://ratsplaydoom.com/](https://ratsplaydoom.com/)
 
+《老鼠玩DOOM》一文详细介绍了一种专门为老鼠设计用于玩电子游戏的头戴设备，强调其独特的视觉界面和集成的感官功能。该头显能牢固地环绕老鼠的头部，集成一个可折叠的AMOLED屏幕，提供全高清分辨率以实现最大沉浸感，同时确保老鼠的胡须不受阻碍。
+
+除了显示屏，该头显还集成了几个关键的感官组件。它在左右胡须附近设有两个小型气嘴，能够提供定向气流，以提示游戏内事件，例如撞墙。框架还为奖励系统的分配管提供了一个牢固的安装点，将其方便地定位在老鼠嘴巴附近。此外，该设计还在每只耳朵附近预留了微型立体声扬声器的安装位置，表明未来有集成音频提示的计划。该描述还辅以对视觉辅助材料的引用，例如“头显特写”和“3D模型：头显”。
+
+---
+
+## 7. GNU 统一字体
+
+**原文标题**: GNU Unifont
+
+**原文链接**: [https://unifoundry.com/unifont/index.html](https://unifoundry.com/unifont/index.html)
+
+GNU Unifont 是一个 GNU 项目字体，提供对可打印 Unicode 码点的全面覆盖，主要涵盖基本多文种平面 (BMP)，并日益支持辅助多文种平面 (SMP) 和 ConScript Unicode 注册表 (CSUR)。
+
+它采用双重许可，即附带 GNU 字体嵌入例外条款的 GNU GPLv2+ 许可和 SIL 开放字体许可 1.1。此许可明确允许商业使用，确保派生字体保持自由，并鸣谢志愿者贡献者。
+
+Unifont 提供 OpenType、PCF、BDF、PSF 和 HEX 等多种格式下载，并提供针对日文、更高 Unicode 平面和 CSUR 字形的专门版本。Windows 和 Mac OS X 用户可以将未压缩的字体文件安装到其系统的“字体”文件夹中。在 Mac 终端上，为了实现正确显示，可能需要启用抗锯齿功能。
+
+Unifont 的一个显著局限是每个码点只存储一个字形。这使其不太适合需要上下文塑形、连字或浮动元音标记才能准确显示的复杂文字系统（如印度语系或阿拉伯语系文字）。对于这些文字系统，它通常作为“最后的备用字体”使用。
+
+开发工作持续进行，众多贡献者在所有 Unicode 平面添加和修改字形。近期发布的版本（例如 17.0、16.0）详细说明了广泛的更新，包括对中文、阿拉伯文、格鲁吉亚文、古突厥文和表情符号字形的改进，以及新增的文字和符号。鼓励希望贡献新字形的志愿者提前联系项目组协调工作，需注意受中华人民共和国版权保护的 CJK 字形不能包含在该自由字体中。
+
+---
+
+## 8. I tried Gleam for Advent of Code
+
+**原文标题**: I tried Gleam for Advent of Code
+
+**原文链接**: [https://blog.tymscar.com/posts/gleamaoc2025/](https://blog.tymscar.com/posts/gleamaoc2025/)
+
 生成摘要时出错
 
 ---
 
-## 10. SQLite JSON at full index speed using generated columns
+## 9. Linux Sandboxes and Fil-C
 
-**原文标题**: SQLite JSON at full index speed using generated columns
+**原文标题**: Linux Sandboxes and Fil-C
 
-**原文链接**: [https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing](https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing)
+**原文链接**: [https://fil-c.org/seccomp](https://fil-c.org/seccomp)
+
+生成摘要时出错
+
+---
+
+## 10. Recovering Anthony Bourdain's Li.st's
+
+**原文标题**: Recovering Anthony Bourdain's Li.st's
+
+**原文链接**: [https://sandyuraz.com/blogs/bourdain/](https://sandyuraz.com/blogs/bourdain/)
 
 生成摘要时出错
 
@@ -145,41 +145,42 @@ Sweeney expects "rapid adoption" of outside payment processors, including Epic W
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 2 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 3 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 4 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 1 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 2 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 3 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 4 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
 | 5 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
 | 6 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
 | 7 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
 | 8 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 9 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 10 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 11 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 12 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 13 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 14 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 15 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 16 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 17 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 18 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 9 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 10 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 11 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 12 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 13 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 14 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 15 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 16 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 17 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 18 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
 | 19 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 20 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 21 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 22 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 20 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 21 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 22 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
 | 23 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 24 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 25 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 26 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 27 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 28 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 29 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 30 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 31 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 32 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 33 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 34 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 35 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 36 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 37 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 38 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 24 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 25 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 26 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 27 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 28 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 29 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 30 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 31 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 32 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 33 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 34 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 35 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 36 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 37 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 38 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 39 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
