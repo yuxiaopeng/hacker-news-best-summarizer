@@ -1,151 +1,141 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-15.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-16.md)
 
-*最后自动更新时间: 2025-12-15 19:50:48*
-## 1. 欧洲人的健康数据被出售给由前以色列间谍经营的美国公司。
+*最后自动更新时间: 2025-12-16 19:50:00*
+## 1. 我是肯尼亚人。我写得不像ChatGPT，是ChatGPT写得像我。
 
-**原文标题**: Europeans' health data sold to US firm run by ex-Israeli spies
+**原文标题**: I'm Kenyan. I don't write like ChatGPT, ChatGPT writes like me
 
-**原文链接**: [https://www.ftm.eu/articles/europe-health-data-us-firm-israel-spies](https://www.ftm.eu/articles/europe-health-data-us-firm-israel-spies)
+**原文链接**: [https://marcusolang.substack.com/p/im-kenyan-i-dont-write-like-chatgpt](https://marcusolang.substack.com/p/im-kenyan-i-dont-write-like-chatgpt)
 
-欧盟和英国政府、医院及法院用于敏感通信的欧洲保密消息服务Zivver已出售给美国公司Kiteworks，引发了专家们的重大担忧。这笔交易将高度敏感的欧洲数据置于美国法律管辖之下，无论数据存储在哪里。
+在题为《我是肯尼亚人。我不像ChatGPT那样写作，ChatGPT像我一样写作》的文章中，马库斯·奥朗（Marcus Olang）挑战了普遍的看法，即人工智能写作是对人类文本平淡、缺乏个性的模仿。相反，他认为像ChatGPT这样的大型语言模型所产生的写作风格，实际上是其训练所用的海量互联网数据的聚合与平均——其中很大一部分来自全球作家，包括非西方背景的作家。
 
-一个主要担忧是Kiteworks的领导层：其首席执行官和几位高级管理人员均是以窃听和破译密码而闻名的以色列国防军精锐网络部队——8200部队的退役成员。这种与以色列情报部门的紧密联系使专家们相信数据很有可能流向以色列，从而使欧洲的通信变得脆弱。
+作为肯尼亚作家的奥朗主张，人工智能的“平均”风格常常反映出在肯尼亚等国家普遍存在的清晰、直接、有时略显正式的英语。在这些国家，英语是官方语言，但使用时常带有独特的文化细微之处，并注重清晰度而非修辞华丽。他指出，这种在数百万为互联网贡献内容的非母语英语使用者中普遍存在的风格，构成了人工智能训练数据的重要组成部分。
 
-更令人担忧的是，一项调查显示，Zivver声称的“零访问”与事实不符，它在技术上能够读取用户所谓加密消息和附件的内容，至少在传输过程中可以短暂访问。这意味着敏感信息——包括医疗、金融和个人数据——可以被公司本身访问，现在也可以被其具有深厚情报背景的美国新东家访问。专家们认为这些信息对情报机构来说是“金矿”，可用于监视或胁迫。
-
-这次收购在未经荷兰当局审查的情况下进行，荷兰当局有争议地将Zivver归类为非“关键基础设施”。专家们谴责这一疏忽是“巨大失误”，凸显了欧洲对其数字基础设施缺乏战略控制。此案凸显了地缘政治紧张局势，以及将敏感的欧洲数据委托给具有情报背景的外国实体的危险。
+作者认为，归因于人工智能写作的“通用性”并非一种全新的人工建构，而是对一种广泛采用的全球英语语域的反映。他暗示，与其说是人类适应人工智能的风格，不如说是人工智能有效地综合并反映了一种已在人类中广泛使用的风格，特别是那些来自“全球南方”并为在线内容做出大量贡献的人。这一观点重新构建了关于人工智能对写作影响的讨论，强调了它作为反映全球多样化语言贡献的一面镜子的作用。
 
 ---
 
-## 2. Roomba制造商破产，中企接盘
+## 2. “隐私”扩展程序倒卖800万用户AI对话牟利
+
+**原文标题**: 8M users' AI conversations sold for profit by "privacy" extensions
+
+**原文链接**: [https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection](https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection)
+
+Koi研究揭露了一项重大的隐私泄露，涉及“隐私”浏览器扩展程序，主要是Urban VPN Proxy及其同属一家发行商的另外七个扩展程序，影响了Chrome和Edge上超过800万用户。这些扩展程序秘密收集来自ChatGPT、Claude和Gemini等平台上的完整AI对话。
+
+这些扩展程序向AI聊天页面注入脚本，拦截每一个提示、AI回复、对话ID以及会话元数据。这些敏感数据——包括个人困境、健康问题、财务细节和专有信息——随后被传输到由Urban Cyber Security Inc.运营的Urban VPN服务器，该公司与数据经纪商BiScience存在关联，并将数据出售用于“营销分析”。
+
+这项收集功能于2025年7月（5.5.0版）通过自动更新悄悄添加，并且无论VPN或“AI保护”功能是否启用，都会在后台持续运行。讽刺的是，这些扩展程序在警告用户不要与AI公司共享敏感数据时，却同时自行收集并出售这些数据。
+
+尽管带有Google和Microsoft的“推荐”徽章，这暗示着高标准的审查和信任，但这些扩展程序却明确违反了商店关于禁止向第三方数据经纪商出售用户数据的政策。它们的商店列表与隐私政策中关于数据销售和信息收集范围的规定相矛盾，从根本上误导了用户。
+
+建议用户立即卸载任何此类扩展程序，并假定自2025年7月以来的所有AI对话都已遭到泄露。
+
+---
+
+## 3. Roomba制造商破产，中资接手
 
 **原文标题**: Roomba maker goes bankrupt, Chinese owner emerges
 
 **原文链接**: [https://news.bloomberglaw.com/bankruptcy-law/robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years](https://news.bloomberglaw.com/bankruptcy-law/robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years)
 
-iRobot Corp., the Massachusetts-based maker of the Roomba robot vacuum, has filed for bankruptcy. The company proposes to hand over control to its main Chinese supplier, Shenzhen PICEA Robotics Co., and its subsidiary.
+总部位于马萨诸塞州的知名扫地机器人Roomba制造商iRobot公司已申请破产。这家公司以在21世纪初彻底改变扫地机器人行业而闻名，现提议将其控制权转让给其主要中国供应商深圳市PICEA机器人有限公司及其子公司。
 
-iRobot, which revolutionized robot vacuum cleaners in the early 2000s and was founded in 1990 by MIT engineers, listed assets and liabilities between $100 million and $500 million in its filing. As a result of the takeover, the common stock of iRobot will be wiped out. The full details of the takeover and its legal implications are available through Bloomberg Law.
-
----
-
-## 3. VPN location claims don't match real traffic exits
-
-**原文标题**: VPN location claims don't match real traffic exits
-
-**原文链接**: [https://ipinfo.io/blog/vpn-location-mismatch-report](https://ipinfo.io/blog/vpn-location-mismatch-report)
-
-生成摘要时出错
+根据一份新闻稿，这家目前上市的公司将被该中国公司接管。由麻省理工学院工程师于1990年创立的iRobot公司，在提交的破产申请中列出的资产和负债范围在1亿至5亿美元之间。破产的一个结果是，iRobot的普通股将被清零。这篇由彭博法律提供的文章指出，更多详情可供订阅者查阅。
 
 ---
 
-## 4. 如果AI取代工人，它是否也应该纳税？
+## 4. 这不是未来
+
+**原文标题**: This is not the future
+
+**原文链接**: [https://blog.mathieui.net/this-is-not-the-future.html](https://blog.mathieui.net/this-is-not-the-future.html)
+
+在《这不是未来》一文中，mathieui 批判性地挑战了那种普遍存在的“这就是未来，你喜欢也罢，不喜欢也罢”的心态，这种心态常被用来为新技术辩护，尤其是在生成式AI等领域。作者认为这种说法“令人作呕”，且缺乏证据支持，并断言在技术领域，**没有什么事情是真正不可避免的**。
+
+核心论点是，现代技术本质上具有**滥用性**，它使消费者习惯于接受持续的变化、忽视自身需求并放弃自主权，从而导致普遍的挫败感。这种滥用，再加上无休止的营销，共同制造了“用户同意”、虚假宣传以及所谓的消费者需求。
+
+作者列举了大量技术和趋势的例子，从联网床、AI浏览器、不可修复的设备，到NFT、元宇宙，以及微软收集用户截图用于AI训练，所有这些都被明确宣称**并非不可避免**。这些都被描绘成“科技骗子”的产物，他们利用个人数据和用户注意力来牟取暴利。
+
+最终，文章敦促读者抵制同谋、坚持对**理想未来**的看法，并认识到每一个技术选择都是一种政治宣言和有意识的权衡。
+
+---
+
+## 5. “超安全”消息应用泄露所有用户手机号
+
+**原文标题**: “Super secure” messaging app leaks everyone's phone number
+
+**原文链接**: [https://ericdaigle.ca/posts/super-secure-maga-messaging-app-leaks-everyones-phone-number/](https://ericdaigle.ca/posts/super-secure-maga-messaging-app-leaks-everyones-phone-number/)
+
+“超安全”的MAGA主题通讯应用Freedom Chat（前身为Converso）被发现泄露了用户的电话号码和PIN码，尽管其首席执行官Tanner Haas在之前有据可查的安全失败后对其进行了重新发布。
+
+前身Converso虚假宣称拥有先进的端到端加密（E2EE）和去中心化技术，但研究员crnković发现它将带有可推导密钥的消息存储在中心化服务器上，并上传到一个开放的Firebase存储桶。在更名为Freedom Chat以吸引关注隐私的“保守派群体”后，该应用仍暴露出持续存在的基础性安全缺陷。
+
+安全研究员Eric Daigle发现了两个严重漏洞。首先，仅仅通过查看一个公共频道，该应用就会将所有频道成员（包括创建者）的六位PIN码以明文形式广播给其他所有成员。这会暴露频道中任何人的PIN码（包括所有默认用户）。
+
+其次，Freedom Chat的联系人发现功能通过`/user/numbers` API端点访问，允许用户上传电话号码，并获取已注册用户的UID和Seald密钥。关键的是，这个端点，类似于WhatsApp过去的一个漏洞，**没有**速率限制。
+
+结合这些缺陷，攻击者可以通过不受速率限制的端点枚举所有已注册的Freedom Chat电话号码。通过将这些电话号码与公共频道成员数据中暴露的UID关联起来，攻击者可以将特定的电话号码与其关联的PIN码联系起来。这意味着任何加入过Freedom Chat频道的用户，其电话号码和PIN码都已被暴露，使得其“超安全”的说法完全站不住脚。
+
+---
+
+## 6. 如果人工智能取代了工人，它是否也应该纳税？
 
 **原文标题**: If AI replaces workers, should it also pay taxes?
 
 **原文链接**: [https://english.elpais.com/technology/2025-11-30/if-ai-replaces-workers-should-it-also-pay-taxes.html](https://english.elpais.com/technology/2025-11-30/if-ai-replaces-workers-should-it-also-pay-taxes.html)
 
-人工智能（AI）和自动化技术的兴起对公共财政构成了重大挑战，因为它可能取代人类工人，导致所得税和社会保障缴款减少。这引发了一场争论：人工智能或部署人工智能的公司是否应该纳税，以弥补劳动力收入的损失？
+The rapid advancement of Artificial Intelligence (AI) and automation is leading to job displacement and raising concerns about its impact on public finances. With tech giants investing heavily in AI while reducing their workforce, a key question emerges: should AI, if it replaces human labor, also contribute taxes?
 
-支持对人工智能征税的人士，如比尔·盖茨和诺贝尔经济学奖得主埃德蒙·费尔普斯，建议施加与人类工人承担的税负类似的税收。然而，包括国际货币基金组织（IMF）在内的许多专家和机构普遍不建议征收特定的人工智能税，理由是其定义困难、可能扭曲市场并抑制创新。
+Historically, figures like Nobel laureate Edmund Phelps and Bill Gates have proposed taxing robots or AI to help maintain social benefits or match the tax burden of displaced workers. However, the majority of experts cited in the article argue against a specific AI tax. They contend that defining AI for tax purposes is problematic, and such a tax could stifle innovation, harm productivity, and reduce competitiveness. Daniel Waldenström points to the lack of a significant increase in unemployment so far, while Susanne Bieller of the International Federation of Robotics emphasizes that automation creates new jobs and boosts productivity.
 
-相反，有人提出了替代解决方案：
-*   **增加资本利得税：** 由布鲁金斯学会的桑杰·帕特奈克和国际货币基金组织推荐，因为资本税有所下降，而劳动税仍居高不下。
-*   **对“超额”公司利润征收附加税：** 由国际货币基金组织提出。
-*   **审查创新和无形资产的税收优惠。**
-*   **解决税收系统失衡问题：** 牛津大学的卡尔·弗雷指出，与所得税相比，较低的资本税激励了自动化而非创造就业。
+Instead, many suggest rebalancing existing tax structures. Experts like Sanjay Patnaik (Brookings), the IMF, and Carl Frey (Oxford University) recommend increasing capital gains taxes. They highlight a growing imbalance where corporate tax rates have significantly decreased in OECD countries, while the tax burden on labor has remained relatively high, incentivizing investment in automation over job creation. The IMF also proposes a supplementary tax on "excessive" corporate profits and a review of tax incentives for innovation that might displace human jobs.
 
-批评者，如国际机器人联合会的丹尼尔·瓦尔登斯特伦和苏珊娜·比勒，认为征收特定的人工智能税是不必要、难以实施且可能损害竞争力的。他们强调，自动化可以创造新工作并提高生产力，而且当前的失业率并未显著上升。
-
-虽然人工智能预计将提振全球GDP，但其对就业的影响仍不确定；许多工作岗位可能被转型而非淘汰，但高技能岗位也日益面临风险。担忧还包括日益加剧的不平等、高能耗，以及新创造的就业岗位可能无法自动弥补损失（特别是对于低技能工人）的风险。文章总结指出，积极的政策选择对于应对这些复杂的社会和经济影响至关重要。
+While AI's overall economic impact remains uncertain—forecasts range from significant GDP growth to job transformation rather than outright disappearance—there's a consensus that governments must proactively address its implications. Though a direct AI tax is largely rejected, the broader tax system requires adjustments to ensure shared prosperity and prevent widening inequality in the AI era.
 
 ---
 
-## 5. 爱达福：Arduino规则‘与开源精神相悖’
+## 7. 秘密文件揭示百事和沃尔玛勾结抬高食品价格
 
-**原文标题**: Adafruit: Arduino’s Rules Are ‘Incompatible With Open Source’
+**原文标题**: Secret Documents Show Pepsi and Walmart Colluded to Raise Food Prices
 
-**原文链接**: [https://thenewstack.io/adafruit-arduinos-rules-are-incompatible-with-open-source/](https://thenewstack.io/adafruit-arduinos-rules-are-incompatible-with-open-source/)
+**原文链接**: [https://www.thebignewsletter.com/p/secret-documents-show-pepsi-and-walmart](https://www.thebignewsletter.com/p/secret-documents-show-pepsi-and-walmart)
 
-尽管标题引人入胜，但所提供的内容并非一篇讨论 Adafruit、Arduino 或开源兼容性的文章。相反，它是一个针对“The New Stack”时事通讯的详细多步骤订阅表格，目标用户是软件工程领导者和开发者。
+《大通讯》的这篇文章揭示，近期美国联邦贸易委员会（FTC）对百事公司提起的诉讼中披露的秘密文件表明，百事公司和沃尔玛涉嫌合谋抬高食品价格。这些文件，包括内部电子邮件和电话通话记录，表明这两家企业巨头之间存在密切协调，而非竞争性谈判。
 
-表格首先要求填写电子邮件地址，并为以前取消订阅的用户提供了特定的处理流程。它向用户保证，他们的信息不会被出售或分享给第三方，并要求用户同意使用条款和隐私政策。
+调查发现，百事公司向沃尔玛提供了其竞争对手（包括可口可乐和Dr Pepper）的保密定价信息，从而有效地让沃尔玛在与其他供应商的谈判中获得了不公平的优势。此外，百事公司为自己的产品向沃尔玛提供更高的“标价”，明知沃尔玛随后会要求其他供应商也提高价格。作为回报，沃尔玛则会为百事公司提供更显眼的货架位置和更好的广告宣传。
 
-接着，订阅者需要提供个人详细信息，例如名字、姓氏、公司名称、国家和邮政编码。之后，表格会收集用户的职业信息，包括他们的职级（例如，C级、经理、初级）、职位角色（例如，开发人员、架构师、DevOps 工程师）、所在组织的规模、组织类型（例如，最终用户、供应商、云提供商）以及其组织的主要行业。此外，还有一个可选的 LinkedIn 个人资料网址字段。
-
-成功完成后，用户将被欢迎加入“The New Stack”社区，被告知内容将在周一至周五发送，并被建议查收收件箱中的确认邮件，以调整偏好或加入其他群组。它还鼓励用户在社交媒体上关注 TNS，并在其平台上浏览当前的故事。
+这种被作者描述为“卡特尔”的安排，使得两家公司都能以牺牲消费者利益为代价增加利润。文章强调，这些做法符合典型的反垄断违规行为，表明这是一种蓄意操纵市场和扼杀竞争的行为。作者认为，这一证据支持了加强反垄断执法，并对这种企业行为制定更严格法规的必要性。
 
 ---
 
-## 6. 哈希卡：纯文本间隔重复系统
+## 8. Children with cancer scammed out of millions fundraised for their treatment
 
-**原文标题**: Hashcards: A plain-text spaced repetition system
+**原文标题**: Children with cancer scammed out of millions fundraised for their treatment
 
-**原文链接**: [https://borretti.me/article/hashcards-plain-text-spaced-repetition](https://borretti.me/article/hashcards-plain-text-spaced-repetition)
-
-Hashcards 是一个新的、本地优先的间隔重复系统，其独特之处在于不使用数据库。相反，它将闪卡存储为纯文本 Markdown 文件，使用简单的问答 (`Q:/A:`) 和完形填空 (`C: [text]`) 语法。它采用先进的 FSRS 调度算法，并将复习历史记录存储在本地 SQLite 数据库中。
-
-这种设计带来了显著的优势：用户可以使用任何文本编辑器编辑卡片，通过 Git 进行版本控制和共享来管理卡片集，并可以使用脚本从结构化数据中程序化地生成卡片。这提供了强烈的拥有感和灵活性，解决了作者对现有应用程序的不满。
-
-作者认为 Anki 的界面“丑陋”且不直观，WYSIWYG 编辑繁琐，插件也笨拙。Mochi 提供了更好的界面和 Markdown 支持，但其完形填空语法过于冗长，缺乏 Anki 强大的“笔记类型”以实现自动化卡片生成，并且过去使用了一种效果较差的调度算法，导致长期记忆保留问题。
-
-Hashcards 通过其简单、低摩擦的文本格式优先考虑无阻碍的卡片创建，最大限度地减少输入并简化编辑。通过采用纯文本文件并利用标准的 Unix 工具和 Git，Hashcards 允许用户自定义工作流程，通过脚本生成卡片（有效地替代了 Anki 的笔记类型），并提供了一个高度适应性和可维护的知识获取系统。
-
----
-
-## 7. 民主派香港大亨黎智英國安審訊罪成
-
-**原文标题**: Pro-democracy HK tycoon Jimmy Lai convicted in national security trial
-
-**原文链接**: [https://www.bbc.com/news/articles/cp844kjj37vo](https://www.bbc.com/news/articles/cp844kjj37vo)
-
-香港民主派大亨、英国公民黎智英被裁定根据香港《国家安全法》（国安法）勾结外国势力以及发布煽动刊物罪名成立。这位78岁、已停运的《苹果日报》创办人拒不认罪，但他面临终身监禁，预计明年初宣判。
-
-法院裁定黎智英罪名成立，指他利用《苹果日报》游说外国政府对香港和中国实施制裁，并表达对中华人民共和国的“仇恨”。黎智英否认影响外交政策，称他只是传递信息或寻求口头支持。他是北京的著名批评者，也是香港2019年民主抗议活动的关键人物。
-
-这一判决引发了国际社会的强烈谴责，人权组织和包括英国、美国在内的西方政府称其为“残酷的司法闹剧”和“出于政治动机的迫害”。他们呼吁释放黎智英并废除国安法。香港行政长官李家超对判决表示欢迎，而中国则驳斥了这些批评。
-
-黎智英的审判被视为对香港司法独立性的一次重大考验，批评者指出国安法近乎100%的定罪率以及拒绝保释、不允许他选择外国律师等问题。黎智英的儿子敦促英国政府优先考虑其父的获释。黎智英在1989年天安门广场大屠杀后成为一名社会活动家，被广泛视为香港民主的领军人物。
-
----
-
-## 8. Linux 沙盒 和 Fil-C
-
-**原文标题**: Linux Sandboxes and Fil-C
-
-**原文链接**: [https://fil-c.org/seccomp](https://fil-c.org/seccomp)
-
-This article explores the critical combination of memory safety (provided by Fil-C) and Linux sandboxing for robust security. It distinguishes between the two: memory safety prevents internal program bugs, while sandboxing restricts a program's capabilities, even if it's memory-safe. Both are essential for comprehensive defense.
-
-Fil-C, a memory-safe C/C++ implementation, is capable of use in low-level system components like OpenSSH. OpenSSH's Linux sandbox utilizes `chroot`, unprivileged user/group execution, `setrlimit` (resource limits), and `seccomp-BPF` (syscall filtering).
-
-While `chroot` and user/group restrictions work seamlessly with Fil-C, `setrlimit` and `seccomp-BPF` require special handling due to Fil-C's multithreaded runtime. To prevent dynamic thread creation (which conflicts with sandbox rules and syscall filters), a new Fil-C API, `zlock_runtime_threads()`, was introduced. This forces runtime threads to start immediately and disables their on-demand shutdown, ensuring compatibility.
-
-Tweaks to OpenSSH's `seccomp` filter included using `SECCOMP_RET_KILL_PROCESS` (to terminate all Fil-C threads on violation), allowing `MAP_NORESERVE` for Fil-C's allocator, and permitting `sched_yield` for Fil-C's lock implementation.
-
-Crucially, `prctl` calls (like `PR_SET_NO_NEW_PRIVS` and `PR_SET_SECCOMP`) typically affect only the calling thread. To ensure these protections apply to *all* Fil-C runtime threads, Fil-C's `prctl` wrapper employs an internal `filc_runtime_threads_handshake` API, which executes the `prctl` from every runtime thread, thus preventing potential sandbox bypasses. A safety error is triggered if multiple user threads are present during these specific `prctl` calls.
-
-The article concludes that combining Fil-C's memory safety with Linux sandboxing offers the highest level of security.
-
----
-
-## 9. AI agents are starting to eat SaaS
-
-**原文标题**: AI agents are starting to eat SaaS
-
-**原文链接**: [https://martinalderson.com/posts/ai-agents-are-starting-to-eat-saas/](https://martinalderson.com/posts/ai-agents-are-starting-to-eat-saas/)
+**原文链接**: [https://www.bbc.com/news/articles/ckgz318y8elo](https://www.bbc.com/news/articles/ckgz318y8elo)
 
 生成摘要时出错
 
 ---
 
-## 10. Elevated errors across many models
+## 9. SHARP, an approach to photorealistic view synthesis from a single image
 
-**原文标题**: Elevated errors across many models
+**原文标题**: SHARP, an approach to photorealistic view synthesis from a single image
 
-**原文链接**: [https://status.claude.com/incidents/9g6qpr72ttbr](https://status.claude.com/incidents/9g6qpr72ttbr)
+**原文链接**: [https://apple.github.io/ml-sharp/](https://apple.github.io/ml-sharp/)
+
+生成摘要时出错
+
+---
+
+## 10. Thousands of U.S. farmers have Parkinson's. They blame a deadly pesticide
+
+**原文标题**: Thousands of U.S. farmers have Parkinson's. They blame a deadly pesticide
+
+**原文链接**: [https://www.mlive.com/news/2025/12/thousands-of-us-farmers-have-parkinsons-they-blame-a-deadly-pesticide.html](https://www.mlive.com/news/2025/12/thousands-of-us-farmers-have-parkinsons-they-blame-a-deadly-pesticide.html)
 
 生成摘要时出错
 
@@ -155,43 +145,44 @@ The article concludes that combining Fil-C's memory safety with Linux sandboxing
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 2 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 3 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 1 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 2 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 3 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
 | 4 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 5 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 6 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 7 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 8 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 5 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 6 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 7 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 8 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
 | 9 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 10 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 11 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 10 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 11 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
 | 12 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 13 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 14 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 15 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 13 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 14 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 15 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
 | 16 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 17 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 18 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 19 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 20 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 21 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 22 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 17 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 18 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 19 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 20 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 21 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 22 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
 | 23 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 24 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 25 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 26 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 27 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 24 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 25 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 26 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 27 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
 | 28 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 29 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 30 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 31 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 32 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 33 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 34 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 35 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 36 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 37 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 38 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 39 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 40 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 29 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 30 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 31 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 32 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 33 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 34 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 35 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 36 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 37 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 38 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 39 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 40 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 41 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
