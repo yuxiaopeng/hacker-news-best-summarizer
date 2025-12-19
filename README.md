@@ -1,146 +1,143 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-18.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-19.md)
 
-*最后自动更新时间: 2025-12-18 19:47:15*
-## 1. 双子座3号 闪电：为速度而生的前沿智能
-
-**原文标题**: Gemini 3 Flash: Frontier intelligence built for speed
-
-**原文链接**: [https://blog.google/products/gemini/gemini-3-flash/](https://blog.google/products/gemini/gemini-3-flash/)
-
-谷歌推出了Gemini 3 Flash，这是Gemini 3系列中最新模型，专为前沿智能设计，具有卓越的速度和成本效益。它在Gemini 3 Pro和Deep Think模式的基础上进行扩展，保留了它们先进的推理、多模态和视觉理解能力，但针对Flash级别的低延迟和更低成本进行了优化。
-
-Gemini 3 Flash表现出色，在博士级别的推理基准测试中与更大型的前沿模型不相上下，并在多模态理解方面取得了最先进的分数。它显著超越了Gemini 2.5 Pro，平均速度快三倍，使用的Token减少30%，而成本仅为其一小部分（输入100万个Token仅需0.50美元）。它在编码任务中也表现出色，在SWE-bench Verified测试中获得了78%的分数。
-
-该模型正在全球范围内推出，可供不同用户使用：
-*   **开发者**可以通过Gemini API（Google AI Studio、Antigravity、CLI、Android Studio）、Vertex AI和Gemini Enterprise，利用它进行迭代开发、代理式编码和复杂的多模态分析。
-*   **普通用户**会发现它成为Gemini应用程序（取代2.5 Flash）和搜索中AI模式的新默认模型，免费提供增强的推理能力，用于视频分析、实时素描、音频摘要和语音到应用创建等任务。
-*   JetBrains和Figma等**企业**已通过Vertex AI和Gemini Enterprise开始采用该模型，认可其效率和速度。
-
-Gemini 3 Flash旨在将下一代智能广泛普及，将深度推理与谷歌产品中的快速、高性价比性能相结合。
-
----
-
-## 2. AWS首席执行官表示，用AI取代初级开发人员是“最愚蠢的想法之一”。
-
-**原文标题**: AWS CEO says replacing junior devs with AI is 'one of the dumbest ideas'
-
-**原文链接**: [https://www.finalroundai.com/blog/aws-ceo-ai-cannot-replace-junior-developers](https://www.finalroundai.com/blog/aws-ceo-ai-cannot-replace-junior-developers)
-
-亚马逊AWS首席执行官Matt Garman称用AI取代初级开发人员是“最愚蠢的想法之一”，并阐述了三个核心反对理由。
-
-首先，初级开发人员通常最擅长使用AI工具。他们伴随新技术成长，能够迅速适应、探索功能并有效利用AI。Stack Overflow的一项调查证实，55.5%的早期职业开发人员每天使用AI工具，这一比例超过了资深员工，许多人甚至帮助年长的同事提升技能。
-
-其次，初级员工通常是成本最低的员工，因此解雇他们是一种低效的成本削减策略。他们较低的薪资意味着有限的节约空间，而真正的成本优化需要更广泛的全公司范围的方法。一些公司在裁员时期望节省开支，但实际上却发现开支增加了。
-
-第三，解雇初级开发人员会切断关键的人才输送管道。公司需要新鲜人才来带来新想法、推动创新并培养未来的领导者。如果不指导新员工，组织将面临经验丰富人员短缺和内部晋升机会减少的风险，尤其考虑到科技行业劳动力预计的增长。
-
-加曼强调，短期思维将损害长期战略。他承认AI将改变工作角色并提高生产力，但他相信它最终创造的就业机会将多于取代的。开发人员需要适应新技术，专注于更高价值的任务，这凸显了拥有扎实基础技能的新人才持续的重要性。
-
----
-
-## 3. Mozilla在努力自杀吗？
-
-**原文标题**: Is Mozilla trying hard to kill itself?
-
-**原文链接**: [https://infosec.press/brunomiguel/is-mozilla-trying-hard-to-kill-itself](https://infosec.press/brunomiguel/is-mozilla-trying-hard-to-kill-itself)
-
-文章对Mozilla新任CEO恩佐-德梅奥（Enzor-DeMeo）在“The Verge”采访中发表的言论表达了强烈担忧和失望。据报道，这位CEO提及在Firefox中阻止广告拦截器可以带来1.5亿美元的收入，尽管他表示“不想那样做”，因为它感觉“偏离了使命”。
-
-作者作为一位长期的Firefox用户，将此解读为一种隐晦的威胁，认为为了经济利益移除广告拦截器的选项仍然在考虑之中。他们认为，Firefox对开放标准、开放网络及其强大的附加组件系统（尤其是广告拦截器）的承诺，历史上吸引并留住了其忠实的、注重隐私的用户群。
-
-广告拦截器被强调为相较于Chromium的一个关键优势，以及对抗恶意广告的一个重要安全功能。作者警告说，移除此功能将是有害的，会疏远核心社区——这个群体的技术建议常影响主流用户——并可能对该项目造成严重的负面后果。尽管承认Mozilla对收入的需求，但作者质疑，如果该有争议的“偏离使命”的可能性并未仍在考虑中，CEO为何要公开提出？这导致了负面的公关效果，并增加了Firefox未来的不确定性。
-
----
-
-## 4. ty Beta 版发布
-
-**原文标题**: Announcing the Beta release of ty
-
-**原文链接**: [https://astral.sh/blog/ty](https://astral.sh/blog/ty)
-
-Astral, creators of uv and Ruff, has announced the Beta release of "ty," an extremely fast Python type checker and language server written in Rust. Designed as an alternative to tools like mypy and Pyright, Astral now uses ty exclusively and recommends it for production use to motivated users.
-
-ty's core focus is performance, consistently being 10x-60x faster than competitors without caching. Its incremental architecture makes live editor updates dramatically faster, recomputing diagnostics in milliseconds (e.g., 4.7ms in PyTorch, 80x faster than Pyright), ensuring a highly responsive development experience.
-
-Beyond speed, ty emphasizes correctness and ergonomics, featuring first-class intersection types, advanced type narrowing, and sophisticated reachability analysis to deliver more accurate feedback and reduce false positives. It boasts a best-in-class diagnostic system, inspired by the Rust compiler, providing detailed, multi-file context to explain issues and suggest fixes.
-
-Built open-source under the MIT license with dozens of contributors, ty supports all standard Language Server Protocol capabilities (Go to Definition, Auto-Complete, etc.) and is installable via `uv tool install ty@latest` or its VS Code extension.
-
-Immediate priorities include stability, completing Python typing specification features, and supporting popular third-party libraries like Pydantic and Django. Longer-term, ty will power semantic capabilities across the Astral toolchain, aiming to enhance Python's productivity. The project acknowledges extensive contributions from its community and collaborators.
-
----
-
-## 5. 无图形API
-
-**原文标题**: No Graphics API
-
-**原文链接**: [https://www.sebastianaaltonen.com/blog/no-graphics-api](https://www.sebastianaaltonen.com/blog/no-graphics-api)
-
-塞巴斯蒂安·阿尔托宁认为，十年前推出的DirectX 12、Vulkan和Metal等“现代”图形API已变得过于复杂，不再适用于当前的GPU架构。这些API最初是为了抽象10-13年前多样化且通常为固定功能的硬件而开发的，它们要求提前将着色器管线状态捆绑到持久对象中，以减少驱动程序开销。这种方法虽然当时是必要的，却导致了“管线状态对象（PSO）爆炸”，产生了庞大的着色器缓存（100GB以上）和复杂的云服务器基础设施。
-
-文章详细阐述了GPU和API的历史演变，从3dfx Voodoo等早期固定功能显卡到DirectX 11时代，展示了API设计如何始终适应硬件限制，例如专用内存、1:1着色器模型以及带有不透明描述符的各种缓冲区类型。
-
-然而，现代GPU已经发生了显著的转变。它们现在具备统一的缓存层次结构、原生64位指针、无绑定纹理采样器以及能够处理所有着色器类型的通用SIMD设计。这些进步使得许多原始API的折衷方案——例如复杂的描述符管理和持久状态对象——变得过时。阿尔托宁认为，如果从当前通用GPU硬件的基本原理出发，设计一个大幅简化的API，就能消除PSO爆炸，简化GPU交互，并显著减少抽象层。
-
----
-
-## 6. AI将使形式化验证走向主流
-
-**原文标题**: AI will make formal verification go mainstream
-
-**原文链接**: [https://martin.kleppmann.com/2025/12/08/ai-formal-verification.html](https://martin.kleppmann.com/2025/12/08/ai-formal-verification.html)
-
-Martin Kleppmann 预测，人工智能将使形式化验证（FV）在软件工程中成为主流。目前，FV 是一种小众实践，它涉及使用 Isabelle 或 Lean 等工具，根据形式化规范，通过数学方法证明代码的正确性。由于其极高的难度、劳动密集型（需要博士级别专业知识）和高昂的成本，它很少被业界采用；例如，seL4 微内核的验证耗时 20 个人年，涉及 20 万行代码。从经济角度看，修复错误的成本一直低于形式化验证的成本。
-
-然而，基于大型语言模型（LLM）的编码助手正日益擅长编写证明脚本。尽管目前仍需人工指导，但预计这一过程将实现完全自动化，从而大幅降低 FV 的成本。这将彻底改变经济模式。
-
-此外，人工智能还为 FV 创造了“需求”。人工智能可以证明其自身生成代码的正确性，而无需人工审查。这对 LLM 来说是一个理想的应用场景，因为证明检查器会立即拒绝无效的证明，迫使人工智能迭代直到找到正确的证明。这种精确性抵消了 LLM 的概率特性，使得经过形式化验证的人工智能生成代码变得极具吸引力。
-
-届时，挑战将转向正确定义形式化规范，这仍然需要专业知识，但比手动编写证明要简单得多。人工智能甚至可能有助于在形式语言和自然语言之间进行规范的翻译。更低的验证成本、人工智能生成代码的验证需求以及 FV 的精确性共同作用，意味着形式化验证有望成为标准。主要障碍可能将是文化阻力，而非技术局限。
-
----
-
-## 7. Beginning January 2026, all ACM publications will be made open access
+*最后自动更新时间: 2025-12-19 19:48:26*
+## 1. 从2026年1月起，所有ACM出版物将实现开放获取
 
 **原文标题**: Beginning January 2026, all ACM publications will be made open access
 
 **原文链接**: [https://dl.acm.org/openaccess](https://dl.acm.org/openaccess)
 
-Beginning January 2026, the Association for Computing Machinery (ACM) will make all its new publications openly accessible for readers globally, marking a significant shift in scholarly publishing for the computing field. This initiative is the culmination of ACM's "ACM Open" program, which has been transitioning the organization from a subscription-based model to a full open access framework since 2020.
+自2026年1月起，美国计算机协会（ACM）出版的所有新学术文章将立即在全球范围内免费开放阅读，并采用开放获取（OA）许可。这一里程碑式的转变标志着ACM向完全开放获取出版商的转型完成，该转型建立在其2020年启动的“ACM开放”模式之上。
 
-Under the new model, authors will retain copyright to their work, which will be published under a Creative Commons CC-BY 4.0 license, ensuring maximum reuse and impact. Funding for this open access model will primarily be facilitated through institutional "Read and Publish" (transformative) agreements. These agreements allow participating institutions to provide unlimited open access publishing for their affiliated authors and grant their users full read access to the entire ACM Digital Library. For authors not covered by such an institutional agreement, an Article Processing Charge (APC) will apply.
+根据新政策，在ACM数字图书馆发表的所有研究将默认采用知识共享CC BY 4.0许可发布，从而实现最大程度的重复利用和传播。作者将保留其作品的版权。此举旨在加速科学发现，并使计算研究面向更广泛的全球受众，促进更大的合作和更高的社会影响力。
 
-The move aims to significantly enhance the dissemination and impact of computing research, foster greater collaboration across the global research community, and promote equity in access to scholarly knowledge. While the January 2026 date specifically applies to all new publications, ACM's broader, long-term vision is to eventually make all content within the ACM Digital Library openly accessible.
+对于此前订阅ACM数字图书馆的机构，“ACM开放”计划将继续提供过渡协议。这些协议将订阅费转换为年度文章处理费（APC）支付，允许其附属作者在ACM期刊上开放获取出版作品而无需直接付费。未与“ACM开放”机构关联的个人作者将需要支付APC，但ACM将为来自低收入国家的作者提供豁免，并设有支持无资金作者的机制。
 
----
-
-## 8. Coursera to combine with Udemy
-
-**原文标题**: Coursera to combine with Udemy
-
-**原文链接**: [https://investor.coursera.com/news/news-details/2025/Coursera-to-Combine-with-Udemy-to-Empower-the-Global-Workforce-with-Skills-for-the-AI-Era/default.aspx](https://investor.coursera.com/news/news-details/2025/Coursera-to-Combine-with-Udemy-to-Empower-the-Global-Workforce-with-Skills-for-the-AI-Era/default.aspx)
-
-生成摘要时出错
+这一举措强调了ACM对开放科学和公平获取研究的承诺，巩固了其在学术出版领域的领导地位。
 
 ---
 
-## 9. I got hacked: My Hetzner server started mining Monero
+## 2. 现在的Hacker News首页，但标题是真实的。
+
+**原文标题**: Hacker News front page now, but the titles are honest
+
+**原文链接**: [https://dosaygo-studio.github.io/hn-front-page-2035/news-honest.html](https://dosaygo-studio.github.io/hn-front-page-2035/news-honest.html)
+
+《Hacker News：诚实版》以讽刺的手法重新解读了典型的科技新闻标题，揭露了行业中普遍存在的潜规则和常见套路。这些重新设计的标题对科技世界的方方面面进行了坦率的评论。
+
+其中涵盖的主题包括对新兴技术（如Rust）和人工智能的强行炒作；企业弊端（亚马逊功能采用迟缓、英特尔的营销、OpenAI的各种“花活”、Ngrok的伪装广告）；以及开发者对既有概念的不断“重塑”（如Rails状态机、拖放功能）。
+
+该列表还触及了社会和政治议题，例如政治家对科技的无知、意外的隐私保护成果以及制裁的影响。开发者们的痛点也得到了强调，如依赖地狱、为个人学习构建小众工具以及通过GitHub星标寻找工作机会。此外，它还讽刺了人工智能训练数据的偏见、其被企业用来转移注意力的方式，以及为促进不必要的消费而制定新标准。实质上，这份汇编对科技创新的周期、企业战略、开发者挑战以及科技论述中潜在的偏见，提供了一种批判性且常常是犬儒主义的审视。
+
+---
+
+## 3. 我们通过供应链攻击攻陷了 X、Vercel、Cursor 和 Discord。
+
+**原文标题**: We pwned X, Vercel, Cursor, and Discord through a supply-chain attack
+
+**原文链接**: [https://gist.github.com/hackermondev/5e2cdc32849405fff6b46957747a2d28](https://gist.github.com/hackermondev/5e2cdc32849405fff6b46957747a2d28)
+
+十六岁的Daniel与朋友xyzeva和MDL一同，发现了一个关键的供应链跨站脚本（XSS）漏洞，该漏洞影响了人工智能文档平台Mintlify。这一发现始于Daniel调查Discord新版开发者文档时，该文档最近已切换到Mintlify。
+
+Daniel发现，由Mintlify支持的网站，即使是像Discord那样使用自定义域名的网站，也暴露了一个内部端点：`/_mintlify/static/[subdomain]/[...route]`。关键在于，这个端点没有验证所请求的`[subdomain]`是否与主机匹配，这使得它能够从任何Mintlify客户的文档中获取静态文件。
+
+随后，Daniel发现他可以将JavaScript嵌入到SVG文件中。通过将这样一个恶意SVG文件上传到他自己的Mintlify文档中，并（例如通过`https://discord.com/_mintlify/_static/hackerone-a00f3c6c/lmao.svg`）通过目标域名上的漏洞端点访问它，他就可以执行任意代码。这种攻击方式允许攻击者向受影响的文档中注入恶意脚本，有可能窃取用户凭据，并通过一个恶意链接实现账户劫持。
+
+该漏洞影响广泛，几乎波及所有Mintlify客户，包括X（Twitter）、Vercel、Cursor和Discord等主要公司，它们都将其文档托管在其主域名上。在负责任的披露之后，Discord暂时关闭了其开发者文档，并恢复使用旧平台。Mintlify的工程团队迅速与研究人员合作，修复了此漏洞及其他相关漏洞。该团队总共获得了约11,000美元的赏金，这突显了此次供应链攻击的严重性和广泛影响。
+
+---
+
+## 4. 你的工作是交付你已证明可运行的代码。
+
+**原文标题**: Your job is to deliver code you have proven to work
+
+**原文链接**: [https://simonwillison.net/2025/Dec/18/code-proven-to-work/](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)
+
+这篇发表于2025年12月18日的文章认为，软件开发者的核心工作是交付经过*验证*能正常工作的代码，而不仅仅是生成代码。它批评了这样一种趋势：工程师，尤其是那些使用AI辅助的工程师，提交大量未经测试的拉取请求，给评审者带来了不公平的负担。
+
+验证代码功能需要两个必不可少的步骤。首先是**手动测试**，即开发者亲自验证代码的行为。这包括设置初始状态、执行代码更改并展示其效果——通常通过共享终端输出或屏幕录制视频来完成。掌握手动测试还包括识别并处理边缘情况。
+
+其次是**自动化测试**，这意味着将代码更改与测试用例一起提交，这些测试用例既能确认功能，又能在实现被回滚时失败。文章强调，AI工具使编写自动化测试变得显著更容易，从而消除了任何省略它们的借口。它还告诫不要仅仅依赖自动化测试而跳过手动验证。
+
+作者将这一原则扩展到AI编码代理，建议开发者教授这些工具来验证它们自己的更改。代理可以执行“手动”检查（例如，运行CLI命令，为UI更改截取屏幕截图），并且擅长生成自动化测试，尤其是在有良好结构化现有测试套件的指导下。
+
+最终，人类开发者对交付经过验证的代码负有责任。价值不在于仅仅向大型语言模型（LLM）发出代码提示，而在于贡献附带明确证据表明其按预期工作的代码。文章敦促开发者始终在他们的拉取请求中包含这些证明。
+
+---
+
+## 5. 历史大语言模型：仅基于1913年以前文本训练的模型
+
+**原文标题**: History LLMs: Models trained exclusively on pre-1913 texts
+
+**原文链接**: [https://github.com/DGoettlich/history-llms](https://github.com/DGoettlich/history-llms)
+
+苏黎世大学和科隆大学的研究人员正在开发“历史大语言模型”（History LLMs），这是一系列大型语言模型，专门利用截至特定“知识截止日期”（例如1913年、1929年、1933年、1939年、1946年）的带时间戳历史数据进行训练。其目标是为人文科学、社会科学和计算机科学研究创建“通往过去的窗口”。
+
+这些模型的一个核心特点是它们“完全时间锁定”，不包含任何超出其截止日期的信息。这避免了现代LLM（如GPT-5）中常见的“后见之明污染”，因为后者“知道”未来的事件。历史LLM真实地体现了其时代的文本文化，使研究人员能够在没有现代干扰的情况下，探索特定时刻什么是可思、可预测或可说的。
+
+即将推出的“兰克-4B”系列，基于通义千问3架构，将利用从一个精选的6000亿token历史数据集中提取的800亿个token进行训练。例如，“兰克-4B-1913”模型仅用1913年之前的文本训练，它提供了一个错误的阿道夫·希特勒传记（1913年时希特勒尚不为人知），很好地说明了这一点。尽管它谴责奴隶制，但其对女性就业或同性恋的回复反映了20世纪初普遍存在的偏见和规范（例如，偏爱男性就业，对男同性恋者持厌恶态度或视为疾病）。
+
+这些模型是海量文本语料库的压缩表示，有助于探索话语模式。它们并非公众舆论的完美反映，而是反映了已发布的文本。该项目承认模型会重现训练数据中存在的历史偏见（种族主义、厌女症），并认为这是理解过去的一个关键特征。所有研究成果都将公开发布，并为研究人员提供负责任的访问框架。
+
+---
+
+## 6. 古典雕塑并非被涂得很糟糕
+
+**原文标题**: Classical statues were not painted horribly
+
+**原文链接**: [https://worksinprogress.co/issue/were-classical-statues-painted-horribly/](https://worksinprogress.co/issue/were-classical-statues-painted-horribly/)
+
+古希腊罗马雕塑如今以其未上色形式的美感而广受赞赏，但它们最初是彩色的。现代的复原作品，例如“众神之彩”展览中的那些，旨在展示它们最初的样子，但通常被认为是艳俗和丑陋的。
+
+对于这种丑陋，常见的解释是古代品味与现代品味截然不同，而我们因历史偶然成了“厌色症”患者——但这一说法受到作者的质疑。古代对雕像的描绘，如庞贝壁画所示，表明它们是以细腻微妙的色彩精心绘制的，而非现代复原作品那种哑光、高饱和度的色调。其他古代艺术形式，如壁画、马赛克和室内设计，也展现了敏感且常是自然主义的色彩运用，在现代人眼中也具有美感。此外，其他文化（如埃及、尼泊尔、中世纪）的彩绘雕塑，通常并未被普遍认为丑陋。
+
+作者提出，这些复原作品之所以显得丑陋，仅仅是因为它们“拙劣的涂绘”。它们基于有限的考古证据（仅有代表底层的微量颜料），且常省略了原作的精细上层涂料和艺术技巧。专家们自己也承认这些并非精确的复制。这一“拙劣涂绘理论”表明，古希腊和罗马人可能也会不喜欢这些粗糙的复原作品，因为他们实际的色彩运用可能更为微妙和精致。
+
+这些“丑陋”复原作品的可能原因包括复原者缺乏艺术技巧，严格的文物保护准则（仅限于包含有直接证据的特征），甚至可能是刻意采用其醒目但刺眼的外观来吸引公众兴趣的策略，从而导致公众对古典彩绘艺术的误解。
+
+---
+
+## 7. 我被黑了：我的Hetzner服务器开始挖门罗币
 
 **原文标题**: I got hacked: My Hetzner server started mining Monero
 
 **原文链接**: [https://blog.jakesaunders.dev/my-server-started-mining-monero-this-morning/](https://blog.jakesaunders.dev/my-server-started-mining-monero-this-morning/)
 
+杰克·桑德斯 (Jake Saunders) 发现他的 Hetzner 服务器被黑客入侵并用于挖掘门罗币，此事是通过一份 Hetzner 滥用报告揭露的。由于 `javae` 和 `xmrig`（门罗币挖矿程序）进程，他的 CPU 负载飙升。罪魁祸首是一个被攻破的 Umami 分析容器，它利用了 Next.js 中的一个关键 RCE（远程代码执行）漏洞 CVE-2025-66478——而 Jake 之前并不知道 Umami 使用了 Next.js 这个依赖项。
+
+最初，Jake 因进程列表的存在而担心整个主机已被攻陷，但他的调查发现恶意软件并*未*逃逸出容器。关键在于强大的 Docker 隔离机制：Umami 容器以非 root 用户 (`nextjs`) 运行，是非特权的，并且没有卷挂载。这将恶意活动（门罗币挖矿和网络扫描）完全限制在容器内部，从而阻止了主机持久化或更广泛的系统访问。
+
+杰克通过停止并移除受损容器解决了问题，使 CPU 恢复正常，并实施了防火墙 (UFW)。吸取的教训包括：务必了解你的依赖项，容器隔离在安全配置（非 root 用户、非特权）下是有效的，以及纵深防御至关重要。他承认自己很幸运，因为良好的容器实践使他避免了更糟糕的情况。
+
+---
+
+## 8. Please just try HTMX
+
+**原文标题**: Please just try HTMX
+
+**原文链接**: [http://pleasejusttryhtmx.com/](http://pleasejusttryhtmx.com/)
+
 生成摘要时出错
 
 ---
 
-## 10. No AI* Here – A Response to Mozilla's Next Chapter
+## 9. GPT-5.2-Codex
 
-**原文标题**: No AI* Here – A Response to Mozilla's Next Chapter
+**原文标题**: GPT-5.2-Codex
 
-**原文链接**: [https://www.waterfox.com/blog/no-ai-here-response-to-mozilla/](https://www.waterfox.com/blog/no-ai-here-response-to-mozilla/)
+**原文链接**: [https://openai.com/index/introducing-gpt-5-2-codex/](https://openai.com/index/introducing-gpt-5-2-codex/)
+
+Unable to access the article link.
+
+---
+
+## 10. 1.5 TB of VRAM on Mac Studio – RDMA over Thunderbolt 5
+
+**原文标题**: 1.5 TB of VRAM on Mac Studio – RDMA over Thunderbolt 5
+
+**原文链接**: [https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5](https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5)
 
 生成摘要时出错
 
@@ -150,46 +147,47 @@ The move aims to significantly enhance the dissemination and impact of computing
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 1 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
 | 2 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 3 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 3 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
 | 4 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 5 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 5 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
 | 6 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
 | 7 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
 | 8 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
 | 9 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 10 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 11 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 10 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 11 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
 | 12 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
 | 13 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 14 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 15 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 16 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 14 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 15 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 16 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
 | 17 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 18 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 18 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
 | 19 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 20 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 21 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 22 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 23 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 24 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 25 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 20 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 21 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 22 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 23 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 24 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 25 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
 | 26 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 27 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 28 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 29 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 30 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 27 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 28 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 29 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 30 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
 | 31 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 32 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 33 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 32 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 33 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
 | 34 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
 | 35 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
 | 36 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
 | 37 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
 | 38 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 39 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 40 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 39 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 40 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
 | 41 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
 | 42 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
 | 43 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 44 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
