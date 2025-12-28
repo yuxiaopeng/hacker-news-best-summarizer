@@ -1,143 +1,127 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-27.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2025-12-28.md)
 
-*最后自动更新时间: 2025-12-27 19:38:48*
-## 1. Show HN: Xcc700：700行代码实现的ESP32 (Xtensa) 自举迷你C编译器
+*最后自动更新时间: 2025-12-28 19:46:15*
+## 1. 796层
 
-**原文标题**: Show HN: Xcc700: Self-hosting mini C compiler for ESP32 (Xtensa) in 700 lines
+**原文标题**: Floor796
 
-**原文链接**: [https://github.com/valdanylchuk/xcc700](https://github.com/valdanylchuk/xcc700)
+**原文链接**: [https://floor796.com/](https://floor796.com/)
 
-“xcc700”项目呈现了一个卓越的自举式迷你C编译器，专为ESP32 (Xtensa架构)设计，仅用700行C代码编写。其主要吸引力在于简洁性，使其易于理解、修改，并能适应其他语言或用途。
-
-该编译器面向ESP32，接收单个C源文件并生成可重定位的ELF输出。这些ELF文件可由ESP-IDF的`elf_loader`直接运行，从而实现在ESP32上快速测试/调试循环、热修复或持续集成。用户可以在PC上将`xcc700`作为交叉编译器运行，直接在ESP32上编译它（它能自举编译），或者将其作为固件中的一个函数进行集成。
-
-`xcc700`支持一个足以构建自身的最小C特性集，包括基本的控制流（while、if/else）、`int`/`char`/指针/数组、函数调用以及算术/位运算符。然而，它有意省略了许多高级C特性（例如，`for`/`do`循环、`struct`s、`float`s、预处理器、健壮的错误处理或优化），优先考虑简洁性。为此牺牲了性能，自举编译的版本比GCC编译的版本更大且更慢。
-
-该项目根据MIT许可证发布，作者鼓励为教育目的、编程马拉松或探索极简计算而进行分叉和扩展。该项目堪称一份“艺术宣言”，质疑对资源密集型软件的需求，并展示了简单、易于修改的工具在ESP32等低功耗设备上的强大潜力。
+提供的“文章”仅包含“Floor796”这个短语。没有提供额外的内容、背景或信息。因此，除了该短语本身，无法提取任何要点或关键信息。总结仅限于说明该文章的全部内容是“Floor796”。
 
 ---
 
-## 2. UBlockOrigin 和 UBlacklist AI 黑名单
+## 2. 日历
 
-**原文标题**: UBlockOrigin and UBlacklist AI Blocklist
+**原文标题**: Calendar
 
-**原文链接**: [https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist](https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist)
+**原文链接**: [https://neatnik.net/calendar/?year=2026](https://neatnik.net/calendar/?year=2026)
 
-本文章介绍了一个“巨型AI黑名单”，这是一个手动整理的列表，包含了1000多个包含AI生成内容的网站，旨在清理Google、DuckDuckGo和Bing上的图片搜索结果。
-
-该黑名单兼容各种平台和工具。对于PC/桌面用户，可以通过一键链接或手动URL输入轻松导入到uBlock Origin或uBlacklist扩展中。移动设备支持方面，iOS/iPadOS用户可通过uBlacklist Safari扩展使用，Android用户则可通过Firefox使用uBlock Origin或uBlacklist。此外，还提供了一个Hosts文件版本，用于通过Pi-hole和Adguard进行全网络范围的屏蔽。
-
-除了主黑名单，还有一个可选的“核弹级列表”，专门针对那些混合了真实内容和AI生成内容的网站（例如DeviantArt）。用户可以通过在uBlock Origin或uBlacklist中设置特定网站的白名单来定制自己的体验。该指南还详细介绍了“扩展过滤”功能，使用户能够通过uBlock Origin的自定义过滤器或uBlacklist的正则表达式，根据特定关键词（例如“AI Art”、“Midjourney”）屏蔽搜索结果。
-
-欢迎通过拉取请求或问题报告对列表做出贡献。文章最后列出了几个涉及SEO垃圾邮件、AI音乐和AI图像检测的相关项目，并包含了一条支持LGBTQ+权益的信息。
+本页展示2026年一页式日历，旨在将全年日期一览无余。打印时，它会自动适应任何尺寸的纸张；为获得最佳效果，建议设置为横向打印并禁用页眉/页脚。创作者建议使用此日历随手记录、规划安排、观察时间流逝，同时不忘强调善良的重要性。日历网格本身显示了每个月份（1月-12月）的日期及对应的星期首字母。由Neatnik制作。
 
 ---
 
-## 3. 展示HN：基于 Rust/WASM 的 AutoLISP 解释器 — 33 年前发明的 CAD 工作流
+## 3. How we lost communication to entertainment
 
-**原文标题**: Show HN: AutoLISP interpreter in Rust/WASM – a CAD workflow invented 33 yrs ago
+**原文标题**: How we lost communication to entertainment
 
-**原文链接**: [https://acadlisp.de/noscript.html](https://acadlisp.de/noscript.html)
-
-`acadlisp` 是一个用Rust编写并编译成WebAssembly的AutoLISP解释器，它允许AutoLISP代码直接在网页浏览器中执行，无需安装AutoCAD。
-
-该项目源于作者在1991年为一家德国电气公司发明的一种CAD工作流。这个创新系统结合CSV文件、模板和AutoLISP代码，自动化生成定制电气原理图。在电子表格中定义的组件会自动生成完整的技术图纸。作者创建`acadlisp`，部分是出于怀旧，部分是为了保存这种他认为已在很大程度上被遗忘的独特工作流。
-
-文章还强调了LISP作为早期AI语言的历史意义，强调了其关键特性：同像性（代码和数据共享列表结构）、自修改和符号处理。1991年的原理图生成器就体现了这些特性，其代码能够编写和修改自身，从而触发进一步的组件插入和模板生成。
-
-从技术上讲，`acadlisp`使用Rust，目标是WebAssembly，并支持SVG和DXF（AutoCAD R12）等输出格式。它实现了各种常见的AutoLISP函数，包括`defun`、`setq`、控制流语句（`if`、`while`、`cond`）、数学运算、列表操作（`car`、`cdr`）以及AutoCAD交互（`command`、`princ`）。提供了交互式演示和源代码。
-
----
-
-## 4. 医疗软件公司CEO因十亿美元欺诈案获刑
-
-**原文标题**: CEO of Health Care Software Company Sentenced for $1B Fraud Conspiracy
-
-**原文链接**: [https://www.justice.gov/opa/pr/ceo-health-care-software-company-sentenced-1b-fraud-conspiracy](https://www.justice.gov/opa/pr/ceo-health-care-software-company-sentenced-1b-fraud-conspiracy)
-
-摘要：
-
-一家医疗软件公司的前首席执行官桑尼·巴尔瓦尼，因其在与电子健康记录（EHR）激励计划相关的10亿美元欺诈阴谋中的作用，被判处13年监禁。巴尔瓦尼与其他人共同策划了一项欺诈美国政府和医疗服务提供者的计划。
-
-该阴谋涉及巴尔瓦尼及其同谋谎报其EHR软件的功能和合规性，以获得认证并诱使服务提供者购买。他们据称向客户支付回扣以留住他们并隐藏缺陷。这些行为使得包括医生和医院在内的客户能够虚假证明其使用了合规的EHR软件，从而根据《HITECH法案》获得了数亿美元的联邦激励付款。
-
-巴尔瓦尼被判犯有共谋实施医疗欺诈和电信欺诈罪，以及五项医疗欺诈罪。起诉书详细说明了该公司的软件如何未能满足基本的互操作性和数据可移植性要求，影响了患者护理，并欺骗了政府和医疗系统。除了监禁，巴尔瓦尼还被责令支付2.702亿美元的赔偿金并没收100万美元。其他同谋和该公司此前也因参与此广泛欺诈而面临定罪和处罚。
-
----
-
-## 5. 关于恢复达什的文告
-
-**原文标题**: A Proclamation Regarding the Restoration of the Dash
-
-**原文链接**: [https://blog.nawaz.org/posts/2025/Dec/a-proclamation-regarding-the-restoration-of-the-dash/](https://blog.nawaz.org/posts/2025/Dec/a-proclamation-regarding-the-restoration-of-the-dash/)
-
-2025年12月26日，作者发布了一项声明，哀叹现代社会对优雅的破折号（—）存在的偏见。破折号传统上用于插入语、突转和节奏性停顿，但现在却受到不公正的诋毁，常被视为“不假思索的机器”，如大型语言模型（作者声称它们只是拙劣地模仿了复杂性）的“告密迹象”。
-
-作者还批评了日益增多的对“不起眼的连字符”（-）的误用，将其视为“大胆破折号”的“懦弱替代品”，认为它使散文变得平淡无奇。作者拒绝将古典标点符号拱手让给算法，也拒绝因害怕显得“人工化”而退缩，并因此颁布了“破折号复兴”的命令。
-
-在其博客范围内，作者为人类作家夺回了破折号，并将连字符从所有标点和停顿的角色中驱逐，在所有文体风格的实例中，都用“光荣的、不悔的破折号”取而代之。作为对这种误判的抗议，作者（他本人已经习惯手动输入破折号）创建了一个插件，将其博客上的*所有*连字符都转换为破折号，即使在连字符传统上是恰当的地方，并敦促读者“加入这场革命”。
-
----
-
-## 6. Unix find表达式编译为字节码
-
-**原文标题**: Unix "find" expressions compiled to bytecode
-
-**原文链接**: [https://nullprogram.com/blog/2025/12/23/](https://nullprogram.com/blog/2025/12/23/)
-
-本文描述了一个自定义编译器 `findc`，它将 Unix `find` 表达式翻译成字节码，与实际 `find` 工具中常见的树遍历解释器形成对比。作者开发这项技术是为了提高效率，因为 `find` 适用于处理大量文件。
-
-`find` 表达式使用 `-a` (AND)、`-o` (OR) 和 `!` (NOT) 等运算符，带有隐式的 `-a` 和默认的 `-print` 动作。括号用于表示优先级，并且操作是短路的，尽管作者指出 `find` 的 `-regex` 无论如何都会进行预编译。
-
-该字节码设计适用于单寄存器、1位机器，使用五个操作码：`halt`、`not`、`braf`（如果为假则分支）、`brat`（如果为真则分支）和 `action NAME [ARGS...]`。跳转始终是向前的。
-
-编译过程主要包括两个步骤：
-1.  **解析：** 使用调度场算法将 `find` 的中缀参数转换为后缀标记流，处理运算符优先级以及隐式的 `-a` 和 `-print` 动作。
-2.  **编译：** 然后将此后缀流翻译成字节码。编译器维护一个字节码*片段*堆栈。动作变为 `action` 指令。`!` 操作符附加 `not` 指令。像 `-a` 和 `-o` 这样的二元运算符会弹出两个片段，插入 `braf` 或 `brat` 指令以实现短路，即如果第一个片段的评估结果允许，则跳过第二个片段。最终结果是一个由 `halt` 指令终止的单一程序片段。
-
-作者指出了通过窥孔优化改进生成的字节码的机会，例如消除冗余的 `not` 指令以及优化分支目标。
-
----
-
-## 7. 零宽字符绘图
-
-**原文标题**: Drawing with zero-width characters
-
-**原文链接**: [https://zw.swerdlow.dev](https://zw.swerdlow.dev)
-
-这篇题为《零宽字符绘图》的文章，旨在提供一个实践演示，而非传统的文字解释。作者通过指出一组通常在《古兰经》中出现的18个Unicode字符，深刻改变了他们对文本渲染方式的设想，从而引入了这个概念。
-
-文章的核心内容是一个视觉上引人注目的排布，主要由这些零宽或组合Unicode字符构成。在这个错综复杂的图案中，“零宽字符绘图”这句话被巧妙地“描绘”出来，实际上正是利用了文章所讨论的这些字符。这展示了这些特殊Unicode元素不同寻常的图形潜力。尽管它们本身不占用任何水平空间，但它们可以与前置字符组合并进行修改，从而创造出复杂的视觉效果，并在基于文本的媒介中展示了一种非传统的视觉艺术方法。
-
----
-
-## 8. High school student discovers 1.5M potential new astronomical objects
-
-**原文标题**: High school student discovers 1.5M potential new astronomical objects
-
-**原文链接**: [https://www.smithsonianmag.com/smart-news/high-school-student-discovers-1-5-million-potential-new-astronomical-objects-by-developing-an-ai-algorithm-180986429/](https://www.smithsonianmag.com/smart-news/high-school-student-discovers-1-5-million-potential-new-astronomical-objects-by-developing-an-ai-algorithm-180986429/)
+**原文链接**: [https://ploum.net/2025-12-15-communication-entertainment.html](https://ploum.net/2025-12-15-communication-entertainment.html)
 
 生成摘要时出错
 
 ---
 
-## 9. Janet Jackson had the power to crash laptop computers (2022)
+## 4. Replacing JavaScript with Just HTML
 
-**原文标题**: Janet Jackson had the power to crash laptop computers (2022)
+**原文标题**: Replacing JavaScript with Just HTML
 
-**原文链接**: [https://devblogs.microsoft.com/oldnewthing/20220816-00/?p=106994](https://devblogs.microsoft.com/oldnewthing/20220816-00/?p=106994)
+**原文链接**: [https://www.htmhell.dev/adventcalendar/2025/27/](https://www.htmhell.dev/adventcalendar/2025/27/)
 
 生成摘要时出错
 
 ---
 
-## 10. Inside the proton, the ‘most complicated thing you could possibly imagine’ (2022)
+## 5. 对NHS中的帕兰提尔说不
 
-**原文标题**: Inside the proton, the ‘most complicated thing you could possibly imagine’ (2022)
+**原文标题**: Say No to Palantir in the NHS
 
-**原文链接**: [https://www.quantamagazine.org/inside-the-proton-the-most-complicated-thing-imaginable-20221019/](https://www.quantamagazine.org/inside-the-proton-the-most-complicated-thing-imaginable-20221019/)
+**原文链接**: [https://notopalantir.goodlawproject.org/email-to-target/stop-palantir-in-the-nhs/](https://notopalantir.goodlawproject.org/email-to-target/stop-palantir-in-the-nhs/)
+
+这篇文章呼吁反对将Palantir的软件整合到NHS（英国国家医疗服务体系）中用于管理健康记录，并强调了对这家美国“间谍技术公司”的强烈反对。
+
+主要担忧是Palantir充满争议的历史，包括据称其在美国支持大规模驱逐出境，以及在加沙地区为种族灭绝提供便利。此外，Palantir的创始人之一彼得·蒂尔（Peter Thiel）以其公开的反NHS立场而闻名，他曾声称NHS“让人患病”，并认为英国公众对它的热爱是一种“斯德哥尔摩综合症”。
+
+文章警告，不应允许这样一家公司掌控英国的医疗保健系统。它呼吁立即采取行动，并提供了一个工具，供个人查询他们当地的NHS信托机构是否已采纳该软件。支持者被敦促通过电子邮件联系他们当地的信托机构，要求其拒绝Palantir；同时，也应联系英国卫生大臣韦斯·斯特里廷（Wes Streeting），强调由于政府施压信托机构采纳该系统，情况十分紧急。
+
+---
+
+## 6. 成长在“404未找到”：中国戈壁沙漠中的核城
+
+**原文标题**: Growing up in “404 Not Found”: China's nuclear city in the Gobi Desert
+
+**原文链接**: [https://substack.com/inbox/post/182743659](https://substack.com/inbox/post/182743659)
+
+本文记述了在中国戈壁滩上，一个隐秘核城——404工厂——中成长起来的人们所经历的独特故事。这座被戏称为“404 Not Found”的保密城市，建于1958年，旨在研制中国的原子弹，并数十年来一直对外保密。
+
+作者曾造访这座如今已废弃的遗址，描述了一座从零开始建造的城市，拥有自己的基础设施、学校和医院，旨在实现自给自足，并与外界隔绝。居民主要是科学家、工程师、工人和他们的家人，生活在严格的安保和保密条件下。孩子们在成长过程中并不知道这座城市的真正用途，甚至对外人也未知其名，与亲戚交流时常使用暗语或模糊的描述。
+
+文章强调，尽管身处恶劣的沙漠环境和艰巨的工作之中，居民们既感到与世隔绝，但也形成了强烈的社群精神和自豪感。许多人回忆起在城市界限内充满探索的童年，以及对他们独特家园的深厚情感。21世纪初，大部分居民被迁至一座新城，404工厂也因此几乎被遗弃，成为中国科学和军事史上一个关键篇章的无声见证。这篇文章反思了牺牲的遗产，以及那些曾生活在这座“核乌托邦”中的人们所塑造的独特身份。
+
+---
+
+## 7. 英伟达200亿美元反垄断漏洞
+
+**原文标题**: Nvidia's $20B antitrust loophole
+
+**原文链接**: [https://ossa-ma.github.io/blog/groq](https://ossa-ma.github.io/blog/groq)
+
+Groq估值达到69亿美元仅49天后，英伟达便斥资200亿美元收购了Groq的知识产权（IP）及其包括首席执行官乔纳森·罗斯在内的整个高管团队。此次交易被刻意设计为知识产权许可协议和人才收购，明确声明*不*是收购Groq这家公司。这种“非传统”做法使英伟达能够绕过CFIUS审查（因Groq与沙特的合同）和反垄断审查等重大监管障碍，避免了长达数年的审查。
+
+这131亿美元的溢价反映了英伟达的战略目标。Groq的LPU（语言处理单元）架构，利用片上大容量SRAM，在特定的AI推理工作负载（70亿至700亿参数模型）方面具有显著优势，相较于GPU，可实现高吞吐量和高能效，尤其适用于单用户应用。
+
+通过收购Groq的知识产权和关键人才，英伟达中和了一个潜在竞争对手，并阻止了其他竞争对手（如谷歌或亚马逊）利用Groq的创新技术。此次交易还策略性地剥离了Groq的云基础设施业务GroqCloud，该业务被分拆并被留下。这使得英伟达避免继承GroqCloud与沙特阿拉伯签订的15亿美元合同以及这些合同所带来的地缘政治纠葛。
+
+尽管风险投资家（如Chamath Palihapitiya，估计获利20亿美元）和加入英伟达的高管们受益匪浅，但持有已归属股权的Groq普通员工的财务前景却不确定。那些留在如今已失去知识产权和领导层的GroqCloud的员工可能会受到负面影响，他们的股权可能变得一文不值。文章指出，这笔交易展示了在监管尚未跟上时，企业如何应对结构性创新。
+
+---
+
+## 8. 我的胰岛素泵控制器使用Linux内核，它也违反了GPL。
+
+**原文标题**: My insulin pump controller uses the Linux kernel. It also violates the GPL
+
+**原文链接**: [https://old.reddit.com/r/linux/comments/1puojsr/the_device_that_controls_my_insulin_pump_uses_the/](https://old.reddit.com/r/linux/comments/1puojsr/the_device_that_controls_my_insulin_pump_uses_the/)
+
+一篇Reddit帖子讨论了一位用户发现他们的Animas Vibe胰岛素泵控制器（一种关键医疗设备）运行Linux内核，并且似乎违反了GNU通用公共许可证（GPL）。
+
+该用户将控制器插入电脑，电脑将其识别为“Qemu USB Tablet”，并且`dmesg`输出显示了“Linux version 2.6.28-imx_3.0.35-rc6.”这一字符串。这证实了该设备使用了受GPLv2许可的Linux内核。
+
+GPL的核心原则之一是，任何分发包含GPL许可代码的软件的方，都必须在用户要求时提供相应的源代码。该用户联系了Animas（强生公司），要求提供其设备的源代码。在被不同部门推诿并最初被告知他们只提供开发用的源代码后，该公司最终表示不向最终用户提供源代码。这构成了对GPL的明确违反。
+
+该讨论强调了对关键医疗设备的透明度、安全性以及审计权的担忧。对于直接关系到健康的设备，无法访问或审计其源代码，引发了关于患者安全、网络安全漏洞以及验证设备行为难度的疑问。尽管一些评论者提到了FDA法规带来的挑战，但共识是医疗设备制造商仍受GPL等软件许可证的约束。
+
+---
+
+## 9. 玩得久、好收拾的玩具
+
+**原文标题**: Toys with the highest play-time and lowest clean-up-time
+
+**原文链接**: [https://joannabregan.substack.com/p/toys-with-the-highest-play-time-and](https://joannabregan.substack.com/p/toys-with-the-highest-play-time-and)
+
+乔安娜·布雷根撰写的文章《玩乐时间最长、清理时间最短的玩具》提倡一种选择儿童玩具的策略性方法，即优先考虑持久的参与度和最少的父母清理工作。其核心前提是选择鼓励创造力、想象力和适应性玩耍的“开放式”玩具，而不是那些会迅速失去兴趣并造成混乱的单一功能物品。
+
+布雷根强调，最有价值的玩具是多功能的，能让孩子们创造出多样化的场景和玩法。她推荐的类别包括“散件材料”（例如树枝、石头、手工艺品）、乐高得宝（DUPLO）和磁力片（Magnatiles）等经典搭建玩具，以及玩偶、动物和车辆等想象力游戏物品。实用生活玩具，如玩具厨房，也能通过角色扮演提供持久的参与度。尽管美术用品可能会弄脏，但蜡笔和颜料棒等可控选项能提供创造性出口，同时易于清理。
+
+文章不鼓励那些规定玩法而非启发玩法的单一功能或品牌色彩浓厚的玩具。通过专注于鼓励孩子积极参与玩耍的玩具，父母可以培养更深层次的参与度，减少玩具过剩带来的困扰，并简化玩耍后的整理工作。这种方法最终会带来更有意义的玩耍时光，以及一个更和谐、压力更小的家庭环境。
+
+---
+
+## 10. Exe.dev
+
+**原文标题**: Exe.dev
+
+**原文链接**: [https://exe.dev/](https://exe.dev/)
 
 生成摘要时出错
 
@@ -147,48 +131,48 @@
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 2 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 3 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 4 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 5 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 6 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 7 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 8 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 9 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 10 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 11 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 12 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 13 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 14 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 15 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 16 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 17 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 18 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 19 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 20 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 21 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 22 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 23 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 24 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 25 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 26 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 27 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 28 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 29 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 1 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 2 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 3 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 4 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 5 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 6 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 7 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 8 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 9 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 10 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 11 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 12 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 13 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 14 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 15 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 16 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 17 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
+| 18 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 19 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
+| 20 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 21 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 22 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 23 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 24 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 25 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 26 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 27 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 28 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 29 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
 | 30 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 31 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 32 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 33 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 34 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 35 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 36 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 37 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 38 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 39 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 40 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 41 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 42 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 31 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 32 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 33 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 34 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 35 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 36 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 37 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 38 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 39 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 40 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 41 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 42 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
 | 43 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
 | 44 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
 | 45 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
@@ -196,6 +180,7 @@
 | 47 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
 | 48 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
 | 49 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 50 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 51 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 52 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 50 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 51 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 52 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 53 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |

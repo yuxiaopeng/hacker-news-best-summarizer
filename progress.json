@@ -1,138 +1,82 @@
 [
   {
-    "id": "46392736",
-    "title": "Show HN: Xcc700: Self-hosting mini C compiler for ESP32 (Xtensa) in 700 lines",
-    "url": "https://github.com/valdanylchuk/xcc700",
-    "summary": "The \"xcc700\" project presents a remarkable self-hosting mini C compiler for ESP32 (Xtensa), written in just 700 lines of C code. Its primary appeal is its simplicity, making it easy to understand, tweak, and adapt for other languages or purposes.\n\nThis compiler targets the ESP32, taking a single C source file and producing a relocatable ELF output. These ELF files can be run directly by the ESP-IDF `elf_loader`, enabling quick test/debug cycles, hotfixes, or CI on the ESP32 itself. Users can run `xcc700` as a cross-compiler on a PC, compile it directly on an ESP32 (it can self-compile), or integrate it as a function within firmware.\n\n`xcc700` supports a minimal C feature set sufficient for its own construction, including basic control flow (while, if/else), `int`/`char`/pointers/arrays, function calls, and arithmetic/bitwise operators. However, it intentionally omits many advanced C features (e.g., `for`/`do` loops, `struct`s, `float`s, preprocessor, robust error handling, or optimizations), prioritizing simplicity. Performance is sacrificed for this, with the self-compiled version being larger and slower than one compiled by GCC.\n\nReleased under the MIT License, the author encourages forks and extensions for educational purposes, hackathons, or exploring minimal computing. The project serves as an \"artistic statement,\" questioning the need for resource-heavy software and demonstrating the power of simple, tinker-friendly tools on low-power devices like the ESP32.",
-    "chinese_title": "Show HN: Xcc700：700行代码实现的ESP32 (Xtensa) 自举迷你C编译器",
-    "chinese_summary": "“xcc700”项目呈现了一个卓越的自举式迷你C编译器，专为ESP32 (Xtensa架构)设计，仅用700行C代码编写。其主要吸引力在于简洁性，使其易于理解、修改，并能适应其他语言或用途。\n\n该编译器面向ESP32，接收单个C源文件并生成可重定位的ELF输出。这些ELF文件可由ESP-IDF的`elf_loader`直接运行，从而实现在ESP32上快速测试/调试循环、热修复或持续集成。用户可以在PC上将`xcc700`作为交叉编译器运行，直接在ESP32上编译它（它能自举编译），或者将其作为固件中的一个函数进行集成。\n\n`xcc700`支持一个足以构建自身的最小C特性集，包括基本的控制流（while、if/else）、`int`/`char`/指针/数组、函数调用以及算术/位运算符。然而，它有意省略了许多高级C特性（例如，`for`/`do`循环、`struct`s、`float`s、预处理器、健壮的错误处理或优化），优先考虑简洁性。为此牺牲了性能，自举编译的版本比GCC编译的版本更大且更慢。\n\n该项目根据MIT许可证发布，作者鼓励为教育目的、编程马拉松或探索极简计算而进行分叉和扩展。该项目堪称一份“艺术宣言”，质疑对资源密集型软件的需求，并展示了简单、易于修改的工具在ESP32等低功耗设备上的强大潜力。"
+    "id": "46401612",
+    "title": "Floor796",
+    "url": "https://floor796.com/",
+    "summary": "The provided \"article\" consists solely of the phrase \"Floor796.\" No additional content, context, or information is supplied. Therefore, it is impossible to extract main points or key information beyond the phrase itself. The summary is limited to stating that the article's entire content is \"Floor796.\"",
+    "chinese_title": "796层",
+    "chinese_summary": "提供的“文章”仅包含“Floor796”这个短语。没有提供额外的内容、背景或信息。因此，除了该短语本身，无法提取任何要点或关键信息。总结仅限于说明该文章的全部内容是“Floor796”。"
   },
   {
-    "id": "46386761",
-    "title": "UBlockOrigin and UBlacklist AI Blocklist",
-    "url": "https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist",
-    "summary": "This article introduces a \"Huge AI Blocklist,\" a manually curated list of over 1000 websites containing AI-generated content, designed to clean image search results on Google, DuckDuckGo, and Bing.\n\nThe blocklist is compatible with various platforms and tools. For PC/Desktop users, it can be easily imported into uBlock Origin or uBlacklist extensions via one-click links or manual URL input. Mobile support is available for iOS/iPadOS through the uBlacklist Safari extension, and for Android via Firefox using either uBlock Origin or uBlacklist. A Hosts file version is also provided for network-wide blocking with Pi-hole and Adguard.\n\nBeyond the main blocklist, an optional \"nuclear list\" targets sites with mixed authentic and AI-generated content (e.g., DeviantArt). Users can customize their experience by allowlisting specific sites in uBlock Origin or uBlacklist. The guide also details \"extended filtering,\" enabling users to block search results based on specific keywords (e.g., \"AI Art,\" \"Midjourney\") using custom filters for uBlock Origin or regular expressions for uBlacklist.\n\nContributions to the list are welcomed via pull requests or issue reporting. The article concludes by listing several related projects addressing SEO spam, AI music, and AI image detection, and includes a message of support for LGBTQ+ rights.",
-    "chinese_title": "UBlockOrigin 和 UBlacklist AI 黑名单",
-    "chinese_summary": "本文章介绍了一个“巨型AI黑名单”，这是一个手动整理的列表，包含了1000多个包含AI生成内容的网站，旨在清理Google、DuckDuckGo和Bing上的图片搜索结果。\n\n该黑名单兼容各种平台和工具。对于PC/桌面用户，可以通过一键链接或手动URL输入轻松导入到uBlock Origin或uBlacklist扩展中。移动设备支持方面，iOS/iPadOS用户可通过uBlacklist Safari扩展使用，Android用户则可通过Firefox使用uBlock Origin或uBlacklist。此外，还提供了一个Hosts文件版本，用于通过Pi-hole和Adguard进行全网络范围的屏蔽。\n\n除了主黑名单，还有一个可选的“核弹级列表”，专门针对那些混合了真实内容和AI生成内容的网站（例如DeviantArt）。用户可以通过在uBlock Origin或uBlacklist中设置特定网站的白名单来定制自己的体验。该指南还详细介绍了“扩展过滤”功能，使用户能够通过uBlock Origin的自定义过滤器或uBlacklist的正则表达式，根据特定关键词（例如“AI Art”、“Midjourney”）屏蔽搜索结果。\n\n欢迎通过拉取请求或问题报告对列表做出贡献。文章最后列出了几个涉及SEO垃圾邮件、AI音乐和AI图像检测的相关项目，并包含了一条支持LGBTQ+权益的信息。"
+    "id": "46408613",
+    "title": "Calendar",
+    "url": "https://neatnik.net/calendar/?year=2026",
+    "summary": "This page presents a single-page calendar for the year 2026, designed to display all dates at once. It's formatted to automatically fit on any size paper when printed, with recommended settings being landscape orientation and disabled headers/footers for best results. The creator suggests using the calendar for jotting notes, planning, and observing the passage of time, while also emphasizing the importance of kindness. The calendar grid itself shows each month (Jan-Dec) with the dates and corresponding initial for the day of the week. It was made by Neatnik.",
+    "chinese_title": "日历",
+    "chinese_summary": "本页展示2026年一页式日历，旨在将全年日期一览无余。打印时，它会自动适应任何尺寸的纸张；为获得最佳效果，建议设置为横向打印并禁用页眉/页脚。创作者建议使用此日历随手记录、规划安排、观察时间流逝，同时不忘强调善良的重要性。日历网格本身显示了每个月份（1月-12月）的日期及对应的星期首字母。由Neatnik制作。"
   },
   {
-    "id": "46393271",
-    "title": "Show HN: AutoLISP interpreter in Rust/WASM – a CAD workflow invented 33 yrs ago",
-    "url": "https://acadlisp.de/noscript.html",
-    "summary": "\"acadlisp\" is an AutoLISP interpreter written in Rust and compiled to WebAssembly, allowing AutoLISP code to execute directly in a web browser without requiring an AutoCAD installation.\n\nThe project is rooted in a CAD workflow invented by the author in 1991 for a German electrical company. This innovative system automated the generation of custom electrical schematics by combining CSV files, templates, and AutoLISP code. Components defined in spreadsheets would generate complete technical drawings automatically. The author built `acadlisp` partly out of nostalgia and partly to preserve this unique workflow, which he believes has been largely forgotten.\n\nThe article also emphasizes LISP's historical significance as an early AI language, highlighting its key features: homoiconicity (code and data share list structures), self-modification, and symbolic processing. The 1991 schematic generator exemplified these, with code capable of writing and modifying itself, triggering further component insertions and template generations.\n\nTechnically, `acadlisp` uses Rust, targets WebAssembly, and supports output formats like SVG and DXF (AutoCAD R12). It implements various common AutoLISP functions, including `defun`, `setq`, control flow statements (`if`, `while`, `cond`), mathematical operations, list manipulation (`car`, `cdr`), and AutoCAD interaction (`command`, `princ`). An interactive demo and source code are available.",
-    "chinese_title": "展示HN：基于 Rust/WASM 的 AutoLISP 解释器 — 33 年前发明的 CAD 工作流",
-    "chinese_summary": "`acadlisp` 是一个用Rust编写并编译成WebAssembly的AutoLISP解释器，它允许AutoLISP代码直接在网页浏览器中执行，无需安装AutoCAD。\n\n该项目源于作者在1991年为一家德国电气公司发明的一种CAD工作流。这个创新系统结合CSV文件、模板和AutoLISP代码，自动化生成定制电气原理图。在电子表格中定义的组件会自动生成完整的技术图纸。作者创建`acadlisp`，部分是出于怀旧，部分是为了保存这种他认为已在很大程度上被遗忘的独特工作流。\n\n文章还强调了LISP作为早期AI语言的历史意义，强调了其关键特性：同像性（代码和数据共享列表结构）、自修改和符号处理。1991年的原理图生成器就体现了这些特性，其代码能够编写和修改自身，从而触发进一步的组件插入和模板生成。\n\n从技术上讲，`acadlisp`使用Rust，目标是WebAssembly，并支持SVG和DXF（AutoCAD R12）等输出格式。它实现了各种常见的AutoLISP函数，包括`defun`、`setq`、控制流语句（`if`、`while`、`cond`）、数学运算、列表操作（`car`、`cdr`）以及AutoCAD交互（`command`、`princ`）。提供了交互式演示和源代码。"
-  },
-  {
-    "id": "46398752",
-    "title": "CEO of Health Care Software Company Sentenced for $1B Fraud Conspiracy",
-    "url": "https://www.justice.gov/opa/pr/ceo-health-care-software-company-sentenced-1b-fraud-conspiracy",
-    "summary": "**Summary:**\n\nSunny Balwani, former CEO of a health care software company, was sentenced to 13 years in prison for his role in a $1 billion fraud conspiracy related to electronic health records (EHR) incentive programs. Balwani, along with others, orchestrated a scheme to defraud the U.S. government and health care providers.\n\nThe conspiracy involved Balwani and his co-conspirators misrepresenting the capabilities and compliance of their EHR software to secure certification and to induce providers to purchase it. They allegedly paid kickbacks to clients to retain them and hide defects. These actions enabled clients, including doctors and hospitals, to falsely attest to using compliant EHR software, thereby receiving hundreds of millions of dollars in federal incentive payments under the HITECH Act.\n\nBalwani was convicted of conspiracy to commit health care fraud and wire fraud, and five counts of health care fraud. The indictment detailed how the company's software failed to meet essential interoperability and data portability requirements, impacting patient care and defrauding both the government and the health care system. In addition to the prison sentence, Balwani was ordered to pay $270.2 million in restitution and forfeit $1 million. Co-conspirators and the company have previously faced convictions and penalties for their involvement in the widespread fraud.",
-    "chinese_title": "医疗软件公司CEO因十亿美元欺诈案获刑",
-    "chinese_summary": "摘要：\n\n一家医疗软件公司的前首席执行官桑尼·巴尔瓦尼，因其在与电子健康记录（EHR）激励计划相关的10亿美元欺诈阴谋中的作用，被判处13年监禁。巴尔瓦尼与其他人共同策划了一项欺诈美国政府和医疗服务提供者的计划。\n\n该阴谋涉及巴尔瓦尼及其同谋谎报其EHR软件的功能和合规性，以获得认证并诱使服务提供者购买。他们据称向客户支付回扣以留住他们并隐藏缺陷。这些行为使得包括医生和医院在内的客户能够虚假证明其使用了合规的EHR软件，从而根据《HITECH法案》获得了数亿美元的联邦激励付款。\n\n巴尔瓦尼被判犯有共谋实施医疗欺诈和电信欺诈罪，以及五项医疗欺诈罪。起诉书详细说明了该公司的软件如何未能满足基本的互操作性和数据可移植性要求，影响了患者护理，并欺骗了政府和医疗系统。除了监禁，巴尔瓦尼还被责令支付2.702亿美元的赔偿金并没收100万美元。其他同谋和该公司此前也因参与此广泛欺诈而面临定罪和处罚。"
-  },
-  {
-    "id": "46394169",
-    "title": "A Proclamation Regarding the Restoration of the Dash",
-    "url": "https://blog.nawaz.org/posts/2025/Dec/a-proclamation-regarding-the-restoration-of-the-dash/",
-    "summary": "On December 26, 2025, the author issued a proclamation lamenting the modern prejudice against the elegant em-dash (—). Traditionally used for parenthetical thoughts, sudden turns, and rhythmic pauses, the em-dash is now unfairly maligned, often viewed as a \"tell-tale sign\" of \"unthinking machines\" like Large Language Models, which the author claims have merely mimicked sophistication.\n\nThe author also criticizes the increasing misuse of the humble hyphen (-) as a \"cowardly substitute\" for the bold em-dash, arguing it flattens prose. Refusing to cede classical punctuation to algorithms or fear appearing \"artificial,\" the author decrees a \"restoration of the dash.\"\n\nWithin the confines of their blog, the author reclaims the em-dash for human writers and banishes the hyphen from all roles of punctuation and pause, replacing it with the \"glorious, unrepentant em-dash\" in every instance of stylistic flair. As a protest against misjudgment, the author, who already manually forms em-dashes, has created a plugin to convert *all* hyphens on their blog into em-dashes, even where hyphens would traditionally be appropriate, urging readers to \"join the revolution.\"",
-    "chinese_title": "关于恢复达什的文告",
-    "chinese_summary": "2025年12月26日，作者发布了一项声明，哀叹现代社会对优雅的破折号（—）存在的偏见。破折号传统上用于插入语、突转和节奏性停顿，但现在却受到不公正的诋毁，常被视为“不假思索的机器”，如大型语言模型（作者声称它们只是拙劣地模仿了复杂性）的“告密迹象”。\n\n作者还批评了日益增多的对“不起眼的连字符”（-）的误用，将其视为“大胆破折号”的“懦弱替代品”，认为它使散文变得平淡无奇。作者拒绝将古典标点符号拱手让给算法，也拒绝因害怕显得“人工化”而退缩，并因此颁布了“破折号复兴”的命令。\n\n在其博客范围内，作者为人类作家夺回了破折号，并将连字符从所有标点和停顿的角色中驱逐，在所有文体风格的实例中，都用“光荣的、不悔的破折号”取而代之。作为对这种误判的抗议，作者（他本人已经习惯手动输入破折号）创建了一个插件，将其博客上的*所有*连字符都转换为破折号，即使在连字符传统上是恰当的地方，并敦促读者“加入这场革命”。"
-  },
-  {
-    "id": "46391448",
-    "title": "Unix \"find\" expressions compiled to bytecode",
-    "url": "https://nullprogram.com/blog/2025/12/23/",
-    "summary": "The article describes a custom compiler, `findc`, that translates Unix `find` expressions into bytecode, contrasting with the tree-walk interpreters found in real-world `find` utilities. The author developed this technique for efficiency, noting `find`'s application to numerous files.\n\n`find` expressions use operators like `-a` (AND), `-o` (OR), and `!` (NOT), with implicit `-a` and a default `-print` action. Parentheses are used for precedence, and operations are short-circuiting, though the author notes `find`'s `-regex` eagerly compiles regardless.\n\nThe bytecode design is for a single-register, 1-bit machine, using five opcodes: `halt`, `not`, `braf` (branch if false), `brat` (branch if true), and `action NAME [ARGS...]`. Jumps are always forward.\n\nThe compilation process involves two main steps:\n1.  **Parsing:** `find`'s infix arguments are converted into a postfix token stream using the shunting-yard algorithm, handling operator precedence and implicit `-a` and `-print` actions.\n2.  **Compiling:** This postfix stream is then translated into bytecode. The compiler maintains a stack of bytecode *fragments*. Actions become `action` instructions. `!` appends `not`. Binary operators like `-a` and `-o` pop two fragments, inserting a `braf` or `brat` instruction to implement short-circuiting by jumping past the second fragment if the first's evaluation allows. The final result is a single program fragment, terminated by a `halt` instruction.\n\nThe author identifies opportunities for peephole optimizations to improve the generated bytecode, such as eliminating redundant `not` instructions and optimizing branch targets.",
-    "chinese_title": "Unix find表达式编译为字节码",
-    "chinese_summary": "本文描述了一个自定义编译器 `findc`，它将 Unix `find` 表达式翻译成字节码，与实际 `find` 工具中常见的树遍历解释器形成对比。作者开发这项技术是为了提高效率，因为 `find` 适用于处理大量文件。\n\n`find` 表达式使用 `-a` (AND)、`-o` (OR) 和 `!` (NOT) 等运算符，带有隐式的 `-a` 和默认的 `-print` 动作。括号用于表示优先级，并且操作是短路的，尽管作者指出 `find` 的 `-regex` 无论如何都会进行预编译。\n\n该字节码设计适用于单寄存器、1位机器，使用五个操作码：`halt`、`not`、`braf`（如果为假则分支）、`brat`（如果为真则分支）和 `action NAME [ARGS...]`。跳转始终是向前的。\n\n编译过程主要包括两个步骤：\n1.  **解析：** 使用调度场算法将 `find` 的中缀参数转换为后缀标记流，处理运算符优先级以及隐式的 `-a` 和 `-print` 动作。\n2.  **编译：** 然后将此后缀流翻译成字节码。编译器维护一个字节码*片段*堆栈。动作变为 `action` 指令。`!` 操作符附加 `not` 指令。像 `-a` 和 `-o` 这样的二元运算符会弹出两个片段，插入 `braf` 或 `brat` 指令以实现短路，即如果第一个片段的评估结果允许，则跳过第二个片段。最终结果是一个由 `halt` 指令终止的单一程序片段。\n\n作者指出了通过窥孔优化改进生成的字节码的机会，例如消除冗余的 `not` 指令以及优化分支目标。"
-  },
-  {
-    "id": "46395061",
-    "title": "Drawing with zero-width characters",
-    "url": "https://zw.swerdlow.dev",
-    "summary": "This article, titled \"Drawing with zero-width characters,\" serves as a practical demonstration rather than a traditional written explanation. The author introduces the concept by noting that a set of 18 Unicode characters, typically found in the Qur'an, profoundly altered their assumptions about how text is rendered.\n\nThe core of the content is a visually striking arrangement composed predominantly of these zero-width or combining Unicode characters. Within this intricate pattern, the phrase \"Drawing with Zero-Width Characters\" is subtly etched, effectively \"drawn\" using the very characters the article discusses. This showcases the unusual graphic potential of these specialized Unicode elements. Despite occupying no horizontal space themselves, they can combine with and modify preceding characters, creating complex visual effects and demonstrating an unconventional method of visual art within a text-based medium.",
-    "chinese_title": "零宽字符绘图",
-    "chinese_summary": "这篇题为《零宽字符绘图》的文章，旨在提供一个实践演示，而非传统的文字解释。作者通过指出一组通常在《古兰经》中出现的18个Unicode字符，深刻改变了他们对文本渲染方式的设想，从而引入了这个概念。\n\n文章的核心内容是一个视觉上引人注目的排布，主要由这些零宽或组合Unicode字符构成。在这个错综复杂的图案中，“零宽字符绘图”这句话被巧妙地“描绘”出来，实际上正是利用了文章所讨论的这些字符。这展示了这些特殊Unicode元素不同寻常的图形潜力。尽管它们本身不占用任何水平空间，但它们可以与前置字符组合并进行修改，从而创造出复杂的视觉效果，并在基于文本的媒介中展示了一种非传统的视觉艺术方法。"
-  },
-  {
-    "id": "46392815",
-    "title": "High school student discovers 1.5M potential new astronomical objects",
-    "url": "https://www.smithsonianmag.com/smart-news/high-school-student-discovers-1-5-million-potential-new-astronomical-objects-by-developing-an-ai-algorithm-180986429/",
+    "id": "46404848",
+    "title": "How we lost communication to entertainment",
+    "url": "https://ploum.net/2025-12-15-communication-entertainment.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "High school student discovers 1.5M potential new astronomical objects",
+    "chinese_title": "How we lost communication to entertainment",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46403291",
-    "title": "Janet Jackson had the power to crash laptop computers (2022)",
-    "url": "https://devblogs.microsoft.com/oldnewthing/20220816-00/?p=106994",
+    "id": "46407337",
+    "title": "Replacing JavaScript with Just HTML",
+    "url": "https://www.htmhell.dev/adventcalendar/2025/27/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Janet Jackson had the power to crash laptop computers (2022)",
+    "chinese_title": "Replacing JavaScript with Just HTML",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46398666",
-    "title": "Inside the proton, the ‘most complicated thing you could possibly imagine’ (2022)",
-    "url": "https://www.quantamagazine.org/inside-the-proton-the-most-complicated-thing-imaginable-20221019/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Inside the proton, the ‘most complicated thing you could possibly imagine’ (2022)",
-    "chinese_summary": "生成摘要时出错"
+    "id": "46405309",
+    "title": "Say No to Palantir in the NHS",
+    "url": "https://notopalantir.goodlawproject.org/email-to-target/stop-palantir-in-the-nhs/",
+    "summary": "This article campaigns against the integration of Palantir's software into the NHS for managing health records, highlighting strong objections to the US \"spy-tech firm.\"\n\nThe primary concerns are Palantir's controversial history, including its alleged support for mass deportation in the US and enabling of genocide in Gaza. Additionally, one of Palantir's founders, Peter Thiel, is noted for his open anti-NHS stance, having claimed it \"makes people sick\" and that the British public's love for it is a form of \"Stockholm syndrome.\"\n\nThe article warns against allowing such a company to gain control over the UK's healthcare system. It calls for immediate action, providing a tool for individuals to check if their local NHS trust has adopted the software. Supporters are urged to email their local trust, demanding they reject Palantir, and also to contact Wes Streeting, the Secretary of State for Health, emphasizing the urgency due to government pressure on trusts to adopt the system.",
+    "chinese_title": "对NHS中的帕兰提尔说不",
+    "chinese_summary": "这篇文章呼吁反对将Palantir的软件整合到NHS（英国国家医疗服务体系）中用于管理健康记录，并强调了对这家美国“间谍技术公司”的强烈反对。\n\n主要担忧是Palantir充满争议的历史，包括据称其在美国支持大规模驱逐出境，以及在加沙地区为种族灭绝提供便利。此外，Palantir的创始人之一彼得·蒂尔（Peter Thiel）以其公开的反NHS立场而闻名，他曾声称NHS“让人患病”，并认为英国公众对它的热爱是一种“斯德哥尔摩综合症”。\n\n文章警告，不应允许这样一家公司掌控英国的医疗保健系统。它呼吁立即采取行动，并提供了一个工具，供个人查询他们当地的NHS信托机构是否已采纳该软件。支持者被敦促通过电子邮件联系他们当地的信托机构，要求其拒绝Palantir；同时，也应联系英国卫生大臣韦斯·斯特里廷（Wes Streeting），强调由于政府施压信托机构采纳该系统，情况十分紧急。"
   },
   {
-    "id": "46395292",
-    "title": "Grok and the Naked King: The Ultimate Argument Against AI Alignment",
-    "url": "https://ibrahimcesar.cloud/blog/grok-and-the-naked-king/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Grok and the Naked King: The Ultimate Argument Against AI Alignment",
-    "chinese_summary": "生成摘要时出错"
+    "id": "46408988",
+    "title": "Growing up in “404 Not Found”: China's nuclear city in the Gobi Desert",
+    "url": "https://substack.com/inbox/post/182743659",
+    "summary": "This article chronicles the unique experiences of individuals who grew up in China's hidden nuclear city, **Factory 404**, located in the Gobi Desert. Known informally as \"404 Not Found,\" this classified city was established in 1958 to develop China's atomic bomb and remained a secret for decades.\n\nThe author, who visited the now-abandoned site, describes a city built from scratch, with its own infrastructure, schools, and hospitals, designed to be self-sufficient and cut off from the outside world. Residents were primarily scientists, engineers, and workers, along with their families, living under strict security and secrecy. Children grew up without knowing the city's true purpose or even its name to outsiders, often using coded language or vague descriptions when communicating with relatives.\n\nThe article highlights a sense of isolation but also a strong community spirit and pride among the residents, despite the harsh desert environment and the demanding work. Many recall a childhood filled with exploration within the city's boundaries and a deep connection to their unique home. In the early 2000s, most residents were relocated to a new city, leaving Factory 404 largely deserted, a silent testament to a pivotal chapter in China's scientific and military history. The piece reflects on the legacy of sacrifice and the unique identity forged by those who lived in this \"nuclear utopia.\"",
+    "chinese_title": "成长在“404未找到”：中国戈壁沙漠中的核城",
+    "chinese_summary": "本文记述了在中国戈壁滩上，一个隐秘核城——404工厂——中成长起来的人们所经历的独特故事。这座被戏称为“404 Not Found”的保密城市，建于1958年，旨在研制中国的原子弹，并数十年来一直对外保密。\n\n作者曾造访这座如今已废弃的遗址，描述了一座从零开始建造的城市，拥有自己的基础设施、学校和医院，旨在实现自给自足，并与外界隔绝。居民主要是科学家、工程师、工人和他们的家人，生活在严格的安保和保密条件下。孩子们在成长过程中并不知道这座城市的真正用途，甚至对外人也未知其名，与亲戚交流时常使用暗语或模糊的描述。\n\n文章强调，尽管身处恶劣的沙漠环境和艰巨的工作之中，居民们既感到与世隔绝，但也形成了强烈的社群精神和自豪感。许多人回忆起在城市界限内充满探索的童年，以及对他们独特家园的深厚情感。21世纪初，大部分居民被迁至一座新城，404工厂也因此几乎被遗弃，成为中国科学和军事史上一个关键篇章的无声见证。这篇文章反思了牺牲的遗产，以及那些曾生活在这座“核乌托邦”中的人们所塑造的独特身份。"
   },
   {
-    "id": "46390055",
-    "title": "Building an AI agent inside a 7-year-old Rails monolith",
-    "url": "https://catalinionescu.dev/ai-agent/building-ai-agent-part-1/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Building an AI agent inside a 7-year-old Rails monolith",
-    "chinese_summary": "生成摘要时出错"
+    "id": "46403559",
+    "title": "Nvidia's $20B antitrust loophole",
+    "url": "https://ossa-ma.github.io/blog/groq",
+    "summary": "Nvidia paid $20 billion for Groq's intellectual property (IP) and its entire executive team, including CEO Jonathan Ross, just 49 days after Groq's $6.9 billion valuation. This transaction was deliberately structured as an IP licensing agreement and talent acquisition, explicitly *not* buying Groq as a company. This \"non-traditional\" approach allowed Nvidia to bypass significant regulatory hurdles like CFIUS review (due to Groq's Saudi contracts) and antitrust scrutiny, avoiding years of review.\n\nThe $13.1 billion premium reflects Nvidia's strategic objectives. Groq's LPU (Language Processing Unit) architecture, utilizing large on-chip SRAM, offers significant advantages for specific AI inference workloads (7B-70B models), achieving high throughput and energy efficiency compared to GPUs, especially for single-user applications.\n\nBy acquiring Groq's IP and key talent, Nvidia neutralizes a potential competitor and prevents rivals (like Google or Amazon) from leveraging Groq's innovative technology. The deal also strategically eliminated GroqCloud, Groq's cloud infrastructure business, which was carved out and left behind. This allowed Nvidia to avoid inheriting GroqCloud's $1.5 billion Saudi Arabian contracts and the geopolitical entanglements they entailed.\n\nWhile VCs (like Chamath Palihapitiya, gaining an estimated $2B) and executives joining Nvidia benefit immensely, the financial outcome for regular Groq employees with vested equity is uncertain. Employees remaining with the now IP-less and leadership-vacant GroqCloud are likely to be negatively impacted, their equity potentially worthless. The article suggests this deal exemplifies how businesses navigate structural innovation when regulation hasn't caught up.",
+    "chinese_title": "英伟达200亿美元反垄断漏洞",
+    "chinese_summary": "Groq估值达到69亿美元仅49天后，英伟达便斥资200亿美元收购了Groq的知识产权（IP）及其包括首席执行官乔纳森·罗斯在内的整个高管团队。此次交易被刻意设计为知识产权许可协议和人才收购，明确声明*不*是收购Groq这家公司。这种“非传统”做法使英伟达能够绕过CFIUS审查（因Groq与沙特的合同）和反垄断审查等重大监管障碍，避免了长达数年的审查。\n\n这131亿美元的溢价反映了英伟达的战略目标。Groq的LPU（语言处理单元）架构，利用片上大容量SRAM，在特定的AI推理工作负载（70亿至700亿参数模型）方面具有显著优势，相较于GPU，可实现高吞吐量和高能效，尤其适用于单用户应用。\n\n通过收购Groq的知识产权和关键人才，英伟达中和了一个潜在竞争对手，并阻止了其他竞争对手（如谷歌或亚马逊）利用Groq的创新技术。此次交易还策略性地剥离了Groq的云基础设施业务GroqCloud，该业务被分拆并被留下。这使得英伟达避免继承GroqCloud与沙特阿拉伯签订的15亿美元合同以及这些合同所带来的地缘政治纠葛。\n\n尽管风险投资家（如Chamath Palihapitiya，估计获利20亿美元）和加入英伟达的高管们受益匪浅，但持有已归属股权的Groq普通员工的财务前景却不确定。那些留在如今已失去知识产权和领导层的GroqCloud的员工可能会受到负面影响，他们的股权可能变得一文不值。文章指出，这笔交易展示了在监管尚未跟上时，企业如何应对结构性创新。"
   },
   {
-    "id": "46394228",
-    "title": "ICE's interest in high-tech gear raises new questions: 'What is it for?'",
-    "url": "https://www.politico.com/news/2025/12/26/ice-high-tech-surveillance-lower-privacy-guardrails-00705401",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ICE's interest in high-tech gear raises new questions: 'What is it for?'",
-    "chinese_summary": "生成摘要时出错"
+    "id": "46395184",
+    "title": "My insulin pump controller uses the Linux kernel. It also violates the GPL",
+    "url": "https://old.reddit.com/r/linux/comments/1puojsr/the_device_that_controls_my_insulin_pump_uses_the/",
+    "summary": "The Reddit post discusses a user's discovery that their Animas Vibe insulin pump controller, a critical medical device, runs on the Linux kernel and appears to be violating the GNU General Public License (GPL).\n\nThe user plugged the controller into their computer, which recognized it as a \"Qemu USB Tablet,\" and `dmesg` output revealed the string \"Linux version 2.6.28-imx_3.0.35-rc6.\" This confirms the device uses the Linux kernel, which is licensed under the GPLv2.\n\nA core tenet of the GPL is that anyone distributing software containing GPL-licensed code must also provide the corresponding source code upon request. The user contacted Animas (Johnson & Johnson) to request the source code for their device. After being bounced between departments and initially told they only provide source code for development, the company eventually stated they do not provide source code to end-users. This constitutes a clear violation of the GPL.\n\nThe discussion highlights concerns about transparency, security, and the right to audit critical medical devices. The inability to access or audit the source code for a device directly responsible for health raises questions about patient safety, cybersecurity vulnerabilities, and the difficulty of verifying the device's behavior. While some commenters noted challenges with FDA regulations, the consensus was that medical device manufacturers are still bound by software licenses like the GPL.",
+    "chinese_title": "我的胰岛素泵控制器使用Linux内核，它也违反了GPL。",
+    "chinese_summary": "一篇Reddit帖子讨论了一位用户发现他们的Animas Vibe胰岛素泵控制器（一种关键医疗设备）运行Linux内核，并且似乎违反了GNU通用公共许可证（GPL）。\n\n该用户将控制器插入电脑，电脑将其识别为“Qemu USB Tablet”，并且`dmesg`输出显示了“Linux version 2.6.28-imx_3.0.35-rc6.”这一字符串。这证实了该设备使用了受GPLv2许可的Linux内核。\n\nGPL的核心原则之一是，任何分发包含GPL许可代码的软件的方，都必须在用户要求时提供相应的源代码。该用户联系了Animas（强生公司），要求提供其设备的源代码。在被不同部门推诿并最初被告知他们只提供开发用的源代码后，该公司最终表示不向最终用户提供源代码。这构成了对GPL的明确违反。\n\n该讨论强调了对关键医疗设备的透明度、安全性以及审计权的担忧。对于直接关系到健康的设备，无法访问或审计其源代码，引发了关于患者安全、网络安全漏洞以及验证设备行为难度的疑问。尽管一些评论者提到了FDA法规带来的挑战，但共识是医疗设备制造商仍受GPL等软件许可证的约束。"
   },
   {
-    "id": "46388700",
-    "title": "Ultimate-Linux: Userspace for Linux in Pure JavaScript",
-    "url": "https://github.com/popovicu/ultimate-linux",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ultimate-Linux: Userspace for Linux in Pure JavaScript",
-    "chinese_summary": "生成摘要时出错"
+    "id": "46395885",
+    "title": "Toys with the highest play-time and lowest clean-up-time",
+    "url": "https://joannabregan.substack.com/p/toys-with-the-highest-play-time-and",
+    "summary": "The article \"Toys with the highest play-time and lowest clean-up-time\" by Joanna Bregan advocates for a strategic approach to selecting children's toys that prioritizes sustained engagement and minimal parental clean-up. The central premise is to choose \"open-ended\" toys that encourage creativity, imagination, and adaptable play, rather than single-function items that quickly lose interest and create clutter.\n\nBregan emphasizes that the most valuable toys are versatile, allowing children to invent diverse scenarios and uses. She recommends categories such as loose parts (e.g., sticks, stones, craft items), classic building toys like DUPLO and Magnatiles, and imaginative play items like dolls, animals, and vehicles. Practical life toys, such as play kitchens, also offer sustained engagement through role-playing. While art supplies can be messy, controlled options like crayons and paint sticks provide creative outlets with manageable clean-up.\n\nThe article discourages single-purpose or heavily branded toys that dictate play rather than inspire it. By focusing on toys that encourage children to be active participants in their play, parents can foster deeper engagement, reduce toy overwhelm, and simplify post-play tidying. This approach ultimately leads to more meaningful play sessions and a more harmonious, less stressful home environment.",
+    "chinese_title": "玩得久、好收拾的玩具",
+    "chinese_summary": "乔安娜·布雷根撰写的文章《玩乐时间最长、清理时间最短的玩具》提倡一种选择儿童玩具的策略性方法，即优先考虑持久的参与度和最少的父母清理工作。其核心前提是选择鼓励创造力、想象力和适应性玩耍的“开放式”玩具，而不是那些会迅速失去兴趣并造成混乱的单一功能物品。\n\n布雷根强调，最有价值的玩具是多功能的，能让孩子们创造出多样化的场景和玩法。她推荐的类别包括“散件材料”（例如树枝、石头、手工艺品）、乐高得宝（DUPLO）和磁力片（Magnatiles）等经典搭建玩具，以及玩偶、动物和车辆等想象力游戏物品。实用生活玩具，如玩具厨房，也能通过角色扮演提供持久的参与度。尽管美术用品可能会弄脏，但蜡笔和颜料棒等可控选项能提供创造性出口，同时易于清理。\n\n文章不鼓励那些规定玩法而非启发玩法的单一功能或品牌色彩浓厚的玩具。通过专注于鼓励孩子积极参与玩耍的玩具，父母可以培养更深层次的参与度，减少玩具过剩带来的困扰，并简化玩耍后的整理工作。这种方法最终会带来更有意义的玩耍时光，以及一个更和谐、压力更小的家庭环境。"
   },
   {
-    "id": "46388185",
-    "title": "Governments in the West Are Turning Their Sights on VPNs",
-    "url": "https://www.nakedcapitalism.com/2025/12/in-their-total-war-on-online-privacy-the-liberal-democracies-of-the-collective-west-are-now-turning-their-sights-on-vpns.html",
+    "id": "46397609",
+    "title": "Exe.dev",
+    "url": "https://exe.dev/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Governments in the West Are Turning Their Sights on VPNs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46398906",
-    "title": "Pre-commit hooks are broken",
-    "url": "https://jyn.dev/pre-commit-hooks-are-fundamentally-broken/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Pre-commit hooks are broken",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46391391",
-    "title": "Codex vs. Claude Code (today)",
-    "url": "https://build.ms/2025/12/22/codex-vs-claude-code-today/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Codex vs. Claude Code (today)",
+    "chinese_title": "Exe.dev",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -144,107 +88,131 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46394620",
-    "title": "MongoBleed",
-    "url": "https://github.com/joe-desimone/mongobleed/blob/main/mongobleed.py",
+    "id": "46400251",
+    "title": "Show HN: Ez FFmpeg – Video editing in plain English",
+    "url": "http://npmjs.com/package/ezff",
     "summary": "生成摘要时出错",
-    "chinese_title": "MongoBleed",
+    "chinese_title": "Show HN: Ez FFmpeg – Video editing in plain English",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46386835",
-    "title": "URL Pattern API",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/API/URL_Pattern_API",
+    "id": "46401539",
+    "title": "Apple releases open-source model that instantly turns 2D photos into 3D views",
+    "url": "https://github.com/apple/ml-sharp",
     "summary": "生成摘要时出错",
-    "chinese_title": "URL Pattern API",
+    "chinese_title": "Apple releases open-source model that instantly turns 2D photos into 3D views",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46393906",
-    "title": "ZJIT is now available in Ruby 4.0",
-    "url": "https://railsatscale.com/2025-12-24-launch-zjit/",
+    "id": "46397379",
+    "title": "Always bet on text (2014)",
+    "url": "https://graydon2.dreamwidth.org/193447.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "ZJIT is now available in Ruby 4.0",
+    "chinese_title": "Always bet on text (2014)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46400490",
-    "title": "CloudFlare is ruining the internet (for me)",
-    "url": "https://www.slashgeek.net/2016/05/17/cloudflare-is-ruining-the-internet-for-me/",
+    "id": "46397991",
+    "title": "Publishing your work increases your luck",
+    "url": "https://github.com/readme/guides/publishing-your-work",
     "summary": "生成摘要时出错",
-    "chinese_title": "CloudFlare is ruining the internet (for me)",
+    "chinese_title": "Publishing your work increases your luck",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46396043",
-    "title": "How I think about Kubernetes",
-    "url": "https://garnaudov.com/writings/how-i-think-about-kubernetes/",
-    "summary": "The author proposes thinking of Kubernetes as a runtime for declarative infrastructure with a type system, rather than merely a container orchestrator.\n\nThe \"type system\" refers to Kubernetes' resource kinds (Pod, Deployment, Service) which function like types in a programming language. Each has strict definitions, semantics, and rules for composition, abstracting away processes and containers. Custom Resource Definitions (CRDs) extend this, allowing users to define new infrastructure types.\n\nThe \"runtime\" describes how Kubernetes operates. Applying a YAML manifest is submitting a typed declaration of desired state, not executing a script. The API server stores this intent as durable cluster state. Crucially, controllers continuously reconcile this desired state with the actual state of the infrastructure. If the actual state deviates, Kubernetes constantly works to revert it to the declared intent. This continuous reconciliation explains why manual edits often get reverted and why `spec` (desired) and `status` (observed) are key for debugging.\n\nThis model clarifies GitOps: Git becomes the \"true desired state,\" with a GitOps controller continuously reconciling Git (source of truth) with the cluster's API objects (runtime state). This implies `kubectl edit` is a debugging tool, as direct changes will likely be reverted by the GitOps controller.\n\nAdopting this perspective leads to practical operational principles: always change the desired state, trust reconciliation, make ownership explicit, and leverage Kubernetes' inherent type system.",
-    "chinese_title": "How I think about Kubernetes",
-    "chinese_summary": "The author proposes thinking of Kubernetes as a runtime for declarative infrastructure with a type system, rather than merely a container orchestrator.\n\nThe \"type system\" refers to Kubernetes' resource kinds (Pod, Deployment, Service) which function like types in a programming language. Each has strict definitions, semantics, and rules for composition, abstracting away processes and containers. Custom Resource Definitions (CRDs) extend this, allowing users to define new infrastructure types.\n\nThe \"runtime\" describes how Kubernetes operates. Applying a YAML manifest is submitting a typed declaration of desired state, not executing a script. The API server stores this intent as durable cluster state. Crucially, controllers continuously reconcile this desired state with the actual state of the infrastructure. If the actual state deviates, Kubernetes constantly works to revert it to the declared intent. This continuous reconciliation explains why manual edits often get reverted and why `spec` (desired) and `status` (observed) are key for debugging.\n\nThis model clarifies GitOps: Git becomes the \"true desired state,\" with a GitOps controller continuously reconciling Git (source of truth) with the cluster's API objects (runtime state). This implies `kubectl edit` is a debugging tool, as direct changes will likely be reverted by the GitOps controller.\n\nAdopting this perspective leads to practical operational principles: always change the desired state, trust reconciliation, make ownership explicit, and leverage Kubernetes' inherent type system."
-  },
-  {
-    "id": "46403073",
-    "title": "VSCode rebrands as \"The open source AI code editor\"",
-    "url": "https://code.visualstudio.com",
+    "id": "46394867",
+    "title": "Rob Pike got spammed with an AI slop \"act of kindness\"",
+    "url": "https://simonwillison.net/2025/Dec/26/slop-acts-of-kindness/",
     "summary": "生成摘要时出错",
-    "chinese_title": "VSCode rebrands as \"The open source AI code editor\"",
+    "chinese_title": "Rob Pike got spammed with an AI slop \"act of kindness\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46402327",
-    "title": "How we automated federal retirements",
-    "url": "https://ndstudio.gov/posts/automating-federal-retirements",
+    "id": "46403291",
+    "title": "Janet Jackson had the power to crash laptop computers (2022)",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20220816-00/?p=106994",
     "summary": "生成摘要时出错",
-    "chinese_title": "How we automated federal retirements",
+    "chinese_title": "Janet Jackson had the power to crash laptop computers (2022)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46399576",
-    "title": "More dynamic cronjobs",
-    "url": "https://george.mand.is/2025/09/more-dynamic-cronjobs/",
+    "id": "46409969",
+    "title": "Last Year on My Mac: Look Back in Disbelief",
+    "url": "https://eclecticlight.co/2025/12/28/last-year-on-my-mac-look-back-in-disbelief/",
     "summary": "生成摘要时出错",
-    "chinese_title": "More dynamic cronjobs",
+    "chinese_title": "Last Year on My Mac: Look Back in Disbelief",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46392538",
-    "title": "Steve wants us to make the Macintosh boot faster",
-    "url": "https://www.folklore.org/Saving_Lives.html",
+    "id": "46398201",
+    "title": "QNX Self-Hosted Developer Desktop",
+    "url": "https://devblog.qnx.com/qnx-self-hosted-developer-desktop-initial-release/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Steve wants us to make the Macintosh boot faster",
+    "chinese_title": "QNX Self-Hosted Developer Desktop",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46388059",
-    "title": "When a driver challenges the kernel's assumptions",
-    "url": "http://miod.online.fr/software/openbsd/stories/udl.html",
+    "id": "46407502",
+    "title": "Fathers’ choices may be packaged and passed down in sperm RNA",
+    "url": "https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/",
     "summary": "生成摘要时出错",
-    "chinese_title": "When a driver challenges the kernel's assumptions",
+    "chinese_title": "Fathers’ choices may be packaged and passed down in sperm RNA",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46398170",
-    "title": "The battle to stop clever people betting",
-    "url": "https://www.economist.com/christmas-specials/2025/12/18/the-battle-to-stop-clever-people-betting",
+    "id": "46404597",
+    "title": "Rainbow Six Siege hacked as players get billions of credits and random bans",
+    "url": "https://www.shanethegamer.com/esports-news/rainbow-six-siege-hacked-global-server-outage/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The battle to stop clever people betting",
+    "chinese_title": "Rainbow Six Siege hacked as players get billions of credits and random bans",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46387164",
-    "title": "Memory Safety",
-    "url": "https://www.memorysafety.org/",
+    "id": "46403276",
+    "title": "USD share as global reserve currency drops to lowest since 1994",
+    "url": "https://wolfstreet.com/2025/12/26/status-of-the-us-dollar-as-global-reserve-currency-usd-share-drops-to-lowest-since-1994/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Memory Safety",
+    "chinese_title": "USD share as global reserve currency drops to lowest since 1994",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46390667",
-    "title": "Geometric Algorithms for Translucency Sorting in Minecraft [pdf]",
-    "url": "https://douira.dev/assets/document/douira-master-thesis.pdf",
+    "id": "46403041",
+    "title": "Nvidia just paid $20B for a company that missed its revenue target by 75%",
+    "url": "https://blog.drjoshcsimmons.com/p/nvidia-just-paid-20-billion-for-a",
     "summary": "生成摘要时出错",
-    "chinese_title": "Geometric Algorithms for Translucency Sorting in Minecraft [pdf]",
+    "chinese_title": "Nvidia just paid $20B for a company that missed its revenue target by 75%",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46395106",
+    "title": "How Lewis Carroll computed determinants (2023)",
+    "url": "https://www.johndcook.com/blog/2023/07/10/lewis-carroll-determinants/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How Lewis Carroll computed determinants (2023)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46398906",
+    "title": "Pre-commit hooks are broken",
+    "url": "https://jyn.dev/pre-commit-hooks-are-fundamentally-broken/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Pre-commit hooks are broken",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46403128",
+    "title": "Employee commits suicide after MongoDB fired her during mental health leave",
+    "url": "https://www.linkedin.com/posts/gsurman_our-beloved-irreplaceable-daughter-annie-activity-7407842359826120704-kFaq",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Employee commits suicide after MongoDB fired her during mental health leave",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46403992",
+    "title": "Toll roads are spreading in America",
+    "url": "https://www.economist.com/united-states/2025/12/18/toll-roads-are-spreading-in-america",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Toll roads are spreading in America",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -256,11 +224,227 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "46395871",
+    "title": "T-Ruby is Ruby with syntax for types",
+    "url": "https://type-ruby.github.io/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "T-Ruby is Ruby with syntax for types",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46403915",
+    "title": "Windows 2 for the Apricot PC/Xi",
+    "url": "https://www.ninakalinina.com/notes/win2apri/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Windows 2 for the Apricot PC/Xi",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46409125",
+    "title": "AI Slop Report: The Global Rise of Low-Quality AI Videos",
+    "url": "https://www.kapwing.com/blog/ai-slop-report-the-global-rise-of-low-quality-ai-videos/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Slop Report: The Global Rise of Low-Quality AI Videos",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46405306",
+    "title": "Richard Stallman at the First Hackers Conference in 1984 [video]",
+    "url": "https://www.youtube.com/watch?v=Hf2pfzzWPYE",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Richard Stallman at the First Hackers Conference in 1984 [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46398666",
+    "title": "Inside the proton, the ‘most complicated thing you could possibly imagine’ (2022)",
+    "url": "https://www.quantamagazine.org/inside-the-proton-the-most-complicated-thing-imaginable-20221019/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Inside the proton, the ‘most complicated thing you could possibly imagine’ (2022)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46410402",
+    "title": "Building a macOS app to know when my Mac is thermal throttling",
+    "url": "https://stanislas.blog/2025/12/macos-thermal-throttling-app/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Building a macOS app to know when my Mac is thermal throttling",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46398752",
+    "title": "CEO of health care software company sentenced for $1B fraud conspiracy",
+    "url": "https://www.justice.gov/opa/pr/ceo-health-care-software-company-sentenced-1b-fraud-conspiracy",
+    "summary": "生成摘要时出错",
+    "chinese_title": "CEO of health care software company sentenced for $1B fraud conspiracy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46406901",
+    "title": "Functional programming and reliability: ADTs, safety, critical infrastructure",
+    "url": "https://blog.rastrian.dev/post/why-reliability-demands-functional-programming-adts-safety-and-critical-infrastructure",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Functional programming and reliability: ADTs, safety, critical infrastructure",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46406098",
+    "title": "Liberating Bluetooth on the ESP32",
+    "url": "https://exquisite.tube/w/mEzF442Q4hUXnhQ8HmfZuq",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Liberating Bluetooth on the ESP32",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46403955",
+    "title": "Scientists edited genes in a living person and saved his life",
+    "url": "https://www.popularmechanics.com/science/health/a64815804/crispr-therapy/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Scientists edited genes in a living person and saved his life",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46395061",
+    "title": "Drawing with zero-width characters",
+    "url": "https://zw.swerdlow.dev",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Drawing with zero-width characters",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46395292",
+    "title": "Grok and the Naked King: The Ultimate Argument Against AI Alignment",
+    "url": "https://ibrahimcesar.cloud/blog/grok-and-the-naked-king/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Grok and the Naked King: The Ultimate Argument Against AI Alignment",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46409928",
+    "title": "Hungry Fat Cells Could Someday Starve Cancer",
+    "url": "https://www.ucsf.edu/news/2025/01/429411/how-hungry-fat-cells-could-someday-starve-cancer-death",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hungry Fat Cells Could Someday Starve Cancer",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46405480",
+    "title": "Pfizer ended up passing on my GLP-1 work back in the early '90s (2024)",
+    "url": "https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Pfizer ended up passing on my GLP-1 work back in the early '90s (2024)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46408984",
+    "title": "C++ says “We have try. . . finally at home”",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20251222-00/?p=111890",
+    "summary": "生成摘要时出错",
+    "chinese_title": "C++ says “We have try. . . finally at home”",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46403073",
+    "title": "VSCode rebrands as \"The open source AI code editor\"",
+    "url": "https://code.visualstudio.com",
+    "summary": "生成摘要时出错",
+    "chinese_title": "VSCode rebrands as \"The open source AI code editor\"",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46405235",
+    "title": "An ounce of silver is now worth more than a barrel of oil",
+    "url": "https://www.wsj.com/finance/commodities-futures/an-ounce-of-silver-is-now-worth-more-than-a-barrel-of-oil-196e149e",
+    "summary": "生成摘要时出错",
+    "chinese_title": "An ounce of silver is now worth more than a barrel of oil",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "46401190",
     "title": "Splice a Fibre",
     "url": "https://react-networks-lib.rackout.net/fibre",
     "summary": "生成摘要时出错",
     "chinese_title": "Splice a Fibre",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46402327",
+    "title": "How we automated federal retirements",
+    "url": "https://ndstudio.gov/posts/automating-federal-retirements",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How we automated federal retirements",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46408192",
+    "title": "Dialtone – AOL 3.0 Server",
+    "url": "https://dialtone.live/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Dialtone – AOL 3.0 Server",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46405866",
+    "title": "Public Domain Day 2026",
+    "url": "https://web.law.duke.edu/cspd/publicdomainday/2026/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Public Domain Day 2026",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46399576",
+    "title": "More dynamic cronjobs",
+    "url": "https://george.mand.is/2025/09/more-dynamic-cronjobs/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "More dynamic cronjobs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46400490",
+    "title": "CloudFlare is ruining the internet (for me) (2016)",
+    "url": "https://www.slashgeek.net/2016/05/17/cloudflare-is-ruining-the-internet-for-me/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "CloudFlare is ruining the internet (for me) (2016)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46396043",
+    "title": "How I think about Kubernetes",
+    "url": "https://garnaudov.com/writings/how-i-think-about-kubernetes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How I think about Kubernetes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46405481",
+    "title": "How We Found Out About COINTELPRO (2014)",
+    "url": "https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How We Found Out About COINTELPRO (2014)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46398170",
+    "title": "The battle to stop clever people betting",
+    "url": "https://www.economist.com/christmas-specials/2025/12/18/the-battle-to-stop-clever-people-betting",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The battle to stop clever people betting",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46406129",
+    "title": "The Dangers of SSL Certificates",
+    "url": "https://surfingcomplexity.blog/2025/12/27/the-dangers-of-ssl-certificates/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Dangers of SSL Certificates",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46412411",
+    "title": "2 in 3 Americans think AI will cause major harm to humans in the next 20 years [pdf]",
+    "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2025/03/pi_2025.04.03_us-public-and-ai-experts_topline.pdf",
+    "summary": "生成摘要时出错",
+    "chinese_title": "2 in 3 Americans think AI will cause major harm to humans in the next 20 years [pdf]",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -272,19 +456,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46393817",
-    "title": "Mostlymatter: A fork of Mattermost by Framasoft",
-    "url": "https://packages.framasoft.org/projects/mostlymatter/",
+    "id": "46403805",
+    "title": "More than 20% of videos shown to new YouTube users are 'AI slop', study finds",
+    "url": "https://www.theguardian.com/technology/2025/dec/27/more-than-20-of-videos-shown-to-new-youtube-users-are-ai-slop-study-finds",
     "summary": "生成摘要时出错",
-    "chinese_title": "Mostlymatter: A fork of Mattermost by Framasoft",
+    "chinese_title": "More than 20% of videos shown to new YouTube users are 'AI slop', study finds",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46403276",
-    "title": "USD Share as Global Reserve Currency Drops to Lowest Since 1994",
-    "url": "https://wolfstreet.com/2025/12/26/status-of-the-us-dollar-as-global-reserve-currency-usd-share-drops-to-lowest-since-1994/",
+    "id": "46403048",
+    "title": "PNG in Chrome shows a different image than in Safari or any desktop app",
+    "url": "https://lr0.org/blog/p/pngchanges/",
     "summary": "生成摘要时出错",
-    "chinese_title": "USD Share as Global Reserve Currency Drops to Lowest Since 1994",
+    "chinese_title": "PNG in Chrome shows a different image than in Safari or any desktop app",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -296,99 +480,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46395714",
-    "title": "Karpathy on Programming",
-    "url": "https://twitter.com/karpathy/status/2004607146781278521",
+    "id": "46401982",
+    "title": "Why is calling my asm function from Rust slower than calling it from C?",
+    "url": "https://ohadravid.github.io/posts/2025-12-rav1d-faster-asm/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Karpathy on Programming",
+    "chinese_title": "Why is calling my asm function from Rust slower than calling it from C?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46391077",
-    "title": "The First Web Server",
-    "url": "https://dfarq.homeip.net/the-first-web-server/",
+    "id": "46410210",
+    "title": "Learn computer graphics from scratch and for free",
+    "url": "https://www.scratchapixel.com",
     "summary": "生成摘要时出错",
-    "chinese_title": "The First Web Server",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46387838",
-    "title": "No shares in company, but 550 employees received a $240M gift from their owner",
-    "url": "https://economictimes.indiatimes.com/magazines/panache/no-shares-in-company-but-550-employees-received-a-240-million-gift-from-their-owner-for-staying-with-him-through-tough-times/articleshow/126175955.cms?from=mdr",
-    "summary": "生成摘要时出错",
-    "chinese_title": "No shares in company, but 550 employees received a $240M gift from their owner",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46393924",
-    "title": "C/C++ Embedded Files (2013)",
-    "url": "https://www.4rknova.com//blog/2013/01/27/cpp-embedded-files",
-    "summary": "生成摘要时出错",
-    "chinese_title": "C/C++ Embedded Files (2013)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46391064",
-    "title": "Questions engineers should ask future employers in interviews",
-    "url": "https://dollardhingra.substack.com/p/questions-software-engineers-should",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Questions engineers should ask future employers in interviews",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46386669",
-    "title": "Weight-loss pill approval set to accelerate food industry product overhauls",
-    "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/weight-loss-pill-approval-set-accelerate-food-industry-product-overhauls-2025-12-24/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Weight-loss pill approval set to accelerate food industry product overhauls",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46403048",
-    "title": "This PNG shows a different version when loaded in Chrome than in Safari",
-    "url": "https://lr0.org/blog/p/pngchanges/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "This PNG shows a different version when loaded in Chrome than in Safari",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46402609",
-    "title": "New York to require social media platforms to display mental health warnings",
-    "url": "https://www.reuters.com/legal/litigation/new-york-require-social-media-platforms-display-mental-health-warnings-2025-12-26/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "New York to require social media platforms to display mental health warnings",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46395757",
-    "title": "NYC phone ban reveals some students can't read clocks",
-    "url": "https://gothamist.com/news/nyc-phone-ban-reveals-some-students-cant-read-clocks",
-    "summary": "生成摘要时出错",
-    "chinese_title": "NYC phone ban reveals some students can't read clocks",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46393609",
-    "title": "I built a quiet site for finding ambient albums while working",
-    "url": "https://ambientmusic.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I built a quiet site for finding ambient albums while working",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46393262",
-    "title": "Show HN: Private blogging and journaling with a simulated audience",
-    "url": "https://tempblog-psi.vercel.app/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Private blogging and journaling with a simulated audience",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46398644",
-    "title": "Former ULA President and CEO Tory Bruno Joins Blue Origin",
-    "url": "https://spaceflightnow.com/2025/12/26/former-ula-president-and-ceo-tory-bruno-joins-blue-origin/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Former ULA President and CEO Tory Bruno Joins Blue Origin",
+    "chinese_title": "Learn computer graphics from scratch and for free",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -400,43 +504,139 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46392223",
-    "title": "Cjanet",
-    "url": "https://github.com/janet-lang/spork/blob/cjanet-jit/spork/cjanet.janet",
+    "id": "46405927",
+    "title": "Yanis Varoufakis on the future of capitalism [video]",
+    "url": "https://www.youtube.com/watch?v=P_TMuVQPfxw",
     "summary": "生成摘要时出错",
-    "chinese_title": "Cjanet",
+    "chinese_title": "Yanis Varoufakis on the future of capitalism [video]",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46393081",
-    "title": "The AI bubble is all over now, baby blue",
-    "url": "https://garymarcus.substack.com/p/the-ai-bubble-is-all-over-now-baby",
+    "id": "46405898",
+    "title": "Bankruptcies are exploding across the economy",
+    "url": "https://www.businessinsider.com/bankruptcies-across-economy-small-business-households-corporate-2025-12",
     "summary": "生成摘要时出错",
-    "chinese_title": "The AI bubble is all over now, baby blue",
+    "chinese_title": "Bankruptcies are exploding across the economy",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46391422",
-    "title": "GNU Mes and the Module System",
-    "url": "https://ekaitz.elenq.tech/fasterMes5.html",
+    "id": "46395714",
+    "title": "Karpathy on Programming",
+    "url": "https://twitter.com/karpathy/status/2004607146781278521",
     "summary": "生成摘要时出错",
-    "chinese_title": "GNU Mes and the Module System",
+    "chinese_title": "Karpathy on Programming",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46391808",
-    "title": "Officials discover a million more documents potentially related to Epstein case",
-    "url": "https://www.bbc.com/news/articles/czdgz84dn35o",
+    "id": "46405375",
+    "title": "In 1995, a Netscape employee wrote a hack in 10 days that now runs the Internet",
+    "url": "https://arstechnica.com/gadgets/2025/12/in-1995-a-netscape-employee-wrote-a-hack-in-10-days-that-now-runs-the-internet/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Officials discover a million more documents potentially related to Epstein case",
+    "chinese_title": "In 1995, a Netscape employee wrote a hack in 10 days that now runs the Internet",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46387464",
-    "title": "We \"solved\" C10K years ago yet we keep reinventing it (2003)",
-    "url": "https://www.kegel.com/c10k.html",
+    "id": "46402609",
+    "title": "New York to require social media platforms to display mental health warnings",
+    "url": "https://www.reuters.com/legal/litigation/new-york-require-social-media-platforms-display-mental-health-warnings-2025-12-26/",
     "summary": "生成摘要时出错",
-    "chinese_title": "We \"solved\" C10K years ago yet we keep reinventing it (2003)",
+    "chinese_title": "New York to require social media platforms to display mental health warnings",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46400242",
+    "title": "Verdichtung",
+    "url": "https://alexeygy.github.io/blog/verdichtung/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Verdichtung",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46405023",
+    "title": "America's richest 10% now hold 60% of the nation's wealth",
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mayikzgatu2v",
+    "summary": "生成摘要时出错",
+    "chinese_title": "America's richest 10% now hold 60% of the nation's wealth",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46404952",
+    "title": "'Off switch' discovery could help clear our brains of a common parasite",
+    "url": "https://www.sciencealert.com/off-switch-discovery-could-help-clear-our-brains-of-a-common-parasite",
+    "summary": "生成摘要时出错",
+    "chinese_title": "'Off switch' discovery could help clear our brains of a common parasite",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46401938",
+    "title": "NMH BASIC",
+    "url": "https://t3x.org/nmhbasic/index.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "NMH BASIC",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46395757",
+    "title": "NYC phone ban reveals some students can't read clocks",
+    "url": "https://gothamist.com/news/nyc-phone-ban-reveals-some-students-cant-read-clocks",
+    "summary": "生成摘要时出错",
+    "chinese_title": "NYC phone ban reveals some students can't read clocks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46406213",
+    "title": "7- and 14-segment fonts \"DSEG\"",
+    "url": "https://www.keshikan.net/fonts.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "7- and 14-segment fonts \"DSEG\"",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46398644",
+    "title": "Former ULA President and CEO Tory Bruno Joins Blue Origin",
+    "url": "https://spaceflightnow.com/2025/12/26/former-ula-president-and-ceo-tory-bruno-joins-blue-origin/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Former ULA President and CEO Tory Bruno Joins Blue Origin",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46410153",
+    "title": "Salesforce pulls back from LLMs, pivots Agentforce to deterministic automation",
+    "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-laying-off-4000-employees-and-automating-with-ai-agents-salesforce-executives-admit-we-were-more-confident-about-/articleshow/126121875.cms",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Salesforce pulls back from LLMs, pivots Agentforce to deterministic automation",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46405216",
+    "title": "Legal sports betting linked to sharp increases in violent crime",
+    "url": "https://news.rice.edu/news/2025/legal-sports-betting-linked-sharp-increases-violent-crime-study-finds",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Legal sports betting linked to sharp increases in violent crime",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46409976",
+    "title": "Ubuntu 26.04 LTS – The Roadmap",
+    "url": "https://discourse.ubuntu.com/t/ubuntu-26-04-lts-the-roadmap/72740",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Ubuntu 26.04 LTS – The Roadmap",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46403741",
+    "title": "Cleartext signatures considered harmful",
+    "url": "https://gnupg.org/blog/20251226-cleartext-signatures.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cleartext signatures considered harmful",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46409245",
+    "title": "Manus AI 100M USD ARR",
+    "url": "https://manus.im/blog/manus-100m-arr",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Manus AI 100M USD ARR",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -448,11 +648,155 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "46412210",
+    "title": "Scientists discover beer bottle in the Mariana Trench (2024)",
+    "url": "https://www.unilad.com/news/scientist-beer-bottle-deepest-point-ocean-mariana-trench-667878-20240213",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Scientists discover beer bottle in the Mariana Trench (2024)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46410285",
+    "title": "Claude Code creator says Claude wrote all his code for the last month",
+    "url": "https://twitter.com/bcherny/status/2004897269674639461",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Claude Code creator says Claude wrote all his code for the last month",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "46398339",
     "title": "Retreating from EVs could be hazardous for Western carmakers",
     "url": "https://www.economist.com/business/2025/12/17/retreating-from-evs-could-be-hazardous-for-western-carmakers",
     "summary": "生成摘要时出错",
     "chinese_title": "Retreating from EVs could be hazardous for Western carmakers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46409109",
+    "title": "Italians celebrate village's first baby in 30 years",
+    "url": "https://www.theguardian.com/world/2025/dec/26/italian-village-first-baby-in-30-years",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Italians celebrate village's first baby in 30 years",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46407198",
+    "title": "Show HN: Viral Potential Predictor",
+    "url": "https://hn-ph.vercel.app",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Viral Potential Predictor",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46412549",
+    "title": "A \"Prime\" View of HN",
+    "url": "https://dosaygo-studio.github.io/prime-news/index.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A \"Prime\" View of HN",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46411040",
+    "title": "'PromptQuest' is the worst game of 2025 (trying to make chatbots work)",
+    "url": "https://www.theregister.com/2025/12/26/ai_is_like_adventure_games/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "'PromptQuest' is the worst game of 2025 (trying to make chatbots work)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46401340",
+    "title": "RoboCop – Breaking the Law. H0ffman Cracks RoboCop Arcade from DataEast",
+    "url": "https://hoffman.home.blog/2025/12/26/robocop-breaking-the-law/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "RoboCop – Breaking the Law. H0ffman Cracks RoboCop Arcade from DataEast",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46397153",
+    "title": "Elon Musk drops sustainable from Tesla's mission as he completes his villain arc",
+    "url": "https://electrek.co/2025/12/26/elon-musk-drops-sustainable-teslas-mission-completes-villain-arc/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Elon Musk drops sustainable from Tesla's mission as he completes his villain arc",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46396755",
+    "title": "Silver rises 9% to hit fresh record high",
+    "url": "https://www.reuters.com/world/india/silver-rises-9-hit-fresh-record-high-2025-12-26/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Silver rises 9% to hit fresh record high",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46412007",
+    "title": "Shut Up About the Water",
+    "url": "https://prettygoodblog.com/p/shut-up-about-the-water",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Shut Up About the Water",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46411539",
+    "title": "Designing Predictable LLM-Verifier Systems for Formal Method Guarantee",
+    "url": "https://arxiv.org/abs/2512.02080",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Designing Predictable LLM-Verifier Systems for Formal Method Guarantee",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46404673",
+    "title": "U.S. decision to impose travel restrictions on EU individuals",
+    "url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_25_3160",
+    "summary": "生成摘要时出错",
+    "chinese_title": "U.S. decision to impose travel restrictions on EU individuals",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46405855",
+    "title": "I Genetically Engineered *Myself* to Fix Lactose Intolerance [video]",
+    "url": "https://www.youtube.com/watch?v=J3FcbFqSoQY",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I Genetically Engineered *Myself* to Fix Lactose Intolerance [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46406693",
+    "title": "US judge blocks detention of British social media campaigner",
+    "url": "https://www.bbc.com/news/articles/c33mx6j5jrvo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US judge blocks detention of British social media campaigner",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46399754",
+    "title": "Tech groups shift $120B of AI data centre debt off balance sheets",
+    "url": "https://www.ft.com/content/0ae9d6cd-6b94-4e22-a559-f047734bef83",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tech groups shift $120B of AI data centre debt off balance sheets",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46398711",
+    "title": "CorsixTH – An open source clone of Theme Hospital",
+    "url": "https://corsixth.com",
+    "summary": "生成摘要时出错",
+    "chinese_title": "CorsixTH – An open source clone of Theme Hospital",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46396978",
+    "title": "A Wealth Tax Floated in California Has Billionaires Thinking of Leaving",
+    "url": "https://www.nytimes.com/2025/12/26/technology/california-wealth-tax-page-thiel.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A Wealth Tax Floated in California Has Billionaires Thinking of Leaving",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46409893",
+    "title": "Tim Cook Posts AI Slop in Christmas Message on Twitter",
+    "url": "https://daringfireball.net/linked/2025/12/27/slopibus",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tim Cook Posts AI Slop in Christmas Message on Twitter",
     "chinese_summary": "生成摘要时出错"
   }
 ]
