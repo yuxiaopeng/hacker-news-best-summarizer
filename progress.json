@@ -3,96 +3,88 @@
     "id": "46415225",
     "title": "What an unprocessed photo looks like",
     "url": "https://maurycyz.com/misc/raw_photo/",
-    "summary": "An unprocessed photo from a camera sensor is far from what we perceive. Initially, it's just a \"gray-and-gray\" image composed of analog-to-digital converter (ADC) values, often not utilizing the full theoretical range and lacking contrast.\n\nThe journey to a viewable image involves several processing steps:\n\n1.  **Ranging:** The initial ADC values need to be mapped to a displayable black and white range to improve contrast, transforming the \"gray-and-gray\" into something with clearer light and dark tones.\n2.  **Demosaicing:** Camera sensors don't see color directly; they use a Bayer filter array where each pixel captures only red, green, or blue light. To create a full-color image, a demosaicing algorithm averages neighboring pixel values to interpolate the missing color information for each pixel.\n3.  **Tone Mapping (Gamma Correction):** Even after demosaicing, the image appears dark. This is because display technologies have a limited dynamic range compared to sensors and human vision. Additionally, human perception of brightness is non-linear. Applying a non-linear curve (like sRGB) brightens darker areas, making the image more accurately represent perceived brightness.\n4.  **White Balance:** Camera sensors can be more sensitive to certain colors (like green), and demosaicing can amplify this, leading to color casts. White balance corrects these by adjusting the intensity of each color channel, ensuring neutral colors appear neutral. This step often needs to be done on the linear data before tone mapping.\n\nThe article concludes that even \"in-camera\" JPEGs undergo extensive mathematical processing. Adjusting an image in editing software isn't making it \"faker\" but rather a different rendition of the same raw data, aiming to better replicate human perception within the constraints of display technology.",
-    "chinese_title": "原图是什么样子",
-    "chinese_summary": "相机传感器未经处理的照片，远非我们所感知到的样子。最初，它只是一幅由模数转换器 (ADC) 值组成的“灰蒙蒙”图像，通常未充分利用其理论范围，且缺乏对比度。\n\n要转换为可观看的图像，需要经过以下几个处理步骤：\n\n1.  **定标：** 初始 ADC 值需要映射到可显示的黑白范围，以提高对比度，将“灰蒙蒙”的图像转换为具有更清晰明暗色调的图像。\n2.  **去马赛克：** 相机传感器不直接感知颜色；它们使用拜耳滤色阵列，其中每个像素只捕获红色、绿色或蓝色光。为了创建全彩图像，去马赛克算法会平均相邻像素值，以插值每个像素缺失的颜色信息。\n3.  **色调映射 (伽马校正)：** 即使在去马赛克之后，图像仍显得很暗。这是因为与传感器和人眼相比，显示技术的动态范围有限。此外，人眼对亮度的感知是非线性的。应用非线性曲线（如sRGB）可以提亮较暗区域，使图像更准确地呈现感知的亮度。\n4.  **白平衡：** 相机传感器可能对某些颜色（如绿色）更敏感，去马赛克可能会放大这种敏感性，导致偏色。白平衡通过调整每个颜色通道的强度来校正这些问题，确保中性色显示为中性。这一步通常需要在色调映射之前在线性数据上完成。\n\n文章总结道，即使是“机内”JPEG图像也经过了大量的数学处理。在编辑软件中调整图像并非使其“虚假”，而只是对相同原始数据进行不同形式的呈现，旨在显示技术限制内更好地复制人眼感知。"
-  },
-  {
-    "id": "46408613",
-    "title": "Calendar",
-    "url": "https://neatnik.net/calendar/?year=2026",
-    "summary": "This page presents a one-page calendar for the year 2026, designed to display all dates on a single sheet of paper of any size. For optimal printing, users are advised to set their printer to landscape orientation and disable headers and footers. The calendar encourages users to take in the year at a glance, fold it for portability, jot down notes, plan events, and observe the passage of time. A general message of kindness is also included. The calendar was created by Neatnik.",
-    "chinese_title": "日历",
-    "chinese_summary": "本页面提供一份2026年全年一页式日历，旨在将所有日期呈现在任意尺寸的单张纸上。为获得最佳打印效果，建议用户将打印机设置为横向并禁用页眉和页脚。这份日历鼓励用户一眼纵览全年，折叠便于携带，记录笔记，规划活动，并观察时间的流逝。日历中还包含一则普遍的善意信息。本页日历由Neatnik创建。"
-  },
-  {
-    "id": "46408988",
-    "title": "Growing up in “404 Not Found”: China's nuclear city in the Gobi Desert",
-    "url": "https://substack.com/inbox/post/182743659",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Growing up in “404 Not Found”: China's nuclear city in the Gobi Desert",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46407337",
-    "title": "Replacing JavaScript with Just HTML",
-    "url": "https://www.htmhell.dev/adventcalendar/2025/27/",
-    "summary": "Aaron T. Grogg's article, \"Replacing JS with Just HTML,\" advocates for leveraging native HTML and CSS features to reduce reliance on JavaScript for common web functionalities. Published on December 27, 2025, the piece argues that while JS has been vital, many tasks it traditionally handled can now be performed more efficiently by modern HTML and CSS, leading to better user experiences.\n\nThe core premise is that offloading functionality to native browser implementations means less JavaScript needs to be downloaded, decompressed, evaluated, and maintained in memory. This frees JS for more complex tasks while improving site performance.\n\nGrogg provides practical examples:\n1.  **Accordions/Expanding Content Panels:** Achieved with the `<details>` and `<summary>` elements, offering native open/close states and radio-button-like behavior with the `name` attribute.\n2.  **Input with Autofilter Suggestions Dropdown:** Implemented using an `<input>` element with the `list` attribute, linked to a `<datalist>` for automatic filtering of options.\n3.  **Modals/Popovers:** Replaced by the `popover` and `popovertarget` attributes on a `<dialog>` element, enabling various types of popovers with built-in light-dismiss and accessibility features.\n4.  **Offscreen Nav/Content:** Uses the `popover` attribute combined with CSS for animated transitions, creating JavaScript-free offscreen navigation menus.\n\nThe article encourages developers to prioritize native solutions where available, respecting JavaScript by using it for what it truly needs to do, thereby creating lighter and faster web applications.",
-    "chinese_title": "仅用 HTML 替换 JavaScript",
-    "chinese_summary": "Aaron T. Grogg的文章《仅用HTML替代JS》倡导利用原生的HTML和CSS功能，以减少对JavaScript在常见网页功能上的依赖。该文章于2025年12月27日发表，认为尽管JS一直至关重要，但许多它传统上处理的任务现在可以由现代HTML和CSS更高效地完成，从而带来更好的用户体验。\n\n核心前提是，将功能卸载到原生浏览器实现中，意味着需要下载、解压缩、评估和内存中维护的JavaScript更少。这将JS解放出来用于更复杂的任务，同时提高网站性能。\n\nGrogg提供了实用示例：\n1.  **手风琴/可展开内容面板：** 通过`<details>`和`<summary>`元素实现，提供原生的打开/关闭状态，并可使用`name`属性实现类似单选按钮的行为。\n2.  **带自动过滤建议的输入下拉框：** 使用带有`list`属性的`<input>`元素实现，该属性链接到一个`<datalist>`元素，以实现选项的自动过滤。\n3.  **模态框/弹出窗口：** 被`<dialog>`元素上的`popover`和`popovertarget`属性替代，能够实现各种类型的弹出窗口，并具有内置的轻量级关闭和辅助功能。\n4.  **屏外导航/内容：** 结合CSS动画过渡，使用`popover`属性，创建无需JavaScript的屏外导航菜单。\n\n该文章鼓励开发人员在可用时优先考虑原生解决方案，尊重JavaScript，将其用于真正需要它的地方，从而创建更轻量、更快速的Web应用程序。"
+    "summary": "An unprocessed photo from a camera sensor is not colorful, but a \"gray-and-gray\" image with a limited brightness range. The initial 14-bit analog-to-digital converter (ADC) output needs its values mapped to a full 0-255 range for basic contrast.\n\nTrue color is introduced by a Bayer filter array on the sensor, where each pixel only captures red, green, or blue light. To create a full-color image, a process called demosaicing averages neighboring pixel values to interpolate the missing color information for each pixel.\n\nEven after demosaicing, the image appears dark. This is because human perception of brightness is non-linear, and linear sensor data displayed directly on monitors (with limited dynamic range) appears underexposed. Applying a non-linear curve (gamma correction) brightens these dark areas.\n\nA common issue is a green cast, due to the sensor's higher sensitivity to green and the Bayer filter having twice as many green pixels. This is corrected through white balance, which equalizes the color channels. These steps, including dynamic range adjustment, demosaicing, gamma correction, and white balance, represent the bare minimum processing.\n\nThe article concludes that a camera's \"unedited\" JPEG is already the product of extensive mathematical processing, not a direct raw output. Editing software adjustments merely replicate and refine these in-camera processes, aiming to produce an image that best represents human perception within the constraints of display technology.",
+    "chinese_title": "未处理照片的样子",
+    "chinese_summary": "未经处理的相机传感器照片并非彩色，而是一个亮度范围有限的“灰蒙蒙”图像。初始的14位模数转换器 (ADC) 输出需要将其值映射到完整的0-255范围，以获得基本对比度。\n\n真正的色彩是通过传感器上的拜耳滤镜阵列引入的，其中每个像素只捕捉红色、绿色或蓝色光。为了创建全彩色图像，一个称为去马赛克的过程会平均相邻像素值，以插值每个像素缺失的颜色信息。\n\n即使在去马赛克之后，图像看起来依然很暗。这是因为人类对亮度的感知是非线性的，并且线性传感器数据直接显示在显示器上（动态范围有限）会显得曝光不足。应用非线性曲线（伽马校正）可以提亮这些暗区。\n\n一个常见问题是偏绿，这源于传感器对绿色光较高的敏感性以及拜耳滤镜中绿色像素数量是其他颜色的两倍。这通过白平衡进行校正，白平衡能够均衡色彩通道。这些步骤，包括动态范围调整、去马赛克、伽马校正和白平衡，代表了最低限度的处理。\n\n文章总结说，相机“未经编辑”的JPEG图像已经是大量数学处理的产物，而非直接的原始输出。编辑软件的调整只是复制和细化了这些相机内部的处理，旨在在显示技术的限制下，生成一个最能代表人类感知的图像。"
   },
   {
     "id": "46419970",
     "title": "Kidnapped by Deutsche Bahn",
     "url": "https://www.theocharis.dev/blog/kidnapped-by-deutsche-bahn/",
-    "summary": "The article, \"Kidnapped by Deutsche Bahn,\" recounts a frustrating Christmas Eve train journey on December 24th, 2025, that turned into an unexpected ordeal. The author planned a 35-kilometer trip from Cologne to Meckenheim, but the train, already twenty minutes late, announced \"issues around Bonn,\" necessitating a detour.\n\nThe author decided to exit at Troisdorf to be picked up by his father. However, as the RE5 train approached Troisdorf, the driver announced it couldn't stop because it was \"not registered\" for the tracks. The author watched Troisdorf, and his waiting father, pass by. He was unexpectedly carried to Neuwied, 63 kilometers from his grandmother's house and in a different federal state—further away than his starting point.\n\nFeeling like \"cargo\" and \"kidnapped,\" the author noted the shared frustration among passengers. He also highlighted Deutsche Bahn's lenient punctuality metrics, where trains less than six minutes late are \"on time,\" and cancelled trains aren't counted. His eventual compensation for this severe delay was a mere 1.50 EUR, below the 4.00 EUR minimum payout threshold, meaning he was \"kidnapped at a loss.\" The piece sarcastically details the systemic unreliability and public exasperation with DB's service.",
+    "summary": "The author recounts a bizarre experience with Deutsche Bahn (DB) on December 24th, 2025, attempting a 35-kilometer train journey from Cologne to Meckenheim. The RE5 train was already 20 minutes late, which the author ironically considered \"early\" given DB's lenient punctuality metrics (trains under six minutes late are \"on time\"; cancelled trains aren't counted).\n\nInitially, the driver announced \"issues around Bonn,\" suggesting passengers exit early or continue to Troisdorf, where the author planned to meet his father. However, as the train approached Troisdorf, the driver astonishingly declared they were \"not registered\" for the tracks and \"cannot stop,\" forcing the author to watch his father waiting at the station as the train sped past.\n\nThe train continued past 15 stations, heading towards Neuwied, 63 kilometers from the grandmother's house – further than the starting point and in a different federal state. Feeling like \"cargo,\" the author overheard an English passenger exclaim, \"I am being kidnapped,\" a sentiment met with a resigned \"Deutsche Bahn\" from a fellow passenger.\n\nUltimately, this unexpected detour meant the author was \"kidnapped at a loss,\" as the potential compensation of 1.50 EUR fell below DB's 4.00 EUR minimum payout threshold. The incident highlights profound operational failures and a pervasive lack of accountability within Deutsche Bahn.",
     "chinese_title": "被德国铁路绑架",
-    "chinese_summary": "The article, \"Kidnapped by Deutsche Bahn,\" recounts a frustrating Christmas Eve train journey on December 24th, 2025, that turned into an unexpected ordeal. The author planned a 35-kilometer trip from Cologne to Meckenheim, but the train, already twenty minutes late, announced \"issues around Bonn,\" necessitating a detour.\n\nThe author decided to exit at Troisdorf to be picked up by his father. However, as the RE5 train approached Troisdorf, the driver announced it couldn't stop because it was \"not registered\" for the tracks. The author watched Troisdorf, and his waiting father, pass by. He was unexpectedly carried to Neuwied, 63 kilometers from his grandmother's house and in a different federal state—further away than his starting point.\n\nFeeling like \"cargo\" and \"kidnapped,\" the author noted the shared frustration among passengers. He also highlighted Deutsche Bahn's lenient punctuality metrics, where trains less than six minutes late are \"on time,\" and cancelled trains aren't counted. His eventual compensation for this severe delay was a mere 1.50 EUR, below the 4.00 EUR minimum payout threshold, meaning he was \"kidnapped at a loss.\" The piece sarcastically details the systemic unreliability and public exasperation with DB's service."
+    "chinese_summary": "作者讲述了2025年12月24日乘坐德国铁路（DB）的一次离奇经历，当时他正尝试完成从科隆到梅肯海姆35公里的火车旅程。RE5列车已经晚点20分钟，鉴于德国铁路宽松的正点率标准（晚点不足六分钟的列车算“准点”；取消的列车不计），作者讽刺地认为这已经算“早”了。\n\n起初，司机宣布“波恩附近有问题”，建议乘客提前下车或继续前往特罗斯多夫，作者原计划在那里与父亲会面。然而，当列车接近特罗斯多夫时，司机竟声称他们“未在此轨道登记”，“无法停车”，迫使作者眼睁睁看着父亲在车站等候，而列车却疾驰而过。\n\n列车继续开过15个车站，驶向诺伊维德，那里距离祖母家63公里——比起点更远，且位于另一个联邦州。感觉自己像“货物”一样，作者无意中听到一位英国乘客惊呼：“我被绑架了！”对此，另一位乘客无奈地回应了一句“德国铁路”。\n\n最终，这次意想不到的绕行意味着作者“被绑架，还蒙受损失”，因为潜在的1.50欧元赔偿低于德国铁路4.00欧元的最低赔付门槛。此次事件凸显了德国铁路深刻的运营失误和普遍的问责缺失。"
   },
   {
-    "id": "46404848",
-    "title": "How we lost communication to entertainment",
-    "url": "https://ploum.net/2025-12-15-communication-entertainment.html",
+    "id": "46425198",
+    "title": "Google is dead. Where do we go now?",
+    "url": "https://www.circusscientist.com/2025/12/29/google-is-dead-where-do-we-go-now/",
+    "summary": "Unable to access the article link.",
+    "chinese_title": "Google已死。我们何去何从？",
+    "chinese_summary": "无法访问文章链接。"
+  },
+  {
+    "id": "46422412",
+    "title": "GOG is getting acquired by its original co-founder",
+    "url": "https://www.gog.com/blog/gog-is-getting-acquired-by-its-original-co-founder-what-it-means-for-you/",
+    "summary": "GOG.com is being acquired by its original co-founder, Marcin Iwiński, from its parent company, CD PROJEKT S.A. This strategic move aims to secure GOG's future by allowing it to operate more independently and with greater agility outside of the larger CD PROJEKT group.\n\nMarcin Iwiński, who will transition from his role as Joint CEO of CD PROJEKT to lead GOG, stated that the acquisition will enable GOG to refocus on its core mission: digital game preservation, offering DRM-free titles, and maintaining a gamer-first platform.\n\nFor users, there will be no immediate changes. Existing game libraries, accounts, GOG GALAXY functionality, and customer support will remain unaffected. GOG's commitment to DRM-free games, regional pricing, existing payment methods, and relationships with developers and publishers will all continue as before. The acquisition is seen as an opportunity for GOG to \"rediscover its unique DNA,\" fostering closer ties with its community and reinforcing its founding principles. The deal is currently pending regulatory approval.",
+    "chinese_title": "GOG 被其原始联合创始人收购",
+    "chinese_summary": "GOG.com 正被其联合创始人 Marcin Iwiński 从母公司 CD PROJEKT S.A. 手中收购。此战略举措旨在通过让 GOG 在更大的 CD PROJEKT 集团之外更独立、更灵活地运营，从而确保其未来。\n\nMarcin Iwiński 将从 CD PROJEKT 联席 CEO 的职位离任，转而领导 GOG。他表示，此次收购将使 GOG 能够重新专注于其核心使命：数字游戏保存、提供无 DRM 游戏以及维护一个玩家至上的平台。\n\n对于用户而言，不会有任何即时变化。现有的游戏库、账户、GOG GALAXY 功能以及客户支持将不受影响。GOG 对无 DRM 游戏、区域定价、现有支付方式以及与开发商和发行商关系的承诺都将一如既往地持续下去。此次收购被视为 GOG \"重新发现其独特 DNA\" 的机会，从而促进与社区更紧密的联系并巩固其创立原则。这项交易目前正在等待监管机构的批准。"
+  },
+  {
+    "id": "46423290",
+    "title": "Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%",
+    "url": "https://electrek.co/2025/12/29/tesla-4680-battery-supply-chain-collapses-partner-writes-down-dea/",
     "summary": "生成摘要时出错",
-    "chinese_title": "我们如何将沟通输给了娱乐",
+    "chinese_title": "Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%",
     "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46405309",
-    "title": "Say No to Palantir in the NHS",
-    "url": "https://notopalantir.goodlawproject.org/email-to-target/stop-palantir-in-the-nhs/",
-    "summary": "This article urges the public to \"Say no to Palantir in the NHS,\" opposing NHS England's rollout of software from the US spy-tech firm for managing health records.\n\nThe campaign highlights serious concerns about Palantir's background, citing its alleged involvement in mass deportation in the US and enabling genocide in Gaza. Additionally, Palantir's co-founder, Peter Thiel, is noted for his open hostility towards the NHS, having claimed it \"makes people sick\" and suggesting the British public suffers from \"Stockholm syndrome\" for supporting it.\n\nThe article warns against allowing such a company to control the UK's healthcare system and calls for urgent action. It provides a tool for individuals to check if their local NHS trust has adopted the software. The primary call to action is to email local NHS trusts and Wes Streeting, the Secretary of State for Health, demanding they reject Palantir, especially given government pressure on trusts to adopt the software.",
-    "chinese_title": "对NHS中的帕兰提尔说不",
-    "chinese_summary": "本文呼吁公众“拒绝Palantir进入NHS”，反对英格兰国民医疗服务体系（NHS England）推出这家美国间谍技术公司用于管理健康记录的软件。\n\n这项运动强调了对Palantir背景的严重担忧，引用其据称在美国参与大规模驱逐出境，并促成加沙种族灭绝。此外，Palantir的联合创始人彼得·蒂尔（Peter Thiel）因其对NHS的公开敌意而闻名，他曾声称NHS“让人生病”，并暗示英国公众因支持NHS而患有“斯德哥尔摩综合症”。\n\n该文章警告不要允许这样一家公司控制英国的医疗保健系统，并呼吁采取紧急行动。它提供了一个工具，供个人检查他们的当地NHS信托机构是否已采用该软件。主要的行动呼吁是向当地NHS信托机构以及卫生大臣韦斯·斯特里廷（Wes Streeting）发送电子邮件，要求他们拒绝Palantir，尤其是在政府向各信托机构施压要求其采用该软件的情况下。"
   },
   {
     "id": "46416945",
     "title": "You can make up HTML tags",
     "url": "https://maurycyz.com/misc/make-up-tags/",
-    "summary": "This article highlights that HTML developers can create and use custom tags (e.g., `<cool-thing>`) instead of generic `div`s with classes. Browsers automatically treat these unrecognized tags as generic elements, applying any styles defined for them in CSS. This isn't a quirk but standardized behavior. Including hyphens in custom tag names (e.g., `<main-article>`) guarantees they won't conflict with future HTML standards.\n\nThe main benefit of this approach is greatly improved code readability and maintainability, especially for complex or deeply nested structures. The article contrasts a series of nested `div`s with classes, which can be hard to navigate, with a structure using descriptive custom tags. The latter eliminates the need for `</div>` counting, making it much easier to understand the structure and pinpoint insertion points. While existing semantic HTML tags should be used when appropriate, custom tags offer a more readable alternative to extensive use of `<div>` or `<span>` with numerous class names, providing better clarity for custom components.",
-    "chinese_title": "You can make up HTML tags",
-    "chinese_summary": "本文强调HTML开发者可以创建和使用自定义标签（例如`<cool-thing>`），而不是使用带有类的通用`div`标签。浏览器会自动将这些未识别的标签视为通用元素，并应用在CSS中为其定义的任何样式。这并非一个异常，而是标准化行为。在自定义标签名称中包含连字符（例如`<main-article>`）可以确保它们不会与未来的HTML标准冲突。\n\n这种方法的主要好处是极大提升了代码的可读性和可维护性，尤其对于复杂或深度嵌套的结构。文章对比了一系列难以理解的带类的嵌套`div`结构，以及使用描述性自定义标签的结构。后者消除了对`</div>`进行计数的需要，使得理解结构和精确找到插入点变得容易得多。尽管在适当情况下应使用现有的语义化HTML标签，但自定义标签为大量使用带有众多类名的`<div>`或`<span>`提供了一种更具可读性的替代方案，从而为自定义组件提供了更好的清晰度。"
+    "summary": "生成摘要时出错",
+    "chinese_title": "你可以编造HTML标签",
+    "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46409969",
-    "title": "Last Year on My Mac: Look Back in Disbelief",
-    "url": "https://eclecticlight.co/2025/12/28/last-year-on-my-mac-look-back-in-disbelief/",
-    "summary": "The author expresses profound disappointment with macOS Tahoe's \"Liquid Glass\" interface changes, stating that feedback from beta testing was ignored and subsequent updates (26.1, 26.2) worsened or failed to address issues.\n\nKey criticisms include:\n1.  **Excessively Rounded Corners:** Tahoe's increased window corner radius is a misfit for rectangular content, causing cropping, wasted space, and inconsistent appearance across apps.\n2.  **Enlarged Controls:** Controls are bigger but offer no functional benefit, often leading to visual clutter and overlapping elements.\n3.  **Uniform App Icons:** The enforced square shape restricts visual cues, making many bundled and Apple apps harder to distinguish and recall in the Dock.\n4.  **Lack of Tonal Contrast (\"Whiteout\"):** Both Light Mode (bleached-out white) and Dark Mode (moonless night) lack sufficient contrast, making it difficult to discern controls, text fields, and other interface elements.\n5.  **Problematic Transparency (\"Wet-on-wet\"):** Extensive transparency renders elements like search boxes and window titles incomprehensible when underlaid by content, creating a confusing and distracting visual experience.\n6.  **Accessibility Regression:** The \"Reduce Transparency\" control in Accessibility settings no longer effectively lessens these visual effects, a significant regression.\n\nThe author, drawing on experience with older Apple interfaces, concludes that Tahoe sacrifices clarity and functionality, making the display harder to read and use.",
-    "chinese_title": "去年我的 Mac：难以置信",
-    "chinese_summary": "The author expresses profound disappointment with macOS Tahoe's \"Liquid Glass\" interface changes, stating that feedback from beta testing was ignored and subsequent updates (26.1, 26.2) worsened or failed to address issues.\n\nKey criticisms include:\n1.  **Excessively Rounded Corners:** Tahoe's increased window corner radius is a misfit for rectangular content, causing cropping, wasted space, and inconsistent appearance across apps.\n2.  **Enlarged Controls:** Controls are bigger but offer no functional benefit, often leading to visual clutter and overlapping elements.\n3.  **Uniform App Icons:** The enforced square shape restricts visual cues, making many bundled and Apple apps harder to distinguish and recall in the Dock.\n4.  **Lack of Tonal Contrast (\"Whiteout\"):** Both Light Mode (bleached-out white) and Dark Mode (moonless night) lack sufficient contrast, making it difficult to discern controls, text fields, and other interface elements.\n5.  **Problematic Transparency (\"Wet-on-wet\"):** Extensive transparency renders elements like search boxes and window titles incomprehensible when underlaid by content, creating a confusing and distracting visual experience.\n6.  **Accessibility Regression:** The \"Reduce Transparency\" control in Accessibility settings no longer effectively lessens these visual effects, a significant regression.\n\nThe author, drawing on experience with older Apple interfaces, concludes that Tahoe sacrifices clarity and functionality, making the display harder to read and use."
+    "id": "46431560",
+    "title": "Netflix Open Content",
+    "url": "https://opencontent.netflix.com/",
+    "summary": "Netflix Open Content offers a valuable resource for entertainment, technology, and academic sectors to explore and prototype bleeding-edge media technologies. To protect its licensed programming, Netflix provides open-source test titles across documentary, live-action, and animation categories, aiming to foster industry-wide experimentation and discovery.\n\nThese assets, released under the Creative Commons Attribution 4.0 International Public License, showcase advanced formats like 4K, High Dynamic Range (HDR), High Frame Rate (HFR), and Dolby Atmos. Many titles are also available for streaming on Netflix, optimized for HDR-configured devices with a Premium subscription.\n\nUsers can download single files directly via their web browser; however, for large files and long frame sequences, command-line tools such as AWS CLI are recommended, with detailed instructions provided. Ad blockers might interfere with the download process.\n\nKey projects include:\n*   **Sol Levante (2020):** The first 4K HDR Atmos anime short, exploring new production workflows.\n*   **Nocturne (2018):** A 120fps live-action piece designed to challenge codecs.\n*   **Sparks (2017):** Shot in 4K HFR and finished at 4000 nits using ACES.\n*   **Meridian (2016):** Netflix's first story-driven test title, featuring Dolby Vision HDR and Atmos.\n*   **Cosmos Laundromat (2016):** An animated short re-graded to Dolby Vision HDR, created with open-source Blender.\n*   **Chimera (2014) & El Fuente (2013):** Early 4K test materials, with Chimera offering real-world codec-challenging scenes and El Fuente focusing on high resolution and frame rates.\n\nAll assets are accessible for download via `http://download.opencontent.netflix.com/`.",
+    "chinese_title": "网飞开放内容",
+    "chinese_summary": "奈飞开放内容为娱乐、技术和学术领域提供了宝贵资源，用于探索和原型化尖端媒体技术。为保护其授权节目，奈飞提供涵盖纪录片、真人表演和动画类别的开源测试片源，旨在促进全行业的实验和发现。\n\n这些在知识共享署名4.0国际公共许可协议下发布的资源，展示了4K、高动态范围 (HDR)、高帧率 (HFR) 和杜比全景声 (Dolby Atmos) 等先进格式。许多片源也可在奈飞上流媒体播放，并针对配备高级订阅的HDR设备进行了优化。\n\n用户可以通过网络浏览器直接下载单个文件；然而，对于大型文件和长帧序列，建议使用AWS CLI等命令行工具，并提供详细说明。广告拦截器可能会干扰下载过程。\n\n主要项目包括：\n*   **Sol Levante (2020)：** 首部4K HDR杜比全景声动画短片，探索新的制作流程。\n*   **Nocturne (2018)：** 一部120帧/秒的真人表演作品，旨在挑战编解码器。\n*   **Sparks (2017)：** 以4K HFR拍摄，并使用ACES以4000尼特亮度完成制作。\n*   **Meridian (2016)：** 奈飞首个故事驱动的测试片源，采用杜比视界HDR和杜比全景声。\n*   **Cosmos Laundromat (2016)：** 一部使用开源Blender制作的动画短片，经重新调色至杜比视界HDR。\n*   **Chimera (2014) & El Fuente (2013)：** 早期的4K测试素材，《Chimera》提供挑战编解码器的真实场景，《El Fuente》则侧重于高分辨率和高帧率。\n\n所有资源均可通过 `http://download.opencontent.netflix.com/` 下载。"
   },
   {
     "id": "46417815",
     "title": "Show HN: Z80-μLM, a 'Conversational AI' That Fits in 40KB",
     "url": "https://github.com/HarryR/z80ai",
+    "summary": "Z80-μLM is a 'conversational AI' project showcasing how small a language model can be while retaining personality and easy distribution. Designed to run on a vintage Z80 processor with 64KB RAM, the entire system—including inference, weights, and a chat-style UI—fits into a ~40KB .COM file. It generates short, character-by-character sequences, leveraging quantization-aware training (QAT) to operate within its extremely constrained environment.\n\nThe model interacts using trigram hash encoding, abstracting input into 128 buckets. This makes it typo-tolerant and word-order invariant for short phrases, although it struggles with longer, order-dependent sentences. Responses are intentionally terse (1-2 words), conveying nuance through context, as demonstrated by examples like \"tinychat\" (Q&A) and \"guess\" (a 20 Questions game).\n\nArchitecturally, it utilizes 128 input/context buckets, configurable hidden layers, and outputs characters. A key innovation is its 2-bit weight quantization, packing four weights per byte, and exclusive reliance on Z80-native 16-bit integer arithmetic for all calculations. Custom assembly loops efficiently handle multiply-accumulate operations and arithmetic right-shifts to prevent overflow.\n\nWhile not designed for novel sentence generation or deep multi-turn context, Z80-μLM excels at fuzzy matching, establishing personality through vocabulary, and functioning on severe 8-bit hardware limitations. It is offered under an MIT or Apache-2.0 license.",
+    "chinese_title": "Show HN: Z80-μLM，容量仅 40KB 的“对话式人工智能”",
+    "chinese_summary": "Z80-μLM 是一个“对话式AI”项目，旨在展示语言模型在保持个性和易于分发的同时可以有多小。它设计用于在配备64KB内存的老式Z80处理器上运行，整个系统——包括推理、权重和一个聊天风格的用户界面——都可装入一个约40KB的.COM文件中。它生成短小的、逐字符的序列，利用量化感知训练（QAT）在其极其受限的环境中运行。\n\n该模型使用三元组哈希编码进行交互，将输入抽象为128个桶。这使得它对短语具有容错性和词序不变性，但对较长、依赖词序的句子则表现不佳。响应有意地简洁（1-2个词），通过上下文传达细微差别，例如“tinychat”（问答）和“guess”（20个问题游戏）等示例所示。\n\n从架构上看，它使用128个输入/上下文桶、可配置的隐藏层，并输出字符。一个关键创新是其2比特权重量化，每个字节封装四个权重，并且所有计算都完全依赖Z80原生的16比特整数算术。定制的汇编循环高效地处理乘法累加操作和算术右移，以防止溢出。\n\n尽管Z80-μLM并非设计用于生成新颖句子或处理深度多轮上下文，但它擅长模糊匹配、通过词汇建立个性，并在严苛的8比特硬件限制下运行。它采用MIT或Apache-2.0许可证发布。"
+  },
+  {
+    "id": "46423566",
+    "title": "List of domains censored by German ISPs",
+    "url": "https://cuiiliste.de/domains",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Z80-μLM, a 'Conversational AI' That Fits in 40KB",
+    "chinese_title": "List of domains censored by German ISPs",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46407502",
-    "title": "Fathers’ choices may be packaged and passed down in sperm RNA",
-    "url": "https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/",
+    "id": "46424233",
+    "title": "The future of software development is software developers",
+    "url": "https://codemanship.wordpress.com/2025/11/25/the-future-of-software-development-is-software-developers/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Fathers’ choices may be packaged and passed down in sperm RNA",
+    "chinese_title": "The future of software development is software developers",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46422412",
-    "title": "GOG is getting acquired by its original co-founder: What it means for you",
-    "url": "https://www.gog.com/blog/gog-is-getting-acquired-by-its-original-co-founder-what-it-means-for-you/",
+    "id": "46427586",
+    "title": "Stranger Things creator says turn off \"garbage\" settings",
+    "url": "https://screenrant.com/stranger-things-creator-turn-off-settings-premiere/",
     "summary": "生成摘要时出错",
-    "chinese_title": "GOG is getting acquired by its original co-founder: What it means for you",
+    "chinese_title": "Stranger Things creator says turn off \"garbage\" settings",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -104,27 +96,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46410210",
-    "title": "Learn computer graphics from scratch and for free",
-    "url": "https://www.scratchapixel.com",
+    "id": "46427582",
+    "title": "I migrated to an almost all-EU stack and saved 500€ per year",
+    "url": "https://www.zeitgeistofbytes.com/p/bye-bye-big-tech-how-i-migrated-to",
     "summary": "生成摘要时出错",
-    "chinese_title": "Learn computer graphics from scratch and for free",
+    "chinese_title": "I migrated to an almost all-EU stack and saved 500€ per year",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46404597",
-    "title": "Rainbow Six Siege hacked as players get billions of credits and random bans",
-    "url": "https://www.shanethegamer.com/esports-news/rainbow-six-siege-hacked-global-server-outage/",
+    "id": "46432057",
+    "title": "Nicolas Guillou, French ICC judge sanctioned by the US and “debanked”",
+    "url": "https://www.lemonde.fr/en/international/article/2025/11/19/nicolas-guillou-french-icc-judge-sanctioned-by-the-us-you-are-effectively-blacklisted-by-much-of-the-world-s-banking-system_6747628_4.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Rainbow Six Siege hacked as players get billions of credits and random bans",
+    "chinese_title": "Nicolas Guillou, French ICC judge sanctioned by the US and “debanked”",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46410402",
-    "title": "Building a macOS app to know when my Mac is thermal throttling",
-    "url": "https://stanislas.blog/2025/12/macos-thermal-throttling-app/",
+    "id": "46426534",
+    "title": "ManusAI Joins Meta",
+    "url": "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation",
     "summary": "生成摘要时出错",
-    "chinese_title": "Building a macOS app to know when my Mac is thermal throttling",
+    "chinese_title": "ManusAI Joins Meta",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -136,35 +128,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "46419968",
+    "title": "Linux DAW: Help Linux musicians to quickly and easily find the tools they need",
+    "url": "https://linuxdaw.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Linux DAW: Help Linux musicians to quickly and easily find the tools they need",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46418415",
+    "title": "You can't design software you don't work on",
+    "url": "https://www.seangoedecke.com/you-cant-design-software-you-dont-work-on/",
+    "summary": "Effective software design for large, established systems can only be performed by engineers with an intimate, concrete understanding of the codebase, according to the article. Generic design advice, prevalent in books and blogs, is often impractical for real-world problems because existing systems are complex, full of compromises, and rarely amenable to complete rewrites. Concrete factors like the current code's state, internal consistency, and unpredictable consequences supersede abstract principles.\n\nMeaningful design discussions occur among small groups of active contributors, focusing on arcane system specifics rather than broad philosophical points. Key contributions often involve clarifying detailed misunderstandings about how existing components interact.\n\nHowever, generic design advice isn't entirely useless. It's valuable for initiating brand-new projects where no concrete factors exist, for tie-breaking decisions between several acceptable concrete implementation paths, and for establishing company-wide consistency by providing general principles for broad architectural choices (e.g., cloud adoption).\n\nThe author criticizes traditional \"big-picture software architect\" roles where designers are detached from implementation. These roles often yield designs that are impractical or impossible to implement given the existing system's context. Such architects frequently lack accountability (\"skin in the game\"), claiming credit for successes while attributing failures to implementation shortcomings. The article advocates for designers to be directly responsible for a project's success or failure, ensuring that design is rooted in a practical understanding of shipping software.",
+    "chinese_title": "You can't design software you don't work on",
+    "chinese_summary": "Effective software design for large, established systems can only be performed by engineers with an intimate, concrete understanding of the codebase, according to the article. Generic design advice, prevalent in books and blogs, is often impractical for real-world problems because existing systems are complex, full of compromises, and rarely amenable to complete rewrites. Concrete factors like the current code's state, internal consistency, and unpredictable consequences supersede abstract principles.\n\nMeaningful design discussions occur among small groups of active contributors, focusing on arcane system specifics rather than broad philosophical points. Key contributions often involve clarifying detailed misunderstandings about how existing components interact.\n\nHowever, generic design advice isn't entirely useless. It's valuable for initiating brand-new projects where no concrete factors exist, for tie-breaking decisions between several acceptable concrete implementation paths, and for establishing company-wide consistency by providing general principles for broad architectural choices (e.g., cloud adoption).\n\nThe author criticizes traditional \"big-picture software architect\" roles where designers are detached from implementation. These roles often yield designs that are impractical or impossible to implement given the existing system's context. Such architects frequently lack accountability (\"skin in the game\"), claiming credit for successes while attributing failures to implementation shortcomings. The article advocates for designers to be directly responsible for a project's success or failure, ensuring that design is rooted in a practical understanding of shipping software."
+  },
+  {
     "id": "46414078",
     "title": "Stepping down as Mockito maintainer after ten years",
     "url": "https://github.com/mockito/mockito/issues/3777",
     "summary": "生成摘要时出错",
     "chinese_title": "Stepping down as Mockito maintainer after ten years",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46414819",
-    "title": "Unity's Mono problem: Why your C# code runs slower than it should",
-    "url": "https://marekfiser.com/blog/mono-vs-dot-net-in-unity/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Unity's Mono problem: Why your C# code runs slower than it should",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46414475",
-    "title": "MongoBleed Explained Simply",
-    "url": "https://bigdata.2minutestreaming.com/p/mongobleed-explained-simply",
-    "summary": "生成摘要时出错",
-    "chinese_title": "MongoBleed Explained Simply",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46415488",
-    "title": "CEOs are hugely expensive. Why not automate them? (2021)",
-    "url": "https://www.newstatesman.com/business/companies/2023/05/ceos-salaries-expensive-automate-robots",
-    "summary": "生成摘要时出错",
-    "chinese_title": "CEOs are hugely expensive. Why not automate them? (2021)",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -176,43 +160,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46417844",
-    "title": "Staying ahead of censors in 2025",
-    "url": "https://forum.torproject.org/t/staying-ahead-of-censors-in-2025-what-weve-learned-from-fighting-censorship-in-iran-and-russia/20898",
+    "id": "46414819",
+    "title": "Unity's Mono problem: C# code runs slower than it should",
+    "url": "https://marekfiser.com/blog/mono-vs-dot-net-in-unity/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Staying ahead of censors in 2025",
+    "chinese_title": "Unity's Mono problem: C# code runs slower than it should",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46413975",
-    "title": "PySDR: A Guide to SDR and DSP Using Python",
-    "url": "https://pysdr.org/content/intro.html",
+    "id": "46424200",
+    "title": "AI is forcing us to write good code",
+    "url": "https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code",
     "summary": "生成摘要时出错",
-    "chinese_title": "PySDR: A Guide to SDR and DSP Using Python",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46403992",
-    "title": "Toll roads are spreading in America",
-    "url": "https://www.economist.com/united-states/2025/12/18/toll-roads-are-spreading-in-america",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Toll roads are spreading in America",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46423290",
-    "title": "Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%",
-    "url": "https://electrek.co/2025/12/29/tesla-4680-battery-supply-chain-collapses-partner-writes-down-dea/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46415129",
-    "title": "Researchers discover molecular difference in autistic brains",
-    "url": "https://medicine.yale.edu/news-article/molecular-difference-in-autistic-brains/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Researchers discover molecular difference in autistic brains",
+    "chinese_title": "AI is forcing us to write good code",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -224,91 +184,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46417748",
-    "title": "Show HN: My not-for-profit search engine with no ads, no AI, & all DDG bangs",
-    "url": "https://nilch.org",
+    "id": "46431028",
+    "title": "Go away Python",
+    "url": "https://lorentz.app/blog-item.html?id=go-shebang",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: My not-for-profit search engine with no ads, no AI, & all DDG bangs",
+    "chinese_title": "Go away Python",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46417791",
-    "title": "Huge Binaries",
-    "url": "https://fzakaria.com/2025/12/28/huge-binaries",
+    "id": "46432311",
+    "title": "Non-Zero-Sum Games",
+    "url": "https://nonzerosum.games/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Huge Binaries",
+    "chinese_title": "Non-Zero-Sum Games",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46413790",
-    "title": "No, it's not a battleship",
-    "url": "https://www.navalgazing.net/No-its-not",
+    "id": "46414475",
+    "title": "MongoBleed Explained Simply",
+    "url": "https://bigdata.2minutestreaming.com/p/mongobleed-explained-simply",
     "summary": "生成摘要时出错",
-    "chinese_title": "No, it's not a battleship",
+    "chinese_title": "MongoBleed Explained Simply",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46409928",
-    "title": "Hungry Fat Cells Could Someday Starve Cancer",
-    "url": "https://www.ucsf.edu/news/2025/01/429411/how-hungry-fat-cells-could-someday-starve-cancer-death",
+    "id": "46424262",
+    "title": "All Delisted Steam Games",
+    "url": "https://delistedgames.com/all-delisted-steam-games/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Hungry Fat Cells Could Someday Starve Cancer",
+    "chinese_title": "All Delisted Steam Games",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46418415",
-    "title": "You can't design software you don't work on",
-    "url": "https://www.seangoedecke.com/you-cant-design-software-you-dont-work-on/",
+    "id": "46415488",
+    "title": "CEOs are hugely expensive. Why not automate them? (2021)",
+    "url": "https://www.newstatesman.com/business/companies/2023/05/ceos-salaries-expensive-automate-robots",
     "summary": "生成摘要时出错",
-    "chinese_title": "You can't design software you don't work on",
+    "chinese_title": "CEOs are hugely expensive. Why not automate them? (2021)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46409125",
-    "title": "AI Slop Report: The Global Rise of Low-Quality AI Videos",
-    "url": "https://www.kapwing.com/blog/ai-slop-report-the-global-rise-of-low-quality-ai-videos/",
+    "id": "46417844",
+    "title": "Staying ahead of censors in 2025",
+    "url": "https://forum.torproject.org/t/staying-ahead-of-censors-in-2025-what-weve-learned-from-fighting-censorship-in-iran-and-russia/20898",
     "summary": "生成摘要时出错",
-    "chinese_title": "AI Slop Report: The Global Rise of Low-Quality AI Videos",
+    "chinese_title": "Staying ahead of censors in 2025",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46405306",
-    "title": "Richard Stallman at the First Hackers Conference in 1984 [video]",
-    "url": "https://www.youtube.com/watch?v=Hf2pfzzWPYE",
+    "id": "46421653",
+    "title": "Swapping SIM cards used to be easy, and then came eSIM",
+    "url": "https://arstechnica.com/gadgets/2025/12/i-switched-to-esim-in-2025-and-i-am-full-of-regret/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Richard Stallman at the First Hackers Conference in 1984 [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46406901",
-    "title": "Functional programming and reliability: ADTs, safety, critical infrastructure",
-    "url": "https://blog.rastrian.dev/post/why-reliability-demands-functional-programming-adts-safety-and-critical-infrastructure",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Functional programming and reliability: ADTs, safety, critical infrastructure",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46406098",
-    "title": "Liberating Bluetooth on the ESP32",
-    "url": "https://exquisite.tube/w/mEzF442Q4hUXnhQ8HmfZuq",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Liberating Bluetooth on the ESP32",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46420289",
-    "title": "UK accounting body to halt remote exams amid AI cheating",
-    "url": "https://www.theguardian.com/business/2025/dec/29/uk-accounting-remote-exams-ai-cheating-acca",
-    "summary": "生成摘要时出错",
-    "chinese_title": "UK accounting body to halt remote exams amid AI cheating",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46417752",
-    "title": "Panoramas of Star Trek Sets",
-    "url": "https://mijofr.github.io/st-panorama/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Panoramas of Star Trek Sets",
+    "chinese_title": "Swapping SIM cards used to be easy, and then came eSIM",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -320,11 +248,67 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46417676",
-    "title": "My First Meshtastic Network",
-    "url": "https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html",
+    "id": "46413975",
+    "title": "PySDR: A Guide to SDR and DSP Using Python",
+    "url": "https://pysdr.org/content/intro.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "My First Meshtastic Network",
+    "chinese_title": "PySDR: A Guide to SDR and DSP Using Python",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46431453",
+    "title": "HSBC blocks its app due to F-Droid-installed Bitwarden",
+    "url": "https://mastodon.neilzone.co.uk/@neil/115807834298031971",
+    "summary": "生成摘要时出错",
+    "chinese_title": "HSBC blocks its app due to F-Droid-installed Bitwarden",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46423010",
+    "title": "Nvidia takes $5B stake in Intel under September agreement",
+    "url": "https://www.reuters.com/legal/transactional/nvidia-takes-5-billion-stake-intel-under-september-agreement-2025-12-29/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nvidia takes $5B stake in Intel under September agreement",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46433579",
+    "title": "Public Sans – A strong, neutral typeface",
+    "url": "https://public-sans.digital.gov/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Public Sans – A strong, neutral typeface",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46415129",
+    "title": "Researchers discover molecular difference in autistic brains",
+    "url": "https://medicine.yale.edu/news-article/molecular-difference-in-autistic-brains/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Researchers discover molecular difference in autistic brains",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46424136",
+    "title": "LLMs Are Not Fun",
+    "url": "https://orib.dev/nofun.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "LLMs Are Not Fun",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46417791",
+    "title": "Huge Binaries",
+    "url": "https://fzakaria.com/2025/12/28/huge-binaries",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Huge Binaries",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46422009",
+    "title": "Static Allocation with Zig",
+    "url": "https://nickmonad.blog/2025/static-allocation-with-zig-kv/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Static Allocation with Zig",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -336,19 +320,91 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46415426",
-    "title": "62 years in the making: NYC's newest water tunnel nears the finish line",
-    "url": "https://ny1.com/nyc/all-boroughs/news/2025/11/09/water--dep--tunnels-",
+    "id": "46417748",
+    "title": "Show HN: My not-for-profit search engine with no ads, no AI, & all DDG bangs",
+    "url": "https://nilch.org",
     "summary": "生成摘要时出错",
-    "chinese_title": "62 years in the making: NYC's newest water tunnel nears the finish line",
+    "chinese_title": "Show HN: My not-for-profit search engine with no ads, no AI, & all DDG bangs",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46408984",
-    "title": "C++ says “We have try... finally at home”",
-    "url": "https://devblogs.microsoft.com/oldnewthing/20251222-00/?p=111890",
+    "id": "46420289",
+    "title": "UK accounting body to halt remote exams amid AI cheating",
+    "url": "https://www.theguardian.com/business/2025/dec/29/uk-accounting-remote-exams-ai-cheating-acca",
     "summary": "生成摘要时出错",
-    "chinese_title": "C++ says “We have try... finally at home”",
+    "chinese_title": "UK accounting body to halt remote exams amid AI cheating",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46428496",
+    "title": "Hacking Washing Machines [video]",
+    "url": "https://media.ccc.de/v/39c3-hacking-washing-machines",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hacking Washing Machines [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46413790",
+    "title": "No, it's not a battleship",
+    "url": "https://www.navalgazing.net/No-its-not",
+    "summary": "生成摘要时出错",
+    "chinese_title": "No, it's not a battleship",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46426624",
+    "title": "Show HN: Stop Claude Code from forgetting everything",
+    "url": "https://github.com/mutable-state-inc/ensue-skill",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Stop Claude Code from forgetting everything",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46417752",
+    "title": "Panoramas of Star Trek Sets",
+    "url": "https://mijofr.github.io/st-panorama/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Panoramas of Star Trek Sets",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46424460",
+    "title": "When someone says they hate your product",
+    "url": "https://www.getflack.com/p/responding-to-negative-feedback",
+    "summary": "生成摘要时出错",
+    "chinese_title": "When someone says they hate your product",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46417676",
+    "title": "My First Meshtastic Network",
+    "url": "https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "My First Meshtastic Network",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46433029",
+    "title": "No strcpy either",
+    "url": "https://daniel.haxx.se/blog/2025/12/29/no-strcpy-either/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "No strcpy either",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46433035",
+    "title": "Win32 is the stable Linux ABI",
+    "url": "https://loss32.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Win32 is the stable Linux ABI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46423521",
+    "title": "A production bug that made me care about undefined behavior",
+    "url": "https://gaultier.github.io/blog/the_production_bug_that_made_me_care_about_undefined_behavior.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A production bug that made me care about undefined behavior",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -357,6 +413,30 @@
     "url": "https://www.independent.ie/business/digital-euro-what-it-is-and-how-we-will-use-the-new-form-of-cash/a165973061.html",
     "summary": "生成摘要时出错",
     "chinese_title": "EU to build no-fee payments service like Visa/Mastercard and Apple/Google Pay",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46432862",
+    "title": "Times New American: A Tale of Two Fonts",
+    "url": "https://hsu.cy/2025/12/times-new-american/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Times New American: A Tale of Two Fonts",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46415426",
+    "title": "62 years in the making: NYC's newest water tunnel nears the finish line",
+    "url": "https://ny1.com/nyc/all-boroughs/news/2025/11/09/water--dep--tunnels-",
+    "summary": "生成摘要时出错",
+    "chinese_title": "62 years in the making: NYC's newest water tunnel nears the finish line",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46424733",
+    "title": "Meta's ads tools started switching out top-performing ads with AI-generated ones",
+    "url": "https://www.businessinsider.com/meta-ai-generating-bizarre-ads-advantage-plus-2025-10",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Meta's ads tools started switching out top-performing ads with AI-generated ones",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -376,91 +456,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46403955",
-    "title": "Scientists edited genes in a living person and saved his life",
-    "url": "https://www.popularmechanics.com/science/health/a64815804/crispr-therapy/",
+    "id": "46419822",
+    "title": "Show HN: See what readers who loved your favorite book/author also loved to read",
+    "url": "https://shepherd.com/bboy/2025",
     "summary": "生成摘要时出错",
-    "chinese_title": "Scientists edited genes in a living person and saved his life",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46405866",
-    "title": "Public Domain Day 2026",
-    "url": "https://web.law.duke.edu/cspd/publicdomainday/2026/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Public Domain Day 2026",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46415819",
-    "title": "My app just won best iOS Japanese learning tool of 2025 award (blog)",
-    "url": "https://skerritt.blog/best-japanese-learning-tools-2025-award-show/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "My app just won best iOS Japanese learning tool of 2025 award (blog)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46405480",
-    "title": "Pfizer ended up passing on my GLP-1 work back in the early '90s (2024)",
-    "url": "https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Pfizer ended up passing on my GLP-1 work back in the early '90s (2024)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46421653",
-    "title": "Swapping SIM cards used to be easy, and then came eSIM",
-    "url": "https://arstechnica.com/gadgets/2025/12/i-switched-to-esim-in-2025-and-i-am-full-of-regret/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Swapping SIM cards used to be easy, and then came eSIM",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46408192",
-    "title": "Dialtone – AOL 3.0 Server",
-    "url": "https://dialtone.live/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Dialtone – AOL 3.0 Server",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46414837",
-    "title": "Why I Disappeared – My week with minimal internet in a remote island chain",
-    "url": "https://www.kenklippenstein.com/p/why-i-disappeared",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why I Disappeared – My week with minimal internet in a remote island chain",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46419968",
-    "title": "Linux DAW: Help Linux musicians to quickly and easily find the tools they need",
-    "url": "https://linuxdaw.org/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Linux DAW: Help Linux musicians to quickly and easily find the tools they need",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46405235",
-    "title": "An ounce of silver is now worth more than a barrel of oil",
-    "url": "https://www.wsj.com/finance/commodities-futures/an-ounce-of-silver-is-now-worth-more-than-a-barrel-of-oil-196e149e",
-    "summary": "生成摘要时出错",
-    "chinese_title": "An ounce of silver is now worth more than a barrel of oil",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46416618",
-    "title": "Self-hosting is being enshittified",
-    "url": "https://troubled.engineer/posts/selfhosting-in-2025/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Self-hosting is being enshittified",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46422009",
-    "title": "Static Allocation with Zig",
-    "url": "https://nickmonad.blog/2025/static-allocation-with-zig-kv/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Static Allocation with Zig",
+    "chinese_title": "Show HN: See what readers who loved your favorite book/author also loved to read",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -472,75 +472,107 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46411902",
-    "title": "Global Memory Shortage Crisis: Market Analysis",
-    "url": "https://www.idc.com/resource-center/blog/global-memory-shortage-crisis-market-analysis-and-the-potential-impact-on-the-smartphone-and-pc-markets-in-2026/",
+    "id": "46415819",
+    "title": "My app just won best iOS Japanese learning tool of 2025 award (blog)",
+    "url": "https://skerritt.blog/best-japanese-learning-tools-2025-award-show/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Global Memory Shortage Crisis: Market Analysis",
+    "chinese_title": "My app just won best iOS Japanese learning tool of 2025 award (blog)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46406129",
-    "title": "The Dangers of SSL Certificates",
-    "url": "https://surfingcomplexity.blog/2025/12/27/the-dangers-of-ssl-certificates/",
+    "id": "46432916",
+    "title": "Approachable Swift Concurrency",
+    "url": "https://fuckingapproachableswiftconcurrency.com/en/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Dangers of SSL Certificates",
+    "chinese_title": "Approachable Swift Concurrency",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46413365",
-    "title": "Remembering Lou Gerstner",
-    "url": "https://newsroom.ibm.com/2025-12-28-Remembering-Lou-Gerstner",
+    "id": "46422757",
+    "title": "Five Years of Tinygrad",
+    "url": "https://geohot.github.io//blog/jekyll/update/2025/12/29/five-years-of-tinygrad.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Remembering Lou Gerstner",
+    "chinese_title": "Five Years of Tinygrad",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46405481",
-    "title": "How We Found Out About COINTELPRO (2014)",
-    "url": "https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/",
+    "id": "46414837",
+    "title": "Why I Disappeared – My week with minimal internet in a remote island chain",
+    "url": "https://www.kenklippenstein.com/p/why-i-disappeared",
     "summary": "生成摘要时出错",
-    "chinese_title": "How We Found Out About COINTELPRO (2014)",
+    "chinese_title": "Why I Disappeared – My week with minimal internet in a remote island chain",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46412411",
-    "title": "2 in 3 Americans think AI will cause major harm to humans in the next 20 years [pdf] (2024)",
-    "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2025/03/pi_2025.04.03_us-public-and-ai-experts_topline.pdf",
+    "id": "46432999",
+    "title": "The British empire's resilient subsea telegraph network",
+    "url": "https://subseacables.blogspot.com/2025/12/the-british-empires-resilient-subsea.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "2 in 3 Americans think AI will cause major harm to humans in the next 20 years [pdf] (2024)",
+    "chinese_title": "The British empire's resilient subsea telegraph network",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46416278",
-    "title": "Private equity is killing private ownership: first it was housing, now it's PCs",
-    "url": "https://old.reddit.com/r/pcmasterrace/comments/1px9xwx/private_equity_is_killing_private_ownership_first/",
+    "id": "46430558",
+    "title": "Charm Ruby – Glamorous Terminal Libraries for Ruby",
+    "url": "https://charm-ruby.dev/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Private equity is killing private ownership: first it was housing, now it's PCs",
+    "chinese_title": "Charm Ruby – Glamorous Terminal Libraries for Ruby",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46419822",
-    "title": "Show HN: See what readers who loved your favorite book/author also loved to read",
-    "url": "https://shepherd.com/bboy/2025",
+    "id": "46417110",
+    "title": "CIA Star Gate Project: An Overview (1993) [pdf]",
+    "url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002800180001-2.pdf",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: See what readers who loved your favorite book/author also loved to read",
+    "chinese_title": "CIA Star Gate Project: An Overview (1993) [pdf]",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46417724",
-    "title": "John Simpson: 'I've reported on 40 wars but I've never seen a year like 2025'",
-    "url": "https://www.bbc.com/news/articles/cj4qp17e1lqo",
+    "id": "46426596",
+    "title": "AI employees don't pay taxes",
+    "url": "https://alec.is/posts/ai-employees-dont-pay-taxes/",
     "summary": "生成摘要时出错",
-    "chinese_title": "John Simpson: 'I've reported on 40 wars but I've never seen a year like 2025'",
+    "chinese_title": "AI employees don't pay taxes",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46423010",
-    "title": "Nvidia takes $5B stake in Intel under September agreement",
-    "url": "https://www.reuters.com/legal/transactional/nvidia-takes-5-billion-stake-intel-under-september-agreement-2025-12-29/",
+    "id": "46427920",
+    "title": "MongoDB Server Security Update, December 2025",
+    "url": "https://www.mongodb.com/company/blog/news/mongodb-server-security-update-december-2025",
     "summary": "生成摘要时出错",
-    "chinese_title": "Nvidia takes $5B stake in Intel under September agreement",
+    "chinese_title": "MongoDB Server Security Update, December 2025",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46424892",
+    "title": "Binance's Trust Wallet extension hacked; users lose $7M",
+    "url": "https://www.web3isgoinggreat.com/?id=trust-wallet-hack",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Binance's Trust Wallet extension hacked; users lose $7M",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46416618",
+    "title": "Self-hosting is being enshittified",
+    "url": "https://troubled.engineer/posts/selfhosting-in-2025/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Self-hosting is being enshittified",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46428154",
+    "title": "Outside, Dungeon, Town: Integrating the Three Places in Videogames (2024)",
+    "url": "https://keithburgun.net/outside-dungeon-town-integrating-the-three-places-in-videogames/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Outside, Dungeon, Town: Integrating the Three Places in Videogames (2024)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46427376",
+    "title": "Parsing Advances",
+    "url": "https://matklad.github.io/2025/12/28/parsing-advances.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Parsing Advances",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -552,11 +584,51 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "46413365",
+    "title": "Remembering Lou Gerstner",
+    "url": "https://newsroom.ibm.com/2025-12-28-Remembering-Lou-Gerstner",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Remembering Lou Gerstner",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46416278",
+    "title": "Private equity is killing private ownership: first it was housing, now it's PCs",
+    "url": "https://old.reddit.com/r/pcmasterrace/comments/1px9xwx/private_equity_is_killing_private_ownership_first/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Private equity is killing private ownership: first it was housing, now it's PCs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46417724",
+    "title": "John Simpson: 'I've reported on 40 wars but I've never seen a year like 2025'",
+    "url": "https://www.bbc.com/news/articles/cj4qp17e1lqo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "John Simpson: 'I've reported on 40 wars but I've never seen a year like 2025'",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46419659",
+    "title": "Kubernetes egress control with squid proxy",
+    "url": "https://interlaye.red/kubernetes_002degress_002dsquid.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Kubernetes egress control with squid proxy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "46414443",
     "title": "Loss of moist broadleaf forest in Africa has turned a carbon sink into source",
     "url": "https://www.nature.com/articles/s41598-025-27462-3",
     "summary": "生成摘要时出错",
     "chinese_title": "Loss of moist broadleaf forest in Africa has turned a carbon sink into source",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46435418",
+    "title": "Toro: Deploy Applications as Unikernels",
+    "url": "https://github.com/torokernel/torokernel",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Toro: Deploy Applications as Unikernels",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -576,30 +648,6 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46413566",
-    "title": "Delete LinkedIn – you'll have zero fucking regrets (2021)",
-    "url": "https://thenextweb.com/news/delete-linkedin-youll-have-zero-regrets-syndication",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Delete LinkedIn – you'll have zero fucking regrets (2021)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46417110",
-    "title": "CIA Star Gate Project: An Overview (1993) [pdf]",
-    "url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002800180001-2.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "CIA Star Gate Project: An Overview (1993) [pdf]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46419659",
-    "title": "Kubernetes egress control with squid proxy",
-    "url": "https://interlaye.red/kubernetes_002degress_002dsquid.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Kubernetes egress control with squid proxy",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "46417252",
     "title": "Why I think Valve’s retiring the Steam Deck LCD",
     "url": "https://gardinerbryant.com/why-valves-retiring-the-steam-deck-lcd/",
@@ -608,51 +656,51 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46423566",
-    "title": "List of domains censored by German ISPs",
-    "url": "https://cuiiliste.de/domains",
+    "id": "46432781",
+    "title": "Singapore Study Links Heavy Infant Screen Time to Teen Anxiety",
+    "url": "https://www.bloomberg.com/news/articles/2025-12-30/singapore-study-links-heavy-infant-screen-time-to-teen-anxiety",
     "summary": "生成摘要时出错",
-    "chinese_title": "List of domains censored by German ISPs",
+    "chinese_title": "Singapore Study Links Heavy Infant Screen Time to Teen Anxiety",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46413053",
-    "title": "Show HN: Pion SCTP with RACK is 70% faster with 30% less latency",
-    "url": "https://pion.ly/blog/sctp-and-rack/",
+    "id": "46413566",
+    "title": "Delete LinkedIn – you'll have zero fucking regrets (2021)",
+    "url": "https://thenextweb.com/news/delete-linkedin-youll-have-zero-regrets-syndication",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Pion SCTP with RACK is 70% faster with 30% less latency",
+    "chinese_title": "Delete LinkedIn – you'll have zero fucking regrets (2021)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46405927",
-    "title": "Yanis Varoufakis on the future of capitalism [video]",
-    "url": "https://www.youtube.com/watch?v=P_TMuVQPfxw",
+    "id": "46432791",
+    "title": "Groq investor sounds alarm on data centers",
+    "url": "https://www.axios.com/2025/12/29/groq-alex-davis-data-center-concerns",
     "summary": "生成摘要时出错",
-    "chinese_title": "Yanis Varoufakis on the future of capitalism [video]",
+    "chinese_title": "Groq investor sounds alarm on data centers",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46411539",
-    "title": "Designing Predictable LLM-Verifier Systems for Formal Method Guarantee",
-    "url": "https://arxiv.org/abs/2512.02080",
+    "id": "46424173",
+    "title": "Loss32: Let's Build a Win32/Linux",
+    "url": "https://loss32.org/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Designing Predictable LLM-Verifier Systems for Formal Method Guarantee",
+    "chinese_title": "Loss32: Let's Build a Win32/Linux",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46405898",
-    "title": "Bankruptcies are exploding across the economy",
-    "url": "https://www.businessinsider.com/bankruptcies-across-economy-small-business-households-corporate-2025-12",
+    "id": "46435308",
+    "title": "Show HN: 22 GB of Hacker News in SQLite",
+    "url": "https://hackerbook.dosaygo.com",
     "summary": "生成摘要时出错",
-    "chinese_title": "Bankruptcies are exploding across the economy",
+    "chinese_title": "Show HN: 22 GB of Hacker News in SQLite",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46405375",
-    "title": "In 1995, a Netscape employee wrote a hack in 10 days that now runs the Internet",
-    "url": "https://arstechnica.com/gadgets/2025/12/in-1995-a-netscape-employee-wrote-a-hack-in-10-days-that-now-runs-the-internet/",
+    "id": "46426131",
+    "title": "USPS announces changes to the postmark date system",
+    "url": "https://nstp.org/article/usps-announces-changes-postmark-date-system",
     "summary": "生成摘要时出错",
-    "chinese_title": "In 1995, a Netscape employee wrote a hack in 10 days that now runs the Internet",
+    "chinese_title": "USPS announces changes to the postmark date system",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -664,43 +712,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46412578",
-    "title": "Deathbed Advice/Regret",
-    "url": "https://hazn.com/deathbed-regret",
+    "id": "46413256",
+    "title": "If you care about security you might want to move the iPhone Camera app",
+    "url": "https://blog.jgc.org/2025/12/if-you-care-about-security-you-might.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "临终忠告/遗憾",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46409976",
-    "title": "Ubuntu 26.04 LTS – The Roadmap",
-    "url": "https://discourse.ubuntu.com/t/ubuntu-26-04-lts-the-roadmap/72740",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ubuntu 26.04 LTS – The Roadmap",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46405023",
-    "title": "America's richest 10% now hold 60% of the nation's wealth",
-    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mayikzgatu2v",
-    "summary": "生成摘要时出错",
-    "chinese_title": "America's richest 10% now hold 60% of the nation's wealth",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46424136",
-    "title": "LLMs Are Not Fun",
-    "url": "https://orib.dev/nofun.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "LLMs Are Not Fun",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46410153",
-    "title": "Salesforce pulls back from LLMs, pivots Agentforce to deterministic automation",
-    "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-laying-off-4000-employees-and-automating-with-ai-agents-salesforce-executives-admit-we-were-more-confident-about-/articleshow/126121875.cms",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Salesforce pulls back from LLMs, pivots Agentforce to deterministic automation",
+    "chinese_title": "If you care about security you might want to move the iPhone Camera app",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -712,35 +728,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46413256",
-    "title": "If you care about security you might want to move the iPhone Camera app",
-    "url": "https://blog.jgc.org/2025/12/if-you-care-about-security-you-might.html",
+    "id": "46427181",
+    "title": "Geology of the Gulf of the Farallones National Marine Sanctuary",
+    "url": "https://pubs.usgs.gov/fs/farallones/",
     "summary": "生成摘要时出错",
-    "chinese_title": "If you care about security you might want to move the iPhone Camera app",
+    "chinese_title": "Geology of the Gulf of the Farallones National Marine Sanctuary",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46412549",
-    "title": "Hacker News Made of Primes",
-    "url": "https://dosaygo-studio.github.io/prime-news/index.html",
+    "id": "46433649",
+    "title": "The 70% AI productivity myth: why most companies aren't seeing the gains",
+    "url": "https://sderosiaux.substack.com/p/the-70-ai-productivity-myth-why-most",
     "summary": "生成摘要时出错",
-    "chinese_title": "Hacker News Made of Primes",
+    "chinese_title": "The 70% AI productivity myth: why most companies aren't seeing the gains",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46408365",
-    "title": "Rust errors without dependencies",
-    "url": "https://vincents.dev/blog/rust-errors-without-dependencies/",
+    "id": "46433915",
+    "title": "What Happened to Abit Motherboards",
+    "url": "https://dfarq.homeip.net/what-happened-to-abit-motherboards/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Rust errors without dependencies",
+    "chinese_title": "What Happened to Abit Motherboards",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46404952",
-    "title": "'Off switch' discovery could help clear our brains of a common parasite",
-    "url": "https://www.sciencealert.com/off-switch-discovery-could-help-clear-our-brains-of-a-common-parasite",
+    "id": "46422139",
+    "title": "US Confirms Strike on 'Big Facility' Inside Venezuela",
+    "url": "https://www.bloomberg.com/news/articles/2025-12-29/trump-claims-us-strike-on-big-facility-inside-venezuela",
     "summary": "生成摘要时出错",
-    "chinese_title": "'Off switch' discovery could help clear our brains of a common parasite",
+    "chinese_title": "US Confirms Strike on 'Big Facility' Inside Venezuela",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -752,11 +768,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46406213",
-    "title": "7- and 14-segment fonts \"DSEG\"",
-    "url": "https://www.keshikan.net/fonts.html",
+    "id": "46424694",
+    "title": "Russian Ghost Ship Sank Smuggling Nuclear Reactor Parts Likely Bound for N Korea",
+    "url": "https://united24media.com/latest-news/russian-ghost-ship-sank-while-smuggling-nuclear-reactor-parts-likely-bound-to-north-korea-14622",
     "summary": "生成摘要时出错",
-    "chinese_title": "7- and 14-segment fonts \"DSEG\"",
+    "chinese_title": "Russian Ghost Ship Sank Smuggling Nuclear Reactor Parts Likely Bound for N Korea",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -768,35 +784,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46405216",
-    "title": "Legal sports betting linked to sharp increases in violent crime",
-    "url": "https://news.rice.edu/news/2025/legal-sports-betting-linked-sharp-increases-violent-crime-study-finds",
+    "id": "46436127",
+    "title": "Electrolysis can solve one of our biggest contamination problems",
+    "url": "https://ethz.ch/en/news-and-events/eth-news/news/2025/11/electrolysis-can-solve-one-of-our-biggest-contamination-problems.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Legal sports betting linked to sharp increases in violent crime",
+    "chinese_title": "Electrolysis can solve one of our biggest contamination problems",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46412210",
-    "title": "Scientists discover beer bottle in the Mariana Trench (2024)",
-    "url": "https://www.unilad.com/news/scientist-beer-bottle-deepest-point-ocean-mariana-trench-667878-20240213",
+    "id": "46431049",
+    "title": "You Need to Ditch VS Code",
+    "url": "https://jrswab.com/blog/ditch-vs-code",
     "summary": "生成摘要时出错",
-    "chinese_title": "Scientists discover beer bottle in the Mariana Trench (2024)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46411040",
-    "title": "'PromptQuest' is the worst game of 2025 (trying to make chatbots work)",
-    "url": "https://www.theregister.com/2025/12/26/ai_is_like_adventure_games/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "'PromptQuest' is the worst game of 2025 (trying to make chatbots work)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46422757",
-    "title": "Five Years of Tinygrad",
-    "url": "https://geohot.github.io//blog/jekyll/update/2025/12/29/five-years-of-tinygrad.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Five Years of Tinygrad",
+    "chinese_title": "You Need to Ditch VS Code",
     "chinese_summary": "生成摘要时出错"
   }
 ]
