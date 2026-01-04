@@ -1,9 +1,9 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-03.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-04.md)
 
-*最后自动更新时间: 2026-01-03 19:45:54*
-## 1. 特朗普称委内瑞拉总统马杜罗在袭击后被捕
+*最后自动更新时间: 2026-01-04 19:45:51*
+## 1. 特朗普称委内瑞拉马杜罗在空袭后被捕
 
 **原文标题**: Trump says Venezuela’s Maduro captured after strikes
 
@@ -13,17 +13,17 @@
 
 ---
 
-## 2. Linux 现在很好。
+## 2. StackOverflow 问题每月总数随时间变化
 
-**原文标题**: Linux is good now
+**原文标题**: Total monthly number of StackOverflow questions over time
 
-**原文链接**: [https://www.pcgamer.com/software/linux/im-brave-enough-to-say-it-linux-is-good-now-and-if-you-want-to-feel-like-you-actually-own-your-pc-make-2026-the-year-of-linux-on-your-desktop/](https://www.pcgamer.com/software/linux/im-brave-enough-to-say-it-linux-is-good-now-and-if-you-want-to-feel-like-you-actually-own-your-pc-make-2026-the-year-of-linux-on-your-desktop/)
+**原文链接**: [https://data.stackexchange.com/stackoverflow/query/1926661#graph](https://data.stackexchange.com/stackoverflow/query/1926661#graph)
 
-作者表达了他对Linux的坚定支持，因对Windows的“AI废话”、持续推销以及感觉像在“租用”自己的电脑感到沮丧而“脱离”Windows。他强调，现代Linux发行版现在已真正做到用户友好，破除了几十年来关于其使用难度大的误解。
+Stack Exchange 数据探索器中题为“StackOverflow 历年每月问题总数”的查询，可视化了 Stack Overflow 平台自 2008 年 8 月推出至 2024 年初每月发布的问题数量。
 
-他称赞了Bazzite——一个专注于游戏的Linux发行版，表示即使配备Nvidia GPU也能轻松使用，并指出游戏在其上运行得和Windows一样好，甚至更好，且无需命令行。他那台运行Debian 13作为媒体服务器的旧笔记本电脑，无需任何操作，只安装了所需的软件。
+这些数据揭示了一个清晰的历史趋势。Stack Overflow 自成立以来经历了快速而显著的增长，月度问题数量在其最初几年里急剧攀升。问题量在大约 2013 年至 2018 年间达到顶峰，在此高度活跃的时期，每月问题量始终超过 50 万个。
 
-文章指出了一种日益增长的趋势，Linux用户在Steam硬件调查中达到了3.2%的历史新高。作者承认，虽然目前存在HDR显示不一致和部分在线服务游戏的反作弊兼容性等问题，但他相信这些问题正逐步得到解决。他敦促读者在2026年前尝试Linux，并认为他们会发现这个开源环境比预期中更受欢迎。
+然而，月度问题数量在 2018 年左右开始出现明显而稳定的下降。这种下降趋势一直持续至今，导致近年来问题量显著降低。截至 2024 年初，每月问题数量徘徊在 15 万至 20 万之间，比其高峰时期的问题量大幅减少了 50% 以上。该图表展示了从最初的爆炸式增长到持续的高峰，再到平台新发布问题数量显著收缩的整个过程。
 
 ---
 
@@ -37,102 +37,93 @@
 
 ---
 
-## 4. 一个毁灭所有网站的网站
-
-**原文标题**: A website to destroy all websites
-
-**原文链接**: [https://henry.codes/writing/a-website-to-destroy-all-websites/](https://henry.codes/writing/a-website-to-destroy-all-websites/)
-
-文章认为，互联网曾是自我探索和社群的广阔天地，但已沦为充斥着“精神腐蚀”和“垃圾信息”的“注意力农场”，用算法内容和商业剥削取代了有意义的互动。作者援引伊万·伊里奇的《为共同生存而设计的工具》，将互联网的轨迹比作汽车的工业化：汽车最初解放了人们，但最终却成为一种“彻底的垄断”，社会反过来为工具服务。
-
-这种模式在纺织品制造、抗生素和太空探索领域均有体现，对网络也同样适用。最初互操作性和可访问性的愿景已被“科技巨头”所掌控，导致所有权、隐私和真正连接的丧失。
-
-为了夺回“我们想要的网络”，文章提出回归“共同生存的工具”，强调用户自主性和创造力。这包括：
-1.  **学习：** 从（YouTube、TikTok 等）单一平台转向使用 HTML、RSS 和 Webmentions 的个人博客，以实现内容所有权。
-2.  **连接：** 摆脱社交媒体“牢笼”，转向使用 ActivityPub 和 POSSE 等协议的去中心化、自建社交网络。
-3.  **编码：** 拥抱 HTML、CSS 和 JavaScript，用于创意表达和精工细作，而不仅仅是为了股东价值。
-
-最终的解决方案是**个人网站**：手工编码、聚合发布并持续演进。这些定制网站被视为堪称典范的“摧毁所有网站的网站”，让用户能够自主、实验、拥有自己的数字空间，并培养真正的人际连接，从而赢得互联网灵魂之战。
-
----
-
-## 5. 为什么用户无法直接创建问题
-
-**原文标题**: Why users cannot create Issues directly
-
-**原文链接**: [https://github.com/ghostty-org/ghostty/issues/3558](https://github.com/ghostty-org/ghostty/issues/3558)
-
-Ghostty 项目要求用户先创建讨论（Discussion），而不是直接提交问题（Issues）。这项政策源于多年的开源维护经验，旨在使问题追踪器（issue tracker）仅关注那些经过充分理解、可操作且准备好进行开发的事项。
-
-该项目使用 GitHub Discussions 进行日常交流、功能请求和初步的错误报告。维护者们观察到，用户报告的“错误”中有很大一部分往往是误解、环境问题或配置错误，而大多数功能请求则规范不足。
-
-通过要求先进行讨论，Ghostty 确保只有经过确认、可重现的问题或明确定义的功能请求，才由维护者转化为正式的问题（Issues）。这一工作流程简化了维护者和贡献者的工作，使他们更容易识别并处理那些真正准备好实现的事项。用户如果发现有效问题，无需额外操作，因为维护者会将他们的讨论转化为问题。更多详情请参阅 CONTRIBUTING.md 文件。
-
----
-
-## 6. 2026年将是我的Linux桌面年
+## 4. 2026年将是我的Linux桌面年
 
 **原文标题**: 2026 will be my year of the Linux desktop
 
 **原文链接**: [https://xeiaso.net/notes/2026/year-linux-desktop/](https://xeiaso.net/notes/2026/year-linux-desktop/)
 
-所提供的“内容”并非一篇关于标题“2026将是我的Linux桌面年”的文章。
+文章标题“2026 will be my year of the Linux desktop”表明作者打算在2026年全面致力于使用Linux桌面操作系统。
 
-相反，该文本是一条中文系统消息，似乎是一个安全检查或机器人验证。它翻译过来是：“确认您是否为机器人！加载中...请稍候，我们正在检查您的连接安全性，然后才能继续。”
+然而，所提供的内容并未包含任何与此目标相关的信息。相反，它仅包含一条中文安全检查消息：“正在确认你是不是机器人！ 加载中...请稍等，我们需要在继续之前检查您的连接安全性。”
 
-因此，没有关于用户在2026年采用Linux桌面的计划、期望或原因的信息可用于总结。
+因此，尽管标题为讨论作者关于其“Linux桌面之年”的计划、动机或挑战设定了预期，但实际文章正文并未提供。
 
 ---
 
-## 7. 《更努力，更好，更快，更强》的BPM拍速中有蠢朋克彩蛋？
+## 5. 《Harder, Better, Faster, Stronger》的BPM节拍里藏有蠢朋克的彩蛋吗？
 
 **原文标题**: Daft Punk Easter Egg in the BPM Tempo of Harder, Better, Faster, Stronger?
 
 **原文链接**: [https://www.madebywindmill.com/tempi/blog/hbfs-bpm/](https://www.madebywindmill.com/tempi/blog/hbfs-bpm/)
 
-Tempi 应用的开发者约翰·斯卡洛（John Scalo）认为，Daft Punk（傻朋克）乐队故意将《Harder, Better, Faster, Stronger》这首歌的 BPM（每分钟节拍数）设定为 123.45，作为一个未被察觉的彩蛋。尽管大多数在线资源将这首歌的 BPM 列为约 123，斯卡洛却主张一个更精确的数值，他声称对于精确的 BPM，人耳和手动测量比大多数软件更准确。
+音乐节奏应用 Tempi 的开发者约翰·斯卡洛提出，蠢朋克乐队的歌曲《更强韧、更好、更快、更强》（HBFS）在其精确的BPM（每分钟节拍数）123.45中，包含了一个有意的彩蛋。尽管在线数据库通常将该曲的BPM列为123或123.48，但斯卡洛改进的节奏检测系统始终显示一个接近123.4的小数值。
 
-斯卡洛采用了一种方法，即识别“首尾”节拍，测量它们的持续时间，并计算总节拍数，以此分析了《Discovery》专辑的 CD 抓轨版和这首歌的 YouTube 版本。他的计算结果始终非常接近 123.45 BPM（例如，123.4499...和 123.4533...），其中原版 CD 的结果几乎精确到 123.45。
+为了确定准确的BPM，斯卡洛采用了一种手动方法，他认为人类比大多数软件能更精确地确定节奏。他在音频应用中打开HBFS，识别出“首尾”节拍，测量了它们之间的精确时长（《探索》专辑CD抓轨版为216.282秒，YouTube版本为216.276秒），并数出了446个节拍（445个节拍间隔）。运用公式 `bpm = 60 * (节拍数 - 1) / 时长`，他计算出CD抓轨版的BPM为123.44994...，YouTube版本的BPM为123.45336...。这两个数值都几乎完美地四舍五入到123.45。
 
-斯卡洛推测，这种顺序数字的节奏（1-2-3-4-5）是一个故意的、幽默的选择。他调查了 Daft Punk 制作《Discovery》专辑时使用的生产设备是否能支持如此精确的小数 BPM。尽管 E-mu SP-1200 和 Akai MPC-3000 只支持一位小数，但他们也使用的 Emagic Logic Audio 则支持精确到四位小数的 BPM。
-
-考虑到 Logic 软件的功能以及原版 CD 几乎完美的匹配，斯卡洛得出结论，123.45 BPM 是 Daft Punk 刻意为之的一个隐藏细节，一个在 25 年里一直未被察觉的微妙笑话。
+为了探究这种有意性，斯卡洛研究了蠢朋克乐队在制作《探索》专辑（1999-2000年）时使用的设备。尽管他们使用的E-mu SP-1200和Akai MPC-3000音序器支持小数点后一位的BPM，但他们也使用的Emagic Logic Audio软件则支持到小数点后四位。尽管不清楚HBFS具体使用了哪种工具，但CD版本与精确的123.45惊人的接近，让斯卡洛相信这个带小数的节奏是一个故意的、幽默的细节，是这个“机器人二人组”埋下的一个“玩得漂亮”的隐藏秘密。
 
 ---
 
-## 8. I'm a developer for a major food delivery app
+## 6. 2025年Hacker News最受欢迎的博客
 
-**原文标题**: I'm a developer for a major food delivery app
+**原文标题**: The Most Popular Blogs of Hacker News in 2025
 
-**原文链接**: [https://old.reddit.com/r/confession/comments/1q1mzej/im_a_developer_for_a_major_food_delivery_app_the/](https://old.reddit.com/r/confession/comments/1q1mzej/im_a_developer_for_a_major_food_delivery_app_the/)
+**原文链接**: [https://refactoringenglish.com/blog/2025-hn-top-5/](https://refactoringenglish.com/blog/2025-hn-top-5/)
 
 生成摘要时出错
 
 ---
 
-## 9. HPV疫苗接种在丹麦将致癌性HPV16/18型流行率从16%降低至不足1%。
+## 7. 神经网络：从入门到精通
 
-**原文标题**: HPV vaccination reduces oncogenic HPV16/18 prevalence from 16% to <1% in Denmark
+**原文标题**: Neural Networks: Zero to Hero
 
-**原文链接**: [https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2025.30.27.2400820](https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2025.30.27.2400820)
+**原文链接**: [https://karpathy.ai/zero-to-hero.html](https://karpathy.ai/zero-to-hero.html)
 
-The study, published in Eurosurveillance, investigated the long-term impact of the Danish HPV vaccination program on the prevalence of oncogenic HPV genotypes in young women. Denmark introduced its national HPV vaccination program in 2009, initially targeting 12-year-old girls, and later expanding to include older age groups and boys.
+Andrej Karpathy 的《神经网络：从零到英雄》课程指导学习者从零开始编写代码构建神经网络，最终达到 GPT 等现代深度学习模型。它独特地侧重于语言模型，强调它们在学习深度学习可迁移技能方面的出色能力。先决条件包括扎实的 Python 编程知识和入门级数学。
 
-Researchers conducted a cross-sectional study between 2019 and 2022, enrolling over 11,000 women born between 1996 and 1999 (aged 20-23). Participants provided self-collected vaginal swabs, which were tested for 27 HPV genotypes. The study compared HPV prevalence between vaccinated and unvaccinated women.
+全面的课程大纲从“micrograd”开始，提供了神经网络和反向传播的详细、明确的解释。接着是“makemore”系列，参与者在此构建字符级语言模型。这一进展从一个二元模型开始，引入 `torch.Tensor`，然后转向多层感知机（MLP），涵盖了训练、学习率调整和评估等基本的机器学习概念。随后的视频深入探讨 MLP 内部机制，分析激活和梯度，实现批量归一化（Batch Normalization），并进行手动反向传播，以对梯度流建立深刻的直觉。该系列还涵盖了构建类 WaveNet 的卷积神经网络。
 
-The findings revealed a profound reduction in oncogenic HPV prevalence among vaccinated individuals. The prevalence of HPV16/18, the types responsible for the majority of cervical cancers, was a remarkably low 0.6% in vaccinated women, compared to 16.2% in unvaccinated women. This translates to an estimated vaccine effectiveness (VE) of 96% for HPV16/18. Additionally, VE against other oncogenic HPV types covered by the nonavalent vaccine (HPV31/33/45/52/58) was 82%. Importantly, no evidence of type replacement was observed, as the prevalence of non-vaccine HPV types was similar in both groups.
-
-The study concludes that the Danish HPV vaccination program has been highly effective in drastically reducing the prevalence of oncogenic HPV types in vaccinated women, forecasting a significant future reduction in cervical cancer incidence.
+课程随后处理高级项目，包括从零开始构建一个生成式预训练Transformer (GPT)，借鉴了《Attention is All You Need》等论文。课程最后构建一个 GPT 分词器（Tokenizer），解释其在大型语言模型中的关键作用、它的训练（字节对编码）以及它对 LLM 行为的影响。该课程被描述为“持续进行中”，暗示将有更多内容。
 
 ---
 
-## 10. FracturedJson
+## 8. The suck is why we're here
 
-**原文标题**: FracturedJson
+**原文标题**: The suck is why we're here
 
-**原文链接**: [https://github.com/j-brooke/FracturedJson/wiki](https://github.com/j-brooke/FracturedJson/wiki)
+**原文链接**: [https://nik.art/the-suck-is-why-were-here/](https://nik.art/the-suck-is-why-were-here/)
+
+The author describes an experiment where an AI model, trained on his past work, attempted to generate blog posts in his style. The results exhibited an "uncanny valley" effect: superficially acceptable but lacking his distinct voice, often veering off-topic or contradicting his usual arguments. He asserts that he writes daily not for output, but as a mental exercise, a creative ritual, and a commitment to his readers—benefits AI cannot provide.
+
+This perspective is reinforced by Ezra Klein, who finds AI minimally useful for his writing. Klein believes outsourcing research to AI hinders a writer's ability to make unique connections, as AI-generated summaries miss crucial insights only discovered through deep, personal engagement with the material.
+
+Nick Wignall adds that the struggle and "stuck-ness" inherent in the writing process are its most valuable components. Using AI to bypass these difficulties, he argues, is "cheating" and leads to inferior, less meaningful work.
+
+The author concludes that AI's increasing presence in writing will ultimately highlight genuine quality. He believes that while technology offers tempting shortcuts, true artists and creators understand that embracing the "suck"—the hard work and struggle—is essential. Only through this personal overcoming of challenges can one reap the true rewards of their labor, setting them apart from the "lowest common denominator" produced by AI-assisted shortcuts.
+
+---
+
+## 9. 谷歌14年经验谈
+
+**原文标题**: Lessons from 14 Years at Google
+
+**原文链接**: [https://addyosmani.com/blog/21-lessons/](https://addyosmani.com/blog/21-lessons/)
 
 生成摘要时出错
+
+---
+
+## 10. Report: Microsoft kills official way to activate Windows 11/10 without internet
+
+**原文标题**: Report: Microsoft kills official way to activate Windows 11/10 without internet
+
+**原文链接**: [https://www.neowin.net/news/report-microsoft-quietly-kills-official-way-to-activate-windows-1110-without-internet/#google_vignette](https://www.neowin.net/news/report-microsoft-quietly-kills-official-way-to-activate-windows-1110-without-internet/#google_vignette)
+
+Microsoft has quietly discontinued the official phone activation method for Windows 10 and Windows 11, effectively making an internet connection mandatory for new installations. Previously, users could activate their operating system offline by using the `slui 4` command to launch a wizard, call Microsoft, provide an installation ID, and receive a confirmation ID.
+
+Now, attempts to use this method result in an error message: "Phone activation is no longer supported for your product." This change primarily affects retail and OEM licenses of Windows 10 and 11. Older Windows versions like 7, 8, and 8.1 still support phone activation. The move is seen as part of Microsoft's broader strategy to push users towards online services and accounts. While re-activating an already digitally licensed system might still work offline, volume license customers are likely unaffected due to their different activation procedures.
 
 ---
 
@@ -140,62 +131,63 @@ The study concludes that the Danish HPV vaccination program has been highly effe
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 2 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 3 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 4 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 5 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 6 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 7 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 1 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 2 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 3 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 4 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 5 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 6 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 7 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
 | 8 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 9 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 10 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 11 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 12 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 13 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 14 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 15 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 16 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 17 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 18 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 19 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 20 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 21 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
+| 9 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 10 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 11 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 12 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 13 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 14 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 15 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 16 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 17 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 18 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 19 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 20 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 21 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
 | 22 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
 | 23 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 24 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 24 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
 | 25 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
 | 26 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
 | 27 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
 | 28 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
 | 29 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 30 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 31 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 32 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 30 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 31 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 32 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
 | 33 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 34 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 35 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 34 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 35 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 36 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 37 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 38 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 39 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 40 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 41 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 42 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 43 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 44 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 45 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 37 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 38 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 39 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 40 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 41 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 42 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 43 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 44 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 45 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
 | 46 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 47 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 48 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 49 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 50 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 51 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 52 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 53 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 54 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 55 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 56 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 57 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 58 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 59 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 47 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 48 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 49 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 50 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 51 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 52 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 53 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 54 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 55 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 56 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 57 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 58 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 59 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 60 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
