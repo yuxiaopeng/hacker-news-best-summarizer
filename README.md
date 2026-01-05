@@ -1,129 +1,154 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-04.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-05.md)
 
-*最后自动更新时间: 2026-01-04 19:45:51*
-## 1. 特朗普称委内瑞拉马杜罗在空袭后被捕
+*最后自动更新时间: 2026-01-05 19:50:28*
+## 1. 难以证明太浩湖标志的合理性
 
-**原文标题**: Trump says Venezuela’s Maduro captured after strikes
+**原文标题**: It's hard to justify Tahoe icons
 
-**原文链接**: [https://www.reuters.com/world/americas/loud-noises-heard-venezuela-capital-southern-area-without-electricity-2026-01-03/](https://www.reuters.com/world/americas/loud-noises-heard-venezuela-capital-southern-area-without-electricity-2026-01-03/)
+**原文链接**: [https://tonsky.me/blog/tahoe-icons/](https://tonsky.me/blog/tahoe-icons/)
 
-无法访问文章链接。
+该文章强烈批评 macOS Tahoe 为每个菜单项添加图标的新设计理念，认为这严重损害了可用性。作者认为，图标旨在区分，但当它们变得普遍存在时，就失去了其作用，使得查找特定命令变得更加困难。
+
+一个主要的问题是普遍缺乏**一致性**：诸如“新建”、“打开”、“保存”和“删除”等基本操作的图标在不同的 Apple 应用程序中差异悬殊，甚至在同一应用程序的菜单和工具栏内部也各不相同。雪上加霜的是，**图标复用**现象泛滥，相同的符号代表着截然不同的动作，给用户带来了极大的困惑。
+
+该设计还因对**细微之处的过度依赖**而受到批评，它迫使用户去识别微小、常常难以区分的、细节过度的微小图标（物理尺寸比 Windows 95 图标还小）。由于矢量渲染未对齐像素，这些图标常常显得模糊。
+
+此外，**令人困惑的隐喻**比比皆是，图标错误地表示动作，或忽视了既定的视觉规范（例如，“全选”用文本块表示，“书签”用一本书表示）。作者强调了纯文本图标、对立操作的不对称性以及在图标内使用系统元素等问题，所有这些都造成了零散且令人沮丧的用户体验。
+
+最终，这些图标不一致的存在和对齐方式干扰了菜单浏览。作者总结道，Apple 承担了一项与基础人机界面准则不兼容的“不可能完成的任务”，使得界面直观性降低，使用难度增加。
 
 ---
 
-## 2. StackOverflow 问题每月总数随时间变化
+## 2. 谷歌14年经验教训
+
+**原文标题**: Lessons from 14 years at Google
+
+**原文链接**: [https://addyosmani.com/blog/21-lessons/](https://addyosmani.com/blog/21-lessons/)
+
+在谷歌工作的14年里，作者认识到，在工程领域取得成功，远不止写出优秀的代码；它更关乎驾驭人际关系、政治、协同和不确定性。这21条经验强调了成功的关键模式，而非具体技术。
+
+核心要点包括：
+1.  **用户至上**：深入解决用户问题；不要从技术本身出发。
+2.  **协作**：*共同*达成正确方案才是真正的工作；不要为了争赢而牺牲协同。
+3.  **偏爱行动**：发布并迭代；追求完美只会让人停滞不前。
+4.  **清晰胜于巧妙**：为未来的维护者写代码，而不是为了炫耀聪明。
+5.  **战略创新**：接受平庸的解决方案，只在独具价值之处进行创新。
+6.  **倡导**：你的工作需要支持者；代码不会自行发声。
+7.  **效率**：最好的代码往往是你从未写过的代码。
+8.  **可伸缩性**：在大规模系统中，兼容性和弃用是核心产品工作。
+9.  **协同**：大多数“慢”团队是由于未协同，而非缺乏生产力。
+10. **专注**：掌控你能掌控的；忽略你不能掌控的。
+11. **理解抽象**：了解底层机制，以防抽象层出现问题。
+12. **为清晰而写作**：教学能促使更深入的理解。
+13. **重视“粘合工作”**：让那些无形但重要的工作变得可见并获得认可。
+14. **真正协同**：不要把沉默的抵制误认为是同意。
+15. **指标智慧**：将速度与质量相结合；解读趋势，而非崇拜阈值。
+16. **谦逊**：承认“我不知道”能培养安全、学习的文化。
+17. **人际网络**：你的职业人脉比任何一份工作都更持久。
+18. **通过删除实现绩效**：删除工作通常比优化现有工作更有影响力。
+19. **有效流程**：流程应减少不确定性，而非制造官僚主义。
+20. **重视时间**：时间变得比金钱更宝贵；做出有意的选择。
+21. **复合专业知识**：刻意练习和共享学习能建立持久的价值。
+
+最终，成功的工程职业生涯需要好奇心、谦逊，以及对人的持续关注——无论是用户还是队友。
+
+---
+
+## 3. StackOverflow 问题月度总数随时间变化
 
 **原文标题**: Total monthly number of StackOverflow questions over time
 
 **原文链接**: [https://data.stackexchange.com/stackoverflow/query/1926661#graph](https://data.stackexchange.com/stackoverflow/query/1926661#graph)
 
-Stack Exchange 数据探索器中题为“StackOverflow 历年每月问题总数”的查询，可视化了 Stack Overflow 平台自 2008 年 8 月推出至 2024 年初每月发布的问题数量。
+Stack Exchange数据探索器查询“Stack Overflow每月提问总数随时间变化”展示了一个折线图，描绘了该平台从2008年9月上线到2024年初新问题发布的数量。
 
-这些数据揭示了一个清晰的历史趋势。Stack Overflow 自成立以来经历了快速而显著的增长，月度问题数量在其最初几年里急剧攀升。问题量在大约 2013 年至 2018 年间达到顶峰，在此高度活跃的时期，每月问题量始终超过 50 万个。
+数据显示，Stack Overflow在成立之初经历了快速增长阶段，每月问题数量飙升，到2010年初达到数十万。随后，该平台进入了一个长期高活跃期，每月持续发布50万到60万个问题。这种高发布量大致趋于平稳并持续了数年，大约直到2018年。
 
-然而，月度问题数量在 2018 年左右开始出现明显而稳定的下降。这种下降趋势一直持续至今，导致近年来问题量显著降低。截至 2024 年初，每月问题数量徘徊在 15 万至 20 万之间，比其高峰时期的问题量大幅减少了 50% 以上。该图表展示了从最初的爆炸式增长到持续的高峰，再到平台新发布问题数量显著收缩的整个过程。
+然而，从大约2018年开始，图表显示出明显的下降趋势。每月问题总数稳步下降，大幅低于其峰值水平。截至最新数据点，每月问题量已降至不足30万，这表明近年来Stack Overflow上新问题的提问频率大幅减少。
 
----
-
-## 3. Publish on your own site, syndicate elsewhere
-
-**原文标题**: Publish on your own site, syndicate elsewhere
-
-**原文链接**: [https://indieweb.org/POSSE#](https://indieweb.org/POSSE#)
-
-生成摘要时出错
+综上所述，Stack Overflow经历了强劲的早期采用，随后是长时间的持续高参与度，而最近则转变为新问题提交量显著下降。
 
 ---
 
-## 4. 2026年将是我的Linux桌面年
-
-**原文标题**: 2026 will be my year of the Linux desktop
-
-**原文链接**: [https://xeiaso.net/notes/2026/year-linux-desktop/](https://xeiaso.net/notes/2026/year-linux-desktop/)
-
-文章标题“2026 will be my year of the Linux desktop”表明作者打算在2026年全面致力于使用Linux桌面操作系统。
-
-然而，所提供的内容并未包含任何与此目标相关的信息。相反，它仅包含一条中文安全检查消息：“正在确认你是不是机器人！ 加载中...请稍等，我们需要在继续之前检查您的连接安全性。”
-
-因此，尽管标题为讨论作者关于其“Linux桌面之年”的计划、动机或挑战设定了预期，但实际文章正文并未提供。
-
----
-
-## 5. 《Harder, Better, Faster, Stronger》的BPM节拍里藏有蠢朋克的彩蛋吗？
-
-**原文标题**: Daft Punk Easter Egg in the BPM Tempo of Harder, Better, Faster, Stronger?
-
-**原文链接**: [https://www.madebywindmill.com/tempi/blog/hbfs-bpm/](https://www.madebywindmill.com/tempi/blog/hbfs-bpm/)
-
-音乐节奏应用 Tempi 的开发者约翰·斯卡洛提出，蠢朋克乐队的歌曲《更强韧、更好、更快、更强》（HBFS）在其精确的BPM（每分钟节拍数）123.45中，包含了一个有意的彩蛋。尽管在线数据库通常将该曲的BPM列为123或123.48，但斯卡洛改进的节奏检测系统始终显示一个接近123.4的小数值。
-
-为了确定准确的BPM，斯卡洛采用了一种手动方法，他认为人类比大多数软件能更精确地确定节奏。他在音频应用中打开HBFS，识别出“首尾”节拍，测量了它们之间的精确时长（《探索》专辑CD抓轨版为216.282秒，YouTube版本为216.276秒），并数出了446个节拍（445个节拍间隔）。运用公式 `bpm = 60 * (节拍数 - 1) / 时长`，他计算出CD抓轨版的BPM为123.44994...，YouTube版本的BPM为123.45336...。这两个数值都几乎完美地四舍五入到123.45。
-
-为了探究这种有意性，斯卡洛研究了蠢朋克乐队在制作《探索》专辑（1999-2000年）时使用的设备。尽管他们使用的E-mu SP-1200和Akai MPC-3000音序器支持小数点后一位的BPM，但他们也使用的Emagic Logic Audio软件则支持到小数点后四位。尽管不清楚HBFS具体使用了哪种工具，但CD版本与精确的123.45惊人的接近，让斯卡洛相信这个带小数的节奏是一个故意的、幽默的细节，是这个“机器人二人组”埋下的一个“玩得漂亮”的隐藏秘密。
-
----
-
-## 6. 2025年Hacker News最受欢迎的博客
-
-**原文标题**: The Most Popular Blogs of Hacker News in 2025
-
-**原文链接**: [https://refactoringenglish.com/blog/2025-hn-top-5/](https://refactoringenglish.com/blog/2025-hn-top-5/)
-
-生成摘要时出错
-
----
-
-## 7. 神经网络：从入门到精通
+## 4. 神经网络：从零到精通
 
 **原文标题**: Neural Networks: Zero to Hero
 
 **原文链接**: [https://karpathy.ai/zero-to-hero.html](https://karpathy.ai/zero-to-hero.html)
 
-Andrej Karpathy 的《神经网络：从零到英雄》课程指导学习者从零开始编写代码构建神经网络，最终达到 GPT 等现代深度学习模型。它独特地侧重于语言模型，强调它们在学习深度学习可迁移技能方面的出色能力。先决条件包括扎实的 Python 编程知识和入门级数学。
+安德烈·卡帕西的《神经网络：从零到一》是一门综合性课程，致力于用代码从零开始构建神经网络。课程内容从基本的反向传播原理逐步深入到GPT等现代深度神经网络，强调语言模型是深度学习一个优秀且可迁移的学习领域。
 
-全面的课程大纲从“micrograd”开始，提供了神经网络和反向传播的详细、明确的解释。接着是“makemore”系列，参与者在此构建字符级语言模型。这一进展从一个二元模型开始，引入 `torch.Tensor`，然后转向多层感知机（MLP），涵盖了训练、学习率调整和评估等基本的机器学习概念。随后的视频深入探讨 MLP 内部机制，分析激活和梯度，实现批量归一化（Batch Normalization），并进行手动反向传播，以对梯度流建立深刻的直觉。该系列还涵盖了构建类 WaveNet 的卷积神经网络。
+先决条件包括扎实的Python编程能力和入门级数学知识（例如导数）。课程大纲以“Micrograd”为开篇，详细介绍了反向传播。随后，多部分的“Makemore”系列引导学习者构建字符级语言模型，从二元模型开始，逐步深入到多层感知机（MLP）和类似WaveNet的卷积网络。本节涵盖了关键的机器学习概念，例如`torch.Tensor`的使用、模型训练、超参数、评估、激活函数、梯度、批量归一化，甚至是手动反向传播。
 
-课程随后处理高级项目，包括从零开始构建一个生成式预训练Transformer (GPT)，借鉴了《Attention is All You Need》等论文。课程最后构建一个 GPT 分词器（Tokenizer），解释其在大型语言模型中的关键作用、它的训练（字节对编码）以及它对 LLM 行为的影响。该课程被描述为“持续进行中”，暗示将有更多内容。
-
----
-
-## 8. The suck is why we're here
-
-**原文标题**: The suck is why we're here
-
-**原文链接**: [https://nik.art/the-suck-is-why-were-here/](https://nik.art/the-suck-is-why-were-here/)
-
-The author describes an experiment where an AI model, trained on his past work, attempted to generate blog posts in his style. The results exhibited an "uncanny valley" effect: superficially acceptable but lacking his distinct voice, often veering off-topic or contradicting his usual arguments. He asserts that he writes daily not for output, but as a mental exercise, a creative ritual, and a commitment to his readers—benefits AI cannot provide.
-
-This perspective is reinforced by Ezra Klein, who finds AI minimally useful for his writing. Klein believes outsourcing research to AI hinders a writer's ability to make unique connections, as AI-generated summaries miss crucial insights only discovered through deep, personal engagement with the material.
-
-Nick Wignall adds that the struggle and "stuck-ness" inherent in the writing process are its most valuable components. Using AI to bypass these difficulties, he argues, is "cheating" and leads to inferior, less meaningful work.
-
-The author concludes that AI's increasing presence in writing will ultimately highlight genuine quality. He believes that while technology offers tempting shortcuts, true artists and creators understand that embracing the "suck"—the hard work and struggle—is essential. Only through this personal overcoming of challenges can one reap the true rewards of their labor, setting them apart from the "lowest common denominator" produced by AI-assisted shortcuts.
+课程的高潮部分是“让我们构建GPT”模块，参与者将在其中从零开始构建一个生成式预训练Transformer，并将其与OpenAI的GPT系列进行类比。随后的“让我们构建GPT分词器”模块深入探讨了这个必不可少的大语言模型（LLM）组件，详细阐述了它的功能、训练方式（字节对编码）以及对LLM行为的影响。课程内容仍在持续更新中，并鼓励通过Discord进行社区互动。
 
 ---
 
-## 9. 谷歌14年经验谈
+## 5. 独坐咖啡馆的无法承受之喜
 
-**原文标题**: Lessons from 14 Years at Google
+**原文标题**: The unbearable joy of sitting alone in a café
 
-**原文链接**: [https://addyosmani.com/blog/21-lessons/](https://addyosmani.com/blog/21-lessons/)
+**原文链接**: [https://candost.blog/the-unbearable-joy-of-sitting-alone-in-a-cafe/](https://candost.blog/the-unbearable-joy-of-sitting-alone-in-a-cafe/)
+
+The essay explores the profound experience of sitting alone in a café, a space typically designed for social connection. During a staycation, the author deliberately disconnected from technology, taking long walks with his dog to slow down time. This led him to a neighborhood café, where the absence of a phone transformed the simple act of sipping coffee into "pure delight" and allowed his mind to wander freely, prompting deep self-reflection.
+
+Without digital distractions, the author's awareness sharpened. He observed people's hidden worries through their eyes and became keenly attuned to the café staff's interactions and operations. This heightened perception, however, also brought a sobering realization of his powerlessness over others' thoughts and feelings about him, leading to a sense of being alone and challenged.
+
+Yet, this "alone act" evolved into a powerful joy. He recognized a shared solitude with other "weirdos" in the café, finding an unexpected connection in their individual moments of peace. Finally, the author introduced an "intentional distraction"—writing with a pen on paper—to further slow his thoughts and deepen the meditative quality of his solitary café experience.
+
+---
+
+## 6. Anna's Archive loses .org domain after surprise suspension
+
+**原文标题**: Anna's Archive loses .org domain after surprise suspension
+
+**原文链接**: [https://torrentfreak.com/annas-archive-loses-org-domain-after-surprise-suspension/](https://torrentfreak.com/annas-archive-loses-org-domain-after-surprise-suspension/)
 
 生成摘要时出错
 
 ---
 
-## 10. Report: Microsoft kills official way to activate Windows 11/10 without internet
+## 7. 克劳德移动代码
 
-**原文标题**: Report: Microsoft kills official way to activate Windows 11/10 without internet
+**原文标题**: Claude Code On-the-Go
 
-**原文链接**: [https://www.neowin.net/news/report-microsoft-quietly-kills-official-way-to-activate-windows-1110-without-internet/#google_vignette](https://www.neowin.net/news/report-microsoft-quietly-kills-official-way-to-activate-windows-1110-without-internet/#google_vignette)
+**原文链接**: [https://granda.org/en/2026/01/02/claude-code-on-the-go/](https://granda.org/en/2026/01/02/claude-code-on-the-go/)
 
-Microsoft has quietly discontinued the official phone activation method for Windows 10 and Windows 11, effectively making an internet connection mandatory for new installations. Previously, users could activate their operating system offline by using the `slui 4` command to launch a wizard, call Microsoft, provide an installation ID, and receive a confirmation ID.
+生成摘要时出错
 
-Now, attempts to use this method result in an error message: "Phone activation is no longer supported for your product." This change primarily affects retail and OEM licenses of Windows 10 and 11. Older Windows versions like 7, 8, and 8.1 still support phone activation. The move is seen as part of Microsoft's broader strategy to push users towards online services and accounts. While re-activating an already digitally licensed system might still work offline, volume license customers are likely unaffected due to their different activation procedures.
+---
+
+## 8. Web development is fun again
+
+**原文标题**: Web development is fun again
+
+**原文链接**: [https://ma.ttias.be/web-development-is-fun-again/](https://ma.ttias.be/web-development-is-fun-again/)
+
+Mattias Geniar reflects on a bygone era of web development (PHP 4, jQuery, tables) when a solo developer could manage the entire stack, describing it as simpler and more manageable. He contrasts this with today's landscape, where both frontend (build pipelines, PWAs, Core Web Vitals) and backend (design patterns, APIs, infrastructure, observability) have grown so complex that deep specialization is required, making it challenging for one person to keep up. The author himself had to step back from frontend work due to this complexity.
+
+The introduction of AI tools like Claude and Codex has, according to Geniar, "leveled the playing field." He claims AI has restored his productivity, allowing him to confidently manage the entire stack again and go from idea to execution in days. While acknowledging AI's imperfections, his two decades of experience enable him to discern good code from bad, refine AI outputs, and achieve a 10x productivity boost. This shift frees up mental space, allowing him to focus on creativity, UI/UX experimentation, and quality-of-life improvements, rather than being bogged down by technical overhead. Ultimately, AI has made the process of building something from nothing efficient and enjoyable again, making web development fun.
+
+---
+
+## 9. The suck is why we're here
+
+**原文标题**: The suck is why we're here
+
+**原文链接**: [https://nik.art/the-suck-is-why-were-here/](https://nik.art/the-suck-is-why-were-here/)
+
+生成摘要时出错
+
+---
+
+## 10. Databases in 2025: A Year in Review
+
+**原文标题**: Databases in 2025: A Year in Review
+
+**原文链接**: [https://www.cs.cmu.edu/~pavlo/blog/2026/01/2025-databases-retrospective.html](https://www.cs.cmu.edu/~pavlo/blog/2026/01/2025-databases-retrospective.html)
+
+生成摘要时出错
 
 ---
 
@@ -131,63 +156,64 @@ Now, attempts to use this method result in an error message: "Phone activation i
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 1 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
 | 2 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 3 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 4 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 5 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 6 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 7 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 8 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 9 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 10 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 3 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 4 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 5 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 6 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 7 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 8 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 9 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 10 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
 | 11 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 12 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 13 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 14 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 15 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 12 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 13 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 14 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 15 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
 | 16 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 17 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 18 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 19 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 20 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 21 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 22 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 23 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 24 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 25 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 26 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 27 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 28 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 29 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 30 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 31 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 17 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 18 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 19 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 20 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 21 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 22 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 23 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
+| 24 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 25 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 26 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 27 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 28 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 29 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
+| 30 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 31 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
 | 32 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 33 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 33 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
 | 34 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 35 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 35 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
 | 36 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 37 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 38 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 39 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 40 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 37 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 38 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 39 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 40 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
 | 41 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 42 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 43 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 44 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 42 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 43 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 44 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
 | 45 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 46 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 47 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 48 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 49 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 50 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 51 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 52 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 46 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 47 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 48 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 49 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 50 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 51 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 52 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
 | 53 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
 | 54 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
 | 55 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
 | 56 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 57 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 58 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 59 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 60 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 57 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 58 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 59 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 60 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 61 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
