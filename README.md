@@ -1,143 +1,141 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-11.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-12.md)
 
-*最后自动更新时间: 2026-01-11 19:46:55*
-## 1. 让我介绍一下，雪铁龙 C15
+*最后自动更新时间: 2026-01-12 19:50:50*
+## 1. 在 macOS Tahoe 上调整窗口大小的挣扎
 
-**原文标题**: Allow me to introduce, the Citroen C15
+**原文标题**: The struggle of resizing windows on macOS Tahoe
 
-**原文链接**: [https://eupolicy.social/@jmaris/115860595238097654](https://eupolicy.social/@jmaris/115860595238097654)
+**原文链接**: [https://noheger.at/blog/2026/01/11/the-struggle-of-resizing-windows-on-macos-tahoe/](https://noheger.at/blog/2026/01/11/the-struggle-of-resizing-windows-on-macos-tahoe/)
 
-所提供的内容，标题为“请允许我介绍，雪铁龙C15”，实际上并未介绍或讨论雪铁龙C15。相反，它呈现的是一条来自Mastodon的支离破碎的社交媒体帖子。
+文章批评macOS Tahoe“大得离谱”的窗口圆角半径，认为其不仅在美学上令人不悦，更重要的是损害了可用性。作为一名资深电脑用户，作者指出自升级以来，调整窗口大小变得异常困难。
 
-这条帖子由用户Jordan Maris发布，标识为🇪🇺 🇺🇦 #NAFO，并来自“EUpolicy.social——一个服务于欧盟圈（EU bubble）的Mastodon服务器”。Maris帖子中可见的内容是一段不完整的引文：“我经常听到美国人和富有的英国人为购买……辩解”。该声明的其余部分及其语境和含义均已缺失。
+这种困难源于macOS窗口期望调整大小的点击发生在角落附近一个19x19像素的目标区域内。在之前具有尖角的macOS版本中，该区域的62%都位于可见窗口内部。然而，由于Tahoe版本显著的圆角设计，这个关键目标区域的75%现在位于可见窗口边界*之外*。
 
-此外，文本中还包含一条中文信息，指出使用Mastodon网页应用程序需要JavaScript，或者建议使用特定平台的Mastodon应用程序。
-
----
-
-## 2. 我把 Windows 换成了 Linux，一切都很顺利。
-
-**原文标题**: I replaced Windows with Linux and everything's going great
-
-**原文链接**: [https://www.theverge.com/tech/858910/linux-diary-gaming-desktop](https://www.theverge.com/tech/858910/linux-diary-gaming-desktop)
-
-高级测评编辑内森·爱德华兹（Nathan Edwards）讲述了他因对Windows日益沮丧，转而将Linux作为主桌面操作系统后最初一周的经历。他的目标是确定Linux是否可以成为一个“可行的替代品”，而无需进行大量的技术“折腾”。
-
-他选择了CachyOS，一个基于Arch的发行版，以其对现代硬件的优化和游戏便利性而闻名。安装过程包括选择一个引导加载程序（Limine），分区他的硬盘（最初100GB根目录，后来扩展），并选择一个桌面环境（KDE）。他最直接且幽默的挑战是他那老旧的游戏鼠标，鼠标指针可以移动，但在桌面上无法注册点击，然而在游戏中却能完美运行。
-
-尽管如此，他的大部分硬件，包括GPU驱动、显示器、扬声器、网络摄像头和打印机，都“即插即用”，无需任何努力。使用各种Linux应用仓库安装流行的应用程序，如Chromium、Discord、Slack和Audacity，都非常简单。游戏也变得简单：CachyOS的一键游戏包让《天外世界》（The Outer Worlds）通过Proton完美运行，并支持云存档同步。
-
-小问题包括缺少他偏爱的Arc浏览器，以及Airtable和Spotify等服务的官方应用（尽管浏览器版本可以运行）。主要的烦恼是让《我的世界：基岩版》（Minecraft: Bedrock Edition）运行起来，这对于和孩子们一起玩至关重要。
-
-爱德华兹承认这只是一个“蜜月期”，但他报告说“后悔程度：无”。他发现这次过渡“比预期容易得多”，并且相比Windows的烦扰，他很欣赏这种“更安静的体验”。尽管他的工作不允许他完全使用Linux，但他第一周的经历预示着他的Linux之旅前景乐观。
+用户本能地试图在窗口可见形状*内部*抓取其角落，这是一个与人们物理抓取物体方式相符的自然动作。然而，在Tahoe中，这些直观的点击点却经常落在被接受的调整大小区域之外，导致尝试失败。矛盾的是，在Tahoe中调整窗口大小最可靠的方法是点击并拖动可见角落*之外*的区域。这种所需的操作手势令人感觉不自然、反直觉，并且最终容易出错，由于这一设计选择，将一个基本的计算任务变成了一种令人沮丧的体验。
 
 ---
 
-## 3. “Erdos problem #728 was solved more or less autonomously by AI”
+## 2. 别陷入反AI炒作
 
-**原文标题**: “Erdos problem #728 was solved more or less autonomously by AI”
+**原文标题**: Don't fall into the anti-AI hype
 
-**原文链接**: [https://mathstodon.xyz/@tao/115855840223258103](https://mathstodon.xyz/@tao/115855840223258103)
+**原文链接**: [https://antirez.com/news/158](https://antirez.com/news/158)
 
-生成摘要时出错
-
----
-
-## 4. 发现并修复Ghostty最大的内存泄漏
-
-**原文标题**: Finding and fixing Ghostty's largest memory leak
-
-**原文链接**: [https://mitchellh.com/writing/ghostty-memory-leak-fix](https://mitchellh.com/writing/ghostty-memory-leak-fix)
-
-Ghostty用户报告了一个离谱的内存泄漏，某个实例在10天内达到了37 GB。修复方案已经找到并合并，将在未来的版本中提供。
-
-该泄漏源于Ghostty使用`PageList`（一个内存页的双向链表）管理终端内存的方式。大多数页面是标准大小的，从内存池中获取。然而，对于包含大量表情符号或超链接等内容，更大的“非标准”页面则通过`mmap`直接分配。标准页面在释放时会返回内存池，而非标准页面则需要`munmap`。
-
-Ghostty还通过在达到回滚限制时将最旧的页面重用为最新页面来优化回滚历史的修剪，从而避免了重新分配。
-
-当一个非标准页面通过这种回滚优化被重用时，bug就出现了。它的*元数据*被重置以指示其为标准大小，但底层的、通过`mmap`分配的大块内存实际上从未被重新调整大小。后来，当系统尝试释放此页面时，它看到了“标准大小”的元数据，认为这是一个池化页面，因此*从未*调用`munmap`。这导致了通过`mmap`分配的大块内存泄漏。
-
-最初，非标准页面很少见，因此自Ghostty 1.0以来，此泄漏一直未被发现。然而，最近CLI应用程序（如Claude Code）的兴起，它们经常生成复杂的多码点字素，在大量回滚操作下开始生成大量的非标准页面，从而大规模触发了泄漏。
-
-修复方案在概念上很简单：在回滚修剪期间不再重用非标准页面。相反，它们会被正确地`munmap`，并从内存池中分配一个新的标准大小页面。
-
-为了帮助诊断，macOS上实现了虚拟内存标签，使得Ghostty的`PageList`内存可以在调试工具中被专门识别，从而确认了泄漏并验证了修复。现有的泄漏预防措施由于其独特的触发条件而未能发现这个特定的bug；一个新的测试现在可以防止此问题再次出现。
+别陷入反AI炒作
 
 ---
 
-## 5. 我弃用 Windows 11 投奔 Linux，你也该如此。
+## 3. 我抛弃了 Windows 11 转投 Linux，你也应该。
 
 **原文标题**: I dumped Windows 11 for Linux, and you should too
 
 **原文链接**: [https://www.notebookcheck.net/I-dumped-Windows-11-for-Linux-and-you-should-too.1190961.0.html](https://www.notebookcheck.net/I-dumped-Windows-11-for-Linux-and-you-should-too.1190961.0.html)
 
-The author, frustrated with Windows 11's pervasive telemetry (like Copilot and Recall) and severe instability (frequent crashes, buggy updates, disjointed settings), migrated fully to Linux after a Windows update deleted his dual-boot partition. He initially considered macOS but found it restrictive and sluggish on older hardware.
-
-His journey through various Linux distributions led him to Artix Linux for its control and lightweight nature, reserving Mint for a family media PC. Challenges included installing wireless drivers on an older MacBook Air (requiring an Ethernet connection) and resolving graphical glitches and network manager issues after trying different desktop environments. He also noted some game compatibility issues (e.g., Civilization III) and the absence of specific Windows-only software.
-
-However, the benefits significantly outweighed the hurdles. He found smartphone management surprisingly excellent, especially for iPhones using the Dolphin file manager, bypassing iTunes entirely. The biggest gain was "joy": Linux resurrected his enthusiasm for computing, offering endless customization and learning opportunities. His systems became significantly more stable (zero crashes) and faster than on Windows. While demanding some technical know-how, Linux's flexibility allows users to choose distros ranging from beginner-friendly to highly customizable. Ultimately, for the author, Linux wasn't just a fix; it transformed his computing experience, offering a sense of accomplishment in problem-solving that Windows never provided.
+生成摘要时出错
 
 ---
 
-## 6. HN 展示: 我使用克劳德代码发现了100本书之间的关联
+## 4. 杰罗姆·鲍威尔声明
 
-**原文标题**: Show HN: I used Claude Code to discover connections between 100 books
+**原文标题**: Statement from Jerome Powell
 
-**原文链接**: [https://trails.pieterma.es/](https://trails.pieterma.es/)
+**原文链接**: [https://www.federalreserve.gov/newsevents/speech/powell20260111a.htm](https://www.federalreserve.gov/newsevents/speech/powell20260111a.htm)
 
-这篇 Show HN 帖子详细介绍了一个项目，作者在该项目中利用AI工具“Claude Code”对一百本书籍的语料库进行分析，以发现其中的联系。
+2026年1月11日，美联储主席杰罗姆·H·鲍威尔宣布，司法部已向他发出大陪审团传票，威胁对其进行刑事起诉。此次行动的公开理由与他去年六月在参议院银行委员会前的证词有关，该证词涉及美联储办公大楼的一项翻修项目。
 
-核心发现围绕着普遍存在的**自我欺骗**概念。分析表明，自我欺骗不仅仅是一个缺陷，还可以作为一种策略机制，并观察到“最善于撒谎的人会相信自己的谎言”。这一主题通过“有益的谎言”（useful lies）和“善意的谎言”（blue lies）等概念进行探讨，这些谎言通常指为了他人或团体的利益而使用的欺骗行为。这些行为的根本框架归因于**进化心理学**，表明这种形式的自我欺骗和策略性谎言可能具有适应性优势。
+鲍威尔在申明他尊重法治的同时，将此描述为“前所未有的行动”，并将其置于本届政府威胁和施压的更广泛背景下看待。他明确指出，刑事指控的威胁并非真正与他的证词或翻修工程有关，他认为这些都是“借口”。
 
----
+相反，鲍威尔认为此举是美联储根据经济证据和公共服务独立设定利率，而非遵循总统偏好所导致的结果。他将此局面视为对美联储在不受政治压力或恐吓的情况下执行货币政策能力的一项严峻挑战。
 
-## 7. 暗空挽歌：数据可视化杰作 (2023)
-
-**原文标题**: Eulogy for Dark Sky, a data visualization masterpiece (2023)
-
-**原文链接**: [https://nightingaledvs.com/dark-sky-weather-data-viz/](https://nightingaledvs.com/dark-sky-weather-data-viz/)
-
-提供的文本是一个不完整的摘录，似乎与其给定的标题不符。
-
-虽然标题暗示着“对数据可视化杰作Dark Sky的悼词（2023年）”，但实际内容却聚焦于数据可视化刊物“Nightingale”。它宣布庆祝“Nightingale社区成立五周年！”，该社区自2019年7月启动。Nightingale由其编辑创立，旨在填补数据可视化领域的一个特定空白。
-
-因此，无法根据现有内容提供“对Dark Sky的悼词”的摘要，因为文本描述的是Nightingale刊物的历史和周年纪念。
+鲍威尔曾在多届政府任职，他重申将秉持职责，不惧政治影响，不偏不倚，只专注于美联储物价稳定和最大就业的双重使命。他誓言，尽管面临威胁，仍将诚信地继续为美国人民服务。
 
 ---
 
-## 8. 代码共生共荣
+## 5. CLI agents make self-hosting on a home server easier and fun
 
-**原文标题**: Code and Let Live
+**原文标题**: CLI agents make self-hosting on a home server easier and fun
 
-**原文链接**: [https://fly.io/blog/code-and-let-live/](https://fly.io/blog/code-and-let-live/)
+**原文链接**: [https://fulghum.io/self-hosting](https://fulghum.io/self-hosting)
 
-Kurt Mackey 认为，瞬时只读的沙盒对于 AI 智能体来说已经过时，他提出 Fly.io 新推出的“Sprites”是一个更优越的替代方案。Sprites 是持久的、可在 1-2 秒内即时创建的 Linux 微虚拟机，提供带有 100GB 存储的 root shell。它们在不同会话之间保留状态和已安装的软件，即使长时间不活动也是如此，并具有快速、随意的检查点/恢复功能（大约 1 秒），这类似于 Git 对整个系统的操作。
+Jordan Fulghum declares 2026 the "Year of Self-hosting," citing how CLI agents like Claude Code, combined with cheap mini PCs and Tailscale, have made it dramatically easier and fun. Previously deterred by complex configurations, the author now recommends self-hosting to software-literate individuals who don't want to become sysadmins.
 
-Sprites 的设计旨在经济实惠，在空闲时停止计费，并与 Fly.io 的 Anycast 网络集成以实现 HTTPS 访问，使用户能够轻松管理数百个 Sprites。Mackey 认为，AI 智能体（如“Claude”）需要具有持久存储和持久性的真正“计算机”，而不是无状态容器。当前的沙盒迫使智能体采用低效的变通方法，例如反复重建环境、依赖外部状态存储或将状态编码到“计划文件”中，这限制了它们的能力，使其只能执行短期任务。
+The transformation stems from installing Claude Code directly on a low-power Linux box (e.g., Beelink Mini N150). Instead of manual Docker, Compose, or reverse proxy setups, the author simply describes desired outcomes to Claude Code, which then automates tasks like Docker installation, service deployment (Vaultwarden, Plex, Immich, Uptime Kuma, Readeck, Home Assistant), Caddy configuration, data persistence, updates, security, and automatic restarts.
 
-作者设想了一个未来，个人可以利用 Sprites 等持久机器上的智能体来构建和拥有解决特定问题的应用程序，从而模糊了开发与生产之间的界限（“开发即生产，生产即开发”）。他认为沙盒正在阻碍这一演进，而 Sprites 提供的“一次性云计算机”范式标志着瞬时沙盒时代的终结。
+This setup replaced core services with self-hosted alternatives, offering control and peace of mind. For example, Vaultwarden replaced Bitwarden, Immich served as a Google Photos alternative, and Readeck filled a "read-it-later" void. The system also includes a custom monitoring dashboard and automated backups to local drives and AWS S3 Glacier.
+
+The author emphasizes the powerful feeling of ownership and independence, enabling time spent *using* and *learning* software rather than stressing over maintenance. This approach is ideal for those comfortable with a terminal, currently paying for SaaS tools, and curious about how things work, but who wish to avoid becoming infra experts. For the first time, self-hosting is presented as not just viable, but genuinely fun.
 
 ---
 
-## 9. Open Chaos: A self-evolving open-source project
+## 6. 发现并修复 Ghostty 的最大内存泄漏
 
-**原文标题**: Open Chaos: A self-evolving open-source project
+**原文标题**: Finding and fixing Ghostty's largest memory leak
 
-**原文链接**: [https://www.openchaos.dev/](https://www.openchaos.dev/)
+**原文链接**: [https://mitchellh.com/writing/ghostty-memory-leak-fix](https://mitchellh.com/writing/ghostty-memory-leak-fix)
+
+Ghostty，一个终端模拟器，正遭受严重的内存泄漏问题，有用户报告内存占用高达37 GB。这个自Ghostty 1.0版本以来就存在的漏洞，最近由于Claude Code等应用程序生成特定的输出模式而变得突出。
+
+核心问题在于Ghostty的`PageList`内存管理。它使用一个内存页的双向链表，对标准大小的页采用内存池，而对更大的“非标准”页则使用`mmap`。一个关键的优化是当达到历史记录限制时，重用最旧的回滚页，以避免昂贵的重新分配。
+
+这个漏洞发生在一个通过`mmap`直接分配的非标准页在回滚修剪期间被重用时。虽然页面的元数据被重置为标准大小，但底层的`mmap`分配并未调整大小。因此，当该页面随后被“释放”时，Ghostty的逻辑错误地认为它是一个标准池化页面，未能调用`munmap`，从而导致内存泄漏。Claude Code的命令行界面通过频繁生成多代码点字素输出加剧了这一问题，在高回滚场景中强制常规使用非标准页。
+
+修复方案在概念上很简单：非标准页在回滚修剪期间不再被重用。相反，它们被正确地`munmap`，并从池中分配一个新的标准大小的页面。
+
+在macOS上添加虚拟内存标签有助于诊断此泄漏，从而能够专门识别和监控PageList内存。尽管Ghostty具有各种泄漏检测机制（例如，泄漏检测分配器、Valgrind、Instruments），但这个特定的漏洞由于其非常具体的触发条件而避开了这些机制，现在这些条件已被新的测试覆盖。这是Ghostty报告过的最大内存泄漏，其解决凸显了真实世界复现场景对于诊断的重要性。
+
+---
+
+## 7. iCloud 照片下载器
+
+**原文标题**: iCloud Photos Downloader
+
+**原文链接**: [https://github.com/icloud-photos-downloader/icloud_photos_downloader](https://github.com/icloud-photos-downloader/icloud_photos_downloader)
+
+iCloud照片下载器是一个跨平台命令行工具，用于下载所有iCloud照片，兼容Linux、Windows、macOS和NAS设备。它可以通过直接可执行文件获取，或通过Docker、PyPI、AUR和npm等包管理器进行安装。该项目由志愿者维护，正在积极寻找新的维护者，并目标是每周发布新版本。
+
+为确保功能正常运行，用户必须配置其iCloud账户，启用“在网页上访问iCloud数据”并禁用“高级数据保护”，以避免出现`ACCESS_DENIED`错误。
+
+该工具提供三种操作模式：“复制”（默认）模式，用于下载新照片；“同步”模式，用于下载新照片并移除iCloud中已删除的本地文件；以及“移动”模式，用于下载新照片然后将其从iCloud中删除。主要功能包括支持Live Photos和RAW图像、自动去重、一次性或持续监控选项，以及照片元数据（EXIF）更新。
+
+安装方法包括下载预构建的可执行文件、使用包管理器或从源代码构建。示例用法包括使用`icloudpd --directory /data --username my@email.address --watch-with-interval 3600`进行持续同步，以及使用`--auth-only`进行独立会话认证。实验模式允许抢先体验新功能。欢迎贡献。
+
+---
+
+## 8. 软盘竟然是孩子们最棒的电视遥控器。
+
+**原文标题**: Floppy disks turn out to be the greatest TV remote for kids
+
+**原文链接**: [https://blog.smartere.dk/2026/01/floppy-disks-the-best-tv-remote-for-kids/](https://blog.smartere.dk/2026/01/floppy-disks-the-best-tv-remote-for-kids/)
 
 生成摘要时出错
 
 ---
 
-## 10. Exercise can be nearly as effective as therapy for depression
+## 9. 美联储主席杰罗姆·F·鲍威尔声明 [视频]
 
-**原文标题**: Exercise can be nearly as effective as therapy for depression
+**原文标题**: Statement by Federal Reserve Chair Jerome F. Powell [video]
 
-**原文链接**: [https://www.sciencedaily.com/releases/2026/01/260107225516.htm](https://www.sciencedaily.com/releases/2026/01/260107225516.htm)
+**原文链接**: [https://www.youtube.com/watch?v=KckGHaBLSn4](https://www.youtube.com/watch?v=KckGHaBLSn4)
 
 生成摘要时出错
+
+---
+
+## 10. Apple picks Google's Gemini to power Siri
+
+**原文标题**: Apple picks Google's Gemini to power Siri
+
+**原文链接**: [https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html](https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html)
+
+Apple has officially partnered with Google, selecting its Gemini models and cloud technology to power a major AI-driven upgrade for Siri, expected later this year. This multiyear collaboration will also support Apple's future foundational models. Apple stated that Google's technology provides the "most capable foundation" for its AI initiatives.
+
+The move signifies Apple's more aggressive entry into the AI landscape, having mostly stayed out of the recent "AI frenzy." This partnership aims to deliver an impressive Siri upgrade, addressing previous delays. While specific financial terms were not disclosed, earlier reports suggested Apple could pay Google around $1 billion annually.
+
+This deal reinforces growing trust in Google's accelerating AI agenda and its comeback against competitors like OpenAI. Google already pays Apple billions annually for its search engine default status on iPhones and recently surpassed Apple in market capitalization.
+
+The partnership's effect on Apple's existing integration of OpenAI's ChatGPT for complex Siri queries is currently unclear, though Apple stated it isn't making immediate changes to that agreement. Shares initially rose following the news before pulling back, with Google briefly touching a $4 trillion market value.
 
 ---
 
@@ -145,70 +143,71 @@ Sprites 的设计旨在经济实惠，在空闲时停止计费，并与 Fly.io �
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
+| 1 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
 | 2 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 3 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 4 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 5 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 6 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 7 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 8 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 9 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
+| 3 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
+| 4 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
+| 5 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
+| 6 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 7 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 8 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
+| 9 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
 | 10 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 11 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 12 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 13 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 14 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 15 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 16 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 17 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 18 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 19 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 20 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 21 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 22 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 23 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 24 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 25 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 26 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 27 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 28 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 29 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 30 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 31 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 32 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 33 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 34 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 35 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 36 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 37 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 38 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 11 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 12 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 13 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 14 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 15 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 16 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 17 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 18 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 19 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 20 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 21 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 22 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 23 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 24 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 25 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 26 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 27 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 28 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 29 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 30 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 31 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
+| 32 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 33 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
+| 34 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 35 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 36 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 37 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 38 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
 | 39 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 40 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 41 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 42 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 40 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 41 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 42 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
 | 43 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 44 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 45 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 46 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 47 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 45 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 46 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 47 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
 | 48 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 49 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 50 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 51 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 52 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 53 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 54 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 55 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 56 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 57 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 58 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 59 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 60 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 61 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 62 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 63 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 64 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 65 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 49 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 50 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 51 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 52 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 53 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 54 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 55 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 56 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 57 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 58 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 59 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 60 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 61 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 62 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 63 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 64 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 65 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
 | 66 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 67 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 67 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 68 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
