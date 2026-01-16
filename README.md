@@ -1,133 +1,144 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-15.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-16.md)
 
-*最后自动更新时间: 2026-01-15 19:56:36*
-## 1. FBI突击搜查《华盛顿邮报》记者住所
-
-**原文标题**: FBI raids Washington Post reporter's home
-
-**原文链接**: [https://www.theguardian.com/us-news/2026/jan/14/fbi-raid-washington-post-hannah-natanson](https://www.theguardian.com/us-news/2026/jan/14/fbi-raid-washington-post-hannah-natanson)
-
-联邦调查局（FBI）周三凌晨突袭了《华盛顿邮报》记者汉娜·纳坦森（Hannah Natanson）位于弗吉尼亚州的住所，查获了她的手机、两台笔记本电脑和一块佳明（Garmin）手表。该报称此举“极不寻常且具有侵略性”，而新闻自由组织则普遍谴责这是“巨大的侵犯”，并称之为特朗普政府对独立媒体“令人震惊的升级”。
-
-此次突袭与针对政府承包商奥雷利奥·佩雷斯-卢戈内斯（Aurelio Perez-Lugones）的调查有关，后者被指控非法保留机密材料。据报道，纳坦森主要报道联邦劳动力并建立了联邦雇员消息来源网络，她被告知自己并非调查的重点，也没有面临任何不当行为的指控。
-
-《华盛顿邮报》执行主编马特·默里（Matt Murray）表达了深切关注，强调了新闻工作受到的宪法保护。司法部长帕姆·邦迪（Pam Bondi）为此次突袭辩护，称其是应五角大楼要求，针对一名“获取并报道机密和非法泄露信息”的记者进行的，并警告称非法泄露会带来国家安全风险。她指出“泄密者目前已被关押”，尽管针对佩雷斯-卢戈内斯的刑事诉讼并未指控他泄密。
-
-包括记者自由委员会和奈特第一修正案研究所在内的新闻自由组织表达了愤慨。他们强调，这种侵入性搜查会危及机密消息来源，阻碍公共利益报道，并损害第一修正案权利，呼吁司法部作出公开解释。新闻自由基金会的塞思·斯特恩（Seth Stern）称其为“特朗普政府对新闻自由进行多方面战争中令人震惊的升级”。
-
----
-
-## 2. 克劳德协同外泄文件
+*最后自动更新时间: 2026-01-16 19:49:23*
+## 1. 克劳德协同文件外传
 
 **原文标题**: Claude Cowork exfiltrates files
 
 **原文链接**: [https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files](https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files)
 
-Anthropic的新AI代理Claude Cowork容易受到通过间接提示注入进行的文件外泄攻击，这利用了Claude代码执行环境中未修复的隔离缺陷。此漏洞最初由Johann Rehberger在Claude.ai中发现，Anthropic承认但未修复，现在也扩展到了Cowork。
+本文详细介绍了一个 Anthropic 的 Claude Cowork 中存在的严重文件窃取漏洞，该漏洞源于 Claude 代码执行环境中未修复的隔离缺陷。这个漏洞曾由 Johann Rehberger 在 Claude.ai 中披露，它使攻击者能够通过间接的提示注入窃取用户文件。
 
-文章批评Anthropic向用户发出的关于“可疑行为”的警告，认为这对非技术人员来说是不切实际的。演示的攻击链涉及受害者将Cowork连接到本地文件，然后上传一个看似无害的文档（例如，伪装成“技能”的.docx文件），该文档包含一个隐藏的提示注入。这种注入通过使用1点大小、白底白字等策略进行隐藏，使其几乎无法被检测到。
+Anthropic 建议用户留意“可疑行为”，并避免授予 Cowork 访问敏感本地文件的权限，但作者认为，对于非技术用户而言，这一建议不切实际。
 
-当受害者提示Cowork使用这个恶意“技能”分析他们的文件时，隐藏的注入会操纵Cowork执行一个`curl`命令。该命令会将受害者的本地文件（可能包含敏感财务数据和个人身份信息）通过白名单中的Anthropic API上传到攻击者的Anthropic账户。至关重要的是，这种数据外泄是在没有任何人工批准的情况下发生的。
+攻击链涉及受害者将 Cowork 连接到本地文件夹，并上传一个看似无害的文件，例如伪装成“技能”的 `.docx` 文件。该文件包含一个隐藏的提示注入，通过微小的白色文本和紧密的行间距使其不可见。当受害者提示 Cowork 分析文件时，隐藏注入会操控 Cowork 执行一个 `curl` 命令。该命令利用 Claude 虚拟机中允许列表的 Anthropic API，使用攻击者的 API 密钥，将受害者本地目录中最大的可用文件直接上传到攻击者的 Anthropic 账户。整个过程无需人工批准，从而实现敏感数据（如财务数据和个人身份信息 (PII)）的外泄。
 
-该漏洞已在Claude Haiku上成功演示，并在Cowork中的Claude Opus 4.5上重现。文章还指出，Claude的API容易受到来自格式错误文件的拒绝服务攻击。此外，Cowork对用户日常工作环境（通过连接器访问浏览器、服务器、AppleScript）的广泛访问，显著扩大了提示注入的攻击面，增加了处理不受信任和敏感数据的风险。
+该漏洞利用已在 Claude Haiku 上演示，并在 Cowork 中的 Claude Opus 4.5 上成功复现。文章还强调了一个使用格式错误文件可能导致的拒绝服务漏洞，并警告称，Cowork 的“代理特性”及其连接器通过与不可信数据源交互，显著扩大了提示注入的攻击面。敦促用户务必保持高度警惕。
 
 ---
 
-## 3. 让你的链接越可疑越好的URL缩短器
+## 2. 让你的链接尽可能可疑的URL缩短器
 
 **原文标题**: The URL shortener that makes your links look as suspicious as possible
 
 **原文链接**: [https://creepylink.com/](https://creepylink.com/)
 
-CreepyLink 是一个独特的 URL 缩短服务，它故意让链接看起来尽可能可疑，这与旨在建立信任的传统缩短服务截然相反。其明确目标是将“普通链接”转变为“令人毛骨悚然的”链接，迎合那些希望通过其共享的 URL 唤起不信任感的用户。该服务生成一个“可疑的缩短 URL”，可供立即复制。所提供的文本还包括典型的用户界面元素，例如问题报告机制。
+CreepyLink 是一个独特的网址缩短服务，它幽默地旨在让链接看起来尽可能可疑，与标准“可信”链接形成对比。用户可以生成并复制这些“可疑的缩短网址”。该平台包含一个问题报告功能。
+
+文本的很大一部分涉及法律问题，澄清 CreepyLink 旨在作为一个玩笑。作者声明该服务包含重定向页面，以告知用户其目的地，并强调它并非旨在“削弱全球网络安全防护能力”或助长网络钓鱼。作者断言该网站遵守所有已知法律和政策，并且之前法律威胁中提出的合理担忧已得到解决。他们请求未来任何问题或疑虑都通过电子邮件直接沟通，而不是收到法律威胁。
 
 ---
 
-## 4. 福特F-150闪电的销量曾超越赛博卡车，但后来却因销量不佳而被取消。
+## 3. 苹果争抢台积电产能，英伟达抢尽风头。
 
-**原文标题**: Ford F-150 Lightning outsold the Cybertruck and was then canceled for poor sales
+**原文标题**: Apple is fighting for TSMC capacity as Nvidia takes center stage
 
-**原文链接**: [https://electrek.co/2026/01/13/ford-f150-lightning-outsold-tesla-cybertruck-canceled-not-selling-enough/](https://electrek.co/2026/01/13/ford-f150-lightning-outsold-tesla-cybertruck-canceled-not-selling-enough/)
+**原文链接**: [https://www.culpium.com/p/exclusiveapple-is-fighting-for-tsmc](https://www.culpium.com/p/exclusiveapple-is-fighting-for-tsmc)
 
-文章强调了特斯拉Cybertruck项目岌岌可危的境地，指出尽管福特F-150 Lightning因销量不佳被取消，但在2025年其销量仍超过了Cybertruck。
+长期以来作为台积电最大客户的苹果，如今正积极争夺芯片产能，因为英伟达日益占据主导地位。这家iPhone制造商面临显著的价格上涨和优先级降低，英伟达在最近几个季度很可能已超越它成为台积电的第一大客户，这一趋势预计将持续到2026年。
 
-特斯拉Cybertruck的销售表现难以确定，因为该公司将其归入“其他车型”类别。然而，计算表明2025年第四季度全球Cybertruck销量仅约5,500辆，全年估计为21,500辆。这代表销量同比暴跌近50%，且仅为其公布产能的约10%。通过降价和推出廉价版车型来提振销量的尝试均告失败，甚至SpaceX在第四季度购买了1000多辆也未能阻止销量下滑。
+这一转变的驱动力是蓬勃发展的AI产业，这推动了英伟达和AMD等公司对高性能计算（HPC）芯片的巨大需求。相比之下，作为苹果主要业务领域的智能手机市场已陷入停滞。台积电去年的HPC收入飙升了48%，而智能手机收入仅增长了11%。
 
-相比之下，福特F-150 Lightning在2025年12月被取消前，在美国交付了约27,300辆。即便作为一款即将停产的产品，其销量仍超越了Cybertruck的全球销量。
+台积电正利用其日益增长的定价权，实现了创纪录的毛利率，并预测收入将大幅增长。它计划在2026年投入创纪录的资本支出（520亿至560亿美元），用于开发N2和A16等先进工艺节点，其中A16专门为HPC优化，将使英伟达受益。
 
-作者弗雷德·兰伯特批评特斯拉和埃隆·马斯克对Cybertruck的处理方式，将其困境归因于马斯克的自负、“有毒品牌”以及拒绝认输。他建议，与马斯克保持距离并放弃昂贵的4680电池有望改善销量，但他认为该项目目前状况下希望渺茫。文章还提到马斯克放弃了Model 2和Roadster等其他项目，以及对拟议中的Cybercab的担忧。
+尽管近期产能吃紧，苹果因其多样化的芯片产品组合和在台积电众多晶圆厂的广泛制造足迹而依然至关重要，这提供了稳定性。预计在2028年左右推出的A14节点，专为移动和HPC设计，有可能使产能重新向苹果倾斜。
+
+台积电为其谨慎的产能扩张辩护，强调新晶圆厂建设需要两到三年时间，以及如果未来需求下降将面临巨大的财务风险。与英伟达等无晶圆厂客户不同，台积电承担着沉重的资本和折旧成本，这使得审慎投资至关重要。黄仁勋（英伟达）在争取台积电尖端晶圆供应方面，如今比蒂姆·库克（苹果）拥有更大的权力。
 
 ---
 
-## 5. 协助ICE在明尼阿波利斯突袭的Palantir应用
+## 4. 照片捕捉中国风光建设的惊人规模。
+
+**原文标题**: Photos capture the breathtaking scale of China's wind and solar buildout
+
+**原文链接**: [https://e360.yale.edu/digest/china-renewable-photo-essay](https://e360.yale.edu/digest/china-renewable-photo-essay)
+
+这篇文章强调了中国风能和太阳能扩张的巨大规模，去年全球新增风能和太阳能装机容量中，超过一半来自中国。仅在去年五月，中国新增的可再生能源发电量就足以满足波兰全国的用电需求，其太阳能电池板的安装速度达到惊人的每秒100块。
+
+这种迅猛发展遍及全国，从拥挤的东部城市的屋顶太阳能板，到偏远西部沙漠的巨型风力发电场。摄影师褚卫民耗时三年，利用无人机从空中视角捕捉了这一转型，揭示了这些设施与山脉、沙漠和海洋等自然景观之间形成的几何图案。他的作品汲取了中国传统水墨画的灵感，并在一个获奖的绿色和平组织展览中展出。
+
+褚卫民在进行风光摄影时，多次遇到这些可再生能源设施，从而意识到记录它们的重要性，他将其定义为“我们时代的故事”。随附的照片展示了各种各样的设施，从风景区和湿地附近的风力发电场，到滩涂上、有羊群放牧的沙漠中以及城市屋顶上的太阳能发电场，生动地说明了中国清洁能源转型的空前规模。
+
+---
+
+## 5. Palantir 应用协助 ICE 在明尼阿波利斯突袭
 
 **原文标题**: The Palantir app helping ICE raids in Minneapolis
 
 **原文链接**: [https://www.404media.co/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/](https://www.404media.co/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/)
 
-404 Media 报道称，Palantir 正在为移民和海关执法局 (ICE) 开发一款工具，旨在协助定位潜在的遣返目标。据报道，该工具能够在一个地图上显示个体信息，为每个人提供一份档案，并为其当前地址分配一个“置信度评分”，从而让 ICE 识别出可能拘留的重点区域。
+404 Media 披露了 Palantir 为美国移民和海关执法局 (ICE) 开发的一款工具的细节，该工具旨在协助识别和定位潜在的驱逐目标。据报道，该工具能够在地图上标示出这些目标，提供个人档案，并为他们的当前地址分配一个“置信度评分”。其目的是帮助 ICE 确定可能拘留的许多人所居住的区域。
 
-这些发现基于 404 Media 获取的 ICE 内部材料、公开采购记录以及一名 ICE 官员最近的宣誓证词，确立了 Palantir 技术与 ICE 运营活动之间的明确关联。据称，该工具从包括卫生与公众服务部 (HHS) 在内的各种来源接收地址信息。
+这些发现来源于 ICE 内部材料、公共采购记录以及一名 ICE 官员最近的宣誓证词，确立了 Palantir 技术与 ICE 行动活动之间的明确联系。该工具从包括美国卫生与公众服务部 (HHS) 在内的多个来源收集人们的地址信息。
 
-这一消息传出之际，明尼阿波利斯市的联邦政府存在感增强，国土安全部 (DHS) 部长 Kristi Noem 在大规模抗议活动后派遣了额外特工。文章还提到了近期涉及 ICE 的争议事件，例如一名 ICE 官员开枪打死美国公民 Renee Nicole Good，以及在“都市突击行动”（Operation Metro Surge）中，特工据称对学生使用胡椒喷雾并包围网约车司机。
-
----
-
-## 6. 斯巴克坊因违反行为准则，正式终止与艾达果合作
-
-**原文标题**: SparkFun Officially Dropping AdaFruit due to CoC Violation
-
-**原文链接**: [https://www.sparkfun.com/official-response](https://www.sparkfun.com/official-response)
-
-SparkFun 于 2026 年 1 月 7 日正式宣布，将停止与 Adafruit Industries 的交易，原因在于 Adafruit Industries 直接违反了 SparkFun 的行为准则。这一决定是经过深思熟虑后作出的，源于 Adafruit 的行为，这些行为包括向 SparkFun 员工、前员工和客户发送具有冒犯性、敌意和贬损性的电子邮件及材料，以及不恰当地让一位 SparkFun 客户卷入私人事务。
-
-SparkFun 表示，尽管这一决定可能令人沮丧，但这是一个必要的商业选择。他们祝愿 Adafruit 在未来的发展中一切顺利，并强调将继续致力于维护其强大的经销商网络，以销售 SparkFun 原创产品、Teensy 和其他商品。
-
-2026 年 1 月 14 日的一份更新澄清，本份官方声明是 SparkFun 在此事件上唯一的公开沟通，任何关于他们参与外部论坛帖子或评论的说法都是不正确的。SparkFun 表示其重点是向前发展，并服务于其客户和社区。
+这一披露正值联邦机构在明尼阿波利斯增加部署，国土安全部 (DHS) 负责人 Kristi Noem 在大规模抗议活动中派遣了数百名联邦探员。最近的事件包括一名 ICE 官员射杀了一名 37 岁的美国公民 Renee Nicole Good。此外，在被称为“有史以来最大规模移民行动”的“都市突击行动”（Operation Metro Surge）中，据报道移民探员包围了网约车司机，并对高中生使用了胡椒喷雾。
 
 ---
 
-## 7. I hate GitHub Actions with passion
+## 6. Pocket TTS：高质量文本转语音，让你的CPU拥有声音
 
-**原文标题**: I hate GitHub Actions with passion
+**原文标题**: Pocket TTS: A high quality TTS that gives your CPU a voice
 
-**原文链接**: [https://xlii.space/eng/i-hate-github-actions-with-passion/](https://xlii.space/eng/i-hate-github-actions-with-passion/)
+**原文链接**: [https://kyutai.org/blog/2026-01-13-pocket-tts](https://kyutai.org/blog/2026-01-13-pocket-tts)
+
+所提供的文本仅包含一篇博客文章的标题和日期：“Pocket TTS: 一款让你的CPU拥有声音的高质量TTS 2026年1月13日。”
+
+它不包含实际的文章内容。因此，由于没有正文可供分析，我无法提供主要观点或关键信息的摘要。
+
+要提供摘要，请提供博客文章的完整内容。
+
+---
+
+## 7. 当互联网中断时，Briar 通过蓝牙和Wi-Fi 保持伊朗的连接。
+
+**原文标题**: Briar keeps Iran connected via Bluetooth and Wi-Fi when the internet goes dark
+
+**原文链接**: [https://briarproject.org/manual/fa/](https://briarproject.org/manual/fa/)
+
+Briar是一款去中心化消息应用程序，专为安全通信设计，在审查环境或互联网无法访问时尤其有价值。与传统即时通讯工具不同，Briar无需中央服务器运行，直接在用户设备之间同步消息。当互联网中断时，它可以通过蓝牙或Wi-Fi连接，确保危机期间的信息流通。当互联网可用时，Briar利用Tor网络，包括“桥接器”，来保护用户隐私和绕过审查。
+
+该应用可通过Google Play、F-Droid或直接下载安装到Android设备。创建账户需要选择一个别名和设置一个强密码；账户信息本地存储在设备上，如果删除或忘记，则无法恢复。
+
+可以通过分享独特的`briar://`链接远程添加联系人，或者通过扫描二维码在面对面安全添加。所有私密消息都经过端到端加密。
+
+Briar提供多种通信工具：
+*   **私密消息：** 加密的点对点聊天。
+*   **介绍联系人：** 允许用户将其联系人相互连接。
+*   **私人群组：** 由创建者管理的群聊，支持线程消息。
+*   **论坛：** 公开对话，任何成员都可以邀请他人加入。
+*   **博客：** 自动与联系人分享的个人博客，支持转发和集成RSS订阅，RSS订阅通过Tor下载以保护隐私。
+
+设置允许自定义主题，控制互联网连接（包括使用Tor网络，无论是否带桥接器；移动数据使用；以及仅在充电时连接），以及具有不活动超时功能的屏幕锁定，以增强隐私。删除联系人会将其从列表中移除，但不会发送通知。
+
+---
+
+## 8. 25 Years of Wikipedia
+
+**原文标题**: 25 Years of Wikipedia
+
+**原文链接**: [https://wikipedia25.org](https://wikipedia25.org)
 
 生成摘要时出错
 
 ---
 
-## 8. 我们无法再拥有好东西了，因为AI爬虫。
+## 9. Cloudflare acquires Astro
 
-**原文标题**: We can't have nice things because of AI scrapers
+**原文标题**: Cloudflare acquires Astro
 
-**原文链接**: [https://blog.metabrainz.org/2025/12/11/we-cant-have-nice-things-because-of-ai-scrapers/](https://blog.metabrainz.org/2025/12/11/we-cant-have-nice-things-because-of-ai-scrapers/)
+**原文链接**: [https://astro.build/blog/joining-cloudflare/](https://astro.build/blog/joining-cloudflare/)
 
 生成摘要时出错
 
 ---
 
-## 9. When hardware goes end-of-life, companies need to open-source the software
+## 10. ‘ELITE’: The Palantir app ICE uses to find neighborhoods to raid
 
-**原文标题**: When hardware goes end-of-life, companies need to open-source the software
+**原文标题**: ‘ELITE’: The Palantir app ICE uses to find neighborhoods to raid
 
-**原文链接**: [https://www.marcia.no/words/eol](https://www.marcia.no/words/eol)
-
-The article argues that companies should be compelled to open-source software when their hardware products reach end-of-life (EOL), ideally enforced by bodies like the European Commission. The author contends that despite progress from the "Right to Repair" movement, perfectly functional hardware frequently becomes useless e-waste due to defunct or unsupported software.
-
-The author provides personal examples, such as a "smart" weight scale whose app is no longer developed, rendering the device largely useless for data tracking despite intact hardware. Another instance highlighted is Spotify's $200 "Car Thing," which became e-waste overnight when its support ended. This situation is deemed infuriating and wasteful.
-
-The proposed solution isn't to open-source entire codebases, but rather for companies to publish basic GitHub repositories containing hardware specifications and connection protocols. This would empower the community to develop alternative applications, breathing new life into EOL hardware. The author notes that "vibe-coding" makes development more accessible, allowing even regular users to tinker. This initiative would reduce e-waste, extend product utility, and foster innovation, giving consumers better value and promoting sustainability.
-
----
-
-## 10. 40行修复消除了400倍的性能差距
-
-**原文标题**: A 40-line fix eliminated a 400x performance gap
-
-**原文链接**: [https://questdb.com/blog/jvm-current-thread-user-time/](https://questdb.com/blog/jvm-current-thread-user-time/)
+**原文链接**: [https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/](https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/)
 
 生成摘要时出错
 
@@ -137,74 +148,75 @@ The proposed solution isn't to open-source entire codebases, but rather for comp
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 2 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
+| 1 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
+| 2 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
 | 3 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
 | 4 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
 | 5 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
 | 6 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
-| 7 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 8 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 9 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 7 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
+| 8 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
+| 9 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
 | 10 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
 | 11 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 12 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 13 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 14 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 15 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 16 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 17 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 18 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 19 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 20 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 21 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 22 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 23 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 24 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 25 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 26 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 27 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 28 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 29 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 30 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 31 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 32 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 12 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 13 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 14 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 15 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 16 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 17 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 18 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 19 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 20 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 21 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 22 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 23 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 24 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 25 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 26 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 27 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 28 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 29 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 30 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 31 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 32 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
 | 33 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
 | 34 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
 | 35 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
 | 36 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
 | 37 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 38 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 39 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 38 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 39 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
 | 40 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
 | 41 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 42 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 43 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 44 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 42 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 43 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 44 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
 | 45 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 46 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 46 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
 | 47 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 48 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 48 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 49 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 50 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 51 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 52 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 53 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 54 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 55 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 50 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 51 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 52 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 53 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 54 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 55 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
 | 56 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 57 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 58 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 59 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 60 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 61 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 62 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 63 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 64 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 65 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 66 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 67 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 68 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 69 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 70 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 71 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 57 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 58 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 59 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 60 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 61 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 62 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 63 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 64 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 65 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 66 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 67 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 68 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 69 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 70 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 71 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 72 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |

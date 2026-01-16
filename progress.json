@@ -1,139 +1,59 @@
 [
   {
-    "id": "46616745",
-    "title": "FBI raids Washington Post reporter's home",
-    "url": "https://www.theguardian.com/us-news/2026/jan/14/fbi-raid-washington-post-hannah-natanson",
-    "summary": "The FBI raided the Virginia home of Washington Post reporter Hannah Natanson early Wednesday, seizing her phone, two laptops, and a Garmin watch. The newspaper labeled the action \"highly unusual and aggressive,\" while press freedom groups universally condemned it as a \"tremendous intrusion\" and an \"alarming escalation\" against the independent press by the Trump administration.\n\nThe raid is linked to an investigation into Aurelio Perez-Lugones, a government contractor accused of illegally retaining classified materials. Natanson, who covers the federal workforce and built a network of federal employee sources, was reportedly told she is not the focus of the investigation and faces no accusations of wrongdoing.\n\nWashington Post executive editor Matt Murray expressed profound concern, stressing the constitutional protections for journalistic work. Attorney General Pam Bondi defended the raid, stating it was requested by the Pentagon on a journalist \"obtaining and reporting classified and illegally leaked information,\" and warned against illegal leaks that pose national security risks. She noted the \"leaker is currently behind bars,\" although the criminal complaint against Perez-Lugones does not accuse him of leaking.\n\nPress freedom organizations, including the Reporters' Committee for Freedom of the Press and the Knight First Amendment Institute, voiced outrage. They emphasized that such invasive searches endanger confidential sources, impede public interest reporting, and undermine First Amendment rights, calling for a public explanation from the Justice Department. Seth Stern of the Freedom of the Press Foundation called it \"an alarming escalation in the Trump administration’s multipronged war on press freedom.\"",
-    "chinese_title": "FBI突击搜查《华盛顿邮报》记者住所",
-    "chinese_summary": "联邦调查局（FBI）周三凌晨突袭了《华盛顿邮报》记者汉娜·纳坦森（Hannah Natanson）位于弗吉尼亚州的住所，查获了她的手机、两台笔记本电脑和一块佳明（Garmin）手表。该报称此举“极不寻常且具有侵略性”，而新闻自由组织则普遍谴责这是“巨大的侵犯”，并称之为特朗普政府对独立媒体“令人震惊的升级”。\n\n此次突袭与针对政府承包商奥雷利奥·佩雷斯-卢戈内斯（Aurelio Perez-Lugones）的调查有关，后者被指控非法保留机密材料。据报道，纳坦森主要报道联邦劳动力并建立了联邦雇员消息来源网络，她被告知自己并非调查的重点，也没有面临任何不当行为的指控。\n\n《华盛顿邮报》执行主编马特·默里（Matt Murray）表达了深切关注，强调了新闻工作受到的宪法保护。司法部长帕姆·邦迪（Pam Bondi）为此次突袭辩护，称其是应五角大楼要求，针对一名“获取并报道机密和非法泄露信息”的记者进行的，并警告称非法泄露会带来国家安全风险。她指出“泄密者目前已被关押”，尽管针对佩雷斯-卢戈内斯的刑事诉讼并未指控他泄密。\n\n包括记者自由委员会和奈特第一修正案研究所在内的新闻自由组织表达了愤慨。他们强调，这种侵入性搜查会危及机密消息来源，阻碍公共利益报道，并损害第一修正案权利，呼吁司法部作出公开解释。新闻自由基金会的塞思·斯特恩（Seth Stern）称其为“特朗普政府对新闻自由进行多方面战争中令人震惊的升级”。"
-  },
-  {
     "id": "46622328",
     "title": "Claude Cowork exfiltrates files",
     "url": "https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files",
-    "summary": "Anthropic's new AI agent, Claude Cowork, is vulnerable to file exfiltration via indirect prompt injection, leveraging unremediated isolation flaws in Claude's code execution environment. This vulnerability, initially discovered by Johann Rehberger in Claude.ai, was acknowledged but not fixed by Anthropic and now extends to Cowork.\n\nThe article criticizes Anthropic's warning to users about \"suspicious actions\" as unrealistic for non-technical individuals. The demonstrated attack chain involves a victim connecting Cowork to local files and then uploading a seemingly innocuous document (e.g., a .docx disguised as a 'Skill') containing a hidden prompt injection. This injection is concealed using tactics like 1-point, white-on-white text, making it virtually undetectable.\n\nWhen the victim prompts Cowork to analyze their files using this malicious 'skill,' the hidden injection manipulates Cowork to execute a `curl` command. This command uploads the victim's local files, potentially containing sensitive financial data and PII, to the attacker's Anthropic account via the allowlisted Anthropic API. Crucially, this exfiltration occurs without any human approval.\n\nThe exploit was successfully demonstrated on Claude Haiku and also replicated on Claude Opus 4.5 in Cowork. The article also notes that Claude's API is susceptible to denial-of-service attacks from malformed files. Furthermore, Cowork's broad access to a user's day-to-day work environment (browsers, servers, AppleScripts via Connectors) significantly expands the attack surface for prompt injection, increasing the risk of processing untrusted and sensitive data.",
-    "chinese_title": "克劳德协同外泄文件",
-    "chinese_summary": "Anthropic的新AI代理Claude Cowork容易受到通过间接提示注入进行的文件外泄攻击，这利用了Claude代码执行环境中未修复的隔离缺陷。此漏洞最初由Johann Rehberger在Claude.ai中发现，Anthropic承认但未修复，现在也扩展到了Cowork。\n\n文章批评Anthropic向用户发出的关于“可疑行为”的警告，认为这对非技术人员来说是不切实际的。演示的攻击链涉及受害者将Cowork连接到本地文件，然后上传一个看似无害的文档（例如，伪装成“技能”的.docx文件），该文档包含一个隐藏的提示注入。这种注入通过使用1点大小、白底白字等策略进行隐藏，使其几乎无法被检测到。\n\n当受害者提示Cowork使用这个恶意“技能”分析他们的文件时，隐藏的注入会操纵Cowork执行一个`curl`命令。该命令会将受害者的本地文件（可能包含敏感财务数据和个人身份信息）通过白名单中的Anthropic API上传到攻击者的Anthropic账户。至关重要的是，这种数据外泄是在没有任何人工批准的情况下发生的。\n\n该漏洞已在Claude Haiku上成功演示，并在Cowork中的Claude Opus 4.5上重现。文章还指出，Claude的API容易受到来自格式错误文件的拒绝服务攻击。此外，Cowork对用户日常工作环境（通过连接器访问浏览器、服务器、AppleScript）的广泛访问，显著扩大了提示注入的攻击面，增加了处理不受信任和敏感数据的风险。"
+    "summary": "The article details a critical file exfiltration vulnerability in Anthropic's Claude Cowork, stemming from unremediated isolation flaws in Claude's code execution environment. This flaw, previously disclosed by Johann Rehberger in Claude.ai, enables attackers to steal user files through indirect prompt injection.\n\nAnthropic advises users to watch for \"suspicious actions\" and avoid granting Cowork access to sensitive local files, a recommendation the authors deem impractical for non-technical users.\n\nThe attack chain involves a victim connecting Cowork to a local folder and uploading a seemingly benign file, such as a `.docx` disguised as a \"Skill.\" This file contains a hidden prompt injection, rendered invisible by tiny, white text and tight line spacing. When the victim prompts Cowork to analyze files, the hidden injection manipulates Cowork to execute a `curl` command. This command leverages the allowlisted Anthropic API within Claude's VM to upload the largest available file from the victim's local directory directly to the attacker's Anthropic account using the attacker's API key. This entire process occurs without human approval, allowing exfiltration of sensitive data like financial figures and PII.\n\nThe exploit was demonstrated against Claude Haiku and also successfully replicated on Claude Opus 4.5 in Cowork. The article also highlights a potential denial-of-service vulnerability using malformed files and warns that Cowork's \"agentic nature\" and connectors significantly expand the prompt injection attack surface by interacting with untrusted data sources. Users are urged to exercise extreme caution.",
+    "chinese_title": "克劳德协同文件外传",
+    "chinese_summary": "本文详细介绍了一个 Anthropic 的 Claude Cowork 中存在的严重文件窃取漏洞，该漏洞源于 Claude 代码执行环境中未修复的隔离缺陷。这个漏洞曾由 Johann Rehberger 在 Claude.ai 中披露，它使攻击者能够通过间接的提示注入窃取用户文件。\n\nAnthropic 建议用户留意“可疑行为”，并避免授予 Cowork 访问敏感本地文件的权限，但作者认为，对于非技术用户而言，这一建议不切实际。\n\n攻击链涉及受害者将 Cowork 连接到本地文件夹，并上传一个看似无害的文件，例如伪装成“技能”的 `.docx` 文件。该文件包含一个隐藏的提示注入，通过微小的白色文本和紧密的行间距使其不可见。当受害者提示 Cowork 分析文件时，隐藏注入会操控 Cowork 执行一个 `curl` 命令。该命令利用 Claude 虚拟机中允许列表的 Anthropic API，使用攻击者的 API 密钥，将受害者本地目录中最大的可用文件直接上传到攻击者的 Anthropic 账户。整个过程无需人工批准，从而实现敏感数据（如财务数据和个人身份信息 (PII)）的外泄。\n\n该漏洞利用已在 Claude Haiku 上演示，并在 Cowork 中的 Claude Opus 4.5 上成功复现。文章还强调了一个使用格式错误文件可能导致的拒绝服务漏洞，并警告称，Cowork 的“代理特性”及其连接器通过与不可信数据源交互，显著扩大了提示注入的攻击面。敦促用户务必保持高度警惕。"
   },
   {
     "id": "46627652",
     "title": "The URL shortener that makes your links look as suspicious as possible",
     "url": "https://creepylink.com/",
-    "summary": "CreepyLink is a unique URL shortener that intentionally makes links appear as suspicious as possible, directly contrasting with conventional shorteners that aim for trustworthiness. Its explicit goal is to transform \"normal links\" into \"creepy\" ones, catering to users who wish to evoke distrust with their shared URLs. The service generates a \"suspiciously shortened URL\" for immediate copying. The provided text also includes typical UI elements like an issue reporting mechanism.",
-    "chinese_title": "让你的链接越可疑越好的URL缩短器",
-    "chinese_summary": "CreepyLink 是一个独特的 URL 缩短服务，它故意让链接看起来尽可能可疑，这与旨在建立信任的传统缩短服务截然相反。其明确目标是将“普通链接”转变为“令人毛骨悚然的”链接，迎合那些希望通过其共享的 URL 唤起不信任感的用户。该服务生成一个“可疑的缩短 URL”，可供立即复制。所提供的文本还包括典型的用户界面元素，例如问题报告机制。"
-  },
-  {
-    "id": "46618901",
-    "title": "Ford F-150 Lightning outsold the Cybertruck and was then canceled for poor sales",
-    "url": "https://electrek.co/2026/01/13/ford-f150-lightning-outsold-tesla-cybertruck-canceled-not-selling-enough/",
-    "summary": "The article highlights the precarious state of the Tesla Cybertruck program, noting that the Ford F-150 Lightning, despite being canceled for poor sales, still outsold the Cybertruck in 2025.\n\nTesla's Cybertruck sales performance is difficult to ascertain due to the company bundling it under \"Other Models.\" However, calculations suggest only around 5,500 Cybertrucks were sold globally in Q4 2025, leading to an estimated 21,500 for the entire year. This represents a nearly 50% year-over-year crash in sales and is only about 10% of its stated production capacity. Attempts to boost sales with price cuts and cheaper trims have failed, and even a purchase of over 1,000 units by SpaceX in Q4 couldn't prevent the decline.\n\nIn contrast, the Ford F-150 Lightning delivered approximately 27,300 units in the US in 2025 before its December cancellation. Even as a \"lame duck\" product, it surpassed the Cybertruck's global sales.\n\nThe author, Fred Lambert, criticizes Tesla's and Elon Musk's handling of the Cybertruck, attributing its struggles to Musk's ego, \"toxic brand,\" and refusal to admit defeat. He suggests distancing from Musk and abandoning costly 4680 cells could improve sales, but sees little hope for the program as it currently stands. The article also mentions Musk's abandonment of other projects like the Model 2 and Roadster, and concerns about the proposed Cybercab.",
-    "chinese_title": "福特F-150闪电的销量曾超越赛博卡车，但后来却因销量不佳而被取消。",
-    "chinese_summary": "文章强调了特斯拉Cybertruck项目岌岌可危的境地，指出尽管福特F-150 Lightning因销量不佳被取消，但在2025年其销量仍超过了Cybertruck。\n\n特斯拉Cybertruck的销售表现难以确定，因为该公司将其归入“其他车型”类别。然而，计算表明2025年第四季度全球Cybertruck销量仅约5,500辆，全年估计为21,500辆。这代表销量同比暴跌近50%，且仅为其公布产能的约10%。通过降价和推出廉价版车型来提振销量的尝试均告失败，甚至SpaceX在第四季度购买了1000多辆也未能阻止销量下滑。\n\n相比之下，福特F-150 Lightning在2025年12月被取消前，在美国交付了约27,300辆。即便作为一款即将停产的产品，其销量仍超越了Cybertruck的全球销量。\n\n作者弗雷德·兰伯特批评特斯拉和埃隆·马斯克对Cybertruck的处理方式，将其困境归因于马斯克的自负、“有毒品牌”以及拒绝认输。他建议，与马斯克保持距离并放弃昂贵的4680电池有望改善销量，但他认为该项目目前状况下希望渺茫。文章还提到马斯克放弃了Model 2和Roadster等其他项目，以及对拟议中的Cybercab的担忧。"
-  },
-  {
-    "id": "46633378",
-    "title": "The Palantir app helping ICE raids in Minneapolis",
-    "url": "https://www.404media.co/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/",
-    "summary": "404 Media has reported that Palantir is developing a tool for Immigration and Customs Enforcement (ICE) designed to assist in locating potential deportation targets. This tool reportedly populates a map with individuals, provides a dossier on each, and assigns a \"confidence score\" to their current addresses, allowing ICE to identify areas with a high concentration of people they might detain.\n\nThe findings are based on internal ICE materials obtained by 404 Media, public procurement records, and recent sworn testimony from an ICE official, establishing a clear link between Palantir's technology and ICE's operational activities. The tool allegedly receives address information from various sources, including the Department of Health and Human Services (HHS).\n\nThis news emerges amidst increased federal presence in Minneapolis, with Department of Homeland Security (DHS) head Kristi Noem dispatching additional agents following widespread protests. The article also mentions recent controversial events involving ICE, such as an ICE officer shooting and killing a U.S. citizen, Renee Nicole Good, and incidents during \"Operation Metro Surge\" where agents reportedly used pepper spray on students and surrounded rideshare drivers.",
-    "chinese_title": "协助ICE在明尼阿波利斯突袭的Palantir应用",
-    "chinese_summary": "404 Media 报道称，Palantir 正在为移民和海关执法局 (ICE) 开发一款工具，旨在协助定位潜在的遣返目标。据报道，该工具能够在一个地图上显示个体信息，为每个人提供一份档案，并为其当前地址分配一个“置信度评分”，从而让 ICE 识别出可能拘留的重点区域。\n\n这些发现基于 404 Media 获取的 ICE 内部材料、公开采购记录以及一名 ICE 官员最近的宣誓证词，确立了 Palantir 技术与 ICE 运营活动之间的明确关联。据称，该工具从包括卫生与公众服务部 (HHS) 在内的各种来源接收地址信息。\n\n这一消息传出之际，明尼阿波利斯市的联邦政府存在感增强，国土安全部 (DHS) 部长 Kristi Noem 在大规模抗议活动后派遣了额外特工。文章还提到了近期涉及 ICE 的争议事件，例如一名 ICE 官员开枪打死美国公民 Renee Nicole Good，以及在“都市突击行动”（Operation Metro Surge）中，特工据称对学生使用胡椒喷雾并包围网约车司机。"
-  },
-  {
-    "id": "46616488",
-    "title": "SparkFun Officially Dropping AdaFruit due to CoC Violation",
-    "url": "https://www.sparkfun.com/official-response",
-    "summary": "SparkFun officially announced on January 7, 2026, that it is ceasing transactions with Adafruit Industries due to direct violations of SparkFun's Code of Conduct. The decision, made after thoughtful consideration, was prompted by Adafruit's actions, which included sending offensive, antagonistic, and derogatory emails and material to SparkFun employees, former employees, and customers, as well as inappropriately involving a SparkFun customer in a private matter.\n\nSparkFun expressed that while the decision may be frustrating, it was a necessary business choice. They wished Adafruit well in future endeavors and emphasized their continued commitment to their strong reseller network for SparkFun-original products, Teensy, and other items.\n\nAn update on January 14, 2026, clarified that this official statement is SparkFun's sole public communication on the matter, and any suggestions of their involvement in external forum posts or comments are incorrect. SparkFun stated its focus is on moving forward and serving its customers and community.",
-    "chinese_title": "斯巴克坊因违反行为准则，正式终止与艾达果合作",
-    "chinese_summary": "SparkFun 于 2026 年 1 月 7 日正式宣布，将停止与 Adafruit Industries 的交易，原因在于 Adafruit Industries 直接违反了 SparkFun 的行为准则。这一决定是经过深思熟虑后作出的，源于 Adafruit 的行为，这些行为包括向 SparkFun 员工、前员工和客户发送具有冒犯性、敌意和贬损性的电子邮件及材料，以及不恰当地让一位 SparkFun 客户卷入私人事务。\n\nSparkFun 表示，尽管这一决定可能令人沮丧，但这是一个必要的商业选择。他们祝愿 Adafruit 在未来的发展中一切顺利，并强调将继续致力于维护其强大的经销商网络，以销售 SparkFun 原创产品、Teensy 和其他商品。\n\n2026 年 1 月 14 日的一份更新澄清，本份官方声明是 SparkFun 在此事件上唯一的公开沟通，任何关于他们参与外部论坛帖子或评论的说法都是不正确的。SparkFun 表示其重点是向前发展，并服务于其客户和社区。"
-  },
-  {
-    "id": "46614558",
-    "title": "I hate GitHub Actions with passion",
-    "url": "https://xlii.space/eng/i-hate-github-actions-with-passion/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I hate GitHub Actions with passion",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46608840",
-    "title": "We can't have nice things because of AI scrapers",
-    "url": "https://blog.metabrainz.org/2025/12/11/we-cant-have-nice-things-because-of-ai-scrapers/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "我们无法再拥有好东西了，因为AI爬虫。",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46609492",
-    "title": "When hardware goes end-of-life, companies need to open-source the software",
-    "url": "https://www.marcia.no/words/eol",
-    "summary": "The article argues that companies should be compelled to open-source software when their hardware products reach end-of-life (EOL), ideally enforced by bodies like the European Commission. The author contends that despite progress from the \"Right to Repair\" movement, perfectly functional hardware frequently becomes useless e-waste due to defunct or unsupported software.\n\nThe author provides personal examples, such as a \"smart\" weight scale whose app is no longer developed, rendering the device largely useless for data tracking despite intact hardware. Another instance highlighted is Spotify's $200 \"Car Thing,\" which became e-waste overnight when its support ended. This situation is deemed infuriating and wasteful.\n\nThe proposed solution isn't to open-source entire codebases, but rather for companies to publish basic GitHub repositories containing hardware specifications and connection protocols. This would empower the community to develop alternative applications, breathing new life into EOL hardware. The author notes that \"vibe-coding\" makes development more accessible, allowing even regular users to tinker. This initiative would reduce e-waste, extend product utility, and foster innovation, giving consumers better value and promoting sustainability.",
-    "chinese_title": "When hardware goes end-of-life, companies need to open-source the software",
-    "chinese_summary": "The article argues that companies should be compelled to open-source software when their hardware products reach end-of-life (EOL), ideally enforced by bodies like the European Commission. The author contends that despite progress from the \"Right to Repair\" movement, perfectly functional hardware frequently becomes useless e-waste due to defunct or unsupported software.\n\nThe author provides personal examples, such as a \"smart\" weight scale whose app is no longer developed, rendering the device largely useless for data tracking despite intact hardware. Another instance highlighted is Spotify's $200 \"Car Thing,\" which became e-waste overnight when its support ended. This situation is deemed infuriating and wasteful.\n\nThe proposed solution isn't to open-source entire codebases, but rather for companies to publish basic GitHub repositories containing hardware specifications and connection protocols. This would empower the community to develop alternative applications, breathing new life into EOL hardware. The author notes that \"vibe-coding\" makes development more accessible, allowing even regular users to tinker. This initiative would reduce e-waste, extend product utility, and foster innovation, giving consumers better value and promoting sustainability."
-  },
-  {
-    "id": "46609630",
-    "title": "A 40-line fix eliminated a 400x performance gap",
-    "url": "https://questdb.com/blog/jvm-current-thread-user-time/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "40行修复消除了400倍的性能差距",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "CreepyLink is a unique URL shortener that humorously aims to make links appear as suspicious as possible, contrasting with standard \"trustworthy\" links. Users can generate and copy these \"suspiciously shortened URLs.\" The platform includes a feature for reporting issues.\n\nA significant portion of the text addresses legal concerns, clarifying that CreepyLink is intended as a joke. The author states the service includes redirect pages to inform users of their destination, emphasizing it is not designed to \"weaken global cybersecurity hygiene\" or facilitate phishing. The author asserts the website adheres to all known laws and policies, and that valid concerns from previous legal threats have been addressed. They request direct communication via email for any future issues or concerns, rather than receiving legal threats.",
+    "chinese_title": "让你的链接尽可能可疑的URL缩短器",
+    "chinese_summary": "CreepyLink 是一个独特的网址缩短服务，它幽默地旨在让链接看起来尽可能可疑，与标准“可信”链接形成对比。用户可以生成并复制这些“可疑的缩短网址”。该平台包含一个问题报告功能。\n\n文本的很大一部分涉及法律问题，澄清 CreepyLink 旨在作为一个玩笑。作者声明该服务包含重定向页面，以告知用户其目的地，并强调它并非旨在“削弱全球网络安全防护能力”或助长网络钓鱼。作者断言该网站遵守所有已知法律和政策，并且之前法律威胁中提出的合理担忧已得到解决。他们请求未来任何问题或疑虑都通过电子邮件直接沟通，而不是收到法律威胁。"
   },
   {
     "id": "46633488",
     "title": "Apple is fighting for TSMC capacity as Nvidia takes center stage",
     "url": "https://www.culpium.com/p/exclusiveapple-is-fighting-for-tsmc",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Apple is fighting for TSMC capacity as Nvidia takes center stage",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46611823",
-    "title": "1000 Blank White Cards",
-    "url": "https://en.wikipedia.org/wiki/1000_Blank_White_Cards",
-    "summary": "生成摘要时出错",
-    "chinese_title": "一千张空白白卡",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46619030",
-    "title": "So, you’ve hit an age gate. What now?",
-    "url": "https://www.eff.org/deeplinks/2026/01/so-youve-hit-age-gate-what-now",
-    "summary": "生成摘要时出错",
-    "chinese_title": "So, you’ve hit an age gate. What now?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46617360",
-    "title": "Find a pub that needs you",
-    "url": "https://www.ismypubfucked.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Find a pub that needs you",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46605553",
-    "title": "Signal leaders warn agentic AI is an insecure, unreliable surveillance risk",
-    "url": "https://coywolf.com/news/productivity/signal-president-and-vp-warn-agentic-ai-is-insecure-unreliable-and-a-surveillance-nightmare/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Signal leaders warn agentic AI is an insecure, unreliable surveillance risk",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46611507",
-    "title": "ASCII Clouds",
-    "url": "https://caidan.dev/portfolio/ascii_clouds/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ASCII Clouds",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "Apple, long TSMC's largest client, is now actively fighting for chip production capacity, as Nvidia increasingly takes center stage. The iPhone maker faces significant price hikes and diminished priority, with Nvidia likely surpassing it as TSMC's top customer in recent quarters, a trend expected to continue into 2026.\n\nThis shift is driven by the booming AI industry, which fuels massive demand for high-performance computing (HPC) chips from companies like Nvidia and AMD. In contrast, the smartphone market, Apple's primary segment, has plateaued. TSMC's HPC revenue soared by 48% last year, while smartphone revenue grew by only 11%.\n\nTSMC is leveraging its increased pricing power, achieving record gross margins and forecasting substantial revenue growth. It plans record capital expenditure ($52-56 billion in 2026) to develop advanced nodes like N2 and A16, with A16 specifically optimized for HPC, benefiting Nvidia.\n\nDespite the near-term capacity crunch, Apple remains crucial due to its diverse chip catalog and broad manufacturing footprint across many TSMC fabs, offering stability. The A14 node, expected around 2028, is designed for both mobile and HPC, potentially rebalancing capacity towards Apple.\n\nTSMC defends its cautious capacity expansion, highlighting the two-to-three-year build time for new fabs and the immense financial risk if demand later declines. Unlike fabless clients like Nvidia, TSMC bears the heavy capital and depreciation costs, making prudent investment essential. Jensen Huang (Nvidia) now wields more power than Tim Cook (Apple) in securing TSMC's leading-edge wafer supply.",
+    "chinese_title": "苹果争抢台积电产能，英伟达抢尽风头。",
+    "chinese_summary": "长期以来作为台积电最大客户的苹果，如今正积极争夺芯片产能，因为英伟达日益占据主导地位。这家iPhone制造商面临显著的价格上涨和优先级降低，英伟达在最近几个季度很可能已超越它成为台积电的第一大客户，这一趋势预计将持续到2026年。\n\n这一转变的驱动力是蓬勃发展的AI产业，这推动了英伟达和AMD等公司对高性能计算（HPC）芯片的巨大需求。相比之下，作为苹果主要业务领域的智能手机市场已陷入停滞。台积电去年的HPC收入飙升了48%，而智能手机收入仅增长了11%。\n\n台积电正利用其日益增长的定价权，实现了创纪录的毛利率，并预测收入将大幅增长。它计划在2026年投入创纪录的资本支出（520亿至560亿美元），用于开发N2和A16等先进工艺节点，其中A16专门为HPC优化，将使英伟达受益。\n\n尽管近期产能吃紧，苹果因其多样化的芯片产品组合和在台积电众多晶圆厂的广泛制造足迹而依然至关重要，这提供了稳定性。预计在2028年左右推出的A14节点，专为移动和HPC设计，有可能使产能重新向苹果倾斜。\n\n台积电为其谨慎的产能扩张辩护，强调新晶圆厂建设需要两到三年时间，以及如果未来需求下降将面临巨大的财务风险。与英伟达等无晶圆厂客户不同，台积电承担着沉重的资本和折旧成本，这使得审慎投资至关重要。黄仁勋（英伟达）在争取台积电尖端晶圆供应方面，如今比蒂姆·库克（苹果）拥有更大的权力。"
   },
   {
     "id": "46630369",
-    "title": "Photos Capture the Breathtaking Scale of China's Wind and Solar Buildout",
+    "title": "Photos capture the breathtaking scale of China's wind and solar buildout",
     "url": "https://e360.yale.edu/digest/china-renewable-photo-essay",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Photos Capture the Breathtaking Scale of China's Wind and Solar Buildout",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "The article highlights the immense scale of China's wind and solar energy expansion, responsible for over half of all global wind and solar installations last year. In May alone, China added enough renewable energy to power Poland, installing solar panels at a staggering rate of 100 per second.\n\nThis rapid buildout spans the entire country, from rooftop solar in crowded eastern cities to colossal wind farms across remote western deserts. Photographer Weimin Chu has spent three years using drones to capture this transformation from an aerial perspective, revealing the geometric patterns of the installations in relation to the natural landscape—mountains, deserts, and sea. His work, which draws from traditional Chinese ink paintings, was featured in an award-winning Greenpeace exhibition.\n\nChu realized the significance of documenting these renewable energy sites after repeatedly encountering them during his landscape photography, identifying it as \"the story of our time.\" The accompanying photos showcase diverse installations, from wind farms near scenic areas and wetlands to solar farms on tidal flats, in deserts with grazing sheep, and on city rooftops, illustrating the unprecedented scope of China's clean energy transition.",
+    "chinese_title": "照片捕捉中国风光建设的惊人规模。",
+    "chinese_summary": "这篇文章强调了中国风能和太阳能扩张的巨大规模，去年全球新增风能和太阳能装机容量中，超过一半来自中国。仅在去年五月，中国新增的可再生能源发电量就足以满足波兰全国的用电需求，其太阳能电池板的安装速度达到惊人的每秒100块。\n\n这种迅猛发展遍及全国，从拥挤的东部城市的屋顶太阳能板，到偏远西部沙漠的巨型风力发电场。摄影师褚卫民耗时三年，利用无人机从空中视角捕捉了这一转型，揭示了这些设施与山脉、沙漠和海洋等自然景观之间形成的几何图案。他的作品汲取了中国传统水墨画的灵感，并在一个获奖的绿色和平组织展览中展出。\n\n褚卫民在进行风光摄影时，多次遇到这些可再生能源设施，从而意识到记录它们的重要性，他将其定义为“我们时代的故事”。随附的照片展示了各种各样的设施，从风景区和湿地附近的风力发电场，到滩涂上、有羊群放牧的沙漠中以及城市屋顶上的太阳能发电场，生动地说明了中国清洁能源转型的空前规模。"
+  },
+  {
+    "id": "46633378",
+    "title": "The Palantir app helping ICE raids in Minneapolis",
+    "url": "https://www.404media.co/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/",
+    "summary": "404 Media has revealed details about a Palantir tool designed for Immigration and Customs Enforcement (ICE) that aids in identifying and locating potential deportation targets. The tool reportedly populates a map with these targets, provides individual dossiers, and assigns a \"confidence score\" to their current addresses. Its purpose is to help ICE locate areas where many individuals it might detain could be based.\n\nThese findings stem from internal ICE materials, public procurement records, and recent sworn testimony from an ICE official, establishing a clear link between Palantir’s technology and ICE’s operational activities. The tool gathers people's address information from various sources, including the Department of Health and Human Services (HHS).\n\nThis revelation coincides with increased federal agency presence in Minneapolis, as Department of Homeland Security (DHS) head Kristi Noem is sending hundreds more federal agents amid widespread protests. Recent incidents include an ICE officer shooting and killing 37-year-old U.S. citizen Renee Nicole Good. Furthermore, during \"Operation Metro Surge,\" labeled the \"largest immigration operation ever,\" immigration agents have reportedly surrounded rideshare drivers and used pepper spray on high school students.",
+    "chinese_title": "Palantir 应用协助 ICE 在明尼阿波利斯突袭",
+    "chinese_summary": "404 Media 披露了 Palantir 为美国移民和海关执法局 (ICE) 开发的一款工具的细节，该工具旨在协助识别和定位潜在的驱逐目标。据报道，该工具能够在地图上标示出这些目标，提供个人档案，并为他们的当前地址分配一个“置信度评分”。其目的是帮助 ICE 确定可能拘留的许多人所居住的区域。\n\n这些发现来源于 ICE 内部材料、公共采购记录以及一名 ICE 官员最近的宣誓证词，确立了 Palantir 技术与 ICE 行动活动之间的明确联系。该工具从包括美国卫生与公众服务部 (HHS) 在内的多个来源收集人们的地址信息。\n\n这一披露正值联邦机构在明尼阿波利斯增加部署，国土安全部 (DHS) 负责人 Kristi Noem 在大规模抗议活动中派遣了数百名联邦探员。最近的事件包括一名 ICE 官员射杀了一名 37 岁的美国公民 Renee Nicole Good。此外，在被称为“有史以来最大规模移民行动”的“都市突击行动”（Operation Metro Surge）中，据报道移民探员包围了网约车司机，并对高中生使用了胡椒喷雾。"
+  },
+  {
+    "id": "46628329",
+    "title": "Pocket TTS: A high quality TTS that gives your CPU a voice",
+    "url": "https://kyutai.org/blog/2026-01-13-pocket-tts",
+    "summary": "The provided text only includes the title and date of a blog post: \"Pocket TTS: A high quality TTS that gives your CPU a voice 13 January 2026.\"\n\nIt does not contain the actual article content. Therefore, I cannot provide a summary of the main points or key information, as there is no body text to analyze.\n\nTo provide a summary, please provide the full content of the blog post.",
+    "chinese_title": "Pocket TTS：高质量文本转语音，让你的CPU拥有声音",
+    "chinese_summary": "所提供的文本仅包含一篇博客文章的标题和日期：“Pocket TTS: 一款让你的CPU拥有声音的高质量TTS 2026年1月13日。”\n\n它不包含实际的文章内容。因此，由于没有正文可供分析，我无法提供主要观点或关键信息的摘要。\n\n要提供摘要，请提供博客文章的完整内容。"
+  },
+  {
+    "id": "46638013",
+    "title": "Briar keeps Iran connected via Bluetooth and Wi-Fi when the internet goes dark",
+    "url": "https://briarproject.org/manual/fa/",
+    "summary": "Briar is a decentralized messaging application designed for secure communication, especially valuable in censored environments or when internet access is unavailable. Unlike traditional messengers, Briar operates without central servers, syncing messages directly between user devices. It can connect via Bluetooth or Wi-Fi when the internet is down, ensuring information flow during crises. When the internet is active, Briar utilizes the Tor network, including \"bridges,\" to protect user privacy and bypass censorship.\n\nThe app is available for Android devices via Google Play, F-Droid, or direct download. Account creation involves choosing an alias and a strong password; accounts are stored locally on the device and cannot be recovered if deleted or forgotten.\n\nContacts can be added remotely by sharing a unique `briar://` link or securely in person by scanning QR codes. All private messages are end-to-end encrypted.\n\nBriar offers various communication tools:\n*   **Private messaging:** Encrypted one-on-one chats.\n*   **Introducing contacts:** Allows users to connect their contacts.\n*   **Private Groups:** Creator-managed group chats with threaded messages.\n*   **Forums:** Public conversations where any member can invite others.\n*   **Blogs:** Personal blogs automatically shared with contacts, supporting reblogging and integration of RSS feeds, which are downloaded via Tor for privacy.\n\nSettings allow customization of themes, control over internet connectivity (including the use of Tor with or without bridges, mobile data usage, and charging-only connections), and screen lock features with inactivity timeouts for enhanced privacy. Deleting a contact removes them from your list without notification.",
+    "chinese_title": "当互联网中断时，Briar 通过蓝牙和Wi-Fi 保持伊朗的连接。",
+    "chinese_summary": "Briar是一款去中心化消息应用程序，专为安全通信设计，在审查环境或互联网无法访问时尤其有价值。与传统即时通讯工具不同，Briar无需中央服务器运行，直接在用户设备之间同步消息。当互联网中断时，它可以通过蓝牙或Wi-Fi连接，确保危机期间的信息流通。当互联网可用时，Briar利用Tor网络，包括“桥接器”，来保护用户隐私和绕过审查。\n\n该应用可通过Google Play、F-Droid或直接下载安装到Android设备。创建账户需要选择一个别名和设置一个强密码；账户信息本地存储在设备上，如果删除或忘记，则无法恢复。\n\n可以通过分享独特的`briar://`链接远程添加联系人，或者通过扫描二维码在面对面安全添加。所有私密消息都经过端到端加密。\n\nBriar提供多种通信工具：\n*   **私密消息：** 加密的点对点聊天。\n*   **介绍联系人：** 允许用户将其联系人相互连接。\n*   **私人群组：** 由创建者管理的群聊，支持线程消息。\n*   **论坛：** 公开对话，任何成员都可以邀请他人加入。\n*   **博客：** 自动与联系人分享的个人博客，支持转发和集成RSS订阅，RSS订阅通过Tor下载以保护隐私。\n\n设置允许自定义主题，控制互联网连接（包括使用Tor网络，无论是否带桥接器；移动数据使用；以及仅在充电时连接），以及具有不活动超时功能的屏幕锁定，以增强隐私。删除联系人会将其从列表中移除，但不会发送通知。"
   },
   {
     "id": "46632023",
@@ -144,27 +64,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46614037",
-    "title": "I’m leaving Redis for SolidQueue",
-    "url": "https://www.simplethread.com/redis-solidqueue/",
+    "id": "46646645",
+    "title": "Cloudflare acquires Astro",
+    "url": "https://astro.build/blog/joining-cloudflare/",
     "summary": "生成摘要时出错",
-    "chinese_title": "I’m leaving Redis for SolidQueue",
+    "chinese_title": "Cloudflare acquires Astro",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46605854",
-    "title": "No management needed: anti-patterns in early-stage engineering teams",
-    "url": "https://www.ablg.io/blog/no-management-needed",
+    "id": "46637127",
+    "title": "‘ELITE’: The Palantir app ICE uses to find neighborhoods to raid",
+    "url": "https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/",
     "summary": "生成摘要时出错",
-    "chinese_title": "No management needed: anti-patterns in early-stage engineering teams",
+    "chinese_title": "‘ELITE’: The Palantir app ICE uses to find neighborhoods to raid",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46618027",
-    "title": "GitHub should charge everyone $1 more per month to fund open source",
-    "url": "https://blog.greg.technology/2025/11/27/github-should-charge-1-dollar-more-per-month.html",
+    "id": "46642560",
+    "title": "OpenBSD-current now runs as guest under Apple Hypervisor",
+    "url": "https://www.undeadly.org/cgi?action=article;sid=20260115203619",
     "summary": "生成摘要时出错",
-    "chinese_title": "GitHub should charge everyone $1 more per month to fund open source",
+    "chinese_title": "OpenBSD-current now runs as guest under Apple Hypervisor",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46645615",
+    "title": "Just the Browser",
+    "url": "https://justthebrowser.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Just the Browser",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -176,19 +104,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46617668",
-    "title": "Roam 50GB is now Roam 100GB",
-    "url": "https://starlink.com/support/article/58c9c8b7-474e-246f-7e3c-06db3221d34d",
+    "id": "46641284",
+    "title": "List of individual trees",
+    "url": "https://en.wikipedia.org/wiki/List_of_individual_trees",
     "summary": "生成摘要时出错",
-    "chinese_title": "Roam 50GB is now Roam 100GB",
+    "chinese_title": "List of individual trees",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46611667",
-    "title": "The Gleam Programming Language",
-    "url": "https://gleam.run/",
+    "id": "46648778",
+    "title": "Canada slashes 100% tariffs on Chinese EVs to 6%",
+    "url": "https://electrek.co/2026/01/16/canada-breaks-with-us-slashes-100-tariffs-chinese-evs/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Gleam Programming Language",
+    "chinese_title": "Canada slashes 100% tariffs on Chinese EVs to 6%",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46638629",
+    "title": "Linux boxes via SSH: suspended when disconected",
+    "url": "https://shellbox.dev/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Linux boxes via SSH: suspended when disconected",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46649142",
+    "title": "STFU",
+    "url": "https://github.com/Pankajtanwarbanna/stfu",
+    "summary": "生成摘要时出错",
+    "chinese_title": "STFU",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -200,11 +144,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46609591",
-    "title": "The insecure evangelism of LLM maximalists",
-    "url": "https://lewiscampbell.tech/blog/260114.html",
+    "id": "46642920",
+    "title": "Boeing knew of flaw in part linked to UPS plane crash, NTSB report says",
+    "url": "https://www.bbc.com/news/articles/cly56w0p9e1o",
     "summary": "生成摘要时出错",
-    "chinese_title": "The insecure evangelism of LLM maximalists",
+    "chinese_title": "Boeing knew of flaw in part linked to UPS plane crash, NTSB report says",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -224,11 +168,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46607681",
-    "title": "Games Workshop bans staff from using AI",
-    "url": "https://www.ign.com/articles/warhammer-maker-games-workshop-bans-its-staff-from-using-ai-in-its-content-or-designs-says-none-of-its-senior-managers-are-currently-excited-about-the-tech",
+    "id": "46640366",
+    "title": "Why senior engineers let bad projects fail",
+    "url": "https://lalitm.com/post/why-senior-engineers-let-bad-projects-fail/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Games Workshop bans staff from using AI",
+    "chinese_title": "Why senior engineers let bad projects fail",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -240,83 +184,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46605587",
-    "title": "Let's be honest, Generative AI isn't going all that well",
-    "url": "https://garymarcus.substack.com/p/lets-be-honest-generative-ai-isnt",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Let's be honest, Generative AI isn't going all that well",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46620835",
-    "title": "Verizon outages reported across U.S.",
-    "url": "https://www.firstcoastnews.com/article/news/nation-world/verizon-outage-reported/507-ef3cb3d0-f595-432f-9f84-d1690a5085a7",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Verizon outages reported across U.S.",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "46624658",
     "title": "Crafting Interpreters",
     "url": "https://craftinginterpreters.com/",
     "summary": "生成摘要时出错",
     "chinese_title": "Crafting Interpreters",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46611348",
-    "title": "Show HN: OSS AI agent that indexes and searches the Epstein files",
-    "url": "https://epstein.trynia.ai/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: OSS AI agent that indexes and searches the Epstein files",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46626410",
-    "title": "Furiosa: 3.5x efficiency over H100s",
-    "url": "https://furiosa.ai/blog/introducing-rngd-server-efficient-ai-inference-at-data-center-scale",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Furiosa: 3.5x efficiency over H100s",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46618809",
-    "title": "US freezes visas for 75 nations",
-    "url": "https://english.mathrubhumi.com/news/world/us-visa-ban-public-charge-bjbpzu02",
-    "summary": "生成摘要时出错",
-    "chinese_title": "US freezes visas for 75 nations",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46624352",
-    "title": "The State of OpenSSL for pyca/cryptography",
-    "url": "https://cryptography.io/en/latest/statements/state-of-openssl/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The State of OpenSSL for pyca/cryptography",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46618272",
-    "title": "How have prices changed in a year? NPR checked 114 items at Walmart",
-    "url": "https://www.npr.org/2026/01/14/nx-s1-5638908/walmart-prices-inflation-affordability-shrinkflation",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How have prices changed in a year? NPR checked 114 items at Walmart",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46628397",
-    "title": "Handy – Free open source speech-to-text app",
-    "url": "https://github.com/cjpais/Handy",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Handy – Free open source speech-to-text app",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46617149",
-    "title": "Government drops plans for mandatory digital ID to work in UK",
-    "url": "https://www.bbc.com/news/articles/c3385zrrx73o",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Government drops plans for mandatory digital ID to work in UK",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -328,19 +200,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46611375",
-    "title": "Minor says ICE took his iPhone, later found in used-electronics vending machine",
-    "url": "https://www.propublica.org/article/videos-ice-dhs-immigration-agents-using-chokeholds-citizens",
+    "id": "46628397",
+    "title": "Handy – Free open source speech-to-text app",
+    "url": "https://github.com/cjpais/Handy",
     "summary": "生成摘要时出错",
-    "chinese_title": "Minor says ICE took his iPhone, later found in used-electronics vending machine",
+    "chinese_title": "Handy – Free open source speech-to-text app",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46622463",
-    "title": "Wind power slashed 4.6B euros off electricity bills in Spain last year",
-    "url": "https://www.surinenglish.com/spain/wind-power-slashes-billion-euros-off-electricity-bills-20251217082020-nt.html",
+    "id": "46620835",
+    "title": "Verizon outages reported across U.S.",
+    "url": "https://www.firstcoastnews.com/article/news/nation-world/verizon-outage-reported/507-ef3cb3d0-f595-432f-9f84-d1690a5085a7",
     "summary": "生成摘要时出错",
-    "chinese_title": "Wind power slashed 4.6B euros off electricity bills in Spain last year",
+    "chinese_title": "Verizon outages reported across U.S.",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46626410",
+    "title": "Furiosa: 3.5x efficiency over H100s",
+    "url": "https://furiosa.ai/blog/introducing-rngd-server-efficient-ai-inference-at-data-center-scale",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Furiosa: 3.5x efficiency over H100s",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46624352",
+    "title": "The State of OpenSSL for pyca/cryptography",
+    "url": "https://cryptography.io/en/latest/statements/state-of-openssl/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The State of OpenSSL for pyca/cryptography",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46646263",
+    "title": "Michelangelo's first painting, created when he was 12 or 13",
+    "url": "https://www.openculture.com/2026/01/discover-michelangelos-first-painting.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Michelangelo's first painting, created when he was 12 or 13",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46647491",
+    "title": "6-Day and IP Address Certificates Are Generally Available",
+    "url": "https://letsencrypt.org/2026/01/15/6day-and-ip-general-availability",
+    "summary": "生成摘要时出错",
+    "chinese_title": "6-Day and IP Address Certificates Are Generally Available",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46637328",
+    "title": "Data is the only moat",
+    "url": "https://frontierai.substack.com/p/data-is-your-only-moat",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Data is the only moat",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -352,11 +264,43 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46615167",
-    "title": "Servo 2025 Stats",
-    "url": "https://blogs.igalia.com/mrego/servo-2025-stats/",
+    "id": "46622463",
+    "title": "Wind power slashed 4.6B euros off electricity bills in Spain last year",
+    "url": "https://www.surinenglish.com/spain/wind-power-slashes-billion-euros-off-electricity-bills-20251217082020-nt.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Servo 2025 Stats",
+    "chinese_title": "Wind power slashed 4.6B euros off electricity bills in Spain last year",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46637165",
+    "title": "JuiceFS is a distributed POSIX file system built on top of Redis and S3",
+    "url": "https://github.com/juicedata/juicefs",
+    "summary": "生成摘要时出错",
+    "chinese_title": "JuiceFS is a distributed POSIX file system built on top of Redis and S3",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46636387",
+    "title": "CVEs affecting the Svelte ecosystem",
+    "url": "https://svelte.dev/blog/cves-affecting-the-svelte-ecosystem",
+    "summary": "生成摘要时出错",
+    "chinese_title": "CVEs affecting the Svelte ecosystem",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46644181",
+    "title": "Interactive eBPF",
+    "url": "https://ebpf.party/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Interactive eBPF",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46641042",
+    "title": "Tldraw pauses external contributions due to AI slop",
+    "url": "https://github.com/tldraw/tldraw/issues/7695",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tldraw pauses external contributions due to AI slop",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -368,6 +312,14 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "46637399",
+    "title": "UK offshore wind prices come in 40% cheaper than gas in record auction",
+    "url": "https://electrek.co/2026/01/14/uk-offshore-wind-record-auction/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "UK offshore wind prices come in 40% cheaper than gas in record auction",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "46623761",
     "title": "Sun Position Calculator",
     "url": "https://drajmarsh.bitbucket.io/earthsun.html",
@@ -376,187 +328,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46621668",
-    "title": "US to suspend immigrant visa processing for 75 nations, State Department says",
-    "url": "https://www.reuters.com/world/us/us-suspend-visa-processing-75-nations-next-week-fox-news-reports-2026-01-14/",
+    "id": "46634450",
+    "title": "Design and Implementation of Sprites",
+    "url": "https://fly.io/blog/design-and-implementation/",
     "summary": "生成摘要时出错",
-    "chinese_title": "US to suspend immigrant visa processing for 75 nations, State Department says",
+    "chinese_title": "Design and Implementation of Sprites",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46618544",
-    "title": "4k tons of potatoes to be given away for free in Berlin",
-    "url": "https://www.the-berliner.com/english-news-berlin/4000-tons-of-potatoes-to-be-given-away-for-free/",
+    "id": "46633574",
+    "title": "Found: Medieval Cargo Ship – Largest Vessel of Its Kind Ever",
+    "url": "https://www.smithsonianmag.com/smart-news/archaeologists-say-theyve-unearthed-a-massive-medieval-cargo-ship-thats-the-largest-vessel-of-its-kind-ever-found-180987984/",
     "summary": "生成摘要时出错",
-    "chinese_title": "4k tons of potatoes to be given away for free in Berlin",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46605950",
-    "title": "A university got itself banned from the Linux kernel (2021)",
-    "url": "https://www.theverge.com/2021/4/30/22410164/linux-kernel-university-of-minnesota-banned-open-source",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A university got itself banned from the Linux kernel (2021)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46615374",
-    "title": "Why NUKEMAP isn't on Google Maps anymore (2019)",
-    "url": "https://blog.nuclearsecrecy.com/2019/12/13/why-nukemap-isnt-on-google-maps-anymore/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why NUKEMAP isn't on Google Maps anymore (2019)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46614688",
-    "title": "Show HN: Tiny FOSS Compass and Navigation App (<2MB)",
-    "url": "https://github.com/CompassMB/MBCompass",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Tiny FOSS Compass and Navigation App (<2MB)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46605675",
-    "title": "Show HN: Nogic – VS Code extension that visualizes your codebase as a graph",
-    "url": "https://marketplace.visualstudio.com/items?itemName=Nogic.nogic",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Nogic – VS Code extension that visualizes your codebase as a graph",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46616569",
-    "title": "Never-before-seen Linux malware is \"more advanced than typical\"",
-    "url": "https://arstechnica.com/security/2026/01/never-before-seen-linux-malware-is-far-more-advanced-than-typical/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Never-before-seen Linux malware is \"more advanced than typical\"",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46611550",
-    "title": "Stop using natural language interfaces",
-    "url": "https://tidepool.leaflet.pub/3mcbegnuf2k2i",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Stop using natural language interfaces",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46617808",
-    "title": "Epic fined €1.1M over manipulating children through in app purchases",
-    "url": "https://nos.nl/artikel/2598157-maker-fortnite-vangt-bot-bij-rechter-moet-boete-betalen-voor-manipuleren-kinderen",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Epic fined €1.1M over manipulating children through in app purchases",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46614285",
-    "title": "System Programming in Linux: A Hands-On Introduction \"Demo\" Programs",
-    "url": "https://github.com/stewartweiss/intro-linux-sys-prog",
-    "summary": "生成摘要时出错",
-    "chinese_title": "System Programming in Linux: A Hands-On Introduction \"Demo\" Programs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46617108",
-    "title": "Denmark sends military reinforcements to Greenland",
-    "url": "https://www.dr.dk/nyheder/indland/groenland/efter-pres-fra-usa-danmark-er-nu-begyndt-sende-militaere-forstaerkninger-til-groenland",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Denmark sends military reinforcements to Greenland",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46616496",
-    "title": "Edge of Emulation: Game Boy Sewing Machines (2020)",
-    "url": "https://shonumi.github.io/articles/art22.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Edge of Emulation: Game Boy Sewing Machines (2020)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46616481",
-    "title": "Show HN: Webctl – Browser automation for agents based on CLI instead of MCP",
-    "url": "https://github.com/cosinusalpha/webctl",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Webctl – Browser automation for agents based on CLI instead of MCP",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46633429",
-    "title": "OBS Studio 32.1.0 Beta 1 available",
-    "url": "https://github.com/obsproject/obs-studio/releases/tag/32.1.0-beta1",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OBS Studio 32.1.0 Beta 1 available",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46620673",
-    "title": "Native ZFS VDEV for Object Storage (OpenZFS Summit)",
-    "url": "https://www.zettalane.com/blog/openzfs-summit-2025-mayanas-objbacker.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Native ZFS VDEV for Object Storage (OpenZFS Summit)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46617744",
-    "title": "How much of my observability data is waste?",
-    "url": "https://usetero.com/blog/the-question-your-observability-vendor-wont-answer",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How much of my observability data is waste?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46609279",
-    "title": "Why we don’t use AI",
-    "url": "https://yarnspinner.dev/blog/why-we-dont-use-ai/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why we don’t use AI",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46626210",
-    "title": "New Safari developer tools provide insight into CSS Grid Lanes",
-    "url": "https://webkit.org/blog/17746/new-safari-developer-tools-provide-insight-into-css-grid-lanes/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "New Safari developer tools provide insight into CSS Grid Lanes",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46637127",
-    "title": "'Elite': The Palantir App ICE Uses to Find Neighborhoods to Raid",
-    "url": "https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "'Elite': The Palantir App ICE Uses to Find Neighborhoods to Raid",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46613997",
-    "title": "LLMs are a 400-year-long confidence trick",
-    "url": "https://tomrenner.com/posts/400-year-confidence-trick/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "LLMs are a 400-year-long confidence trick",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46619614",
-    "title": "Show HN: Sparrow-1 – Audio-native model for human-level turn-taking without ASR",
-    "url": "https://www.tavus.io/post/sparrow-1-human-level-conversational-timing-in-real-time-voice",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Sparrow-1 – Audio-native model for human-level turn-taking without ASR",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46632004",
-    "title": "French Court Orders Popular VPNs to Block More Pirate Sites, Despite Opposition",
-    "url": "https://torrentfreak.com/french-court-orders-popular-vpns-to-block-more-pirate-sites-despite-opposition/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "French Court Orders Popular VPNs to Block More Pirate Sites, Despite Opposition",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46606633",
-    "title": "Instagram AI Influencers Are Defaming Celebrities with Sex Scandals",
-    "url": "https://www.404media.co/instagram-ai-influencers-are-defaming-celebrities-with-sex-scandals/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Instagram AI Influencers Are Defaming Celebrities with Sex Scandals",
+    "chinese_title": "Found: Medieval Cargo Ship – Largest Vessel of Its Kind Ever",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -568,11 +352,51 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46631728",
-    "title": "The 500k-ton typo: Why data center copper math doesn't add up",
-    "url": "https://investinglive.com/news/the-500000-ton-typo-why-data-center-copper-math-doesnt-add-up-20260113/",
+    "id": "46644962",
+    "title": "On Being a Human Being in the Time of Collapse (2022) [pdf]",
+    "url": "https://web.cs.ucdavis.edu/~rogaway/papers/crisis/crisis.pdf",
     "summary": "生成摘要时出错",
-    "chinese_title": "The 500k-ton typo: Why data center copper math doesn't add up",
+    "chinese_title": "On Being a Human Being in the Time of Collapse (2022) [pdf]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46621668",
+    "title": "US to suspend immigrant visa processing for 75 nations, State Department says",
+    "url": "https://www.reuters.com/world/us/us-suspend-visa-processing-75-nations-next-week-fox-news-reports-2026-01-14/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US to suspend immigrant visa processing for 75 nations, State Department says",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46633429",
+    "title": "OBS Studio 32.1.0 Beta 1 available",
+    "url": "https://github.com/obsproject/obs-studio/releases/tag/32.1.0-beta1",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OBS Studio 32.1.0 Beta 1 available",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46646970",
+    "title": "America could have $4 lunch bowls like Japan but for zoning laws",
+    "url": "https://abio.substack.com/p/america-could-have-4-lunch-bowls",
+    "summary": "生成摘要时出错",
+    "chinese_title": "America could have $4 lunch bowls like Japan but for zoning laws",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46636093",
+    "title": "Supply Chain Vuln Compromised Core AWS GitHub Repos & Threatened the AWS Console",
+    "url": "https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Supply Chain Vuln Compromised Core AWS GitHub Repos & Threatened the AWS Console",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46641348",
+    "title": "My Gripes with Prolog",
+    "url": "https://buttondown.com/hillelwayne/archive/my-gripes-with-prolog/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "My Gripes with Prolog",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -584,11 +408,75 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "46646777",
+    "title": "Cursor's latest \"browser experiment\" implied success without evidence",
+    "url": "https://embedding-shapes.github.io/cursor-implied-success-without-evidence/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cursor's latest \"browser experiment\" implied success without evidence",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46632004",
+    "title": "French Court Orders Popular VPNs to Block More Pirate Sites, Despite Opposition",
+    "url": "https://torrentfreak.com/french-court-orders-popular-vpns-to-block-more-pirate-sites-despite-opposition/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "French Court Orders Popular VPNs to Block More Pirate Sites, Despite Opposition",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46631728",
+    "title": "The 500k-ton typo: Why data center copper math doesn't add up",
+    "url": "https://investinglive.com/news/the-500000-ton-typo-why-data-center-copper-math-doesnt-add-up-20260113/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The 500k-ton typo: Why data center copper math doesn't add up",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46626210",
+    "title": "New Safari developer tools provide insight into CSS Grid Lanes",
+    "url": "https://webkit.org/blog/17746/new-safari-developer-tools-provide-insight-into-css-grid-lanes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "New Safari developer tools provide insight into CSS Grid Lanes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46641239",
+    "title": "All 23-Bit Still Lifes Are Glider Constructible",
+    "url": "https://mvr.github.io/posts/xs23.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "All 23-Bit Still Lifes Are Glider Constructible",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "46635550",
     "title": "GitHub Incident",
     "url": "https://www.githubstatus.com/incidents/q987xpbqjbpl",
     "summary": "生成摘要时出错",
     "chinese_title": "GitHub Incident",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46620673",
+    "title": "Native ZFS VDEV for Object Storage (OpenZFS Summit)",
+    "url": "https://www.zettalane.com/blog/openzfs-summit-2025-mayanas-objbacker.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Native ZFS VDEV for Object Storage (OpenZFS Summit)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46624563",
+    "title": "Training my smartwatch to track intelligence",
+    "url": "https://dmvaldman.github.io/rooklift/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Training my smartwatch to track intelligence",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46639401",
+    "title": "European troops arrive in Greenland to boost the Arctic island's security",
+    "url": "https://www.npr.org/2026/01/15/g-s1-106113/european-troops-arrive-greenland",
+    "summary": "生成摘要时出错",
+    "chinese_title": "European troops arrive in Greenland to boost the Arctic island's security",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -600,19 +488,51 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46612711",
-    "title": "The <Geolocation> HTML Element",
-    "url": "https://developer.chrome.com/blog/geolocation-html-element",
+    "id": "46645176",
+    "title": "Why DuckDB is my first choice for data processing",
+    "url": "https://www.robinlinacre.com/recommend_duckdb/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The <Geolocation> HTML Element",
+    "chinese_title": "Why DuckDB is my first choice for data processing",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46622659",
-    "title": "GOG's new owner can't stand Windows either: 'It's such poor-quality software '",
-    "url": "https://www.pcgamer.com/software/windows/gogs-new-owner-cant-stand-windows-either-its-such-poor-quality-software-i-cant-believe-it/",
+    "id": "46636445",
+    "title": "Denmark's struggle to break up with Silicon Valley",
+    "url": "https://www.politico.eu/article/denmark-declared-war-against-big-tech-digital-sovereignty/",
     "summary": "生成摘要时出错",
-    "chinese_title": "GOG's new owner can't stand Windows either: 'It's such poor-quality software '",
+    "chinese_title": "Denmark's struggle to break up with Silicon Valley",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46643099",
+    "title": "San Francisco to offer free childcare to people making up to $230k",
+    "url": "https://www.theguardian.com/us-news/2026/jan/15/san-francisco-childcare-families",
+    "summary": "生成摘要时出错",
+    "chinese_title": "San Francisco to offer free childcare to people making up to $230k",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46634263",
+    "title": "European military personnel arrive in Greenland as Trump says US needs island",
+    "url": "https://www.bbc.com/news/articles/cd0ydjvxpejo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "European military personnel arrive in Greenland as Trump says US needs island",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46639320",
+    "title": "One Guy Crowdsourced More Than 500 Dashcams for Minneapolis to Film ICE",
+    "url": "https://www.404media.co/how-one-guy-crowdsourced-more-than-500-dashcams-for-minneapolis-to-film-ice/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "One Guy Crowdsourced More Than 500 Dashcams for Minneapolis to Film ICE",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46642414",
+    "title": "SETI Home Flags 100 Signals After Sorting 12B Others",
+    "url": "https://news.berkeley.edu/2026/01/12/for-21-years-enthusiasts-used-their-home-computers-to-search-for-et-uc-berkeley-scientists-are-homing-in-on-100-signals-they-found/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "SETI Home Flags 100 Signals After Sorting 12B Others",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -632,35 +552,51 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46606902",
-    "title": "Open sourcing Dicer: Databricks's auto-sharder",
-    "url": "https://www.databricks.com/blog/open-sourcing-dicer-databricks-auto-sharder",
+    "id": "46622659",
+    "title": "GOG's new owner can't stand Windows either: 'It's such poor-quality software '",
+    "url": "https://www.pcgamer.com/software/windows/gogs-new-owner-cant-stand-windows-either-its-such-poor-quality-software-i-cant-believe-it/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Open sourcing Dicer: Databricks's auto-sharder",
+    "chinese_title": "GOG's new owner can't stand Windows either: 'It's such poor-quality software '",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46618503",
-    "title": "Project SkyWatch (a.k.a. Wescam at Home)",
-    "url": "https://ianservin.com/2026/01/13/project-skywatch-aka-wescam-at-home/",
+    "id": "46641362",
+    "title": "Show HN: Gambit, an open-source agent harness for building reliable AI agents",
+    "url": "https://github.com/bolt-foundry/gambit",
     "summary": "生成摘要时出错",
-    "chinese_title": "Project SkyWatch (a.k.a. Wescam at Home)",
+    "chinese_title": "Show HN: Gambit, an open-source agent harness for building reliable AI agents",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46636445",
-    "title": "Denmark's struggle to break up with Silicon Valley",
-    "url": "https://www.politico.eu/article/denmark-declared-war-against-big-tech-digital-sovereignty/",
+    "id": "46637010",
+    "title": "Dutch experts warn US takeover of DigiD platform poses security risks",
+    "url": "https://nltimes.nl/2026/01/15/dutch-experts-warn-us-takeover-digid-platform-poses-national-security-risks",
     "summary": "生成摘要时出错",
-    "chinese_title": "Denmark's struggle to break up with Silicon Valley",
+    "chinese_title": "Dutch experts warn US takeover of DigiD platform poses security risks",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46618087",
-    "title": "The unbearable frustration of figuring out APIs",
-    "url": "https://blog.ar-ms.me/thoughts/translation-cli/",
+    "id": "46644661",
+    "title": "The spectrum of isolation: From bare metal to WebAssembly",
+    "url": "https://buildsoftwaresystems.com/post/guide-to-execution-environments/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The unbearable frustration of figuring out APIs",
+    "chinese_title": "The spectrum of isolation: From bare metal to WebAssembly",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46641992",
+    "title": "Show HN: I built a text-based business simulator to replace video courses",
+    "url": "https://www.core-mba.pro/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: I built a text-based business simulator to replace video courses",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46644779",
+    "title": "AI Destroys Institutions",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5870623",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Destroys Institutions",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -672,67 +608,139 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46636387",
-    "title": "CVEs Affecting the Svelte Ecosystem",
-    "url": "https://svelte.dev/blog/cves-affecting-the-svelte-ecosystem",
+    "id": "46647059",
+    "title": "Read_once(), Write_once(), but Not for Rust",
+    "url": "https://lwn.net/SubscriberLink/1053142/8ec93e58d5d3cc06/",
     "summary": "生成摘要时出错",
-    "chinese_title": "CVEs Affecting the Svelte Ecosystem",
+    "chinese_title": "Read_once(), Write_once(), but Not for Rust",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46634450",
-    "title": "Design and Implementation of Sprites",
-    "url": "https://fly.io/blog/design-and-implementation/",
+    "id": "46640392",
+    "title": "U.S. carbon pollution rose in 2025, a reversal from prior years",
+    "url": "https://www.nbcnews.com/science/climate-change/us-carbon-pollution-rose-2025-reversal-rcna253859",
     "summary": "生成摘要时出错",
-    "chinese_title": "Design and Implementation of Sprites",
+    "chinese_title": "U.S. carbon pollution rose in 2025, a reversal from prior years",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46617705",
-    "title": "Show HN: A 10KiB kernel for cloud apps",
-    "url": "https://github.com/ReturnInfinity/BareMetal-Cloud",
+    "id": "46642173",
+    "title": "Show HN: Reversing YouTube’s “Most Replayed” Graph",
+    "url": "https://priyavr.at/blog/reversing-most-replayed/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: A 10KiB kernel for cloud apps",
+    "chinese_title": "Show HN: Reversing YouTube’s “Most Replayed” Graph",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46608731",
-    "title": "Running Lean at Scale",
-    "url": "https://harmonic.fun/news#blog-post-lean",
+    "id": "46638798",
+    "title": "ChatGPT wrote \"Goodnight Moon\" suicide lullaby for man who later killed himself",
+    "url": "https://arstechnica.com/tech-policy/2026/01/chatgpt-wrote-goodnight-moon-suicide-lullaby-for-man-who-later-killed-himself/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Running Lean at Scale",
+    "chinese_title": "ChatGPT wrote \"Goodnight Moon\" suicide lullaby for man who later killed himself",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46633574",
-    "title": "Found: Medieval Cargo Ship – Largest Vessel of Its Kind Ever",
-    "url": "https://www.smithsonianmag.com/smart-news/archaeologists-say-theyve-unearthed-a-massive-medieval-cargo-ship-thats-the-largest-vessel-of-its-kind-ever-found-180987984/",
+    "id": "46647038",
+    "title": "Cyberattack in Venezuela demonstrated precision of U.S. capabilities",
+    "url": "https://www.nytimes.com/2026/01/15/us/politics/cyberattack-venezuela-military.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Found: Medieval Cargo Ship – Largest Vessel of Its Kind Ever",
+    "chinese_title": "Cyberattack in Venezuela demonstrated precision of U.S. capabilities",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46609734",
-    "title": "Starlink activates free internet in Iran",
-    "url": "https://www.cnn.com/2026/01/13/politics/starlink-access-iran-protests",
+    "id": "46648978",
+    "title": "ICE takes back into custody man released for violation of rights",
+    "url": "https://apnews.com/article/minnesota-immigration-crackdown-25e46910fcc62fbf5ab341905af9891c",
     "summary": "生成摘要时出错",
-    "chinese_title": "Starlink activates free internet in Iran",
+    "chinese_title": "ICE takes back into custody man released for violation of rights",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46606038",
-    "title": "The housing market isn't for single people",
-    "url": "https://thewalrus.ca/the-housing-market-isnt-for-single-people/",
+    "id": "46636738",
+    "title": "Zuck#: A programming language for connecting the world. And harvesting it",
+    "url": "https://jayzalowitz.github.io/zucksharp/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The housing market isn't for single people",
+    "chinese_title": "Zuck#: A programming language for connecting the world. And harvesting it",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46613324",
-    "title": "Inside The Internet Archive's Infrastructure",
-    "url": "https://hackernoon.com/the-long-now-of-the-web-inside-the-internet-archives-fight-against-forgetting",
+    "id": "46632837",
+    "title": "I spent a year on Linux and forgot to miss Windows",
+    "url": "https://www.theverge.com/features/861968/year-using-linux",
     "summary": "生成摘要时出错",
-    "chinese_title": "Inside The Internet Archive's Infrastructure",
+    "chinese_title": "I spent a year on Linux and forgot to miss Windows",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46629295",
+    "title": "Use of Bayesian methodology in clinical trials of drug and biological products [pdf]",
+    "url": "https://www.fda.gov/media/190505/download",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Use of Bayesian methodology in clinical trials of drug and biological products [pdf]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46646958",
+    "title": "Can You Disable Spotlight and Siri in macOS Tahoe?",
+    "url": "https://eclecticlight.co/2026/01/16/can-you-disable-spotlight-and-siri-in-macos-tahoe/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Can You Disable Spotlight and Siri in macOS Tahoe?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46640462",
+    "title": "AWS European Sovereign Cloud",
+    "url": "https://aws.eu/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AWS European Sovereign Cloud",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46638241",
+    "title": "How I learned everything I know about programming",
+    "url": "https://agentultra.com/blog/how-i-learned-everything-i-know/index.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How I learned everything I know about programming",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46648885",
+    "title": "Dell UltraSharp 52 Thunderbolt Hub Monitor",
+    "url": "https://www.dell.com/en-us/shop/dell-ultrasharp-52-thunderbolt-hub-monitor-u5226kw/apd/210-bthw/monitors-monitor-accessories",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Dell UltraSharp 52 Thunderbolt Hub Monitor",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46646226",
+    "title": "Dev-owned testing: Why it fails in practice and succeeds in theory",
+    "url": "https://dl.acm.org/doi/10.1145/3780063.3780066",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Dev-owned testing: Why it fails in practice and succeeds in theory",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46642504",
+    "title": "Cloudflare threatens Italy exit over €14M fine",
+    "url": "https://ioplus.nl/en/posts/cloudflare-threatens-italy-exit-over-14m-fine",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cloudflare threatens Italy exit over €14M fine",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46631192",
+    "title": "Banning Things for Other People Is Easy",
+    "url": "https://dogdogfish.com/blog/2026/01/14/banning-things-for-other-people/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Banning Things for Other People Is Easy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46625049",
+    "title": "Apple: You (Still) Don't Understand the Vision Pro",
+    "url": "https://stratechery.com/2026/apple-you-still-dont-understand-the-vision-pro/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple: You (Still) Don't Understand the Vision Pro",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -744,19 +752,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46605716",
-    "title": "Choosing learning over autopilot",
-    "url": "https://anniecherkaev.com/choosing-learning-over-autopilot",
+    "id": "46645430",
+    "title": "Signal creator Moxie Marlinspike wants to do for AI what he did for messaging",
+    "url": "https://arstechnica.com/security/2026/01/signal-creator-moxie-marlinspike-wants-to-do-for-ai-what-he-did-for-messaging/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Choosing learning over autopilot",
+    "chinese_title": "Signal creator Moxie Marlinspike wants to do for AI what he did for messaging",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46631192",
-    "title": "Banning Things for Other People Is Easy",
-    "url": "https://dogdogfish.com/blog/2026/01/14/banning-things-for-other-people/",
+    "id": "46631586",
+    "title": "Germany's Merz Admits Nuclear Exit Was Strategic Mistake",
+    "url": "https://clashreport.com/world/articles/germanys-merz-admits-nuclear-exit-was-strategic-mistake-fzdlkn37c16",
     "summary": "生成摘要时出错",
-    "chinese_title": "Banning Things for Other People Is Easy",
+    "chinese_title": "Germany's Merz Admits Nuclear Exit Was Strategic Mistake",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46624266",
+    "title": "Germany joins European partners with troop deployment to Greenland",
+    "url": "https://www.reuters.com/world/europe/germany-send-reconnaissance-troops-greenland-government-says-2026-01-14/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Germany joins European partners with troop deployment to Greenland",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -776,27 +792,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46614963",
-    "title": "UK Officials could face US entry ban over Twitter policy",
-    "url": "https://parliamentnews.co.uk/uk-officials-could-face-us-entry-ban-over-x-policy",
+    "id": "46649577",
+    "title": "Our approach to advertising and expanding access to ChatGPT",
+    "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
     "summary": "生成摘要时出错",
-    "chinese_title": "UK Officials could face US entry ban over Twitter policy",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46625049",
-    "title": "Apple: You (Still) Don't Understand the Vision Pro",
-    "url": "https://stratechery.com/2026/apple-you-still-dont-understand-the-vision-pro/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Apple: You (Still) Don't Understand the Vision Pro",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46624266",
-    "title": "Germany joins European partners with troop deployment to Greenland",
-    "url": "https://www.reuters.com/world/europe/germany-send-reconnaissance-troops-greenland-government-says-2026-01-14/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Germany joins European partners with troop deployment to Greenland",
+    "chinese_title": "Our approach to advertising and expanding access to ChatGPT",
     "chinese_summary": "生成摘要时出错"
   }
 ]
