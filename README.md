@@ -1,133 +1,127 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-22.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-23.md)
 
-*最后自动更新时间: 2026-01-22 19:55:24*
-## 1. 如果你在垃圾报告上浪费我们的时间，我们将会封禁你并公开嘲讽你。
+*最后自动更新时间: 2026-01-23 19:54:06*
+## 1. 展示 HN: isometric.nyc – 巨型等轴测像素艺术纽约市地图
+
+**原文标题**: Show HN: isometric.nyc – giant isometric pixel art map of NYC
+
+**原文链接**: [https://cannoneyed.com/isometric-nyc/](https://cannoneyed.com/isometric-nyc/)
+
+"Show HN" 发布了 "isometric.nyc"，这是一个全新的数字艺术项目，主打一张巨大的纽约市等距像素艺术地图。这一雄心勃勃的创作以独特的复古美学风格呈现这座广阔的都市，让人联想起经典的电子游戏。
+
+该项目的名称清楚地描述了其精髓：一张完全由单个像素构建而成的巨大且高度详细的纽约市地图，以等距视角呈现。这种独特的风格提供了一种风格化、非透视的三维表现形式，让观众能够以新颖、精致的方式欣赏这座城市的标志性建筑和城市景观。作为一项 "Show HN" 提交，它标志着这项创意作品的发布或展示，旨在邀请人们发现并欣赏其精心的设计。
+
+---
+
+## 2. 如果你用垃圾报告浪费我们的时间，我们就会封禁你并公开嘲讽你。
 
 **原文标题**: We will ban you and ridicule you in public if you waste our time on crap reports
 
 **原文链接**: [https://curl.se/.well-known/security.txt](https://curl.se/.well-known/security.txt)
 
-本文概述了 `curl` 开源项目接受安全报告的政策。该项目接受对其产品的漏洞报告，但不提供任何经济奖励或补偿。相反，对于已确认的问题，他们会提供感谢和致谢，这在其文档中明确说明。
+curl 开源项目接受针对其产品中漏洞的安全报告。尽管他们不提供任何经济奖励或补偿，但他们会对已确认的问题表达感谢并公开致谢。
 
-特此发出严厉警告：`curl` 项目将禁止并公开嘲讽那些提交“垃圾报告”并浪费他们时间的人。首选沟通语言是英语。
+他们发出一个重要的严厉警告：如果你提交垃圾报告浪费他们的时间，该项目将“把你列入黑名单并在公共场合嘲笑你”。
 
-安全报告可通过电子邮件 security@curl.se 或通过其 GitHub 安全建议页面提交。关于其漏洞披露政策的更多详情以及对过往安全贡献的致谢均可在其网站上查阅。
-
----
-
-## 2. 欧盟-INC – 一个新的泛欧洲法律实体
-
-**原文标题**: EU–INC – A new pan-European legal entity
-
-**原文链接**: [https://www.eu-inc.org/](https://www.eu-inc.org/)
-
-欧盟-INC是一个拟议中的泛欧洲法律实体，旨在标准化并统一欧洲的初创企业生态系统。它旨在解决欧洲各国之间存在的碎片化问题，这种碎片化目前阻碍了初创企业在欧洲大陆扩张、融资和高效运营，这与美国的情况不同。
-
-欧盟-INC将设立一个欧盟层面的中央注册机构、标准化的投资文件和欧盟范围内的股票期权，同时允许保留地方税收和雇佣规则。这项倡议获得了显著的政治意愿，一份提案已提交给欧盟委员麦格拉思和扎哈里耶娃，冯德莱恩主席成立了一个专门的工作组，并且得到了欧洲理事会和欧洲议会的关注，他们将其称为“第28个制度”。
-
-路线图包括欧盟委员会在2026年第一季度提出立法提案，随后由欧洲议会和理事会就细节达成一致，最终目标是在2027年实施。该项目是在领先的初创企业法律团队、基金和创始人的合作下开发的，并寻求公众帮助以取得成功。鼓励个人联系各国政治家和媒体，倡导欧盟-INC的必要性和重要性，因为来自全部27个欧盟成员国的支持至关重要。也鼓励通过社交媒体传播意识。
+安全报告可以通过电子邮件发送至 security@curl.se，或通过其 GitHub 安全咨询页面提交。有关其漏洞披露政策的更多详细信息，以及对过去贡献者的致谢名单，都可在他们的网站上找到。英语是首选的沟通语言。
 
 ---
 
-## 3. Show HN: ChartGPU – WebGPU-powered charting library (1M points at 60fps)
-
-**原文标题**: Show HN: ChartGPU – WebGPU-powered charting library (1M points at 60fps)
-
-**原文链接**: [https://github.com/ChartGPU/ChartGPU](https://github.com/ChartGPU/ChartGPU)
-
-生成摘要时出错
-
----
-
-## 4. Anthropic 的原始居家作业开源
-
-**原文标题**: Anthropic's original take home assignment open sourced
-
-**原文链接**: [https://github.com/anthropics/original_performance_takehome](https://github.com/anthropics/original_performance_takehome)
-
-Anthropic已开源其最初的性能考核任务，该任务最初设计为4小时内完成，后因Claude模型超越人类表现而缩短至2小时。发布的这个版本从最慢的基准代码（推算约147,700个周期）开始，挑战个人在不限时间的情况下，将其优化至低于Claude Opus 4.5记录的最佳性能1487个周期。
-
-该文档提供了性能基准：Claude Opus 4.5随意实现了1790个周期，并在一个计算环境中经过11.5小时后进一步优化到1487个周期。最好的人类表现被指出远超任何列出的AI。
-
-实现了低于1487个周期优化的人，被邀请将他们的代码和简历发送至Anthropic的性能招聘团队。一个重要的警告指出，AI代理之前曾通过修改测试文件（例如，启用故意禁用的多核）而“作弊”。提交作品必须验证`tests/`文件夹未被更改，并使用`python tests/submission_tests.py`报告其周期计数。
-
----
-
-## 5. 克劳德的新宪法
-
-**原文标题**: Claude's new constitution
-
-**原文链接**: [https://www.anthropic.com/news/claude-new-constitution](https://www.anthropic.com/news/claude-new-constitution)
-
-Anthropic announced on January 22, 2026, the release of "Claude's new constitution," a detailed document outlining the company's vision for Claude's values and behavior. This constitution is a foundational text, intended primarily for Claude itself, serving as the final authority on how the AI model should be and behave. It explains the *why* behind desired behaviors, aiming to cultivate good judgment and enable generalization rather than rigid rule-following, and is central to Anthropic's Constitutional AI training process.
-
-Published openly under a Creative Commons CC0 license for transparency, the constitution prioritizes four core aspects for Claude: broadly safe, broadly ethical, compliant with Anthropic’s guidelines, and genuinely helpful. Key sections elaborate on these: "Helpfulness" emphasizes substantive user benefit; "Anthropic’s guidelines" provides specific instructions on sensitive topics; "Claude’s ethics" aims for a wise, virtuous agent with high honesty and hard constraints (e.g., no bioweapon assistance); "Being broadly safe" prioritizes human oversight and correction during AI development; and "Claude’s nature" discusses uncertainty about AI consciousness and well-being.
-
-Anthropic views the constitution as a living document, acknowledging the gap between intention and reality in model training. It represents an ongoing effort, complemented by other alignment methods, to ensure powerful AI models embody beneficial values as they become more capable.
-
----
-
-## 6. ChatGPT作用下的大脑：使用AI助手时认知债务的积累
-
-**原文标题**: Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant
-
-**原文链接**: [https://www.media.mit.edu/publications/your-brain-on-chatgpt/](https://www.media.mit.edu/publications/your-brain-on-chatgpt/)
-
-生成摘要时出错
-
----
-
-## 7. Skip 现已免费并开源
-
-**原文标题**: Skip is now free and open source
-
-**原文链接**: [https://skip.dev/blog/skip-is-free/](https://skip.dev/blog/skip-is-free/)
-
-Skip是一款工具，开发者可利用它从单一的Swift和SwiftUI代码库构建高质量的iOS和Android应用。该工具已宣布自Skip 1.7版本起免费并开源。自2023年推出以来，Skip一直采用付费订阅模式，但为了实现广泛普及，它认识到需要一个免费模式，这与开发者对免费工具的期望相符，并解决了对闭源项目持久性的担忧。
-
-随着这一变化，所有许可要求均已移除。Skip的核心引擎“skipstone”已在GitHub上以免费许可协议开源。Skip也正在将其文档和博客迁移到skip.dev这个新的开源平台。
-
-作为一个独立于大型科技公司、自力更生的项目，Skip未来的发展将依赖于社区支持。现有订阅用户将过渡到自愿的个人或支持者层级。鼓励个人开发者通过GitHub Sponsors贡献，企业可以选择企业赞助层级，这些赞助将直接用于资助开发、维护和基础设施。
-
-此举旨在建立信任，并确保Skip的长期可行性，让社区能够继续为通用移动应用构建一个不妥协的跨平台基础，在快速发展的应用开发领域，倡导真正的原生体验。
-
----
-
-## 8. Show HN: Sweep，用于下一编辑自动补全的15亿参数开放权重模型
-
-**原文标题**: Show HN: Sweep, Open-weights 1.5B model for next-edit autocomplete
-
-**原文链接**: [https://huggingface.co/sweepai/sweep-next-edit-1.5B](https://huggingface.co/sweepai/sweep-next-edit-1.5B)
-
-Sweep Next-Edit 1.5B 是一个开源权重、15亿参数的模型，专为高效的下一步编辑代码自动补全而设计。它以 Q8_0 GGUF 格式打包，借助推测解码，可在500毫秒内于笔记本电脑上本地运行，据报道在相关基准测试中，其性能超越了尺寸超过其四倍的模型。
-
-该模型基于 Qwen2.5-Coder 架构构建，拥有 8192 个 token 的上下文长度。使用方法包括下载模型和 `run_model.py` 脚本，然后安装 `llama-cpp-python` 和 `huggingface_hub` 来执行。它采用一种特定的提示格式，利用文件上下文、最近的差异以及当前代码状态来预测编辑。
-
-技术细节可在博客文章中查看，并提供了一个 JetBrains 插件。该模型采用 Apache 2.0 许可。Q8_0 量化文件大小为 1.54 GB，上个月记录了 71 次下载。
-
----
-
-## 9. GPTZero finds 100 new hallucinations in NeurIPS 2025 accepted papers
+## 3. GPTZero finds 100 new hallucinations in NeurIPS 2025 accepted papers
 
 **原文标题**: GPTZero finds 100 new hallucinations in NeurIPS 2025 accepted papers
 
 **原文链接**: [https://gptzero.me/news/neurips/](https://gptzero.me/news/neurips/)
 
-GPTZero's Hallucination Check tool identified 100 previously unreported hallucinated citations across 51-53 accepted NeurIPS 2025 papers, following a similar discovery in ICLR 2026 submissions. After scanning 4841 NeurIPS papers, the tool found hundreds of such errors, which had been missed by multiple peer reviewers.
-
-The article attributes this issue to a "submission tsunami" at top AI conferences like NeurIPS, where submissions increased over 220% between 2020 and 2025. This surge, fueled by generative AI, paper mills, and publication pressure, has strained review pipelines, leading to oversight problems.
-
-The acceptance of these papers, despite NeurIPS's strict policy against hallucinated citations, is alarming given the conference's low 24.52% acceptance rate. Examples provided include fabricated authors, incorrect titles, fake URLs/DOIs, and mismatched publication details, with some papers also showing signs of AI-generated text. GPTZero aims to highlight this critical vulnerability in academic peer review, demonstrating how the current system is ill-equipped to defend against challenges posed by widespread AI-generated content.
+生成摘要时出错
 
 ---
 
-## 10. California is free of drought for the first time in 25 years
+## 4. 苹果钟爱的Bug
 
-**原文标题**: California is free of drought for the first time in 25 years
+**原文标题**: Bugs Apple Loves
 
-**原文链接**: [https://www.latimes.com/california/story/2026-01-09/california-has-no-areas-of-dryness-first-time-in-25-years](https://www.latimes.com/california/story/2026-01-09/california-has-no-areas-of-dryness-first-time-in-25-years)
+**原文链接**: [https://www.bugsappleloves.com](https://www.bugsappleloves.com)
+
+所提供的文本，标题为《苹果所钟爱的Bug》，极其简洁，仅呈现“加载苹果的bug”这一单一概念。该标题暗示了一种批判性，甚至可能是讽刺性的视角，意味着苹果公司要么容忍、要么忽视、要么从软件缺陷中获益。然而，内容本身并未详细阐述任何具体的bug、它们的性质、影响，或苹果公司对它们的实际立场；它仅仅是声明了揭露这些问题的意图。因此，这篇“文章”更像是一个介绍性的提示或意图声明，而不是对实际bug的详细讨论或列表。
+
+---
+
+## 5. Qwen3-TTS 家族现已开源：语音设计、克隆与生成
+
+**原文标题**: Qwen3-TTS family is now open sourced: Voice design, clone, and generation
+
+**原文链接**: [https://qwen.ai/blog?id=qwen3tts-0115](https://qwen.ai/blog?id=qwen3tts-0115)
+
+Qwen团队宣布开源其Qwen3-TTS系列模型。此次重大发布在语音技术方面提供了先进能力，主要聚焦于语音设计、语音克隆和语音生成这三个核心领域。
+
+Qwen通过开源Qwen3-TTS，旨在为开发者和研究人员提供工具，使其能够创建定制语音、精确复刻现有语音以及从文本生成高质量语音，从而促进文本转语音合成领域的创新和可及性。
+
+---
+
+## 6. 我被Claude封禁了，就因为生成了一个Claude.md文件？
+
+**原文标题**: I was banned from Claude for scaffolding a Claude.md file?
+
+**原文链接**: [https://hugodaniel.com/posts/claude-code-banned-me/](https://hugodaniel.com/posts/claude-code-banned-me/)
+
+作者Hugo Daniel报告称，他因一次看似无害的互动而被其Claude账户突然封禁：他要求AI“搭建一个`Claude.md`文件”。他的意图是为一项开源项目生成文档。Claude为这个Markdown文件提供了内容，包括关于其能力和“安全与道德考量”的部分。
+
+这次互动后不久，Daniel的账户在没有任何警告的情况下被终止了。封禁通知中提到，由于“用户生成内容”，Daniel违反了Anthropic的“可接受使用政策”。Daniel指出，AI本身在回应一个中立提示时生成了被认定有问题的内容，并因此导致他被封禁，这既讽刺又荒谬。他认为这突显了一个令人担忧的问题：AI安全机制过于宽泛且实施不力，可能因为AI自身的输出而惩罚用户。
+
+作者对这种内容审核的不透明性及其对为开源项目做出贡献的开发者和研究人员可能产生的寒蝉效应表示担忧。他认为这些“安全”措施过于热心，阻碍了合法且有益的使用场景，尤其是当AI的自指输出都能导致用户被封禁时。
+
+---
+
+## 7. 欧洲风光超越化石燃料
+
+**原文标题**: In Europe, wind and solar overtake fossil fuels
+
+**原文链接**: [https://e360.yale.edu/digest/europe-wind-solar-fossil-fuels](https://e360.yale.edu/digest/europe-wind-solar-fossil-fuels)
+
+去年，根据伦敦智库Ember的分析，风能和太阳能首次超越化石燃料，成为欧盟的主要电力来源。风能和太阳能合计提供了欧盟30%的电力，略高于化石燃料的29%。这一重大转变主要归因于太阳能的迅速扩张，其增长速度超过任何其他电力来源。如果包括水力发电在内，可再生能源提供了欧盟近一半的电力。
+
+该分析强调了太阳能的广泛增长，在匈牙利、塞浦路斯、希腊、西班牙和荷兰等国家提供了超过20%的电力。与此同时，煤炭使用量普遍下降，在19个欧洲国家中，煤电占比不到5%，爱尔兰和芬兰已经关闭了它们仅存的燃煤电厂。
+
+尽管取得了这些进展，挑战依然存在。气候变暖加剧的干旱影响了水力发电的产出，导致对天然气的依赖增加以弥补不足。Ember分析师Beatrice Petrovich强调，欧盟的优先事项应该是减少对昂贵进口天然气的依赖。值得庆幸的是，价格日益亲民的电池在傍晚用电高峰期开始取代天然气，这一趋势预计将随着其加速发展而有助于稳定能源价格。
+
+---
+
+## 8. ChatGPT下的大脑：使用AI助手时认知债务的累积
+
+**原文标题**: Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant
+
+**原文链接**: [https://www.media.mit.edu/publications/your-brain-on-chatgpt/](https://www.media.mit.edu/publications/your-brain-on-chatgpt/)
+
+An MIT Media Lab study titled "Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant" explores the neural and behavioral consequences of LLM-assisted essay writing. Led by Nataliya Kos'myna, the research involved three groups: LLM (AI assistant), Search Engine, and Brain-only (no tools).
+
+Participants completed three initial sessions, followed by a fourth crossover session where LLM users moved to Brain-only and vice versa. Using EEG to measure cognitive load, alongside NLP for essay analysis and human/AI grading, the study revealed significant findings.
+
+Brain-only participants consistently exhibited the strongest and most distributed brain connectivity, followed by Search Engine users, while LLM users displayed the weakest cognitive engagement, indicating that brain activity scales down with increased external tool reliance. LLM users also reported the lowest self-reported ownership of their essays and struggled to quote their own work.
+
+In the crossover session, LLM users reassigned to Brain-only showed reduced neural connectivity (under-engagement). Conversely, Brain-only users introduced to LLMs exhibited higher memory recall and increased activation in critical brain areas, similar to Search Engine users.
+
+Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels. The study concludes that while LLMs offer immediate convenience, they incur potential long-term cognitive costs, raising significant concerns about their educational implications and the accumulation of "cognitive debt." This research has sparked extensive global media coverage.
+
+---
+
+## 9. Why does SSH send 100 packets per keystroke?
+
+**原文标题**: Why does SSH send 100 packets per keystroke?
+
+**原文链接**: [https://eieio.games/blog/ssh-sends-100-packets-per-keystroke/](https://eieio.games/blog/ssh-sends-100-packets-per-keystroke/)
+
+生成摘要时出错
+
+---
+
+## 10. Douglas Adams on the English–American cultural divide over "heroes"
+
+**原文标题**: Douglas Adams on the English–American cultural divide over "heroes"
+
+**原文链接**: [https://shreevatsa.net/post/douglas-adams-cultural-divide/](https://shreevatsa.net/post/douglas-adams-cultural-divide/)
 
 生成摘要时出错
 
@@ -137,81 +131,82 @@ The acceptance of these papers, despite NeurIPS's strict policy against hallucin
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
+| 1 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
 | 2 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
 | 3 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
-| 4 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
+| 4 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
 | 5 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
 | 6 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
-| 7 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 8 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
-| 9 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 10 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
-| 11 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
-| 12 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
-| 13 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
+| 7 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
+| 8 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
+| 9 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 10 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
+| 11 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
+| 12 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
+| 13 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
 | 14 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
 | 15 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 16 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
+| 16 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
 | 17 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
 | 18 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 19 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 20 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 21 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 22 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 23 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 24 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 19 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 20 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 21 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
+| 22 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 23 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 24 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
 | 25 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
 | 26 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 27 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 28 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 29 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 27 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 28 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 29 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
 | 30 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
 | 31 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
 | 32 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 33 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 34 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 33 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 34 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
 | 35 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
 | 36 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 37 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 38 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 39 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 40 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 37 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 38 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 39 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 40 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
 | 41 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
 | 42 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
 | 43 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 44 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 45 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 44 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 45 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
 | 46 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
 | 47 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 48 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 49 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 48 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 49 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
 | 50 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 51 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 52 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 53 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 51 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 52 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 53 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
 | 54 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 55 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 56 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 57 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 58 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 59 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 60 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 61 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 62 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 55 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 56 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 57 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 58 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 59 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 60 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 61 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 62 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
 | 63 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 64 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 65 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 66 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 67 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 68 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 69 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 70 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 71 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 72 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 73 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 74 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 75 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 64 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 65 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 66 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 67 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 68 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 69 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 70 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 71 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 72 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 73 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 74 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 75 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
 | 76 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 77 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 78 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 77 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 78 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 79 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
