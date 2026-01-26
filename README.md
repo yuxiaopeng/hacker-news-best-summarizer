@@ -1,129 +1,129 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-25.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-26.md)
 
-*最后自动更新时间: 2026-01-25 19:47:41*
-## 1. BirdyChat 成为首款与 WhatsApp 互通的欧洲聊天应用
+*最后自动更新时间: 2026-01-26 19:54:24*
+## 1. 移民和海关执法局使用Palantir工具获取医疗补助数据。
+
+**原文标题**: ICE using Palantir tool that feeds on Medicaid data
+
+**原文链接**: [https://www.eff.org/deeplinks/2026/01/report-ice-using-palantir-tool-feeds-medicaid-data](https://www.eff.org/deeplinks/2026/01/report-ice-using-palantir-tool-feeds-medicaid-data)
+
+电子前沿基金会（EFF）透露，其关于联邦政府将整合数据（包括医疗补助信息）用于移民执法的警告已成为现实。EFF此前曾试图阻止将医疗补助数据用于遣返，并警告特朗普政府计划通过Palantir（一家隐私记录堪忧的公司）将政府信息整合到一个由人工智能驱动的单一界面中。
+
+据404 Media报道的新证据证实，Palantir正在为移民和海关执法局（ICE）开发一款名为“增强线索识别与执法目标（ELITE）”的工具。该工具能生成潜在遣返目标的地图、提供个人档案并给出地址的“置信度评分”。值得注意的是，ELITE从卫生与公众服务部（负责监管医疗补助）及其他来源接收地址数据，这一点已通过法庭证词证实。
+
+这一披露正值ICE的“监控技术采购狂潮”，其中包括在明尼阿波利斯的大量部署。文章强调了政府机构汇集为特定目的（如医疗保健或税务）收集的数据，并将其重新用于不相关执法的危险性，称其为政府权力的巨大扩张，极易被滥用，类似于“全面信息感知”计划。
+
+EFF已通过诉讼和法庭之友简报积极对抗这些做法，挑战ICE获取医疗补助和纳税人数据的权限，以及一项监控非公民言论的计划。然而，EFF强调诉讼不足以解决问题，敦促公众强烈抗议并立即进行国会干预，以保护隐私和安全。
+
+---
+
+## 2. 首先，让我在乎。
+
+**原文标题**: First, make me care
+
+**原文链接**: [https://gwern.net/blog/2026/make-me-care](https://gwern.net/blog/2026/make-me-care)
+
+本文为非虚构类作者提供写作建议，强调立即吸引读者关注的重要性。文章指出一个常见错误：开篇即提供大量背景信息，导致读者在接触核心内容之前便失去兴趣并脱离。
+
+核心建议是，找出与主题相关的“钩子”——一个最有趣的异常现象或引人入胜的问题——并以此开篇。这种做法旨在立即吸引注意力，让读者关心。只有在初步的关注被确保之后，背景信息才应跟进。核心原则是：首先赢得读者的注意力。
+
+---
+
+## 3. BirdyChat 成为第一个能与 WhatsApp 互联互通的欧洲聊天应用
 
 **原文标题**: BirdyChat becomes first European chat app that is interoperable with WhatsApp
 
 **原文链接**: [https://www.birdy.chat/blog/first-to-interoperate-with-whatsapp](https://www.birdy.chat/blog/first-to-interoperate-with-whatsapp)
 
-2025年11月14日，BirdyChat宣布已成为首个利用《数字市场法案》（DMA）实现与WhatsApp互操作的欧洲聊天应用。这一里程碑使得BirdyChat用户能够与WhatsApp用户互发消息，进一步接近BirdyChat集中管理工作对话的目标。
+2025年11月14日，BirdyChat宣布已成为首个在《数字市场法案》(DMA)下实现与WhatsApp互操作性的欧洲聊天应用。这一里程碑允许BirdyChat用户与WhatsApp用户交换消息，进一步推动BirdyChat承载工作沟通的使命。
 
-此前，BirdyChat的普及受到限制，因为用户只能与其他BirdyChat账户持有者发送消息，新用户必须下载该应用。随着DMA强制要求的新WhatsApp接口的推出，欧洲经济区（EEA）内的任何BirdyChat用户现在只需使用对方的电话号码，即可在该区域内与任何WhatsApp用户发起一对一聊天。这消除了一个重大障碍，让BirdyChat用户能够在自己的应用内整理工作事务，同时无缝连接WhatsApp联系人，而无需对方切换平台。
+此前，用户只能向BirdyChat上的现有用户发送消息，这阻碍了其普及。现在，任何欧洲经济区(EEA)内的BirdyChat用户都可以使用电话号码与该区域的WhatsApp用户发起一对一聊天，从而消除了这一重大障碍。这使得BirdyChat用户在与WhatsApp联系人保持连接的同时，也能保持工作沟通井然有序。
 
-互操作性使用户能够通过端到端加密连接发送消息、照片和文件。对于专业人士而言，一个值得关注的特点是能够使用工作邮箱作为身份标识，有助于区分工作和个人通信。BirdyChat通过WhatsApp官方DMA“第三方聊天”接口进行集成。
+该互操作性支持通过端到端加密连接发送消息、照片和文件。BirdyChat用户还可以使用他们的工作邮箱作为身份标识，分离工作与个人沟通。此集成利用了WhatsApp官方的第三方聊天界面。
 
-目前，该功能支持一对一聊天，群聊互操作性计划在未来更新中推出。该功能将在EEA内逐步推广，且BirdyChat和WhatsApp联系人都必须位于EEA内才能使用该功能。BirdyChat目前仅限受邀用户使用，用户可以通过工作邮箱加入候补名单以获取早期访问权限。
-
----
-
-## 2. 今天早上，在明尼阿波利斯南部，一名男子被联邦探员枪杀。
-
-**原文标题**: Man shot and killed by federal agents in south Minneapolis this morning
-
-**原文链接**: [https://www.startribune.com/ice-raids-minnesota/601546426](https://www.startribune.com/ice-raids-minnesota/601546426)
-
-2026年1月24日星期六，联邦探员在明尼阿波利斯南部击毙了37岁的亚历克斯·杰弗里·普雷蒂，引发了抗议和要求调查的呼声。国土安全部（DHS）声称普雷蒂当时持有枪支和弹药，且一名边境巡逻队探员是出于自卫开枪。然而，这些联邦的说法尚未得到证实，并与目击者证词和视频证据存在部分矛盾。一位目击者儿科医生指出，探员们没有立即进行心肺复苏或检查脉搏。
-
-这是本月在明尼苏达州发生的第二起涉及联邦探员的致命枪击事件，这些探员正在进行大规模的移民执法行动。枪击事件发生后，明尼阿波利斯居民举行了守夜活动，抗议者与探员之间发生了冲突。1月25日星期日，事发地点的道路重新开放，同时一名法官命令联邦政府保留证据，明尼苏达州的调查人员也开始收集证据。官员们正在敦促对此次枪击事件进行彻底调查，此次事件加剧了与当前移民执法行动升级相关的紧张局势。
+目前，仅支持一对一聊天，群聊互通功能计划在未来的更新中推出。该功能将在EEA逐步推出，要求BirdyChat和WhatsApp用户都位于该区域。BirdyChat实行邀请制，用户可以加入候补名单以抢先体验此功能。
 
 ---
 
-## 3. 电动汽车普及与实际空气污染减少挂钩：研究
+## 4. 管理科学领域的一篇有缺陷的论文已被引用超过6000次。
 
-**原文标题**: Adoption of EVs tied to real-world reductions in air pollution: study
-
-**原文链接**: [https://keck.usc.edu/news/adoption-of-electric-vehicles-tied-to-real-world-reductions-in-air-pollution-study-finds/](https://keck.usc.edu/news/adoption-of-electric-vehicles-tied-to-real-world-reductions-in-air-pollution-study-finds/)
-
-生成摘要时出错
-
----
-
-## 4. 微软将根据命令向联邦调查局提供Windows电脑数据加密密钥。
-
-**原文标题**: Microsoft will give the FBI a Windows PC data encryption key if ordered
-
-**原文链接**: [https://www.windowscentral.com/microsoft/windows-11/microsoft-bitlocker-encryption-keys-give-fbi-legal-order-privacy-nightmare](https://www.windowscentral.com/microsoft/windows-11/microsoft-bitlocker-encryption-keys-give-fbi-legal-order-privacy-nightmare)
-
-微软已证实，在收到有效的法律命令时，它将向联邦调查局提供Windows电脑的BitLocker加密密钥。这一能力源于Windows 11的默认设置，该设置会自动将这些加密密钥备份到用户的微软云账户中，并将它们与在线账户关联起来。
-
-尽管此举旨在方便数据恢复，但这种默认行为允许微软访问这些密钥，从而使其可供执法部门获取。《福布斯》报道称，微软在2025年初为调查关岛的COVID失业欺诈案提供了密钥。微软表示，密钥恢复提供了便利，但也伴随着风险，并强调客户自行决定如何管理他们的密钥。
-
-据报道，微软每年收到约20份联邦调查局索取BitLocker密钥的请求，但大多数请求无法满足，因为密钥从未被上传。这一政策与苹果公司形成了鲜明对比，苹果公司以拒绝执法部门访问加密数据而闻名；与Meta公司也不同，Meta公司采用零知识架构在服务器端加密密钥，使其只有用户才能访问。
-
-一个值得关注的重大隐私问题是，据报道，上传到微软云端的加密密钥在微软端并未加密，这意味着它们以未加密的状态存在。建议用户检查他们的微软账户，查看BitLocker密钥是否存储在云端，如果担心隐私问题，则将其删除。
-
----
-
-## 5. A flawed paper in Management Science has been cited more than 6,000 times
-
-**原文标题**: A flawed paper in Management Science has been cited more than 6,000 times
+**原文标题**: A flawed paper in management science has been cited more than 6k times
 
 **原文链接**: [https://statmodeling.stat.columbia.edu/2026/01/22/aking/](https://statmodeling.stat.columbia.edu/2026/01/22/aking/)
 
-Unable to access the article link.
+无法访问文章链接。
 
 ---
 
-## 6. 我如何估算工作
+## 5. 当你驼背时模糊屏幕的 macOS 应用
 
-**原文标题**: How I estimate work
+**原文标题**: A macOS app that blurs your screen when you slouch
 
-**原文链接**: [https://www.seangoedecke.com/how-i-estimate-work/](https://www.seangoedecke.com/how-i-estimate-work/)
+**原文链接**: [https://github.com/tldev/posturr](https://github.com/tldev/posturr)
 
-生成摘要时出错
+Posturr 是一款 macOS 应用，当它检测到你姿势不佳时，会通过逐渐模糊屏幕来鼓励你保持良好姿势。它利用 Mac 的摄像头和 Apple 的 Vision 框架，实时监测你的身体姿势和面部。屏幕模糊程度会随着姿势恶化而加剧，当你坐直时则立即恢复清晰。
+
+主要功能包括实时姿势检测、温和的视觉提醒、多显示器支持，以及通过菜单栏图标轻松访问设置。用户可以重新校准其基准姿势，调整检测灵敏度和“死区”，并切换可选的 Dock 可见性。
+
+隐私是核心关注点：所有处理都在你的 Mac 上本地进行，确保不存储或外部传输任何数据或图像。该应用轻量级，无需账户，并作为后台进程运行。
+
+建议通过 Homebrew (`brew install --cask posturr`) 或手动下载进行安装。Posturr 需要摄像头访问权限，macOS 会在首次启动时提示。为获得最佳效果，请确保光线充足，将摄像头放置在与眼睛齐平的位置，并保持上半身可见。该应用使用 macOS 的 CoreGraphics API 进行高效模糊处理，并提供 NSVisualEffectView 作为备用方案。它兼容 macOS 13.0 (Ventura) 或更高版本。
 
 ---
 
-## 7. 德国电信正在限速网络
+## 6. 德国电信正在对互联网限速
 
 **原文标题**: Deutsche Telekom is throttling the internet
 
 **原文链接**: [https://netzbremse.de/en/](https://netzbremse.de/en/)
 
-在公民权利协会、德国消费者组织联合会和斯坦福大学芭芭拉·范·施维克教授的支持下，Epicenter.works已向联邦网络局提交了一份针对德国电信的正式投诉。他们指控德国电信通过在其网络接入点制造人为瓶颈来限制互联网服务速度。投诉指出，向德国电信付费的服务获得快速访问，而其他服务则被故意减慢速度或变得无法访问，从而违反了网络中立原则。
+德国电信被指控限制互联网速度，导致Epicenter.works、公民权利协会、德国消费者组织联合会和Barbara van Schewick教授向联邦网络局提交了正式投诉。投诉声称，德国电信制造人为瓶颈，允许付费服务获得更快的访问速度，而其他服务则被故意减慢或阻止，这违反了网络中立性原则。
 
-大量客户证词支持这些指控，详细描述了严重的性能问题。用户反映，Cloudflare、谷歌服务、Reddit、YouTube、Discord、GitHub、OpenAI、Canva、DeepL、Notion和ChatGPT等各种网站和服务的加载速度极慢或完全无法访问。学术平台和公共广播媒体库也经常受到影响，尤其是在晚间高峰时段，伴随的问题包括严重的丢包现象、低下载速度（有时仅为每秒几KB）和较差的流媒体质量。许多用户证实，在使用VPN或切换到其他互联网服务提供商时，这些问题便得到解决，这凸显了流量被选择性地减慢。客户对为不可靠的服务支付高昂费用深感沮丧，经常不得不使用VPN来访问工作、学习和休闲所需的必要在线工具。
-
----
-
-## 8. Claude Code's new hidden feature: Swarms
-
-**原文标题**: Claude Code's new hidden feature: Swarms
-
-**原文链接**: [https://twitter.com/NicerInPerson/status/2014989679796347375](https://twitter.com/NicerInPerson/status/2014989679796347375)
-
-The provided content does not describe "Claude Code's new hidden feature: Swarms." Instead, it is a standard JavaScript error message from x.com (formerly Twitter), indicating that JavaScript is disabled in the user's browser.
-
-The message instructs the user to enable JavaScript or switch to a supported browser to continue using the site, and directs them to a Help Center for more information. It also includes links to service terms, privacy and cookie policies, imprint, and ad information, along with a copyright notice for X Corp. dated 2026.
-
-Therefore, it's impossible to provide a summary of a 'hidden feature' called 'Swarms' for 'Claude Code' based on this given text, as the content contains no information related to AI, programming features, or the topic mentioned in the title.
+大量客户证词支持这些说法，报告了严重的互联网性能问题。用户描述了加载时间慢、高丢包率，以及服务变得无法使用，尤其是在高峰时段（晚上、周末）。受影响的平台包括Cloudflare支持的网站、谷歌服务（YouTube）、Reddit、Discord、GitHub、Steam、动视暴雪、公共广播公司的媒体库、ChatGPT、Notion、在线游戏以及学术/研究门户网站。许多客户表示，使用VPN可以立即解决这些问题，这强烈暗示德国电信的对等互联或路由实践存在问题。一些用户已转而使用其他提供商的移动数据，或正在考虑更换互联网服务提供商（ISP），因为这些持续存在的问题据称已持续数月甚至数年。下载、流媒体甚至基本的网站访问都受到严重影响，妨碍了个人和专业用途。
 
 ---
 
-## 9. 在我的英国电话线上跑千兆以太网
+## 7. 研究：电动汽车普及与空气污染实际减少相关
 
-**原文标题**: Doing gigabit Ethernet over my British phone wires
+**原文标题**: Adoption of EVs tied to real-world reductions in air pollution: study
 
-**原文链接**: [https://thehftguy.com/2026/01/22/doing-gigabit-ethernet-over-my-british-phone-wires/](https://thehftguy.com/2026/01/22/doing-gigabit-ethernet-over-my-british-phone-wires/)
+**原文链接**: [https://keck.usc.edu/news/adoption-of-electric-vehicles-tied-to-real-world-reductions-in-air-pollution-study-finds/](https://keck.usc.edu/news/adoption-of-electric-vehicles-tied-to-real-world-reductions-in-air-pollution-study-finds/)
 
-作者详述了他们在英国家中利用现有电话线实现千兆以太网速度的探索，因为当地普遍缺乏已安装的以太网布线。他们对不可靠且缓慢的电力线适配器（最大180 Mbps，但波动很大）感到沮丧，并且他们的互联网连接速度为500 Mbps，于是他们寻求一个专门的解决方案。
+南加州大学凯克医学院研究人员的一项新研究首次提供了具有统计学意义的证据，表明电动汽车（EV）的普及与实际空气污染的减少有关。该研究发表在《柳叶刀·星球健康》上，利用高分辨率卫星数据追踪了2019年至2023年间加州1,692个社区的二氧化氮（NO₂）水平，并将其与零排放汽车（ZEV）的注册数据进行了关联分析。
 
-作者意识到英国家庭电话插座遍布，因此推测G.hn技术（电力线适配器中使用的）在专用电话线上可以表现得好得多。这使得他们发现了Gigacopper.net，一家生产“以太网通过电话线”设备的德国制造商。
+研究结果显示，每当一个社区增加200辆ZEV，二氧化氮水平就下降1.1%。这证实了早期的研究，并证实了电动汽车对环境健康的即时益处。二氧化氮是一种燃烧化石燃料产生的有害污染物，可引发哮喘、支气管炎，并增加患心脏病和中风的风险。
 
-订购Gigacopper G4201TM涉及处理脱欧后的进口关税以及皇家邮政造成的延误。该设备使用RJ11连接电话线，RJ45连接以太网。初次设置即插即用，立即达到了完整的500 Mbps互联网速度。作者后来在供应商的帮助下发现并纠正，他们购买的是“客户端/服务器”型号，而非更适合多设备、低延迟家庭网络的“InHome”版本。
-
-尽管在寻找合适的测试硬件方面遇到了挑战，但最终使用iperf3验证了完整的1 Gbps速度。检查房屋的电话布线后发现，这是一个混乱的、菊花链式连接的设置，带有不一致的2线、3线或4线连接，证实了传统的8线以太网布线是不切实际的。Gigacopper设备在这些现有线路上高效运行，被证明是一个“奇迹”般的解决方案，揭示了通过英国电话基础设施实现高速网络连接的巨大未开发市场。
+资深作者Erika Garcia强调了空气质量改善对健康的即时影响，而主要作者Sandrah Eckel指出，即使在研究期间ZEV仅占轻型车辆的2%到5%，加州向电动汽车的转型也已经产生了可衡量的影响。研究人员通过考虑疫情、汽油价格和居家办公模式等因素，验证了他们的发现。该研究支持继续推广电动汽车，并证明了卫星数据在追踪环境干预措施方面的实用性。该团队计划接下来调查ZEV普及与哮喘相关住院之间的联系。
 
 ---
 
-## 10. Unrolling the Codex agent loop
+## 8. Yes, It's Fascism
 
-**原文标题**: Unrolling the Codex agent loop
+**原文标题**: Yes, It's Fascism
 
-**原文链接**: [https://openai.com/index/unrolling-the-codex-agent-loop/](https://openai.com/index/unrolling-the-codex-agent-loop/)
+**原文链接**: [https://www.theatlantic.com/ideas/2026/01/america-fascism-trump-maga-ice/685751/](https://www.theatlantic.com/ideas/2026/01/america-fascism-trump-maga-ice/685751/)
+
+生成摘要时出错
+
+---
+
+## 9. After two years of vibecoding, I'm back to writing by hand
+
+**原文标题**: After two years of vibecoding, I'm back to writing by hand
+
+**原文链接**: [https://atmoio.substack.com/p/after-two-years-of-vibecoding-im](https://atmoio.substack.com/p/after-two-years-of-vibecoding-im)
+
+生成摘要时出错
+
+---
+
+## 10. Oneplus phone update introduces hardware anti-rollback
+
+**原文标题**: Oneplus phone update introduces hardware anti-rollback
+
+**原文链接**: [https://consumerrights.wiki/w/Oneplus_phone_update_introduces_hardware_anti-rollback](https://consumerrights.wiki/w/Oneplus_phone_update_introduces_hardware_anti-rollback)
 
 生成摘要时出错
 
@@ -133,84 +133,85 @@ Therefore, it's impossible to provide a summary of a 'hidden feature' called 'Sw
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
-| 2 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
-| 3 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
-| 4 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
-| 5 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 6 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
-| 7 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
-| 8 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
-| 9 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
-| 10 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 11 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
-| 12 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
+| 1 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
+| 2 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
+| 3 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
+| 4 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
+| 5 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
+| 6 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
+| 7 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
+| 8 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
+| 9 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
+| 10 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
+| 11 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
+| 12 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
 | 13 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
 | 14 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
-| 15 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
-| 16 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
+| 15 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
+| 16 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
 | 17 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
 | 18 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 19 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
-| 20 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 21 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 22 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 23 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 24 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 25 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 26 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 27 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 28 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 29 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 30 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 31 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 32 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 19 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
+| 20 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 21 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 22 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 23 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
+| 24 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
+| 25 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 26 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 27 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 28 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 29 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 30 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 31 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 32 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
 | 33 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
 | 34 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
 | 35 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 36 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 37 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 38 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 39 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 40 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 41 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 42 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 43 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 36 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 37 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 38 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 39 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 40 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 41 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 42 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 43 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
 | 44 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 45 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 46 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 47 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 48 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 49 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 45 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 46 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 47 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 48 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 49 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
 | 50 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 51 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 52 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 51 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 52 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
 | 53 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 54 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 55 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 56 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 57 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 54 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 55 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 56 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 57 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 58 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 59 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 60 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 61 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 59 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 60 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 61 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
 | 62 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 63 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 64 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 65 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 66 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 67 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 68 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 69 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 70 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 71 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 72 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 73 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 74 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 75 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 76 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 77 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 78 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 79 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 80 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 81 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 63 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 64 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 65 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 66 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 67 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 68 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 69 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 70 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 71 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 72 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 73 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 74 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 75 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 76 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 77 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 78 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 79 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 80 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 81 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 82 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
