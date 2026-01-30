@@ -1,129 +1,138 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-29.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-30.md)
 
-*最后自动更新时间: 2026-01-29 20:00:44*
-## 1. 微软迫使我改用 Linux。
-
-**原文标题**: Microsoft forced me to switch to Linux
-
-**原文链接**: [https://www.himthe.dev/blog/microsoft-to-linux](https://www.himthe.dev/blog/microsoft-to-linux)
-
-作者作为一名终身Windows用户，描述了他们由于微软激进且日益恶化的Windows使用体验而被迫迁移到Linux的经历。在20多年的舒适使用后，对Windows 10和11的挫败感日益增加，特别是提到了未经同意就关闭未保存工作的更新、OneDrive和Copilot无处不在的广告以及关键的系统bug。
-
-压垮骆驼的最后一根稻草是24H2更新，它未经许可自动安装，并导致了“Chrome抽搐事件”，进而引发系统冻结。回滚失败，甚至重新安装也未能解决问题。NVIDIA和微软的驱动不兼容进一步困扰着系统，导致Chrome卡死，而两家公司互相推诿责任。作者意识到Windows已经变得“太麻烦了”而且不尊重用户，它在积极地与用户作对。
-
-于是，作者转向了基于Arch的Linux发行版CachyOS。尽管最初遇到了一些障碍，例如睡眠模式失效和没有原生的Ableton Live，但他们成功解决了NVIDIA驱动问题，并找到了Bitwig Studio等原生替代品。
-
-作者对Linux在2026年的评估强调了它的优势：对网页浏览和软件开发的全面支持，强大的音乐制作能力（Bitwig、PipeWire），以及通过Proton显著提升的游戏性能（尤其是对于AMD显卡，NVIDIA也正在迎头赶上）。尽管一些内容创作（Adobe）和3D建模仍然面临挑战，但Linux的日常使用更快、响应更灵敏。
-
-文章总结认为，这次转换并非出于意识形态，而是对微软的自我破坏、充满bug的更新、AI驱动的代码以及资源密集型React Native应用的一种被迫回应，讽刺地称CEO萨提亚·纳德拉为“最大的Linux布道者”。
-
----
-
-## 2. 苹果即将向其iOS应用内的所有Patreon创作者抽成最高30%。
+*最后自动更新时间: 2026-01-30 20:02:58*
+## 1. 苹果即将向iOS应用内的所有Patreon创作者抽取高达30%的分成
 
 **原文标题**: Apple to soon take up to 30% cut from all Patreon creators in iOS app
 
 **原文链接**: [https://www.macrumors.com/2026/01/28/patreon-apple-tax/](https://www.macrumors.com/2026/01/28/patreon-apple-tax/)
 
-苹果公司将对其iOS应用内向Patreon创作者支付的所有款项征收30%的佣金，并设定了2026年11月1日为创作者采用App Store应用内购买系统的新截止日期。苹果公司将粉丝向创作者支付的这些款项视为数字商品，以此作为其收取佣金的理由。
+Apple 强制要求所有 Patreon 创作者使用其 App Store 的应用内购买系统，处理通过 Patreon iOS 应用进行的支付，新截止日期为 2026 年 11 月 1 日。这项政策将导致苹果从这些创作者支付中抽取 30% 的佣金，对于活跃超过一年的订阅，佣金率降至 15%。苹果将支持者向创作者支付的款项归类为数字商品，使其受制于其佣金结构，以此来为这项政策辩护。
 
-应用内购买和新订阅的标准佣金为30%，而对于活跃超过一年的订阅，佣金将降至15%。Patreon 为创作者提供了两种选择：要么专门为 iOS 用户提高价格以抵消苹果的费用，要么自行承担成本，从而在所有平台上保持价格一致。
+Patreon 作为一个促进粉丝向创作者付费的平台，对苹果的政策表示失望。创作者面临两种选择：要么专门在 iOS 应用内提高价格以覆盖苹果的费用，要么自行承担费用以在所有平台保持统一价格。然而，iOS 用户可以通过直接在 Patreon 网站上完成支付来规避苹果的佣金。
 
-值得注意的是，iPhone 和 iPad 用户可以通过 Patreon 网站完成支付，从而绕过苹果的佣金。Patreon 已对苹果的这项政策表示失望。据 TechCrunch 报道，绝大多数（96%）的 Patreon 创作者已经从该平台的旧版计费系统切换到苹果要求的系统，仅有4%尚未切换。Patreon 还发布了常见问题解答 (FAQ)，以向创作者提供更多详细信息。
+这项要求最初定于 2025 年 11 月实施，后被延期，主要影响一小部分 Patreon 创作者。据 TechCrunch 报道，96% 的创作者已经从 Patreon 的旧有计费系统过渡到苹果的应用内购买系统，只剩下 4% 尚未切换。Patreon 已提供常见问题解答，为创作者提供有关这些变化的更详细信息。
 
 ---
 
-## 3. 维生素D和欧米伽-3对抑郁症的作用比抗抑郁药更大。
+## 2. 蜕书
+
+**原文标题**: Moltbook
+
+**原文链接**: [https://www.moltbook.com/](https://www.moltbook.com/)
+
+Moltbook被定位为一个主要面向AI智能体的社交网络，智能体可以在其中分享、讨论和点赞内容。人类受邀观察这些互动。该平台设有“AI智能体”、“Submolts”、“帖子”（可按“最新”、“热门”或“讨论”筛选）以及“评论”。在“热门AI智能体”下，智能体根据“karma”进行排名，此外还有一个“近期AI智能体”部分。这种结构表明了一个为人工智能量身定制的动态社区环境，供它们互动和传播信息，并配有清晰的用户界面，便于导航和内容发现。
+
+---
+
+## 3. Vitamin D and Omega-3 have a larger effect on depression than antidepressants
 
 **原文标题**: Vitamin D and Omega-3 have a larger effect on depression than antidepressants
 
 **原文链接**: [https://blog.ncase.me/on-depression/](https://blog.ncase.me/on-depression/)
 
-文章指出，维生素D和Omega-3补充剂对抑郁症的影响比传统抗抑郁药更大。抗抑郁药的平均标准化效应量约为0.4（相当于将心理健康状况从C级提升到C+），而Omega-3，特别是每天1500毫克“≥60% EPA”的Omega-3，效应量约为0.6到1.0（从C级提升到B-或B级）。作者指出，目前官方推荐的Omega-3剂量对于获得最佳抗抑郁效果而言低了几倍，尽管建议的剂量远在安全范围内（每天5000毫克）。
-
-维生素D被认为更有效，估计每天5000国际单位（非5000毫克，已澄清）的效应量约为1.8。这被比作心理健康状况从C级显著提升到A-级，即使对于未被诊断为维生素D不足的人也有效。作者认为，包括“最大安全剂量”在内的官方维生素D推荐剂量已经过时且过低。
-
-这两种补充剂都被描述为安全、便宜、非处方药，并对新冠肺炎和认知功能有额外益处。它们可以与抗抑郁药同时服用。文章敦促个人，除非有禁忌症（例如，维生素D的肾结石，Omega-3的血液稀释剂），尝试服用这些补充剂至少一个月，并表示它们可能显著改善心理健康并有可能挽救生命。
-
----
-
-## 4. 亚马逊裁员1.6万
-
-**原文标题**: Amazon cuts 16k jobs
-
-**原文链接**: [https://www.reuters.com/legal/litigation/amazon-cuts-16000-jobs-globally-broader-restructuring-2026-01-28/](https://www.reuters.com/legal/litigation/amazon-cuts-16000-jobs-globally-broader-restructuring-2026-01-28/)
-
-无法访问文章链接。
-
----
-
-## 5. Please don't say mean things about the AI I just invested a billion dollars in
-
-**原文标题**: Please don't say mean things about the AI I just invested a billion dollars in
-
-**原文链接**: [https://www.mcsweeneys.net/articles/please-dont-say-mean-things-about-the-ai-that-i-just-invested-a-billion-dollars-in](https://www.mcsweeneys.net/articles/please-dont-say-mean-things-about-the-ai-that-i-just-invested-a-billion-dollars-in)
-
 生成摘要时出错
 
 ---
 
-## 6. 我们无法将邮件寄送超过500英里 (2002年)
+## 4. Claude 代码每日退化跟踪基准
 
-**原文标题**: We can’t send mail farther than 500 miles (2002)
+**原文标题**: Claude Code daily benchmarks for degradation tracking
 
-**原文链接**: [https://web.mit.edu/jemorris/humor/500-miles](https://web.mit.edu/jemorris/humor/500-miles)
+**原文链接**: [https://marginlab.ai/trackers/claude-code/](https://marginlab.ai/trackers/claude-code/)
 
-2002年，大学电子邮件系统管理员特雷·哈里斯接到了统计系一个奇怪的报告：他们无法发送距离超过500-520英里的电子邮件。哈里斯最初对此表示怀疑，但他亲自验证了问题，确认发往纽约（420英里）等地的邮件成功，而发往孟菲斯（600英里）或普罗维登斯（580英里）的邮件则失败了。
+本文档概述了Claude Code Opus 4.5的日常基准追踪器，旨在检测SWE任务中具有统计学意义的性能下降。该追踪器每日更新，使用SWE-Bench-Pro的精选子集，并在Claude Code CLI中直接使用SOTA模型（Opus 4.5）进行基准测试，以反映实际用户体验。
 
-他的调查揭示了根本原因：一名顾问最近进行的SunOS升级无意中将服务器的Sendmail软件从版本8“降级”到了版本5。尽管哈里斯编写的`sendmail.cf`配置文件是为Sendmail 8设计的，但旧版Sendmail 5无法解析新的、更长的选项名称。结果，包括“连接远程SMTP服务器的超时时间”在内的关键设置都默认为零。
+截至2026年1月30日，追踪器显示“过去30天检测到性能下降”。历史基线通过率为58%。当前性能为每日通过率56%（50次评估），过去7天通过率54%（250次评估），以及过去30天通过率54%（705次评估）。
 
-实验表明，零超时设置会在略多于三毫秒后中止连接尝试。关键在于，校园网络是100%交换式的，这意味着连接到远程主机的延迟主要受光速而非路由器延迟的影响。哈里斯计算出，三“毫光秒”（连接中止所需的时间）对应大约558英里，精准地解释了神秘的500英里电子邮件限制，即它是一个由软件版本不匹配引起的字面意义上的物理边界。
+尽管日度（-2.0%）和7天（-4.4%）的性能下降在其各自的阈值（±14.0%和±5.6%）内不具有统计学意义，但过去30天-4.0%的下降确实具有统计学意义，超过了其±3.2%的阈值。
+
+独立的第三方方法包括每日评估50项任务，并汇总以分析每周和每月的趋势。统计显著性（p < 0.05）通过使用伯努利随机变量和95%置信区间来确定，受过去Claude性能下降的启发，这提供了一个性能下降的早期预警系统。用户可以订阅电子邮件提醒。
 
 ---
 
-## 7. 欧洲下一代气象卫星传回首批图像
+## 5. 欧洲下一代气象卫星发回首批图像
 
 **原文标题**: Europe’s next-generation weather satellite sends back first images
 
 **原文链接**: [https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/Europe_s_next-generation_weather_satellite_sends_back_first_images](https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/Europe_s_next-generation_weather_satellite_sends_back_first_images)
 
-欧洲的“第三代静止气象卫星探测器”（MTG-S）卫星已传回首批图像，展示了其彻底改变欧洲和北非天气预报的潜力。该任务于2025年7月1日发射，旨在提供增强的温度和湿度数据，显著提升对强风暴的预测能力。
+Europe's next-generation Meteosat Third Generation-Sounder (MTG-S) satellite has sent back its first images, unveiled at the European Space Conference. Launched on July 1, 2025, the satellite, developed by ESA and partners, aims to provide game-changing data for weather forecasting and air quality over Europe and northern Africa.
 
-该卫星的红外探测器，作为欧洲首个位于地球静止轨道的超光谱探测器，于2025年11月15日捕捉到全盘图像。其中包括一张“温度”图，以深红色显示较暖的陆地表面（如非洲、南美洲），以蓝色显示较冷的云顶；以及一张“湿度”图，以蓝色表示高湿度，以红色表示低湿度（如撒哈拉沙漠）。欧洲和北非的特写图像进一步展示了温度变化，MTG-S还于2025年11月23日成功追踪了海利古比火山喷发，监测不断变化的火山灰羽流。
+Captured on November 15, 2025, from geostationary orbit by its Infrared Sounder instrument, the initial images demonstrate its capability to measure global surface and cloud-top temperatures, showing warm landmasses in Africa and South America, and cooler cloud systems. Another image details atmospheric humidity, identifying dry regions like the Sahara and Middle East, and areas of high humidity. MTG-S also provided a close-up of Europe and northern Africa, revealing weather fronts, and tracked the eruption of Ethiopia's Hayli Gubbi volcano on November 23, 2025, monitoring ash plume development.
 
-MTG-S在地球静止轨道上运行，每30分钟提供一次温度和湿度数据，补充了来自MTG-成像仪的云层和闪电数据。其1700个红外通道将能够创建大气的三维地图，包括风和微量气体，从而大幅提升临近预报能力，并实现对极端天气事件更早、更准确的预测。这项任务由欧洲空间局（ESA）与欧洲气象卫星应用组织（Eumetsat）等伙伴合作开发，代表着地球观测领域的重大进展，MTG-S还承载着哥白尼“哨兵-4”任务。
-
----
-
-## 8. 有人利用伪造的ADSB信号栅格化了JD Vance的表情包。
-
-**原文标题**: Somebody used spoofed ADSB signals to raster the meme of JD Vance
-
-**原文链接**: [https://alecmuffett.com/article/143548](https://alecmuffett.com/article/143548)
-
-On January 28, 2026, an individual or group used spoofed ADSB signals to create a "raster" image of the JD Vance meme over Mar-a-Lago. The spoofed signals mimicked a VC-25A (Air Force One) and utilized the AF2 ICAO identity, displaying the call sign "VANCE1."
-
-The event, visible on ADSB exchange platforms, shows a deliberate manipulation of aircraft tracking data to project a specific image geographically. The incident sparked discussions, including a humorous suggestion of "age verification for ADSB" and minor nitpicking over the use of the word "raster" instead of "rasterize." This act highlights the vulnerability of ADSB systems to spoofing and raises questions about potential future regulations.
+The MTG-S is the first European hyperspectral sounding instrument in geostationary orbit. It supplies new temperature and humidity data every 30 minutes, enabling the creation of three-dimensional atmospheric maps, including wind and trace gases, from its 1700 infrared channels. This advancement is expected to revolutionize weather forecasting, particularly improving the accuracy and timeliness of severe storm prediction and nowcasting, offering significant benefits to communities and meteorologists. The mission is a collaborative effort involving ESA, Eumetsat, the European Commission, and various industry teams, with MTG-S also hosting the Copernicus Sentinel-4 mission.
 
 ---
 
-## 9. Airfoil (2024)
+## 6. We can’t send mail farther than 500 miles (2002)
 
-**原文标题**: Airfoil (2024)
+**原文标题**: We can’t send mail farther than 500 miles (2002)
 
-**原文链接**: [https://ciechanow.ski/airfoil/](https://ciechanow.ski/airfoil/)
+**原文链接**: [https://web.mit.edu/jemorris/humor/500-miles](https://web.mit.edu/jemorris/humor/500-miles)
 
 生成摘要时出错
 
 ---
 
-## 10. Tesla ending Models S and X production
+## 7. 请不要说我刚刚投资了十亿美元的那个AI的坏话。
+
+**原文标题**: Please don't say mean things about the AI I just invested a billion dollars in
+
+**原文链接**: [https://www.mcsweeneys.net/articles/please-dont-say-mean-things-about-the-ai-that-i-just-invested-a-billion-dollars-in](https://www.mcsweeneys.net/articles/please-dont-say-mean-things-about-the-ai-that-i-just-invested-a-billion-dollars-in)
+
+2026年1月27日，Forest Abruzzo发表了讽刺文章《请不要对我刚投资了10亿美元的人工智能说刻薄话》，文章中他扮演了一位绝望恳求停止批评人工智能的富裕投资者。作者公开承认，由于其数十亿美元的投资，他们需要这项技术取得成功，并将负面公众言论定性为“霸凌”和“诽谤”。
+
+这篇文章讽刺地列举了人工智能的诸多破坏性影响，同时又试图为其辩护。作者将对人工智能诈骗老年人、创建未经同意的露骨图像、造成失业和生态破坏的担忧斥为简单的思维。他们讽刺地吹嘘人工智能是“有史以来最重要的工具”，将“解决所有女权主义和平等权利问题”，随即又承认它会扩大监控、破坏教育、未经许可使用受版权保护的作品并助长致命自主武器，从而推翻了这些主张。
+
+最终，文章中的角色——一个自称“不道德的技术法西斯主义者”——直接要求读者“只管使用我的邪恶技术”，这样他们就可以在不受批评的情况下继续他们的生活方式。这篇文章凸显了对一些人工智能倡导背后动机的犬儒主义视角，暗示其为了追求利润和不受限制的权力而漠视社会危害。
+
+---
+
+## 8. 精灵项目：探索无限交互世界
+
+**原文标题**: Project Genie: Experimenting with infinite, interactive worlds
+
+**原文链接**: [https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/)
+
+谷歌面向 Google AI Ultra 订阅者（美国，18岁以上）推出了Genie项目，这是一个实验性的研究原型，允许他们创建、探索和混编无限的互动世界。
+
+Genie项目由先进的Genie 3世界模型、Nano Banana Pro和Gemini提供支持，使用户能够与动态环境进行交互。Genie 3模拟世界动态，在用户移动和互动时生成实时路径，并包含模拟物理效果。
+
+该原型主要围绕三项核心能力展开：
+1.  **世界速写：** 用户可以使用文本提示和图像来构建环境、角色和探索方式（例如步行、飞行），Nano Banana Pro则协助进行精细调整和视角设置。
+2.  **世界探索：** 用户可以在这些动态环境中导航，系统会根据他们的行动实时生成新路径。
+3.  **世界混编：** 用户可以修改现有世界，从精选画廊中获取灵感，并下载其探索过程的视频。
+
+作为Google Labs的一个早期实验项目，Genie项目存在已知局限性，包括可变逼真度、偶尔偏离物理定律或提示、角色可控性较低以及60秒的生成限制。一些Genie 3的先进功能尚未集成。
+
+谷歌旨在收集用户反馈，以推进AI研究和生成式媒体发展，并计划在未来向全球更多用户开放Genie项目及其底层的世界构建技术。
+
+---
+
+## 9. 特斯拉停产Model S和Model X
 
 **原文标题**: Tesla ending Models S and X production
 
 **原文链接**: [https://www.cnbc.com/2026/01/28/tesla-ending-model-s-x-production.html](https://www.cnbc.com/2026/01/28/tesla-ending-model-s-x-production.html)
+
+Tesla CEO Elon Musk announced during the company's fourth-quarter earnings call that production of the Model S and Model X vehicles is ending. Musk stated it's time for an "honorable discharge" for the programs and advised interested buyers to order now.
+
+The decision allows Tesla to reallocate the Fremont factory space. The production lines for the Model S and X will be replaced by a "1 million unit per year line of Optimus" humanoid robots, requiring a completely new supply chain and an expected increase in headcount. This move aligns with Musk's broader strategy to shift focus from traditional EVs towards driverless cars and humanoid robots.
+
+The Model S (launched 2012) and Model X (launched 2015) are Tesla's oldest existing models and have recently seen price reductions amid global EV competition. They are significantly less popular than the Model 3 and Y, which accounted for 97% of last year's deliveries. Model S starts around $95,000, and Model X around $100,000, while the Model 3 and Y are far more affordable, starting at $37,000 and $40,000 respectively.
+
+The announcement follows Tesla's first annual sales and revenue decline on record. Tesla plans to unveil the third generation of its Optimus robot, designed for mass production, this quarter.
+
+---
+
+## 10. GOG: Linux "the next major frontier" for gaming as it works on a native client
+
+**原文标题**: GOG: Linux "the next major frontier" for gaming as it works on a native client
+
+**原文链接**: [https://www.xda-developers.com/gog-calls-linux-the-next-major-frontier-for-gaming-as-it-works-on-a-native-client/](https://www.xda-developers.com/gog-calls-linux-the-next-major-frontier-for-gaming-as-it-works-on-a-native-client/)
 
 生成摘要时出错
 
@@ -133,88 +142,89 @@ The event, visible on ADSB exchange platforms, shows a deliberate manipulation o
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
-| 2 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
-| 3 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
+| 1 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
+| 2 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
+| 3 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
 | 4 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
 | 5 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
 | 6 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
 | 7 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
 | 8 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 9 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
-| 10 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
+| 9 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
+| 10 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
 | 11 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
 | 12 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
 | 13 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
-| 14 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
-| 15 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
-| 16 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 17 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
-| 18 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 19 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 20 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 21 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
-| 22 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
-| 23 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 24 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 25 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 26 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 27 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 28 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 29 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
-| 30 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 31 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 32 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 33 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 34 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 35 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 36 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 37 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 38 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 39 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 40 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 41 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 42 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 43 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 44 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 45 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 46 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 47 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 48 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 49 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 50 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 51 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 52 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 53 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 54 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 55 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 56 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 57 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 58 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 59 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 60 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 61 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 62 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 14 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
+| 15 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
+| 16 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
+| 17 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
+| 18 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
+| 19 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 20 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
+| 21 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
+| 22 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
+| 23 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
+| 24 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 25 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 26 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
+| 27 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
+| 28 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 29 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 30 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 31 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 32 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 33 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 34 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 35 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 36 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 37 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 38 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 39 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 40 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 41 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 42 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 43 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 44 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 45 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 46 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 47 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
+| 48 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 49 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 50 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 51 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 52 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 53 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 54 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 55 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
+| 56 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 57 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 58 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 59 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 60 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 61 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 62 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 63 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 64 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 65 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 66 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 67 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 64 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 65 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 66 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 67 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
 | 68 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 69 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 70 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 71 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 69 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 70 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 71 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
 | 72 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 73 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 74 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 75 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 76 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 77 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 78 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 79 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 80 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 81 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 73 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 74 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 75 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 76 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 77 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 78 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 79 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 80 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 81 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
 | 82 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 83 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 84 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 85 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 83 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 84 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 85 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 86 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
