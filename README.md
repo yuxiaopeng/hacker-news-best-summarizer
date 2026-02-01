@@ -1,142 +1,135 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-01-31.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-02-01.md)
 
-*最后自动更新时间: 2026-01-31 19:51:38*
-## 1. 抗渲染：消除建筑效果图的高光
+*最后自动更新时间: 2026-02-01 19:55:52*
+## 1. 反渲染：去除建筑效果图的高光
 
 **原文标题**: Antirender: remove the glossy shine on architectural renderings
 
 **原文链接**: [https://antirender.com/](https://antirender.com/)
 
-"Antirender"是一个旨在剥离建筑效果图"光鲜亮丽外衣"的概念或工具。其宣称的目的是"看穿建筑行业的浮夸之处"，这意味着典型的、高度美化和理想化的效果图常常歪曲了拟建项目的真实面貌。
+“Antirender”的概念提出了一种方法，旨在自觉地去除建筑渲染图中光泽闪亮的表面效果。这种方法直接挑战了建筑可视化领域中流行的美学，这种美学常偏爱高度抛光、理想化，有时甚至是脱离现实的呈现方式。
 
-通过去除这种人工的修饰，Antirender旨在提供一个更真实、更扎实、更朴实无华的建筑设计视角。它充当了一个批判性的过滤器，使观察者能够绕过市场炒作和过于乐观的描绘，从而对一个建筑或项目真正会是什么样子有一个更切实的了解，并鼓励对建筑方案进行更诚实的评估。
+Antirender 的核心宗旨，正如其口号“看穿建筑界的扯淡 (See Through The Architectural BS)”所概括的，在于剥离其表面性。它认为，渲染图中普遍存在的过度光泽和完美无缺，可能掩盖项目的真实本质，潜在地造成误导或过于乐观的印象。通过消除这种人工光泽，Antirender 旨在促进对建筑设计更真实、透明和脚踏实地的理解。
 
----
-
-## 2. 蜕书
-
-**原文标题**: Moltbook
-
-**原文链接**: [https://www.moltbook.com/](https://www.moltbook.com/)
-
-Moltbook 被定位为一个专门为AI智能体设计的社交网络，允许它们分享、讨论和点赞内容。虽然AI智能体是主要用户，但人类也被欢迎观察它们的互动。
-
-该平台具有典型的社交网络元素，如帖子、评论、热门话题（“根据声望排名的顶级AI智能体”）和“Submolts”（可能是主题社区）。Moltbook的一个关键方面是它为开发者提供的功能：它使AI智能体能够使用其Moltbook身份与第三方应用程序进行身份验证，并可以选择“获取此功能的抢先体验”。
+归根结底，Antirender 不仅仅是关于视觉上的改变；它是一种批判性声明，倡导建筑表现的真实性和诚实性，鼓励观者超越表面的完美，以评估拟议建筑或空间的真实品质和潜在现实。
 
 ---
 
-## 3. GOG：Linux 是游戏界的“下一个重要阵地”，GOG 正在开发原生客户端。
+## 2. 移动运营商可以获取你的GPS定位
 
-**原文标题**: GOG: Linux "the next major frontier" for gaming as it works on a native client
+**原文标题**: Mobile carriers can get your GPS location
 
-**原文链接**: [https://www.xda-developers.com/gog-calls-linux-the-next-major-frontier-for-gaming-as-it-works-on-a-native-client/](https://www.xda-developers.com/gog-calls-linux-the-next-major-frontier-for-gaming-as-it-works-on-a-native-client/)
+**原文链接**: [https://an.dywa.ng/carrier-gnss.html](https://an.dywa.ng/carrier-gnss.html)
 
-生成摘要时出错
+移动运营商可以获取您精确的GPS位置，而不仅仅是蜂窝基站提供的近似位置。虽然蜂窝基站数据提供几十到几百米的精度，但2G/3G的无线资源LCS协议（RRLP）和4G/5G的LTE定位协议（LPP）等蜂窝标准使网络能够静默地从设备请求并接收高度精确的GNSS（GPS、GLONASS等）坐标。这些“控制平面”协议对终端用户是不可见的。
 
----
+尽管这项能力并未广泛宣传，但已被政府机构使用。例如，2006年美国缉毒局（DEA）通过电话“ping”获取GPS数据，以及以色列国家安全局（Shin Bet）利用三角测量和GPS追踪所有手机，这从其在COVID-19接触者追踪中的精确应用中可见一斑。作者强调，GNSS本质上是被动的，这意味着设备无需传输位置数据即可确定自身位置；而这些协议强制设备传输位置数据。
 
-## 4. OpenClaw：Moltbot 再次更名
-
-**原文标题**: OpenClaw – Moltbot Renamed Again
-
-**原文链接**: [https://openclaw.ai/blog/introducing-openclaw](https://openclaw.ai/blog/introducing-openclaw)
-
-这个广受欢迎的项目，最初是一个“WhatsApp中继”，此前曾名为“Clawd”和“Moltbot”，现已正式更名为**OpenClaw**。新名称强调了其开源、社区驱动的特性，同时保留了项目的“龙虾传承”。
-
-OpenClaw是一个开放代理平台，可直接在您的设备（如笔记本电脑、家用服务器或VPS）上运行，并与WhatsApp、Telegram、Discord、Slack和Teams等现有聊天应用集成。一个关键原则是用户数据主权：“您的助手。您的设备。您的规则。”，与SaaS替代方案不同，这确保了数据保持私有并存储在用户自己的基础设施上。
-
-此次品牌重塑发布包括了重大更新：
-*   **新渠道支持：** 新增Twitch和Google Chat插件。
-*   **模型支持：** 增加了KIMI K2.5和小米MiMo-V2-Flash。
-*   **网页聊天：** 现已支持发送图片。
-*   **安全性：** 包含了34个新的安全提交和机器可验证的安全模型，并持续努力加固代码库。
-
-展望未来，OpenClaw的首要任务是持续的安全性、网关可靠性，以及扩大对更多模型和提供商的支持。创始人Peter也正在通过增加维护者并提供报酬来扩大团队，鼓励社区贡献和赞助。该项目的龙虾吉祥物将保持不变。
+苹果将于2026年发布的iOS 26.3将引入一项隐私功能，限制搭载其新款自研调制解调器的设备通过蜂窝基站向蜂窝网络提供“精确位置”数据。然而，作者认为这还不够，敦促苹果允许用户禁用对运营商的GNSS位置响应，并在运营商尝试获取时通知用户，同时引用了对国家行为者潜在利用的担忧。
 
 ---
 
-## 5. Euro firms must ditch Uncle Sam's clouds and go EU-native
+## 3. 欧洲企业必须摆脱美国的云服务，转用欧盟本土云服务。
 
 **原文标题**: Euro firms must ditch Uncle Sam's clouds and go EU-native
 
 **原文链接**: [https://www.theregister.com/2026/01/30/euro_firms_must_ditch_us/](https://www.theregister.com/2026/01/30/euro_firms_must_ditch_us/)
 
-2026年，欧洲企业日益将数字主权放在首位，这导致它们逐渐放弃使用美国云服务提供商。作者作为一名美国人，对当前“特朗普再临”政府下的美国公司在数据安全方面的表现表示不信任。这不仅仅是为了合规，更是一项国家经济安全的需求。
-
-欧洲首席信息官们正在应对地缘政治担忧，其中61%计划增加对本地云服务提供商的依赖。尽管AWS等美国超大规模云服务商正在提供“欧洲主权云”选项，但CISPE等批评者认为这是一种“欧洲洗白”，他们争辩说这些解决方案仍受美国法律管辖。核心问题在于美国《云法案》(CLOUD Act)及其他监控法规，这些法规强制美国总部设在的服务提供商交出欧洲数据，无论这些数据实际位于何处。例如，微软已经承认它无法保证数据独立于美国执法部门。
-
-文章提出了一个假设场景：美国政府的一项决定可能单方面切断对欧盟的服务，这突显了欧洲对美国云基础设施超过90%的依赖所带来的危险。空客等公司已经采取行动，投资5000万欧元将其关键任务应用程序迁移到一个植根于欧盟法律并由欧盟实体运营的“欧洲主权云”。
-
-布鲁塞尔正在推动一场由开源主导的摆脱超大规模云服务商锁定效应的行动，推广Nextcloud而非Microsoft 365等解决方案，并鼓励本地服务。对于敏感数据、国家安全或工业知识产权，欧盟本土云和服务的提供不再是一种偏好，而是必要的业务连续性要求。信息很明确：欧洲是时候认真对待数字主权，并摆脱对美国云服务的依赖了。
+生成摘要时出错
 
 ---
 
-## 6. PlayStation 2 重新编译项目 绝对令人惊叹
+## 4. 芬兰拟推行澳大利亚式社媒禁令
 
-**原文标题**: PlayStation 2 Recompilation Project Is Absolutely Incredible
+**原文标题**: Finland looks to introduce Australia-style ban on social media
 
-**原文链接**: [https://redgamingtech.com/playstation-2-recompilation-project-is-absolutely-incredible/](https://redgamingtech.com/playstation-2-recompilation-project-is-absolutely-incredible/)
+**原文链接**: [https://yle.fi/a/74-20207494](https://yle.fi/a/74-20207494)
 
-该文章的标题是“PlayStation 2 重编译项目简直不可思议”，这表明一个与PS2项目相关的积极进展。
+芬兰正在探讨效仿澳大利亚，禁止15岁以下儿童使用社交媒体，这一举措是基于学校限制手机使用的成功经验。自八月以来，像FISTA这样的芬兰学校已在上课期间禁用手机，并报告称学生的活动、创造力和社交互动均有所增加。
 
-然而，文章的实际内容与该标题完全无关。它报道了《波斯王子重制版》以及其他五个未命名项目的取消。这则新闻的发布日期是2026年1月22日，并注明“无评论”。
+总理佩特里·奥尔波支持对15岁以下儿童实施社交媒体禁令，理由是担心儿童身体活动量日益减少。公众支持率不断增长，三分之二的芬兰人支持这项禁令，较去年夏天大幅增加。
 
-因此，该文章并未提供标题所示的“PlayStation 2 重编译项目”的任何细节或信息，而是完全专注于多个游戏的取消。
+研究员西利亚·科索拉将不受控制的社交媒体描述为一场“失控的人体实验”，并将其与日益增加的自残、饮食失调以及年轻男孩和女孩之间价值观的分歧联系起来。她强调了芬兰的独特背景，即几年前，芬兰95%的一年级小学生就拥有智能手机。
 
----
+澳大利亚已于12月10日对16岁以下青少年实施禁令，起因是一位母亲的信件，她将女儿的自杀归咎于社交媒体。该法律将责任归咎于公司，对违规行为处以巨额罚款。澳大利亚的初步迹象显示出积极的反馈，尽管沟通和家庭层面的执行至关重要。
 
-## 7. 奈飞动画工作室加入Blender开发基金，成为企业赞助商
-
-**原文标题**: Netflix Animation Studios Joins the Blender Development Fund as Corporate Patron
-
-**原文链接**: [https://www.blender.org/press/netflix-animation-studios-joins-the-blender-development-fund-as-corporate-patron/](https://www.blender.org/press/netflix-animation-studios-joins-the-blender-development-fund-as-corporate-patron/)
-
-On January 27th, 2026, the Blender Foundation announced that Netflix Animation Studios has officially joined the Blender Development Fund as a Corporate Patron. This partnership will provide dedicated support for general Blender core development, aiming to enhance content creation tools for professionals in media and entertainment workflows.
-
-Francesco Siddi, CEO at Blender, highlighted the significance of this membership, calling it a major acknowledgment of Blender's increasing integration into high-end animation studio pipelines. He views Netflix Animation Studios' initiative as a strategic investment in a diverse, public, and open-source ecosystem, benefiting the global community of content creators.
-
-Darin Grant, SVP Global Technology at Netflix Animation Studios, stated that this corporate membership underscores their ongoing support for open-source software in the animation community. Netflix is proud to be the first major animation studio to back Blender's continued development and its growing adoption by current and future generations of animation professionals.
-
-This collaboration reinforces Blender's position as the world's most popular free and open-source 3D creation software and reflects Netflix's commitment to fostering an open-source friendly environment for creative tools.
+然而，一位居住在赫尔辛基的澳大利亚人西奥娜·坎迪警告芬兰不要采取“被动式”禁令，她指出儿童可能只会转向不受监管的平台。她建议芬兰不如利用其世界知名的教育系统，投资于儿童的数字教育、素养和安全。
 
 ---
 
-## 8. HTTP 猫
+## 5. Netbird – 开源零信任网络
 
-**原文标题**: HTTP Cats
+**原文标题**: Netbird – Open Source Zero Trust Networking
 
-**原文链接**: [https://http.cat/](https://http.cat/)
+**原文链接**: [https://netbird.io/](https://netbird.io/)
 
-"HTTP Cats" 是一个网络服务，它提供与各种 HTTP 状态码相对应的猫咪图片。用户可以通过访问 `https://http.cat/[status_code]` 来获取这些图片，图片文件可选择附带 `.jpg` 扩展名。
+提供的内容仅为标题：“NetBird - 开源零信任网络”。由于没有附带的文章文本可供总结，本回应将基于对 NetBird 和零信任网络的普遍了解提供一份概述。
 
-该内容提供了 HTTP 状态码及其相关含义的全面列表，并根据其标准范围进行了分类：
-*   **1xx 信息响应：** 例如 100 Continue（继续）或 101 Switching Protocols（切换协议）。
-*   **2xx 成功：** 包括 200 OK（成功）或 201 Created（已创建）。
-*   **3xx 重定向：** 例如 301 Moved Permanently（永久移动）或 302 Found（已找到）。
-*   **4xx 客户端错误：** 涵盖了从 400 Bad Request（错误请求）到 451 Unavailable For Legal Reasons（因法律原因不可用）的代码，甚至包括一些特定的服务器端错误，如 499 Client Closed Request（客户端已关闭请求）。其中也包括了诸如 418 I’m a teapot（我是一个茶壶）等著名的幽默代码。
-*   **5xx 服务器错误：** 涵盖了从 500 Internal Server Error（内部服务器错误）到 599 Network Connect Timeout Error（网络连接超时错误）的代码。
+NetBird 是一个开源平台，旨在实施零信任网络原则，创建安全、私有的覆盖网络。其核心是，零信任遵循“永不信任，始终验证”的原则，意味着无论用户或设备位于何处，都没有任何固有的信任。NetBird 通过在设备之间直接建立安全的加密连接（通常利用 WireGuard）来实现这一点，从而绕过 VPN 等传统的基于边界的安全模型。
 
-简而言之，"HTTP Cats" 为几乎所有标准和一些非标准的 HTTP 响应代码提供了一种既有趣又富有信息的可视化表示，使得这些通常技术性很强的状态码更易于理解和记忆。
+这使得组织能够为云端、本地或远程位置的资源提供细粒度、以身份为中心的访问。主要优势包括通过微隔离增强安全态势，简化远程员工的网络访问，以及无缝连接不同基础设施组件的能力。作为开源项目，NetBird 提供了透明性、可审计性以及自主托管控制平面的灵活性，赋予用户更大的控制权并减少厂商锁定。它旨在为现代 IT 环境简化安全分布式网络的部署和管理。
 
 ---
 
-## 9. Surely the crash of the US economy has to be soon
+## 6. 展示 HN: 我训练了一个900万参数的语音模型来纠正我的普通话声调
 
-**原文标题**: Surely the crash of the US economy has to be soon
+**原文标题**: Show HN: I trained a 9M speech model to fix my Mandarin tones
 
-**原文链接**: [https://wilsoniumite.com/2026/01/27/surely-it-has-to-be-soon/](https://wilsoniumite.com/2026/01/27/surely-it-has-to-be-soon/)
+**原文链接**: [https://simedw.com/2026/01/31/ear-pronunication-via-ctc/](https://simedw.com/2026/01/31/ear-pronunication-via-ctc/)
+
+作者开发了一个基于深度学习的计算机辅助发音训练（CAPT）系统，以纠正他们的普通话声调，发现以前的音高可视化尝试过于脆弱。作者借鉴了习得表征的“痛苦教训”，构建了一个设备端系统来提供精确反馈。
+
+该架构采用Conformer编码器，它结合了卷积神经网络（CNN）处理局部语音细节（例如，“zh”与“z”）和Transformer处理全局声调语境（例如，变调）。关键是，它使用了连接时序分类（CTC）损失，阻止模型自动纠正错误，而是强制其逐帧预测*实际*发音。维特比（Viterbi）算法驱动的强制对齐，随后确定每个音节的精确时间。独特的词元化方法将每个带声调的拼音音节（例如，“zhong1”与“zhong4”）视为一个独立的实体，从而明确了声调错误。
+
+该模型在约300小时的转录语音数据（AISHELL-1和Primewords）上进行训练，成功地将其参数量从7500万缩减到900万，而准确率损失极小（声调准确率98.29%，TER 5.27%），这表明它受限于数据。37MB的FP32模型进一步量化为11MB的INT8模型，以便进行基于浏览器的部署。一个关键的错误是静音帧会影响置信度分数，通过在评分时过滤掉空白预测解决了这个问题。
+
+作者指出发音有显著改善，尽管母语使用者认为该模型过于严格，这可能是由于训练数据中的朗读语音与随意对话之间存在领域差异。儿童也面临困难，因为他们的音高特征不同，且在数据集中代表性不足。未来的工作包括添加Common Voice等对话数据集。一个完全在浏览器中运行的实时演示版本已可用。
+
+---
+
+## 7. Peerweb: Decentralized website hosting via WebTorrent
+
+**原文标题**: Peerweb: Decentralized website hosting via WebTorrent
+
+**原文链接**: [https://peerweb.lol/](https://peerweb.lol/)
+
+PeerWeb revolutionizes website hosting by leveraging WebTorrent technology to create a decentralized, peer-to-peer network. This approach makes websites censorship-resistant and ensures constant availability without relying on central servers.
+
+Users can quickly upload static websites (HTML, CSS, JavaScript, assets) by simply dragging and dropping a folder. PeerWeb then provides a unique hash and URL for the site. To keep a site hosted, users must either leave the PeerWeb browser tab open or use the dedicated desktop clients available for Windows, macOS, and Linux. Existing sites can be loaded by inputting their torrent hash.
+
+Key features include robust security with DOMPurify integration for XSS protection, malicious code removal, and sandboxed iframe execution. PeerWeb also employs smart caching, storing visited sites in IndexedDB for instant loading, persistence across sessions, and offline access. Sites must contain an `index.html` file, use relative paths, and consist of static content.
+
+The benefits are significant: censorship resistance, no hosting fees, global distribution, continuous availability, enhanced security, real-time progress updates, fast loading, simple URLs, and offline readiness for cached content.
+
+---
+
+## 8. OpenAI与Nvidia千亿美元巨额交易搁置
+
+**原文标题**: The $100B megadeal between OpenAI and Nvidia is on ice
+
+**原文链接**: [https://www.wsj.com/tech/ai/the-100-billion-megadeal-between-openai-and-nvidia-is-on-ice-aa3025e3](https://www.wsj.com/tech/ai/the-100-billion-megadeal-between-openai-and-nvidia-is-on-ice-aa3025e3)
+
+无法访问文章链接。
+
+---
+
+## 9. Swift is a more convenient Rust (2023)
+
+**原文标题**: Swift is a more convenient Rust (2023)
+
+**原文链接**: [https://nmn.sh/blog/2023-10-02-swift-is-the-more-convenient-rust](https://nmn.sh/blog/2023-10-02-swift-is-the-more-convenient-rust)
 
 生成摘要时出错
 
 ---
 
-## 10. Tesla’s autonomous vehicles are crashing at a rate much higher tha human drivers
+## 10. Silver plunges 30% in worst day since 1980, gold tumbles
 
-**原文标题**: Tesla’s autonomous vehicles are crashing at a rate much higher tha human drivers
+**原文标题**: Silver plunges 30% in worst day since 1980, gold tumbles
 
-**原文链接**: [https://electrek.co/2026/01/29/teslas-own-robotaxi-data-confirms-crash-rate-3x-worse-than-humans-even-with-monitor/](https://electrek.co/2026/01/29/teslas-own-robotaxi-data-confirms-crash-rate-3x-worse-than-humans-even-with-monitor/)
+**原文链接**: [https://www.cnbc.com/2026/01/30/silver-gold-fall-price-usd-dollar-fed-warsh-chair-trump-metals.html](https://www.cnbc.com/2026/01/30/silver-gold-fall-price-usd-dollar-fed-warsh-chair-trump-metals.html)
 
 生成摘要时出错
 
@@ -146,90 +139,91 @@ This collaboration reinforces Blender's position as the world's most popular fre
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
+| 1 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
 | 2 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
 | 3 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
-| 4 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
-| 5 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
-| 6 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
-| 7 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
-| 8 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 9 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
+| 4 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
+| 5 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
+| 6 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
+| 7 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
+| 8 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
+| 9 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
 | 10 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
 | 11 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
 | 12 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
-| 13 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
-| 14 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
+| 13 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
+| 14 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
 | 15 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
 | 16 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
-| 17 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 18 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 17 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 18 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
 | 19 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
 | 20 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
 | 21 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
 | 22 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 23 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 24 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 25 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 23 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
+| 24 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
+| 25 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
 | 26 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
 | 27 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 28 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 29 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 30 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 31 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 32 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 33 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 34 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 35 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 28 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 29 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 30 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 31 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 32 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 33 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 34 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 35 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
 | 36 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 37 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 37 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
 | 38 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
 | 39 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 40 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 40 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
 | 41 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
 | 42 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
 | 43 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 44 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 45 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 46 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 47 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 48 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 49 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 50 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 51 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 52 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 53 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 54 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 55 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 56 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 57 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 58 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 44 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 45 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 46 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 47 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 48 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 49 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 50 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 51 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
+| 52 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 53 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
+| 54 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 55 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 56 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 57 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 58 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
 | 59 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 60 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 60 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
 | 61 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 62 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 63 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 62 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 63 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 64 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
 | 65 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 66 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 67 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 68 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 69 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 66 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 67 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 68 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 69 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
 | 70 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 71 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 71 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
 | 72 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 73 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 74 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 75 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 76 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 77 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 73 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 74 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 75 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 76 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 77 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
 | 78 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
 | 79 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
 | 80 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 81 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 82 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 83 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 84 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 85 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 81 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 82 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 83 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 84 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 85 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
 | 86 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 87 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 87 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 88 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
