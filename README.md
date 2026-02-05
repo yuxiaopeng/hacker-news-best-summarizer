@@ -1,133 +1,146 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-02-04.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-02-05.md)
 
-*最后自动更新时间: 2026-02-04 20:09:07*
-## 1. 我想念努力思考。
+*最后自动更新时间: 2026-02-05 20:07:20*
+## 1. 我怀念努力思考。
 
 **原文标题**: I miss thinking hard
 
 **原文链接**: [https://www.jernesto.com/articles/thinking_hard](https://www.jernesto.com/articles/thinking_hard)
 
-作者渴望“苦思冥想”——即解决难题所需的、持续数日的精神投入。他识别出两种核心人格特质：“建造者”，其动力是快速创造实用解决方案；以及“思考者”，渴望深度、持久的脑力搏斗。
+作者自称“第三型思考者”，深切渴望“刻苦思考”——长时间攻克难题，这曾带给他巨大的满足感和心智成长。他解释说，自己的个性由两个主要特质组成：“建造者”（受创造、交付和实用主义驱动）和“思考者”（需要深入、持久的脑力搏斗）。
 
-回顾大学物理学习时期，作者曾是一个“思考者”，通过专注的、通常长达数周的沉思来解决复杂问题，他认为这个过程是他的“超能力”和深刻满足感的来源。最初，软件工程完美平衡了这些特质，通过创造来满足“建造者”，通过有挑战性的问题来满足“思考者”。
+软件工程最初同时满足了这两种特质，让他既能构建有用的东西，又能解决复杂的问题。然而，人工智能的出现极大地减少了对这种深度问题解决的需求。虽然与AI进行“氛围编码”让“建造者”能够快速将想法变为现实，但这却让“思考者”感到饥渴，尽管产出增加了，却导致了一种停滞感。
 
-然而，人工智能打破了这种平衡。虽然“直觉式编程”通过加速开发来满足“建造者”，但它却大大减少了“思考者”赖以生存的创造性解决问题的需求。尽管生产出更复杂的软件，作者却感觉自己的专业发展停滞不前，他将此归因于“思考者”的“饥饿”。
+作者承认了“实用主义的陷阱”：即使AI生成的解决方案只是“足够好”（约70%的水平），“建造者”那一面也觉得不选择更快、更省力的AI路径是不理智的。这造成了冲突，因为“建造者”的效率与“思考者”对挣扎的需求相悖。
 
-他认识到“实用主义的陷阱”：人工智能在极短时间内实现的“足够好”的解决方案，即使他手动努力可能产生更优越的结果，他的“建造者”一面也难以拒绝。这种内在冲突使他无法纯粹地沉溺于“思考者”。尝试在编程之外重新投入“深入思考”，例如重新审视物理问题，却被“建造者”对实用性和效率的坚持所破坏。
-
-作者在没有找到解决方案的情况下结束，感觉在他的当前道路上，他内心的两个自我无法再同时得到满足，并哀叹真正创造性解决问题的机会日益减少。
+作者不确定如何调和这两部分，他发现很难为深入思考那些与构建不直接相关的问题（如物理学）找到理由。他感叹在编码中真正创造性解决方案的机会越来越少，并总结说，在当前AI驱动的环境下，他不知道如何同时满足“建造者”和“思考者”的需求。
 
 ---
 
-## 2. 法国弃用Zoom和Teams，随着欧洲寻求摆脱美国的数字主权。
-
-**原文标题**: France dumps Zoom and Teams as Europe seeks digital autonomy from the US
-
-**原文链接**: [https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060](https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060)
-
-欧洲各国政府和机构正在日益放弃Zoom、Teams和Microsoft Office等美国大型科技公司的数字服务，转而青睐本土或开源替代方案，这主要受“数字主权”的强烈推动。
-
-法国是这一趋势的典型代表，250万公务员计划到2027年从美国视频会议工具转向国内服务Visio，以确保安全性和保密性。其他例子包括奥地利军队采用LibreOffice、德国石勒苏益格-荷尔斯泰因州将4.4万名员工的邮箱迁移到开源电子邮件，以及里昂和哥本哈根等城市正在探索免费办公软件。
-
-这一转向主要源于地缘政治担忧，这种担忧因美国科技公司可能被迫切断服务的恐惧而加剧，正如美国过去对国际刑事法院微软服务施加制裁所凸显的那样。对数据隐私的担忧、美国托管云服务中数据的脆弱性以及遏制美国科技巨头主导地位的愿望也发挥了重要作用。包括欧盟委员Henna Virkkunen在内的欧洲官员警告称，对技术的依赖“可能被武器化”。
-
-尽管一些美国供应商在欧洲提供“主权云”解决方案，但这一更广泛的趋势强调的是实现对单一供应商的独立，超越单纯的成本节约，优先考虑数字自由并避免专有锁定。
-
----
-
-## 3. 太空数据中心毫无意义
+## 2. 太空中的数据中心说不通
 
 **原文标题**: Data centers in space makes no sense
 
 **原文链接**: [https://civai.org/blog/space-data-centers](https://civai.org/blog/space-data-centers)
 
-在题为《太空数据中心毫无意义》的文章中，作者Andrew L. C. Chen对将数据中心置于轨道上的可行性和益处提出了反驳。他认为，尽管一些支持者提出了诸如免费冷却、更便宜的土地和可再生能源等优势，但这些优势与众多的物流和物理挑战相比，则显得微不足道。
+文章《太空数据中心毫无意义》认为，尽管近期备受关注，但在轨道上部署数据中心的概念对于大多数应用而言，根本上存在缺陷且不切实际。
 
-Chen强调，与地面解决方案相比，在太空中发射和维护设备的成本和复杂性是天文数字。文章强调，组件必须针对极端辐射和真空环境进行加固，这增加了它们的成本并降低了性能。此外，由于光速限制，对地面用户而言，延迟将增加，使实时应用变得不切实际。“免费冷却”的说法被驳斥，因为在真空中散热需要复杂而笨重的散热器。
+作者将**延迟**视为首要且不可逾越的障碍。对于绝大多数现代计算需求——例如流媒体、游戏、物联网和实时操作——数据必须在离用户非常近的地方处理。仅仅是到低地球轨道（LEO）的距离，就会带来高达数百毫秒甚至更长的不可避免的光速延迟，这使得基于太空的数据中心不适合交互式或时间敏感型任务。
 
-最终，作者断言，地面数据中心凭借在冷却、可再生能源和土地高效利用方面的持续创新，仍然具有无可比拟的优势。太空数据中心所提出的优势要么根本不存在，要么伴随着高昂的成本和技术障碍，与改进地面基础设施相比，这使得它们成为一项不理性的投资。
+除了延迟，文章还强调了其他几个关键缺点：
+*   **成本高昂：** 与快速发展且经济高效的地面数据中心相比，在太空中发射、维护和更换硬件的成本是天文数字。
+*   **复杂性和可靠性：** 太空环境需要加固的专用硬件，其性能低于地面基础设施，且升级或维修难度大得多。
+*   **数据回传限制：** 高效地在太空和地面之间传输大量数据需要先进的视距激光通信技术，这项技术仍然复杂且容易受到干扰。
+*   **电力与散热：** 虽然太空提供了丰富的太阳能和真空散热等优势，但这些好处被高效电力传输的挑战以及对复杂主动冷却系统的需求所抵抵消。
 
----
-
-## 4. xAI 加入 SpaceX
-
-**原文标题**: xAI joins SpaceX
-
-**原文链接**: [https://www.spacex.com/updates#xai-joins-spacex](https://www.spacex.com/updates#xai-joins-spacex)
-
-这篇题为“xAI加入SpaceX”的文章传达了一个核心观点：xAI已加入SpaceX。除了这个标题，文章提供的内容仅由“SpaceX”一词组成。因此，这篇文章没有提供任何关于这个所谓的结合的进一步信息、细节或背景，例如整合的性质、其背后的理由或其潜在影响。
+文章总结道，太空数据中心的所谓优势——例如增强的物理安全性或独特的散热方式——与延迟、成本、复杂性和数据传输等压倒性挑战相比，微不足道。在可预见的未来，地面数据中心对于几乎所有计算需求来说，仍然是绝佳的解决方案。
 
 ---
 
-## 5. Qwen3-代码进阶
+## 3. 沃克斯特拉转录2
 
-**原文标题**: Qwen3-Coder-Next
+**原文标题**: Voxtral Transcribe 2
 
-**原文链接**: [https://qwen.ai/blog?id=qwen3-coder-next](https://qwen.ai/blog?id=qwen3-coder-next)
+**原文链接**: [https://mistral.ai/news/voxtral-transcribe-2](https://mistral.ai/news/voxtral-transcribe-2)
 
 生成摘要时出错
 
 ---
 
-## 6. 那些等号究竟是怎么回事？
+## 4. 与其租云，不如自有
 
-**原文标题**: What's up with all those equals signs anyway?
+**原文标题**: Don't rent the cloud, own instead
 
-**原文链接**: [https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway/](https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway/)
+**原文链接**: [https://blog.comma.ai/datacenter/](https://blog.comma.ai/datacenter/)
 
-这篇文章解释了为什么等号会出现在推特上分享的老旧电子邮件中，澄清它们并非代码或OCR错误，而是“quoted printable”编码在不专业的转换过程中被错误处理后留下的产物。
+Comma.ai提倡拥有自己的数据中心而非依赖云计算，并通过其自身的运营设置展示了其可行性和优势。他们认为，自建计算资源能获得控制权，避免供应商锁定和不断上涨的成本（与云支出相比，估计节省了2000万美元）。此外，它能促进卓越工程，将重心从供应商API转向瓦特和浮点运算等基本原理，并激励代码优化，而非仅仅增加预算。
 
-它们出现的主要原因有两个：
+他们的数据中心由一个小团队维护，使用450千瓦的电力，主要通过高效的室外空气冷却。计算能力来自75台内部构建的TinyBox Pro机器中的600块GPU，存储方面则包括4PB的SSD，以及一个定制的`minikeyvalue` (mkv)系统，为非冗余训练数据提供约1TB/秒的读取速度。网络方面依赖100Gbps以太网和Infiniband交换机。
 
-1.  **换行：** 老旧电子邮件系统（90年代以前）使用“quoted printable”来处理长行。一个等号（=）后跟一个回车符和换行符（CRLF）表示一个“软”换行，意味着该行在逻辑上应该连续。正确的解码会移除`=CRLF`。可见的等号是由于有缺陷的转换造成的：如果电子邮件从CRLF（Windows/SMTP标准）转换为NL（Unix）行尾，一个期望`=CRLF`的解码算法在只有`=NL`存在时，将无法移除`=`，使其可见，甚至导致错误的字符删除。作者认为，这种转换很可能是在SMTP服务器环境中重复使用了期望CRLF的算法，但在Unix风格的文件上失败了。
-
-2.  **字符编码：** 等号也用于将“奇怪字符”（非ASCII字符）编码为`=XX`（其中XX是十六进制数字）。例如，`=C2=A0`表示一个不间断空格，常用于缩进。文章推测，转换器可能对这些序列进行了简单的查找和替换，而不是使用适当的解码器，从而导致`=C2`这样的部分可见。
-
-本质上，这些等号是技术遗产（用于换行符和非ASCII字符的quoted-printable编码）与处理这些老旧电子邮件的人所进行的有缺陷的解码共同作用的产物。
+软件基础设施包括用于管理的Ubuntu/Salt、用于工作负载调度的Slurm，以及用于分布式存储(mkv)、PyTorch FSDP训练和实验追踪的定制解决方案。他们开发了`miniray`，一个轻量级的开源Python任务调度器，并通过一个NFS缓存的monorepo来确保分布式作业的代码库一致性，该monorepo同步本地更改和软件包。这个集成系统能够高效地编排像在策略模型训练这样的复杂任务，证明了强大且经济高效的基础设施可以内部构建和拥有。
 
 ---
 
-## 7. 纽约州预算案将要求所有3D打印机配备“阻断技术”。
+## 5. 克劳德 作品 4.6
 
-**原文标题**: New York’s budget bill would require “blocking technology” on all 3D printers
+**原文标题**: Claude Opus 4.6
 
-**原文链接**: [https://blog.adafruit.com/2026/02/03/new-york-wants-to-ctrlaltdelete-your-3d-printer/](https://blog.adafruit.com/2026/02/03/new-york-wants-to-ctrlaltdelete-your-3d-printer/)
+**原文链接**: [https://www.anthropic.com/news/claude-opus-4-6](https://www.anthropic.com/news/claude-opus-4-6)
 
-无法访问文章链接。
+Anthropic 推出了 Claude Opus 4.6，这是一款升级版 AI 模型，显著增强了编码技能、智能体任务执行能力和日常工作能力。该模型于 2026 年 2 月 5 日发布，可通过 claude.ai、API 及主要云平台获取。
 
----
+Opus 4.6 引入了突破性的 1M token 上下文窗口（测试版），并支持高达 128k token 的输出。它在多项基准测试中取得了最先进的性能，包括智能体编码（Terminal-Bench 2.0）、多学科推理（Humanity’s Last Exam）和具有经济价值的知识工作（GDPval-AA），在后者上它以 144 Elo 点的优势超越了 OpenAI 的 GPT-5.2。该模型显著提升了长上下文检索和推理能力，有效解决了“上下文腐蚀”问题。
 
-## 8. The TSA's New $45 Fee to Fly Without ID Is Illegal
+主要产品更新包括 Claude Code 中的智能体团队、用于更长任务的上下文压缩、用于动态推理的自适应思维以及面向开发者的可调工作量控制。Excel 版 Claude 获得了大幅升级，而 PowerPoint 版 Claude 则处于研究预览阶段。
 
-**原文标题**: The TSA's New $45 Fee to Fly Without ID Is Illegal
-
-**原文链接**: [https://www.frommers.com/tips/airfare/the-tsa-new-45-fee-to-fly-without-id-is-illegal-says-regulatory-expert/](https://www.frommers.com/tips/airfare/the-tsa-new-45-fee-to-fly-without-id-is-illegal-says-regulatory-expert/)
-
-The article from Frommer's reports that the Transportation Security Administration (TSA) has introduced a new $45 fee for travelers unable to present an acceptable ID at the airport, who must instead undergo an "enhanced screening" process. However, regulatory expert Charles Leocha vehemently argues that this fee is illegal.
-
-Leocha's primary contention is that the TSA, as a federal agency, lacks the congressional authority to impose new fees or taxes on the public. He explains that while agencies can charge for voluntary, value-added services (like TSA PreCheck), this $45 charge is for a mandatory security screening—a core function of the TSA already funded by existing taxes. Creating such a fee, he asserts, fundamentally alters the agency's funding mechanism without legislative approval from Congress.
-
-Additionally, Leocha suggests the fee is discriminatory, potentially disproportionately affecting vulnerable populations such as the homeless, elderly, or those who have lost their identification and face difficulties in obtaining replacements. The article concludes that this new fee represents an overreach of the TSA's power, improperly shifting the cost of a basic security function onto specific travelers without a legal basis.
+Opus 4.6 保持了出色的安全表现，错位行为和过度拒绝率较低，与此前的前沿模型持平或更优。增强的网络安全能力得到了新的安全保障措施的补充。开发者可通过 API 访问该模型，输入/输出每百万 token 的费用分别为 5 美元/25 美元，对于超出 200k token 的 1M 上下文窗口，将实行高级定价。
 
 ---
 
-## 9. Anki ownership transferred to AnkiHub
+## 6. 联邦调查局无法进入华盛顿邮报记者的iPhone，因为锁定模式已启用。
 
-**原文标题**: Anki ownership transferred to AnkiHub
+**原文标题**: FBI couldn't get into WaPo reporter's iPhone because Lockdown Mode enabled
 
-**原文链接**: [https://forums.ankiweb.net/t/ankis-growing-up/68610](https://forums.ankiweb.net/t/ankis-growing-up/68610)
+**原文链接**: [https://www.404media.co/fbi-couldnt-get-into-wapo-reporters-iphone-because-it-had-lockdown-mode-enabled/](https://www.404media.co/fbi-couldnt-get-into-wapo-reporters-iphone-because-it-had-lockdown-mode-enabled/)
+
+根据最近提交的法庭记录，由于苹果的“锁定模式”（Lockdown Mode）已启用，联邦调查局无法访问一名《华盛顿邮报》记者被查获的iPhone。该设备属于记者汉娜·纳坦森（Hannah Natanson），她的家在一月份遭到突袭，这是针对机密信息泄露调查的一部分。
+
+法庭记录详细说明了联邦调查局能够访问哪些设备和数据，以及哪些仍然无法访问。这一事件为“锁定模式”的明显有效性提供了罕见的洞察，凸显了它能够广泛提升iPhone安全性并阻止执法部门的访问，至少在初期，直到其他潜在技术可能被尝试之前。
+
+---
+
+## 7. 克劳德是一个思考的空间。
+
+**原文标题**: Claude is a space to think
+
+**原文链接**: [https://www.anthropic.com/news/claude-is-a-space-to-think](https://www.anthropic.com/news/claude-is-a-space-to-think)
+
+Anthropic已宣布，其AI助手Claude将保持无广告，将其定位为专为工作和深度智力任务设计的“思考空间”。这一决定源于一种信念，即整合广告将与Claude的核心使命不符：即明确地为用户利益服务并提供真正有用的帮助。
+
+与搜索引擎或社交媒体不同，AI对话往往具有高度的个人性、敏感性和开放性。在这种背景下引入广告或广告商的影响，会显得格格不入、不合时宜，并可能侵蚀用户信任。广告支持模式会引入激励机制，可能巧妙地将对话引向商业化，而非仅仅关注为用户提供最有洞察力或最有用的答案。即使是独立的广告位也可能导致对互动指标的优化，而这并不总是与提供真正有用的帮助相符。
+
+Anthropic的商业模式依赖于企业合同和付费订阅，所得收入将再投资于Claude的改进。这种方法支持了他们的公共利益使命，使他们能够扩大对教育工作者和非营利组织的访问权限，并提供免费版本，同时不销售用户注意力或数据。
+
+尽管Claude不会展示广告，但Anthropic致力于支持用户主动发起的商业互动，例如代理商务（Claude代表用户处理购买）以及与第三方生产力工具的集成。指导原则是所有第三方互动必须由用户发起，确保Claude仍然是一个值得信赖的工具，其唯一的激励是提供有用的答案，就像一本无广告的笔记本或一块干净的黑板。
+
+---
+
+## 8. AI is killing B2B SaaS
+
+**原文标题**: AI is killing B2B SaaS
+
+**原文链接**: [https://nmn.gl/blog/ai-killing-b2b-saas](https://nmn.gl/blog/ai-killing-b2b-saas)
+
+Namanyay Goel argues that AI presents an existential threat to traditional B2B SaaS, not by outright killing it, but by demanding evolution. The issue stems from "vibe coding"—the ability for non-technical customers to quickly build custom internal tools and workflows using AI-driven platforms. This newfound flexibility means customers are less willing to renew inflexible SaaS products that don't perfectly match their needs, leading to churn and depressed market valuations.
+
+While vibe-coded solutions offer immediate productivity gains and a tailored experience, they often lack the foundational security, robust architecture, and compliance that established SaaS platforms provide. Non-programmers, unfamiliar with system design complexities, frequently overlook these critical aspects, leading to vulnerable or unstable applications.
+
+To survive, SaaS companies must adapt:
+1.  **Become a System of Record:** Integrate deeply into core business operations, making the platform indispensable.
+2.  **Emphasize Security and Robustness:** Highlight the platform's inherent security, authentication, and compliance features, which DIY vibe-coded apps typically lack.
+3.  **Prioritize Customization:** Instead of forcing customer adaptation, allow users to "vibe code" and build customized micro-apps and workflows *on top of* the existing platform. This boosts engagement and retention by providing unparalleled flexibility.
+
+Goel concludes that AI is killing inflexible SaaS. The future belongs to companies that transform into platforms, enabling customers to build bespoke solutions while relying on the core SaaS for a secure, robust system of record. He offers his whitelabelled AI platform, Giga Catalyst, as a solution to help SaaS companies facilitate this user-driven customization.
+
+---
+
+## 9. OpenClaw is what Apple intelligence should have been
+
+**原文标题**: OpenClaw is what Apple intelligence should have been
+
+**原文链接**: [https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been](https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been)
 
 生成摘要时出错
 
 ---
 
-## 10. X offices raided in France as UK opens fresh investigation into Grok
+## 10. GPT-5.3-Codex
 
-**原文标题**: X offices raided in France as UK opens fresh investigation into Grok
+**原文标题**: GPT-5.3-Codex
 
-**原文链接**: [https://www.bbc.com/news/articles/ce3ex92557jo](https://www.bbc.com/news/articles/ce3ex92557jo)
+**原文链接**: [https://openai.com/index/introducing-gpt-5-3-codex/](https://openai.com/index/introducing-gpt-5-3-codex/)
 
 生成摘要时出错
 
@@ -137,86 +150,86 @@ Additionally, Leocha suggests the fee is discriminatory, potentially disproporti
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
+| 1 | [2026-02-05](output/hacker_news_summary_2026-02-05.md) |
 | 2 | [2026-02-03](output/hacker_news_summary_2026-02-03.md) |
 | 3 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
-| 4 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
-| 5 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
+| 4 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
+| 5 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
 | 6 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
-| 7 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
-| 8 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
-| 9 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
-| 10 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
-| 11 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
-| 12 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
-| 13 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
-| 14 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
-| 15 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
-| 16 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 17 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
-| 18 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
-| 19 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
+| 7 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
+| 8 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
+| 9 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
+| 10 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
+| 11 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
+| 12 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
+| 13 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
+| 14 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
+| 15 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
+| 16 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
+| 17 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
+| 18 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
+| 19 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
 | 20 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
 | 21 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
 | 22 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
 | 23 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
 | 24 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 25 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 26 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 25 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 26 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
 | 27 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
-| 28 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 29 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 30 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 31 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
-| 32 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 33 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 34 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 35 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 36 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 37 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 38 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 39 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 40 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 41 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 42 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 43 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 44 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 45 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 46 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 47 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 48 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 49 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 50 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 51 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 52 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 53 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 54 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 55 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 56 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 57 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 58 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 59 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 60 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 61 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 28 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
+| 29 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 30 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 31 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 32 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
+| 33 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
+| 34 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 35 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 36 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 37 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 38 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 39 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 40 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 41 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 42 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 43 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 44 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 45 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 46 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 47 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 48 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 49 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 50 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 51 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 52 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
+| 53 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 54 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 55 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 56 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 57 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 58 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 59 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 60 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
+| 61 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
 | 62 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 63 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 64 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 65 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 63 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 64 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 65 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
 | 66 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 67 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 68 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 69 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 70 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 71 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 72 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 73 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 74 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 75 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 76 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 77 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 78 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 79 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 80 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 67 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 68 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 69 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 70 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 71 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 72 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 73 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 74 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 75 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 76 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 77 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 78 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 79 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 80 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
 | 81 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
 | 82 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
 | 83 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
@@ -224,6 +237,7 @@ Additionally, Leocha suggests the fee is discriminatory, potentially disproporti
 | 85 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
 | 86 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
 | 87 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 88 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 89 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 90 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 88 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 89 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 90 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 91 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
