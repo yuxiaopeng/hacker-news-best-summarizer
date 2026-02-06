@@ -1,146 +1,137 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-02-05.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-02-06.md)
 
-*最后自动更新时间: 2026-02-05 20:07:20*
-## 1. 我怀念努力思考。
-
-**原文标题**: I miss thinking hard
-
-**原文链接**: [https://www.jernesto.com/articles/thinking_hard](https://www.jernesto.com/articles/thinking_hard)
-
-作者自称“第三型思考者”，深切渴望“刻苦思考”——长时间攻克难题，这曾带给他巨大的满足感和心智成长。他解释说，自己的个性由两个主要特质组成：“建造者”（受创造、交付和实用主义驱动）和“思考者”（需要深入、持久的脑力搏斗）。
-
-软件工程最初同时满足了这两种特质，让他既能构建有用的东西，又能解决复杂的问题。然而，人工智能的出现极大地减少了对这种深度问题解决的需求。虽然与AI进行“氛围编码”让“建造者”能够快速将想法变为现实，但这却让“思考者”感到饥渴，尽管产出增加了，却导致了一种停滞感。
-
-作者承认了“实用主义的陷阱”：即使AI生成的解决方案只是“足够好”（约70%的水平），“建造者”那一面也觉得不选择更快、更省力的AI路径是不理智的。这造成了冲突，因为“建造者”的效率与“思考者”对挣扎的需求相悖。
-
-作者不确定如何调和这两部分，他发现很难为深入思考那些与构建不直接相关的问题（如物理学）找到理由。他感叹在编码中真正创造性解决方案的机会越来越少，并总结说，在当前AI驱动的环境下，他不知道如何同时满足“建造者”和“思考者”的需求。
-
----
-
-## 2. 太空中的数据中心说不通
-
-**原文标题**: Data centers in space makes no sense
-
-**原文链接**: [https://civai.org/blog/space-data-centers](https://civai.org/blog/space-data-centers)
-
-文章《太空数据中心毫无意义》认为，尽管近期备受关注，但在轨道上部署数据中心的概念对于大多数应用而言，根本上存在缺陷且不切实际。
-
-作者将**延迟**视为首要且不可逾越的障碍。对于绝大多数现代计算需求——例如流媒体、游戏、物联网和实时操作——数据必须在离用户非常近的地方处理。仅仅是到低地球轨道（LEO）的距离，就会带来高达数百毫秒甚至更长的不可避免的光速延迟，这使得基于太空的数据中心不适合交互式或时间敏感型任务。
-
-除了延迟，文章还强调了其他几个关键缺点：
-*   **成本高昂：** 与快速发展且经济高效的地面数据中心相比，在太空中发射、维护和更换硬件的成本是天文数字。
-*   **复杂性和可靠性：** 太空环境需要加固的专用硬件，其性能低于地面基础设施，且升级或维修难度大得多。
-*   **数据回传限制：** 高效地在太空和地面之间传输大量数据需要先进的视距激光通信技术，这项技术仍然复杂且容易受到干扰。
-*   **电力与散热：** 虽然太空提供了丰富的太阳能和真空散热等优势，但这些好处被高效电力传输的挑战以及对复杂主动冷却系统的需求所抵抵消。
-
-文章总结道，太空数据中心的所谓优势——例如增强的物理安全性或独特的散热方式——与延迟、成本、复杂性和数据传输等压倒性挑战相比，微不足道。在可预见的未来，地面数据中心对于几乎所有计算需求来说，仍然是绝佳的解决方案。
-
----
-
-## 3. 沃克斯特拉转录2
-
-**原文标题**: Voxtral Transcribe 2
-
-**原文链接**: [https://mistral.ai/news/voxtral-transcribe-2](https://mistral.ai/news/voxtral-transcribe-2)
-
-生成摘要时出错
-
----
-
-## 4. 与其租云，不如自有
-
-**原文标题**: Don't rent the cloud, own instead
-
-**原文链接**: [https://blog.comma.ai/datacenter/](https://blog.comma.ai/datacenter/)
-
-Comma.ai提倡拥有自己的数据中心而非依赖云计算，并通过其自身的运营设置展示了其可行性和优势。他们认为，自建计算资源能获得控制权，避免供应商锁定和不断上涨的成本（与云支出相比，估计节省了2000万美元）。此外，它能促进卓越工程，将重心从供应商API转向瓦特和浮点运算等基本原理，并激励代码优化，而非仅仅增加预算。
-
-他们的数据中心由一个小团队维护，使用450千瓦的电力，主要通过高效的室外空气冷却。计算能力来自75台内部构建的TinyBox Pro机器中的600块GPU，存储方面则包括4PB的SSD，以及一个定制的`minikeyvalue` (mkv)系统，为非冗余训练数据提供约1TB/秒的读取速度。网络方面依赖100Gbps以太网和Infiniband交换机。
-
-软件基础设施包括用于管理的Ubuntu/Salt、用于工作负载调度的Slurm，以及用于分布式存储(mkv)、PyTorch FSDP训练和实验追踪的定制解决方案。他们开发了`miniray`，一个轻量级的开源Python任务调度器，并通过一个NFS缓存的monorepo来确保分布式作业的代码库一致性，该monorepo同步本地更改和软件包。这个集成系统能够高效地编排像在策略模型训练这样的复杂任务，证明了强大且经济高效的基础设施可以内部构建和拥有。
-
----
-
-## 5. 克劳德 作品 4.6
+*最后自动更新时间: 2026-02-06 20:07:54*
+## 1. 克劳德奥普斯 4.6
 
 **原文标题**: Claude Opus 4.6
 
 **原文链接**: [https://www.anthropic.com/news/claude-opus-4-6](https://www.anthropic.com/news/claude-opus-4-6)
 
-Anthropic 推出了 Claude Opus 4.6，这是一款升级版 AI 模型，显著增强了编码技能、智能体任务执行能力和日常工作能力。该模型于 2026 年 2 月 5 日发布，可通过 claude.ai、API 及主要云平台获取。
+Anthropic 发布了 Claude Opus 4.6，这是其旗舰级AI模型的重大升级，提升了模型的编码能力、规划能力以及自主任务的持续执行能力。一个关键的新功能是测试版1M token上下文窗口，同时它在财务分析、研究和文档创建等日常工作任务中表现出更强的性能。
 
-Opus 4.6 引入了突破性的 1M token 上下文窗口（测试版），并支持高达 128k token 的输出。它在多项基准测试中取得了最先进的性能，包括智能体编码（Terminal-Bench 2.0）、多学科推理（Humanity’s Last Exam）和具有经济价值的知识工作（GDPval-AA），在后者上它以 144 Elo 点的优势超越了 OpenAI 的 GPT-5.2。该模型显著提升了长上下文检索和推理能力，有效解决了“上下文腐蚀”问题。
+Opus 4.6 设定了新的行业基准，在自主编码（Terminal-Bench 2.0）、多学科推理（Humanity’s Last Exam）和具有经济价值的知识工作（GDPval-AA）方面超越了竞争对手，其中在GDPval-AA上以144 Elo点超越了OpenAI的GPT-5.2。它还在在线信息检索（BrowseComp）方面处于领先地位，并在长上下文检索和推理方面显示出显著改进，有效地缓解了“上下文衰减”问题。
 
-主要产品更新包括 Claude Code 中的智能体团队、用于更长任务的上下文压缩、用于动态推理的自适应思维以及面向开发者的可调工作量控制。Excel 版 Claude 获得了大幅升级，而 PowerPoint 版 Claude 则处于研究预览阶段。
+新功能包括Claude Code中的智能体团队、面向API用户的上下文压缩、自适应思维和可调节的努力控制。Opus 4.6 可通过 claude.ai、其API和主流云平台获取，维持标准定价，但对超过20万token的提示收取溢价。
 
-Opus 4.6 保持了出色的安全表现，错位行为和过度拒绝率较低，与此前的前沿模型持平或更优。增强的网络安全能力得到了新的安全保障措施的补充。开发者可通过 API 访问该模型，输入/输出每百万 token 的费用分别为 5 美元/25 美元，对于超出 200k token 的 1M 上下文窗口，将实行高级定价。
-
----
-
-## 6. 联邦调查局无法进入华盛顿邮报记者的iPhone，因为锁定模式已启用。
-
-**原文标题**: FBI couldn't get into WaPo reporter's iPhone because Lockdown Mode enabled
-
-**原文链接**: [https://www.404media.co/fbi-couldnt-get-into-wapo-reporters-iphone-because-it-had-lockdown-mode-enabled/](https://www.404media.co/fbi-couldnt-get-into-wapo-reporters-iphone-because-it-had-lockdown-mode-enabled/)
-
-根据最近提交的法庭记录，由于苹果的“锁定模式”（Lockdown Mode）已启用，联邦调查局无法访问一名《华盛顿邮报》记者被查获的iPhone。该设备属于记者汉娜·纳坦森（Hannah Natanson），她的家在一月份遭到突袭，这是针对机密信息泄露调查的一部分。
-
-法庭记录详细说明了联邦调查局能够访问哪些设备和数据，以及哪些仍然无法访问。这一事件为“锁定模式”的明显有效性提供了罕见的洞察，凸显了它能够广泛提升iPhone安全性并阻止执法部门的访问，至少在初期，直到其他潜在技术可能被尝试之前。
+早期访问合作伙伴赞扬 Opus 4.6 的自主性、处理复杂多步骤任务的能力、卓越的规划能力，以及在调试、网络安全、法律推理（在BigLaw Bench上达到90.2%）和大型代码库迁移等领域表现出色。该模型保持了强大的安全记录，具有较低的错位行为和过度拒绝率，这得益于全面的评估和新的网络安全防护措施。
 
 ---
 
-## 7. 克劳德是一个思考的空间。
+## 2. GPT-5.3-Codex
 
-**原文标题**: Claude is a space to think
+**原文标题**: GPT-5.3-Codex
 
-**原文链接**: [https://www.anthropic.com/news/claude-is-a-space-to-think](https://www.anthropic.com/news/claude-is-a-space-to-think)
+**原文链接**: [https://openai.com/index/introducing-gpt-5-3-codex/](https://openai.com/index/introducing-gpt-5-3-codex/)
 
-Anthropic已宣布，其AI助手Claude将保持无广告，将其定位为专为工作和深度智力任务设计的“思考空间”。这一决定源于一种信念，即整合广告将与Claude的核心使命不符：即明确地为用户利益服务并提供真正有用的帮助。
-
-与搜索引擎或社交媒体不同，AI对话往往具有高度的个人性、敏感性和开放性。在这种背景下引入广告或广告商的影响，会显得格格不入、不合时宜，并可能侵蚀用户信任。广告支持模式会引入激励机制，可能巧妙地将对话引向商业化，而非仅仅关注为用户提供最有洞察力或最有用的答案。即使是独立的广告位也可能导致对互动指标的优化，而这并不总是与提供真正有用的帮助相符。
-
-Anthropic的商业模式依赖于企业合同和付费订阅，所得收入将再投资于Claude的改进。这种方法支持了他们的公共利益使命，使他们能够扩大对教育工作者和非营利组织的访问权限，并提供免费版本，同时不销售用户注意力或数据。
-
-尽管Claude不会展示广告，但Anthropic致力于支持用户主动发起的商业互动，例如代理商务（Claude代表用户处理购买）以及与第三方生产力工具的集成。指导原则是所有第三方互动必须由用户发起，确保Claude仍然是一个值得信赖的工具，其唯一的激励是提供有用的答案，就像一本无广告的笔记本或一块干净的黑板。
+无法访问文章链接。
 
 ---
 
-## 8. AI is killing B2B SaaS
+## 3. Don't rent the cloud, own instead
 
-**原文标题**: AI is killing B2B SaaS
+**原文标题**: Don't rent the cloud, own instead
 
-**原文链接**: [https://nmn.gl/blog/ai-killing-b2b-saas](https://nmn.gl/blog/ai-killing-b2b-saas)
-
-Namanyay Goel argues that AI presents an existential threat to traditional B2B SaaS, not by outright killing it, but by demanding evolution. The issue stems from "vibe coding"—the ability for non-technical customers to quickly build custom internal tools and workflows using AI-driven platforms. This newfound flexibility means customers are less willing to renew inflexible SaaS products that don't perfectly match their needs, leading to churn and depressed market valuations.
-
-While vibe-coded solutions offer immediate productivity gains and a tailored experience, they often lack the foundational security, robust architecture, and compliance that established SaaS platforms provide. Non-programmers, unfamiliar with system design complexities, frequently overlook these critical aspects, leading to vulnerable or unstable applications.
-
-To survive, SaaS companies must adapt:
-1.  **Become a System of Record:** Integrate deeply into core business operations, making the platform indispensable.
-2.  **Emphasize Security and Robustness:** Highlight the platform's inherent security, authentication, and compliance features, which DIY vibe-coded apps typically lack.
-3.  **Prioritize Customization:** Instead of forcing customer adaptation, allow users to "vibe code" and build customized micro-apps and workflows *on top of* the existing platform. This boosts engagement and retention by providing unparalleled flexibility.
-
-Goel concludes that AI is killing inflexible SaaS. The future belongs to companies that transform into platforms, enabling customers to build bespoke solutions while relying on the core SaaS for a secure, robust system of record. He offers his whitelabelled AI platform, Giga Catalyst, as a solution to help SaaS companies facilitate this user-driven customization.
-
----
-
-## 9. OpenClaw is what Apple intelligence should have been
-
-**原文标题**: OpenClaw is what Apple intelligence should have been
-
-**原文链接**: [https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been](https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been)
+**原文链接**: [https://blog.comma.ai/datacenter/](https://blog.comma.ai/datacenter/)
 
 生成摘要时出错
 
 ---
 
-## 10. GPT-5.3-Codex
+## 4. 我的AI采纳历程
 
-**原文标题**: GPT-5.3-Codex
+**原文标题**: My AI Adoption Journey
 
-**原文链接**: [https://openai.com/index/introducing-gpt-5-3-codex/](https://openai.com/index/introducing-gpt-5-3-codex/)
+**原文链接**: [https://mitchellh.com/writing/my-ai-adoption-journey](https://mitchellh.com/writing/my-ai-adoption-journey)
+
+Mitchell Hashimoto详细阐述了他有计划的AI采纳历程，从最初的低效，到他预计在2026年2月5日前实现“改变工作流程和生活的发现”。
+
+他一开始放弃了聊天机器人，转而进行有意义的编码，发现聊天机器人因需要持续人工修正而效率低下。虽然聊天机器人能令人印象深刻地从截图中复现UI，但持续的编码工作需要“代理”——即能够执行文件输入/输出和程序执行等外部操作的大语言模型。
+
+Hashimoto最初对代理并不以为然，但他强迫自己用代理来完成所有手动工作。这个“艰辛”的过程帮助他积累了关键经验：拆解任务、将规划与执行分离，并赋予代理验证工具来修正自身错误。这个阶段虽然没有加快速度，但却建立了基本理解，并明确了何时 *不* 应该使用代理。
+
+为了提高效率，他随后采用了“日末代理”，投入30分钟委派任务，例如深入研究、并行探索模糊想法或进行问题分类。这为第二天早晨提供了“热启动”。
+
+接下来，他“外包了板上钉钉的任务”，让代理在后台处理高确定性任务，而他则专注于复杂且令人愉快的工作。至关重要的是，他关闭了代理通知，以防止代价高昂的上下文切换，从而保持了深度工作流。
+
+他目前的关注点包括“驾驭工程”：通过改进隐式提示（例如，`AGENTS.md`）和创建用于自我验证的编程工具，主动预防代理错误，确保结果一致且正确。
+
+同时，他的目标是“始终有一个代理在运行”，以处理真正有帮助的任务，通常使用运算更慢但更周全的模型。尽管目前这仅占他工作日的10-20%，但他正积极努力委派持续不断的高质量工作。
+
+Hashimoto最后强调了他的务实、以工具为导向的观点，他珍视AI能让他专注于创造性任务，同时适应快速变化的局面。
+
+---
+
+## 5. 我现在认为苹果新闻上的所有广告都是诈骗。
+
+**原文标题**: I now assume that all ads on Apple news are scams
+
+**原文链接**: [https://kirkville.com/i-now-assume-that-all-ads-on-apple-news-are-scams/](https://kirkville.com/i-now-assume-that-all-ads-on-apple-news-are-scams/)
+
+作者断言，Apple News 上的广告欺诈性日益增强，自苹果在2024年与 Taboola 达成合作后，这个问题变得更加严峻。作者引用 John Gruber 早期关于广告“诱饵盒”（chumbox）和重复性的观察，并指出（尽管他使用 Apple News 但不愿为广告密布的 News+ 付费）近期广告质量有所下降。
+
+许多目前的广告似乎是AI生成的诈骗。作者提供了三个广告域名（MUSTYLEVO.COM、SOLVERACO.COM、SHIYAATELIER.COM）的 WHOIS 数据，显示它们都是近期注册的，这引发了怀疑。一个突出例子是“Tidenox”的广告，其中包含一张AI生成的老年女性图片，声称她工作26年后即将退休。然而，TIDENOX.COM 的 WHOIS 数据显示，它是在近期注册的，并非26年前，并且其注册地在中国。这符合商业改进局（Better Business Bureau）曾警告的“虚假清仓”诈骗模式。
+
+作者总结称，苹果和 Taboola 对这些欺诈性广告漠不关心，这实际上使 Apple News 成为了“诈骗广告的蜜罐”，并表示苹果在其服务中的广告已不再值得信任。
+
+---
+
+## 6. 我们指派Opus 4.6利用代理团队开发C编译器。
+
+**原文标题**: We tasked Opus 4.6 using agent teams to build a C Compiler
+
+**原文链接**: [https://www.anthropic.com/engineering/building-c-compiler](https://www.anthropic.com/engineering/building-c-compiler)
+
+Anthropic Safeguards团队的Nicholas Carlini利用“智能体团队”——16个并行的Claude Opus 4.6实例——从零开始自主构建了一个基于Rust的C语言编译器。经过近2000次Claude代码会话和20000美元的API成本，该团队开发了一个十万行代码的编译器，能够为x86、ARM和RISC-V编译Linux 6.9，以及QEMU、FFmpeg和Doom等项目，并在一个纯净环境中达到了99%的测试套件通过率。
+
+Carlini开发了一个定制工作平台，以实现持续的自主工作，该平台采用了为Claude设计的无限循环、用于在共享Git仓库上并行推进任务的锁定机制，以及严格的高质量测试。编排这些团队的关键经验包括：为大型语言模型设计测试、管理上下文污染和“时间盲区”、使用一个“预言机”（GCC）来促进Linux内核等大型任务的并行调试，以及为智能体分配专门角色（例如，代码质量、文档编写）。
+
+尽管具有开创性，该编译器仍存在局限性：它依赖GCC进行16位x86实模式编译，使用外部汇编器/链接器，生成效率低下的代码，并且其Rust代码质量未达到专家水平。该项目展示了大型语言模型能力和智能体自主性的显著进步，将Opus 4.6的潜力发挥到了极致。作者对全自主开发的潜力感到兴奋，但也对部署未经验证、由大型语言模型生成的软件所带来的风险表示不安。
+
+---
+
+## 7. Flock 首席执行官称迪弗洛克为“恐怖组织” (2025年) [视频]
+
+**原文标题**: Flock CEO calls Deflock a “terrorist organization” (2025) [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=l-kZGrDz7PU](https://www.youtube.com/watch?v=l-kZGrDz7PU)
+
+文章标题报道了2025年将发生的一件事：届时，“Flock”的首席执行官（CEO）将在一段视频中把“Deflock”称作“恐怖组织”。然而，所提供的内容并未详细阐述这一声明或其相关背景。相反，内容仅由一个标准的YouTube页脚区块组成，其中列出了各种链接，包括新闻、版权、联系我们、创作者资源、广告、开发者工具、条款、隐私、安全、YouTube的运作方式、功能测试、NFL周日门票，以及一个© 2026 Google LLC的版权声明。因此，该文章没有提供关于CEO指控原因的任何细节，也没有提供标题中提到的任何一个组织的背景信息。
+
+---
+
+## 8. OpenClaw 是苹果智能本该有的样子。
+
+**原文标题**: OpenClaw is what Apple intelligence should have been
+
+**原文链接**: [https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been](https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been)
+
+The article argues that Apple missed a significant opportunity by not developing an "agentic" AI similar to OpenClaw, an open-source framework enabling AI models to directly control computers and automate workflows. This is evidenced by the current trend of users purchasing Mac Minis specifically to run such AI agents, demonstrating a strong demand for true computer automation.
+
+Apple, possessing the hardware, ecosystem, and decades of user trust, was uniquely positioned to create a premium AI capable of complex tasks like filing taxes or managing emails by interacting directly with apps. This could have generated substantial revenue, established an unparalleled platform moat, and made Apple the trusted leader in AI with "root access" capabilities.
+
+The author speculates Apple's inaction was likely due to either not recognizing the trend or, more probably, risk aversion. A powerful, unpredictable AI carries considerable liability risks (e.g., unauthorized transactions, fraud). Additionally, such an agentic AI poses an existential threat to "walled garden" platforms like LinkedIn, which depend on user friction and controlled APIs. By allowing third parties to develop these agents while merely selling hardware, Apple maintains "plausible deniability" and avoids immediate legal conflicts.
+
+However, the article concludes this is short-term thinking. By owning the agent layer, Apple could have created an indispensable platform that other services would need to integrate with, much like its App Store success. An AI agent's value compounds with personal data and seamless cross-device integration—areas where Apple holds a unique advantage. The Mac Mini trend underscores Apple's oversight in prioritizing immediate legal risks over securing a future-defining platform.
+
+---
+
+## 9. It's 2026, Just Use Postgres
+
+**原文标题**: It's 2026, Just Use Postgres
+
+**原文链接**: [https://www.tigerdata.com/blog/its-2026-just-use-postgres](https://www.tigerdata.com/blog/its-2026-just-use-postgres)
+
+生成摘要时出错
+
+---
+
+## 10. LinkedIn checks for 2953 browser extensions
+
+**原文标题**: LinkedIn checks for 2953 browser extensions
+
+**原文链接**: [https://github.com/mdp/linkedin-extension-fingerprinting](https://github.com/mdp/linkedin-extension-fingerprinting)
 
 生成摘要时出错
 
@@ -150,94 +141,95 @@ Goel concludes that AI is killing inflexible SaaS. The future belongs to compani
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-02-05](output/hacker_news_summary_2026-02-05.md) |
+| 1 | [2026-02-06](output/hacker_news_summary_2026-02-06.md) |
 | 2 | [2026-02-03](output/hacker_news_summary_2026-02-03.md) |
-| 3 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
-| 4 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
-| 5 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
-| 6 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
-| 7 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
-| 8 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
-| 9 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
-| 10 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
-| 11 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
-| 12 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
-| 13 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
-| 14 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 15 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
-| 16 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
-| 17 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
+| 3 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
+| 4 | [2026-02-05](output/hacker_news_summary_2026-02-05.md) |
+| 5 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
+| 6 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
+| 7 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
+| 8 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
+| 9 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
+| 10 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
+| 11 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
+| 12 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
+| 13 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
+| 14 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
+| 15 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
+| 16 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
+| 17 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
 | 18 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
-| 19 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
-| 20 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
-| 21 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 22 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
-| 23 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 24 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 25 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
-| 26 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
-| 27 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
+| 19 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
+| 20 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
+| 21 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 22 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
+| 23 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
+| 24 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
+| 25 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
+| 26 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
+| 27 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
 | 28 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 29 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 29 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
 | 30 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
 | 31 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
 | 32 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
 | 33 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 34 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 35 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 34 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 35 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
 | 36 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 37 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 38 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 39 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 40 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 41 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 42 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 43 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 44 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 45 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 46 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 47 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 48 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 49 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 50 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 51 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 52 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 53 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 54 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 37 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 38 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 39 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 40 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 41 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 42 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 43 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 44 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 45 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 46 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 47 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 48 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 49 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 50 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 51 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 52 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 53 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 54 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
 | 55 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 56 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 57 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 58 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 59 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 56 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 57 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 58 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 59 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
 | 60 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 61 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 62 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 63 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 64 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 65 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 66 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 61 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 62 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 63 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
+| 64 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
+| 65 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 66 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
 | 67 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 68 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 69 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 70 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 71 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 68 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 69 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 70 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 71 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
 | 72 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 73 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 74 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 75 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 76 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 77 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 73 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 74 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
+| 75 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 76 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 77 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
 | 78 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
 | 79 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
 | 80 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 81 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 82 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 83 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 84 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 85 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 86 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 87 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
-| 88 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 89 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 90 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 91 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 81 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 82 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
+| 83 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 84 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 85 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 86 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 87 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 88 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 89 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 90 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 91 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 92 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
