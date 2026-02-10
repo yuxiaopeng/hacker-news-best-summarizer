@@ -1,98 +1,90 @@
 [
   {
-    "id": "46930961",
-    "title": "Vouch",
-    "url": "https://github.com/mitchellh/vouch",
-    "summary": "Vouch is an experimental community trust management system designed to restore explicit trust in open-source projects, addressing the challenge of low-quality, AI-generated contributions. It enables projects to \"vouch\" for users, granting them access to configurable parts of a project, or \"denounce\" them to block interaction.\n\nThe system is generic, usable on any code forge, and offers out-of-the-box GitHub integration via GitHub Actions and a Nushell-based CLI. Projects fully define \"who\" gets vouched, \"how,\" and the associated consequences, tailoring policies to their community.\n\nTrust lists are stored in a simple, flat `.td` (Trustdown) file, easily parseable. A key feature is the \"web of trust,\" allowing projects to share vouched/denounced user lists with others, creating a broader, interconnected trust network where trustworthiness can be automatically recognized across the ecosystem.\n\nGitHub Actions automate checking PR authors' vouch status and facilitate managing user trust via issue or discussion comments. The CLI provides commands for checking status, adding, or denouncing users. A Nushell library allows for scripting. Currently in use by Ghostty, Vouch continues to evolve based on real-world experience.",
-    "chinese_title": "担保",
-    "chinese_summary": "Vouch 是一个实验性的社区信任管理系统，旨在恢复开源项目的显式信任，解决低质量、AI 生成贡献的挑战。它允许项目“担保”用户，授予他们访问项目可配置部分的权限，或者“谴责”用户以阻止其互动。\n\n该系统是通用的，可在任何代码托管平台使用，并通过 GitHub Actions 和基于 Nushell 的命令行界面 (CLI) 提供开箱即用的 GitHub 集成。项目完全定义“谁”获得担保、“如何”担保以及相关的后果，从而为他们的社区量身定制策略。\n\n信任列表存储在一个简单的、扁平的 `.td` (Trustdown) 文件中，易于解析。一个关键特性是“信任网络”，它允许项目与其他项目共享已担保/已谴责的用户列表，从而创建一个更广泛、相互关联的信任网络，在此网络中，可信度可以在整个生态系统中自动识别。\n\nGitHub Actions 自动化检查 PR 作者的担保状态，并通过问题或讨论评论促进用户信任的管理。CLI 提供用于检查状态、添加或谴责用户的命令。一个 Nushell 库支持脚本编写。Vouch 目前已被 Ghostty 使用，并将根据实际使用经验继续发展。"
+    "id": "46945663",
+    "title": "Discord will require a face scan or ID for full access next month",
+    "url": "https://www.theverge.com/tech/875309/discord-age-verification-global-roll-out",
+    "summary": "Starting in March, Discord will implement a global age verification system, setting all user accounts to a \"teen-appropriate experience\" by default. To access full features, including age-restricted servers and channels, users must verify they are adults.\n\nDiscord's age inference model will initially try to determine a user's age using factors like account tenure, device and activity data, and community patterns, but explicitly states it does not use private messages. If this model cannot confirm adult status, or if users wish to bypass the teen-default settings, they will need to complete an age check.\n\nVerification options include using AI-powered facial age estimation, which analyzes a video selfie on the user's device and is then deleted. Alternatively, users can submit a photo of a government ID to a third-party vendor, with the image also being deleted immediately after verification. Discord emphasizes it is facial *estimation*, not biometric scanning or facial recognition, and does not store personal information from IDs. A new vendor is in use following a past data breach.\n\nUnverified users will be unable to access age-restricted content, speak in \"stage\" channels, and will encounter content filters and warnings for unfamiliar contacts. This rollout is driven by international legal pushes for child safety. Discord expects a minimal impact for most users, as it primarily affects access to explicit or graphic content, though some user attrition is anticipated.",
+    "chinese_title": "Discord 下月起将要求面部扫描或身份证明，方可完全访问。",
+    "chinese_summary": "自三月起，Discord 将在全球范围内实施年龄验证系统，默认将所有用户账户设置为“青少年适宜体验”。要访问完整功能，包括受年龄限制的服务器和频道，用户必须验证其为成年人。\n\nDiscord 的年龄推断模型将首先尝试使用账户使用时长、设备和活动数据以及社区模式等因素来确定用户的年龄，但明确声明不使用私人消息。如果此模型无法确认成年状态，或者用户希望绕过青少年默认设置，他们将需要完成年龄验证。\n\n验证选项包括使用AI驱动的面部年龄估算，它会在用户的设备上分析一段视频自拍，然后被删除。另外，用户可以将政府身份证件照片提交给第三方供应商，该图像在验证后也会立即删除。Discord 强调这只是面部*估算*，而非生物识别扫描或人脸识别，且不存储身份证件中的个人信息。由于过去发生过数据泄露，目前正在使用新的供应商。\n\n未经验证的用户将无法访问受年龄限制的内容，无法在“舞台”频道发言，并会遇到针对陌生联系人的内容过滤和警告。此次推行是受到国际上推动儿童安全的法律要求驱动的。Discord 预计这对大多数用户的影响很小，因为它主要影响对露骨或图像内容的访问，尽管预计会有部分用户流失。"
+  },
+  {
+    "id": "46946401",
+    "title": "Why is the sky blue?",
+    "url": "https://explainers.blog/posts/why-is-the-sky-blue/",
+    "summary": "The article elucidates why various skies and atmospheric phenomena appear in specific colors. Earth's blue sky is due to Rayleigh scattering: small nitrogen and oxygen molecules preferentially scatter high-frequency blue and violet light because their frequencies are closer to the molecules' resonant frequencies. We see blue over violet because human eyes are less sensitive to violet.\n\nSunsets are red because sunlight travels through a greater atmospheric depth at low angles, scattering almost all blue and green light away before it reaches our eyes, leaving primarily red and orange.\n\nClouds appear white because they are made of much larger water droplets than gas molecules. These droplets scatter all visible wavelengths of light roughly equally, akin to tiny prisms, resulting in a white appearance.\n\nMars's sky is red because its atmosphere contains pervasive, iron-rich dust particles. These particles absorb blue and violet light, scattering red, orange, and yellow light throughout the sky. However, Martian sunsets are blue because these dust particles *forward-scatter* blue light more effectively directly towards the observer when viewing the sun, creating a blue halo around the setting sun despite the overall blue absorption in the atmosphere.\n\nIn essence, atmospheric color depends on particle size, resonant frequencies, and light path length, determining whether light is preferentially scattered, absorbed, or transmitted.",
+    "chinese_title": "为什么天空是蓝色的？",
+    "chinese_summary": "本文阐明了为何各种天空和大气现象呈现特定颜色。地球的蓝天是瑞利散射造成的：小型氮分子和氧分子优先散射高频的蓝色和紫色光，因为这些光的频率更接近分子的共振频率。我们看到蓝色而非紫色，是因为人眼对紫色不那么敏感。\n\n日落呈红色是因为太阳光在低角度时穿过更厚的大气层，在到达我们眼睛之前几乎所有的蓝色和绿色光都被散射掉了，主要留下红色和橙色。\n\n云朵呈白色是因为它们由比气体分子大得多的水滴组成。这些水滴大致均匀地散射所有可见光波长，类似于微小的棱镜，因此呈现白色。\n\n火星天空呈红色是因为其大气中弥漫着富含铁的尘埃颗粒。这些颗粒吸收蓝色和紫色光，将红色、橙色和黄色光散射到整个天空中。然而，火星日落呈蓝色，是因为当观察者观看太阳时，这些尘埃颗粒能更有效地将蓝光*前向散射*到观察者眼中，在落日周围形成一个蓝色光晕，尽管大气层整体上吸收蓝色光。\n\n本质上，大气颜色取决于颗粒大小、共振频率和光程长度，这些因素决定了光是否被优先散射、吸收或透射。"
+  },
+  {
+    "id": "46949564",
+    "title": "Discord Alternatives, Ranked",
+    "url": "https://taggart-tech.com/discord-alternatives/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Discord Alternatives, Ranked",
+    "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "46938511",
     "title": "Art of Roads in Games",
     "url": "https://sandboxspirit.com/blog/art-of-roads-in-games/",
-    "summary": "The author expresses a deep fascination with intricate patterns, particularly human-engineered road networks, finding \"primal satisfaction\" akin to observing natural structures. This lifelong interest, sparked by games like SimCity 2000, led to a critique of how city-builder games simulate roads. Despite advancements across various titles and extensive mods, roads in games often felt unrealistic—plagued by sharp bends, wobbly ramps, and odd corner radii.\n\nThe root cause, the author explains, is developers' reliance on Bezier splines. While elegant, Bezier curves fail to preserve shape and parallelism when offset, leading to \"pinching\" and geometric flaws, because real-world roads are fundamentally constrained by vehicle wheel axles.\n\nThe article proposes alternative curve types: Circular arcs maintain perfect parallelism when offset and simplify intersection calculations, making them suitable for urban streets. For high-speed applications, civil engineers use transition curves like clothoids, which smoothly increase curvature for comfortable rides, despite their mathematical complexity.\n\nDriven by curiosity and dissatisfaction with the limited tools available to indie developers, the author is now building their own road system based on these engineering principles, aiming to provide a more realistic and robust foundation for future city-builder games.",
+    "summary": "The author finds a primal satisfaction in observing intricate patterns, from natural phenomena like ant colonies to human-made road networks, viewing them as sophisticated designs. This lifelong fascination translated into an obsession with roads in city-builder games, starting with SimCity 2000 and progressing through Cities: Skylines and its mods. Despite increasing freedom and realism in game development, the author always felt something was \"off\" – unrealistic highway ramps, sharp bends, and strange intersection radii.\n\nThe fundamental issue, the author discovered, lies in game developers' use of Bezier splines. While elegant for general curves, Bezier splines fail to preserve shape and curvature when offset, leading to \"pinching\" and self-intersecting geometry. This contradicts how real-world vehicle wheels maintain a constant parallel distance.\n\nA better, more mathematically sound approach for roads involves circular arcs, which perfectly preserve parallelism when offset and simplify curve-curve intersection calculations, making them ideal for urban intersections. For high-speed roads, civil engineers utilize \"transition curves\" like the clothoid, which gradually increase curvature, providing a smooth, comfortable ride, though these are significantly more complex mathematically.\n\nThe author's motivation for delving into these technicalities, even if unnoticed by most players, stems from curiosity, a desire to challenge the status quo, and the lack of robust road-building solutions for indie developers. He intends to share his custom-built road system, which will be detailed in a future technical post.",
     "chinese_title": "游戏道路艺术",
-    "chinese_summary": "作者对复杂图案，特别是人工设计的道路网络，表现出深深的着迷，从中获得类似观察自然结构时的“原始满足感”。这一由《模拟城市2000》等游戏激发的终身兴趣，促使作者对城市建造游戏中道路的模拟方式进行了批判。尽管各类游戏和大量模组都有所进步，但游戏中的道路仍常显得不真实——充斥着急弯、不稳定的匝道和奇怪的转弯半径。\n\n作者解释说，根本原因在于开发者对贝塞尔样条的依赖。尽管优雅，但贝塞尔曲线在偏移时无法保持形状和平行度，导致“捏合”和几何缺陷，因为现实世界中的道路从根本上受车辆车轮轴的限制。\n\n文章提出了替代的曲线类型：圆弧在偏移时能保持完美的平行度，并简化交叉口计算，使它们适用于城市街道。对于高速应用，土木工程师使用缓和曲线，如回旋曲线，它们能平滑地增加曲率，以提供舒适的驾驶体验，尽管它们的数学复杂性较高。\n\n出于好奇心以及对独立开发者可用工具的不足感到不满，作者现在正基于这些工程原理构建自己的道路系统，旨在为未来的城市建造游戏提供一个更真实、更强大的基础。"
+    "chinese_summary": "作者在观察错综复杂的图案时获得一种原始的满足感，无论是像蚁群这样的自然现象，还是人工修建的道路网络，他都将它们视为精巧的设计。这种毕生的着迷演变成了他对城市建造游戏中道路的痴迷，从《模拟城市2000》开始，一直到《城市：天际线》及其模组。尽管游戏开发中自由度和真实性不断提高，作者却总是觉得有些“不对劲”——不真实的公路匝道、急弯和奇怪的交叉路口半径。\n\n作者发现，根本问题在于游戏开发者使用了贝塞尔曲线。贝塞尔曲线在处理一般曲线时显得优美，但在偏移时却无法保持形状和曲率，导致几何形状出现“挤压”和自相交。这与现实世界中车辆车轮保持恒定平行距离的方式相悖。\n\n一种更好、数学上更严谨的道路方法是使用圆弧，它们在偏移时能完美保持平行性，并简化曲线与曲线的交叉点计算，使其成为城市交叉路口的理想选择。对于高速公路，土木工程师会使用像回旋曲线这样的“缓和曲线”，它们能逐渐增加曲率，提供平稳、舒适的行驶体验，尽管这些在数学上要复杂得多。\n\n作者深入研究这些技术细节的动机，即使大多数玩家可能没有注意到，源于好奇心、挑战现状的愿望，以及独立开发者缺乏强大的道路建造解决方案。他打算分享他自定义构建的道路系统，该系统将在未来的技术文章中详细介绍。"
+  },
+  {
+    "id": "46947096",
+    "title": "Converting a $3.88 analog clock from Walmart into a ESP8266-based Wi-Fi clock",
+    "url": "https://github.com/jim11662418/ESP8266_WiFi_Analog_Clock",
+    "summary": "This project details converting an inexpensive $3.88 analog quartz clock into an ESP8266-based Wi-Fi clock that synchronizes with an NTP server.\n\nThe core hardware involves a WEMOS D1 Mini ESP8266 module and a modified analog clock movement. The clock's internal Lavet stepping motor coil is disconnected from its original quartz oscillator and wired to the ESP8266 for control.\n\nThe software, an Arduino sketch, retrieves accurate time from an NTP server every 15 minutes and automatically adjusts for Daylight Saving Time. It compares the clock's displayed time with the actual time ten times per second. If the analog clock lags, the ESP8266 advances its second hand by sending bipolar pulses to the Lavet motor coil; it cannot move the hands backward. The \"PULSETIME\" constant might need adjustment for reliable stepping.\n\nA significant challenge is the lack of positional feedback from cheap analog clocks. To overcome this, a Microchip 47L04 Serial EERAM stores the precise positions of the hour, minute, and second hands every second. This allows the ESP8266 to retrieve the last known state after a power interruption, preventing the clock from losing its synchronization.\n\nThe initial setup involves a simple web page, served by the ESP8266, where the user manually sets the clock's starting hand positions. Once initialized, the ESP8266 provides a status web page that can display the clock's face using SVG, HTML Canvas, or plain text.",
+    "chinese_title": "将沃尔玛3.88美元模拟时钟改造成基于ESP8266的Wi-Fi时钟",
+    "chinese_summary": "This project details converting an inexpensive $3.88 analog quartz clock into an ESP8266-based Wi-Fi clock that synchronizes with an NTP server.\n\nThe core hardware involves a WEMOS D1 Mini ESP8266 module and a modified analog clock movement. The clock's internal Lavet stepping motor coil is disconnected from its original quartz oscillator and wired to the ESP8266 for control.\n\nThe software, an Arduino sketch, retrieves accurate time from an NTP server every 15 minutes and automatically adjusts for Daylight Saving Time. It compares the clock's displayed time with the actual time ten times per second. If the analog clock lags, the ESP8266 advances its second hand by sending bipolar pulses to the Lavet motor coil; it cannot move the hands backward. The \"PULSETIME\" constant might need adjustment for reliable stepping.\n\nA significant challenge is the lack of positional feedback from cheap analog clocks. To overcome this, a Microchip 47L04 Serial EERAM stores the precise positions of the hour, minute, and second hands every second. This allows the ESP8266 to retrieve the last known state after a power interruption, preventing the clock from losing its synchronization.\n\nThe initial setup involves a simple web page, served by the ESP8266, where the user manually sets the clock's starting hand positions. Once initialized, the ESP8266 provides a status web page that can display the clock's face using SVG, HTML Canvas, or plain text."
   },
   {
     "id": "46939593",
     "title": "AI makes the easy part easier and the hard part harder",
     "url": "https://www.blundergoat.com/articles/ai-makes-the-easy-part-easier-and-the-hard-part-harder",
-    "summary": "Unable to access the article link.",
-    "chinese_title": "AI 让简单之处更简单，困难之处更困难",
-    "chinese_summary": "无法访问文章链接。"
-  },
-  {
-    "id": "46945663",
-    "title": "Discord will require a face scan or ID for full access next month",
-    "url": "https://www.theverge.com/tech/875309/discord-age-verification-global-roll-out",
-    "summary": "Beginning in March, Discord will roll out global age verification, defaulting all user accounts to a \"teen-appropriate experience.\" Users unverified as adults will face restrictions, including no access to age-restricted servers or channels, inability to speak in \"stage\" channels, content filters for graphic content, and filtered direct messages from unfamiliar users.\n\nTo remove these limitations, users can verify their age through a few methods: facial age estimation via AI analysis of a video selfie (which Discord states stays on the user's device), or by submitting a government identification document (verified by a third-party vendor, with images reportedly deleted quickly). Discord emphasizes they use \"facial estimation\" and do not retain personal identifying information from IDs. Additionally, an age inference model will analyze user metadata (like games played and activity) to automatically grant adult status to users with high confidence, allowing them to bypass the other verification steps.\n\nThis initiative is part of a broader international push for age checks and enhanced child safety measures online. Discord previously implemented age checks in the UK and Australia, which users initially found ways to circumvent. The company also faced a data breach in October 2025 involving a former third-party vendor that exposed age verification data, leading Discord to switch vendors. While acknowledging the risk of some users leaving, Discord believes the majority will not experience significant changes, as the measures primarily target truly adult content.",
-    "chinese_title": "Discord下个月起将要求人脸扫描或身份证明才能完全访问。",
-    "chinese_summary": "自三月起，Discord 将在全球范围内推行年龄验证，所有用户账号将默认为“适合青少年的体验”。未验证为成年人的用户将面临限制，包括无法访问年龄限制的服务器或频道、无法在“舞台”频道发言、对露骨内容进行内容过滤，以及过滤来自陌生用户的私信。\n\n为解除这些限制，用户可通过几种方式验证年龄：通过AI分析视频自拍进行面部年龄估算（Discord称此数据保留在用户设备上），或提交政府身份证件（由第三方供应商验证，据称图片会迅速删除）。Discord 强调他们使用“面部估算”，不保留身份证件中的个人识别信息。此外，年龄推断模型将分析用户元数据（如玩过的游戏和活动），以高置信度自动授予用户成年身份，使其可以跳过其他验证步骤。\n\n此举是国际上推动在线年龄验证和加强儿童安全保护措施的更广泛努力的一部分。Discord 此前已在英国和澳大利亚实施了年龄验证，但用户最初找到了规避方法。该公司还在2025年10月遭遇了一起数据泄露事件，涉及一名前第三方供应商，导致年龄验证数据外泄，Discord 因此更换了供应商。尽管承认存在一些用户流失的风险，Discord 仍认为大多数用户不会经历重大变化，因为这些措施主要针对的是真正的成人内容。"
-  },
-  {
-    "id": "46934404",
-    "title": "AI fatigue is real and nobody talks about it",
-    "url": "https://siddhantkhare.com/writing/ai-fatigue-is-real",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI fatigue is real and nobody talks about it",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46932192",
-    "title": "DoNotNotify is now Open Source",
-    "url": "https://donotnotify.com/opensource.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DoNotNotify 现已开源",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46933067",
-    "title": "Slop Terrifies Me",
-    "url": "https://ezhik.jp/ai-slop-terrifies-me/",
-    "summary": "The author expresses profound fear, titling the piece \"Slop Terrifies Me,\" over the potential future of software development. Their central anxiety is that AI's capabilities will plateau at \"good enough\" – producing about 90% of a functional product – and that both developers (\"AI herders\") and users will accept this mediocrity, dubbed \"slop,\" without demanding the remaining 10% of excellence.\n\nThis acceptance, the author argues, leads to generic, uninspired software, a \"Temufication\" of the industry where unique craftsmanship is replaced by mass-produced, \"median Next-React-Tailwind\" applications. While acknowledging that \"slop\" is fundamentally a \"people problem\" driven by misaligned incentives (like \"move fast and break things\" or market dominance), AI agents are seen as accelerating this trend, allowing for even faster production of \"good enough\" without genuine care or understanding.\n\nDespite a glimmer of hope that AI tools could empower non-developers to create, bridging the gap between users and creators, the author is ultimately terrified that this \"tech learned helplessness\" is irreversible. Their greatest fear is that most people genuinely do not care about software quality, privacy, or well-designed features. Consequently, the future of computing might belong to those who can churn out the most software fastest, leading to the death of true craftsmanship, with no one left to mourn its loss.",
-    "chinese_title": "泔水吓坏我了",
-    "chinese_summary": "作者对软件开发的潜在未来深感恐惧，并将文章命名为“我对平庸之作感到恐惧”。他们的核心焦虑在于，人工智能的能力将停滞在“足够好”的水平——即能完成一个功能性产品约90%的部分——而开发者（即“AI牧者”）和用户都将接受这种被作者称为“平庸之作”的平庸结果，而不去追求剩下10%的卓越。\n\n作者认为，这种接受将导致泛化、缺乏创意的软件，行业将出现“拼多多化”现象，独特的匠心被大规模生产的“平庸的React-Tailwind类应用”所取代。尽管作者承认“平庸之作”本质上是一个源于不当激励（例如“快速行动，打破常规”或市场主导地位）的“人的问题”，但人工智能代理被视为正在加速这一趋势，使得“足够好”的产品能够更快地被生产出来，而无需真正的关心或理解。\n\n尽管存在一丝希望，认为AI工具可以赋能非开发者进行创作，从而弥合用户和创作者之间的鸿沟，但作者最终仍深感恐惧，认为这种“技术性习得性无助”是不可逆转的。他们最大的恐惧是，大多数人根本不关心软件质量、隐私或精心设计的功能。因此，计算的未来可能属于那些能最快生产出最多软件的人，这将导致真正匠心的消亡，且无人为其逝去而哀悼。"
+    "summary": "The article \"AI makes the easy part easier and the hard part harder\" by Blundergoat explores the paradoxical impact of artificial intelligence on professional work, particularly in creative and knowledge-based fields.\n\nThe author posits that AI excels at automating and accelerating routine, formulaic, and foundational tasks—the \"easy part\" of many jobs. This includes generating boilerplate code, drafting basic content, or summarizing information, effectively making initial drafts and mundane work much faster and less effortful.\n\nHowever, this efficiency paradoxically makes the \"hard part\" of human work more challenging and demanding. By handling the routine, AI elevates expectations for human output, pushing professionals to focus exclusively on genuinely novel, strategic, and deeply creative tasks. Humans are now expected to deliver unique insights, complex problem-solving, and truly innovative ideas, as AI can handle the \"good enough.\"\n\nFurthermore, interacting with AI introduces new complexities. Professionals must develop skills in prompting AI effectively, critically evaluating its output for nuance and accuracy, and integrating AI-generated content into a coherent whole. This requires heightened discernment and expertise to identify subtle errors or limitations that AI might produce. Ultimately, AI shifts the human role towards oversight, refinement, and the pursuit of truly exceptional and uniquely human contributions, making the apex of human creativity and strategic thinking even more critical and arduous.",
+    "chinese_title": "AI让易事更易，难事更难",
+    "chinese_summary": "布伦德戈特（Blundergoat）撰写的文章《AI让简单更简单，让困难更困难》探讨了人工智能对专业工作的矛盾影响，尤其是在创意和知识密集型领域。\n\n作者认为，人工智能擅长自动化和加速许多工作中那些常规、公式化和基础性的任务——即“简单部分”。这包括生成样板代码、起草基本内容或总结信息，有效地使初始草稿和日常工作变得更快、更省力。\n\n然而，这种效率反而使人类工作的“困难部分”更具挑战性和要求。通过处理常规任务，AI提升了对人类产出的期望，促使专业人士专注于真正新颖、战略性和深度创造性的任务。人类现在需要提供独特的见解、复杂的解决方案和真正的创新思想，因为AI能够处理“足够好”的工作。\n\n此外，与AI互动也带来了新的复杂性。专业人士必须培养有效提示AI、批判性评估其输出的细微差别和准确性，并将AI生成内容整合到连贯整体中的技能。这需要更高的洞察力和专业知识来识别AI可能产生的细微错误或局限。最终，AI将人类角色转向监督、提炼和追求真正卓越且独一无二的人类贡献，使得人类创造力和战略思维的巅峰变得更加关键和艰巨。"
   },
   {
     "id": "46946827",
     "title": "GitHub is down again",
     "url": "https://www.githubstatus.com/incidents/54hndjxft5bx",
-    "summary": "On February 9, 2026, GitHub experienced an incident primarily affecting notification delivery. The issue began around 15:54 UTC with reports of impacted performance. Investigation quickly pinpointed the problem as delays in notification delivery, which progressively worsened, reaching an average delay of approximately 1 hour and 20 minutes by 16:51 UTC.\n\nRecovery efforts commenced shortly after, with delays gradually decreasing from 1 hour to 30 minutes, then 15 minutes, as the backlog was processed. By 19:14 UTC, notification delivery delays were resolved, and the incident was officially marked as resolved at 19:29 UTC. GitHub thanked users for their patience and announced that a detailed root cause analysis would be shared once available.",
-    "chinese_title": "GitHub is down again",
-    "chinese_summary": "On February 9, 2026, GitHub experienced an incident primarily affecting notification delivery. The issue began around 15:54 UTC with reports of impacted performance. Investigation quickly pinpointed the problem as delays in notification delivery, which progressively worsened, reaching an average delay of approximately 1 hour and 20 minutes by 16:51 UTC.\n\nRecovery efforts commenced shortly after, with delays gradually decreasing from 1 hour to 30 minutes, then 15 minutes, as the backlog was processed. By 19:14 UTC, notification delivery delays were resolved, and the incident was officially marked as resolved at 19:29 UTC. GitHub thanked users for their patience and announced that a detailed root cause analysis would be shared once available."
+    "summary": "On February 9, 2026, GitHub experienced an incident that primarily impacted notification delivery across some of its services. The issue was first reported as \"impacted performance\" around 15:54 UTC, quickly narrowing down to delays in notifications.\n\nInitial delays were around 50 minutes (16:12 UTC), escalating to nearly 1 hour and 20 minutes by 16:51 UTC as GitHub investigated. Recovery began shortly after, with average delivery latency gradually decreasing over the next few hours. Delays lessened from approximately an hour (17:25 UTC) to 30 minutes (17:57 UTC), then 15 minutes (18:33 UTC) as GitHub worked through the notification backlog.\n\nBy 19:14 UTC, notification delivery delays were resolved. The incident was officially declared resolved at 19:29 UTC, with GitHub thanking users and promising a detailed root cause analysis. The status page also provides various subscription options for future incident updates.",
+    "chinese_title": "GitHub 又宕机了",
+    "chinese_summary": "2026年2月9日，GitHub发生了一起事件，主要影响了其部分服务的通知投递。该问题最初在UTC时间15:54左右被报告为“性能受影响”，很快就查明是通知延迟。\n\n初步延迟约为50分钟（UTC 16:12），随着GitHub的调查，到UTC 16:51时，延迟已升级至近1小时20分钟。此后不久，恢复工作开始，平均投递延迟在接下来的几个小时内逐渐减少。随着GitHub处理积压的通知，延迟从大约1小时（UTC 17:25）减少到30分钟（UTC 17:57），然后是15分钟（UTC 18:33）。\n\n到UTC 19:14，通知投递延迟问题已解决。该事件于UTC 19:29正式宣告解决，GitHub感谢用户并承诺将提供详细的根本原因分析。状态页面还提供了多种订阅选项，以获取未来的事件更新。"
   },
   {
-    "id": "46934344",
-    "title": "I am happier writing code by hand",
-    "url": "https://www.abhinavomprakash.com/posts/i-am-happier-writing-code-by-hand/",
-    "summary": "The author describes experiencing depression and lethargy when relying on LLMs like Claude-code for extensive code generation, a practice they term \"vibe coding.\" This method repeatedly led them to delete the tool, only to rediscover the joy of coding manually.\n\nThe core argument is that \"wrestling with the problem space\" through manual coding is essential for deep understanding, identifying API pain points, and internalizing context – all critical for effective software engineering. Outsourcing code generation to LLMs bypasses this crucial thinking process, making it harder to verify correctness and fostering passive acceptance over active engagement. The author notes that \"vibe coding\" can be addictive, disengage the brain, and ironically make simple tasks slower by increasing cognitive inertia. Even quickly generated large codebases still require human review and understanding, making the developer the ultimate bottleneck.\n\nWhile acknowledging LLMs as tools, the author stresses that tools shape thought processes; if a tool hinders deep thinking, it's detrimental for knowledge workers. The author now uses LLMs in a controlled, \"frictional\" manner: manually providing context and specific snippets for targeted changes or tests. This approach forces familiarity, keeps the brain engaged, and preserves the \"flow state\" crucial for happiness and effective work. Ultimately, the author prioritizes mental well-being over potential, yet uncertain, productivity gains from full feature generation, encouraging others to make choices that optimize their happiness.",
-    "chinese_title": "我手写代码时更开心。",
-    "chinese_summary": "作者描述了在使用Claude-code等大型语言模型进行大量代码生成时，感到抑郁和倦怠的经历，他们将这种做法称为“凭感觉编程”（vibe coding）。这种方法屡次让他们删除该工具，只为了重新发现手动编程的乐趣。\n\n核心论点是，通过手动编程“与问题空间搏斗”对于深入理解、识别API痛点和内化上下文至关重要，这些都是高效软件工程的关键。将代码生成外包给大型语言模型会绕过这个关键的思考过程，使得验证正确性变得更困难，并助长了被动接受而非主动参与。作者指出，“凭感觉编程”可能令人上瘾，使大脑脱离思考，并讽刺地通过增加认知惯性使简单任务变得更慢。即使是快速生成的大型代码库，仍然需要人工审查和理解，这使得开发者成为最终的瓶颈。\n\n作者承认大型语言模型是工具，但强调工具会塑造思维过程；如果一个工具阻碍了深度思考，那么它对知识工作者是有害的。作者现在以一种受控的、“有摩擦的”方式使用大型语言模型：手动提供上下文和具体的代码片段，用于有针对性的更改或测试。这种方法强制熟悉代码，保持大脑活跃，并保留了对幸福和高效工作至关重要的“心流状态”。最终，作者将心理健康置于通过全面功能生成可能获得但却不确定的生产力提升之上，鼓励其他人做出能优化其幸福感的选择。"
-  },
-  {
-    "id": "46941603",
-    "title": "Claude’s C Compiler vs. GCC",
-    "url": "https://harshanu.space/en/tech/ccc-vs-gcc/",
+    "id": "46954920",
+    "title": "Frontier AI agents violate ethical constraints 30–50% of time, pressured by KPIs",
+    "url": "https://arxiv.org/abs/2512.20798",
     "summary": "生成摘要时出错",
-    "chinese_title": "Claude’s C Compiler vs. GCC",
+    "chinese_title": "Frontier AI agents violate ethical constraints 30–50% of time, pressured by KPIs",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46935791",
-    "title": "I put a real-time 3D shader on the Game Boy Color",
-    "url": "https://blog.otterstack.com/posts/202512-gbshader/",
+    "id": "46959832",
+    "title": "Jury told that Meta, Google 'engineered addiction' at landmark US trial",
+    "url": "https://techxplore.com/news/2026-02-jury-told-meta-google-addiction.html",
+    "summary": "A landmark US trial has begun against Meta (Facebook, Instagram) and Google (YouTube), with plaintiffs' lawyers accusing the tech giants of \"engineering addiction\" in children and teenagers through their social media platforms. The suit consolidates over 100 similar cases and represents hundreds of families and school districts.\n\nLawyers for the plaintiffs argued that Meta and Google deliberately designed their platforms to be addictive, exploiting adolescent psychology for profit. They highlighted features like infinite scroll, push notifications, and AI-driven content feeds as examples of these manipulative designs. The plaintiffs seek financial compensation for mental health issues experienced by young users, including anxiety, depression, and self-harm, as well as reimbursement for costs incurred by school districts addressing these issues.\n\nThe tech companies deny the allegations, asserting that their platforms provide valuable ways for young people to connect and express themselves, and that they have implemented safety features. Google's legal team stated they would present evidence of parental control tools and efforts to remove harmful content. Meta emphasized its commitment to protecting young people online.\n\nThis trial follows a period of intense scrutiny on social media's impact on youth mental health, with lawmakers and health officials also expressing concerns. The outcome could set a significant precedent for how tech companies are held accountable for the design and effects of their products on young users.",
+    "chinese_title": "Jury told that Meta, Google 'engineered addiction' at landmark US trial",
+    "chinese_summary": "A landmark US trial has begun against Meta (Facebook, Instagram) and Google (YouTube), with plaintiffs' lawyers accusing the tech giants of \"engineering addiction\" in children and teenagers through their social media platforms. The suit consolidates over 100 similar cases and represents hundreds of families and school districts.\n\nLawyers for the plaintiffs argued that Meta and Google deliberately designed their platforms to be addictive, exploiting adolescent psychology for profit. They highlighted features like infinite scroll, push notifications, and AI-driven content feeds as examples of these manipulative designs. The plaintiffs seek financial compensation for mental health issues experienced by young users, including anxiety, depression, and self-harm, as well as reimbursement for costs incurred by school districts addressing these issues.\n\nThe tech companies deny the allegations, asserting that their platforms provide valuable ways for young people to connect and express themselves, and that they have implemented safety features. Google's legal team stated they would present evidence of parental control tools and efforts to remove harmful content. Meta emphasized its commitment to protecting young people online.\n\nThis trial follows a period of intense scrutiny on social media's impact on youth mental health, with lawmakers and health officials also expressing concerns. The outcome could set a significant precedent for how tech companies are held accountable for the design and effects of their products on young users."
+  },
+  {
+    "id": "46960036",
+    "title": "Oxide raises $200M Series C",
+    "url": "https://oxide.computer/blog/our-200m-series-c",
     "summary": "生成摘要时出错",
-    "chinese_title": "I put a real-time 3D shader on the Game Boy Color",
+    "chinese_title": "Oxide raises $200M Series C",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46930391",
-    "title": "Show HN: LocalGPT – A local-first AI assistant in Rust with persistent memory",
-    "url": "https://github.com/localgpt-app/localgpt",
+    "id": "46958399",
+    "title": "Europe's $24T Breakup with Visa and Mastercard Has Begun",
+    "url": "https://europeanbusinessmagazine.com/business/europes-24-trillion-breakup-with-visa-and-mastercard-has-begun/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: LocalGPT – A local-first AI assistant in Rust with persistent memory",
+    "chinese_title": "Europe's $24T Breakup with Visa and Mastercard Has Begun",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -104,491 +96,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46931805",
-    "title": "OpenClaw is changing my life",
-    "url": "https://reorx.com/blog/openclaw-is-changing-my-life/",
+    "id": "46960675",
+    "title": "I started programming when I was 7. I'm 50 now and the thing I loved has changed",
+    "url": "https://www.jamesdrandall.com/posts/the_thing_i_loved_has_changed/",
     "summary": "生成摘要时出错",
-    "chinese_title": "OpenClaw is changing my life",
+    "chinese_title": "I started programming when I was 7. I'm 50 now and the thing I loved has changed",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46935991",
-    "title": "Omega-3 is inversely related to risk of early-onset dementia",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/41506004/",
+    "id": "46946308",
+    "title": "Sandboxels",
+    "url": "https://neal.fun/sandboxels/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Omega-3 is inversely related to risk of early-onset dementia",
+    "chinese_title": "Sandboxels",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46936237",
-    "title": "Show HN: I created a Mars colony RPG based on Kim Stanley Robinson’s Mars books",
-    "url": "https://underhillgame.com/",
+    "id": "46954136",
+    "title": "Rust implementation of Mistral's Voxtral Mini 4B Realtime runs in your browser",
+    "url": "https://github.com/TrevorS/voxtral-mini-realtime-rs",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I created a Mars colony RPG based on Kim Stanley Robinson’s Mars books",
+    "chinese_title": "Rust implementation of Mistral's Voxtral Mini 4B Realtime runs in your browser",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46934107",
-    "title": "GitHub Agentic Workflows",
-    "url": "https://github.github.io/gh-aw/",
+    "id": "46949452",
+    "title": "Another GitHub outage in the same day",
+    "url": "https://www.githubstatus.com/incidents/lcw3tg2f6zsd",
     "summary": "生成摘要时出错",
-    "chinese_title": "GitHub Agentic Workflows",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46933401",
-    "title": "Dave Farber has died",
-    "url": "https://lists.nanog.org/archives/list/nanog@lists.nanog.org/thread/TSNPJVFH4DKLINIKSMRIIVNHDG5XKJCM/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Dave Farber has died",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46931948",
-    "title": "The world heard JD Vance being booed at the Olympics. Except for viewers in USA",
-    "url": "https://www.theguardian.com/sport/2026/feb/07/jd-vance-boos-winter-olympics",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The world heard JD Vance being booed at the Olympics. Except for viewers in USA",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46938398",
-    "title": "More Mac malware from Google search",
-    "url": "https://eclecticlight.co/2026/01/30/more-malware-from-google-search/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "More Mac malware from Google search",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46930565",
-    "title": "Beyond agentic coding",
-    "url": "https://haskellforall.com/2026/02/beyond-agentic-coding",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Beyond agentic coding",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46933365",
-    "title": "Why E cores make Apple silicon fast",
-    "url": "https://eclecticlight.co/2026/02/08/last-week-on-my-mac-why-e-cores-make-apple-silicon-fast/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why E cores make Apple silicon fast",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46947096",
-    "title": "Converting a $3.88 analog clock from Walmart into a ESP8266-based Wi-Fi clock",
-    "url": "https://github.com/jim11662418/ESP8266_WiFi_Analog_Clock",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Converting a $3.88 analog clock from Walmart into a ESP8266-based Wi-Fi clock",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46946872",
-    "title": "GitHub Is Down",
-    "url": "https://github.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GitHub Is Down",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46941640",
-    "title": "TSMC to make advanced AI semiconductors in Japan",
-    "url": "https://apnews.com/article/semiconductors-tsmc-japan-taiwan-ai-11256f2bfde73ca23d08331ad138d6d5",
-    "summary": "生成摘要时出错",
-    "chinese_title": "TSMC to make advanced AI semiconductors in Japan",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46946401",
-    "title": "Why is the sky blue?",
-    "url": "https://explainers.blog/posts/why-is-the-sky-blue/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why is the sky blue?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46941882",
-    "title": "Nobody knows how the whole system works",
-    "url": "https://surfingcomplexity.blog/2026/02/08/nobody-knows-how-the-whole-system-works/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Nobody knows how the whole system works",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46945497",
-    "title": "AT&T, Verizon blocking release of Salt Typhoon security assessment reports",
-    "url": "https://www.reuters.com/business/media-telecom/senator-says-att-verizon-blocking-release-salt-typhoon-security-assessment-2026-02-03/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AT&T, Verizon blocking release of Salt Typhoon security assessment reports",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46938241",
-    "title": "A GTA modder has got the 1997 original working on modern PCs and Steam Deck",
-    "url": "https://gtaforums.com/topic/986492-grand-theft-auto-ready2play-full-game-windows-version/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A GTA modder has got the 1997 original working on modern PCs and Steam Deck",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46936920",
-    "title": "Experts Have World Models. LLMs Have Word Models",
-    "url": "https://www.latent.space/p/adversarial-reasoning",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Experts Have World Models. LLMs Have Word Models",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46936105",
-    "title": "Billing can be bypassed using a combo of subagents with an agent definition",
-    "url": "https://github.com/microsoft/vscode/issues/292452",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Billing can be bypassed using a combo of subagents with an agent definition",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46938903",
-    "title": "Shifts in U.S. Social Media Use, 2020–2024: Decline, Fragmentation, Polarization (2025)",
-    "url": "https://arxiv.org/abs/2510.25417",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Shifts in U.S. Social Media Use, 2020–2024: Decline, Fragmentation, Polarization (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46934266",
-    "title": "Running Your Own As: BGP on FreeBSD with FRR, GRE Tunnels, and Policy Routing",
-    "url": "https://blog.hofstede.it/running-your-own-as-bgp-on-freebsd-with-frr-gre-tunnels-and-policy-routing/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Running Your Own As: BGP on FreeBSD with FRR, GRE Tunnels, and Policy Routing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46944245",
-    "title": "Matrix messaging gaining ground in government IT",
-    "url": "https://www.theregister.com/2026/02/09/matrix_element_secure_chat/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Matrix messaging gaining ground in government IT",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46932985",
-    "title": "Curating a Show on My Ineffable Mother, Ursula K. Le Guin",
-    "url": "https://hyperallergic.com/curating-a-show-on-my-ineffable-mother-ursula-k-le-guin/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Curating a Show on My Ineffable Mother, Ursula K. Le Guin",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46927098",
-    "title": "Microsoft account bugs locked me out of Notepad – Are thin clients ruining PCs?",
-    "url": "https://www.windowscentral.com/microsoft/windows-11/windows-locked-me-out-of-notepad-is-the-thin-client-era-ruining-pcs",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Microsoft account bugs locked me out of Notepad – Are thin clients ruining PCs?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46936595",
-    "title": "Bun v1.3.9",
-    "url": "https://bun.com/blog/bun-v1.3.9",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Bun v1.3.9",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46935980",
-    "title": "Vouch",
-    "url": "https://github.com/mitchellh/vouch",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Vouch",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46946248",
-    "title": "Hong Kong pro-democracy tycoon Jimmy Lai gets 20 years' jail",
-    "url": "https://www.bbc.com/news/articles/c8d5pl34vv0o",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Hong Kong pro-democracy tycoon Jimmy Lai gets 20 years' jail",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46945755",
-    "title": "AI Doesn't Reduce Work–It Intensifies It",
-    "url": "https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI Doesn't Reduce Work–It Intensifies It",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46939685",
-    "title": "Every book recommended on the Odd Lots Discord",
-    "url": "https://odd-lots-books.netlify.app/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Every book recommended on the Odd Lots Discord",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46936274",
-    "title": "Let's compile Quake like it's 1997",
-    "url": "https://fabiensanglard.net/compile_like_1997/index.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Let's compile Quake like it's 1997",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46938280",
-    "title": "Apple XNU: Clutch Scheduler",
-    "url": "https://github.com/apple-oss-distributions/xnu/blob/main/doc/scheduler/sched_clutch_edge.md",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Apple XNU: Clutch Scheduler",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46936315",
-    "title": "The first sodium-ion battery EV is a winter range monster",
-    "url": "https://insideevs.com/news/786509/catl-changan-worlds-first-sodium-ion-battery-ev/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The first sodium-ion battery EV is a winter range monster",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46928435",
-    "title": "Tiny C Compiler",
-    "url": "https://bellard.org/tcc/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tiny C Compiler",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46943752",
-    "title": "Offpunk 3.0",
-    "url": "https://ploum.net/2026-02-09-offpunk3.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Offpunk 3.0",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46937012",
-    "title": "Roundcube Webmail: SVG feImage bypasses image blocking to track email opens",
-    "url": "https://nullcathedral.com/posts/2026-02-08-roundcube-svg-feimage-remote-image-bypass/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Roundcube Webmail: SVG feImage bypasses image blocking to track email opens",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46934499",
-    "title": "RFC 3092 – Etymology of “Foo” (2001)",
-    "url": "https://datatracker.ietf.org/doc/html/rfc3092",
-    "summary": "生成摘要时出错",
-    "chinese_title": "RFC 3092 – Etymology of “Foo” (2001)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46945235",
-    "title": "Thoughts on Generating C",
-    "url": "https://wingolog.org/archives/2026/02/09/six-thoughts-on-generating-c",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Thoughts on Generating C",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46939312",
-    "title": "Show HN: A custom font that displays Cistercian numerals using ligatures",
-    "url": "https://bobbiec.github.io/cistercian-font.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: A custom font that displays Cistercian numerals using ligatures",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46945348",
-    "title": "UEFI Bindings for JavaScript",
-    "url": "https://codeberg.org/smnx/promethee",
-    "summary": "生成摘要时出错",
-    "chinese_title": "UEFI Bindings for JavaScript",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46938958",
-    "title": "Stop generating, start thinking",
-    "url": "https://localghost.dev/blog/stop-generating-start-thinking/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Stop generating, start thinking",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46948923",
-    "title": "Irish man with valid US work permit held in ICE detention for five months",
-    "url": "https://www.theguardian.com/us-news/2026/feb/09/irish-man-seamus-culleton-ice-detention",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Irish man with valid US work permit held in ICE detention for five months",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46932343",
-    "title": "Matchlock – Secures AI agent workloads with a Linux-based sandbox",
-    "url": "https://github.com/jingkaihe/matchlock",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Matchlock – Secures AI agent workloads with a Linux-based sandbox",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46928810",
-    "title": "FDA intends to take action against non-FDA-approved GLP-1 drugs",
-    "url": "https://www.fda.gov/news-events/press-announcements/fda-intends-take-action-against-non-fda-approved-glp-1-drugs",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FDA intends to take action against non-FDA-approved GLP-1 drugs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46938615",
-    "title": "Everything – Locate files and folders by name instantly",
-    "url": "https://www.voidtools.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Everything – Locate files and folders by name instantly",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46931595",
-    "title": "LineageOS 23.2",
-    "url": "https://lineageos.org/Changelog-31/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "LineageOS 23.2",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46936828",
-    "title": "The Little Bool of Doom (2025)",
-    "url": "https://blog.svgames.pl/article/the-little-bool-of-doom",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Little Bool of Doom (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46934579",
-    "title": "Exploiting signed bootloaders to circumvent UEFI Secure Boot (2019)",
-    "url": "https://habr.com/en/articles/446238/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Exploiting signed bootloaders to circumvent UEFI Secure Boot (2019)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46947501",
-    "title": "Irish man detained by ICE for 5 months",
-    "url": "https://www.rte.ie/news/ireland/2026/0209/1557514-seamus-culleton/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Irish man detained by ICE for 5 months",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46929391",
-    "title": "The silent death of good code",
-    "url": "https://amit.prasad.me/blog/rip-good-code",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The silent death of good code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46932444",
-    "title": "Quartz crystals",
-    "url": "https://www.pa3fwm.nl/technotes/tn13a.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Quartz crystals",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46933955",
-    "title": "Like Game-of-Life, but on Growing Graphs, with WASM and WebGL",
-    "url": "https://znah.net/graphs/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Like Game-of-Life, but on Growing Graphs, with WASM and WebGL",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46945471",
-    "title": "Humans peak in midlife: A combined cognitive and personality trait perspective",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0160289625000649",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Humans peak in midlife: A combined cognitive and personality trait perspective",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46939187",
-    "title": "Reverse Engineering the Prom for the SGI O2",
-    "url": "https://mattst88.com/blog/2026/02/08/Reverse_Engineering_the_PROM_for_the_SGI_O2/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Reverse Engineering the Prom for the SGI O2",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46928412",
-    "title": "Italy Railways Sabotaged",
-    "url": "https://www.bbc.co.uk/news/articles/czr4rx04xjpo",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Italy Railways Sabotaged",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46944555",
-    "title": "Show HN: Browse Internet Infrastructure",
-    "url": "https://www.wirewiki.com",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Browse Internet Infrastructure",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46931559",
-    "title": "Roger Ebert Reviews \"The Shawshank Redemption\" (1999)",
-    "url": "https://www.rogerebert.com/reviews/great-movie-the-shawshank-redemption-1994",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Roger Ebert Reviews \"The Shawshank Redemption\" (1999)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46931213",
-    "title": "Homeland Security Spying on Reddit Users",
-    "url": "https://www.kenklippenstein.com/p/homeland-security-spies-on-reddit",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Homeland Security Spying on Reddit Users",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46949401",
-    "title": "Testing Ads in ChatGPT",
-    "url": "https://openai.com/index/testing-ads-in-chatgpt/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Testing Ads in ChatGPT",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46931347",
-    "title": "Substack confirms data breach affects users’ email addresses and phone numbers",
-    "url": "https://techcrunch.com/2026/02/05/substack-confirms-data-breach-affecting-email-addresses-and-phone-numbers/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Substack confirms data breach affects users’ email addresses and phone numbers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46926576",
-    "title": "Brookhaven Lab's RHIC concludes 25-year run with final collisions",
-    "url": "https://www.hpcwire.com/off-the-wire/brookhaven-labs-rhic-concludes-25-year-run-with-final-collisions/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Brookhaven Lab's RHIC concludes 25-year run with final collisions",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46933515",
-    "title": "Show HN: Fine-tuned Qwen2.5-7B on 100 films for probabilistic story graphs",
-    "url": "https://cinegraphs.ai/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Fine-tuned Qwen2.5-7B on 100 films for probabilistic story graphs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "46946062",
-    "title": "Sleeper Shells: Attackers Are Planting Dormant Backdoors in Ivanti EPMM",
-    "url": "https://defusedcyber.com/ivanti-epmm-sleeper-shells-403jsp",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Sleeper Shells: Attackers Are Planting Dormant Backdoors in Ivanti EPMM",
+    "chinese_title": "Another GitHub outage in the same day",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -600,107 +136,435 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46941850",
-    "title": "A tough labor market for white-collar workers has turned recruiting upside down",
-    "url": "https://www.wsj.com/lifestyle/careers/job-hunters-are-so-desperate-that-theyre-paying-to-get-recruited-44891ac2",
+    "id": "46941603",
+    "title": "Claude’s C Compiler vs. GCC",
+    "url": "https://harshanu.space/en/tech/ccc-vs-gcc/",
     "summary": "生成摘要时出错",
-    "chinese_title": "A tough labor market for white-collar workers has turned recruiting upside down",
+    "chinese_title": "Claude’s C Compiler vs. GCC",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46932678",
-    "title": "Reverse Engineering Raiders of the Lost Ark for the Atari 2600",
-    "url": "https://github.com/joshuanwalker/Raiders2600",
+    "id": "46941882",
+    "title": "Nobody knows how the whole system works",
+    "url": "https://surfingcomplexity.blog/2026/02/08/nobody-knows-how-the-whole-system-works/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Reverse Engineering Raiders of the Lost Ark for the Atari 2600",
+    "chinese_title": "Nobody knows how the whole system works",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46935104",
-    "title": "Five disciplines discovered the same math independently",
-    "url": "https://freethemath.org",
+    "id": "46962996",
+    "title": "The Singularity will occur on a Tuesday",
+    "url": "https://campedersen.com/singularity",
     "summary": "生成摘要时出错",
-    "chinese_title": "Five disciplines discovered the same math independently",
+    "chinese_title": "The Singularity will occur on a Tuesday",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46931026",
-    "title": "Bye Bye Humanity: The Potential AMOC Collapse",
-    "url": "https://thatjoescott.com/2026/02/03/bye-bye-humanity-the-potential-amoc-collapse/",
+    "id": "46963804",
+    "title": "Google handed ICE student journalist's bank and credit card numbers",
+    "url": "https://theintercept.com/2026/02/10/google-ice-subpoena-student-journalist/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Bye Bye Humanity: The Potential AMOC Collapse",
+    "chinese_title": "Google handed ICE student journalist's bank and credit card numbers",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46945742",
-    "title": "Discord Launches Teen-by-Default Settings Globally",
-    "url": "https://discord.com/press-releases/discord-launches-teen-by-default-settings-globally",
+    "id": "46945497",
+    "title": "AT&T, Verizon blocking release of Salt Typhoon security assessment reports",
+    "url": "https://www.reuters.com/business/media-telecom/senator-says-att-verizon-blocking-release-salt-typhoon-security-assessment-2026-02-03/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Discord Launches Teen-by-Default Settings Globally",
+    "chinese_title": "AT&T, Verizon blocking release of Salt Typhoon security assessment reports",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46928470",
-    "title": "You Are Here",
-    "url": "https://brooker.co.za/blog/2026/02/07/you-are-here.html",
+    "id": "46948923",
+    "title": "Irish man with valid US work permit held in ICE detention for five months",
+    "url": "https://www.theguardian.com/us-news/2026/feb/09/irish-man-seamus-culleton-ice-detention",
     "summary": "生成摘要时出错",
-    "chinese_title": "You Are Here",
+    "chinese_title": "Irish man with valid US work permit held in ICE detention for five months",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46935931",
-    "title": "Credentials for Linux: Bringing Passkeys to the Linux Desktop",
-    "url": "https://alfioemanuele.io/talks/2026/02/01/fosdem-2026-credentials-for-linux.html",
+    "id": "46957198",
+    "title": "Qwen-Image-2.0: Professional infographics, exquisite photorealism",
+    "url": "https://qwen.ai/blog?id=qwen-image-2.0",
     "summary": "生成摘要时出错",
-    "chinese_title": "Credentials for Linux: Bringing Passkeys to the Linux Desktop",
+    "chinese_title": "Qwen-Image-2.0: Professional infographics, exquisite photorealism",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46938217",
-    "title": "The 'Little red dots' observed by Webb were direct-collapse black holes",
-    "url": "https://phys.org/news/2026-02-red-dots-webb-collapse-black.html",
+    "id": "46938398",
+    "title": "More Mac malware from Google search",
+    "url": "https://eclecticlight.co/2026/01/30/more-malware-from-google-search/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The 'Little red dots' observed by Webb were direct-collapse black holes",
+    "chinese_title": "More Mac malware from Google search",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46935011",
-    "title": "Noam Chomsky's wife responds to Epstein controversy",
-    "url": "https://www.aaronmate.net/p/noam-chomskys-wife-responds-to-epstein",
+    "id": "46954049",
+    "title": "Pure C, CPU-only inference with Mistral Voxtral Realtime 4B speech to text model",
+    "url": "https://github.com/antirez/voxtral.c",
     "summary": "生成摘要时出错",
-    "chinese_title": "Noam Chomsky's wife responds to Epstein controversy",
+    "chinese_title": "纯 C、仅限 CPU 推理的 Mistral Voxtral Realtime 4B 语音转文本模型",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46936526",
-    "title": "Stop Using Face ID",
-    "url": "https://www.pcmag.com/explainers/why-you-should-stop-using-face-id-right-now?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=B",
+    "id": "46949642",
+    "title": "Luce: First Electric Ferrari",
+    "url": "https://www.ferrari.com/en-US/auto/ferrari-luce",
     "summary": "生成摘要时出错",
-    "chinese_title": "Stop Using Face ID",
+    "chinese_title": "Luce: First Electric Ferrari",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46934660",
-    "title": "Washington imposes 'terrorist-grade sanctions' on Francesca Albanese, ICC judges",
-    "url": "https://thecradle.co/articles-id/35816",
+    "id": "46952118",
+    "title": "LiftKit – UI where \"everything derives from the golden ratio\"",
+    "url": "https://www.chainlift.io/liftkit",
     "summary": "生成摘要时出错",
-    "chinese_title": "Washington imposes 'terrorist-grade sanctions' on Francesca Albanese, ICC judges",
+    "chinese_title": "LiftKit – UI where \"everything derives from the golden ratio\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46940511",
-    "title": "In the AI gold rush, tech firms are embracing 72-hour weeks",
-    "url": "https://www.bbc.com/news/articles/cvgn2k285ypo",
+    "id": "46946872",
+    "title": "GitHub Is Down",
+    "url": "https://github.com/",
     "summary": "生成摘要时出错",
-    "chinese_title": "In the AI gold rush, tech firms are embracing 72-hour weeks",
+    "chinese_title": "GitHub Is Down",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46931792",
-    "title": "SCOTUS to decide if 1988 video tape privacy law applies to internet uses",
-    "url": "https://www.jurist.org/news/2026/01/us-supreme-court-to-decide-if-1988-video-tape-privacy-law-applies-to-internet-uses/",
+    "id": "46958231",
+    "title": "Clean-room implementation of Half-Life 2 on the Quake 1 engine",
+    "url": "https://code.idtech.space/fn/hl2",
     "summary": "生成摘要时出错",
-    "chinese_title": "SCOTUS to decide if 1988 video tape privacy law applies to internet uses",
+    "chinese_title": "Clean-room implementation of Half-Life 2 on the Quake 1 engine",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46945348",
+    "title": "UEFI Bindings for JavaScript",
+    "url": "https://codeberg.org/smnx/promethee",
+    "summary": "生成摘要时出错",
+    "chinese_title": "UEFI Bindings for JavaScript",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46949401",
+    "title": "Testing Ads in ChatGPT",
+    "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Testing Ads in ChatGPT",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46953815",
+    "title": "Zulip.com Values",
+    "url": "https://zulip.com/values/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Zulip.com Values",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46945235",
+    "title": "Thoughts on Generating C",
+    "url": "https://wingolog.org/archives/2026/02/09/six-thoughts-on-generating-c",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Thoughts on Generating C",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46941640",
+    "title": "TSMC to make advanced AI semiconductors in Japan",
+    "url": "https://apnews.com/article/semiconductors-tsmc-japan-taiwan-ai-11256f2bfde73ca23d08331ad138d6d5",
+    "summary": "生成摘要时出错",
+    "chinese_title": "TSMC to make advanced AI semiconductors in Japan",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46955703",
+    "title": "AI doesn’t reduce work, it intensifies it",
+    "url": "https://simonwillison.net/2026/Feb/9/ai-intensifies-work/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI doesn’t reduce work, it intensifies it",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46938241",
+    "title": "A GTA modder has got the 1997 original working on modern PCs and Steam Deck",
+    "url": "https://gtaforums.com/topic/986492-grand-theft-auto-ready2play-full-game-windows-version/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A GTA modder has got the 1997 original working on modern PCs and Steam Deck",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46944245",
+    "title": "Matrix messaging gaining ground in government IT",
+    "url": "https://www.theregister.com/2026/02/09/matrix_element_secure_chat/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Matrix messaging gaining ground in government IT",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46960624",
+    "title": "The US is flirting with its first-ever population decline",
+    "url": "https://www.bloomberg.com/news/articles/2026-01-30/trump-immigration-crackdown-could-shrink-us-population-for-first-time",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The US is flirting with its first-ever population decline",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46945755",
+    "title": "AI Doesn't Reduce Work–It Intensifies It",
+    "url": "https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Doesn't Reduce Work–It Intensifies It",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46938903",
+    "title": "Shifts in U.S. Social Media Use, 2020–2024: Decline, Fragmentation, Polarization (2025)",
+    "url": "https://arxiv.org/abs/2510.25417",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Shifts in U.S. Social Media Use, 2020–2024: Decline, Fragmentation, Polarization (2025)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46946248",
+    "title": "Hong Kong pro-democracy tycoon Jimmy Lai gets 20 years' jail",
+    "url": "https://www.bbc.com/news/articles/c8d5pl34vv0o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hong Kong pro-democracy tycoon Jimmy Lai gets 20 years' jail",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46950152",
+    "title": "MIT Living Wage Calculator",
+    "url": "https://livingwage.mit.edu/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "MIT Living Wage Calculator",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46951057",
+    "title": "America has a tungsten problem",
+    "url": "https://www.noleary.com/blog/posts/1",
+    "summary": "生成摘要时出错",
+    "chinese_title": "America has a tungsten problem",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46950915",
+    "title": "Super Bowl Ad for Ring Cameras Touted AI Surveillance Network",
+    "url": "https://truthout.org/articles/super-bowl-ad-for-ring-cameras-touted-ai-surveillance-network/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Super Bowl Ad for Ring Cameras Touted AI Surveillance Network",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46953491",
+    "title": "What functional programmers get wrong about systems",
+    "url": "https://www.iankduncan.com/engineering/2026-02-09-what-functional-programmers-get-wrong-about-systems/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What functional programmers get wrong about systems",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46953136",
+    "title": "Is particle physics dead, dying, or just hard?",
+    "url": "https://www.quantamagazine.org/is-particle-physics-dead-dying-or-just-hard-20260126/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Is particle physics dead, dying, or just hard?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46939685",
+    "title": "Every book recommended on the Odd Lots Discord",
+    "url": "https://odd-lots-books.netlify.app/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Every book recommended on the Odd Lots Discord",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46943752",
+    "title": "Offpunk 3.0",
+    "url": "https://ploum.net/2026-02-09-offpunk3.html",
+    "summary": "Offpunk 3.0, titled \"A Community is Born,\" marks a significant collaborative milestone for Ploum's offline-first command-line browser for Web, Gemini, and Gopher. After four years of solo development, this release integrates major contributions from others, including Vincent Jousse (Umerdify), JMCS (translation infrastructure), and community packaging efforts, fostering an emerging Offpunk community.\n\nThe release introduces 11 significant changes:\n*   **Multilingual Support**: Offpunk is now translatable, with Spanish, Galician, and Dutch available.\n*   **`openk` tool**: The standalone tool is renamed from `opnk` to `openk` for clarity.\n*   **`xkcdpunk`**: A new tool to display XKCD comics in the terminal.\n*   **`unmerdify` Integration**: Offpunk now uses \"unmerdify\" for improved HTML article content extraction based on FiveFilters' `ftr-site-config` rules, with `readability` as a fallback.\n*   **Social Features**: New `share` (email URL) and `reply` (email author) commands.\n*   **Login Support**: The `cookies` command allows importing cookie files from traditional browsers for logged-in browsing.\n*   **Enhanced Image Display**: Images are larger and displayed by default in Gemini, with full display for sixels-compatible terminals.\n*   **Improved Discovery**: Hidden RSS/Atom links are displayed, and blocked links are highlighted in red.\n*   **Customization**: Preset themes (`offpunk1`, `cyan`, `yellow`, `bw`) are introduced.\n*   **Security**: Redirects now operate at the netcache level, preventing requests to blocked URLs.\n\nAdditional improvements include a new `websearch` command, configurable `default_cmd`, `view switch`, and streamlined `bugreport` functionality. Users are encouraged to report any new bugs to help stabilize Offpunk 3.1 and join the growing community.",
+    "chinese_title": "Offpunk 3.0",
+    "chinese_summary": "Offpunk 3.0, titled \"A Community is Born,\" marks a significant collaborative milestone for Ploum's offline-first command-line browser for Web, Gemini, and Gopher. After four years of solo development, this release integrates major contributions from others, including Vincent Jousse (Umerdify), JMCS (translation infrastructure), and community packaging efforts, fostering an emerging Offpunk community.\n\nThe release introduces 11 significant changes:\n*   **Multilingual Support**: Offpunk is now translatable, with Spanish, Galician, and Dutch available.\n*   **`openk` tool**: The standalone tool is renamed from `opnk` to `openk` for clarity.\n*   **`xkcdpunk`**: A new tool to display XKCD comics in the terminal.\n*   **`unmerdify` Integration**: Offpunk now uses \"unmerdify\" for improved HTML article content extraction based on FiveFilters' `ftr-site-config` rules, with `readability` as a fallback.\n*   **Social Features**: New `share` (email URL) and `reply` (email author) commands.\n*   **Login Support**: The `cookies` command allows importing cookie files from traditional browsers for logged-in browsing.\n*   **Enhanced Image Display**: Images are larger and displayed by default in Gemini, with full display for sixels-compatible terminals.\n*   **Improved Discovery**: Hidden RSS/Atom links are displayed, and blocked links are highlighted in red.\n*   **Customization**: Preset themes (`offpunk1`, `cyan`, `yellow`, `bw`) are introduced.\n*   **Security**: Redirects now operate at the netcache level, preventing requests to blocked URLs.\n\nAdditional improvements include a new `websearch` command, configurable `default_cmd`, `view switch`, and streamlined `bugreport` functionality. Users are encouraged to report any new bugs to help stabilize Offpunk 3.1 and join the growing community."
+  },
+  {
+    "id": "46960392",
+    "title": "Parse, Don't Validate (2019)",
+    "url": "https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Parse, Don't Validate (2019)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46947501",
+    "title": "Irish man detained by ICE for 5 months",
+    "url": "https://www.rte.ie/news/ireland/2026/0209/1557514-seamus-culleton/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Irish man detained by ICE for 5 months",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46960517",
+    "title": "Vercel's CEO offers to cover expenses of 'Jmail'",
+    "url": "https://www.threads.com/@qa_test_hq/post/DUkC_zjiGQh",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Vercel's CEO offers to cover expenses of 'Jmail'",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46938280",
+    "title": "Apple XNU: Clutch Scheduler",
+    "url": "https://github.com/apple-oss-distributions/xnu/blob/main/doc/scheduler/sched_clutch_edge.md",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple XNU: Clutch Scheduler",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46950780",
+    "title": "Upcoming changes to Let's Encrypt and how they affect XMPP server operators",
+    "url": "https://blog.prosody.im/2026-letsencrypt-changes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Upcoming changes to Let's Encrypt and how they affect XMPP server operators",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46959418",
+    "title": "Simplifying Vulkan one subsystem at a time",
+    "url": "https://www.khronos.org/blog/simplifying-vulkan-one-subsystem-at-a-time",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Simplifying Vulkan one subsystem at a time",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46945471",
+    "title": "Humans peak in midlife: A combined cognitive and personality trait perspective",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0160289625000649",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Humans peak in midlife: A combined cognitive and personality trait perspective",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46939312",
+    "title": "Show HN: A custom font that displays Cistercian numerals using ligatures",
+    "url": "https://bobbiec.github.io/cistercian-font.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: A custom font that displays Cistercian numerals using ligatures",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46938958",
+    "title": "Stop generating, start thinking",
+    "url": "https://localghost.dev/blog/stop-generating-start-thinking/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Stop generating, start thinking",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46946062",
+    "title": "Sleeper Shells: Attackers Are Planting Dormant Backdoors in Ivanti EPMM",
+    "url": "https://defusedcyber.com/ivanti-epmm-sleeper-shells-403jsp",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Sleeper Shells: Attackers Are Planting Dormant Backdoors in Ivanti EPMM",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46962924",
+    "title": "\"Hate brings views\": Confessions of a London fake news TikToker",
+    "url": "https://www.londoncentric.media/p/london-tiktok-fake-news-creator-hate-immigrants",
+    "summary": "生成摘要时出错",
+    "chinese_title": "\"Hate brings views\": Confessions of a London fake news TikToker",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46938615",
+    "title": "Everything – Locate files and folders by name instantly",
+    "url": "https://www.voidtools.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Everything – Locate files and folders by name instantly",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46962801",
+    "title": "Semaglutide improves knee osteoarthritis independant of weight loss",
+    "url": "https://www.cell.com/cell-metabolism/abstract/S1550-4131(26)00008-2",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Semaglutide improves knee osteoarthritis independant of weight loss",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46952987",
+    "title": "The shadowy world of abandoned oil tankers",
+    "url": "https://www.bbc.com/news/articles/cddg885344do",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The shadowy world of abandoned oil tankers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46949669",
+    "title": "Discord Is Not an Acceptable Choice for Free Software Projects (2020)",
+    "url": "https://sneak.berlin/20200220/discord-is-not-an-acceptable-choice-for-free-software-projects/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Discord Is Not an Acceptable Choice for Free Software Projects (2020)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46951999",
+    "title": "Discord faces backlash over age checks after data breach exposed 70k IDs",
+    "url": "https://arstechnica.com/tech-policy/2026/02/discord-faces-backlash-over-age-checks-after-data-breach-exposed-70000-ids/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Discord faces backlash over age checks after data breach exposed 70k IDs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46955712",
+    "title": "Show HN: I built a macOS tool for network engineers – it's called NetViews",
+    "url": "https://www.netviews.app",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: I built a macOS tool for network engineers – it's called NetViews",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46950756",
+    "title": "Game Theory Patterns at Work",
+    "url": "https://daeus.blog/2026/01/18/game-theory-patterns-at-work/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Game Theory Patterns at Work",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46939187",
+    "title": "Reverse Engineering the Prom for the SGI O2",
+    "url": "https://mattst88.com/blog/2026/02/08/Reverse_Engineering_the_PROM_for_the_SGI_O2/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Reverse Engineering the Prom for the SGI O2",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46961345",
+    "title": "Ex-GitHub CEO launches a new developer platform for AI agents",
+    "url": "https://entire.io/blog/hello-entire-world/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Ex-GitHub CEO launches a new developer platform for AI agents",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46944555",
+    "title": "Show HN: Browse Internet Infrastructure",
+    "url": "https://www.wirewiki.com",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Browse Internet Infrastructure",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46948273",
+    "title": "Game Boy Advance Audio Interpolation",
+    "url": "https://jsgroth.dev/blog/posts/gba-audio-interpolation/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Game Boy Advance Audio Interpolation",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -712,35 +576,75 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46945448",
-    "title": "Can Ozempic Cure Addiction?",
-    "url": "https://www.newyorker.com/magazine/2026/02/16/can-ozempic-cure-addiction",
+    "id": "46941850",
+    "title": "A tough labor market for white-collar workers has turned recruiting upside down",
+    "url": "https://www.wsj.com/lifestyle/careers/job-hunters-are-so-desperate-that-theyre-paying-to-get-recruited-44891ac2",
     "summary": "生成摘要时出错",
-    "chinese_title": "Can Ozempic Cure Addiction?",
+    "chinese_title": "A tough labor market for white-collar workers has turned recruiting upside down",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46938147",
-    "title": "Amazon delivery drone strikes North Texas apartment, causing minor damage",
-    "url": "https://www.expressnews.com/news/texas/article/amazon-delivery-drone-crash-richardson-texas-21341387.php",
+    "id": "46947210",
+    "title": "Why is Singapore no longer \"cool\"?",
+    "url": "https://marginalrevolution.com/marginalrevolution/2026/02/why-is-singapore-no-longer-cool.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Amazon delivery drone strikes North Texas apartment, causing minor damage",
+    "chinese_title": "Why is Singapore no longer \"cool\"?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46945641",
-    "title": "Long-Sought Proof Tames Some of Math's Unruliest Equations",
-    "url": "https://www.quantamagazine.org/long-sought-proof-tames-some-of-maths-unruliest-equations-20260206/",
+    "id": "46945742",
+    "title": "Discord Launches Teen-by-Default Settings Globally",
+    "url": "https://discord.com/press-releases/discord-launches-teen-by-default-settings-globally",
     "summary": "生成摘要时出错",
-    "chinese_title": "Long-Sought Proof Tames Some of Math's Unruliest Equations",
+    "chinese_title": "Discord Launches Teen-by-Default Settings Globally",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46934165",
-    "title": "Bitcoin tumbles below $70K, heavy losses in cryptocurrencies in last three weeks",
-    "url": "https://www.bloomberg.com/news/articles/2026-02-05/bitcoin-drops-below-70-000-as-forced-deleveraging-accelerates",
+    "id": "46961261",
+    "title": "Bazzite Post-Mortem",
+    "url": "https://ba.antheas.dev/bazzite-postmortem.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Bitcoin tumbles below $70K, heavy losses in cryptocurrencies in last three weeks",
+    "chinese_title": "Bazzite Post-Mortem",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46959067",
+    "title": "Australian author's erotic novel is child sex abuse material, judge finds",
+    "url": "https://www.bbc.com/news/articles/ckgzv529v5no",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Australian author's erotic novel is child sex abuse material, judge finds",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46947935",
+    "title": "ICE knocks on ad tech's data door to see what it knows about you",
+    "url": "https://www.theregister.com/2026/01/27/ice_data_advertising_tech_firms/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ICE knocks on ad tech's data door to see what it knows about you",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46948708",
+    "title": "Eddie Bauer declares bankruptcy",
+    "url": "https://www.cbsnews.com/news/eddie-bauer-bankrupt-outdoor-apparel/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Eddie Bauer declares bankruptcy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46962402",
+    "title": "Mathematicians disagree on the essential structure of the complex numbers",
+    "url": "https://www.infinitelymore.xyz/p/complex-numbers-essential-structure",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Mathematicians disagree on the essential structure of the complex numbers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46938217",
+    "title": "The 'Little red dots' observed by Webb were direct-collapse black holes",
+    "url": "https://phys.org/news/2026-02-red-dots-webb-collapse-black.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The 'Little red dots' observed by Webb were direct-collapse black holes",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -752,35 +656,43 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46938181",
-    "title": "Apple Container 0.9.0",
-    "url": "https://github.com/apple/container/releases/tag/0.9.0",
+    "id": "46960743",
+    "title": "Disruption with Some GitHub Services",
+    "url": "https://www.githubstatus.com/incidents/wkgqj4546z1c",
     "summary": "生成摘要时出错",
-    "chinese_title": "Apple Container 0.9.0",
+    "chinese_title": "Disruption with Some GitHub Services",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46944978",
-    "title": "Jony Ive Designed Ferrari Luce EV Interior",
-    "url": "https://www.topgear.com/car-news/electric/official-ferraris-first-ev-called-luce-interior-apples-old-design-boss",
+    "id": "46945641",
+    "title": "Long-Sought Proof Tames Some of Math's Unruliest Equations",
+    "url": "https://www.quantamagazine.org/long-sought-proof-tames-some-of-maths-unruliest-equations-20260206/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Jony Ive Designed Ferrari Luce EV Interior",
+    "chinese_title": "Long-Sought Proof Tames Some of Math's Unruliest Equations",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46933071",
-    "title": "OpenAI exec becomes top Trump donor with $25M gift",
-    "url": "https://finance.yahoo.com/news/openai-exec-becomes-top-trump-230342268.html",
+    "id": "46963671",
+    "title": "London's most controversial cyclist",
+    "url": "https://www.the-londoner.co.uk/jeremy-vine-loves-him-motorists-hate-him-is-this-londons-most-controversial-cyclist/",
     "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI exec becomes top Trump donor with $25M gift",
+    "chinese_title": "London's most controversial cyclist",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46932845",
-    "title": "In the Australian outback, we're listening for nuclear tests",
-    "url": "https://www.abc.net.au/news/2026-02-08/australian-outback-nuclear-tests-listening-warramunga-facility/106307478",
+    "id": "46944753",
+    "title": "As AI enters the operating room, reports arise of botched surgeries",
+    "url": "https://www.reuters.com/investigations/ai-enters-operating-room-reports-arise-botched-surgeries-misidentified-body-2026-02-09/",
     "summary": "生成摘要时出错",
-    "chinese_title": "In the Australian outback, we're listening for nuclear tests",
+    "chinese_title": "As AI enters the operating room, reports arise of botched surgeries",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46940511",
+    "title": "In the AI gold rush, tech firms are embracing 72-hour weeks",
+    "url": "https://www.bbc.com/news/articles/cvgn2k285ypo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "In the AI gold rush, tech firms are embracing 72-hour weeks",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -792,11 +704,99 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "46947210",
-    "title": "Why is Singapore no longer \"cool\"?",
-    "url": "https://marginalrevolution.com/marginalrevolution/2026/02/why-is-singapore-no-longer-cool.html",
+    "id": "46962641",
+    "title": "Show HN: Rowboat – AI coworker that turns your work into a knowledge graph (OSS)",
+    "url": "https://github.com/rowboatlabs/rowboat",
     "summary": "生成摘要时出错",
-    "chinese_title": "Why is Singapore no longer \"cool\"?",
+    "chinese_title": "Show HN: Rowboat – AI coworker that turns your work into a knowledge graph (OSS)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46960118",
+    "title": "Redefining Go Functions",
+    "url": "https://pboyd.io/posts/redefining-go-functions/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Redefining Go Functions",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46958378",
+    "title": "RLHF from Scratch",
+    "url": "https://github.com/ashworks1706/rlhf-from-scratch",
+    "summary": "生成摘要时出错",
+    "chinese_title": "RLHF from Scratch",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46954332",
+    "title": "How TikTok 2.0 Became a Weapon for ICE",
+    "url": "https://newrepublic.com/article/205956/americanized-tiktok-backdoor-ice-surveillance",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How TikTok 2.0 Became a Weapon for ICE",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46948815",
+    "title": "The Markets of Old London (2024)",
+    "url": "https://spitalfieldslife.com/2024/06/20/the-markets-of-old-london-i/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Markets of Old London (2024)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46948533",
+    "title": "Everyone’s building “async agents,” but almost no one can define them",
+    "url": "https://www.omnara.com/blog/what-is-an-async-agent-really",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Everyone’s building “async agents,” but almost no one can define them",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46945448",
+    "title": "Can Ozempic Cure Addiction?",
+    "url": "https://www.newyorker.com/magazine/2026/02/16/can-ozempic-cure-addiction",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Can Ozempic Cure Addiction?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46944978",
+    "title": "Jony Ive Designed Ferrari Luce EV Interior",
+    "url": "https://www.topgear.com/car-news/electric/official-ferraris-first-ev-called-luce-interior-apples-old-design-boss",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Jony Ive Designed Ferrari Luce EV Interior",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46954899",
+    "title": "Why \"just prompt better\" doesn't work",
+    "url": "https://www.bicameral-ai.com/blog/tech-debt-meeting",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Why \"just prompt better\" doesn't work",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46953114",
+    "title": "Coffee and Tea Intake, Dementia Risk, and Cognitive Function",
+    "url": "https://jamanetwork.com/journals/jama/article-abstract/2844764",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Coffee and Tea Intake, Dementia Risk, and Cognitive Function",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46938181",
+    "title": "Apple Container 0.9.0",
+    "url": "https://github.com/apple/container/releases/tag/0.9.0",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple Container 0.9.0",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "46938147",
+    "title": "Amazon delivery drone strikes North Texas apartment, causing minor damage",
+    "url": "https://www.expressnews.com/news/texas/article/amazon-delivery-drone-crash-richardson-texas-21341387.php",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Amazon delivery drone strikes North Texas apartment, causing minor damage",
     "chinese_summary": "生成摘要时出错"
   }
 ]
