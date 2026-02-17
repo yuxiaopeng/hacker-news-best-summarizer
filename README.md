@@ -1,130 +1,129 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-02-16.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-02-17.md)
 
-*最后自动更新时间: 2026-02-16 20:01:53*
-## 1. 我加入 OpenAI
-
-**原文标题**: I’m joining OpenAI
-
-**原文链接**: [https://steipete.me/posts/2026/openclaw](https://steipete.me/posts/2026/openclaw)
-
-OpenClaw 的创建者宣布他们将加入 OpenAI，专注于让 AI 智能体普及。在项目获得广泛关注和意想不到的机会之后，作者决定不创建一家大公司。相反，出于对创造的热情和“改变世界”的愿望，他们认为加入 OpenAI 是实现其使命的最快途径，即通过利用尖端模型和研究，创建即使是非技术用户也能直观使用的智能体。
-
-OpenClaw 本身将转型为一个基金会，确保其作为一个开源、独立项目的持续存在。OpenAI 已承诺赞助 OpenClaw，并使作者能够将其时间投入到社区中。该基金会旨在支持思想家、黑客以及重视数据所有权的个人，并计划扩大对各种模型和公司的支持。
-
-在与主要实验室讨论后，作者发现与 OpenAI 拥有共同的愿景，并表达了对加入 AI 研发前沿的兴奋之情。
-
----
-
-## 2. 我想洗车。洗车房在50米外。我应该走路还是开车？
+*最后自动更新时间: 2026-02-17 20:13:08*
+## 1. 我想洗车。洗车店离这里50米。我应该走路去还是开车去？
 
 **原文标题**: I want to wash my car. The car wash is 50 meters away. Should I walk or drive?
 
 **原文链接**: [https://mastodon.world/@knowmadd/116072773118828295](https://mastodon.world/@knowmadd/116072773118828295)
 
-这篇文章展示了Mastodon用户Kévin提出的一个问题，他正在寻求建议，纠结于是否应该步行还是开车去一个仅50米远的洗车店。核心困境是，考虑到如此短的距离，如何以最实用、最明智的方式将车辆送去清洗。附带的文字还包含一个技术说明，指出Mastodon的网页应用需要JavaScript。
+凯文在长毛象上发帖提问，咨询去一个仅50米远的洗车店，是该步行还是开车。
 
 ---
 
-## 3. EU bans the destruction of unsold apparel, clothing, accessories and footwear
+## 2. 我加入了 OpenAI
 
-**原文标题**: EU bans the destruction of unsold apparel, clothing, accessories and footwear
+**原文标题**: I’m joining OpenAI
 
-**原文链接**: [https://environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en](https://environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en)
+**原文链接**: [https://steipete.me/posts/2026/openclaw](https://steipete.me/posts/2026/openclaw)
+
+OpenClaw 创始人宣布加入 OpenAI，致力于使 AI 智能体普及化，目标是开发一个简单到包括他母亲在内任何人都能使用的智能体。他的决定源于通过技术“改变世界”的愿望，而不是建立另一家大公司。他相信与 OpenAI 合作是实现这一愿景最快的途径，因为这能提供最新的模型和研究，并确保安全开发。
+
+OpenClaw，他称之为“游乐场项目”的成果，将转型为一个独立的开源基金会，以确保其持续的自由和发展。OpenAI 已承诺赞助该项目，作者也将投入时间服务于其重视数据所有权的思考者和黑客社区。
+
+在与旧金山多家主要实验室接触后，作者发现 OpenAI 的愿景与他自己的完美契合。他“非常兴奋”能为 AI 研发前沿贡献力量，同时不放弃对 OpenClaw 开源精神的承诺。“利爪即法则。”
+
+---
+
+## 3. GrapheneOS – Break Free from Google and Apple
+
+**原文标题**: GrapheneOS – Break Free from Google and Apple
+
+**原文链接**: [https://blog.tomaszdunia.pl/grapheneos-eng/](https://blog.tomaszdunia.pl/grapheneos-eng/)
 
 生成摘要时出错
 
 ---
 
-## 4. 我喜欢ArchWiki维护者们的工作。
+## 4. 14岁的Miles Wu折叠出了一种能承受自身重量1万倍的折纸结构。
 
-**原文标题**: I love the work of the ArchWiki maintainers
+**原文标题**: 14-year-old Miles Wu folded origami pattern that holds 10k times its own weight
 
-**原文链接**: [https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/](https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/)
+**原文链接**: [https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/](https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/)
 
-在“我爱自由软件日”之际，作者对文档维护者，尤其是ArchWiki的维护者深表感谢，感谢他们对软件自由做出的、却常被低估的贡献。ArchWiki被誉为不可或缺的资源，作者及他人经常查阅，甚至是为了与Arch无关的自由软件。它因帮助用户理解工具、发现功能、解决设置问题，并通常作为软件知识的主要来源而备受赞誉。
+来自纽约市的十四岁少年吴迈尔斯凭借其开创性的折纸研究，在2025年赛默飞世尔科学青少年创新者挑战赛上获得了2.5万美元的最高奖金。吴迈尔斯花费了超过250小时设计并测试了三浦折叠（Miura-ori）模式的各种变体，这种模式由一系列相互交错的平行四边形组成，旨在开发坚固、可折叠且经济高效的部署式庇护所，用于自然灾害等紧急情况。
 
-作者将ArchWiki描述为“互联网的明珠”，这呼应了爱德华·斯诺登的观点，即在搜索结果质量不断下降的背景下，ArchWiki作为可靠的有用信息来源脱颖而出。文章感谢所有ArchWiki贡献者分享他们的知识，并感谢维护者确保该资源的长期可用性和可靠性。文章鼓励读者感谢维护者，并考虑向Arch项目捐款。
+吴迈尔斯进行了细致的实验，用不同类型的纸张制作了54种不同的变体。他通过施加重量直到其破裂来测试它们的强度，最终需要50磅的健身配重，因为他的图案所能承受的重量远超预期。令人惊讶的是，他最坚固的三浦折叠图案支撑了超过自身重量10,000倍的重量。
 
----
+评委们赞扬吴迈尔斯将他对折纸的热情转化为一个严谨的结构工程项目，展示了创新、适应性和领导力。普林斯顿大学工程师Glaucio H. Paulino认可该项目的价值，因为它展示了如何通过调整三浦折叠的单元尺寸和折叠角度，显著提高其强度重量比，这是部署式系统的一项关键特性。
 
-## 5. 亚马逊的Ring和谷歌的Nest揭示了美国监控国家的严重性。
-
-**原文标题**: Amazon's Ring and Google's Nest reveal the severity of U.S. surveillance state
-
-**原文链接**: [https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly](https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly)
-
-格林沃尔德认为，亚马逊的 Ring 和谷歌的 Nest 尽管被宣传为消费者家庭安防产品，但实际上是美国无处不在的国内监控国家的重要组成部分。警察部门积极与这些公司建立伙伴关系，获得折扣、免费设备，并开辟了直接访问大量视频素材的途径。
-
-通过 Ring Neighbors 等社区应用程序，执法部门可以向房主征集视频，这通常规避了传统的搜查令要求和法律保障。这建立了一个庞大且不受监管的网络，其中数百万个私人摄像头实际上变成了公共监控工具。格林沃尔德认为，消费者通过购买这些设备，无意中助长了一个收集大量个人、家庭和社区数据的系统，而所有这些数据，当局都可以在缺乏有意义的民主监督或立法限制的情况下获取。
-
-由私人科技公司促成的这种隐私侵蚀和警权扩张，将普通公民变成了日益增长的监控机器中不知情的参与者，从根本上改变了个人自由与国家控制之间的平衡。
+尽管他的发现很有前景，但将吴迈尔斯的设计扩展到全尺寸庇护所需要进一步的工程考量，包括材料厚度、非线性特性缩放、连接点设计以及对多向载荷的抵抗能力。吴迈尔斯计划开发一个实际的紧急避难所原型，继续测试其在各种力下的强度，并进一步探索折纸在STEM领域的应用。
 
 ---
 
-## 6. I fixed Windows native development
+## 5. 暗网特工凭卧室墙线索救出受虐女孩
 
-**原文标题**: I fixed Windows native development
+**原文标题**: Dark web agent spotted bedroom wall clue to rescue girl from abuse
 
-**原文链接**: [https://marler8997.github.io/blog/fixed-windows/](https://marler8997.github.io/blog/fixed-windows/)
+**原文链接**: [https://www.bbc.com/news/articles/cx2gn239exlo](https://www.bbc.com/news/articles/cx2gn239exlo)
+
+美国国土安全部专业网络调查员格雷格·斯奎尔在试图解救一个名叫露西的12岁女孩时陷入僵局，这个女孩的受虐图片正在暗网上传播。施虐者精心隐藏了可识别的特征，而最初的线索，比如灯座，也只能将位置范围缩小到北美。脸书拒绝提供面部识别协助。
+
+斯奎尔的团队仔细分析了露西卧室照片中所有可见的细节，包括她的床罩、衣物和毛绒玩具。当他们识别出一种仅在特定地区销售的沙发时，取得了小小的突破，但这仍然意味着29个州有40,000名潜在客户。
+
+关键线索来自露西房间里裸露的砖墙。斯奎尔联系了砖业协会，该协会将他引荐给了专家约翰·哈普。哈普辨认出了一种独特的“烈焰阿拉莫”砖，这种砖于20世纪60年代到80年代中期在美国西南部生产。哈普的关键见解——“重砖不会运输太远”——使得团队能够将沙发客户名单大幅缩小到砖厂100英里半径范围内的客户。
+
+借助这份经过筛选的名单，他们在社交媒体上发现了一张露西与一名女性（可能是亲戚）的合影。随后，他们交叉比对地址，并将潜在房屋的照片发送给哈普，以评估这些房屋是否可能使用了那种特定砖块。这最终将他们引向了一个地址，在那里他们确认露西正与她母亲的男友住在一起，而此人是一名已被定罪的性犯罪者。
+
+几个小时内，施虐者被捕，随后因性侵露西长达六年被判处70多年监禁。这项高强度工作对斯奎尔的心理健康造成了影响，但他找到了支持。几年后，斯奎尔与已成年的露西见面，露西表达了她的感激之情，称她的获救是“祈祷得到了回应”。
+
+---
+
+## 6. 蓝牙设备揭示了什么
+
+**原文标题**: What your Bluetooth devices reveal
+
+**原文链接**: [https://blog.dmcc.io/journal/2026-bluetooth-privacy-bluehood/](https://blog.dmcc.io/journal/2026-bluetooth-privacy-bluehood/)
+
+作为一位隐私倡导者，作者开发了名为“Bluehood”的蓝牙扫描器，旨在揭示受WhisperPair等近期漏洞启发，开启蓝牙功能的设备所泄露的个人信息。文章指出，尽管蓝牙无处不在——从手机到医疗设备、车辆和可穿戴设备——但我们低估了其对隐私的影响，并且常常缺乏禁用它的选项。
+
+作者在被动运行Bluehood时，发现了详细的模式，包括邻居的日常作息、快递派送时间，以及个人在家或外出时的精确时间，所有这些只需树莓派等基本硬件即可实现。这些元数据能向“恶意行为者”揭示重要的行为洞察。具有讽刺意味的是，一些专注于隐私的工具，如Briar和BitChat，它们旨在提供安全的离网通信，却需要激活蓝牙，这造成了一种矛盾，即一项隐私措施反而损害了另一项。
+
+Bluehood是一个Python应用程序，它能被动扫描、分类设备、分析存在模式，并通过网页仪表盘呈现数据。它的目的是教育性的，旨在展示从看似无害的蓝牙信号中可以推断出多少信息。该项目旨在让用户意识到保持蓝牙开启所涉及的权衡，鼓励他们对设备隐私做出明智的决定。
+
+---
+
+## 7. 司法部下令删除英国最大的法院报道数据库
+
+**原文标题**: Ministry of Justice orders deletion of the UK's largest court reporting database
+
+**原文链接**: [https://www.legalcheek.com/2026/02/ministry-of-justice-orders-deletion-of-the-uks-largest-court-reporting-database/](https://www.legalcheek.com/2026/02/ministry-of-justice-orders-deletion-of-the-uks-largest-court-reporting-database/)
+
+英国司法部（MoJ）已通过英国皇家法院和审裁处事务局（HMCTS）下令删除英国最大的法庭报道数据库Courtsdesk。Courtsdesk于2020年在司法部批准下启动，是一个数字档案库，供超过1,500名记者用于追踪刑事法庭案件，包括治安法庭的名单和登记册。
+
+HMCTS于2025年11月发布了一份停止通知，理由是据报道Courtsdesk将数据发送给了“第三方人工智能公司”，构成“未经授权分享”法庭信息。这一决定被批评为“对开放司法的打击”，人们担心关键案件将因此无法被报道。Courtsdesk创始人恩达·利希（Enda Leahy）表示，该平台经常发现媒体未被告知庭审情况，并声称HMCTS自己的记录仅有4.2%的准确率，有160万起刑事庭审在未提前通知媒体的情况下进行。
+
+利希曾16次尝试挽救该服务，寻求信息专员办公室和前司法大臣克里斯·菲尔普的干预，但所有请求于上周被拒绝。尽管有此命令，司法部仍坚持认为记者将继续充分获取法庭信息，因为名单和记录仍然可用，并且他们的行动是为了保护敏感数据所必需的。该档案库的删除迫在眉睫。
+
+---
+
+## 8. HN 展示: Jemini——爱泼斯坦档案版 Gemini
+
+**原文标题**: Show HN: Jemini – Gemini for the Epstein Files
+
+**原文链接**: [https://jmail.world/jemini](https://jmail.world/jemini)
+
+“杰米尼”在Show HN上作为一款AI工具亮相，类似于谷歌的Gemini，但专门用于分析“爱泼斯坦档案”。所提供的内容模拟了其界面，暗示它是一个强大的调查平台。它展示了搜索飞行记录、按主题查找特定电子邮件、阅读法庭文件以及查询亚马逊购物记录等功能。挑衅性的开场白“嘿，杰弗里，你在这里藏了些什么？”突出了其作为一款工具的用途，这款工具旨在深入挖掘并揭露与杰弗里·爱泼斯坦活动相关的信息。
+
+---
+
+## 9. Qwen3.5: Towards Native Multimodal Agents
+
+**原文标题**: Qwen3.5: Towards Native Multimodal Agents
+
+**原文链接**: [https://qwen.ai/blog?id=qwen3.5](https://qwen.ai/blog?id=qwen3.5)
 
 生成摘要时出错
 
 ---
 
-## 7. 现代 CSS 代码片段：别再用2015年的方式写CSS了
+## 10. Rise of the Triforce
 
-**原文标题**: Modern CSS Code Snippets: Stop writing CSS like it's 2015
+**原文标题**: Rise of the Triforce
 
-**原文链接**: [https://modern-css.com](https://modern-css.com)
-
-《现代 CSS 代码片段》一文倡导从过时的 CSS 技术转向强大、原生的解决方案，宣称是时候“停止编写2015年那样的CSS代码了”。该文章已更新至2026年，并对“旧”的hack方法与“现代”CSS进行了并列比较，展示了许多常见问题现在都有了简洁的原生替代方案，从而减少了对 JavaScript 的依赖。
-
-现代化的关键领域包括：
-*   **布局：** 使用 `place-items: center` 简化了居中布局，`inset` 替代了四属性定位，`gap` 简化了间距。响应式图像使用 `object-fit`，`scrollbar-gutter` 避免了布局偏移，`overscroll-behavior` 阻止了滚动链。模态框和工具提示利用原生的 `dialog` 和 `popover` 元素，而 `grid-template-areas` 和 `subgrid` 则增强了网格布局。
-*   **颜色：** `oklch` 实现了感知均匀的颜色和方便的明暗变体，而 `light-dark()` 简化了暗模式样式。
-*   **排版：** `text-wrap: balance` 确保了可读的标题，`initial-letter` 创建了首字下沉效果，`font-display: swap` 改进了字体加载。`clamp()` 实现了流畅的排版。
-*   **动画：** 独立的变换 (`translate`, `rotate`, `scale`)，`transition-behavior: allow-discrete` 用于 `display: none` 的过渡，以及 `view-transition-name` 用于页面过渡，提供了更流畅的原生效果。
-*   **工作流与选择器：** `@scope` 提供了封装样式，`@layer` 管理了特异性，而 `@property` 实现了可动画的自定义属性。`:user-invalid` 和 `:focus-visible` 增强了表单验证和可访问性。`content-visibility: auto` 提供了惰性渲染。
-
-该指南鼓励开发人员采用这些现代 CSS 特性，以实现更高效、健壮和原生的 Web 开发，摆脱复杂的变通方法和 JavaScript 依赖。
-
----
-
-## 8. 新闻媒体因AI抓取担忧，限制互联网档案馆访问。
-
-**原文标题**: News publishers limit Internet Archive access due to AI scraping concerns
-
-**原文链接**: [https://www.niemanlab.org/2026/01/news-publishers-limit-internet-archive-access-due-to-ai-scraping-concerns/](https://www.niemanlab.org/2026/01/news-publishers-limit-internet-archive-access-due-to-ai-scraping-concerns/)
-
-新闻出版商正日益限制互联网档案馆访问其内容，担心人工智能公司利用互联网档案馆庞大的资料库，特别是“时光机”（Wayback Machine），抓取数据以训练模型。这种主动姿态旨在保护其知识产权免遭未经授权的使用。
-
-卫报、纽约时报和金融时报等主要媒体机构已实施限制。《卫报》限制互联网档案馆的API访问，并从“时光机”中过滤文章页面，担心结构化数据被人工智能轻易获取。《纽约时报》则“彻底屏蔽”了互联网档案馆的爬虫，理由是人工智能公司可“不受限制地访问”。Reddit也屏蔽了互联网档案馆，并指出有迹象表明人工智能公司通过其档案违反了政策。
-
-互联网档案馆创始人布鲁斯特·卡利（Brewster Kahle）认为，这些限制阻碍了公众获取历史记录，削弱了他们打击“信息失序”的使命。然而，有证据表明“时光机”已为大型语言模型（LLM）的训练数据集做出了贡献，一家人工智能公司曾因批量抓取导致服务器过载。互联网档案馆本身也已采取措施限制批量下载。
-
-对1,167个新闻网站的分析显示，其中241个，特别是《今日美国》母公司甘尼特（Gannett）旗下的网站，已在其robots.txt文件中明确禁止互联网档案馆的爬虫。甘尼特曾报告在一个月内屏蔽了7500万个人工智能爬虫，并强调保护其内容。
-
-这种情况带来了一个两难困境：出版商在保护自身内容的同时，互联网档案馆提供了一项关键服务，保存着许多新闻机构自身往往未能妥善归档的数字历史。互联网档案馆被视为“好人”，但在更广泛地控制人工智能抓取的努力中，正成为“附带损害”。
-
----
-
-## 9. Oat – 超轻量、零依赖、语义化 HTML、CSS、JS UI 库
-
-**原文标题**: Oat – Ultra-lightweight, zero dependency, semantic HTML, CSS, JS UI library
-
-**原文链接**: [https://oat.ink/](https://oat.ink/)
-
-Oat 被描述为一个超轻量级、零依赖的 UI 库，它利用语义化 HTML、CSS 和 JavaScript。其最显著的特点是极小的文件体积：整个库的 CSS 文件仅为 6KB，JS 文件仅为 2.2KB，这两个数据均指经过精简和 Gzip 压缩后的版本。
-
----
-
-## 10. Hideki Sato, designer of all Sega's consoles, has died
-
-**原文标题**: Hideki Sato, designer of all Sega's consoles, has died
-
-**原文链接**: [https://www.videogameschronicle.com/news/hideki-sato-designer-of-segas-consoles-dies-age-75/](https://www.videogameschronicle.com/news/hideki-sato-designer-of-segas-consoles-dies-age-75/)
+**原文链接**: [https://dolphin-emu.org/blog/2026/02/16/rise-of-the-triforce/](https://dolphin-emu.org/blog/2026/02/16/rise-of-the-triforce/)
 
 生成摘要时出错
 
@@ -134,33 +133,33 @@ Oat 被描述为一个超轻量级、零依赖的 UI 库，它利用语义化 HT
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-02-16](output/hacker_news_summary_2026-02-16.md) |
+| 1 | [2026-02-17](output/hacker_news_summary_2026-02-17.md) |
 | 2 | [2026-02-15](output/hacker_news_summary_2026-02-15.md) |
-| 3 | [2026-02-13](output/hacker_news_summary_2026-02-13.md) |
-| 4 | [2026-02-14](output/hacker_news_summary_2026-02-14.md) |
-| 5 | [2026-02-12](output/hacker_news_summary_2026-02-12.md) |
+| 3 | [2026-02-16](output/hacker_news_summary_2026-02-16.md) |
+| 4 | [2026-02-13](output/hacker_news_summary_2026-02-13.md) |
+| 5 | [2026-02-14](output/hacker_news_summary_2026-02-14.md) |
 | 6 | [2026-02-09](output/hacker_news_summary_2026-02-09.md) |
-| 7 | [2026-02-07](output/hacker_news_summary_2026-02-07.md) |
+| 7 | [2026-02-12](output/hacker_news_summary_2026-02-12.md) |
 | 8 | [2026-02-08](output/hacker_news_summary_2026-02-08.md) |
 | 9 | [2026-02-11](output/hacker_news_summary_2026-02-11.md) |
 | 10 | [2026-02-10](output/hacker_news_summary_2026-02-10.md) |
 | 11 | [2026-02-05](output/hacker_news_summary_2026-02-05.md) |
-| 12 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
-| 13 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
+| 12 | [2026-02-07](output/hacker_news_summary_2026-02-07.md) |
+| 13 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
 | 14 | [2026-02-06](output/hacker_news_summary_2026-02-06.md) |
 | 15 | [2026-02-03](output/hacker_news_summary_2026-02-03.md) |
 | 16 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
-| 17 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
-| 18 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
-| 19 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
+| 17 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
+| 18 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
+| 19 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
 | 20 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
 | 21 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
 | 22 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
 | 23 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
 | 24 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
-| 25 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
-| 26 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 27 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
+| 25 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
+| 26 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
+| 27 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
 | 28 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
 | 29 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
 | 30 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
@@ -168,71 +167,72 @@ Oat 被描述为一个超轻量级、零依赖的 UI 库，它利用语义化 HT
 | 32 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
 | 33 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
 | 34 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
-| 35 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 36 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
-| 37 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
-| 38 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 39 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 40 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 41 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 42 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
-| 43 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 35 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
+| 36 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
+| 37 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 38 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
+| 39 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 40 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
+| 41 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
+| 42 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
+| 43 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
 | 44 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
 | 45 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
 | 46 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
 | 47 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 48 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
+| 48 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
 | 49 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 50 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 51 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 52 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 53 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 50 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 51 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 52 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
+| 53 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
 | 54 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
 | 55 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
 | 56 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 57 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 58 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 59 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 60 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 61 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 62 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 63 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 64 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 65 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 66 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 67 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 68 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 69 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 70 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 71 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 72 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 57 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 58 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 59 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 60 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 61 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 62 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 63 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 64 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 65 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 66 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
+| 67 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 68 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 69 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
+| 70 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 71 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
+| 72 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
 | 73 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 74 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 75 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 74 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 75 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
 | 76 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 77 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 78 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 77 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 78 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
 | 79 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 80 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 81 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 82 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 83 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 80 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 81 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
+| 82 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
+| 83 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
 | 84 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 85 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 86 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 87 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 88 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 89 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 85 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
+| 86 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 87 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
+| 88 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 89 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
 | 90 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 91 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 92 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 91 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 92 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
 | 93 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
 | 94 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
 | 95 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 96 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 96 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
 | 97 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 98 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 99 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 100 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 101 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 102 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 98 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 99 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 100 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
+| 101 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 102 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
+| 103 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
