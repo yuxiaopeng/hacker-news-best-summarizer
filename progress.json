@@ -3,88 +3,88 @@
     "id": "47340079",
     "title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
     "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-    "summary": "Hacker News (HN) guidelines aim to foster intellectually curious conversations among humans. Submissions should focus on topics interesting to \"good hackers,\" transcending typical tech and startup news, and excluding most mainstream politics, crime, or celebrity stories unless they highlight unique phenomena. Key submission rules include using original sources, avoiding sensational titles (uppercase, exclamation points, site names, or gratuitous numbers), and not primarily using the platform for promotion.\n\nComments are expected to be kind, thoughtful, and substantive. Users should engage curiously, avoid snark, and respond to arguments directly rather than resorting to name-calling or rigid negativity. Critically, the guidelines explicitly state: \"Don't post generated comments or AI-edited comments. HN is for conversation between humans.\" Participants must assume good faith, interpret others' statements charitably, and avoid flamebait, shallow dismissals, or political battles. Constructive criticism that teaches something is encouraged. Other directives include using *asterisks* for emphasis, emailing abuse reports instead of public accusations, flagging egregious comments, and refraining from discussions about voting, site annoyances, or comparing HN to Reddit. The overarching goal is to maintain a high-quality, human-driven discussion environment.",
-    "chinese_title": "请勿发布AI生成或编辑的评论。HN是为了人与人之间的交流。",
-    "chinese_summary": "Hacker News (HN) 指南旨在促进人与人之间求知欲强烈的对话。提交的内容应侧重于“优秀黑客”感兴趣的话题，超越典型的科技和创业新闻，并排除大多数主流政治、犯罪或名人故事，除非它们能突出独特的现象。主要的提交规则包括使用原创来源，避免煽动性标题（大写、感叹号、网站名称或无意义的数字），以及不主要将平台用于推广。\n\n评论应友善、深思熟虑且有实质内容。用户应以好奇心参与讨论，避免冷嘲热讽，直接回应论点，而不是诉诸人身攻击或僵化的消极态度。至关重要的是，指南明确指出：“请勿发布生成式评论或经AI编辑的评论。HN是为人与人之间的对话而设。”参与者必须秉持善意，宽容地理解他人的言论，并避免引战、肤浅的驳斥或政治争论。鼓励具有启发性的建设性批评。其他指示包括使用*星号*表示强调，通过电子邮件报告滥用行为而非公开指责，标记恶劣评论，以及避免讨论投票、网站烦恼或将HN与Reddit进行比较。其首要目标是维护一个高质量、以人为本的讨论环境。"
+    "summary": "Hacker News (HN) aims to cultivate insightful conversations between humans, guided by specific submission and commenting principles.\n\n**Submissions:** Content should pique intellectual curiosity, extending beyond hacking and startups. Avoid typical TV news topics like politics or crime, unless they illustrate a novel phenomenon. Titles must be clean: no uppercase, exclamation points, site names, or gratuitous numbers. Submit the original source, not primarily for promotion, and use original titles unless misleading. Clearly mark [video] or [pdf] content. Do not solicit votes, delete and repost, or use HN for direct site inquiries—email hn@ycombinator.com instead.\n\n**Comments:** Engagement should be kind, curious, thoughtful, and substantive. Avoid snark, name-calling, rigid negativity, and shallow dismissals. A key rule is: **do not post generated or AI-edited comments, as HN is exclusively for human conversation.** When disagreeing, address the argument respectfully, assume good faith, and interpret comments charitably. Steer clear of flamebait, generic tangents, internet tropes, and political/ideological battles. Focus on contributing interesting insights, rather than complaining about minor annoyances, article formats, or voting. Use *asterisks* for emphasis. For concerns about abuse, email hn@ycombinator.com instead of making public insinuations. Flag egregious comments rather than replying, and maintain a consistent user identity, reserving throwaway accounts for sensitive information.",
+    "chinese_title": "禁止发布AI生成或编辑的评论。HN是为了人与人之间的交流。",
+    "chinese_summary": "Hacker News（HN）旨在促进人与人之间富有洞察力的对话，并遵循特定的发帖和评论原则。\n\n**发帖指南：** 内容应激发求知欲，范围超越黑客技术和创业公司。避免政治或犯罪等典型的电视新闻话题，除非它们能阐明一种新颖的现象。标题必须简洁：不得使用大写字母、感叹号、网站名称或不必要的数字。提交原始来源，主要目的并非推广，并使用原文标题，除非其具有误导性。明确标注[视频]或[PDF]内容。请勿拉票、删除后重发，或直接使用HN进行网站咨询——请发送邮件至hn@ycombinator.com。\n\n**评论指南：** 参与评论应友善、求知、深思熟虑且富有实质内容。避免讽刺挖苦、人身攻击、僵硬的负面评论和肤浅的驳斥。一个核心规则是：**请勿发布由机器生成或经AI编辑的评论，因为HN专为人际对话而设。** 当意见不一致时，请尊重地探讨论点，假定对方怀有善意，并善意解读评论。避免挑衅、泛泛而谈、网络俗套以及政治/意识形态争论。专注于提供有趣的见解，而不是抱怨细枝末节的不便、文章格式或投票。使用*星号*进行强调。如对滥用行为有疑虑，请发送邮件至hn@ycombinator.com，而非公开影射。举报过分的评论，而不是回复它们；保持一致的用户身份，并将一次性账号用于敏感信息。"
   },
   {
-    "id": "47336989",
-    "title": "Temporal: The 9-year journey to fix time in JavaScript",
-    "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-    "summary": "The article details the 9-year journey of Temporal, a new JavaScript API designed to replace the problematic `Date` object, published on March 11, 2026. The original `Date` object, a rushed 1995 port from Java, caused decades of developer pain due to its mutability, inconsistent arithmetic (e.g., month rollovers), and ambiguous parsing, especially in complex global applications.\n\nThis led to the widespread adoption of third-party libraries like Moment.js, which, despite their utility, significantly increased bundle sizes due to bundled locale and time zone data. Recognizing this issue, Maggie Johnson-Pint initiated the Temporal proposal in 2017, advancing it to Stage 1 within TC39, the JavaScript standardization committee.\n\nThe proposal gained momentum with support from companies like Bloomberg (including engineers Jason Williams, Philipp Dunkel), Igalia (Ujjwal Sharma, Philip Chimento), Microsoft (Maggie and Matt Johnson-Pint, Brian Terlson), and Google (Shane Carr), alongside invited expert Justin Grant. They worked through various TC39 stages, addressing real-world needs like configurable time zones and higher precision.\n\nTemporal introduces a top-level namespace with immutable date/time types:\n*   **`Temporal.ZonedDateTime`**: The closest replacement for `Date`, representing an exact moment with explicit time zone and calendar, handling Daylight Saving Time (DST) correctly.\n*   **`Temporal.Instant`**: An exact moment in time, without time zone or calendar, measured in nanoseconds since the Unix epoch, ideal for storage.\n*   **`Temporal.PlainDate`, `PlainTime`, `PlainDateTime`, etc.** These \"wall time\" types lack time zone or DST awareness, making them useful for display or arithmetic not crossing such boundaries, preventing unexpected bugs.\n\nTemporal aims to standardize robust date and time handling, eliminating common pitfalls and reducing reliance on large external libraries.",
-    "chinese_title": "Temporal：修复 JavaScript 中的时间问题的九年之旅",
-    "chinese_summary": "该文章详细介绍了Temporal的九年历程，Temporal是一个旨在取代问题重重的`Date`对象的新JavaScript API，该文章于2026年3月11日发布。原始的`Date`对象是1995年从Java匆忙移植过来的，由于其可变性、不一致的算术操作（例如，月份溢出）和模糊的解析，尤其是在复杂的全球应用中，给开发者带来了数十年的困扰。\n\n这导致了Moment.js等第三方库的广泛采用，尽管它们很有用，却因捆绑了本地化和时区数据而显著增加了打包体积。认识到这个问题，Maggie Johnson-Pint于2017年提出了Temporal提案，并将其推进到JavaScript标准化委员会TC39的第一阶段。\n\n该提案在Bloomberg（包括工程师Jason Williams、Philipp Dunkel）、Igalia（Ujjwal Sharma、Philip Chimento）、Microsoft（Maggie和Matt Johnson-Pint、Brian Terlson）和Google（Shane Carr）等公司以及受邀专家Justin Grant的支持下获得了发展势头。他们经历了TC39的各个阶段，解决了可配置的时区和更高的精度等现实世界的需求。\n\nTemporal引入了一个顶层命名空间，包含不可变的日期/时间类型：\n*   **`Temporal.ZonedDateTime`**：`Date`最接近的替代品，代表一个具有明确时区和日历的精确时刻，正确处理夏令时（DST）。\n*   **`Temporal.Instant`**：一个精确的时间点，不带有时区或日历信息，以Unix纪元以来的纳秒数衡量，是理想的存储方式。\n*   **`Temporal.PlainDate`、`PlainTime`、`PlainDateTime`等**：这些“墙上时间”（wall time）类型缺乏时区或夏令时意识，使它们适用于显示或不跨越这些边界的算术运算，防止意外错误。\n\nTemporal旨在标准化强大的日期和时间处理，消除常见陷阱，并减少对大型外部库的依赖。"
+    "id": "47357042",
+    "title": "Shall I implement it? No",
+    "url": "https://gist.github.com/bretonium/291f4388e2de89a43b25c135b44e41f0",
+    "summary": "The article consists of a title, \"Shall I implement it? No,\" followed by a content section reiterating the question, \"Shall i implement it?\" and the definitive answer, \"No.\" The core message is a clear and immediate rejection of an unspecified implementation.",
+    "chinese_title": "要不要实施？ 不要。",
+    "chinese_summary": "这篇文章包含一个标题：“我该实施吗？不。”紧接着是正文部分，其中重复了问题“我该实施吗？”并给出了明确的回答“不。”其核心信息是对某项未指明的实施的明确而直接的拒绝。"
   },
   {
     "id": "47350424",
     "title": "Malus – Clean Room as a Service",
     "url": "https://malus.sh",
-    "summary": "MALUS offers \"Clean Room as a Service\" to \"liberate\" companies from open-source attribution and license obligations. It targets common corporate frustrations, including Apache attribution clauses, AGPL contamination risks, license compliance overhead, and requirements to contribute improvements back to the community.\n\nThe solution involves a \"Robot-Powered Clean Room Recreation.\" Proprietary AI systems independently analyze public documentation, API specifications, and interfaces (never the original source code) to recreate functionally equivalent software from scratch. This process aims to produce legally distinct code that is wholly owned by the client, free from derivative work claims, license inheritance, or obligations.\n\nThe service guarantees 100% robot-written code, zero exposure to original source, functional equivalence, and delivery under a corporate-friendly \"MalusCorp-0 License\" with zero attribution or copyleft requirements. It also offers full legal indemnification, albeit through an offshore subsidiary in a non-software-copyright recognizing jurisdiction.\n\nThe process involves uploading a dependency manifest, followed by isolated analysis by legally-trained robots on documentation, independent recreation by a separate robot team, and finally, license liberation. Pricing is transparent, pay-per-KB based on the unpacked size of liberated packages. MalusCorp asserts its process is legal, based on established clean room precedents, and confidently dismisses concerns for original developers.",
-    "chinese_title": "Malus – 洁净室即服务",
-    "chinese_summary": "MALUS提供“净室即服务”，旨在将公司从开源归属和许可义务中“解放”出来。它旨在解决企业普遍面临的痛点，包括Apache归属条款、AGPL污染风险、许可合规成本，以及向社区贡献改进的要求。\n\n该解决方案涉及“机器人驱动的净室重建”。专有AI系统独立分析公共文档、API规范和接口（绝不触及原始源代码），从头开始重新创建功能等效的软件。此过程旨在生成合法独立的代码，该代码完全归客户所有，免受衍生作品主张、许可继承或任何义务的影响。\n\n该服务保证100%由机器人编写代码，零原始代码接触，功能等效，并以企业友好的“MalusCorp-0许可”交付，无任何归属或反版权要求。它还提供全面的法律赔偿，尽管是通过位于不承认软件版权的司法管辖区的离岸子公司提供。\n\n该过程包括上传依赖清单，随后由受过法律训练的机器人对文档进行隔离分析，由独立的机器人团队进行重新创建，最后实现许可解放。定价透明，按解放包的解压大小，以KB为单位计费。MalusCorp坚称其流程合法，基于既定的净室先例，并自信地驳斥了原始开发者的担忧。"
-  },
-  {
-    "id": "47332074",
-    "title": "Create value for others and don’t worry about the returns",
-    "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-    "summary": "The article dismisses the pervasive social media rhetoric creating fear and anxiety around AI, labeling it \"complete nonsense.\" The author contends that AI is not a magical game-changer but a natural continuation of technological progress, primarily enhancing search and optimization. While a useful tool, it has inherent limits and is not the sci-fi phenomenon many perceive.\n\nThe real shift, the author argues, targets \"rent seekers\"—those who create unnecessary complexity for others. These roles are zero-sum games where larger players are consolidating power, driving layoffs under the guise of AI efficiency. Individuals in such positions are advised to quit sooner.\n\nInstead of engaging in zero-sum competitions, the core message is to create value for others, consuming less than you produce. This approach ensures acceptance within functional communities and helps avoid detrimental comparison traps, offering a genuine path forward despite its likely lower traction compared to doom-laden narratives.",
-    "chinese_title": "为他人创造价值，不计较回报。",
-    "chinese_summary": "文章驳斥了社交媒体上围绕人工智能制造恐惧和焦虑的普遍论调，将其斥为“一派胡言”。作者认为，人工智能并非是魔术般的颠覆者，而是技术进步的自然延续，主要用于增强搜索和优化。尽管人工智能是一个有用的工具，但它有其固有的局限性，并非许多人所认为的科幻现象。\n\n作者指出，真正的变革针对的是“寻租者”——那些为他人制造不必要复杂性的人。这些角色是零和博弈，大型参与者正在巩固自身权力，以人工智能效率为幌子推动裁员。处于此类职位的人被建议尽早辞职。\n\n核心信息是，与其参与零和竞争，不如为他人创造价值，消耗少于产出。这种做法能够确保在有效运转的社区中获得接纳，并有助于避免有害的比较陷阱，提供了一条真正的前进道路，尽管与那些充满末日论调的叙事相比，它可能不太能吸引注意力。"
-  },
-  {
-    "id": "47331811",
-    "title": "Making WebAssembly a first-class language on the Web",
-    "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-    "summary": "WebAssembly has significantly matured since 2017, expanding its capabilities to support more languages and narrowing the gap with native performance. However, its adoption on the web is hampered by its \"second-class\" status compared to JavaScript.\n\nThe core issue is that WebAssembly cannot directly interact with the web platform; it must go through JavaScript. This manifests in two main ways:\n1.  **Loading Code:** While ESM integration is improving, WebAssembly modules still often require specific JavaScript APIs for loading and instantiation, unlike simple `<script>` tags for JS.\n2.  **Using Web APIs:** Accessing Web APIs (e.g., `console.log`) from WebAssembly requires extensive \"glue code\" written in JavaScript. This glue code handles data re-encoding between Wasm and JS, adding complexity, runtime overhead (demonstrated by a 45% performance tax in a DOM benchmark), and language-specific build steps.\n\nThese limitations lead to a poor developer experience: compilers struggle to offer first-class web support, standard toolchains don't produce web-ready Wasm, web documentation is JavaScript-centric, and developers constantly need to understand the JavaScript abstraction layer. This makes WebAssembly a \"power user\" feature, discouraging wider adoption.\n\nThe proposed solution is the **WebAssembly Component Model**. This standards-track proposal aims to create a standardized, self-contained executable artifact that can be created from multiple languages, handled directly by browsers, and crucially, allows WebAssembly code to directly call Web APIs without JavaScript glue. This would provide a shared, browser-native integration for WebAssembly, moving away from language-specific JavaScript reimplementations and offering a truly first-class experience on the web.",
-    "chinese_title": "使 WebAssembly 成为 Web 上的一等语言",
-    "chinese_summary": "WebAssembly自2017年以来已显著成熟，扩展了其能力以支持更多语言，并缩小了与原生性能的差距。然而，与JavaScript相比，它“二等公民”的地位阻碍了其在网络上的采用。\n\n核心问题在于WebAssembly无法直接与网络平台交互；它必须通过JavaScript。这主要体现在两个方面：\n1.  **代码加载：** 尽管ESM集成正在改进，但WebAssembly模块通常仍需要特定的JavaScript API进行加载和实例化，这与JavaScript简单的`<script>`标签不同。\n2.  **使用Web API：** 从WebAssembly访问Web API（例如`console.log`）需要大量的JavaScript“胶水代码”。这些胶水代码处理Wasm和JS之间的数据重编码，增加了复杂性、运行时开销（一项DOM基准测试显示了45%的性能损失），以及特定语言的构建步骤。\n\n这些限制导致糟糕的开发者体验：编译器难以提供一流的Web支持，标准工具链无法生成适用于Web的Wasm，Web文档以JavaScript为中心，开发者需要不断理解JavaScript抽象层。这使得WebAssembly成为一项“高级用户”功能，阻碍了其更广泛的采用。\n\n拟议的解决方案是**WebAssembly组件模型**。这项标准轨道提案旨在创建一个标准化的、自包含的可执行构件，它可以用多种语言创建，由浏览器直接处理，并且至关重要的是，允许WebAssembly代码直接调用Web API而无需JavaScript胶水代码。这将为WebAssembly提供共享的、浏览器原生的集成，摆脱特定语言的JavaScript重新实现，并在网络上提供真正一流的体验。"
-  },
-  {
-    "id": "47334293",
-    "title": "The MacBook Neo",
-    "url": "https://daringfireball.net/2026/03/the_macbook_neo",
-    "summary": "Launched in March 2026, the MacBook Neo is a $600 laptop powered by the A18 Pro chip, identical to the iPhone 16 Pro's SoC. This demonstrates Apple's A-series chips are robust enough for excellent consumer MacBooks, fulfilling a decade-old prediction of the Mac's shift from x86 to ARM.\n\nThe Neo offers overwhelming value, outperforming x86 PCs in its $600-$700 price range across performance, display, audio, and build/software quality. Despite 8GB RAM, typical usage feels snappy. It features a bright 500-nit display, impressive side-firing speakers, and long battery life. The mechanical trackpad, a cost-saving measure, is lauded for its quality and normal feel, despite lacking Force Touch.\n\nThe author's only significant complaint is the lack of an ambient light sensor, requiring manual brightness adjustments. Other omissions, such as no hardware camera indicator, absence of Center Stage, a slow second USB-C port, and a 20W charger, are considered minor given the price.\n\nWeighing 2.7 pounds, the Neo isn't an ultralight but matches the M5 MacBook Air. It's presented as a superior, more productive, and significantly cheaper alternative to an iPad Pro or Air with a Magic Keyboard, especially for a secondary \"around the house\" computer, offering an exceptional macOS experience at an unbelievable price.",
-    "chinese_title": "麦克本 尼奥",
-    "chinese_summary": "2026年3月发布的MacBook Neo是一款售价600美元的笔记本电脑，搭载与iPhone 16 Pro SoC相同的A18 Pro芯片。这表明苹果的A系列芯片足以胜任出色的消费级MacBook，实现了Mac从x86转向ARM长达十年的预测。\n\nNeo提供了压倒性的价值，在其600-700美元的价格区间内，性能、显示屏、音频以及构建/软件质量都超越了x86 PC。尽管只有8GB RAM，但日常使用依然流畅。它配备了亮度达500尼特的显示屏、令人印象深刻的侧向扬声器和持久的电池续航。机械式触控板作为一项成本节约措施，尽管缺乏Force Touch功能，但其质量和正常手感仍备受赞誉。\n\n作者唯一重要的抱怨是缺少环境光传感器，需要手动调节亮度。其他遗漏，如没有硬件摄像头指示灯、缺少人物居中功能、第二个USB-C端口速度较慢以及20W充电器，考虑到其价格，都被认为是次要的。\n\nNeo重2.7磅，虽然算不上超轻，但与M5 MacBook Air相当。它被视为iPad Pro或iPad Air搭配妙控键盘的更出色、更高效、显著更便宜的替代品，特别是作为一台用于“居家”的备用电脑，以令人难以置信的价格提供了卓越的macOS体验。"
-  },
-  {
-    "id": "47335572",
-    "title": "Whistleblower claims ex-DOGE member says he took Social Security data to new job",
-    "url": "https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/",
-    "summary": "Unable to access the article link.",
-    "chinese_title": "举报人声称，一名前DOGE成员表示他将社保数据带到了新工作。",
-    "chinese_summary": "无法访问文章链接。"
-  },
-  {
-    "id": "47329557",
-    "title": "Cloudflare crawl endpoint",
-    "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-    "summary": "Cloudflare has introduced a new `/crawl` endpoint for its Browser Rendering service, now in open beta, allowing users to crawl entire websites with a single API call. This asynchronous service takes a starting URL, automatically discovers pages through sitemaps or links, and renders them in a headless browser. Crawled content is returned in multiple formats, including HTML, Markdown, and structured JSON (powered by Workers AI).\n\nKey features include controls for crawl depth, page limits, URL path patterns, and incremental crawling using `modifiedSince` and `maxAge` to optimize repeated fetches. A static mode (`render: false`) is available for faster crawling of static sites without browser rendering. The endpoint functions as a \"well-behaved bot,\" respecting `robots.txt` directives and AI Crawl Control by default, making it ideal for training AI models, building RAG pipelines, and monitoring website content responsibly.\n\nWhile powerful, the `/crawl` endpoint cannot bypass Cloudflare bot detection or captchas and explicitly identifies itself as a bot. It's available on both Workers Free and Paid plans. Users initiate a crawl via a POST request, receiving a job ID to check results with a GET request.",
-    "chinese_title": "Cloudflare 爬取端点",
-    "chinese_summary": "Cloudflare has introduced a new `/crawl` endpoint for its Browser Rendering service, now in open beta, allowing users to crawl entire websites with a single API call. This asynchronous service takes a starting URL, automatically discovers pages through sitemaps or links, and renders them in a headless browser. Crawled content is returned in multiple formats, including HTML, Markdown, and structured JSON (powered by Workers AI).\n\nKey features include controls for crawl depth, page limits, URL path patterns, and incremental crawling using `modifiedSince` and `maxAge` to optimize repeated fetches. A static mode (`render: false`) is available for faster crawling of static sites without browser rendering. The endpoint functions as a \"well-behaved bot,\" respecting `robots.txt` directives and AI Crawl Control by default, making it ideal for training AI models, building RAG pipelines, and monitoring website content responsibly.\n\nWhile powerful, the `/crawl` endpoint cannot bypass Cloudflare bot detection or captchas and explicitly identifies itself as a bot. It's available on both Workers Free and Paid plans. Users initiate a crawl via a POST request, receiving a job ID to check results with a GET request."
-  },
-  {
-    "id": "47333627",
-    "title": "How we hacked McKinsey's AI platform",
-    "url": "https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform",
     "summary": "生成摘要时出错",
-    "chinese_title": "How we hacked McKinsey's AI platform",
+    "chinese_title": "Malus – Clean Room as a Service",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47327559",
-    "title": "Agents that run while I sleep",
-    "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+    "id": "47362528",
+    "title": "Meta Platforms: Lobbying, dark money, and the App Store Accountability Act",
+    "url": "https://github.com/upper-up/meta-lobbying-and-other-findings",
+    "summary": "An open-source intelligence investigation reveals Meta Platforms' multi-channel influence operation to pass the App Store Accountability Act (ASAA), which shifts age verification burdens from social media platforms to Apple and Google's app stores.\n\nMeta spent a record $26.3 million on federal lobbying in 2025 and deployed 86+ lobbyists across 45 states, explicitly listing ASAA in their disclosures. At the state level, Meta lobbyists directly provided bill language to sponsors, as confirmed in Louisiana.\n\nA key component is the Digital Childhood Alliance (DCA), a covertly funded \"astroturf\" 501(c)(4) advocacy group exposed by Bloomberg. DCA has no independent incorporation, processes donations as a \"Project\" via a Donor Advised Fund (For Good DAF), and its leadership has ties to NCOSEAction. Its website launched quickly and solely criticizes app stores, never Meta.\n\nMeta also committed over $70 million to state-level super PACs, like Forge the Future, advocating for policies mirroring ASAA language. Hilltop Public Solutions, involved in Meta's PACs, also coordinated DCA messaging.\n\nThe investigation explored a possible link to the Arabella Advisors dark money network, noting a Meta lobbyist also chairs the New Venture Fund. While analysis of $2.0 billion in Arabella grants ruled out direct funding for child safety groups, other opaque funding channels remain possible.\n\nASAA has already passed in Utah, Texas (currently paused), and Louisiana, with 17 other states considering similar legislation. If enacted widely, the ASAA would impose significant compliance costs on app stores while Meta's platforms face no new mandates.",
+    "chinese_title": "Meta平台：游说、暗钱和《App Store问责法案》",
+    "chinese_summary": "一项开源情报调查显示，Meta Platforms 正在开展多渠道影响力行动，旨在通过《应用商店问责法案》(ASAA)。该法案将年龄验证的负担从社交媒体平台转移到苹果和谷歌的应用商店。\n\nMeta 在2025年斥资创纪录的2630万美元用于联邦游说，并在45个州部署了86名以上游说者，其披露文件中明确列出ASAA。在州一级，Meta 的游说者直接向发起人提供了法案文本，这在路易斯安那州已得到证实。\n\n一个关键组成部分是数字童年联盟 (DCA)，这是一个由彭博社曝光的、秘密资助的“伪草根”501(c)(4)倡导团体。DCA 没有独立注册，通过捐赠者建议基金 (For Good DAF) 以“项目”形式处理捐款，且其领导层与 NCOSEAction 有关联。其网站迅速上线，且仅批评应用商店，从未批评 Meta。\n\nMeta 还向州级超级政治行动委员会（如 Forge the Future）投入了超过7000万美元，倡导与 ASAA 措辞相似的政策。参与 Meta 政治行动委员会的 Hilltop Public Solutions 也协调了 DCA 的信息传递。\n\n调查探讨了与 Arabella Advisors 秘密资金网络之间可能存在的联系，指出 Meta 的一名游说者也担任新风险基金的主席。虽然对 Arabella 20亿美元赠款的分析排除了直接资助儿童安全团体的可能性，但其他不透明的资金渠道仍有可能存在。\n\nASAA 已在犹他州、德克萨斯州（目前暂停）和路易斯安那州通过，另有17个州正在考虑类似的立法。如果广泛实施，ASAA 将给应用商店带来巨大的合规成本，而 Meta 的平台则无需承担任何新的强制性要求。"
+  },
+  {
+    "id": "47359744",
+    "title": "“This is not the computer for you”",
+    "url": "https://samhenri.gold/blog/20260312-this-is-not-the-computer-for-you/",
+    "summary": "The article criticizes traditional computer reviews for categorizing users and prescribing \"sensible\" product choices, often overlooking individual potential and unconventional learning paths. The new MacBook Neo, despite its modest specs ($599, A18 Pro, 8GB RAM), is dismissed by many as unsuitable for demanding tasks like Xcode or Final Cut.\n\nThe author argues against this perspective, asserting that true technological obsession and learning involve pushing available tools beyond their intended limits. Drawing on personal experience as a nine-year-old running demanding software on an ancient iMac, the author contends that limitations become a map for discovery, teaching fundamental computing costs and physics.\n\nUnlike Chromebooks, which impose product category restrictions, the Neo offers the full macOS behavioral contract, allowing users to genuinely learn about resource limits. This machine, the author states, is for the aspiring kid who will experiment, install challenging software, and push its boundaries. This process of \"breaking\" an underpowered machine is presented as the essential mechanism by which a kid evolves into a developer, designer, or filmmaker. The article concludes that reviews miss this transformative aspect, focusing on a computer's intended purpose rather than its user's potential.",
+    "chinese_title": "这台电脑不适合你。",
+    "chinese_summary": "The article criticizes traditional computer reviews for categorizing users and prescribing \"sensible\" product choices, often overlooking individual potential and unconventional learning paths. The new MacBook Neo, despite its modest specs ($599, A18 Pro, 8GB RAM), is dismissed by many as unsuitable for demanding tasks like Xcode or Final Cut.\n\nThe author argues against this perspective, asserting that true technological obsession and learning involve pushing available tools beyond their intended limits. Drawing on personal experience as a nine-year-old running demanding software on an ancient iMac, the author contends that limitations become a map for discovery, teaching fundamental computing costs and physics.\n\nUnlike Chromebooks, which impose product category restrictions, the Neo offers the full macOS behavioral contract, allowing users to genuinely learn about resource limits. This machine, the author states, is for the aspiring kid who will experiment, install challenging software, and push its boundaries. This process of \"breaking\" an underpowered machine is presented as the essential mechanism by which a kid evolves into a developer, designer, or filmmaker. The article concludes that reviews miss this transformative aspect, focusing on a computer's intended purpose rather than its user's potential."
+  },
+  {
+    "id": "47356968",
+    "title": "Innocent woman jailed after being misidentified using AI facial recognition",
+    "url": "https://www.grandforksherald.com/news/north-dakota/ai-error-jails-innocent-grandmother-for-months-in-north-dakota-fraud-case",
     "summary": "生成摘要时出错",
-    "chinese_title": "Agents that run while I sleep",
+    "chinese_title": "AI人脸识别误判致无辜女子入狱",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47339164",
-    "title": "I was interviewed by an AI bot for a job",
-    "url": "https://www.theverge.com/featured-video/892850/i-was-interviewed-by-an-ai-bot-for-a-job",
+    "id": "47351371",
+    "title": "ATMs didn’t kill bank teller jobs, but the iPhone did",
+    "url": "https://davidoks.blog/p/why-the-atm-didnt-kill-bank-teller",
+    "summary": "The article refutes the common claim, notably by J.D. Vance, that ATMs didn't reduce bank teller employment. While this was historically true until the early 2000s, the author states that bank teller jobs have significantly declined since then, attributing this to the iPhone, not ATMs.\n\nThe piece explains why Automated Teller Machines, despite their name, initially *didn't* kill teller jobs. ATMs drastically reduced the cost per transaction (27 cents vs. $1.07 for a human), making bank branches much cheaper to operate. This cost reduction, coupled with deregulation, led to a substantial increase in the number of bank branches. Although the number of tellers per branch decreased, the overall growth in branches meant aggregate teller employment remained stable or even increased until around 2010, a classic example of the Jevons effect. Moreover, tellers' roles evolved from routine cash handling to \"relationship banking,\" focusing on selling financial products.\n\nThe core argument is that technology's true force lies not in task substitution within existing paradigms, but in inventing new ones. ATMs merely substituted tasks; the iPhone, by enabling mobile banking and a new paradigm of self-service, made many traditional teller tasks irrelevant, leading to the dramatic decline in employment over the last 15 years.",
+    "chinese_title": "自动取款机没有消灭银行柜员的工作，但iPhone做到了。",
+    "chinese_summary": "文章驳斥了包括J.D. Vance在内的常见观点，即ATM并未减少银行柜员的就业。尽管在21世纪初之前这在历史上是真实的，但作者指出，此后银行柜员职位已显著下降，并将此归因于iPhone，而非ATM。\n\n文章解释了为什么自动取款机（ATM），尽管其名称如此，最初*并未*终结柜员的工作。ATM大幅降低了每笔交易的成本（27美分，而人工处理为1.07美元），使得银行网点运营成本大大降低。这种成本降低，加上放松管制，导致银行网点数量大幅增加。尽管每个网点的柜员数量减少了，但网点的整体增长意味着在2010年左右，柜员的总就业人数保持稳定甚至有所增加，这是“杰文斯效应”的一个典型例子。此外，柜员的角色也从日常现金处理演变为“关系型银行服务”，侧重于销售金融产品。\n\n核心论点是，技术的真正力量不在于在现有范式内进行任务替代，而在于创造新范式。ATM仅仅是任务替代；而iPhone通过实现移动银行和一种新的自助服务范式，使得许多传统柜员任务变得无关紧要，从而导致过去15年就业人数的急剧下降。"
+  },
+  {
+    "id": "47360730",
+    "title": "Vite 8.0 Is Out",
+    "url": "https://vite.dev/blog/announcing-vite8",
+    "summary": "Vite 8.0 has been released, featuring its most significant architectural change since version 2: the adoption of **Rolldown** as its single, unified, Rust-based bundler. This replaces the previous dual-bundler approach of esbuild for development and Rollup for production, promising 10-30x faster production builds while maintaining full plugin compatibility.\n\nRolldown addresses issues of inconsistent module handling and complex glue code inherent in the dual-bundler setup. Built for performance, compatibility with Rollup's plugin API, and advanced features like flexible chunk splitting and module-level caching, its integration was a deliberate, community-driven process validated through technical previews and betas, yielding significant real-world build time reductions for companies like Linear and Ramp.\n\nVite 8 now operates as part of a unified toolchain with Rolldown (bundler) and Oxc (compiler), ensuring consistent behavior and enabling deeper optimizations. New features include **integrated Devtools**, built-in `tsconfig` paths support, automatic `emitDecoratorMetadata` support, Wasm SSR, and browser console forwarding. `@vitejs/plugin-react v6` also ships, using Oxc and reducing installation size.\n\nWhile the install size increases by ~15MB (due to `lightningcss` and Rolldown's performance-focused binary), migration is designed to be smooth. The team extends deep gratitude to Rollup and esbuild for their foundational contributions. Future plans include an experimental \"Full Bundle Mode\" for development, promising faster startup and reloads.",
+    "chinese_title": "Vite 8.0 Is Out",
+    "chinese_summary": "Vite 8.0 has been released, featuring its most significant architectural change since version 2: the adoption of **Rolldown** as its single, unified, Rust-based bundler. This replaces the previous dual-bundler approach of esbuild for development and Rollup for production, promising 10-30x faster production builds while maintaining full plugin compatibility.\n\nRolldown addresses issues of inconsistent module handling and complex glue code inherent in the dual-bundler setup. Built for performance, compatibility with Rollup's plugin API, and advanced features like flexible chunk splitting and module-level caching, its integration was a deliberate, community-driven process validated through technical previews and betas, yielding significant real-world build time reductions for companies like Linear and Ramp.\n\nVite 8 now operates as part of a unified toolchain with Rolldown (bundler) and Oxc (compiler), ensuring consistent behavior and enabling deeper optimizations. New features include **integrated Devtools**, built-in `tsconfig` paths support, automatic `emitDecoratorMetadata` support, Wasm SSR, and browser console forwarding. `@vitejs/plugin-react v6` also ships, using Oxc and reducing installation size.\n\nWhile the install size increases by ~15MB (due to `lightningcss` and Rolldown's performance-focused binary), migration is designed to be smooth. The team extends deep gratitude to Rollup and esbuild for their foundational contributions. Future plans include an experimental \"Full Bundle Mode\" for development, promising faster startup and reloads."
+  },
+  {
+    "id": "47363754",
+    "title": "Can I run AI locally?",
+    "url": "https://www.canirun.ai/",
+    "summary": "This article provides details on the Llama 3.1 8B model, developed by Meta and released in July 2024. With 8 billion parameters, it's highlighted for its excellent quality-to-speed ratio, making it a strong candidate for local AI deployment. The model has a compact file size of 4.1 GB and supports an extensive 128K context window.\n\nCrucially for local execution, Llama 3.1 8B is available in various quantization formats, including Q2_K, Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0, and F16. These options allow users to optimize the model for different hardware memory and performance capabilities. Built on a Dense architecture, it is versatile, performing well in tasks such like chat, coding, and reasoning. While specific memory requirements aren't provided, the availability of diverse quantizations implies adaptability for running on a range of local systems.",
+    "chinese_title": "我能本地运行AI吗？",
+    "chinese_summary": "本文详细介绍了由 Meta 开发并于2024年7月发布的 Llama 3.1 8B 模型。该模型拥有80亿参数，以其卓越的质量速度比而著称，使其成为本地AI部署的有力竞争者。该模型文件大小仅为4.1 GB，并支持长达128K的上下文窗口。\n\n对于本地运行至关重要的是，Llama 3.1 8B 提供多种量化格式，包括 Q2_K、Q3_K_M、Q4_K_M、Q5_K_M、Q6_K、Q8_0 和 F16。这些选项使用户能够优化模型，以适应不同的硬件内存和性能能力。该模型采用Dense架构，功能多样，在聊天、编码和推理等任务中表现出色。虽然没有提供具体的内存要求，但多样化的量化选项意味着其适应性强，能够在各种本地系统上运行。"
+  },
+  {
+    "id": "47362613",
+    "title": "TUI Studio – visual terminal UI design tool",
+    "url": "https://tui.studio/",
     "summary": "生成摘要时出错",
-    "chinese_title": "I was interviewed by an AI bot for a job",
+    "chinese_title": "TUI Studio – visual terminal UI design tool",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47349806",
+    "title": "US private credit defaults hit record 9.2% in 2025, Fitch says",
+    "url": "https://www.marketscreener.com/news/us-private-credit-defaults-hit-record-9-2-in-2025-fitch-says-ce7e5fd8df8fff2d",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US private credit defaults hit record 9.2% in 2025, Fitch says",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -96,22 +96,6 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47330836",
-    "title": "Type resolution redesign, with language changes to taste",
-    "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Type resolution redesign, with language changes to taste",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47329605",
-    "title": "U+237C ⍼ Is Azimuth",
-    "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "U+237C ⍼ Is Azimuth",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "47344548",
     "title": "Show HN: s@: decentralized social networking over static sites",
     "url": "http://satproto.org/",
@@ -120,27 +104,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47335237",
-    "title": "Lego's 0.002mm specification and its implications for manufacturing (2025)",
-    "url": "https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/",
+    "id": "47352215",
+    "title": "Asian governments roll out 4-day weeks, WFH to solve fuel crisis caused by war",
+    "url": "https://fortune.com/2026/03/11/iran-war-fuel-crisis-asia-work-from-home-closed-schools-price-caps/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Lego's 0.002mm specification and its implications for manufacturing (2025)",
+    "chinese_title": "Asian governments roll out 4-day weeks, WFH to solve fuel crisis caused by war",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47334694",
-    "title": "BitNet: Inference framework for 1-bit LLMs",
-    "url": "https://github.com/microsoft/BitNet",
+    "id": "47349277",
+    "title": "Big data on the cheapest MacBook",
+    "url": "https://duckdb.org/2026/03/11/big-data-on-the-cheapest-macbook",
     "summary": "生成摘要时出错",
-    "chinese_title": "BitNet: Inference framework for 1-bit LLMs",
+    "chinese_title": "Big data on the cheapest MacBook",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47329608",
-    "title": "Universal vaccine against respiratory infections and allergens",
-    "url": "https://med.stanford.edu/news/all-news/2026/02/universal-vaccine.html",
+    "id": "47354098",
+    "title": "Bubble Sorted Amen Break",
+    "url": "https://parametricavocado.itch.io/amen-sorting",
     "summary": "生成摘要时出错",
-    "chinese_title": "Universal vaccine against respiratory infections and allergens",
+    "chinese_title": "Bubble Sorted Amen Break",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47353533",
+    "title": "Enhancing gut-brain communication reversed cognitive decline in aging mice",
+    "url": "https://med.stanford.edu/news/all-news/2026/03/gut-brain-cognitive-decline.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Enhancing gut-brain communication reversed cognitive decline in aging mice",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -152,43 +144,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47336476",
-    "title": "Google closes deal to acquire Wiz",
-    "url": "https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz",
-    "summary": "Google has officially closed its deal to acquire Wiz, nearly a year after the initial announcement, aiming to combine Wiz’s innovation with Google’s scale to redefine cloud security, particularly for AI-driven development. Wiz's core mission remains helping organizations protect everything they build and run, now at the speed of AI.\n\nLeading up to the acquisition, Wiz demonstrated significant achievements. Their research uncovered critical vulnerabilities such as CodeBreach (AWS), RediShell (Redis RCE), and NVIDIAScape (container escape), and addressed sophisticated supply chain attacks like Shai-Hulud and NX. Product innovations included expanding the Wiz AI Security Platform to secure AI applications, introducing Wiz Exposure Management for a proactive risk view, launching AI Security Agents for automated remediation, and creating WizOS for secure container base images.\n\nAs part of Google Cloud, Wiz will accelerate its roadmap by integrating cutting-edge AI capabilities, including Gemini. Crucially, Wiz will remain a multi-cloud platform, committed to protecting customers across AWS, Azure, GCP, and OCI. This partnership strengthens Wiz’s ability to protect customers everywhere, leveraging Google's infrastructure, Mandiant's threat intelligence, and the broader Google Unified Security Platform. The goal is to enable organizations to build boldly, securely, and with confidence in a rapidly evolving, AI-powered world.",
-    "chinese_title": "Google closes deal to acquire Wiz",
-    "chinese_summary": "Google has officially closed its deal to acquire Wiz, nearly a year after the initial announcement, aiming to combine Wiz’s innovation with Google’s scale to redefine cloud security, particularly for AI-driven development. Wiz's core mission remains helping organizations protect everything they build and run, now at the speed of AI.\n\nLeading up to the acquisition, Wiz demonstrated significant achievements. Their research uncovered critical vulnerabilities such as CodeBreach (AWS), RediShell (Redis RCE), and NVIDIAScape (container escape), and addressed sophisticated supply chain attacks like Shai-Hulud and NX. Product innovations included expanding the Wiz AI Security Platform to secure AI applications, introducing Wiz Exposure Management for a proactive risk view, launching AI Security Agents for automated remediation, and creating WizOS for secure container base images.\n\nAs part of Google Cloud, Wiz will accelerate its roadmap by integrating cutting-edge AI capabilities, including Gemini. Crucially, Wiz will remain a multi-cloud platform, committed to protecting customers across AWS, Azure, GCP, and OCI. This partnership strengthens Wiz’s ability to protect customers everywhere, leveraging Google's infrastructure, Mandiant's threat intelligence, and the broader Google Unified Security Platform. The goal is to enable organizations to build boldly, securely, and with confidence in a rapidly evolving, AI-powered world."
-  },
-  {
-    "id": "47328214",
-    "title": "RISC-V Is Sloooow",
-    "url": "https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/",
+    "id": "47348304",
+    "title": "Dolphin Progress Release 2603",
+    "url": "https://dolphin-emu.org/blog/2026/03/12/dolphin-progress-report-release-2603/",
     "summary": "生成摘要时出错",
-    "chinese_title": "RISC-V Is Sloooow",
+    "chinese_title": "Dolphin Progress Release 2603",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47352215",
-    "title": "Asia rolls out 4-day weeks, WFH to solve fuel crisis caused by Iran war",
-    "url": "https://fortune.com/2026/03/11/iran-war-fuel-crisis-asia-work-from-home-closed-schools-price-caps/",
+    "id": "47352459",
+    "title": "The Met releases high-def 3D scans of 140 famous art objects",
+    "url": "https://www.openculture.com/2026/03/the-met-releases-high-definition-3d-scans-of-140-famous-art-objects.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Asia rolls out 4-day weeks, WFH to solve fuel crisis caused by Iran war",
+    "chinese_title": "The Met releases high-def 3D scans of 140 famous art objects",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47337607",
-    "title": "Show HN: I built a tool that watches webpages and exposes changes as RSS",
-    "url": "https://sitespy.app",
+    "id": "47350931",
+    "title": "Kotlin creator's new language: talk to LLMs in specs, not English",
+    "url": "https://codespeak.dev/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I built a tool that watches webpages and exposes changes as RSS",
+    "chinese_title": "Kotlin creator's new language: talk to LLMs in specs, not English",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47335349",
-    "title": "Entities enabling scientific fraud at scale (2025)",
-    "url": "https://doi.org/10.1073/pnas.2420092122",
+    "id": "47363922",
+    "title": "E2E encrypted messaging on Instagram will no longer be supported after 8 May",
+    "url": "https://help.instagram.com/491565145294150",
     "summary": "生成摘要时出错",
-    "chinese_title": "Entities enabling scientific fraud at scale (2025)",
+    "chinese_title": "E2E encrypted messaging on Instagram will no longer be supported after 8 May",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -208,139 +192,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47349277",
-    "title": "Big Data on the Cheapest MacBook",
-    "url": "https://duckdb.org/2026/03/11/big-data-on-the-cheapest-macbook",
+    "id": "47361913",
+    "title": "Bucketsquatting is (finally) dead",
+    "url": "https://onecloudplease.com/blog/bucketsquatting-is-finally-dead",
     "summary": "生成摘要时出错",
-    "chinese_title": "Big Data on the Cheapest MacBook",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47348304",
-    "title": "Dolphin Progress Release 2603",
-    "url": "https://dolphin-emu.org/blog/2026/03/12/dolphin-progress-report-release-2603/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Dolphin Progress Release 2603",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47336111",
-    "title": "Faster asin() was hiding in plain sight",
-    "url": "https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Faster asin() was hiding in plain sight",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47345393",
-    "title": "DHS Contracts Explorer – Hacked data from the Office of Industry Partnership",
-    "url": "https://micahflee.github.io/ice-contracts/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DHS Contracts Explorer – Hacked data from the Office of Industry Partnership",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47331034",
-    "title": "Writing my own text editor, and daily-driving it",
-    "url": "https://blog.jsbarretto.com/post/text-editor",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Writing my own text editor, and daily-driving it",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47350931",
-    "title": "Kotlin creator's new language: a formal way to talk to LLMs instead of English",
-    "url": "https://codespeak.dev/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Kotlin creator's new language: a formal way to talk to LLMs instead of English",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47346091",
-    "title": "Iran-backed hackers claim wiper attack on medtech firm Stryker",
-    "url": "https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Iran-backed hackers claim wiper attack on medtech firm Stryker",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47343156",
-    "title": "Atlassian to cut roughly 1,600 jobs in pivot to AI",
-    "url": "https://www.reuters.com/technology/atlassian-lay-off-about-1600-people-pivot-ai-2026-03-11/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Atlassian to cut roughly 1,600 jobs in pivot to AI",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47334982",
-    "title": "Swiss e-voting pilot can't count 2,048 ballots after decryption failure",
-    "url": "https://www.theregister.com/2026/03/11/swiss_evote_usb_snafu/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Swiss e-voting pilot can't count 2,048 ballots after decryption failure",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47347945",
-    "title": "3D-Knitting: The Ultimate Guide",
-    "url": "https://www.oliver-charles.com/pages/3d-knitting",
-    "summary": "生成摘要时出错",
-    "chinese_title": "3D-Knitting: The Ultimate Guide",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47339223",
-    "title": "Personal Computer by Perplexity",
-    "url": "https://www.perplexity.ai/personal-computer-waitlist",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Personal Computer by Perplexity",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47349798",
-    "title": "US banks' exposure to private credit hits $300B (2025)",
-    "url": "https://alternativecreditinvestor.com/2025/10/22/us-banks-exposure-to-private-credit-hits-300bn/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "US banks' exposure to private credit hits $300B (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47348440",
-    "title": "1B identity records exposed in ID verification data leak",
-    "url": "https://www.aol.com/articles/1-billion-identity-records-exposed-152505381.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "1B identity records exposed in ID verification data leak",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47348192",
-    "title": "Avoiding Trigonometry (2013)",
-    "url": "https://iquilezles.org/articles/noacos/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Avoiding Trigonometry (2013)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47351371",
-    "title": "ATMs didn't kill bank teller jobs, but the iPhone did",
-    "url": "https://davidoks.blog/p/why-the-atm-didnt-kill-bank-teller",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ATMs didn't kill bank teller jobs, but the iPhone did",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47351239",
-    "title": "Suburban school district uses license plate readers to verify student residency",
-    "url": "https://www.nbcchicago.com/consumer/suburban-school-district-uses-license-plate-readers-to-verify-student-residency/3906703/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Suburban school district uses license plate readers to verify student residency",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47340071",
-    "title": "I'm glad the Anthropic fight is happening now",
-    "url": "https://www.dwarkesh.com/p/dow-anthropic",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I'm glad the Anthropic fight is happening now",
+    "chinese_title": "Bucketsquatting is (finally) dead",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -352,75 +208,67 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47337249",
-    "title": "Show HN: Klaus – OpenClaw on a VM, batteries included",
-    "url": "https://klausai.com/",
+    "id": "47348275",
+    "title": "Executing programs inside transformers with exponentially faster inference",
+    "url": "https://www.percepta.ai/blog/can-llms-be-computers",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Klaus – OpenClaw on a VM, batteries included",
+    "chinese_title": "Executing programs inside transformers with exponentially faster inference",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47352262",
-    "title": "US- and Greek-owned tankers ablaze after Iran claims 'underwater drone' strike",
-    "url": "https://www.lloydslist.com/LL1156592/US--and-Greek-owned-tankers-ablaze-after-Iran-claims-underwater-drone-strike-in-Iraqi-waters",
+    "id": "47346091",
+    "title": "Iran-backed hackers claim wiper attack on medtech firm Stryker",
+    "url": "https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/",
     "summary": "生成摘要时出错",
-    "chinese_title": "US- and Greek-owned tankers ablaze after Iran claims 'underwater drone' strike",
+    "chinese_title": "Iran-backed hackers claim wiper attack on medtech firm Stryker",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47336171",
-    "title": "Show HN: Open-source browser for AI agents",
-    "url": "https://github.com/theredsix/agent-browser-protocol",
+    "id": "47356017",
+    "title": "An old photo of a large BBS (2022)",
+    "url": "https://rachelbythebay.com/w/2022/01/26/swcbbs/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Open-source browser for AI agents",
+    "chinese_title": "An old photo of a large BBS (2022)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47327473",
-    "title": "Mesh over Bluetooth LE, TCP, or Reticulum",
-    "url": "https://github.com/torlando-tech/columba",
+    "id": "47347945",
+    "title": "3D-Knitting: The Ultimate Guide",
+    "url": "https://www.oliver-charles.com/pages/3d-knitting",
     "summary": "生成摘要时出错",
-    "chinese_title": "Mesh over Bluetooth LE, TCP, or Reticulum",
+    "chinese_title": "3D-Knitting: The Ultimate Guide",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47354098",
-    "title": "Bubble Sorted Amen Break",
-    "url": "https://parametricavocado.itch.io/amen-sorting",
+    "id": "47345393",
+    "title": "DHS Contracts Explorer – Hacked data from the Office of Industry Partnership",
+    "url": "https://micahflee.github.io/ice-contracts/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Bubble Sorted Amen Break",
+    "chinese_title": "DHS Contracts Explorer – Hacked data from the Office of Industry Partnership",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47349806",
-    "title": "US private credit defaults hit record 9.2% in 2025, Fitch says",
-    "url": "https://www.marketscreener.com/news/us-private-credit-defaults-hit-record-9-2-in-2025-fitch-says-ce7e5fd8df8fff2d",
+    "id": "47348192",
+    "title": "Avoiding Trigonometry (2013)",
+    "url": "https://iquilezles.org/articles/noacos/",
     "summary": "生成摘要时出错",
-    "chinese_title": "US private credit defaults hit record 9.2% in 2025, Fitch says",
+    "chinese_title": "Avoiding Trigonometry (2013)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47352277",
-    "title": "Colon cancer now leading cause of cancer deaths under 50 in US",
-    "url": "https://www.theguardian.com/us-news/2026/mar/12/colon-cancer-leading-deaths",
+    "id": "47343156",
+    "title": "Atlassian to cut roughly 1,600 jobs in pivot to AI",
+    "url": "https://www.reuters.com/technology/atlassian-lay-off-about-1600-people-pivot-ai-2026-03-11/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Colon cancer now leading cause of cancer deaths under 50 in US",
+    "chinese_title": "Atlassian to cut roughly 1,600 jobs in pivot to AI",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47337177",
-    "title": "Physicist Astrid Eichhorn is a leader in the field of asymptotic safety",
-    "url": "https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/",
+    "id": "47348440",
+    "title": "1B identity records exposed in ID verification data leak",
+    "url": "https://www.aol.com/articles/1-billion-identity-records-exposed-152505381.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Physicist Astrid Eichhorn is a leader in the field of asymptotic safety",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47336806",
-    "title": "Why the global elite gave up on spelling and grammar",
-    "url": "https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why the global elite gave up on spelling and grammar",
+    "chinese_title": "1B identity records exposed in ID verification data leak",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -432,11 +280,211 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47352459",
-    "title": "The Met Releases High-Def 3D Scans of 140 Famous Art Objects",
-    "url": "https://www.openculture.com/2026/03/the-met-releases-high-definition-3d-scans-of-140-famous-art-objects.html",
+    "id": "47349798",
+    "title": "US banks' exposure to private credit hits $300B (2025)",
+    "url": "https://alternativecreditinvestor.com/2025/10/22/us-banks-exposure-to-private-credit-hits-300bn/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Met Releases High-Def 3D Scans of 140 Famous Art Objects",
+    "chinese_title": "US banks' exposure to private credit hits $300B (2025)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47350516",
+    "title": "Show HN: Axe – A 12MB binary that replaces your AI framework",
+    "url": "https://github.com/jrswab/axe",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Axe – A 12MB binary that replaces your AI framework",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47358206",
+    "title": "Grief and the AI split",
+    "url": "https://blog.lmorchard.com/2026/03/11/grief-and-the-ai-split/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Grief and the AI split",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47365597",
+    "title": "Meta Platforms: Lobbying, dark money, and the App Store Accountability Act",
+    "url": "https://github.com/upper-up/meta-lobbying-and-other-findings",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Meta Platforms: Lobbying, dark money, and the App Store Accountability Act",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47366374",
+    "title": "The Wyden Siren Goes Off Again: We'll Be \"Stunned\" by NSA Under Section 702",
+    "url": "https://www.techdirt.com/2026/03/12/the-wyden-siren-goes-off-again-well-be-stunned-by-what-the-nsa-is-doing-under-section-702/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Wyden Siren Goes Off Again: We'll Be \"Stunned\" by NSA Under Section 702",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47351239",
+    "title": "Suburban school district uses license plate readers to verify student residency",
+    "url": "https://www.nbcchicago.com/consumer/suburban-school-district-uses-license-plate-readers-to-verify-student-residency/3906703/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Suburban school district uses license plate readers to verify student residency",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47353993",
+    "title": "Apple's MacBook Neo makes repairs easier and cheaper than other MacBooks",
+    "url": "https://arstechnica.com/gadgets/2026/03/more-modular-design-makes-macbook-neo-easier-to-fix-than-other-apple-laptops/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple's MacBook Neo makes repairs easier and cheaper than other MacBooks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47363990",
+    "title": "Nanny state discovers Linux, demands it check kids' IDs before booting",
+    "url": "https://www.theregister.com/2026/03/13/opinion_os_verification/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nanny state discovers Linux, demands it check kids' IDs before booting",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47340071",
+    "title": "I'm glad the Anthropic fight is happening now",
+    "url": "https://www.dwarkesh.com/p/dow-anthropic",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I'm glad the Anthropic fight is happening now",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47355702",
+    "title": "White House plan to break up iconic U.S. climate lab moves forward",
+    "url": "https://www.science.org/content/article/white-house-plan-break-iconic-u-s-climate-lab-moves-forward",
+    "summary": "生成摘要时出错",
+    "chinese_title": "White House plan to break up iconic U.S. climate lab moves forward",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47352262",
+    "title": "US- and Greek-owned tankers ablaze after Iran claims 'underwater drone' strike",
+    "url": "https://www.lloydslist.com/LL1156592/US--and-Greek-owned-tankers-ablaze-after-Iran-claims-underwater-drone-strike-in-Iraqi-waters",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US- and Greek-owned tankers ablaze after Iran claims 'underwater drone' strike",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47363584",
+    "title": "Qatar helium shutdown puts chip supply chain on a two-week clock",
+    "url": "https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Qatar helium shutdown puts chip supply chain on a two-week clock",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47362350",
+    "title": "Source code of Swedish e-government services has been leaked",
+    "url": "https://darkwebinformer.com/full-source-code-of-swedens-e-government-platform-leaked-from-compromised-cgi-sverige-infrastructure/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Source code of Swedish e-government services has been leaked",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47349334",
+    "title": "Are LLM merge rates not getting better?",
+    "url": "https://entropicthoughts.com/no-swe-bench-improvement",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Are LLM merge rates not getting better?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47353558",
+    "title": "Show HN: OneCLI – Vault for AI Agents in Rust",
+    "url": "https://github.com/onecli/onecli",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: OneCLI – Vault for AI Agents in Rust",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47350136",
+    "title": "Long overlooked as crucial to life, fungi start to get their due",
+    "url": "https://e360.yale.edu/features/fungi-kingdom",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Long overlooked as crucial to life, fungi start to get their due",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47350407",
+    "title": "Document poisoning in RAG systems: How attackers corrupt AI's sources",
+    "url": "https://aminrj.com/posts/rag-document-poisoning/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Document poisoning in RAG systems: How attackers corrupt AI's sources",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47352385",
+    "title": "WolfIP: Lightweight TCP/IP stack with no dynamic memory allocations",
+    "url": "https://github.com/wolfssl/wolfip",
+    "summary": "生成摘要时出错",
+    "chinese_title": "WolfIP: Lightweight TCP/IP stack with no dynamic memory allocations",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47352277",
+    "title": "Colon cancer now leading cause of cancer deaths under 50 in US",
+    "url": "https://www.theguardian.com/us-news/2026/mar/12/colon-cancer-leading-deaths",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Colon cancer now leading cause of cancer deaths under 50 in US",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47350416",
+    "title": "Show HN: Rudel – Claude Code Session Analytics",
+    "url": "https://github.com/obsessiondb/rudel",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Rudel – Claude Code Session Analytics",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47360978",
+    "title": "Lost Doctor Who Episodes Found",
+    "url": "https://www.bbc.co.uk/news/articles/c4g7kwq1k11o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Lost Doctor Who Episodes Found",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47362608",
+    "title": "Peter Thiel's Antichrist Lectures",
+    "url": "https://apnews.com/article/italy-peter-thiel-paypal-pope-vatican-c3a6c7d2daba501caf8152558ac2d743",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Peter Thiel's Antichrist Lectures",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47348397",
+    "title": "U.S. Navy turns down Hormuz escort requests because of high risk",
+    "url": "https://maritime-executive.com/article/u-s-navy-turns-down-strait-of-hormuz-escort-requests-because-of-high-risk",
+    "summary": "生成摘要时出错",
+    "chinese_title": "U.S. Navy turns down Hormuz escort requests because of high risk",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47364397",
+    "title": "Run NanoClaw in Docker Sandboxes",
+    "url": "https://nanoclaw.dev/blog/nanoclaw-docker-sandboxes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Run NanoClaw in Docker Sandboxes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47366664",
+    "title": "OVH forgot they donated documentation hosting to Pandas",
+    "url": "https://github.com/pandas-dev/pandas/issues/64584",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OVH forgot they donated documentation hosting to Pandas",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47355781",
+    "title": "Runners who churn butter on their runs",
+    "url": "https://www.runnersworld.com/news/a70683169/how-to-make-butter-while-running/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Runners who churn butter on their runs",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -448,35 +496,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47327641",
-    "title": "HyperCard discovery: Neuromancer, Count Zero, Mona Lisa Overdrive (2022)",
-    "url": "https://macintoshgarden.org/apps/neuromancer-count-zero-mona-lisa-overdrive",
+    "id": "47356392",
+    "title": "Bringing Chrome to ARM64 Linux Devices",
+    "url": "https://blog.chromium.org/2026/03/bringing-chrome-to-arm64-linux-devices.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "HyperCard discovery: Neuromancer, Count Zero, Mona Lisa Overdrive (2022)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47348397",
-    "title": "U.S. Navy Turns Down Hormuz Escort Requests Because of High Risk",
-    "url": "https://maritime-executive.com/article/u-s-navy-turns-down-strait-of-hormuz-escort-requests-because-of-high-risk",
-    "summary": "生成摘要时出错",
-    "chinese_title": "U.S. Navy Turns Down Hormuz Escort Requests Because of High Risk",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47338091",
-    "title": "Show HN: Vanilla JavaScript refinery simulator built to explain job to my kids",
-    "url": "https://fuelingcuriosity.com/game.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Vanilla JavaScript refinery simulator built to explain job to my kids",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47350416",
-    "title": "Show HN: Rudel – Claude Code Session Analytics",
-    "url": "https://github.com/obsessiondb/rudel",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Rudel – Claude Code Session Analytics",
+    "chinese_title": "Bringing Chrome to ARM64 Linux Devices",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -504,6 +528,14 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "47353957",
+    "title": "Show HN: Understudy – Teach a desktop agent by demonstrating a task once",
+    "url": "https://github.com/understudy-ai/understudy",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Understudy – Teach a desktop agent by demonstrating a task once",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "47345050",
     "title": "Apple releases iOS 15.8.7 to fix Coruna exploit for iPhone 6S from 2015",
     "url": "https://support.apple.com/en-us/126632",
@@ -512,75 +544,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47327367",
-    "title": "Whistleblower claims ex-DOGE member says he took Social Security data to new job",
-    "url": "https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge/",
+    "id": "47356223",
+    "title": "Amazon Employees Say AI Is Just Increasing Workload",
+    "url": "https://gizmodo.com/amazon-employees-say-ai-is-just-increasing-workload-a-new-study-confirms-their-suspicions-2000732794",
     "summary": "生成摘要时出错",
-    "chinese_title": "Whistleblower claims ex-DOGE member says he took Social Security data to new job",
+    "chinese_title": "Amazon Employees Say AI Is Just Increasing Workload",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47332054",
-    "title": "TADA: Speech generation through text-acoustic synchronization",
-    "url": "https://www.hume.ai/blog/opensource-tada",
+    "id": "47361313",
+    "title": "Ceno, browse the web without internet access",
+    "url": "https://ceno.app/en/index.html?",
     "summary": "生成摘要时出错",
-    "chinese_title": "TADA: Speech generation through text-acoustic synchronization",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47330004",
-    "title": "DOGE employee stole Social Security data and put it on a thumb drive",
-    "url": "https://techcrunch.com/2026/03/10/doge-employee-stole-social-security-data-and-put-it-on-a-thumb-drive-report-says/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DOGE employee stole Social Security data and put it on a thumb drive",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47328071",
-    "title": "Against vibes: When is a generative model useful",
-    "url": "https://www.williamjbowman.com/blog/2026/03/05/against-vibes-when-is-a-generative-model-useful/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Against vibes: When is a generative model useful",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47344999",
-    "title": "How much of HN is AI?",
-    "url": "https://lcamtuf.substack.com/p/how-much-of-hn-is-ai",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How much of HN is AI?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47353993",
-    "title": "Apple's MacBook Neo makes repairs easier and cheaper than other MacBooks",
-    "url": "https://arstechnica.com/gadgets/2026/03/more-modular-design-makes-macbook-neo-easier-to-fix-than-other-apple-laptops/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Apple's MacBook Neo makes repairs easier and cheaper than other MacBooks",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47353533",
-    "title": "Reversing memory loss via gut-brain communication",
-    "url": "https://med.stanford.edu/news/all-news/2026/03/gut-brain-cognitive-decline.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Reversing memory loss via gut-brain communication",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47339888",
-    "title": "Hisense TVs force owners to watch intrusive ads",
-    "url": "https://www.tomshardware.com/tech-industry/big-tech/hisense-tvs-force-owners-to-watch-intrusive-ads-when-switching-inputs-visiting-the-home-screen-or-even-changing-channels-practice-infuriates-consumers-brand-denies-wrongdoing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Hisense TVs force owners to watch intrusive ads",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47328029",
-    "title": "Mother of All Grease Fires (1994)",
-    "url": "https://milk.com/wall-o-shame/bucket.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mother of All Grease Fires (1994)",
+    "chinese_title": "Ceno, browse the web without internet access",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -592,19 +568,75 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47335772",
-    "title": "UK MPs give ministers powers to restrict Internet for under 18s",
-    "url": "https://www.openrightsgroup.org/press-releases/mps-give-ministers-powers-to-restrict-entire-internet/",
+    "id": "47359136",
+    "title": "Tennessee grandmother jailed after AI face recognition error links her to fraud",
+    "url": "https://www.theguardian.com/us-news/2026/mar/12/tennessee-grandmother-ai-fraud",
     "summary": "生成摘要时出错",
-    "chinese_title": "UK MPs give ministers powers to restrict Internet for under 18s",
+    "chinese_title": "Tennessee grandmother jailed after AI face recognition error links her to fraud",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47350516",
-    "title": "Show HN: Axe – A 12MB binary that replaces your AI framework",
-    "url": "https://github.com/jrswab/axe",
+    "id": "47344999",
+    "title": "How much of HN is AI?",
+    "url": "https://lcamtuf.substack.com/p/how-much-of-hn-is-ai",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Axe – A 12MB binary that replaces your AI framework",
+    "chinese_title": "How much of HN is AI?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47367568",
+    "title": "Your phone is an entire computer",
+    "url": "https://medhir.com/blog/your-phone-is-an-entire-computer",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Your phone is an entire computer",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47339888",
+    "title": "Hisense TVs force owners to watch intrusive ads",
+    "url": "https://www.tomshardware.com/tech-industry/big-tech/hisense-tvs-force-owners-to-watch-intrusive-ads-when-switching-inputs-visiting-the-home-screen-or-even-changing-channels-practice-infuriates-consumers-brand-denies-wrongdoing",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hisense TVs force owners to watch intrusive ads",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47350357",
+    "title": "First 6 days of Iran war cost $11.3B",
+    "url": "https://www.nbcnews.com/politics/congress/first-6-days-iran-war-cost-11-billion-pentagon-tells-senators-rcna263060",
+    "summary": "生成摘要时出错",
+    "chinese_title": "First 6 days of Iran war cost $11.3B",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47352236",
+    "title": "The Road Not Taken: A World Where IPv4 Evolved",
+    "url": "https://owl.billpg.com/ipv4x/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Road Not Taken: A World Where IPv4 Evolved",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47367463",
+    "title": "John Carmack about open source and anti-AI activists",
+    "url": "https://twitter.com/id_aa_carmack/status/2032460578669691171",
+    "summary": "生成摘要时出错",
+    "chinese_title": "John Carmack about open source and anti-AI activists",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47352819",
+    "title": "Another DOGE staffer explaining how he flagged grants at NEH for \"DEI\"",
+    "url": "https://bsky.app/profile/404media.co/post/3mgupw4v3ak2j",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Another DOGE staffer explaining how he flagged grants at NEH for \"DEI\"",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47361194",
+    "title": "Palantir CEO Makes Confession on Disrupting Democratic Power",
+    "url": "https://newrepublic.com/post/207693/palantir-ceo-karp-disrupting-democratic-power",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Palantir CEO Makes Confession on Disrupting Democratic Power",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -613,30 +645,6 @@
     "url": "https://www.wired.me/story/war-on-big-tech-iran-names-israeli-linked-us-firms-as-potential-targets",
     "summary": "生成摘要时出错",
     "chinese_title": "Iran warns U.S. tech firms could become targets as war expands",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47331802",
-    "title": "Standardizing source maps",
-    "url": "https://bloomberg.github.io/js-blog/post/standardizing-source-maps/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Standardizing source maps",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47353558",
-    "title": "Show HN: OneCLI – Vault for AI Agents in Rust",
-    "url": "https://github.com/onecli/onecli",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: OneCLI – Vault for AI Agents in Rust",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47349334",
-    "title": "Are LLMs not getting better?",
-    "url": "https://entropicthoughts.com/no-swe-bench-improvement",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Are LLMs not getting better?",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -656,123 +664,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47333433",
-    "title": "Google to provide Pentagon with AI agents",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-10/google-to-provide-pentagon-with-ai-agents-for-unclassified-work",
+    "id": "47364729",
+    "title": "Parallels confirms MacBook Neo can run Windows in a virtual machine",
+    "url": "https://www.macrumors.com/2026/03/13/macbook-neo-runs-windows-11-vm/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Google to provide Pentagon with AI agents",
+    "chinese_title": "Parallels confirms MacBook Neo can run Windows in a virtual machine",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47352819",
-    "title": "Another DOGE staffer explaining how he flagged grants at NEH for \"DEI\"",
-    "url": "https://bsky.app/profile/404media.co/post/3mgupw4v3ak2j",
+    "id": "47360383",
+    "title": "Hyperlinks in Terminal Emulators",
+    "url": "https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda",
     "summary": "生成摘要时出错",
-    "chinese_title": "Another DOGE staffer explaining how he flagged grants at NEH for \"DEI\"",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47346137",
-    "title": "Oil hits $100 a barrel despite deal to release record amount of reserves",
-    "url": "https://www.bbc.com/news/articles/c1w5141vx53o",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Oil hits $100 a barrel despite deal to release record amount of reserves",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47336513",
-    "title": "U.S. at Fault in Strike on School in Iran, Preliminary Inquiry Says",
-    "url": "https://www.nytimes.com/2026/03/11/us/politics/iran-school-missile-strike.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "U.S. at Fault in Strike on School in Iran, Preliminary Inquiry Says",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47348475",
-    "title": "I don't use LLMs for programming",
-    "url": "https://neilmadden.blog/2026/03/02/why-i-dont-use-llms-for-programming/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I don't use LLMs for programming",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47338055",
-    "title": "Fungal Electronics (2021)",
-    "url": "https://arxiv.org/abs/2111.11231",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Fungal Electronics (2021)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47335431",
-    "title": "Show HN: I built an ISP infrastructure emulator from scratch with a custom vBNG",
-    "url": "https://aether.saphal.me/dashboard/default",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I built an ISP infrastructure emulator from scratch with a custom vBNG",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47346511",
-    "title": "WireGuard Is Two Things",
-    "url": "https://www.proxylity.com/articles/wireguard-is-two-things.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "WireGuard Is Two Things",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47336889",
-    "title": "Elevated errors on login with Claude Code",
-    "url": "https://status.claude.com/incidents/jm3b4jjy2jrt",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Elevated errors on login with Claude Code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47335764",
-    "title": "WA income tax clears House after 24-hour debate",
-    "url": "https://www.seattletimes.com/seattle-news/politics/wa-income-tax-passes-house-after-24-hour-debate/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "WA income tax clears House after 24-hour debate",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47350357",
-    "title": "First 6 days of Iran war cost $11.3B",
-    "url": "https://www.nbcnews.com/politics/congress/first-6-days-iran-war-cost-11-billion-pentagon-tells-senators-rcna263060",
-    "summary": "生成摘要时出错",
-    "chinese_title": "First 6 days of Iran war cost $11.3B",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47342139",
-    "title": "Preliminary data from a longitudinal AI impact study",
-    "url": "https://newsletter.getdx.com/p/ai-productivity-gains-are-10-not",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Preliminary data from a longitudinal AI impact study",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47328521",
-    "title": "The U.S. borrowed $50B a week for the past five months, the CBO says",
-    "url": "https://fortune.com/2026/03/10/treasury-debt-borrowing-five-months-deficit-warning/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The U.S. borrowed $50B a week for the past five months, the CBO says",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47350467",
-    "title": "USDA is closing buildings, relocating staff, and downsizing-a lot",
-    "url": "https://www.foodpolitics.com/2026/03/usda-is-closing-buildings-relocating-staff-and-downsizing-a-lot/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "USDA is closing buildings, relocating staff, and downsizing-a lot",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47350578",
-    "title": "Iranian Hacktivists Strike Medical Device Maker Stryker and Wiped Systems",
-    "url": "https://www.zetter-zeroday.com/iranian-hacktivists-strike-medical-device-maker-stryker-in-severe-attack-that-wiped-systems/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Iranian Hacktivists Strike Medical Device Maker Stryker and Wiped Systems",
+    "chinese_title": "Hyperlinks in Terminal Emulators",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -784,19 +688,115 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47342122",
-    "title": "Anthropic has strong case against Pentagon blacklisting, legal experts say",
-    "url": "https://www.reuters.com/legal/legalindustry/anthropic-has-strong-case-against-pentagon-blacklisting-legal-experts-say-2026-03-11/",
+    "id": "47346137",
+    "title": "Oil hits $100 a barrel despite deal to release record amount of reserves",
+    "url": "https://www.bbc.com/news/articles/c1w5141vx53o",
     "summary": "生成摘要时出错",
-    "chinese_title": "Anthropic has strong case against Pentagon blacklisting, legal experts say",
+    "chinese_title": "Oil hits $100 a barrel despite deal to release record amount of reserves",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47332649",
-    "title": "I'm going to build my own OpenClaw, with blackjack and bun",
-    "url": "https://github.com/rcarmo/piclaw",
+    "id": "47348475",
+    "title": "I don't use LLMs for programming",
+    "url": "https://neilmadden.blog/2026/03/02/why-i-dont-use-llms-for-programming/",
     "summary": "生成摘要时出错",
-    "chinese_title": "I'm going to build my own OpenClaw, with blackjack and bun",
+    "chinese_title": "I don't use LLMs for programming",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47366400",
+    "title": "Channel Surfer – Watch YouTube Like It's Cable TV",
+    "url": "https://channelsurfer.tv/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Channel Surfer – Watch YouTube Like It's Cable TV",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47364116",
+    "title": "Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas",
+    "url": "https://www.getspine.ai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Launch HN: Spine Swarm (YC S23) – AI agents that collaborate on a visual canvas",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47355410",
+    "title": "Launch HN: IonRouter (YC W26) – High-throughput, low-cost inference",
+    "url": "https://ionrouter.io",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Launch HN: IonRouter (YC W26) – High-throughput, low-cost inference",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47353019",
+    "title": "The Emotional Labor Behind AI Intimacy (2025) [pdf]",
+    "url": "https://data-workers.org/wp-content/uploads/2025/12/The-Emotional-Labor-Behind-AI-Intimacy-1.pdf",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Emotional Labor Behind AI Intimacy (2025) [pdf]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47363074",
+    "title": "Prompt-caching – auto-injects Anthropic cache breakpoints (90% token savings)",
+    "url": "https://prompt-caching.ai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Prompt-caching – auto-injects Anthropic cache breakpoints (90% token savings)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47353762",
+    "title": "U.S. to suspend the Jones Act in a bid to curb oil prices",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-12/trump-administration-set-to-suspend-jones-act-to-tame-oil-prices",
+    "summary": "生成摘要时出错",
+    "chinese_title": "U.S. to suspend the Jones Act in a bid to curb oil prices",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47350467",
+    "title": "USDA is closing buildings, relocating staff, and downsizing-a lot",
+    "url": "https://www.foodpolitics.com/2026/03/usda-is-closing-buildings-relocating-staff-and-downsizing-a-lot/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "USDA is closing buildings, relocating staff, and downsizing-a lot",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47363400",
+    "title": "Show HN: Algorithms and Data Structures in TypeScript – Free Book (~400 Pages)",
+    "url": "http://amoilanen.github.io/Algorithms-with-Typescript/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Algorithms and Data Structures in TypeScript – Free Book (~400 Pages)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47346511",
+    "title": "WireGuard Is Two Things",
+    "url": "https://www.proxylity.com/articles/wireguard-is-two-things.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "WireGuard Is Two Things",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47342139",
+    "title": "Preliminary data from a longitudinal AI impact study",
+    "url": "https://newsletter.getdx.com/p/ai-productivity-gains-are-10-not",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Preliminary data from a longitudinal AI impact study",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47361797",
+    "title": "100 Jumps",
+    "url": "https://100jumps.org/play/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "100 Jumps",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47357294",
+    "title": "Illinois introduces OS-level age verification law",
+    "url": "https://legiscan.com/IL/bill/SB3977/2025",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Illinois introduces OS-level age verification law",
     "chinese_summary": "生成摘要时出错"
   }
 ]
