@@ -1,8 +1,7 @@
-# Hacker News 每日摘要
-    
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-03-26.md)
+# Hacker News 热门文章摘要 (2026-03-26)
 
-*最后自动更新时间: 2026-03-26 20:05:07*
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
 ## 1. 量化：自下而上
 
 **原文标题**: Quantization from the Ground Up
@@ -138,146 +137,205 @@ Despite calls for reform from lawmakers like Sen. Ron Wyden and Rep. Warren Davi
 
 ---
 
-## 历史记录
+## 11. Earthquake scientists reveal how overplowing weakens soil at experimental farm
 
-| 序号 | 文件 |
-| --- | --- |
-| 1 | [2026-03-26](output/hacker_news_summary_2026-03-26.md) |
-| 2 | [2026-03-20](output/hacker_news_summary_2026-03-20.md) |
-| 3 | [2026-03-23](output/hacker_news_summary_2026-03-23.md) |
-| 4 | [2026-03-22](output/hacker_news_summary_2026-03-22.md) |
-| 5 | [2026-03-25](output/hacker_news_summary_2026-03-25.md) |
-| 6 | [2026-03-21](output/hacker_news_summary_2026-03-21.md) |
-| 7 | [2026-03-16](output/hacker_news_summary_2026-03-16.md) |
-| 8 | [2026-03-19](output/hacker_news_summary_2026-03-19.md) |
-| 9 | [2026-03-18](output/hacker_news_summary_2026-03-18.md) |
-| 10 | [2026-03-17](output/hacker_news_summary_2026-03-17.md) |
-| 11 | [2026-03-15](output/hacker_news_summary_2026-03-15.md) |
-| 12 | [2026-03-09](output/hacker_news_summary_2026-03-09.md) |
-| 13 | [2026-03-14](output/hacker_news_summary_2026-03-14.md) |
-| 14 | [2026-03-12](output/hacker_news_summary_2026-03-12.md) |
-| 15 | [2026-03-10](output/hacker_news_summary_2026-03-10.md) |
-| 16 | [2026-03-13](output/hacker_news_summary_2026-03-13.md) |
-| 17 | [2026-03-11](output/hacker_news_summary_2026-03-11.md) |
-| 18 | [2026-03-04](output/hacker_news_summary_2026-03-04.md) |
-| 19 | [2026-03-07](output/hacker_news_summary_2026-03-07.md) |
-| 20 | [2026-03-08](output/hacker_news_summary_2026-03-08.md) |
-| 21 | [2026-03-05](output/hacker_news_summary_2026-03-05.md) |
-| 22 | [2026-03-06](output/hacker_news_summary_2026-03-06.md) |
-| 23 | [2026-03-03](output/hacker_news_summary_2026-03-03.md) |
-| 24 | [2026-03-01](output/hacker_news_summary_2026-03-01.md) |
-| 25 | [2026-02-27](output/hacker_news_summary_2026-02-27.md) |
-| 26 | [2026-02-28](output/hacker_news_summary_2026-02-28.md) |
-| 27 | [2026-03-02](output/hacker_news_summary_2026-03-02.md) |
-| 28 | [2026-02-26](output/hacker_news_summary_2026-02-26.md) |
-| 29 | [2026-02-23](output/hacker_news_summary_2026-02-23.md) |
-| 30 | [2026-02-24](output/hacker_news_summary_2026-02-24.md) |
-| 31 | [2026-02-25](output/hacker_news_summary_2026-02-25.md) |
-| 32 | [2026-02-22](output/hacker_news_summary_2026-02-22.md) |
-| 33 | [2026-02-21](output/hacker_news_summary_2026-02-21.md) |
-| 34 | [2026-02-17](output/hacker_news_summary_2026-02-17.md) |
-| 35 | [2026-02-19](output/hacker_news_summary_2026-02-19.md) |
-| 36 | [2026-02-18](output/hacker_news_summary_2026-02-18.md) |
-| 37 | [2026-02-20](output/hacker_news_summary_2026-02-20.md) |
-| 38 | [2026-02-15](output/hacker_news_summary_2026-02-15.md) |
-| 39 | [2026-02-16](output/hacker_news_summary_2026-02-16.md) |
-| 40 | [2026-02-13](output/hacker_news_summary_2026-02-13.md) |
-| 41 | [2026-02-14](output/hacker_news_summary_2026-02-14.md) |
-| 42 | [2026-02-12](output/hacker_news_summary_2026-02-12.md) |
-| 43 | [2026-02-11](output/hacker_news_summary_2026-02-11.md) |
-| 44 | [2026-02-09](output/hacker_news_summary_2026-02-09.md) |
-| 45 | [2026-02-07](output/hacker_news_summary_2026-02-07.md) |
-| 46 | [2026-02-06](output/hacker_news_summary_2026-02-06.md) |
-| 47 | [2026-02-08](output/hacker_news_summary_2026-02-08.md) |
-| 48 | [2026-02-10](output/hacker_news_summary_2026-02-10.md) |
-| 49 | [2026-02-05](output/hacker_news_summary_2026-02-05.md) |
-| 50 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
-| 51 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
-| 52 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
-| 53 | [2026-02-03](output/hacker_news_summary_2026-02-03.md) |
-| 54 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
-| 55 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
-| 56 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
-| 57 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
-| 58 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
-| 59 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
-| 60 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
-| 61 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
-| 62 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
-| 63 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
-| 64 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 65 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 66 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
-| 67 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
-| 68 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
-| 69 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
-| 70 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
-| 71 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
-| 72 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 73 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
-| 74 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
-| 75 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 76 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 77 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 78 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 79 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
-| 80 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 81 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 82 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 83 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 84 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 85 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 86 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 87 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 88 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 89 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 90 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 91 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 92 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 93 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 94 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 95 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 96 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 97 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 98 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 99 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 100 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 101 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 102 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 103 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 104 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 105 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 106 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 107 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 108 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 109 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 110 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 111 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 112 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 113 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 114 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 115 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 116 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 117 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 118 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 119 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 120 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 121 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 122 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 123 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 124 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 125 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 126 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 127 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 128 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 129 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 130 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 131 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 132 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 133 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 134 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 135 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 136 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 137 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 138 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 139 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+**原文标题**: Earthquake scientists reveal how overplowing weakens soil at experimental farm
+
+**原文链接**: [https://www.washington.edu/news/2026/03/19/earthquake-scientists-reveal-how-overplowing-weakens-soil-at-experimental-farm/](https://www.washington.edu/news/2026/03/19/earthquake-scientists-reveal-how-overplowing-weakens-soil-at-experimental-farm/)
+
+生成摘要时出错
+
+---
+
+## 12. Disney Exits OpenAI Deal After AI Giant Shutters Sora
+
+**原文标题**: Disney Exits OpenAI Deal After AI Giant Shutters Sora
+
+**原文链接**: [https://www.hollywoodreporter.com/business/digital/openai-shutting-down-sora-ai-video-app-1236546187/](https://www.hollywoodreporter.com/business/digital/openai-shutting-down-sora-ai-video-app-1236546187/)
+
+生成摘要时出错
+
+---
+
+## 13. Sodium-ion EV battery breakthrough delivers 11-min charging and 450 km range
+
+**原文标题**: Sodium-ion EV battery breakthrough delivers 11-min charging and 450 km range
+
+**原文链接**: [https://electrek.co/2026/03/25/sodium-ion-ev-battery-delivers-11-min-charging-450-km-range/](https://electrek.co/2026/03/25/sodium-ion-ev-battery-delivers-11-min-charging-450-km-range/)
+
+生成摘要时出错
+
+---
+
+## 14. My minute-by-minute response to the LiteLLM malware attack
+
+**原文标题**: My minute-by-minute response to the LiteLLM malware attack
+
+**原文链接**: [https://futuresearch.ai/blog/litellm-attack-transcript/](https://futuresearch.ai/blog/litellm-attack-transcript/)
+
+生成摘要时出错
+
+---
+
+## 15. LibreOffice and the art of overreacting
+
+**原文标题**: LibreOffice and the art of overreacting
+
+**原文链接**: [https://blog.documentfoundation.org/blog/2026/03/25/libreoffice-and-the-art-of-overreacting/](https://blog.documentfoundation.org/blog/2026/03/25/libreoffice-and-the-art-of-overreacting/)
+
+生成摘要时出错
+
+---
+
+## 16. China is mass-producing hypersonic missiles for $99,000
+
+**原文标题**: China is mass-producing hypersonic missiles for $99,000
+
+**原文链接**: [https://kdwalmsley.substack.com/p/on-sale-now-china-is-mass-producing](https://kdwalmsley.substack.com/p/on-sale-now-china-is-mass-producing)
+
+生成摘要时出错
+
+---
+
+## 17. Obsolete Sounds
+
+**原文标题**: Obsolete Sounds
+
+**原文链接**: [https://citiesandmemory.com/obsolete-sounds/](https://citiesandmemory.com/obsolete-sounds/)
+
+生成摘要时出错
+
+---
+
+## 18. Ball Pit
+
+**原文标题**: Ball Pit
+
+**原文链接**: [https://codepen.io/mrdoob_/full/NPRwLZd](https://codepen.io/mrdoob_/full/NPRwLZd)
+
+The provided URL leads to an interactive 3D web demonstration titled "Ball Pit" by Mr.doob, a well-known developer and creator of the Three.js library. Rather than a traditional article with textual content, the page presents a real-time simulation of a large number of colorful spheres contained within a virtual pit.
+
+The core of the demo is its physics engine, which allows the balls to move, bounce, and collide realistically with each other and the pit's walls. Users can interact with the scene by clicking and dragging their mouse to rotate the camera and view the dynamic interactions from various angles. The simulation showcases impressive performance in rendering and calculating physics for numerous objects simultaneously within a web browser, likely utilizing WebGL and Three.js. It serves as a visual testament to modern web capabilities in 3D graphics and interactive physics simulations.
+
+---
+
+## 19. Newly purchased Vizio TVs now require Walmart accounts to use smart features
+
+**原文标题**: Newly purchased Vizio TVs now require Walmart accounts to use smart features
+
+**原文链接**: [https://arstechnica.com/gadgets/2026/03/newly-purchased-vizio-tvs-now-require-walmart-accounts-to-use-smart-features/](https://arstechnica.com/gadgets/2026/03/newly-purchased-vizio-tvs-now-require-walmart-accounts-to-use-smart-features/)
+
+生成摘要时出错
+
+---
+
+## 20. I tried to prove I'm not AI. My aunt wasn't convinced
+
+**原文标题**: I tried to prove I'm not AI. My aunt wasn't convinced
+
+**原文链接**: [https://www.bbc.com/future/article/20260324-i-tried-to-prove-im-not-an-ai-deepfake](https://www.bbc.com/future/article/20260324-i-tried-to-prove-im-not-an-ai-deepfake)
+
+生成摘要时出错
+
+---
+
+## 21. Regular army and reserve components enlistment program: Summary of change
+
+**原文标题**: Regular army and reserve components enlistment program: Summary of change
+
+**原文链接**: [https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN42922-AR_601-210-000-WEB-1.pdf](https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN42922-AR_601-210-000-WEB-1.pdf)
+
+生成摘要时出错
+
+---
+
+## 22. AI users whose lives were wrecked by delusion
+
+**原文标题**: AI users whose lives were wrecked by delusion
+
+**原文链接**: [https://www.theguardian.com/lifeandstyle/2026/mar/26/ai-chatbot-users-lives-wrecked-by-delusion](https://www.theguardian.com/lifeandstyle/2026/mar/26/ai-chatbot-users-lives-wrecked-by-delusion)
+
+生成摘要时出错
+
+---
+
+## 23. Health NZ staff told to stop using ChatGPT to write clinical notes
+
+**原文标题**: Health NZ staff told to stop using ChatGPT to write clinical notes
+
+**原文链接**: [https://www.rnz.co.nz/news/national/590645/health-nz-staff-told-to-stop-using-chatgpt-to-write-clinical-notes](https://www.rnz.co.nz/news/national/590645/health-nz-staff-told-to-stop-using-chatgpt-to-write-clinical-notes)
+
+生成摘要时出错
+
+---
+
+## 24. Interoperability Can Save the Open Web (2023)
+
+**原文标题**: Interoperability Can Save the Open Web (2023)
+
+**原文链接**: [https://spectrum.ieee.org/doctorow-interoperability](https://spectrum.ieee.org/doctorow-interoperability)
+
+生成摘要时出错
+
+---
+
+## 25. Sony V. Cox Decision Reversed
+
+**原文标题**: Sony V. Cox Decision Reversed
+
+**原文链接**: [https://supreme.justia.com/cases/federal/us/607/24-171/](https://supreme.justia.com/cases/federal/us/607/24-171/)
+
+生成摘要时出错
+
+---
+
+## 26. Show HN: A plain-text cognitive architecture for Claude Code
+
+**原文标题**: Show HN: A plain-text cognitive architecture for Claude Code
+
+**原文链接**: [https://lab.puga.com.br/cog/](https://lab.puga.com.br/cog/)
+
+生成摘要时出错
+
+---
+
+## 27. US expected to send thousands more soldiers to Middle East, sources say
+
+**原文标题**: US expected to send thousands more soldiers to Middle East, sources say
+
+**原文链接**: [https://www.reuters.com/world/middle-east/us-expected-send-thousands-soldiers-middle-east-sources-say-2026-03-24/](https://www.reuters.com/world/middle-east/us-expected-send-thousands-soldiers-middle-east-sources-say-2026-03-24/)
+
+生成摘要时出错
+
+---
+
+## 28. A Eulogy for Vim
+
+**原文标题**: A Eulogy for Vim
+
+**原文链接**: [https://drewdevault.com/2026/03/25/2026-03-25-Forking-vim.html](https://drewdevault.com/2026/03/25/2026-03-25-Forking-vim.html)
+
+生成摘要时出错
+
+---
+
+## 29. A Compiler Writing Journey
+
+**原文标题**: A Compiler Writing Journey
+
+**原文链接**: [https://github.com/DoctorWkt/acwj](https://github.com/DoctorWkt/acwj)
+
+生成摘要时出错
+
+---
+
+## 30. Intel Announces Arc Pro B70 and Arc Pro B65 GPUs
+
+**原文标题**: Intel Announces Arc Pro B70 and Arc Pro B65 GPUs
+
+**原文链接**: [https://www.techpowerup.com/347703/intel-announces-arc-pro-b70-and-arc-pro-b65-gpus-maxes-out-xe2-battlemage-architecture](https://www.techpowerup.com/347703/intel-announces-arc-pro-b70-and-arc-pro-b65-gpus-maxes-out-xe2-battlemage-architecture)
+
+生成摘要时出错
+
+---
+
