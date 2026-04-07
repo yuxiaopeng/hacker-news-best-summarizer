@@ -1,135 +1,141 @@
 # Hacker News 每日摘要
     
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-04-06.md)
+这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-04-07.md)
 
-*最后自动更新时间: 2026-04-06 20:17:58*
-## 1. 威胁在于安逸地滑向对自身所为一无所知。
+*最后自动更新时间: 2026-04-07 20:14:28*
+## 1. 萨姆·奥特曼或将掌控我们的未来——他可信吗？
 
-**原文标题**: The threat is comfortable drift toward not understanding what you're doing
+**原文标题**: Sam Altman may control our future – can he be trusted?
 
-**原文链接**: [https://ergosphere.blog/posts/the-machines-are-fine/](https://ergosphere.blog/posts/the-machines-are-fine/)
+**原文链接**: [https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted](https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted)
 
-文章《威胁在于安逸地滑向对自身所为的不知所云》指出，人工智能在学术界的主要危险并非机器本身，而是对人类理解力的侵蚀。作者用一个比喻阐明了这一点：爱丽丝通过传统的刻苦学习掌握了天体物理学，建立了深厚的内在知识，而鲍勃使用AI代理进行总结、调试和写作，也产出了一篇同样可以发表的论文，但却缺乏真正的理解。侧重于产出的学术评估标准无法区分这两种情况，从而助长了权宜之计，而非智力发展。
+2023年末，OpenAI首席执行官山姆·奥特曼（Sam Altman）被由首席科学家伊利亚·苏茨克维尔（Ilya Sutskever）领导的董事会秘密解雇，原因是董事会对其诚信以及在安全协议方面涉嫌虚假陈述存在严重担忧。作为联合创始人的苏茨克维尔认为奥特曼不适合掌控接近人类智能水平的技术，并指出他“撒谎”的一贯模式。该董事会以将人类安全置于利润之上为宗旨，认为奥特曼缺乏必要的诚信。
 
-作者断言，对于天体物理学等领域，真正的价值在于人类的发现过程和对思维的培养，而不仅仅是结果。一项实验表明，AI可以生成一篇可发表的论文，但仅限于在一位专家的严格监督下，这位专家凭借其深厚的理解力捕捉到了AI的“幻觉”和错误。更强大的AI模型并不会消除对这种人类专业知识的需求；它们只会拓宽*受监督*代理的应用范围，从而使人类理解力的缺失更难被察觉。
+奥特曼被解雇一事令微软等投资者措手不及，并叫停了与Thrive公司计划中的860亿美元估值交易。奥特曼迅速发起了一场积极的公关反击战，将董事会的行动定性为一场“政变”。在微软威胁要启动竞争性业务以及员工大规模离职的背景下，董事会在五天内被迫恢复了奥特曼的职务。
 
-作者驳斥了关于AI的极端立场，并将真正的威胁定义为“缓慢而舒适地滑向对自身所为的不知所云”。这会造就那些能产出结果却缺乏基础理解的研究人员，他们只知道“要按哪些按钮，却不知道这些按钮为何存在”。科学的核心，即成为一个独立思考者的缓慢而往往痛苦的过程，是唯一真正不可替代的部分；如果为了追求更快的产出而绕过这一过程，就可能失去“科学的伟大之处”。作者作为一名AI用户，强调有效利用AI仍然需要事先具备人类的理解力。
+解雇奥特曼的董事会成员被新成员取代，这些新成员是与奥特曼密切协商后选出的。尽管要求对这些指控进行调查，但新董事会的独立性却引人质疑。
 
----
-
-## 2. 八年夙愿，三个月AI构建
-
-**原文标题**: Eight years of wanting, three months of building with AI
-
-**原文链接**: [https://lalitm.com/post/building-syntaqlite-ai/](https://lalitm.com/post/building-syntaqlite-ai/)
-
-经过八年夙愿和三个月（250小时）的投入，作者发布了“syntaqlite”，一套高质量的SQLite开发工具，并将其创建主要归因于AI编码代理。该项目解决了长期以来开源SQLite工具（特别是PerfettoSQL）不足的痛点。构建它充满挑战，因为SQLite独特且未明确规范的C语言解析器，使得一个独立开发者完成这项工作“既困难又繁琐”。
-
-最初，在1月份，作者与Claude Code进行了“凭直觉编码”，将大部分设计和实现工作委托给它。尽管这验证了方法并生成了大量测试，但却导致了一个“一团乱麻的代码库”。作者随后放弃了它，用Rust重写，并采取了严谨的方法，完全掌握了所有权，并将AI用作特定任务的“超级自动补全”。
-
-AI通过提供具体的问题和原型，在克服惰性方面发挥了宝贵作用。它加速了显而易见任务的代码生成，并促进了持续重构。作为一名“助教”，AI协助进行研究（例如：代码美化），并快速学习Rust工具链和编辑器扩展API等新领域，使项目能够包含编辑器扩展和WASM游乐场等“长尾”功能，从而提高了其完整性和用户体验。
-
-然而，使用AI也付出了代价。作者体验到一种类似老虎机的“上瘾”，导致疲劳时陷入低效的提示循环。更重要的是，过度委托导致他“脱离”了代码库的复杂细节，阻碍了调试以及与AI代理的有效沟通。最终，AI使该项目得以实现并变得全面，但需要仔细、亲力亲为的指导来管理其弊端。
+关于奥特曼诚信的争论仍在继续。他的前同事坚持对奥特曼涉嫌欺骗的担忧，认为这对如此颠覆性人工智能的领导者来说是危险的。与此同时，奥特曼驳斥了这些批评，将其归因于过去对冲突的回避，尽管一位前董事会成员将他“我无法改变我的个性”的言论解读为承认持续的欺骗。奥特曼现在推动着OpenAI的快速增长以及雄心勃勃的人工智能基础设施计划，引发了关于谁来掌控人类未来的关键问题。
 
 ---
 
-## 3. 何必用多代币，少代币就搞定。
+## 2. 问题：Claude Code在二月更新后无法用于复杂的工程任务。
 
-**原文标题**: Caveman: Why use many token when few token do trick
+**原文标题**: Issue: Claude Code is unusable for complex engineering tasks with Feb updates
 
-**原文链接**: [https://github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
+**原文链接**: [https://github.com/anthropics/claude-code/issues/42796](https://github.com/anthropics/claude-code/issues/42796)
 
-“Caveman”是一款用于LLM代理（如Claude Code和Codex）的工具和插件，它通过让AI“像穴居人一样说话”来显著减少token使用量——平均削减65%的输出token，同时保持完整的技术准确性。
+署名为“stellaraccident”的详细分析指出，自2026年2月更新以来，Claude Code（Opus模型）在复杂工程任务中的性能严重下降。来自6,852个会话、17,871个思考块和234,760次工具调用的定量数据显示，这种退步与“思考内容删减”的推出以及此前估计思考深度的下降密切相关。
 
-该工具通过消除填充词、冠词、客套话和模糊措辞来发挥作用，但它一丝不苟地保留了代码块、技术术语和精确的错误信息。这种“话少，但脑子不小”的方法带来了更快的响应速度（最高可达3倍），通过消除“大段文字”提高了可读性，并显著节省了成本。用户可以通过“Lite”、“Full”和“Ultra”强度级别来调整压缩程度。基准测试表明，在各种技术任务中，token节省量介于22%到87%之间。
+该报告涵盖2026年1月30日至4月1日，显示截至2月底思考深度下降了67%，随后到3月12日实现了完全删减。3月8日独立报告的质量问题，与内容删减达到50%的时间点精确吻合。
 
-一个配套工具“Caveman Compress”则处理输入token。它将项目内存文件（例如CLAUDE.md）重写成“穴居人”风格的语言，平均节省了每次会话加载的45%的token。这种压缩只针对自然语言散文，保留了代码、URL、标题和其他技术结构不变，同时还保留了一个人类可读的原始版本。
+主要行为转变包括：
+*   **研究减少：** 读取与编辑比率下降70%（从6.6降至2.0），导致在缺乏适当上下文的情况下出现“先编辑”行为。
+*   **错误增多：** “未先读取即编辑”的情况从6.2%激增至33.7%。
+*   **推理能力下降：** “推理循环”、“最简修复”心态、过早停止、寻求许可（3月8日后出现173次程序化停止钩子违规，此前为零）、用户中断以及自认的质量问题显著增加。
+*   **精准度丧失：** 整文件写入使用量翻倍，且约定遵循度受损。
 
-安装通过`npx skills add`或相应的插件系统进行，非常简单。通过结合用于输出的“Caveman”和用于输入的“Caveman Compress”，用户可以在整个LLM对话中实现全面的token节省，从而提高效率并降低成本。
+该分析认为，“扩展思考令牌”对于高级工程工作流中的多步骤规划、约定遵循、自我纠正和连贯推理至关重要。当思考深度不足时，模型会默认采取“最廉价的行动”，例如不阅读就编辑或过早停止。
 
----
-
-## 4. Gemma 4 在 iPhone 上
-
-**原文标题**: Gemma 4 on iPhone
-
-**原文链接**: [https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337](https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337)
-
-Gemma 4 已作为一次重大更新发布，为用户带来了最新的高性能模型。其一个主要特点是能够完全离线运行。此外，Gemma 4 还引入了新功能：“思考模式”和“代理技能”。
+作者建议Anthropic提高思考分配的透明度，为高级用户提供“最大思考”层级，在API响应中公开`thinking_tokens`，并监控停止钩子违规率等金丝雀指标。
 
 ---
 
-## 5. Show HN: 我做了一个小型LLM来揭秘语言模型的工作原理
-
-**原文标题**: Show HN: I built a tiny LLM to demystify how language models work
-
-**原文链接**: [https://github.com/arman-bd/guppylm](https://github.com/arman-bd/guppylm)
-
-GuppyLM是一个拥有约900万参数的大型语言模型 (LLM)，旨在揭秘语言模型，证明训练一个LLM无需博士学位或庞大GPU集群也能实现。用户可以在单个Colab T4 GPU上，仅需5分钟从零开始训练一个功能性LLM，涵盖数据生成、分词器、架构、训练和推理。该项目旨在使LLM的内部运作透明化，展示原始文本如何转化为训练好的权重和生成的输出。
-
-GuppyLM本身就具象化为一条名为Guppy的小鱼，以简短的小写句子谈论水、食物和鱼缸生活，刻意避免人类的抽象概念。其架构是一个简单的“香草”Transformer，拥有6层，384个隐藏维度，一个4096个词元（token）的BPE词汇表，以及128个词元的最大序列长度。它在60个以鱼为中心的主题上，通过6万次合成对话进行训练。
-
-关键设计选择包括将个性直接融入权重（无系统提示），由于其128个词元的上下文窗口，仅支持单轮对话，以及在其小规模下为保持清晰和效率而采用简单的Transformer。合成数据集确保了一致的、鱼类般的个性。用户可以与预训练模型聊天，或训练自己的模型，训练出的模型足够小，可以在浏览器中运行。
-
----
-
-## 6. 微软有多少产品名为'Copilot'？
-
-**原文标题**: How many products does Microsoft have named 'Copilot'?
-
-**原文链接**: [https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html](https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html)
-
-The article details the author's challenge in explaining "Microsoft Copilot" due to the name referring to a vast and diverse array of products and features. Initially, the author identified at least 75 different "Copilots," a number later updated to 80 after the community pointed out omissions like Gaming Copilot and Microsoft Dragon Copilot.
-
-The term "Copilot" now encompasses everything from apps, features, and platforms to a dedicated keyboard key, an entire category of laptops, and even a tool designed for building more Copilots. The author found no single comprehensive list, not even from Microsoft's own sources, prompting them to piece together this information from product pages, launch announcements, and marketing materials.
-
-To illustrate the complexity, the author created an interactive visualization mapping all 80 "Copilots," grouped by category, but admitted they could not find any discernible pattern in Microsoft's naming convention. The piece highlights the significant fragmentation and potential user confusion surrounding the "Copilot" brand across Microsoft's ecosystem.
-
----
-
-## 7. 微软自 Petzold 以来就没有连贯的 GUI 策略。
-
-**原文标题**: Microsoft hasn't had a coherent GUI strategy since Petzold
-
-**原文链接**: [https://www.jsnover.com/blog/2026/03/13/microsoft-hasnt-had-a-coherent-gui-strategy-since-petzold/](https://www.jsnover.com/blog/2026/03/13/microsoft-hasnt-had-a-coherent-gui-strategy-since-petzold/)
-
-生成摘要时出错
-
----
-
-## 8. 为什么瑞士有25 Gbit互联网而美国没有
-
-**原文标题**: Why Switzerland has 25 Gbit internet and America doesn't
-
-**原文链接**: [https://sschueller.github.io/posts/the-free-market-lie/](https://sschueller.github.io/posts/the-free-market-lie/)
-
-The article "Why Switzerland has 25 Gbit internet and America doesn't" argues that superior internet in Switzerland compared to the US and Germany stems from differing approaches to natural monopolies. Switzerland enjoys 25 Gbit symmetrical fiber internet with multiple providers and dedicated connections, while the US and Germany suffer from slower speeds, limited choices, and often shared infrastructure.
-
-The core concept is a "natural monopoly," where infrastructure costs are high, but serving additional customers is low. The article contends that allowing multiple companies to build redundant infrastructure ("overbuild" in Germany) or establishing territorial monopolies (as in the US) leads to stagnation, high prices, and lack of innovation, rather than true competition.
-
-Switzerland treats its fiber infrastructure as a neutral, shared asset, often publicly or semi-publicly built. Each home receives a dedicated 4-strand Point-to-Point fiber line that terminates in an open hub. This "Layer 1" open access allows any Internet Service Provider (ISP) to connect, fostering genuine competition on service quality and price. Swiss regulators have been instrumental in mandating this open-access standard, even intervening to prevent the incumbent, Swisscom, from switching to a shared (P2MP) model that would have restricted competitor access.
-
-Conversely, the US model fosters territorial monopolies, offering shared P2MP connections with little incentive for incumbents to innovate or lower prices. Germany's focus on infrastructure competition has led to wasteful "overbuild" and incumbent advantages despite heavy regulation.
-
-The article concludes that real capitalism, for natural monopolies like internet infrastructure, requires regulated open access to shared assets to enable genuine competition. It recommends policies such as mandating open access, enforcing Point-to-Point architecture, establishing neutral fiber standards, empowering competition authorities, and supporting municipal fiber to achieve better internet services.
-
----
-
-## 9. I won't download your app. The web version is a-ok
+## 3. 我不会下载你们的App。网页版用起来没毛病。
 
 **原文标题**: I won't download your app. The web version is a-ok
 
 **原文链接**: [https://www.0xsid.com/blog/wont-download-your-app](https://www.0xsid.com/blog/wont-download-your-app)
 
+The author expresses significant frustration over companies aggressively pushing users from web versions to dedicated apps, often via intrusive pop-ups and deliberately hobbled web experiences. They champion web usage for the superior control it offers, enabling customizability through user scripts, ad-blockers, and extensions to enhance usability and block unwanted content.
+
+The article argues that app makers prioritize apps to gain more control over users. Apps facilitate dark patterns, push notifications, intrusive data collection (telemetry), and lock users into "walled gardens" for retention, rather than genuinely improving user experience. The author questions the necessity of most apps, contending many are merely "thin clients" displaying simple text and media (JSON data) that a browser could easily handle, without requiring large downloads, extensive permissions, or background processes.
+
+Moreover, the author criticizes the quality of many apps, noting they often lack a polished native feel, exhibiting "uncanny valley" jankiness—subtle inconsistencies in scrolling, gestures, or timing that detract from the experience.
+
+This trend is termed the "enshittification loop": companies initially attract users on the open, frictionless web, then deliberately degrade the web version to force them into apps. Once inside the app, users become a captive audience for ads and data collection, bypassing browser-based controls. This strategy, driven by financial incentives and app download metrics, transforms the browser into a mere marketing funnel for app stores, despite the web's inherent advantages.
+
+---
+
+## 4. HN 展示：我打造了一个微型 LLM，用以揭秘语言模型的工作原理。
+
+**原文标题**: Show HN: I built a tiny LLM to demystify how language models work
+
+**原文链接**: [https://github.com/arman-bd/guppylm](https://github.com/arman-bd/guppylm)
+
+GuppyLM是一个约900万参数的语言模型，旨在揭秘大型语言模型（LLM）的训练过程，展示任何人都可以在没有博士学位或大量资源的情况下从零开始构建一个。它扮演着一条名叫Guppy的小鱼，用简短、小写的句子谈论它的水生世界（水、食物、光线、鱼缸生活），并刻意避免人类的抽象概念。
+
+该项目强调易用性：用户可以在单个Colab T4 GPU上约五分钟内训练自己的GuppyLM，或者在浏览器中（通过一个约10MB的量化ONNX模型）或本地与预训练版本进行聊天。
+
+GuppyLM采用普通的Transformer架构，包含6层、384个隐藏维度、一个4,096词元的BPE词汇表和128词元的最大序列长度。它的简洁性（没有GQA、RoPE等）是刻意的，旨在清晰地解释大型语言模型的工作原理。它通过模板组合生成了涵盖60个主题的60,000个合成对话进行训练，旨在确保其具备友善、好奇且痴迷食物的一致鱼类个性。
+
+设计选择包括将个性融入模型权重（无需系统提示）、由于上下文窗口较短而侧重于可靠的单轮交互，以及利用定制的合成数据。该项目提供了数据生成、分词器、模型架构、训练和推理的完整代码，并采用MIT许可证。
+
+---
+
+## 5. HN 展示：粗野主义混凝土笔记本支架 (2024)
+
+**原文标题**: Show HN: Brutalist Concrete Laptop Stand (2024)
+
+**原文链接**: [https://sam-burns.com/posts/concrete-laptop-stand/](https://sam-burns.com/posts/concrete-laptop-stand/)
+
+一位粗野主义建筑爱好者制作了一个独特的“粗野主义混凝土笔记本支架”，旨在捕捉“beton brut”（清水混凝土）美学和城市衰败的主题。这个支架可能重达世界之最，集成了实用功能，例如两个2.1安培的USB充电端口和一个笔记本电脑用的三孔插座。
+
+它的设计以悬挑结构体现了粗野主义风格，并有意融入了破败元素：一个受损的角落、裸露的生锈钢筋，以及经过氨水处理、呈现老旧外观的假腐蚀铜线。支架上还带有一个一体化的酥油罐花盆，里面栽种着一盆“佛珠吊兰”，一个带有仿真苔藓的人工锈蚀笔筒则共同完善了城市衰败的主题。
+
+这个支架通过两次混凝土浇筑制成，故意采用不均匀的混合和打磨，以营造出风化的表面。创作者对最终成品感到非常满意，指出粗野主义和城市衰败的主题都成功实现了，尽管其沉重的分量需要用手推车才能搬运。
+
+---
+
+## 6. France pulls last gold held in US
+
+**原文标题**: France pulls last gold held in US
+
+**原文链接**: [https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/](https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/)
+
+法国已成功完成将其此前存放在美国的全部黄金储备遣返本国的工作，这项战略性进程始于20世纪60年代戴高乐总统的倡议，现已圆满结束。此举涉及将实物黄金从纽约联邦储备银行运回，据报道，这为法国带来了150亿美元的巨额未实现收益，得益于自购入以来黄金价格的大幅上涨。
+
+戴高乐最初启动遣返行动是出于对美元稳定性的担忧，以及在布雷顿森林体系下，法国希望摆脱美国货币政策的束缚，捍卫自身的金融独立性。
+
+此次遣返工作的完成使法国成为全球第五大黄金持有国，其目前储备量为2,436.5吨，价值超过1500亿美元。法国的行动与各国央行，特别是欧洲（包括德国、荷兰、比利时和奥地利）央行遣返黄金的更广泛趋势相吻合。这一趋势近年来有所加速，其推动因素是对国家资产拥有更大控制权的愿望、地缘政治担忧，以及在2008年金融危机和2014年克里米亚被吞并等事件之后，对美元和国际金融体系日益增长的不信任感。
+
+---
+
+## 7. 凭感觉编程的狂热，正是内部自用模式的走火入魔。
+
+**原文标题**: The cult of vibe coding is dogfooding run amok
+
+**原文链接**: [https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane](https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane)
+
 生成摘要时出错
 
 ---
 
-## 10. German implementation of eIDAS will require an Apple/Google account to function
+## 8. Are We Idiocracy Yet?
 
-**原文标题**: German implementation of eIDAS will require an Apple/Google account to function
+**原文标题**: Are We Idiocracy Yet?
 
-**原文链接**: [https://bmi.usercontent.opencode.de/eudi-wallet/wallet-development-documentation-public/latest/architecture-concept/06-mobile-devices/02-mdvm/](https://bmi.usercontent.opencode.de/eudi-wallet/wallet-development-documentation-public/latest/architecture-concept/06-mobile-devices/02-mdvm/)
+**原文链接**: [https://idiocracy.wtf/](https://idiocracy.wtf/)
+
+生成摘要时出错
+
+---
+
+## 9. 密码工程师眼中的量子计算时间线
+
+**原文标题**: A cryptography engineer's perspective on quantum computing timelines
+
+**原文链接**: [https://words.filippo.io/crqc-timeline/](https://words.filippo.io/crqc-timeline/)
+
+生成摘要时出错
+
+---
+
+## 10. Battle for Wesnoth: open-source, turn-based strategy game
+
+**原文标题**: Battle for Wesnoth: open-source, turn-based strategy game
+
+**原文链接**: [https://www.wesnoth.org](https://www.wesnoth.org)
 
 生成摘要时出错
 
@@ -139,153 +145,154 @@ The article concludes that real capitalism, for natural monopolies like internet
 
 | 序号 | 文件 |
 | --- | --- |
-| 1 | [2026-04-06](output/hacker_news_summary_2026-04-06.md) |
+| 1 | [2026-04-07](output/hacker_news_summary_2026-04-07.md) |
 | 2 | [2026-04-03](output/hacker_news_summary_2026-04-03.md) |
-| 3 | [2026-04-05](output/hacker_news_summary_2026-04-05.md) |
-| 4 | [2026-04-04](output/hacker_news_summary_2026-04-04.md) |
-| 5 | [2026-03-30](output/hacker_news_summary_2026-03-30.md) |
-| 6 | [2026-03-28](output/hacker_news_summary_2026-03-28.md) |
-| 7 | [2026-03-26](output/hacker_news_summary_2026-03-26.md) |
-| 8 | [2026-03-27](output/hacker_news_summary_2026-03-27.md) |
-| 9 | [2026-04-02](output/hacker_news_summary_2026-04-02.md) |
-| 10 | [2026-03-29](output/hacker_news_summary_2026-03-29.md) |
-| 11 | [2026-04-01](output/hacker_news_summary_2026-04-01.md) |
-| 12 | [2026-03-31](output/hacker_news_summary_2026-03-31.md) |
-| 13 | [2026-03-22](output/hacker_news_summary_2026-03-22.md) |
-| 14 | [2026-03-20](output/hacker_news_summary_2026-03-20.md) |
-| 15 | [2026-03-19](output/hacker_news_summary_2026-03-19.md) |
-| 16 | [2026-03-25](output/hacker_news_summary_2026-03-25.md) |
-| 17 | [2026-03-21](output/hacker_news_summary_2026-03-21.md) |
-| 18 | [2026-03-23](output/hacker_news_summary_2026-03-23.md) |
-| 19 | [2026-03-14](output/hacker_news_summary_2026-03-14.md) |
-| 20 | [2026-03-18](output/hacker_news_summary_2026-03-18.md) |
-| 21 | [2026-03-16](output/hacker_news_summary_2026-03-16.md) |
-| 22 | [2026-03-17](output/hacker_news_summary_2026-03-17.md) |
-| 23 | [2026-03-15](output/hacker_news_summary_2026-03-15.md) |
-| 24 | [2026-03-11](output/hacker_news_summary_2026-03-11.md) |
-| 25 | [2026-03-12](output/hacker_news_summary_2026-03-12.md) |
-| 26 | [2026-03-13](output/hacker_news_summary_2026-03-13.md) |
-| 27 | [2026-03-09](output/hacker_news_summary_2026-03-09.md) |
+| 3 | [2026-04-04](output/hacker_news_summary_2026-04-04.md) |
+| 4 | [2026-04-05](output/hacker_news_summary_2026-04-05.md) |
+| 5 | [2026-04-06](output/hacker_news_summary_2026-04-06.md) |
+| 6 | [2026-04-02](output/hacker_news_summary_2026-04-02.md) |
+| 7 | [2026-03-27](output/hacker_news_summary_2026-03-27.md) |
+| 8 | [2026-03-29](output/hacker_news_summary_2026-03-29.md) |
+| 9 | [2026-03-28](output/hacker_news_summary_2026-03-28.md) |
+| 10 | [2026-03-30](output/hacker_news_summary_2026-03-30.md) |
+| 11 | [2026-03-31](output/hacker_news_summary_2026-03-31.md) |
+| 12 | [2026-04-01](output/hacker_news_summary_2026-04-01.md) |
+| 13 | [2026-03-23](output/hacker_news_summary_2026-03-23.md) |
+| 14 | [2026-03-22](output/hacker_news_summary_2026-03-22.md) |
+| 15 | [2026-03-20](output/hacker_news_summary_2026-03-20.md) |
+| 16 | [2026-03-26](output/hacker_news_summary_2026-03-26.md) |
+| 17 | [2026-03-25](output/hacker_news_summary_2026-03-25.md) |
+| 18 | [2026-03-21](output/hacker_news_summary_2026-03-21.md) |
+| 19 | [2026-03-16](output/hacker_news_summary_2026-03-16.md) |
+| 20 | [2026-03-15](output/hacker_news_summary_2026-03-15.md) |
+| 21 | [2026-03-17](output/hacker_news_summary_2026-03-17.md) |
+| 22 | [2026-03-19](output/hacker_news_summary_2026-03-19.md) |
+| 23 | [2026-03-18](output/hacker_news_summary_2026-03-18.md) |
+| 24 | [2026-03-14](output/hacker_news_summary_2026-03-14.md) |
+| 25 | [2026-03-09](output/hacker_news_summary_2026-03-09.md) |
+| 26 | [2026-03-12](output/hacker_news_summary_2026-03-12.md) |
+| 27 | [2026-03-13](output/hacker_news_summary_2026-03-13.md) |
 | 28 | [2026-03-10](output/hacker_news_summary_2026-03-10.md) |
-| 29 | [2026-03-08](output/hacker_news_summary_2026-03-08.md) |
-| 30 | [2026-03-04](output/hacker_news_summary_2026-03-04.md) |
-| 31 | [2026-03-05](output/hacker_news_summary_2026-03-05.md) |
-| 32 | [2026-03-03](output/hacker_news_summary_2026-03-03.md) |
-| 33 | [2026-03-07](output/hacker_news_summary_2026-03-07.md) |
-| 34 | [2026-03-02](output/hacker_news_summary_2026-03-02.md) |
-| 35 | [2026-03-06](output/hacker_news_summary_2026-03-06.md) |
-| 36 | [2026-02-28](output/hacker_news_summary_2026-02-28.md) |
-| 37 | [2026-02-27](output/hacker_news_summary_2026-02-27.md) |
-| 38 | [2026-03-01](output/hacker_news_summary_2026-03-01.md) |
-| 39 | [2026-02-25](output/hacker_news_summary_2026-02-25.md) |
-| 40 | [2026-02-26](output/hacker_news_summary_2026-02-26.md) |
-| 41 | [2026-02-21](output/hacker_news_summary_2026-02-21.md) |
-| 42 | [2026-02-20](output/hacker_news_summary_2026-02-20.md) |
-| 43 | [2026-02-19](output/hacker_news_summary_2026-02-19.md) |
-| 44 | [2026-02-24](output/hacker_news_summary_2026-02-24.md) |
-| 45 | [2026-02-23](output/hacker_news_summary_2026-02-23.md) |
-| 46 | [2026-02-22](output/hacker_news_summary_2026-02-22.md) |
-| 47 | [2026-02-17](output/hacker_news_summary_2026-02-17.md) |
+| 29 | [2026-03-11](output/hacker_news_summary_2026-03-11.md) |
+| 30 | [2026-03-07](output/hacker_news_summary_2026-03-07.md) |
+| 31 | [2026-03-08](output/hacker_news_summary_2026-03-08.md) |
+| 32 | [2026-03-04](output/hacker_news_summary_2026-03-04.md) |
+| 33 | [2026-03-06](output/hacker_news_summary_2026-03-06.md) |
+| 34 | [2026-03-05](output/hacker_news_summary_2026-03-05.md) |
+| 35 | [2026-03-01](output/hacker_news_summary_2026-03-01.md) |
+| 36 | [2026-02-26](output/hacker_news_summary_2026-02-26.md) |
+| 37 | [2026-03-02](output/hacker_news_summary_2026-03-02.md) |
+| 38 | [2026-02-28](output/hacker_news_summary_2026-02-28.md) |
+| 39 | [2026-03-03](output/hacker_news_summary_2026-03-03.md) |
+| 40 | [2026-02-27](output/hacker_news_summary_2026-02-27.md) |
+| 41 | [2026-02-22](output/hacker_news_summary_2026-02-22.md) |
+| 42 | [2026-02-23](output/hacker_news_summary_2026-02-23.md) |
+| 43 | [2026-02-24](output/hacker_news_summary_2026-02-24.md) |
+| 44 | [2026-02-25](output/hacker_news_summary_2026-02-25.md) |
+| 45 | [2026-02-21](output/hacker_news_summary_2026-02-21.md) |
+| 46 | [2026-02-17](output/hacker_news_summary_2026-02-17.md) |
+| 47 | [2026-02-19](output/hacker_news_summary_2026-02-19.md) |
 | 48 | [2026-02-18](output/hacker_news_summary_2026-02-18.md) |
 | 49 | [2026-02-16](output/hacker_news_summary_2026-02-16.md) |
-| 50 | [2026-02-14](output/hacker_news_summary_2026-02-14.md) |
+| 50 | [2026-02-20](output/hacker_news_summary_2026-02-20.md) |
 | 51 | [2026-02-15](output/hacker_news_summary_2026-02-15.md) |
-| 52 | [2026-02-08](output/hacker_news_summary_2026-02-08.md) |
-| 53 | [2026-02-10](output/hacker_news_summary_2026-02-10.md) |
-| 54 | [2026-02-13](output/hacker_news_summary_2026-02-13.md) |
-| 55 | [2026-02-12](output/hacker_news_summary_2026-02-12.md) |
-| 56 | [2026-02-11](output/hacker_news_summary_2026-02-11.md) |
+| 52 | [2026-02-13](output/hacker_news_summary_2026-02-13.md) |
+| 53 | [2026-02-11](output/hacker_news_summary_2026-02-11.md) |
+| 54 | [2026-02-14](output/hacker_news_summary_2026-02-14.md) |
+| 55 | [2026-02-10](output/hacker_news_summary_2026-02-10.md) |
+| 56 | [2026-02-12](output/hacker_news_summary_2026-02-12.md) |
 | 57 | [2026-02-09](output/hacker_news_summary_2026-02-09.md) |
-| 58 | [2026-02-07](output/hacker_news_summary_2026-02-07.md) |
-| 59 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
-| 60 | [2026-02-03](output/hacker_news_summary_2026-02-03.md) |
-| 61 | [2026-02-05](output/hacker_news_summary_2026-02-05.md) |
-| 62 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
-| 63 | [2026-02-06](output/hacker_news_summary_2026-02-06.md) |
-| 64 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
-| 65 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
-| 66 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
-| 67 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
-| 68 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
-| 69 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
+| 58 | [2026-02-08](output/hacker_news_summary_2026-02-08.md) |
+| 59 | [2026-02-07](output/hacker_news_summary_2026-02-07.md) |
+| 60 | [2026-02-06](output/hacker_news_summary_2026-02-06.md) |
+| 61 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
+| 62 | [2026-02-05](output/hacker_news_summary_2026-02-05.md) |
+| 63 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
+| 64 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
+| 65 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
+| 66 | [2026-02-03](output/hacker_news_summary_2026-02-03.md) |
+| 67 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
+| 68 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
+| 69 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
 | 70 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
-| 71 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
-| 72 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 73 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
-| 74 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
-| 75 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
-| 76 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
-| 77 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 78 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
-| 79 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
-| 80 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
-| 81 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 71 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
+| 72 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
+| 73 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
+| 74 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
+| 75 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
+| 76 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
+| 77 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
+| 78 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
+| 79 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
+| 80 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
+| 81 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
 | 82 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
-| 83 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 84 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
-| 85 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
-| 86 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 87 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 88 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 89 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
-| 90 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 91 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 92 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 93 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 94 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 95 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 96 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 83 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
+| 84 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
+| 85 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
+| 86 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
+| 87 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
+| 88 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
+| 89 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
+| 90 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
+| 91 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
+| 92 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
+| 93 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
+| 94 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
+| 95 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
+| 96 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
 | 97 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 98 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 99 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 100 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 101 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 102 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 103 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 104 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 105 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 106 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 107 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 108 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 109 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 110 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 111 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 112 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 113 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 114 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 115 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 116 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 117 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 118 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 98 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
+| 99 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
+| 100 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
+| 101 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
+| 102 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
+| 103 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
+| 104 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
+| 105 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
+| 106 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
+| 107 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
+| 108 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
+| 109 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
+| 110 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
+| 111 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
+| 112 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
+| 113 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
+| 114 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
+| 115 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
+| 116 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
+| 117 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
+| 118 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
 | 119 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 120 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 121 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 122 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 120 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
+| 121 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
+| 122 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
 | 123 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 124 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 125 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 126 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 127 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 128 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 129 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 124 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
+| 125 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
+| 126 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
+| 127 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
+| 128 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
+| 129 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
 | 130 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 131 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 132 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
+| 131 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
+| 132 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
 | 133 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 134 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 134 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
 | 135 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 136 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 137 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 138 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 139 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 140 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 141 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 142 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 143 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 144 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 145 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 146 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 136 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
+| 137 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
+| 138 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
+| 139 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
+| 140 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
+| 141 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
+| 142 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
+| 143 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
+| 144 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
+| 145 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
+| 146 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
 | 147 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
 | 148 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 149 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 150 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+| 149 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
+| 150 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
+| 151 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
