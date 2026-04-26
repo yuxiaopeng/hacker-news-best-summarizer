@@ -1,122 +1,66 @@
 [
   {
-    "id": "47884971",
-    "title": "DeepSeek v4",
-    "url": "https://api-docs.deepseek.com/news/news260424",
-    "summary": "DeepSeek-V4 Preview is officially live and open-sourced, ushering in an era of cost-effective 1M context length. The release features two models:\n\n1.  **DeepSeek-V4-Pro**: A powerful model with 1.6T total and 49B active parameters, offering performance comparable to top closed-source models. It excels in agentic coding (SOTA open-source), boasts rich world knowledge (second only to Gemini-3.1-Pro), and demonstrates world-class reasoning in Math, STEM, and Coding.\n2.  **DeepSeek-V4-Flash**: A more efficient option with 284B total and 13B active parameters, providing fast response times and economical API pricing. Its reasoning capabilities closely approach V4-Pro, and it performs comparably on simple agent tasks.\n\nKey innovations include a novel attention mechanism (token-wise compression + DeepSeek Sparse Attention) for ultra-high context efficiency, making 1M context the default across all DeepSeek services with drastically reduced compute and memory costs.\n\nDeepSeek-V4 also features dedicated optimizations for agent capabilities, seamlessly integrating with leading AI agents and powering DeepSeek's internal agentic coding.\n\nThe API is available today, supporting OpenAI ChatCompletions and Anthropic APIs. Users just need to update the model to `deepseek-v4-pro` or `deepseek-v4-flash`, both supporting 1M context and dual Thinking/Non-Thinking modes. Older models (`deepseek-chat`, `deepseek-reasoner`) will be retired by July 24th, 2026. DeepSeek emphasizes relying on official news channels and reiterates its commitment to AGI.",
-    "chinese_title": "DeepSeek v4",
-    "chinese_summary": "DeepSeek-V4 Preview 正式上线并开源，开启了高性价比的百万级上下文时代。本次发布包含两款模型：\n\n1.  **DeepSeek-V4-Pro**：一款强大的模型，拥有 1.6 万亿（T）总参数和 490 亿（B）活跃参数，性能可与顶级的闭源模型媲美。它在智能体编程方面表现卓越（开源SOTA），拥有丰富的世界知识（仅次于 Gemini-3.1-Pro），并在数学、STEM 和编码领域展现世界级的推理能力。\n2.  **DeepSeek-V4-Flash**：一个更高效的选择，拥有 2840 亿（B）总参数和 130 亿（B）活跃参数，提供快速响应时间和经济实惠的 API 定价。其推理能力与 V4-Pro 接近，并在简单智能体任务上表现相当。\n\n主要创新包括一种新颖的注意力机制（分词压缩 + DeepSeek 稀疏注意力），用于实现超高上下文效率，使百万级上下文成为所有 DeepSeek 服务的默认配置，并大幅降低了计算和内存成本。\n\nDeepSeek-V4 还针对智能体能力进行了专门优化，可与领先的 AI 智能体无缝集成，并为 DeepSeek 内部的智能体编程提供支持。\n\nAPI 即日起可用，支持 OpenAI ChatCompletions 和 Anthropic API。用户只需将模型更新为 `deepseek-v4-pro` 或 `deepseek-v4-flash`，这两款模型均支持百万级上下文和思/非思双模式。旧模型（`deepseek-chat`、`deepseek-reasoner`）将于 2026 年 7 月 24 日停用。DeepSeek 强调应以官方新闻渠道为准，并重申其对 AGI 的承诺。"
+    "id": "47907879",
+    "title": "The West forgot how to make things, now it’s forgetting how to code",
+    "url": "https://techtrenches.dev/p/the-west-forgot-how-to-make-things",
+    "summary": "The article argues that the West, having forgotten how to manufacture essential goods, is now repeating this mistake by neglecting the development of skilled software engineers due to an over-reliance on AI.\n\nThe author illustrates this through the defense industry's struggles. Restarting Stinger missile production after decades required bringing back retired engineers to teach younger workers, revealing lost knowledge and obsolete equipment. Similarly, Europe failed to meet its promise of one million artillery shells due to fragmented production, closed plants, and a lack of domestic propellant, highlighting an industry optimized for small batches, not volume or crisis. The \"Fogbank\" incident, where crucial nuclear material couldn't be reproduced because its production knowledge, including a critical undocumented impurity, had retired with the original workers, serves as a stark warning.\n\nThis pattern—building capability, finding a cheaper substitute (like the \"peace dividend\"), allowing human expertise to atrophy, and then facing collapse in a crisis—is now unfolding in the software industry with AI. While AI generates code rapidly, human review becomes a bottleneck, and the author notes declining university enrollment and reduced junior engineer hiring, with many developers becoming reliant on \"AI-mediated competence\" rather than deep understanding.\n\nDeveloping a competent senior engineer takes 5-10 years, a timeline that cannot be compressed by money or AI. The author warns that the tacit knowledge gained from formative mistakes and hands-on experience is being lost. As current senior engineers retire, the critical institutional knowledge needed for end-to-end system understanding and complex debugging will disappear, creating a \"Fogbank for code.\" The West's bet on AI optimization, much like its earlier bet on perpetual peace, risks a future crisis of lost software capability.",
+    "chinese_title": "西方忘记了如何制造东西，现在它正在忘记如何编程。",
+    "chinese_summary": "文章认为，西方在忘记如何制造必需品之后，如今正因过度依赖人工智能而忽视熟练软件工程师的培养，重蹈覆辙。\n\n作者通过国防工业的困境阐明了这一点。在数十年后重启“毒刺”导弹生产，需要请回退休工程师来教导年轻工人，这暴露了知识流失和设备过时的问题。同样，欧洲未能兑现其生产一百万枚炮弹的承诺，原因在于生产碎片化、工厂关闭以及国内推进剂短缺，这凸显了一个为小批量而非大规模或危机生产优化的行业。“雾堤”（Fogbank）事件——其中关键核材料无法复制，因为其生产知识（包括一种关键的未记录的杂质）已随着最初的工人退休而消失——敲响了严峻的警钟。\n\n这种模式——即建立能力、寻找更廉价的替代品（如“和平红利”）、任由人类专业知识萎缩，然后在危机中面临崩溃——现在正随着人工智能的出现，在软件行业中上演。尽管人工智能能快速生成代码，但人工审查却成了瓶颈；作者指出，大学入学人数下降，初级工程师招聘减少，许多开发者开始依赖“AI中介能力”，而非深入理解。\n\n培养一名合格的资深工程师需要5-10年，这是一个无法通过金钱或人工智能来缩短的时间线。作者警告说，从形成性错误和实践经验中获得的默会知识正在流失。随着当前资深工程师的退休，端到端系统理解和复杂调试所需的关键机构知识将会消失，从而形成一个“代码的雾堤”。西方对人工智能优化的押注，就像其早前对永久和平的押注一样，可能会导致未来软件能力丧失的危机。"
   },
   {
-    "id": "47892019",
-    "title": "I cancelled Claude: Token issues, declining quality, and poor support",
-    "url": "https://nickyreinert.de/en/2026/2026-04-24-claude-critics/",
-    "summary": "The author initially held great enthusiasm for Claude Code, praising its speed, fair token allowance, and quality. However, this rapidly diminished due to severe token issues, perceived declining quality, and poor customer support.\n\nA key frustration was an unexplained token spike to 100% on simple questions. AI support proved useless, and human support responded with a generic, copy-pasted explanation of usage limits, failing to address the specific problem and then abruptly closing the ticket.\n\nThe author also noted a degradation in Claude's quality, with token limits exhausting much faster. A stark example involved Claude Opus suggesting a \"lazy\" workaround instead of a proper code fix, which then consumed 50% of his token allowance to rectify. Further, the conversation cache frequently disappeared after breaks, forcing costly re-reads of the codebase. Inconsistent \"monthly usage limit\" warnings appeared without explanation or documentation, only to vanish later.\n\nDespite being a \"huge fan\" of Claude, acknowledging its significant productivity benefits, and understanding the inherent scaling challenges of providing inference services, the author cancelled his subscription. He concluded that Anthropic appeared unable to manage the influx of new customers and decided to \"take that load off\" the company.",
-    "chinese_title": "我取消了Claude：Token问题、质量下降、支持不佳",
-    "chinese_summary": "作者起初对Claude Code抱有极大的热情，称赞其速度快、token配额合理且质量高。然而，由于严重的token问题、感知到的质量下降以及糟糕的客户支持，这种热情迅速消退了。\n\n一个主要的痛点是，在回答简单问题时，token使用量会无故飙升至100%。AI客服毫无帮助，而人工客服则以一份通用、复制粘贴的使用限制说明来回应，既未能解决具体问题，随后又突然关闭了工单。\n\n作者还发现Claude的质量有所下降，token额度消耗得快得多。一个明显的例子是，Claude Opus建议了一个“偷懒”的权宜之计，而不是一个恰当的代码修复，而他为了纠正这个方案，又消耗了50%的token额度。此外，会话缓存在中断后经常消失，这迫使他不得不耗费token重新读取代码库。没有解释或文档的不一致的“月度使用限制”警告会不时出现，随后又消失。\n\n尽管作者是Claude的“忠实用户”，承认它带来了显著的生产力优势，并理解提供推理服务所固有的扩展挑战，他仍取消了订阅。他断定Anthropic似乎无法应对涌入的新客户，并决定“为该公司减轻一些负担”。"
-  },
-  {
-    "id": "47879986",
-    "title": "Meta tells staff it will cut 10% of jobs",
-    "url": "https://www.bloomberg.com/news/articles/2026-04-23/meta-tells-staff-it-will-cut-10-of-jobs-in-push-for-efficiency",
-    "summary": "Unable to access the article link.",
-    "chinese_title": "Meta 告知员工将裁员 10%",
-    "chinese_summary": "无法访问文章链接。"
-  },
-  {
-    "id": "47892074",
-    "title": "Google plans to invest up to $40B in Anthropic",
-    "url": "https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic",
-    "summary": "Unable to access the article link.",
-    "chinese_title": "谷歌计划向Anthropic投资最高400亿美元。",
-    "chinese_summary": "无法访问文章链接。"
-  },
-  {
-    "id": "47882645",
-    "title": "US special forces soldier arrested after allegedly winning $400k on Maduro raid",
-    "url": "https://www.cnn.com/2026/04/23/politics/us-special-forces-soldier-arrested-maduro-raid-trade",
-    "summary": "生成摘要时出错",
-    "chinese_title": "US special forces soldier arrested after allegedly winning $400k on Maduro raid",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47890799",
-    "title": "Sabotaging projects by overthinking, scope creep, and structural diffing",
-    "url": "https://kevinlynagh.com/newsletter/2026_04_overthinking/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Sabotaging projects by overthinking, scope creep, and structural diffing",
-    "chinese_summary": "生成摘要时出错"
+    "id": "47903126",
+    "title": "Amateur armed with ChatGPT solves an Erdős problem",
+    "url": "https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/",
+    "summary": "On April 24, 2026, Liam Price, a 23-year-old amateur with no advanced mathematics training, solved a 60-year-old Erdős problem using a single prompt to ChatGPT Pro (GPT-5.4 Pro). The problem concerned \"primitive sets\" of whole numbers, where no number in the set can be evenly divided by another, and the \"Erdős sum\" associated with them. This particular conjecture had stumped prominent mathematicians for decades.\n\nExperts like UCLA's Terence Tao and Stanford's Jared Lichtman confirmed the solution's validity and, critically, its novelty. Unlike previous human attempts that consistently took an initial wrong turn, ChatGPT employed an entirely new method. It applied a well-known mathematical formula from a different domain that no human had considered relevant to this specific problem type.\n\nWhile the AI's raw proof was initially \"quite poor\" and required expert distillation by Lichtman and Tao, its core insight—a \"cognitive leap\"—is considered groundbreaking. This achievement suggests AI can discover truly original mathematical approaches, not merely replicate human thinking. Experts believe this \"new way to think about large numbers and their anatomy\" may have broader applications, validating prior intuitions about unifying themes in these complex problems and signaling a new frontier for AI in pure mathematics.",
+    "chinese_title": "ChatGPT助力业余者解决厄尔多斯问题",
+    "chinese_summary": "2026年4月24日，23岁的业余爱好者利亚姆·普莱斯在没有受过高等数学训练的情况下，仅通过一次对ChatGPT Pro（GPT-5.4 Pro）的提示，解决了困扰数学界长达60年的埃尔德什问题。这个问题涉及整数的“本原集”（其中集合中任何一个数都不能被另一个数整除）以及与它们相关的“埃尔德什和”。这一特定的猜想几十年来一直困扰着著名的数学家。\n\n洛杉矶加州大学的陶哲轩和斯坦福大学的贾里德·利希特曼等专家证实了该解决方案的有效性，更重要的是，证实了其新颖性。与之前人类尝试总是走错第一步不同，ChatGPT采用了一种全新的方法。它应用了一个来自不同领域的众所周知的数学公式，而没有任何人类曾认为与这类特定问题相关。\n\n尽管人工智能的原始证明最初“相当糟糕”，并需要利希特曼和陶哲轩进行专家提炼，但其核心洞察力——一次“认知飞跃”——被认为是开创性的。这一成就表明，人工智能可以发现真正原创的数学方法，而不仅仅是复制人类的思维。专家们认为，这种“思考大数及其结构的新方式”可能具有更广泛的应用，证实了先前关于这些复杂问题中统一主题的直觉，并预示着人工智能在纯数学领域的一个新前沿。"
   },
   {
     "id": "47899053",
     "title": "New 10 GbE USB adapters are cooler, smaller, cheaper",
     "url": "https://www.jeffgeerling.com/blog/2026/new-10-gbe-usb-adapters-cooler-smaller-cheaper/",
-    "summary": "New RTL8159-based 10 GbE USB 3.2 adapters are emerging as a significantly cooler, smaller, and cheaper alternative to traditional, bulky Thunderbolt 10 GbE adapters. For instance, the $80 WisdPi model costs less than half of Thunderbolt counterparts.\n\nHowever, achieving the full 10 Gbps speed is highly dependent on the host computer's USB port. The author found full 9.5 Gbps performance only on a desktop PC equipped with a USB 3.2 Gen 2x2 (20 Gbps) port. On laptops with USB 3.1/3.2 Gen 2 (10 Gbps) ports, such as MacBooks and Framework 13, speeds were limited to 6-7 Gbps. This challenge is exacerbated by confusing USB naming conventions and Windows' inadequate port speed reporting.\n\nDespite potential speed limitations on common ports, these new adapters run significantly cooler (around 42.5°C) and draw less power than older Aquantia-based 10G solutions, which are known for excessive heat.\n\nIn conclusion, if you have an existing 10 Gbps RJ45 network and a USB 3.2 Gen 2x2 port, or prioritize a compact, cool device, these new USB adapters offer good value. However, if guaranteed full 10 Gbps or SFP+ support is essential, Thunderbolt remains superior. For most users, 2.5 Gbps or 5 Gbps USB adapters still present a better overall value due to their lower cost and comparable real-world performance on common USB 3.2 Gen 2 ports.",
-    "chinese_title": "新的 10 GbE USB 网卡散热更好、更小、更便宜。",
-    "chinese_summary": "基于RTL8159芯片的新型10GbE USB 3.2适配器正逐渐成为传统笨重Thunderbolt 10GbE适配器运行温度更低、体积更小、价格更便宜的替代品。例如，售价80美元的WisdPi型号价格不到Thunderbolt同类产品的一半。\n\n然而，要达到完整的10 Gbps速度，高度依赖于主机的USB端口。作者发现，只有配备USB 3.2 Gen 2x2 (20 Gbps) 端口的台式PC才能达到完整的9.5 Gbps性能。而在配备USB 3.1/3.2 Gen 2 (10 Gbps) 端口的笔记本电脑（如MacBooks和Framework 13）上，速度则限制在6-7 Gbps。混乱的USB命名规范和Windows系统端口速度报告不足，使这一挑战更加严峻。\n\n尽管在普通端口上存在潜在的速度限制，这些新型适配器运行温度显著更低（约42.5°C），功耗也低于以发热量大而闻名的老式基于Aquantia芯片的10G解决方案。\n\n总而言之，如果您已拥有10 Gbps RJ45网络和USB 3.2 Gen 2x2端口，或者优先考虑紧凑、低温的设备，这些新型USB适配器具有不错的价值。然而，如果必须保证完整的10 Gbps速度或SFP+支持，Thunderbolt仍然是更优的选择。对于大多数用户而言，2.5 Gbps或5 Gbps的USB适配器因其更低的成本和在普通USB 3.2 Gen 2端口上可比的实际性能，仍然具有更好的整体价值。"
+    "summary": "New RTL8159-based 10 GbE USB 3.2 adapters are emerging as a smaller, cooler, and cheaper alternative to traditional Thunderbolt 10 GbE adapters. For instance, the WisdPi 10G adapter costs $80, less than half the price of Thunderbolt models, and runs significantly cooler (42.5°C) without requiring large heatsinks.\n\nHowever, achieving the full 10 Gbps speed is a major caveat. Testing revealed that only a desktop PC with a USB 3.2 Gen 2x2 (20 Gbps) port consistently hit near 10 Gbps. Other systems like Macs and a Framework 13 with USB 3.1/3.2 Gen 2 (10 Gbps) ports only reached 6-7 Gbps, highlighting the impact of host USB bandwidth. The convoluted USB naming conventions and Windows' tendency to misreport USB 3.x connections as \"3.0\" further complicate identifying compatible ports.\n\nWhile Macs offered plug-and-play functionality, Windows required driver installation. Bidirectional testing showed varied performance, with Macs handling traffic symmetrically, but other systems displaying disparities.\n\nUltimately, these adapters offer a good value if you have a 10 Gbps RJ45 network and a computer equipped with a USB 3.2 Gen 2x2 port. Without the high-bandwidth USB port, 2.5 Gbps or 5 Gbps USB adapters provide better value for their performance. For guaranteed full 10 Gbps or SFP+ support, Thunderbolt adapters remain the superior, albeit more expensive, choice.",
+    "chinese_title": "新万兆USB网卡：更低温、更小、更便宜",
+    "chinese_summary": "基于RTL8159芯片的新型10千兆以太网USB 3.2适配器正在兴起，成为相比传统雷电10千兆以太网适配器更小巧、更凉爽、更便宜的替代品。例如，WisdPi 10G适配器售价80美元，不及雷电型号价格的一半，并且运行温度显著更低（42.5°C），无需大型散热片。\n\n然而，实现完整的10 Gbps速度是一个重要的注意事项。测试表明，只有配备USB 3.2 Gen 2x2（20 Gbps）端口的台式PC才能稳定达到接近10 Gbps的速度。其他系统，如Mac电脑和配备USB 3.1/3.2 Gen 2（10 Gbps）端口的Framework 13笔记本，仅达到6-7 Gbps，凸显了主机USB带宽的影响。复杂的USB命名规范以及Windows系统将USB 3.x连接错误报告为“3.0”的倾向，进一步增加了识别兼容端口的难度。\n\n尽管Mac电脑支持即插即用，Windows系统则需要安装驱动程序。双向测试显示性能各异，Mac电脑能对称处理数据流量，但其他系统则表现出差异。\n\n总的来说，如果你有一个10 Gbps的RJ45网络，并且电脑配备了USB 3.2 Gen 2x2端口，这些适配器物有所值。如果没有高带宽的USB端口，2.5 Gbps或5 Gbps的USB适配器在性能方面提供更好的价值。对于保证实现完整的10 Gbps速度或SFP+支持，雷电适配器仍然是更优越的选择，尽管价格更高。"
   },
   {
-    "id": "47891019",
-    "title": "Norway set to become latest country to ban social media for under 16s",
-    "url": "https://www.bloomberg.com/news/articles/2026-04-24/norway-wants-kids-to-be-kids-with-social-media-ban-for-under-16s",
-    "summary": "Unable to access the article link.",
-    "chinese_title": "挪威将成为最新一个禁用16岁以下未成年人社交媒体的国家。",
-    "chinese_summary": "无法访问文章链接。"
+    "id": "47909226",
+    "title": "Asahi Linux Progress Linux 7.0",
+    "url": "https://asahilinux.org/2026/04/progress-report-7-0/",
+    "summary": "Asahi Linux has released a comprehensive progress report coinciding with Linux 7.0, detailing significant advancements across several fronts.\n\nThe Asahi Installer, updated to version 0.8.0 after two years, now features automated build processes via GitHub workflows. This resolves previous issues where outdated Devicetrees made newer kernels incompatible with UEFI-only installs. The new installer also includes Mac Pro support and a streamlined firmware update mode, essential for future upgrades.\n\nSupport for Apple's True Tone (Ambient Light Sensor - ALS) has been enabled through the Always-On Processor (AOP). Crucially, the installer can now automatically retrieve and update necessary calibration firmware from macOS, simplifying future firmware management and avoiding manual EFI partition surgery.\n\nPower efficiency has seen major improvements, with new drivers for the Power Management Processor (PMP) reducing idle power consumption by approximately 20% (0.5W) on devices like the 14\" M1 Pro MacBook Pro. Work is ongoing to extend PMP support to base M1 SoCs.\n\nBluetooth audio dropouts are now largely eliminated thanks to new kernel support for Broadcom's vendor-specific Host Controller Interface (HCI) extensions, which manage Wi-Fi and Bluetooth coexistence more effectively, prioritizing audio streams.\n\nFinally, developers uncovered Variable Refresh Rate (VRR) functionality for both external and internal ProMotion displays. While the display controller's requirement for a modeset to transition VRR states prevents its full, standard exposure to userspace and compositors, users can force it on with a kernel module parameter. This limitation is being investigated, particularly for HDMI connections where such transitions are permitted.",
+    "chinese_title": "朝日 Linux 进展 Linux 7.0",
+    "chinese_summary": "Asahi Linux 在适逢 Linux 7.0 发布之际，发布了一份全面的进展报告，详细介绍了在多个方面取得的重大进展。\n\n沉寂两年后更新至 0.8.0 版本的 Asahi 安装器，现在通过 GitHub 工作流实现了自动化构建过程。这解决了此前因设备树（Devicetrees）过时，导致较新内核无法与纯 UEFI 安装兼容的问题。新的安装器还包括对 Mac Pro 的支持，以及一个精简的固件更新模式，这对未来的升级至关重要。\n\n苹果的 True Tone（环境光传感器 - ALS）支持已通过始终在线处理器（AOP）实现。至关重要的是，安装器现在可以自动从 macOS 中获取并更新必要的校准固件，从而简化了未来的固件管理，并避免了手动修改 EFI 分区。\n\n功耗效率方面取得了重大改进，针对电源管理处理器（PMP）的新驱动，将14英寸M1 Pro MacBook Pro等设备的空闲功耗降低了约20%（0.5W）。将PMP支持扩展到基础M1 SoC的工作正在进行中。\n\n得益于内核对博通（Broadcom）厂商专用主机控制器接口（HCI）扩展的新支持，蓝牙音频中断现已基本消除。这些扩展能更有效地管理 Wi-Fi 和蓝牙共存，优先处理音频流。\n\n最后，开发者发现了适用于外部和内部 ProMotion 显示器的可变刷新率（VRR）功能。尽管显示控制器要求进行模式切换（modeset）才能转换 VRR 状态，这阻止了其完全、标准地暴露给用户空间和合成器，但用户可以通过内核模块参数强制启用它。这一限制正在调查中，特别是在允许此类转换的 HDMI 连接上。"
   },
   {
-    "id": "47888372",
-    "title": "How to be anti-social – a guide to incoherent and isolating social experiences",
-    "url": "https://nate.leaflet.pub/3mk4xkaxobc2p",
-    "summary": "This guide, titled \"How to be anti-social,\" outlines strategies for cultivating incoherent and isolating social experiences. It advises readers to assume others lack sane reasons for confusing or upsetting behavior, and to interpret ambiguous actions as malicious, ignorant, or amoral, filtering them through personal fears. The guide emphasizes absolute trust in one's intuition and feelings, discouraging any challenge to personal assumptions.\n\nIt suggests pivoting conversations when assumptions are questioned or when discussions venture beyond one's expertise, to avoid displaying weakness. When asking questions, one should imply the correctness of their original stance. The guide promotes digging in one's heels against overwhelming dissent and exploiting immediate social networks by curating details of interactions to rally supporters against detractors.\n\nFurther instructions include ignoring the credentials or record of those one disagrees with, and withholding grace for mistakes, especially from strangers. Ultimately, when conversations fail, the advice is to retreat internally and avoid seeking to understand those not already understood.",
-    "chinese_title": "如何反社交：非连贯且孤立的社交体验指南",
-    "chinese_summary": "本指南题为“如何反社会”，概述了培养脱节且孤立社交体验的策略。它建议读者，假设他人做出令人困惑或不安的行为缺乏理智原因，并将模糊不清的行为解读为恶意、无知或不道德，且通过个人恐惧来过滤这些行为。该指南强调绝对信任自己的直觉和感受，不鼓励对个人假设提出任何挑战。\n\n它建议，当个人假设受到质疑或当讨论超出自己的专业领域时，转移对话焦点，以避免表现出弱点。提问时，应该暗示自己原有立场的正确性。该指南提倡面对压倒性的异议时固执己见，并通过精心筛选互动细节来利用直接的社交网络，争取支持者对抗反对者。\n\n进一步的指示包括，忽略与自己意见相左者的资历或过往记录，并且不宽恕他人的错误，特别是陌生人的错误。最终，当对话失败时，建议是退回内心，并避免去理解那些尚未被理解的人。"
+    "id": "47905283",
+    "title": "Trump fires NSF's oversight board",
+    "url": "https://www.science.org/content/article/trump-fires-nsf-s-oversight-board",
+    "summary": "In an unprecedented move, the Trump administration fired all 24 members of the National Science Board (NSB) in mid-November 2020. The NSB serves as the governing body for the National Science Foundation (NSF), setting its policies, approving major research initiatives, and advising the President and Congress on science and engineering matters.\n\nMembers of the bipartisan board, who typically serve staggered six-year terms, received letters stating their removal was \"at the pleasure of the President.\" This mass firing, occurring during the lame-duck period after President Trump had lost the election, drew strong condemnation from the science community. Critics viewed it as a politically motivated action that undermines the NSB's non-partisan independence and risks politicizing scientific oversight. Concerns were raised about the disruption to the NSF's critical functions and the precedent set for future administrations. The incoming Biden administration faced the immediate task of appointing an entirely new board.",
+    "chinese_title": "特朗普解散国家科学基金会监督委员会",
+    "chinese_summary": "2020年11月中旬，特朗普政府史无前例地解雇了国家科学委员会（NSB）的全部24名成员。国家科学委员会（NSB）是国家科学基金会（NSF）的管理机构，负责制定其政策，批准重大研究计划，并就科学和工程事务向总统和国会提供建议。\n\n这个由两党组成的委员会的成员通常任期为交错的六年，他们接到的信函称，他们的解职是“由总统酌情决定”。这次大规模解雇发生在特朗普总统输掉大选后的跛脚鸭时期，招致了科学界的强烈谴责。批评者认为这是一次出于政治动机的行动，破坏了国家科学委员会（NSB）的无党派独立性，并有可能使科学监督政治化。人们对国家科学基金会（NSF）关键职能的中断以及为未来政府设定的先例表示担忧。即将上任的拜登政府面临着立即任命一个全新委员会的任务。"
+  },
+  {
+    "id": "47904876",
+    "title": "USB Cheat Sheet (2022)",
+    "url": "https://fabiensanglard.net/usbcheat/index.html",
+    "summary": "This USB Cheat Sheet clarifies the often-confusing terminology and specifications of Universal Serial Bus standards, stemming from the author's personal experience with misunderstood terms.\n\nThe document traces the evolution of USB, detailing \"Marketing Names\" alongside their \"Also Known As\" designations. It shows the progression from USB 1.1 (Full Speed, 12 Mbps) and USB 2.0 (Hi-Speed, 480 Mbps) to the significantly faster SuperSpeed USB variants. For instance, \"SuperSpeed USB 5Gbps\" encompasses USB 3.0, USB 3.1 Gen 1, and USB 3.2 Gen 1, all operating at 5000 Mbps (625 MiB/s). Subsequent versions, such as \"SuperSpeedPlus USB 10Gbps\" (USB 3.1/3.2 Gen 2) and \"SuperSpeedPlus USB 20Gbps\" (USB 3.2 Gen 2x2), double and quadruple these speeds, respectively, culminating in USB4 40Gbps.\n\nThe \"Gen naming Convention\" (USB Gen A x B) explains that 'A' refers to the generation and 'B' to the number of lanes used. Multi-lane systems, like Gen 2x2, bond multiple lanes to achieve higher total signal speeds, though real-life transfer rates are reduced by encoding overhead (e.g., 8b/10b or 128b/132b).\n\nCable wire counts increased with speed: 4 wires for USB 1.1/2.0, 8 for early SuperSpeed, and 12 for the highest speeds (20Gbps and 40Gbps), supporting multiple data lanes. Only the USB Type-C connector features enough pins (12 wires) to support dual lanes, power negotiation (CC1/CC2), and Alt Modes.\n\nCharging capabilities have also drastically improved, from USB 2.0's 2.5W to USB 3.0/3.1's 4.5W. With USB-C and Power Delivery (PD), power output soared from 15W (non-PD) to 100W (PD 1/2) and up to 240W with PD 3.1 Extended Power Range (EPR). The cheat sheet concludes with a timeline of USB specification releases from 1996 to 2019.",
+    "chinese_title": "USB 速查表 (2022)",
+    "chinese_summary": "这份USB速查表旨在澄清通用串行总线标准中那些常常令人困惑的术语和规范，这些困惑源于作者个人对误解术语的经历。\n\n该文档追溯了USB的演进，详细说明了“营销名称”及其“也称为”的命名。它展示了从USB 1.1（全速，12 Mbps）和USB 2.0（高速，480 Mbps）到显著更快的SuperSpeed USB变体的进展。例如，“SuperSpeed USB 5Gbps”涵盖了USB 3.0、USB 3.1 Gen 1和USB 3.2 Gen 1，它们都以5000 Mbps（625 MiB/s）运行。随后的版本，如“SuperSpeedPlus USB 10Gbps”（USB 3.1/3.2 Gen 2）和“SuperSpeedPlus USB 20Gbps”（USB 3.2 Gen 2x2），分别将这些速度提高了一倍和四倍，最终达到USB4 40Gbps。\n\n“Gen命名约定”（USB Gen A x B）解释了“A”指代代数，“B”指代所使用的通道数。多通道系统，如Gen 2x2，通过绑定多个通道以实现更高的总信号速度，尽管实际传输速率会因编码开销（例如，8b/10b或128b/132b）而降低。\n\n线缆的线芯数量随着速度的增加而增加：USB 1.1/2.0为4根线，早期SuperSpeed为8根，最高速度（20Gbps和40Gbps）为12根，以支持多数据通道。只有USB Type-C连接器具有足够的引脚（12根线）来支持双通道、电源协商（CC1/CC2）和替代模式。\n\n充电能力也得到了大幅提升，从USB 2.0的2.5W到USB 3.0/3.1的4.5W。借助USB-C和供电（PD）技术，功率输出从15W（非PD）飙升至100W（PD 1/2），使用PD 3.1扩展功率范围（EPR）时最高可达240W。该速查表最后附有1996年至2019年USB规范发布的时间线。"
   },
   {
     "id": "47897891",
     "title": "Firefox Has Integrated Brave's Adblock Engine",
     "url": "https://itsfoss.com/news/firefox-ships-brave-adblock-engine/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Firefox Has Integrated Brave's Adblock Engine",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "Firefox 149, released in March, quietly integrated `adblock-rust`, Brave's open-source, Rust-based ad and tracker blocking engine. This significant addition went largely unnoticed until Shivan Kaul Sahib, Brave's VP of Privacy and Security, highlighted it in a blog post, as it was not included in the release notes.\n\nThe `adblock-rust` engine, licensed under MPL-2.0, powers Brave's native content blocker. It is designed for network request blocking, cosmetic filtering, and supports a uBlock Origin-compatible filter list syntax. The integration landed via Bugzilla Bug 2013888, titled \"Add a prototype rich content blocking engine,\" and is disabled by default, lacking a user interface or pre-included filter lists. Waterfox, a popular Firefox fork, has also adopted this engine, building on Firefox's implementation.\n\nTo test this experimental feature, users are advised to use a throwaway Firefox installation. First, disable Enhanced Tracking Protection for the test website. Then, in `about:config`, set `privacy.trackingprotection.content.protection.enabled` to \"true\". Next, edit `privacy.trackingprotection.content.protection.test_list_urls` to add filter lists like `https://easylist.to/easylist/easylist.txt|https://easylist.to/easylist/easyprivacy.txt`. Upon visiting a site with ads, the engine should block the ad content, though ad slots might still render.",
+    "chinese_title": "火狐集成 Brave 广告拦截引擎",
+    "chinese_summary": "Firefox 149 于三月发布，悄然集成了 `adblock-rust`，这是 Brave 开源的、基于 Rust 的广告和追踪器拦截引擎。这一重要新增功能在很大程度上未被察觉，直到 Brave 的隐私与安全副总裁 Shivan Kaul Sahib 在一篇博客文章中强调了它，因为它并未被包含在发布说明中。\n\n`adblock-rust` 引擎采用 MPL-2.0 许可证，为 Brave 的原生内容拦截器提供支持。它专为网络请求拦截和美化过滤而设计，并支持与 uBlock Origin 兼容的过滤列表语法。此次集成通过 Bugzilla Bug 2013888 实现，该 Bug 题为“添加一个原型富内容拦截引擎”，并且默认禁用，没有用户界面或预设的过滤列表。Waterfox，一个流行的 Firefox 分支，也采用了此引擎，其实现方式基于 Firefox 的集成。\n\n要测试此实验性功能，建议用户使用一个临时 Firefox 安装。首先，禁用测试网站的增强型追踪保护。接着，在 `about:config` 中，将 `privacy.trackingprotection.content.protection.enabled` 设置为“true”。接下来，编辑 `privacy.trackingprotection.content.protection.test_list_urls` 以添加过滤列表，例如 `https://easylist.to/easylist/easylist.txt|https://easylist.to/easylist/easyprivacy.txt`。访问包含广告的网站时，该引擎应该会拦截广告内容，尽管广告位可能仍会显示。"
   },
   {
-    "id": "47887334",
-    "title": "Spinel: Ruby AOT Native Compiler",
-    "url": "https://github.com/matz/spinel",
+    "id": "47905984",
+    "title": "Why has there been so little progress on Alzheimer's disease?",
+    "url": "https://freakonomics.com/podcast/why-has-there-been-so-little-progress-on-alzheimers-disease/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Spinel: Ruby AOT Native Compiler",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47893779",
-    "title": "There Will Be a Scientific Theory of Deep Learning",
-    "url": "https://arxiv.org/abs/2604.21691",
-    "summary": "生成摘要时出错",
-    "chinese_title": "There Will Be a Scientific Theory of Deep Learning",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47885596",
-    "title": "Ubuntu 26.04",
-    "url": "https://lwn.net/Articles/1069399/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ubuntu 26.04",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47894747",
-    "title": "My audio interface has SSH enabled by default",
-    "url": "https://hhh.hn/rodecaster-duo-fw/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "My audio interface has SSH enabled by default",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47882697",
-    "title": "Show HN: Tolaria – Open-source macOS app to manage Markdown knowledge bases",
-    "url": "https://github.com/refactoringhq/tolaria",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Tolaria – Open-source macOS app to manage Markdown knowledge bases",
+    "chinese_title": "Why has there been so little progress on Alzheimer's disease?",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -128,75 +72,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47884768",
-    "title": "Why I Write (1946)",
-    "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/why-i-write/",
+    "id": "47902525",
+    "title": "Using coding assistance tools to revive projects you never were going to finish",
+    "url": "https://blog.matthewbrunelle.com/its-ok-to-use-coding-assistance-tools-to-revive-the-projects-you-never-were-going-to-finish/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Why I Write (1946)",
+    "chinese_title": "Using coding assistance tools to revive projects you never were going to finish",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47892291",
-    "title": "SDL Now Supports DOS",
-    "url": "https://github.com/libsdl-org/SDL/pull/15377",
+    "id": "47894747",
+    "title": "My audio interface has SSH enabled by default",
+    "url": "https://hhh.hn/rodecaster-duo-fw/",
     "summary": "生成摘要时出错",
-    "chinese_title": "SDL Now Supports DOS",
+    "chinese_title": "My audio interface has SSH enabled by default",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47885377",
-    "title": "Habitual coffee intake shapes the microbiome, modifies physiology and cognition",
-    "url": "https://www.nature.com/articles/s41467-026-71264-8",
+    "id": "47907130",
+    "title": "EU Age Control: The trojan horse for digital IDs",
+    "url": "https://juraj.bednar.io/en/blog-en/2026/04/17/eu-age-control-the-trojan-horse-for-digital-ids/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Habitual coffee intake shapes the microbiome, modifies physiology and cognition",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47894435",
-    "title": "The Classic American Diner",
-    "url": "https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Classic American Diner",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47894000",
-    "title": "OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API",
-    "url": "https://developers.openai.com/api/docs/changelog",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47881198",
-    "title": "Using the internet like it's 1999",
-    "url": "https://joshblais.com/blog/using-the-internet-like-its-1999/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Using the internet like it's 1999",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47883108",
-    "title": "U.S. soldier charged with using classified info to profit from prediction market",
-    "url": "https://www.justice.gov/usao-sdny/pr/us-soldier-charged-using-classified-information-profit-prediction-market-bets?bm-verify=AAQAAAAN_____y6To7sZYZ502biZwIHXlr-7zXZUqV4H0xLTfW__wDA3SjNLqifXRaQwsikyuz6IJknyuL8xfVYRkesxcDk5V10m-HoXl2K93f17rygBphL77WVFoQ_XvlmUo922IwM_DQ66137X6wWMtpdHslcEjpJG7KbBmUw9Su4kDENpDt_yv2spThQZehgv-X1Adk5U2VHfp41co2s_QJGjRj4y0KmL1mhSCyVaE7MC1LHG0mtP-xYmD0xBOQwn6PlHkPiP5Nt46h5ZIjLGXgCZDEVD42i7rIEM379DKLPUPX0PDNmOAwFSuTqcTDVnT_UUV8vxpHLRMb7rUxPxKUPcIB23iZTRJddWDDtPHMXadpwv67xr-f1sKDLZT9NgHCO4iuC2EthmAt0",
-    "summary": "生成摘要时出错",
-    "chinese_title": "U.S. soldier charged with using classified info to profit from prediction market",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47886517",
-    "title": "Show HN: How LLMs Work – Interactive visual guide based on Karpathy's lecture",
-    "url": "https://ynarwal.github.io/how-llms-work/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: How LLMs Work – Interactive visual guide based on Karpathy's lecture",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47887683",
-    "title": "South Korea police arrest man for posting AI photo of runaway wolf",
-    "url": "https://www.bbc.com/news/articles/c4gx1n0dl9no",
-    "summary": "生成摘要时出错",
-    "chinese_title": "South Korea police arrest man for posting AI photo of runaway wolf",
+    "chinese_title": "EU Age Control: The trojan horse for digital IDs",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -208,11 +104,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47880189",
-    "title": "Girl, 10, finds rare Mexican axolotl under Welsh bridge",
-    "url": "https://www.bbc.com/news/articles/c9d4zgnqpqeo",
+    "id": "47894435",
+    "title": "The Classic American Diner",
+    "url": "https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Girl, 10, finds rare Mexican axolotl under Welsh bridge",
+    "chinese_title": "The Classic American Diner",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47904568",
+    "title": "The AI industry is discovering that the public hates it",
+    "url": "https://newrepublic.com/article/209163/ai-industry-discovering-public-backlash",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The AI industry is discovering that the public hates it",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47911780",
+    "title": "GoDaddy Gave a Domain to a Stranger Without Any Documentation",
+    "url": "https://anchor.host/godaddy-gave-a-domain-to-a-stranger-without-any-documentation/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GoDaddy Gave a Domain to a Stranger Without Any Documentation",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47908833",
+    "title": "Statecharts: hierarchical state machines",
+    "url": "https://statecharts.dev/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Statecharts: hierarchical state machines",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -224,35 +144,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "47902416",
+    "title": "Niri 26.04: Scrollable-tiling Wayland compositor",
+    "url": "https://github.com/niri-wm/niri/releases/tag/v26.04",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Niri 26.04: Scrollable-tiling Wayland compositor",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "47895080",
     "title": "Google to invest up to $40B in Anthropic in cash and compute",
     "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
     "summary": "生成摘要时出错",
     "chinese_title": "Google to invest up to $40B in Anthropic in cash and compute",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47888465",
-    "title": "Hear your agent suffer through your code",
-    "url": "https://github.com/AndrewVos/endless-toil",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Hear your agent suffer through your code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47881786",
-    "title": "TorchTPU: Running PyTorch Natively on TPUs at Google Scale",
-    "url": "https://developers.googleblog.com/torchtpu-running-pytorch-natively-on-tpus-at-google-scale/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "TorchTPU: Running PyTorch Natively on TPUs at Google Scale",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47891801",
-    "title": "I'm done making desktop applications (2009)",
-    "url": "https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I'm done making desktop applications (2009)",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -264,115 +168,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47888557",
-    "title": "UK Biobank leak: Health details of 500k people offered for sale on Alibaba",
-    "url": "https://www.bmj.com/content/393/bmj.s781",
+    "id": "47910546",
+    "title": "GitHub unwanted UX change: issue links now open in a popup",
+    "url": "https://github.com/orgs/community/discussions/192666",
     "summary": "生成摘要时出错",
-    "chinese_title": "UK Biobank leak: Health details of 500k people offered for sale on Alibaba",
+    "chinese_title": "GitHub unwanted UX change: issue links now open in a popup",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47896163",
-    "title": "Show HN: I've built a nice home server OS",
-    "url": "https://lightwhale.asklandd.dk/",
+    "id": "47902987",
+    "title": "Simulacrum of Knowledge Work",
+    "url": "https://blog.happyfellow.dev/simulacrum-of-knowledge-work/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I've built a nice home server OS",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47893060",
-    "title": "Tariffs Raised Consumers' Prices, but the Refunds Go Only to Businesses",
-    "url": "https://www.nytimes.com/2026/04/24/us/politics/companies-consumers-tariff-refunds.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tariffs Raised Consumers' Prices, but the Refunds Go Only to Businesses",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47902416",
-    "title": "Niri 26.04: Scrollable-tiling Wayland compositor",
-    "url": "https://github.com/niri-wm/niri/releases/tag/v26.04",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Niri 26.04: Scrollable-tiling Wayland compositor",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47891872",
-    "title": "Refuse to let your doctor record you",
-    "url": "https://buttondown.com/maiht3k/archive/why-you-should-refuse-to-let-your-doctor-record/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Refuse to let your doctor record you",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47885014",
-    "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
-    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47897790",
-    "title": "Open source memory layer so any AI agent can do what Claude.ai and ChatGPT do",
-    "url": "https://alash3al.github.io/stash?_v01",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Open source memory layer so any AI agent can do what Claude.ai and ChatGPT do",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47894081",
-    "title": "SFO Quiet Airport (2025)",
-    "url": "https://viewfromthewing.com/san-francisco-airport-removed-90-minutes-of-daily-noise-travelers-say-it-changed-everything/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SFO Quiet Airport (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47885739",
-    "title": "Why Not Venus?",
-    "url": "https://mceglowski.substack.com/p/why-not-venus",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why Not Venus?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47895765",
-    "title": "Google Flow Music",
-    "url": "https://www.flowmusic.app/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google Flow Music",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47895380",
-    "title": "Do I belong in tech anymore?",
-    "url": "https://ky.fyi/posts/ai-burnout",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Do I belong in tech anymore?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47892236",
-    "title": "Diatec, known for its mechanical keyboard brand FILCO, has ceased operations",
-    "url": "https://gigazine.net/gsc_news/en/20260424-filco-diatec/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Diatec, known for its mechanical keyboard brand FILCO, has ceased operations",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47886272",
-    "title": "Show HN: Gova – The declarative GUI framework for Go",
-    "url": "https://github.com/NV404/gova",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Gova – The declarative GUI framework for Go",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47889279",
-    "title": "The operating cost of adult and gambling startups",
-    "url": "https://orchidfiles.com/stigma-is-a-tax-on-every-operational-decision/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The operating cost of adult and gambling startups",
+    "chinese_title": "Simulacrum of Knowledge Work",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -384,359 +192,39 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47897349",
-    "title": "Education must go beyond the mere production of words",
-    "url": "https://www.ncregister.com/commentaries/schnell-repairing-the-ruins",
+    "id": "47896163",
+    "title": "Show HN: I've built a nice home server OS",
+    "url": "https://lightwhale.asklandd.dk/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Education must go beyond the mere production of words",
+    "chinese_title": "Show HN: I've built a nice home server OS",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47888124",
-    "title": "Mounting tar archives as a filesystem in WebAssembly",
-    "url": "https://jeroen.github.io/notes/webassembly-tar/",
+    "id": "47897790",
+    "title": "Open source memory layer so any AI agent can do what Claude.ai and ChatGPT do",
+    "url": "https://alash3al.github.io/stash?_v01",
     "summary": "生成摘要时出错",
-    "chinese_title": "Mounting tar archives as a filesystem in WebAssembly",
+    "chinese_title": "Open source memory layer so any AI agent can do what Claude.ai and ChatGPT do",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47889030",
-    "title": "Aspartame is not that bad? (2022)",
-    "url": "https://dynomight.net/aspartame/",
+    "id": "47910388",
+    "title": "Why SWE-bench Verified no longer measures frontier coding capabilities",
+    "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Aspartame is not that bad? (2022)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47886773",
-    "title": "Composition shouldn't be this hard",
-    "url": "https://www.cambra.dev/blog/announcement/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Composition shouldn't be this hard",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47890841",
-    "title": "Show HN: Browser Harness – Gives LLM freedom to complete any browser task",
-    "url": "https://github.com/browser-use/browser-harness",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Browser Harness – Gives LLM freedom to complete any browser task",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47890873",
-    "title": "Different language models learn similar number representations",
-    "url": "https://arxiv.org/abs/2604.20817",
-    "summary": "This paper, \"Convergent Evolution: How Different Language Models Learn Similar Number Representations,\" reveals that various language models (LMs) consistently learn to represent numbers using periodic features, with dominant periods at T=2, 5, and 10. The authors identify a two-tiered hierarchy: while all tested models (Transformers, Linear RNNs, LSTMs, word embeddings) exhibit \"period-T spikes\" in the Fourier domain (Fourier domain sparsity), only some acquire \"geometrically separable features\" that allow for linear classification of a number mod-T.\n\nThe research theoretically proves that Fourier domain sparsity is necessary but not sufficient for mod-T geometric separability. Empirically, the study investigates the conditions under which models develop geometrically separable features, finding that data, architecture, optimizer, and tokenizer all play significant roles. They identify two primary routes: models can learn these features from complementary co-occurrence signals in general language data (e.g., text-number co-occurrence and cross-number interaction) or from multi-token (but not single-token) addition problems.\n\nOverall, the findings underscore a phenomenon of \"convergent evolution,\" where a diverse range of models learn remarkably similar numerical representations despite being trained with different signals and architectures.",
-    "chinese_title": "Different language models learn similar number representations",
-    "chinese_summary": "This paper, \"Convergent Evolution: How Different Language Models Learn Similar Number Representations,\" reveals that various language models (LMs) consistently learn to represent numbers using periodic features, with dominant periods at T=2, 5, and 10. The authors identify a two-tiered hierarchy: while all tested models (Transformers, Linear RNNs, LSTMs, word embeddings) exhibit \"period-T spikes\" in the Fourier domain (Fourier domain sparsity), only some acquire \"geometrically separable features\" that allow for linear classification of a number mod-T.\n\nThe research theoretically proves that Fourier domain sparsity is necessary but not sufficient for mod-T geometric separability. Empirically, the study investigates the conditions under which models develop geometrically separable features, finding that data, architecture, optimizer, and tokenizer all play significant roles. They identify two primary routes: models can learn these features from complementary co-occurrence signals in general language data (e.g., text-number co-occurrence and cross-number interaction) or from multi-token (but not single-token) addition problems.\n\nOverall, the findings underscore a phenomenon of \"convergent evolution,\" where a diverse range of models learn remarkably similar numerical representations despite being trained with different signals and architectures."
-  },
-  {
-    "id": "47902816",
-    "title": "Framework Laptop 13 Pro: Major Upgrades and Linux Front and Center",
-    "url": "https://boilingsteam.com/framework-laptop-13-pro-announced/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Framework Laptop 13 Pro: Major Upgrades and Linux Front and Center",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47881724",
-    "title": "How the Tech World Turned Evil",
-    "url": "https://newrepublic.com/article/208876/tech-world-evil-musk-bezos-thiel",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How the Tech World Turned Evil",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47888337",
-    "title": "nowhere: an entire website encoded in a URL",
-    "url": "https://hostednowhere.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "nowhere: an entire website encoded in a URL",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47900506",
-    "title": "Lambda Calculus Benchmark for AI",
-    "url": "https://victortaelin.github.io/lambench/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Lambda Calculus Benchmark for AI",
+    "chinese_title": "Why SWE-bench Verified no longer measures frontier coding capabilities",
     "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "47900478",
-    "title": "Discret 11, the French TV encryption of the 80s",
+    "title": "Discret 11, the French TV encryption of the 80s (2020)",
     "url": "https://fabiensanglard.net/discret11/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Discret 11, the French TV encryption of the 80s",
+    "chinese_title": "Discret 11, the French TV encryption of the 80s (2020)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47885668",
-    "title": "Familiarity is the enemy: On why Enterprise systems have failed for 60 years",
-    "url": "https://felixbarbalet.com/familiarity-is-the-enemy/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Familiarity is the enemy: On why Enterprise systems have failed for 60 years",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47885042",
-    "title": "A quick look at Mythos run on Firefox: too much hype?",
-    "url": "https://xark.es/b/mythos-firefox-150",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A quick look at Mythos run on Firefox: too much hype?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47897706",
-    "title": "Cosmology with Geometry Nodes",
-    "url": "https://www.blender.org/user-stories/cosmology-with-geometry-nodes/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cosmology with Geometry Nodes",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47880697",
-    "title": "Anthropic's Claude Desktop App Installs Undisclosed Native Messaging Bridge",
-    "url": "https://letsdatascience.com/news/claude-desktop-installs-preauthorized-browser-extension-mani-4064fb1a",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Anthropic's Claude Desktop App Installs Undisclosed Native Messaging Bridge",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47881672",
-    "title": "GitHub Merge Queue Silently Reverted Code",
-    "url": "https://www.githubstatus.com/incidents/zsg1lk7w13cf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GitHub Merge Queue Silently Reverted Code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47900440",
-    "title": "A web-based RDP client built with Go WebAssembly and grdp",
-    "url": "https://github.com/nakagami/grdpwasm",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A web-based RDP client built with Go WebAssembly and grdp",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47901734",
-    "title": "GPT 5.5 biosafety bounty",
-    "url": "https://openai.com/index/gpt-5-5-bio-bug-bounty/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GPT 5.5 biosafety bounty",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47881805",
-    "title": "Microsoft offers buyouts up to 7% of US employees",
-    "url": "https://techcrunch.com/2026/04/23/microsoft-offers-buyout-for-up-to-7-of-u-s-employees/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Microsoft offers buyouts up to 7% of US employees",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47894690",
-    "title": "Could a Claude Code routine watch my finances?",
-    "url": "https://driggsby.com/blog/claude-code-routine-watch-my-finances",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Could a Claude Code routine watch my finances?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47893427",
-    "title": "CSS as a Query Language",
-    "url": "https://evdc.me/blog/css-query",
-    "summary": "生成摘要时出错",
-    "chinese_title": "CSS as a Query Language",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47902746",
-    "title": "Iran caused more extensive damage to U.S. military bases than publicly known",
-    "url": "https://www.nbcnews.com/world/iran/iran-caused-extensive-damage-us-military-bases-publicly-known-rcna331853",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Iran caused more extensive damage to U.S. military bases than publicly known",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47892765",
-    "title": "Tesla discloses $2B AI hardware company acquisition in filing",
-    "url": "https://electrek.co/2026/04/23/tesla-tsla-quietly-discloses-2-billion-ai-hardware-acquisition-10q/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tesla discloses $2B AI hardware company acquisition in filing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47892660",
-    "title": "Redesigning the Recurse Center application to inspire curious programmers",
-    "url": "https://www.recurse.com/blog/192-redesigning-the-recurse-center-application",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Redesigning the Recurse Center application to inspire curious programmers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47901884",
-    "title": "Jumping into cold water can stop your heart",
-    "url": "https://jorgenmelau.substack.com/p/the-first-sixty-seconds",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Jumping into cold water can stop your heart",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47901037",
-    "title": "Behind-the-Scenes of MacBook Neo Introduction Video",
-    "url": "https://www.youtube.com/shorts/y4DnsCzJTRQ",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Behind-the-Scenes of MacBook Neo Introduction Video",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47890456",
-    "title": "ML supports existence of unrecognized transient astronomical phenomena",
-    "url": "https://arxiv.org/abs/2604.18799",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ML supports existence of unrecognized transient astronomical phenomena",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47888694",
-    "title": "8087 Emulation on 8086 Systems",
-    "url": "https://www.os2museum.com/wp/learn-something-old-every-day-part-xx-8087-emulation-on-8086-systems/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "8087 Emulation on 8086 Systems",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47893620",
-    "title": "CC-Canary: Detect early signs of regressions in Claude Code",
-    "url": "https://github.com/delta-hq/cc-canary",
-    "summary": "生成摘要时出错",
-    "chinese_title": "CC-Canary: Detect early signs of regressions in Claude Code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47884225",
-    "title": "Physicists revive 1990s laser concept to propose a next-generation atomic clock",
-    "url": "https://phys.org/news/2026-04-physicists-revive-1990s-laser-concept.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Physicists revive 1990s laser concept to propose a next-generation atomic clock",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47889110",
-    "title": "Show HN: Atomic – Local-first, AI-augmented personal knowledge base",
-    "url": "https://atomicapp.ai/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Atomic – Local-first, AI-augmented personal knowledge base",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47901469",
-    "title": "A Collection of Chronic Medical Conditions Common in Autistic and ADHD Adults [pdf] (2023)",
-    "url": "https://allbrainsbelong.org/wp-content/uploads/2023/08/CLINICIAN-GUIDE-Everything-is-Connected-to-Everything-Project-All-Brains-Belong-VT-8.15.23.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A Collection of Chronic Medical Conditions Common in Autistic and ADHD Adults [pdf] (2023)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47902339",
-    "title": "What's missing in the 'agentic' story: a well-defined user agent role",
-    "url": "https://www.mnot.net/blog/2026/04/24/agents_as_collective_bargains",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What's missing in the 'agentic' story: a well-defined user agent role",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47900451",
-    "title": "Only One Side Will Be the True Successor to MS-DOS – Windows 2.x",
-    "url": "https://blisscast.wordpress.com/2026/04/21/windows-2-gui-wonderland-12a/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Only One Side Will Be the True Successor to MS-DOS – Windows 2.x",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47887448",
-    "title": "Netherlands reaches deal to cut reliance on U.S. cloud tech",
-    "url": "https://nltimes.nl/2026/04/24/netherlands-reaches-deal-european-cloud-company-decrease-us-tech-reliance",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Netherlands reaches deal to cut reliance on U.S. cloud tech",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47898680",
-    "title": "Oxford All Souls College General Examination (2025) [pdf]",
-    "url": "https://www.asc.ox.ac.uk/sites/default/files/2025-10/General%202025.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Oxford All Souls College General Examination (2025) [pdf]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47896664",
-    "title": "$8800 house design helps prevent fatal diseases in African children",
-    "url": "https://www.science.org/content/article/simple-house-may-help-prevent-multiple-fatal-diseases-african-children",
-    "summary": "生成摘要时出错",
-    "chinese_title": "$8800 house design helps prevent fatal diseases in African children",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47894291",
-    "title": "MiniZinc, constraint modelling language solve discrete optimisation problems",
-    "url": "https://www.minizinc.org",
-    "summary": "生成摘要时出错",
-    "chinese_title": "MiniZinc, constraint modelling language solve discrete optimisation problems",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47894129",
-    "title": "Google investing up to $40B in Anthropic",
-    "url": "https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google investing up to $40B in Anthropic",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47889488",
-    "title": "The Rich and Powerful Want to Live Forever. What If They Could?",
-    "url": "https://www.nytimes.com/2026/04/24/magazine/eternal-life-longevity-world-leaders.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Rich and Powerful Want to Live Forever. What If They Could?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47900911",
-    "title": "The Digesting Duck: a 1739 automaton that appeared to eat, digest, and defecate",
-    "url": "https://en.wikipedia.org/wiki/Digesting_Duck",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Digesting Duck: a 1739 automaton that appeared to eat, digest, and defecate",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47890365",
-    "title": "Linux 7.1 Removes Drivers for Bus Mouse Support",
-    "url": "https://www.phoronix.com/news/Linux-7.1-Input",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Linux 7.1 Removes Drivers for Bus Mouse Support",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47902993",
-    "title": "Hokusai and Tesselations",
-    "url": "https://dl.ndl.go.jp/pid/1899550/1/11/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Hokusai and Tesselations",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47888423",
-    "title": "Show HN: leaf – a terminal Markdown previewer with a GUI-like experience",
-    "url": "https://github.com/RivoLink/leaf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: leaf – a terminal Markdown previewer with a GUI-like experience",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "47898744",
+    "id": "47895380",
     "title": "Do I belong in tech anymore?",
     "url": "https://ky.fyi/posts/ai-burnout",
     "summary": "生成摘要时出错",
@@ -744,59 +232,243 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47885310",
-    "title": "The Surveillance Accountability Act",
-    "url": "https://www.surveillanceaccountability.com",
+    "id": "47906102",
+    "title": "Europe to burned American scientists: We'll take you in (2025)",
+    "url": "https://www.politico.eu/article/europe-exploit-dunald-trump-brain-drain-academic-research-progressive-institutions/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Surveillance Accountability Act",
+    "chinese_title": "Europe to burned American scientists: We'll take you in (2025)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47900266",
-    "title": "Possibility of modifying an image to see without glasses? (2010)",
-    "url": "https://stackoverflow.com/questions/2563471/is-it-possible-to-modify-an-image-so-someone-with-myopia-could-see-it-clearly-wi",
+    "id": "47904553",
+    "title": "Trump Fires the National Science Board",
+    "url": "https://www.theverge.com/science/918769/trump-fires-the-entire-national-science-board",
     "summary": "生成摘要时出错",
-    "chinese_title": "Possibility of modifying an image to see without glasses? (2010)",
+    "chinese_title": "Trump Fires the National Science Board",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47899334",
-    "title": "Escrow Security for iCloud Keychain",
-    "url": "https://support.apple.com/guide/security/escrow-security-for-icloud-keychain-sec3e341e75d/web",
+    "id": "47903471",
+    "title": "AI agents that argue with each other to improve decisions",
+    "url": "https://github.com/rockcat/HATS",
     "summary": "生成摘要时出错",
-    "chinese_title": "Escrow Security for iCloud Keychain",
+    "chinese_title": "AI agents that argue with each other to improve decisions",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47887123",
-    "title": "Design.md: A format spec for describing a visual identity to coding agents",
-    "url": "https://github.com/google-labs-code/design.md",
+    "id": "47903440",
+    "title": "California Coastal Community Must Reject CBP's AI-Powered Surveillance Tower",
+    "url": "https://www.eff.org/deeplinks/2026/04/california-coastal-community-must-reject-cbps-ai-powered-surveillance-tower",
     "summary": "生成摘要时出错",
-    "chinese_title": "Design.md: A format spec for describing a visual identity to coding agents",
+    "chinese_title": "California Coastal Community Must Reject CBP's AI-Powered Surveillance Tower",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47901312",
-    "title": "HEALPix",
-    "url": "https://en.wikipedia.org/wiki/HEALPix",
+    "id": "47894638",
+    "title": "Show HN: HNswered – watches for replies to your Hacker News posts and comments",
+    "url": "https://github.com/adam-s/HNswered",
     "summary": "生成摘要时出错",
-    "chinese_title": "HEALPix",
+    "chinese_title": "Show HN: HNswered – watches for replies to your Hacker News posts and comments",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47890319",
-    "title": "Iran war has drained U.S. supplies of critical, costly weapons",
-    "url": "https://www.nytimes.com/2026/04/23/us/politics/iran-war-cost-military.html",
+    "id": "47906496",
+    "title": "Trump evacuated from White House Correspondents' Dinner after shots fired",
+    "url": "https://www.abc.net.au/news/2026-04-26/trump-evacuated-white-house-correspondents-dinner-shots-fired/106607720",
     "summary": "生成摘要时出错",
-    "chinese_title": "Iran war has drained U.S. supplies of critical, costly weapons",
+    "chinese_title": "Trump evacuated from White House Correspondents' Dinner after shots fired",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "47887325",
-    "title": "Stock markets are too high and set to fall, says Bank of England deputy",
-    "url": "https://www.bbc.com/news/articles/c75kp1y43lgo",
+    "id": "47904043",
+    "title": "The Stanford Freshmen Who Want to Rule the World",
+    "url": "https://www.theatlantic.com/ideas/2026/04/stanford-students-power/686920/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Stock markets are too high and set to fall, says Bank of England deputy",
+    "chinese_title": "The Stanford Freshmen Who Want to Rule the World",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47908105",
+    "title": "Tip: Web requests should not be measured in Hz [Hertz]",
+    "url": "https://mastodon.catgirl.cloud/@sophie/116467789133733136",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tip: Web requests should not be measured in Hz [Hertz]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47907350",
+    "title": "Godot 4.7 Beta with HDR Output, Ray-Tracing Improvements and Editor Enhancements",
+    "url": "https://www.phoronix.com/news/Godot-4.7-Beta",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Godot 4.7 Beta with HDR Output, Ray-Tracing Improvements and Editor Enhancements",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47912513",
+    "title": "Plants can sense the sound of rain, a new study finds",
+    "url": "https://news.mit.edu/2026/plants-can-sense-sound-rain-new-study-finds-0422",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Plants can sense the sound of rain, a new study finds",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47907531",
+    "title": "French tax official sold crypto investors' addresses: kidnappings followed",
+    "url": "https://twitter.com/MarioNawfal/status/2047773069607854512",
+    "summary": "生成摘要时出错",
+    "chinese_title": "French tax official sold crypto investors' addresses: kidnappings followed",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47906651",
+    "title": "I have officially retired from Emacs",
+    "url": "https://nullprogram.com/blog/2026/04/26/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I have officially retired from Emacs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47903297",
+    "title": "Google Search to classify 'back button hijacking' as spam",
+    "url": "https://9to5google.com/2026/04/13/google-search-back-button-hijacking/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google Search to classify 'back button hijacking' as spam",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47897477",
+    "title": "Is Italy the new tax haven for the global rich?",
+    "url": "https://www.bbc.com/worklife/article/20260421-is-italy-the-new-tax-haven-for-the-global-rich",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Is Italy the new tax haven for the global rich?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47895150",
+    "title": "GPT-5.5 is generally available for GitHub Copilot",
+    "url": "https://github.blog/changelog/2026-04-24-gpt-5-5-is-generally-available-for-github-copilot/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GPT-5.5 is generally available for GitHub Copilot",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47894734",
+    "title": "TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text Alignment",
+    "url": "https://gdm-tipsv2.github.io/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text Alignment",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47909898",
+    "title": "Microsoft Reportedly Looking at Rebasing Azure Linux on Fedora",
+    "url": "https://www.phoronix.com/news/MS-Azure-Linux-Fedora-Based",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Microsoft Reportedly Looking at Rebasing Azure Linux on Fedora",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47907984",
+    "title": "US is making Europe pay dearly for its half-hearted electrification",
+    "url": "https://www.programmablemutter.com/cp/195461224",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US is making Europe pay dearly for its half-hearted electrification",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47906485",
+    "title": "Does internet advertising work? (2020)",
+    "url": "https://freakonomics.com/podcast/does-advertising-actually-work-part-2-digital-ep-441/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Does internet advertising work? (2020)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47907205",
+    "title": "My Homemade PBX (2002)",
+    "url": "https://wandel.ca/homepage/pbx.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "My Homemade PBX (2002)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47903072",
+    "title": "FSF Position on \"Ethical\" AI",
+    "url": "https://www.fsf.org/blogs/licensing/rail-are-nonfree-and-unethical",
+    "summary": "生成摘要时出错",
+    "chinese_title": "FSF Position on \"Ethical\" AI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47895567",
+    "title": "Eurosky.social Account",
+    "url": "https://eurosky.tech/accounts/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Eurosky.social Account",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47908158",
+    "title": "The Knight Programming Language",
+    "url": "https://github.com/knight-lang/knight-lang/tree/master",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Knight Programming Language",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47907388",
+    "title": "Show HN: Browse GitHub repos in Emacs without cloning",
+    "url": "https://github.com/agzam/remoto.el",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Browse GitHub repos in Emacs without cloning",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47904197",
+    "title": "The U.K. Smoking Ban Is Illiberal",
+    "url": "https://www.theatlantic.com/ideas/2026/04/case-against-uk-smoking-ban/686949/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The U.K. Smoking Ban Is Illiberal",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47904138",
+    "title": "Nicholas Carlini – Black-hat LLMs [video]",
+    "url": "https://www.youtube.com/watch?v=1sd26pWhfmg",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nicholas Carlini – Black-hat LLMs [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47897903",
+    "title": "YC as a Service",
+    "url": "https://ycaas.lol",
+    "summary": "生成摘要时出错",
+    "chinese_title": "YC as a Service",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47894985",
+    "title": "MenteDB – open-source memory database for AI agents (Rust)",
+    "url": "https://github.com/nambok/mentedb",
+    "summary": "生成摘要时出错",
+    "chinese_title": "MenteDB – open-source memory database for AI agents (Rust)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47909295",
+    "title": "Show HN: I remade my blog into a Windows 3.1 environment",
+    "url": "https://passo.uno/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: I remade my blog into a Windows 3.1 environment",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "47904285",
+    "title": "Trump ousts National Science Board members",
+    "url": "https://www.washingtonpost.com/science/2026/04/25/national-science-board-members-dismissed/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Trump ousts National Science Board members",
     "chinese_summary": "生成摘要时出错"
   }
 ]
