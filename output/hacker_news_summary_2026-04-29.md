@@ -1,8 +1,7 @@
-# Hacker News 每日摘要
-    
-这是 Top 10 的每日摘要，更多请点击 [Top 100](output/hacker_news_summary_2026-04-29.md)
+# Hacker News 热门文章摘要 (2026-04-29)
 
-*最后自动更新时间: 2026-04-29 20:26:47*
+这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
+
 ## 1. 德国弹药产能超越美国
 
 **原文标题**: Germany Overtakes US in Ammunition Production Capacity
@@ -154,180 +153,203 @@ Assembly involves attaching the diaphragm, connecting the silicone tubing to the
 
 ---
 
-## 历史记录
+## 11. Letting AI play my game – building an agentic test harness to help play-testing
 
-| 序号 | 文件 |
-| --- | --- |
-| 1 | [2026-04-29](output/hacker_news_summary_2026-04-29.md) |
-| 2 | [2026-04-25](output/hacker_news_summary_2026-04-25.md) |
-| 3 | [2026-04-26](output/hacker_news_summary_2026-04-26.md) |
-| 4 | [2026-04-27](output/hacker_news_summary_2026-04-27.md) |
-| 5 | [2026-04-28](output/hacker_news_summary_2026-04-28.md) |
-| 6 | [2026-04-19](output/hacker_news_summary_2026-04-19.md) |
-| 7 | [2026-04-24](output/hacker_news_summary_2026-04-24.md) |
-| 8 | [2026-04-21](output/hacker_news_summary_2026-04-21.md) |
-| 9 | [2026-04-22](output/hacker_news_summary_2026-04-22.md) |
-| 10 | [2026-04-20](output/hacker_news_summary_2026-04-20.md) |
-| 11 | [2026-04-23](output/hacker_news_summary_2026-04-23.md) |
-| 12 | [2026-04-13](output/hacker_news_summary_2026-04-13.md) |
-| 13 | [2026-04-16](output/hacker_news_summary_2026-04-16.md) |
-| 14 | [2026-04-18](output/hacker_news_summary_2026-04-18.md) |
-| 15 | [2026-04-14](output/hacker_news_summary_2026-04-14.md) |
-| 16 | [2026-04-15](output/hacker_news_summary_2026-04-15.md) |
-| 17 | [2026-04-17](output/hacker_news_summary_2026-04-17.md) |
-| 18 | [2026-04-10](output/hacker_news_summary_2026-04-10.md) |
-| 19 | [2026-04-09](output/hacker_news_summary_2026-04-09.md) |
-| 20 | [2026-04-12](output/hacker_news_summary_2026-04-12.md) |
-| 21 | [2026-04-11](output/hacker_news_summary_2026-04-11.md) |
-| 22 | [2026-04-08](output/hacker_news_summary_2026-04-08.md) |
-| 23 | [2026-04-07](output/hacker_news_summary_2026-04-07.md) |
-| 24 | [2026-04-02](output/hacker_news_summary_2026-04-02.md) |
-| 25 | [2026-04-03](output/hacker_news_summary_2026-04-03.md) |
-| 26 | [2026-04-04](output/hacker_news_summary_2026-04-04.md) |
-| 27 | [2026-04-05](output/hacker_news_summary_2026-04-05.md) |
-| 28 | [2026-04-06](output/hacker_news_summary_2026-04-06.md) |
-| 29 | [2026-03-27](output/hacker_news_summary_2026-03-27.md) |
-| 30 | [2026-03-29](output/hacker_news_summary_2026-03-29.md) |
-| 31 | [2026-03-28](output/hacker_news_summary_2026-03-28.md) |
-| 32 | [2026-03-30](output/hacker_news_summary_2026-03-30.md) |
-| 33 | [2026-03-31](output/hacker_news_summary_2026-03-31.md) |
-| 34 | [2026-03-26](output/hacker_news_summary_2026-03-26.md) |
-| 35 | [2026-04-01](output/hacker_news_summary_2026-04-01.md) |
-| 36 | [2026-03-25](output/hacker_news_summary_2026-03-25.md) |
-| 37 | [2026-03-23](output/hacker_news_summary_2026-03-23.md) |
-| 38 | [2026-03-22](output/hacker_news_summary_2026-03-22.md) |
-| 39 | [2026-03-20](output/hacker_news_summary_2026-03-20.md) |
-| 40 | [2026-03-19](output/hacker_news_summary_2026-03-19.md) |
-| 41 | [2026-03-21](output/hacker_news_summary_2026-03-21.md) |
-| 42 | [2026-03-16](output/hacker_news_summary_2026-03-16.md) |
-| 43 | [2026-03-15](output/hacker_news_summary_2026-03-15.md) |
-| 44 | [2026-03-17](output/hacker_news_summary_2026-03-17.md) |
-| 45 | [2026-03-18](output/hacker_news_summary_2026-03-18.md) |
-| 46 | [2026-03-14](output/hacker_news_summary_2026-03-14.md) |
-| 47 | [2026-03-09](output/hacker_news_summary_2026-03-09.md) |
-| 48 | [2026-03-12](output/hacker_news_summary_2026-03-12.md) |
-| 49 | [2026-03-13](output/hacker_news_summary_2026-03-13.md) |
-| 50 | [2026-03-10](output/hacker_news_summary_2026-03-10.md) |
-| 51 | [2026-03-11](output/hacker_news_summary_2026-03-11.md) |
-| 52 | [2026-03-07](output/hacker_news_summary_2026-03-07.md) |
-| 53 | [2026-03-08](output/hacker_news_summary_2026-03-08.md) |
-| 54 | [2026-03-04](output/hacker_news_summary_2026-03-04.md) |
-| 55 | [2026-03-06](output/hacker_news_summary_2026-03-06.md) |
-| 56 | [2026-03-05](output/hacker_news_summary_2026-03-05.md) |
-| 57 | [2026-03-01](output/hacker_news_summary_2026-03-01.md) |
-| 58 | [2026-03-02](output/hacker_news_summary_2026-03-02.md) |
-| 59 | [2026-02-28](output/hacker_news_summary_2026-02-28.md) |
-| 60 | [2026-03-03](output/hacker_news_summary_2026-03-03.md) |
-| 61 | [2026-02-27](output/hacker_news_summary_2026-02-27.md) |
-| 62 | [2026-02-22](output/hacker_news_summary_2026-02-22.md) |
-| 63 | [2026-02-23](output/hacker_news_summary_2026-02-23.md) |
-| 64 | [2026-02-24](output/hacker_news_summary_2026-02-24.md) |
-| 65 | [2026-02-26](output/hacker_news_summary_2026-02-26.md) |
-| 66 | [2026-02-25](output/hacker_news_summary_2026-02-25.md) |
-| 67 | [2026-02-17](output/hacker_news_summary_2026-02-17.md) |
-| 68 | [2026-02-19](output/hacker_news_summary_2026-02-19.md) |
-| 69 | [2026-02-18](output/hacker_news_summary_2026-02-18.md) |
-| 70 | [2026-02-20](output/hacker_news_summary_2026-02-20.md) |
-| 71 | [2026-02-21](output/hacker_news_summary_2026-02-21.md) |
-| 72 | [2026-02-13](output/hacker_news_summary_2026-02-13.md) |
-| 73 | [2026-02-11](output/hacker_news_summary_2026-02-11.md) |
-| 74 | [2026-02-14](output/hacker_news_summary_2026-02-14.md) |
-| 75 | [2026-02-16](output/hacker_news_summary_2026-02-16.md) |
-| 76 | [2026-02-15](output/hacker_news_summary_2026-02-15.md) |
-| 77 | [2026-02-12](output/hacker_news_summary_2026-02-12.md) |
-| 78 | [2026-02-09](output/hacker_news_summary_2026-02-09.md) |
-| 79 | [2026-02-08](output/hacker_news_summary_2026-02-08.md) |
-| 80 | [2026-02-07](output/hacker_news_summary_2026-02-07.md) |
-| 81 | [2026-02-10](output/hacker_news_summary_2026-02-10.md) |
-| 82 | [2026-02-06](output/hacker_news_summary_2026-02-06.md) |
-| 83 | [2026-01-31](output/hacker_news_summary_2026-01-31.md) |
-| 84 | [2026-02-04](output/hacker_news_summary_2026-02-04.md) |
-| 85 | [2026-02-05](output/hacker_news_summary_2026-02-05.md) |
-| 86 | [2026-02-03](output/hacker_news_summary_2026-02-03.md) |
-| 87 | [2026-02-01](output/hacker_news_summary_2026-02-01.md) |
-| 88 | [2026-01-29](output/hacker_news_summary_2026-01-29.md) |
-| 89 | [2026-01-30](output/hacker_news_summary_2026-01-30.md) |
-| 90 | [2026-01-26](output/hacker_news_summary_2026-01-26.md) |
-| 91 | [2026-01-28](output/hacker_news_summary_2026-01-28.md) |
-| 92 | [2026-01-27](output/hacker_news_summary_2026-01-27.md) |
-| 93 | [2026-01-23](output/hacker_news_summary_2026-01-23.md) |
-| 94 | [2026-01-25](output/hacker_news_summary_2026-01-25.md) |
-| 95 | [2026-01-21](output/hacker_news_summary_2026-01-21.md) |
-| 96 | [2026-01-24](output/hacker_news_summary_2026-01-24.md) |
-| 97 | [2026-01-22](output/hacker_news_summary_2026-01-22.md) |
-| 98 | [2026-01-18](output/hacker_news_summary_2026-01-18.md) |
-| 99 | [2026-01-16](output/hacker_news_summary_2026-01-16.md) |
-| 100 | [2026-01-17](output/hacker_news_summary_2026-01-17.md) |
-| 101 | [2026-01-20](output/hacker_news_summary_2026-01-20.md) |
-| 102 | [2026-01-19](output/hacker_news_summary_2026-01-19.md) |
-| 103 | [2026-01-12](output/hacker_news_summary_2026-01-12.md) |
-| 104 | [2026-01-10](output/hacker_news_summary_2026-01-10.md) |
-| 105 | [2026-01-11](output/hacker_news_summary_2026-01-11.md) |
-| 106 | [2026-01-13](output/hacker_news_summary_2026-01-13.md) |
-| 107 | [2026-01-14](output/hacker_news_summary_2026-01-14.md) |
-| 108 | [2026-01-15](output/hacker_news_summary_2026-01-15.md) |
-| 109 | [2026-01-07](output/hacker_news_summary_2026-01-07.md) |
-| 110 | [2026-01-06](output/hacker_news_summary_2026-01-06.md) |
-| 111 | [2026-01-09](output/hacker_news_summary_2026-01-09.md) |
-| 112 | [2026-01-08](output/hacker_news_summary_2026-01-08.md) |
-| 113 | [2026-01-05](output/hacker_news_summary_2026-01-05.md) |
-| 114 | [2026-01-03](output/hacker_news_summary_2026-01-03.md) |
-| 115 | [2026-01-02](output/hacker_news_summary_2026-01-02.md) |
-| 116 | [2025-12-31](output/hacker_news_summary_2025-12-31.md) |
-| 117 | [2026-01-01](output/hacker_news_summary_2026-01-01.md) |
-| 118 | [2026-01-04](output/hacker_news_summary_2026-01-04.md) |
-| 119 | [2025-12-26](output/hacker_news_summary_2025-12-26.md) |
-| 120 | [2025-12-30](output/hacker_news_summary_2025-12-30.md) |
-| 121 | [2025-12-25](output/hacker_news_summary_2025-12-25.md) |
-| 122 | [2025-12-28](output/hacker_news_summary_2025-12-28.md) |
-| 123 | [2025-12-29](output/hacker_news_summary_2025-12-29.md) |
-| 124 | [2025-12-27](output/hacker_news_summary_2025-12-27.md) |
-| 125 | [2025-12-21](output/hacker_news_summary_2025-12-21.md) |
-| 126 | [2025-12-23](output/hacker_news_summary_2025-12-23.md) |
-| 127 | [2025-12-20](output/hacker_news_summary_2025-12-20.md) |
-| 128 | [2025-12-22](output/hacker_news_summary_2025-12-22.md) |
-| 129 | [2025-12-24](output/hacker_news_summary_2025-12-24.md) |
-| 130 | [2025-12-19](output/hacker_news_summary_2025-12-19.md) |
-| 131 | [2025-12-17](output/hacker_news_summary_2025-12-17.md) |
-| 132 | [2025-12-18](output/hacker_news_summary_2025-12-18.md) |
-| 133 | [2025-12-15](output/hacker_news_summary_2025-12-15.md) |
-| 134 | [2025-12-16](output/hacker_news_summary_2025-12-16.md) |
-| 135 | [2025-12-14](output/hacker_news_summary_2025-12-14.md) |
-| 136 | [2025-12-11](output/hacker_news_summary_2025-12-11.md) |
-| 137 | [2025-12-12](output/hacker_news_summary_2025-12-12.md) |
-| 138 | [2025-12-09](output/hacker_news_summary_2025-12-09.md) |
-| 139 | [2025-12-10](output/hacker_news_summary_2025-12-10.md) |
-| 140 | [2025-12-13](output/hacker_news_summary_2025-12-13.md) |
-| 141 | [2025-12-08](output/hacker_news_summary_2025-12-08.md) |
-| 142 | [2025-12-07](output/hacker_news_summary_2025-12-07.md) |
-| 143 | [2025-12-06](output/hacker_news_summary_2025-12-06.md) |
-| 144 | [2025-12-05](output/hacker_news_summary_2025-12-05.md) |
-| 145 | [2025-12-04](output/hacker_news_summary_2025-12-04.md) |
-| 146 | [2025-12-03](output/hacker_news_summary_2025-12-03.md) |
-| 147 | [2025-12-02](output/hacker_news_summary_2025-12-02.md) |
-| 148 | [2025-12-01](output/hacker_news_summary_2025-12-01.md) |
-| 149 | [2025-11-30](output/hacker_news_summary_2025-11-30.md) |
-| 150 | [2025-11-29](output/hacker_news_summary_2025-11-29.md) |
-| 151 | [2025-11-28](output/hacker_news_summary_2025-11-28.md) |
-| 152 | [2025-11-27](output/hacker_news_summary_2025-11-27.md) |
-| 153 | [2025-11-25](output/hacker_news_summary_2025-11-25.md) |
-| 154 | [2025-11-26](output/hacker_news_summary_2025-11-26.md) |
-| 155 | [2025-11-24](output/hacker_news_summary_2025-11-24.md) |
-| 156 | [2025-11-23](output/hacker_news_summary_2025-11-23.md) |
-| 157 | [2025-11-22](output/hacker_news_summary_2025-11-22.md) |
-| 158 | [2025-11-21](output/hacker_news_summary_2025-11-21.md) |
-| 159 | [2025-11-19](output/hacker_news_summary_2025-11-19.md) |
-| 160 | [2025-11-20](output/hacker_news_summary_2025-11-20.md) |
-| 161 | [2025-11-16](output/hacker_news_summary_2025-11-16.md) |
-| 162 | [2025-11-15](output/hacker_news_summary_2025-11-15.md) |
-| 163 | [2025-11-17](output/hacker_news_summary_2025-11-17.md) |
-| 164 | [2025-11-18](output/hacker_news_summary_2025-11-18.md) |
-| 165 | [2025-11-09](output/hacker_news_summary_2025-11-09.md) |
-| 166 | [2025-11-12](output/hacker_news_summary_2025-11-12.md) |
-| 167 | [2025-11-11](output/hacker_news_summary_2025-11-11.md) |
-| 168 | [2025-11-08](output/hacker_news_summary_2025-11-08.md) |
-| 169 | [2025-11-13](output/hacker_news_summary_2025-11-13.md) |
-| 170 | [2025-11-10](output/hacker_news_summary_2025-11-10.md) |
-| 171 | [2025-11-14](output/hacker_news_summary_2025-11-14.md) |
-| 172 | [2025-11-07](output/hacker_news_summary_2025-11-07.md) |
-| 173 | [2025-11-06](output/hacker_news_summary_2025-11-06.md) |
+**原文标题**: Letting AI play my game – building an agentic test harness to help play-testing
+
+**原文链接**: [https://blog.jeffschomay.com/letting-ai-play-my-game](https://blog.jeffschomay.com/letting-ai-play-my-game)
+
+生成摘要时出错
+
+---
+
+## 12. We decreased our LLM costs with Opus
+
+**原文标题**: We decreased our LLM costs with Opus
+
+**原文链接**: [https://www.mendral.com/blog/frontier-model-lower-costs](https://www.mendral.com/blog/frontier-model-lower-costs)
+
+生成摘要时出错
+
+---
+
+## 13. Laguna XS.2 and M.1
+
+**原文标题**: Laguna XS.2 and M.1
+
+**原文链接**: [https://poolside.ai/blog/laguna-a-deeper-dive](https://poolside.ai/blog/laguna-a-deeper-dive)
+
+生成摘要时出错
+
+---
+
+## 14. Court Rules 2nd Amendment Covers Firearms Parts Good News Those Who Build Guns
+
+**原文标题**: Court Rules 2nd Amendment Covers Firearms Parts Good News Those Who Build Guns
+
+**原文链接**: [https://cowboystatedaily.com/2026/04/28/court-rules-2nd-amendment-covers-firearms-parts-good-news-for-those-who-build-guns/](https://cowboystatedaily.com/2026/04/28/court-rules-2nd-amendment-covers-firearms-parts-good-news-for-those-who-build-guns/)
+
+生成摘要时出错
+
+---
+
+## 15. GitHub – DOS 1.0: Transcription of Tim Paterson's DOS Printouts
+
+**原文标题**: GitHub – DOS 1.0: Transcription of Tim Paterson's DOS Printouts
+
+**原文链接**: [https://github.com/DOS-History/Paterson-Listings](https://github.com/DOS-History/Paterson-Listings)
+
+生成摘要时出错
+
+---
+
+## 16. After Spain's blackout, its shift to renewables and grid evolution power on
+
+**原文标题**: After Spain's blackout, its shift to renewables and grid evolution power on
+
+**原文链接**: [https://www.theguardian.com/world/2026/apr/28/blackout-spain-renewable-energy-grid-solar-wind](https://www.theguardian.com/world/2026/apr/28/blackout-spain-renewable-energy-grid-solar-wind)
+
+生成摘要时出错
+
+---
+
+## 17. L123: A Lotus 1-2-3–style terminal spreadsheet with modern Excel compatibility
+
+**原文标题**: L123: A Lotus 1-2-3–style terminal spreadsheet with modern Excel compatibility
+
+**原文链接**: [https://github.com/duane1024/l123](https://github.com/duane1024/l123)
+
+生成摘要时出错
+
+---
+
+## 18. "People who don't use AI will be left behind"
+
+**原文标题**: "People who don't use AI will be left behind"
+
+**原文链接**: [https://migrainebrain.bearblog.dev/people-who-dont-use-ai-will-be-left-behind/](https://migrainebrain.bearblog.dev/people-who-dont-use-ai-will-be-left-behind/)
+
+生成摘要时出错
+
+---
+
+## 19. U.S. war in Iran has cost $25B so far, says Pentagon official
+
+**原文标题**: U.S. war in Iran has cost $25B so far, says Pentagon official
+
+**原文链接**: [https://www.reuters.com/world/middle-east/us-war-iran-has-cost-25-billion-so-far-says-pentagon-official-2026-04-29/](https://www.reuters.com/world/middle-east/us-war-iran-has-cost-25-billion-so-far-says-pentagon-official-2026-04-29/)
+
+生成摘要时出错
+
+---
+
+## 20. A playable DOOM MCP app
+
+**原文标题**: A playable DOOM MCP app
+
+**原文链接**: [https://chrisnager.com/blog/doom-runs-in-chatgpt-and-claude/](https://chrisnager.com/blog/doom-runs-in-chatgpt-and-claude/)
+
+生成摘要时出错
+
+---
+
+## 21. Coffee with a splash of physics: how to make the most out of your brew
+
+**原文标题**: Coffee with a splash of physics: how to make the most out of your brew
+
+**原文链接**: [https://physicsworld.com/a/coffee-with-a-splash-of-physics-how-to-make-the-most-out-of-your-brew/](https://physicsworld.com/a/coffee-with-a-splash-of-physics-how-to-make-the-most-out-of-your-brew/)
+
+生成摘要时出错
+
+---
+
+## 22. When the Internet Was a Place (2025)
+
+**原文标题**: When the Internet Was a Place (2025)
+
+**原文链接**: [https://www.frontporchrepublic.com/2025/09/when-the-internet-was-a-place/](https://www.frontporchrepublic.com/2025/09/when-the-internet-was-a-place/)
+
+生成摘要时出错
+
+---
+
+## 23. New gas-powered data centers could emit more greenhouse gases than whole nations
+
+**原文标题**: New gas-powered data centers could emit more greenhouse gases than whole nations
+
+**原文链接**: [https://www.wired.com/story/new-gas-powered-data-centers-could-emit-more-greenhouse-gases-than-entire-nations/](https://www.wired.com/story/new-gas-powered-data-centers-could-emit-more-greenhouse-gases-than-entire-nations/)
+
+生成摘要时出错
+
+---
+
+## 24. Apple CMF (Color-Matching Functions) 2026
+
+**原文标题**: Apple CMF (Color-Matching Functions) 2026
+
+**原文链接**: [https://www.lttlabs.com/articles/2026/04/11/apple-studio-display-xdr-display-testing-results](https://www.lttlabs.com/articles/2026/04/11/apple-studio-display-xdr-display-testing-results)
+
+生成摘要时出错
+
+---
+
+## 25. Denuvo has been cracked in all single-player games it previously protected
+
+**原文标题**: Denuvo has been cracked in all single-player games it previously protected
+
+**原文链接**: [https://www.tomshardware.com/video-games/pc-gaming/denuvo-has-been-bypassed-in-all-single-player-games-it-previously-protected-2k-games-and-denuvo-reportedly-retaliate-with-mandatory-14-day-online-checks](https://www.tomshardware.com/video-games/pc-gaming/denuvo-has-been-bypassed-in-all-single-player-games-it-previously-protected-2k-games-and-denuvo-reportedly-retaliate-with-mandatory-14-day-online-checks)
+
+生成摘要时出错
+
+---
+
+## 26. OpenAI Misses Key Revenue, User Targets in High-Stakes Sprint Toward IPO
+
+**原文标题**: OpenAI Misses Key Revenue, User Targets in High-Stakes Sprint Toward IPO
+
+**原文链接**: [https://www.wsj.com/tech/ai/openai-misses-key-revenue-user-targets-in-high-stakes-sprint-toward-ipo-94a95273](https://www.wsj.com/tech/ai/openai-misses-key-revenue-user-targets-in-high-stakes-sprint-toward-ipo-94a95273)
+
+生成摘要时出错
+
+---
+
+## 27. Show HN: Adblock-rust Manager – Firefox extension to enable the Brave ad blocker
+
+**原文标题**: Show HN: Adblock-rust Manager – Firefox extension to enable the Brave ad blocker
+
+**原文链接**: [https://github.com/electricant/adblock-rust-manager](https://github.com/electricant/adblock-rust-manager)
+
+生成摘要时出错
+
+---
+
+## 28. Why Law Is Law-Shaped
+
+**原文标题**: Why Law Is Law-Shaped
+
+**原文链接**: [https://lawvm.org/why-law-is-law-shaped/](https://lawvm.org/why-law-is-law-shaped/)
+
+生成摘要时出错
+
+---
+
+## 29. I quit drinking for a year
+
+**原文标题**: I quit drinking for a year
+
+**原文链接**: [https://dynomight.net/drinking/](https://dynomight.net/drinking/)
+
+生成摘要时出错
+
+---
+
+## 30. Laws of UX
+
+**原文标题**: Laws of UX
+
+**原文链接**: [https://lawsofux.com/](https://lawsofux.com/)
+
+生成摘要时出错
+
+---
+
