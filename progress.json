@@ -1,130 +1,26 @@
 [
   {
-    "id": "48032265",
-    "title": "Multi-stroke text effect in CSS",
-    "url": "https://yuanchuan.dev/multi-stroke-text-effect-in-css",
-    "summary": "The article details a method for creating a retro multi-stroke text effect in CSS, addressing the limitation of `text-stroke` only accepting a single value. The breakthrough came from stacking multiple elements and, crucially, varying the `-webkit-text-stroke-width` for each layer, alongside using `z-index` to manage their order.\n\nThis technique exploits how browsers render character outlines: a larger stroke width produces a thicker outline while maintaining the character's original shape. By combining layers with different stroke widths and colors, a layered, multi-stroke appearance is achieved. The author demonstrates this using `css-doodle` for automated layering and property variations.\n\nKey observations include variations in rendering quality across browsers (Firefox offering smoother results), and that inline text characters will merge their stroke shapes. The author also stresses that the choice of font significantly influences the final look, introducing a `@google-font` function for quick font experimentation.\n\nA significant drawback is performance; the effect can be resource-intensive, especially with larger font sizes, potentially causing flickering. Therefore, while excellent for experiments or generating static images with tools like `css-doodle`, it's generally not recommended for production environments.",
-    "chinese_title": "CSS 多重描边文本效果",
-    "chinese_summary": "文章详细介绍了一种在CSS中创建复古多描边文本效果的方法，解决了`text-stroke`只接受单个值的局限性。突破在于堆叠多个元素，关键是为每个层级设置不同的`-webkit-text-stroke-width`，并结合`z-index`来管理它们的顺序。\n\n这项技术利用了浏览器渲染字符轮廓的方式：更大的描边宽度会产生更粗的轮廓，同时保持字符的原始形状。通过组合不同描边宽度和颜色的层，可以实现分层的多描边外观。作者使用`css-doodle`来自动化分层和属性变化，展示了这一效果。\n\n主要观察结果包括不同浏览器之间的渲染质量差异（Firefox提供更平滑的效果），以及内联文本字符的描边形状会合并。作者还强调，字体的选择对最终效果有显著影响，并引入了`@google-font`函数以进行快速字体实验。\n\n一个显著的缺点是性能；这种效果可能会占用大量资源，尤其是在字体较大时，可能导致闪烁。因此，虽然它非常适合用于实验或使用`css-doodle`等工具生成静态图像，但通常不建议在生产环境中使用。"
-  },
-  {
-    "id": "48024358",
-    "title": "I'm scared about biological computing",
-    "url": "https://kuber.studio/blog/Reflections/I%27m-Scared-About-Biological-Computing",
-    "summary": "The author, an AI developer deeply familiar with LLMs, expresses profound unease regarding the recent development of training human neurons in a lab to play DOOM. While he dismisses LLMs as non-conscious \"next token predictors,\" he finds applying similar reward mechanisms to biological neurons deeply disturbing, questioning if we've created a potentially conscious \"human biocomputer\" trapped in a simulated hell.\n\nHis central concern revolves around defining consciousness: if the neurons interpret visual data to play, are they \"seeing\"? He challenges the notion that 200,000 neurons, which is more than some simple organisms, aren't enough for sentience. The author acknowledges strong commercial incentives for biological computing due to its efficiency and storage, predicting that this \"Pandora's box\" will not be closed despite ethical concerns. He concludes with a sense of profound discomfort and a call for greater public discussion about these potentially dystopian implications, feeling that society isn't adequately addressing this critical advancement.",
-    "chinese_title": "我害怕生物计算",
-    "chinese_summary": "The author, an AI developer deeply familiar with LLMs, expresses profound unease regarding the recent development of training human neurons in a lab to play DOOM. While he dismisses LLMs as non-conscious \"next token predictors,\" he finds applying similar reward mechanisms to biological neurons deeply disturbing, questioning if we've created a potentially conscious \"human biocomputer\" trapped in a simulated hell.\n\nHis central concern revolves around defining consciousness: if the neurons interpret visual data to play, are they \"seeing\"? He challenges the notion that 200,000 neurons, which is more than some simple organisms, aren't enough for sentience. The author acknowledges strong commercial incentives for biological computing due to its efficiency and storage, predicting that this \"Pandora's box\" will not be closed despite ethical concerns. He concludes with a sense of profound discomfort and a call for greater public discussion about these potentially dystopian implications, feeling that society isn't adequately addressing this critical advancement."
-  },
-  {
-    "id": "48029114",
-    "title": "NPR finds \"no sign\" of Polymarket at its Panama HQ address",
-    "url": "https://www.npr.org/2026/05/05/nx-s1-5807918/polymarket-panama-prediction-market",
-    "summary": "生成摘要时出错",
-    "chinese_title": "NPR 发现 Polymarket 巴拿马总部地址无踪影",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48019025",
-    "title": "Lessons for Agentic Coding: What should we do when code is cheap?",
-    "url": "https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Lessons for Agentic Coding: What should we do when code is cheap?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48023533",
-    "title": "Agents for financial services and insurance",
-    "url": "https://www.anthropic.com/news/finance-agents",
-    "summary": "On May 5, 2026, Claude announced a major expansion of its AI agents for financial services and insurance, featuring ten ready-to-run templates designed to automate time-consuming tasks like building pitchbooks, screening KYC files, and month-end closing.\n\nThese agents are available as plugins for Claude Cowork and Claude Code, or as cookbooks for Claude Managed Agents, enabling rapid deployment. They are optimized for Claude Opus 4.7, which excels in financial tasks.\n\nKey updates include:\n*   **New Agent Templates:** Specific agents for Research and Client Coverage (e.g., Pitch builder, Meeting preparer) and Finance and Operations (e.g., Valuation reviewer, KYC screener) streamline workflows. These can run alongside analysts as plugins or autonomously as Managed Agents.\n*   **Microsoft 365 Integration:** Claude now works directly within Excel, PowerPoint, and Word (Outlook coming soon) via add-ins, allowing context to carry across applications for seamless work.\n*   **Expanded Partner Ecosystem:** New connectors provide real-time access to critical market data and research from providers like Dun & Bradstreet, FactSet, S&P Capital IQ, and SS&C IntraLinks. Moody's has also launched an MCP app embedding proprietary credit data.\n\nLeading banks, asset managers, and insurers are already adopting Claude across front, middle, and back office functions, reporting significant efficiency gains, increased productivity, and enhanced analytical capabilities. The new agents, add-ins, and connectors are available today, with resources for getting started via Claude's financial services marketplace.",
-    "chinese_title": "金融服务和保险代理人",
-    "chinese_summary": "2026年5月5日，Claude宣布大幅扩展其用于金融服务和保险领域的AI代理，推出十个即用型模板，旨在自动化制作演示文稿、筛选KYC文件和月末结账等耗时任务。\n\n这些代理可作为Claude Cowork和Claude Code的插件使用，或作为Claude Managed Agents的操作指南（cookbooks），以实现快速部署。它们针对在金融任务中表现出色的Claude Opus 4.7进行了优化。\n\n主要更新包括：\n*   **新代理模板：** 针对研究和客户覆盖（例如，演示文稿生成器、会议准备器）以及财务和运营（例如，估值审查器、KYC筛选器）的特定代理，简化了工作流程。这些代理可以作为插件与分析师协同运行，也可以作为托管代理自主运行。\n*   **Microsoft 365集成：** Claude现在通过加载项直接在Excel、PowerPoint和Word中运行（Outlook即将推出），允许上下文在应用程序间无缝传递，实现流畅工作。\n*   **扩展的合作伙伴生态系统：** 新的连接器提供对来自Dun & Bradstreet、FactSet、S&P Capital IQ和SS&C IntraLinks等供应商的关键市场数据和研究的实时访问。穆迪（Moody's）也推出了一款嵌入专有信用数据的MCP应用程序。\n\n领先的银行、资产管理公司和保险公司已将Claude应用于前台、中台和后台职能部门，并报告了显著的效率提升、生产力增加和分析能力增强。新的代理、加载项和连接器现已推出，可通过Claude的金融服务市场获取入门资源。"
-  },
-  {
-    "id": "48037986",
-    "title": "Higher usage limits for Claude and a compute deal with SpaceX",
-    "url": "https://www.anthropic.com/news/higher-limits-spacex",
-    "summary": "On May 6, 2026, the company announced significant enhancements to Claude's service and compute capacity, including a major partnership with SpaceX.\n\nEffective immediately, Claude usage limits are substantially increased. Claude Code’s five-hour rate limits are doubled for Pro, Max, Team, and seat-based Enterprise plans. Additionally, peak hour limit reductions for Claude Code are removed for Pro and Max accounts. API rate limits for Claude Opus models have also been considerably raised.\n\nA new agreement with SpaceX grants access to their Colossus 1 data center, providing over 300 megawatts (more than 220,000 NVIDIA GPUs) of new compute capacity within the month. This directly improves capacity for Claude Pro and Max subscribers. The company also expressed interest in developing orbital AI compute with SpaceX.\n\nThis deal bolsters existing compute commitments, including up to 5 gigawatts (GW) with Amazon (nearly 1 GW by end of 2026), 5 GW with Google and Broadcom (online 2027), $30 billion in Azure capacity with Microsoft and NVIDIA, and a $50 billion investment with Fluidstack. The company utilizes a diverse range of hardware, including AWS Trainium, Google TPUs, and NVIDIA GPUs.\n\nInternational expansion is also underway, with new inference capacity in Asia and Europe through Amazon, targeting enterprise customers in regulated industries needing in-region infrastructure. The company prioritizes partnering with democratic countries and is exploring extending its commitment to cover consumer electricity price increases from data centers to new international jurisdictions.",
-    "chinese_title": "更高的 Claude 使用限额，以及与 SpaceX 的计算交易",
-    "chinese_summary": "On May 6, 2026, the company announced significant enhancements to Claude's service and compute capacity, including a major partnership with SpaceX.\n\nEffective immediately, Claude usage limits are substantially increased. Claude Code’s five-hour rate limits are doubled for Pro, Max, Team, and seat-based Enterprise plans. Additionally, peak hour limit reductions for Claude Code are removed for Pro and Max accounts. API rate limits for Claude Opus models have also been considerably raised.\n\nA new agreement with SpaceX grants access to their Colossus 1 data center, providing over 300 megawatts (more than 220,000 NVIDIA GPUs) of new compute capacity within the month. This directly improves capacity for Claude Pro and Max subscribers. The company also expressed interest in developing orbital AI compute with SpaceX.\n\nThis deal bolsters existing compute commitments, including up to 5 gigawatts (GW) with Amazon (nearly 1 GW by end of 2026), 5 GW with Google and Broadcom (online 2027), $30 billion in Azure capacity with Microsoft and NVIDIA, and a $50 billion investment with Fluidstack. The company utilizes a diverse range of hardware, including AWS Trainium, Google TPUs, and NVIDIA GPUs.\n\nInternational expansion is also underway, with new inference capacity in Asia and Europe through Amazon, targeting enterprise customers in regulated industries needing in-region infrastructure. The company prioritizes partnering with democratic countries and is exploring extending its commitment to cover consumer electricity price increases from data centers to new international jurisdictions."
-  },
-  {
-    "id": "48021968",
-    "title": "AI Product Graveyard",
-    "url": "https://tooldirectory.ai/ai-graveyard",
-    "summary": "The \"AI Product Graveyard\" article discusses the alarming rate at which AI products and startups fail or shut down, creating a digital \"graveyard\" of defunct tools. This trend mirrors past tech booms like the dot-com bubble, indicating that even cutting-edge technology doesn't guarantee success.\n\nThe article identifies several key reasons for these failures:\n1.  **Lack of Product-Market Fit:** Many AI tools are solutions in search of a problem, failing to address genuine user needs or offer significant advantages over existing alternatives.\n2.  **Inadequate Monetization:** Startups often struggle to convert free users into paying customers, leading to unsustainable business models.\n3.  **Over-reliance on LLMs:** Simply wrapping a large language model (LLM) with a user interface isn't enough; products need unique value propositions beyond the underlying AI.\n4.  **Market Saturation:** The AI landscape is highly competitive, making differentiation difficult for new entrants.\n5.  **High Operational Costs:** Running AI models can be expensive, impacting profitability.\n6.  **Rapid Technological Change:** The fast-evolving AI environment makes it challenging for products to keep pace and remain relevant.\n7.  **Technological Limitations:** Issues like AI \"hallucinations\" and a lack of true understanding can erode user trust.\n\nTo avoid the graveyard, the article suggests future AI ventures must prioritize solving real user problems, ensure robust product-market fit, develop sustainable business models, offer genuine differentiation, and build trust through transparency and ethical considerations.",
-    "chinese_title": "AI产品墓地",
-    "chinese_summary": "The \"AI Product Graveyard\" article discusses the alarming rate at which AI products and startups fail or shut down, creating a digital \"graveyard\" of defunct tools. This trend mirrors past tech booms like the dot-com bubble, indicating that even cutting-edge technology doesn't guarantee success.\n\nThe article identifies several key reasons for these failures:\n1.  **Lack of Product-Market Fit:** Many AI tools are solutions in search of a problem, failing to address genuine user needs or offer significant advantages over existing alternatives.\n2.  **Inadequate Monetization:** Startups often struggle to convert free users into paying customers, leading to unsustainable business models.\n3.  **Over-reliance on LLMs:** Simply wrapping a large language model (LLM) with a user interface isn't enough; products need unique value propositions beyond the underlying AI.\n4.  **Market Saturation:** The AI landscape is highly competitive, making differentiation difficult for new entrants.\n5.  **High Operational Costs:** Running AI models can be expensive, impacting profitability.\n6.  **Rapid Technological Change:** The fast-evolving AI environment makes it challenging for products to keep pace and remain relevant.\n7.  **Technological Limitations:** Issues like AI \"hallucinations\" and a lack of true understanding can erode user trust.\n\nTo avoid the graveyard, the article suggests future AI ventures must prioritize solving real user problems, ensure robust product-market fit, develop sustainable business models, offer genuine differentiation, and build trust through transparency and ethical considerations."
-  },
-  {
-    "id": "48018080",
-    "title": "Kids can bypass some age checks with a drawn-on mustache",
-    "url": "https://www.theregister.com/2026/05/04/uk_online_safety_act_age_checks_subvert/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Kids can bypass some age checks with a drawn-on mustache",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48031867",
-    "title": "245TB Micron 6600 ION Data Center SSD Now Shipping",
-    "url": "https://investors.micron.com/news-releases/news-release-details/industry-leading-245tb-micron-6600-ion-data-center-ssd-now",
-    "summary": "The Micron 6600 ION Data Center SSD, featuring an impressive 245TB capacity, is now shipping. This new solid-state drive is designed for data center environments and represents a significant advancement in storage density. The provided content \"Powered and protected by Privacy\" appears to be an unrelated snippet and does not offer further details about the SSD's features or benefits.",
-    "chinese_title": "245TB Micron 6600 ION Data Center SSD Now Shipping",
-    "chinese_summary": "The Micron 6600 ION Data Center SSD, featuring an impressive 245TB capacity, is now shipping. This new solid-state drive is designed for data center environments and represents a significant advancement in storage density. The provided content \"Powered and protected by Privacy\" appears to be an unrelated snippet and does not offer further details about the SSD's features or benefits."
-  },
-  {
     "id": "48031109",
     "title": "Telus Uses AI to Alter Call-Agent Accents",
     "url": "https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Telus Uses AI to Alter Call-Agent Accents",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "Telus, through its Telus Digital unit, is employing AI to modify the accents of its offshore call-centre agents in real time. The technology, a speech-to-speech tool developed by Tomato.ai, aims to reduce what Telus describes as \"accent-related friction.\"\n\nThis practice has drawn significant criticism from labour groups, who label it deceptive and are urging regulators to mandate customer disclosure. The initiative has provoked swift public backlash in Canada. Competitors Rogers and Bell have publicly stated they have no plans to adopt similar voice-altering technology.\n\nTechnically, real-time voice conversion involves complex systems combining automatic speech recognition, accent conversion models, and neural vocoders. Implementing this reliably in live contact centres faces operational challenges concerning latency, naturalness, and robustness in noisy environments.\n\nFrom an industry perspective, deploying real-time voice alteration raises critical questions about customer consent, transparency, worker rights, and voice-privacy regulations. The public distancing by major telecom competitors may influence broader adoption in the sector. Future developments to watch include potential regulatory responses from Canadian authorities on disclosure requirements and transparency policies from other contact-centre operators.",
+    "chinese_title": "研科用AI改变客服口音",
+    "chinese_summary": "Telus通过其Telus Digital部门，正在利用人工智能实时修改其离岸呼叫中心座席人员的口音。这项由Tomato.ai开发的语音到语音工具，旨在减少Telus所称的“口音相关摩擦”。\n\n这种做法已引发劳工团体的大量批评，他们称其为欺骗性行为，并敦促监管机构强制要求向客户披露。这项举措在加拿大迅速引起了公众强烈反弹。竞争对手Rogers和Bell已公开表示，他们没有计划采用类似的声音修改技术。\n\n从技术上讲，实时语音转换涉及结合了自动语音识别、口音转换模型和神经声码器的复杂系统。在实际联络中心可靠地实施这项技术，面临着关于延迟、自然度以及在嘈杂环境中鲁棒性等方面的运营挑战。\n\n从行业角度来看，部署实时语音修改技术引发了关于客户同意、透明度、员工权利和语音隐私法规等关键问题。主要电信竞争对手的公开划清界限可能会影响该行业更广泛的采用。值得关注的未来发展包括加拿大当局可能就披露要求出台的监管回应，以及其他联络中心运营商的透明度政策。"
   },
   {
-    "id": "48017907",
-    "title": "Hand Drawn QR Codes (2025)",
-    "url": "https://sethmlarson.dev/hand-drawn-qr-codes",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Hand Drawn QR Codes (2025)",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48027455",
+    "title": "A Theory of Deep Learning",
+    "url": "https://elonlit.com/scrivings/a-theory-of-deep-learning/",
+    "summary": "This article proposes a novel theory to explain the perplexing generalization capabilities of deep learning, which defy classical statistical learning theory's predictions of catastrophic overfitting for overparameterized models. Traditional explanations struggle with phenomena like benign overfitting, double descent, implicit bias, and grokking.\n\nThe new theory shifts focus from parameter space to output space, treating neural networks as dynamical systems. Its core is the empirical Neural Tangent Kernel (eNTK), which governs how gradient steps affect predictions. The key insight is the time-integrated eNTK, \\(\\mathcal{W}_S\\), which partitions output space into a \"signal channel\" (where training dissipates loss) and a \"reservoir\" (where it dissipates nothing). Crucially, a \"test transfer operator\" is shown to vanish on this reservoir. This means any information, such as noise from the training data, that resides in the reservoir is \"test-invisible\" and therefore does not impact generalization.\n\nThis unified framework explains:\n*   **Benign overfitting:** Noise is memorized but resides in the test-invisible reservoir.\n*   **Double descent:** Noise moves between the signal channel and reservoir as model capacity changes.\n*   **Implicit bias:** Gradient flow prioritizes high-mobility signal modes, effectively finding minimum-norm solutions.\n*   **Grokking:** Signal slowly migrates from the reservoir into the signal channel during extended training.\n\nThe theory also yields practical applications, including a modified Adam optimizer that trains directly on population risk, accelerating grokking, suppressing memorization, and eliminating the need for validation sets. Future implications include analytically determining final network states and designing more efficient architectures that leverage the reservoir concept to optimally sequester noise.",
+    "chinese_title": "深度学习理论",
+    "chinese_summary": "本文提出了一种新颖的理论，用以解释深度学习令人费解的泛化能力，这种能力与经典统计学习理论对过参数化模型灾难性过拟合的预测相悖。传统解释难以处理良性过拟合、双下降、隐式偏置和Grokking等现象。\n\n新理论将焦点从参数空间转向输出空间，将神经网络视为动力系统。其核心是经验神经正切核 (eNTK)，它支配着梯度步长如何影响预测。关键的洞察是时间积分eNTK，\\(\\mathcal{W}_S\\)，它将输出空间划分为一个“信号通道”（训练在此处消散损失）和一个“储层”（训练在此处不消散任何东西）。至关重要的是，“测试转移算子”被证明在此储层上消失。这意味着任何存在于储层中的信息，例如来自训练数据的噪声，都是“测试不可见的”，因此不会影响泛化能力。\n\n这一统一框架解释了：\n*   **良性过拟合：** 噪声被记忆但存在于测试不可见的储层中。\n*   **双下降：** 随着模型容量的变化，噪声在信号通道和储层之间移动。\n*   **隐式偏置：** 梯度流优先处理高流动性信号模式，从而有效地找到最小范数解。\n*   **Grokking：** 在长时间训练期间，信号缓慢地从储层迁移到信号通道中。\n\n该理论还产生了实际应用，包括一种改进的Adam优化器，它直接在总体风险上进行训练，加速Grokking、抑制记忆化，并消除了对验证集的需求。未来的影响包括分析性地确定最终网络状态，以及设计更高效的架构，这些架构利用储层概念来最佳地隔离噪声。"
   },
   {
-    "id": "48017298",
-    "title": "What I'm Hearing About Cognitive Debt (So Far)",
-    "url": "https://margaretstorey.com/blog/2026/02/18/cognitive-debt-revisited/",
+    "id": "48038307",
+    "title": "Life During Class Wartime",
+    "url": "https://www.tbray.org/ongoing/When/202x/2026/05/03/Life-During-Class-Wartime",
     "summary": "生成摘要时出错",
-    "chinese_title": "What I'm Hearing About Cognitive Debt (So Far)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48032976",
-    "title": "Reverse-engineering the 1998 Ultima Online demo server",
-    "url": "https://draxinar.github.io/articles/2026-05-01-uodemo-reverse-engineering.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Reverse-engineering the 1998 Ultima Online demo server",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48014325",
-    "title": "Formatting a 25M-line codebase overnight",
-    "url": "https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Formatting a 25M-line codebase overnight",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48037128",
-    "title": "Vibe coding and agentic engineering are getting closer than I'd like",
-    "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Vibe coding and agentic engineering are getting closer than I'd like",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48026342",
-    "title": "Show HN: Explore color palettes inspired by 3000 master painter artworks",
-    "url": "https://paletteinspiration.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Explore color palettes inspired by 3000 master painter artworks",
+    "chinese_title": "Life During Class Wartime",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -136,67 +32,75 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48017813",
-    "title": "CVE-2026-31431: Copy Fail vs. rootless containers",
-    "url": "https://www.dragonsreach.it/2026/05/04/cve-2026-31431-copy-fail-rootless-containers/",
+    "id": "48050278",
+    "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+    "url": "https://deepmind.google/blog/alphaevolve-impact/",
     "summary": "生成摘要时出错",
-    "chinese_title": "CVE-2026-31431: Copy Fail vs. rootless containers",
+    "chinese_title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48026206",
-    "title": "Clarification on the Notepad++ Trademark Issue",
-    "url": "https://notepad-plus-plus.org/news/clarify-npp-trademark-infringement/",
+    "id": "48047970",
+    "title": "LinkedIn profile visitor lists belong to the people, says Noyb",
+    "url": "https://www.theregister.com/offbeat/2026/05/05/noyb-cries-foul-on-linkedin-withholding-profile-visitor-data/5225338",
+    "summary": "Privacy advocacy group Noyb is challenging LinkedIn over its practice of charging users to see a full list of their profile visitors, arguing it violates GDPR Article 15. While premium LinkedIn users can view names, job titles, and employers of profile visitors for up to 365 days, free users receive only vague information (e.g., \"12 people found you through the homepage\") and are redirected to a premium signup page for details.\n\nAn unnamed LinkedIn user invoked their GDPR Article 15 right to access all personal data processed by the company, specifically requesting their full profile visitor list. LinkedIn denied the request, citing data protection, and falsely claimed that premium membership isn't required to see full visitor details.\n\nNoyb, supporting the user, contends that GDPR Article 15 explicitly grants data subjects the right to a free copy of *any and all* personal data processed about them. Noyb lawyer Martin Baumann argues that if LinkedIn provides this data to paying premium users, it cannot logically claim that providing it to free users would adversely affect the privacy rights of the visitors. The core issue is whether companies can sell access to personal data that users have a right to access for free.\n\nNoyb hopes this case will set a legal precedent, clarifying that personal data available for purchase must also be accessible free of charge under GDPR Article 15, impacting not just LinkedIn but other businesses with similar practices.",
+    "chinese_title": "Noyb 表示，领英个人资料访客列表归人民所有。",
+    "chinese_summary": "Privacy advocacy group Noyb is challenging LinkedIn over its practice of charging users to see a full list of their profile visitors, arguing it violates GDPR Article 15. While premium LinkedIn users can view names, job titles, and employers of profile visitors for up to 365 days, free users receive only vague information (e.g., \"12 people found you through the homepage\") and are redirected to a premium signup page for details.\n\nAn unnamed LinkedIn user invoked their GDPR Article 15 right to access all personal data processed by the company, specifically requesting their full profile visitor list. LinkedIn denied the request, citing data protection, and falsely claimed that premium membership isn't required to see full visitor details.\n\nNoyb, supporting the user, contends that GDPR Article 15 explicitly grants data subjects the right to a free copy of *any and all* personal data processed about them. Noyb lawyer Martin Baumann argues that if LinkedIn provides this data to paying premium users, it cannot logically claim that providing it to free users would adversely affect the privacy rights of the visitors. The core issue is whether companies can sell access to personal data that users have a right to access for free.\n\nNoyb hopes this case will set a legal precedent, clarifying that personal data available for purchase must also be accessible free of charge under GDPR Article 15, impacting not just LinkedIn but other businesses with similar practices."
+  },
+  {
+    "id": "48038864",
+    "title": "Going Full Time on Open Source",
+    "url": "https://jdx.dev/posts/2026-04-17-going-full-time-on-open-source/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Clarification on the Notepad++ Trademark Issue",
+    "chinese_title": "Going Full Time on Open Source",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48015218",
-    "title": "'Point of no return': New Orleans relocation must start now due to sea level",
-    "url": "https://www.theguardian.com/us-news/2026/may/04/new-orleans-sea-levels-relocation-climate-crisis",
+    "id": "48037724",
+    "title": "Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem",
+    "url": "https://tilde.run/",
     "summary": "生成摘要时出错",
-    "chinese_title": "'Point of no return': New Orleans relocation must start now due to sea level",
+    "chinese_title": "Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48039739",
-    "title": "BYD overtakes Tesla and Kia as the best-selling EV brand in key overseas markets",
-    "url": "https://electrek.co/2026/05/05/byd-overtakes-tesla-kia-best-selling-ev-brand-key-overseas-markets/",
+    "id": "48050540",
+    "title": "Motherboard sales 'collapse' amid unprecedented shortages fueled by AI",
+    "url": "https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers",
+    "summary": "Motherboard sales are experiencing an \"unprecedented collapse,\" with projections showing a more than 25% drop in 2024 compared to 2023. This downturn is primarily attributed to chipmakers prioritizing high-margin AI accelerator production over components for traditional desktop PCs, leading to severe shortages of essential chipsets and controllers for consumer motherboards.\n\nASUS, the largest motherboard vendor, is expected to see its sales plummet by 20% in 2024, selling 4.5 million fewer boards, and an additional 500,000 fewer in 2025, totaling a 5 million unit decline over two years. Other major manufacturers like Gigabyte, MSI, and ASRock are also projected to face significant sales reductions, with MSI expecting to sell 1.2 million fewer boards.\n\nThe shift in manufacturing focus means that components typically allocated to the enthusiast PC market are being diverted to the booming AI sector, effectively strangling the supply for consumer-grade motherboards. This situation is impacting both Intel and AMD platforms, making it challenging for vendors to meet even reduced demand and signaling a tough period for the PC components market.",
+    "chinese_title": "在AI推动的史无前例的短缺背景下，主板销量“暴跌”",
+    "chinese_summary": "Motherboard sales are experiencing an \"unprecedented collapse,\" with projections showing a more than 25% drop in 2024 compared to 2023. This downturn is primarily attributed to chipmakers prioritizing high-margin AI accelerator production over components for traditional desktop PCs, leading to severe shortages of essential chipsets and controllers for consumer motherboards.\n\nASUS, the largest motherboard vendor, is expected to see its sales plummet by 20% in 2024, selling 4.5 million fewer boards, and an additional 500,000 fewer in 2025, totaling a 5 million unit decline over two years. Other major manufacturers like Gigabyte, MSI, and ASRock are also projected to face significant sales reductions, with MSI expecting to sell 1.2 million fewer boards.\n\nThe shift in manufacturing focus means that components typically allocated to the enthusiast PC market are being diverted to the booming AI sector, effectively strangling the supply for consumer-grade motherboards. This situation is impacting both Intel and AMD platforms, making it challenging for vendors to meet even reduced demand and signaling a tough period for the PC components market."
+  },
+  {
+    "id": "48045012",
+    "title": "Diskless Linux boot using ZFS, iSCSI and PXE",
+    "url": "https://aniket.foo/posts/20260505-netboot/",
     "summary": "生成摘要时出错",
-    "chinese_title": "BYD overtakes Tesla and Kia as the best-selling EV brand in key overseas markets",
+    "chinese_title": "Diskless Linux boot using ZFS, iSCSI and PXE",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48024364",
-    "title": "Two millionth electric car registered as market rebounds from tax changes",
-    "url": "https://www.smmt.co.uk/two-millionth-electric-car-registered-as-market-rebounds-strongly-from-tax-changes/",
+    "id": "48044311",
+    "title": "The Vatican's Website in Latin",
+    "url": "https://www.vatican.va/latin/latin_index.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Two millionth electric car registered as market rebounds from tax changes",
+    "chinese_title": "The Vatican's Website in Latin",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48026021",
-    "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
-    "url": "https://arxiv.org/abs/2604.26752",
+    "id": "48050751",
+    "title": "DeepSeek 4 Flash local inference engine for Metal",
+    "url": "https://github.com/antirez/ds4",
     "summary": "生成摘要时出错",
-    "chinese_title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+    "chinese_title": "DeepSeek 4 Flash local inference engine for Metal",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48023473",
-    "title": "It's official: Utah is the U.S. state closest to banning VPNs",
-    "url": "https://tech.yahoo.com/vpn/article/its-official-utah-is-the-us-state-closest-to-banning-vpns-153556814.html",
+    "id": "48051562",
+    "title": "Agents need control flow, not more prompts",
+    "url": "https://bsuh.bearblog.dev/agents-need-control-flow/",
     "summary": "生成摘要时出错",
-    "chinese_title": "It's official: Utah is the U.S. state closest to banning VPNs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48037009",
-    "title": "Ted Turner has died",
-    "url": "https://www.cnn.com/2026/05/06/us/ted-turner-death",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ted Turner has died",
+    "chinese_title": "Agents need control flow, not more prompts",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -208,227 +112,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48022900",
-    "title": "Incident with Actions – Resolved",
-    "url": "https://www.githubstatus.com/incidents/1j40g94rn22j",
+    "id": "48040002",
+    "title": "Learning the Integral of a Diffusion Model",
+    "url": "https://sander.ai/2026/05/06/flow-maps.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Incident with Actions – Resolved",
+    "chinese_title": "Learning the Integral of a Diffusion Model",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48038827",
-    "title": "From Supabase to Clerk to Better Auth",
-    "url": "https://blog.val.town/better-auth",
+    "id": "48043736",
+    "title": "Iran hit more U.S. military targets than has been reported, satellite images",
+    "url": "https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/",
     "summary": "生成摘要时出错",
-    "chinese_title": "From Supabase to Clerk to Better Auth",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48017641",
-    "title": "Biscuit",
-    "url": "https://github.com/yattsu/biscuit",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Biscuit",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48034762",
-    "title": "Setting up a Sun Ray server on OpenIndiana Hipster 2025.10",
-    "url": "https://catstret.ch/202605/srss-hipster202510/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Setting up a Sun Ray server on OpenIndiana Hipster 2025.10",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48029753",
-    "title": "Xbox CEO ends Copilot AI development and overhauls leadership",
-    "url": "https://www.dexerto.com/gaming/xbox-ceo-ends-copilot-ai-development-overhauls-leadership-3361353/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Xbox CEO ends Copilot AI development and overhauls leadership",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48035617",
-    "title": "RAM prices are forcing companies to choose higher prices, worse specs, or both",
-    "url": "https://gizmodo.com/shrinkflation-is-quietly-making-all-gadgets-worse-2000754565",
-    "summary": "生成摘要时出错",
-    "chinese_title": "RAM prices are forcing companies to choose higher prices, worse specs, or both",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48038864",
-    "title": "Going Full Time on Open Source",
-    "url": "https://jdx.dev/posts/2026-04-17-going-full-time-on-open-source/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Going Full Time on Open Source",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48038489",
-    "title": "Colombia hosts talks on exiting fossil fuels as global energy crisis deepens",
-    "url": "https://www.latimes.com/environment/story/2026-04-26/colombia-hosts-talks-on-exiting-fossil-fuels-as-global-energy-crisis-deepens",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Colombia hosts talks on exiting fossil fuels as global energy crisis deepens",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48024160",
-    "title": "Instagram Encrypted Messaging Ends on Friday, May 8",
-    "url": "https://www.macrumors.com/2026/05/05/psa-instagram-encrypted-messaging-ends-may-8/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Instagram Encrypted Messaging Ends on Friday, May 8",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48014868",
-    "title": "When networking doesn't work",
-    "url": "https://www.os2museum.com/wp/when-networking-doesnt-work/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "When networking doesn't work",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48031707",
-    "title": "Update on \"Co-authored-by: Copilot\" in commit messages",
-    "url": "https://github.com/microsoft/vscode/issues/314311",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Update on \"Co-authored-by: Copilot\" in commit messages",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48018034",
-    "title": "2-D Mathematical Curves",
-    "url": "https://www.2dcurves.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "2-D Mathematical Curves",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48037724",
-    "title": "Show HN: Tilde.run – Agent Sandbox with a Transactional, Versioned Filesystem",
-    "url": "https://tilde.run/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Tilde.run – Agent Sandbox with a Transactional, Versioned Filesystem",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48015097",
-    "title": "Pulitzer Prize Winners 2026",
-    "url": "https://www.pulitzer.org/prize-winners-by-year/2026",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Pulitzer Prize Winners 2026",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48025001",
-    "title": "Why is Cloudflare protecting the DDoS'er (beamed.st) attacking Ubuntu servers?",
-    "url": "https://infosec.exchange/@mttaggart/116518022621367937",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why is Cloudflare protecting the DDoS'er (beamed.st) attacking Ubuntu servers?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48017399",
-    "title": "Pulitzer Prize Winner in International Reporting",
-    "url": "https://www.pulitzer.org/winners/dake-kang-garance-burke-byron-tau-aniruddha-ghosal-and-yael-grauer-contributor-associated",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Pulitzer Prize Winner in International Reporting",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48025274",
-    "title": "GPT‑5.5 Instant",
-    "url": "https://openai.com/index/gpt-5-5-instant/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GPT‑5.5 Instant",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48035969",
-    "title": "OpenAI president forced to read his personal diary entries to jury",
-    "url": "https://arstechnica.com/tech-policy/2026/05/openai-president-explains-to-jury-why-his-diary-entries-sound-greedy/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI president forced to read his personal diary entries to jury",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48040622",
-    "title": "Inkscape 1.4.4",
-    "url": "https://inkscape.org/doc/release_notes/1.4.4/Inkscape_1.4.4.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Inkscape 1.4.4",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48031185",
-    "title": "FFmpeg developer calls out OxideAV for AI license laundering of his code",
-    "url": "https://github.com/OxideAV/oxideav-magicyuv/issues/3",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FFmpeg developer calls out OxideAV for AI license laundering of his code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48025282",
-    "title": "Why airlines are always going bankrupt",
-    "url": "https://davidoks.blog/p/why-airlines-are-always-going-bankrupt",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why airlines are always going bankrupt",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48021420",
-    "title": "Show HN: I built a new word game, Wordtrak",
-    "url": "https://wordtrak.com/blog/2026-05-05-I-built-a-new-word-game",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I built a new word game, Wordtrak",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48039362",
-    "title": "Google Cloud fraud defense, the next evolution of reCAPTCHA",
-    "url": "https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-fraud-defense-the-next-evolution-of-recaptcha/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google Cloud fraud defense, the next evolution of reCAPTCHA",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48038307",
-    "title": "Life During Class Wartime",
-    "url": "https://www.tbray.org/ongoing/When/202x/2026/05/03/Life-During-Class-Wartime",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Life During Class Wartime",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48039674",
-    "title": "Proton Meet",
-    "url": "https://proton.me/business/blog/introducing-proton-meet",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Proton Meet",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48028136",
-    "title": "Apple Cuts More Mac Studio and Mac Mini RAM Options as Memory Shortage Worsens",
-    "url": "https://www.macrumors.com/2026/05/05/apple-mac-studio-mac-mini-ram-cuts/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Apple Cuts More Mac Studio and Mac Mini RAM Options as Memory Shortage Worsens",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48027455",
-    "title": "A Theory of Deep Learning",
-    "url": "https://elonlit.com/scrivings/a-theory-of-deep-learning/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A Theory of Deep Learning",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48032617",
-    "title": "Behavior-Oriented Concurrency for Python",
-    "url": "https://microsoft.github.io/bocpy/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Behavior-Oriented Concurrency for Python",
+    "chinese_title": "Iran hit more U.S. military targets than has been reported, satellite images",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -440,275 +136,107 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48014197",
-    "title": "Transformers Are Inherently Succinct (2025)",
-    "url": "https://arxiv.org/abs/2510.19315",
+    "id": "48039674",
+    "title": "Proton Meet",
+    "url": "https://proton.me/business/blog/introducing-proton-meet",
     "summary": "生成摘要时出错",
-    "chinese_title": "Transformers Are Inherently Succinct (2025)",
+    "chinese_title": "Proton Meet",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48023079",
-    "title": "SubQ: a sub-quadratic LLM with 12M-token context",
-    "url": "https://subq.ai/introducing-subq",
+    "id": "48053203",
+    "title": "AI Slop Is Killing Online Communities",
+    "url": "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/",
     "summary": "生成摘要时出错",
-    "chinese_title": "SubQ: a sub-quadratic LLM with 12M-token context",
+    "chinese_title": "AI Slop Is Killing Online Communities",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48038257",
-    "title": "Show HN: Hallucinopedia",
-    "url": "http://halupedia.com/",
+    "id": "48035617",
+    "title": "RAM prices are forcing companies to choose higher prices, worse specs, or both",
+    "url": "https://gizmodo.com/shrinkflation-is-quietly-making-all-gadgets-worse-2000754565",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Hallucinopedia",
+    "chinese_title": "RAM prices are forcing companies to choose higher prices, worse specs, or both",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48026773",
-    "title": "What makes a good smartphone camera?",
-    "url": "https://cadence.moe/blog/2026-05-05-what-makes-a-good-smartphone-camera",
+    "id": "48034762",
+    "title": "Setting up a Sun Ray server on OpenIndiana Hipster 2025.10",
+    "url": "https://catstret.ch/202605/srss-hipster202510/",
     "summary": "生成摘要时出错",
-    "chinese_title": "What makes a good smartphone camera?",
+    "chinese_title": "Setting up a Sun Ray server on OpenIndiana Hipster 2025.10",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48032240",
-    "title": "Google tools for customizing searches",
-    "url": "https://cardcatalogforlife.substack.com/p/google-has-a-secret-reference-desk",
+    "id": "48038489",
+    "title": "Colombia hosts talks on exiting fossil fuels as global energy crisis deepens",
+    "url": "https://www.latimes.com/environment/story/2026-04-26/colombia-hosts-talks-on-exiting-fossil-fuels-as-global-energy-crisis-deepens",
     "summary": "生成摘要时出错",
-    "chinese_title": "Google tools for customizing searches",
+    "chinese_title": "Colombia hosts talks on exiting fossil fuels as global energy crisis deepens",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48015226",
-    "title": "Canadian election databases use \"canary traps\"–and they work",
-    "url": "https://arstechnica.com/tech-policy/2026/05/in-canada-a-canary-trap-springs-shut-and-ids-election-database-leak/",
+    "id": "48045174",
+    "title": "ProgramBench: Can language models rebuild programs from scratch?",
+    "url": "https://arxiv.org/abs/2605.03546",
     "summary": "生成摘要时出错",
-    "chinese_title": "Canadian election databases use \"canary traps\"–and they work",
+    "chinese_title": "ProgramBench: Can language models rebuild programs from scratch?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48022596",
-    "title": "Simple Meta-Harness on Islo.dev",
-    "url": "https://zozo123.github.io/meta-harness-on-islo-page/",
+    "id": "48049764",
+    "title": "The Self-Cancelling Subscription",
+    "url": "https://predr.ag/blog/the-self-cancelling-subscription/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Simple Meta-Harness on Islo.dev",
+    "chinese_title": "The Self-Cancelling Subscription",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48033689",
-    "title": "The Boring Internet",
-    "url": "https://www.terrygodier.com/the-boring-internet",
+    "id": "48050499",
+    "title": "I want to live like Costco people",
+    "url": "https://tastecooking.com/i-want-to-live-like-costco-people/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Boring Internet",
+    "chinese_title": "I want to live like Costco people",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48028289",
-    "title": "Our AI started a cafe in Stockholm",
-    "url": "https://andonlabs.com/blog/ai-cafe-stockholm",
+    "id": "48029753",
+    "title": "Xbox CEO ends Copilot AI development and overhauls leadership",
+    "url": "https://www.dexerto.com/gaming/xbox-ceo-ends-copilot-ai-development-overhauls-leadership-3361353/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Our AI started a cafe in Stockholm",
+    "chinese_title": "Xbox CEO ends Copilot AI development and overhauls leadership",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48025828",
-    "title": "Quantum Key Distribution (QKD) and Quantum Cryptography (QC)",
-    "url": "https://www.nsa.gov/Cybersecurity/Quantum-Key-Distribution-QKD-and-Quantum-Cryptography-QC/",
+    "id": "48046397",
+    "title": "Making LLM Training Faster with Unsloth and NVIDIA",
+    "url": "https://unsloth.ai/blog/nvidia-collab",
     "summary": "生成摘要时出错",
-    "chinese_title": "Quantum Key Distribution (QKD) and Quantum Cryptography (QC)",
+    "chinese_title": "Making LLM Training Faster with Unsloth and NVIDIA",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48029558",
-    "title": "Why Only Rich Kids Make It in Music Today",
-    "url": "https://www.youtube.com/watch?v=sjJrR1OdAIg",
+    "id": "48043184",
+    "title": "What British people mean when they say 'sorry'",
+    "url": "https://www.bbc.com/travel/article/20260506-what-british-people-really-mean-when-they-say-sorry",
     "summary": "生成摘要时出错",
-    "chinese_title": "Why Only Rich Kids Make It in Music Today",
+    "chinese_title": "What British people mean when they say 'sorry'",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48022551",
-    "title": "Google, Microsoft and xAI agree to share early AI models with U.S.",
-    "url": "https://www.wsj.com/tech/ai/google-microsoft-and-xai-agree-to-share-early-ai-models-with-u-s-f95a88d1",
+    "id": "48031707",
+    "title": "Update on \"Co-authored-by: Copilot\" in commit messages",
+    "url": "https://github.com/microsoft/vscode/issues/314311",
     "summary": "生成摘要时出错",
-    "chinese_title": "Google, Microsoft and xAI agree to share early AI models with U.S.",
+    "chinese_title": "Update on \"Co-authored-by: Copilot\" in commit messages",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48015443",
-    "title": "Apple confirms iOS 26.5 Messages app adds RCS end-to-end encryption",
-    "url": "https://9to5mac.com/2026/05/04/apple-confirms-ios-26-5-messages-app-adds-rcs-end-to-end-encryption/",
+    "id": "48043706",
+    "title": "The Old Guard: Confronting America's Gerontocratic Crisis",
+    "url": "https://harpers.org/archive/2026/05/the-old-guard-samuel-moyn-gerontocracy/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Apple confirms iOS 26.5 Messages app adds RCS end-to-end encryption",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48037332",
-    "title": "FBI investigating leaks to journalist who wrote explosive article on Kash Pate",
-    "url": "https://www.ms.now/news/fbi-investigating-leaks-to-journalist-who-wrote-explosive-article-on-kash-patel-sources",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FBI investigating leaks to journalist who wrote explosive article on Kash Pate",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48037261",
-    "title": "Our Continuation of MkDocs",
-    "url": "https://github.com/orgs/ProperDocs/discussions/33",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Our Continuation of MkDocs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48027373",
-    "title": "FDA Blocked Publication of Research Finding Covid and Shingles Vaccines Safe",
-    "url": "https://www.nytimes.com/2026/05/05/us/politics/fda-covid-vaccine-studies.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FDA Blocked Publication of Research Finding Covid and Shingles Vaccines Safe",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48022291",
-    "title": "They Called It LISP For A Reason (2005)",
-    "url": "https://gigamonkeys.com/book/they-called-it-lisp-for-a-reason-list-processing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "They Called It LISP For A Reason (2005)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48019165",
-    "title": "The Frog for Whom the Bell Tolls",
-    "url": "https://sethmlarson.dev/the-frog-for-whom-the-bell-tolls",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Frog for Whom the Bell Tolls",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48027369",
-    "title": "While the King Lives: An Old C Programming Prank in GNU Hello from 1993",
-    "url": "https://lowendbox.com/blog/while-the-king-lives-an-old-c-programming-prank-in-gnu-hello-from-1993/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "While the King Lives: An Old C Programming Prank in GNU Hello from 1993",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48016411",
-    "title": "Suspected YouTube bug spikes RAM over 7gbs users report lag and frozen tabs",
-    "url": "https://www.tomshardware.com/software/a-suspected-youtube-interface-bug-spikes-ram-usage-above-7-gigabytes-users-report-severe-lag-and-frozen-tabs-bug-might-be-trapping-browsers-in-an-endless-layout-loop",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Suspected YouTube bug spikes RAM over 7gbs users report lag and frozen tabs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48031766",
-    "title": "After a 40-year wait, technology enables three-sided zipper design",
-    "url": "https://techxplore.com/news/2026-05-year-technology-enables-sided-zipper.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "After a 40-year wait, technology enables three-sided zipper design",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48038138",
-    "title": "SpaceXAI will provide Anthropic with access to Colossus 1",
-    "url": "https://twitter.com/xai/status/2052060350770515978",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SpaceXAI will provide Anthropic with access to Colossus 1",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48033381",
-    "title": "Mark Cuban: OpenAI Will Never Return the $1T It's Investing [video]",
-    "url": "https://www.youtube.com/watch?v=oEVHNvE_jDw",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mark Cuban: OpenAI Will Never Return the $1T It's Investing [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48027546",
-    "title": "Google UK staff vote to unionise in protest against Israeli military contract",
-    "url": "https://www.telegraph.co.uk/business/2026/05/05/google-ai-staff-vote-unionise-protest-israel-contract/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google UK staff vote to unionise in protest against Israeli military contract",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48039391",
-    "title": "Babies Are Bleeding to Death as Parents Reject a Vitamin Shot Given at Birth",
-    "url": "https://www.propublica.org/article/more-parents-decline-vitamin-k-shot-newborns",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Babies Are Bleeding to Death as Parents Reject a Vitamin Shot Given at Birth",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48032968",
-    "title": "Singapore introduces caning for boys who bully others at school",
-    "url": "https://www.theguardian.com/world/2026/may/06/singapore-caning-school-bullies",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Singapore introduces caning for boys who bully others at school",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48038031",
-    "title": "The Disadvantages of an Elite Education (2008)",
-    "url": "https://theamericanscholar.org/the-disadvantages-of-an-elite-education/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Disadvantages of an Elite Education (2008)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48019442",
-    "title": "Oasis Linux",
-    "url": "https://git.sr.ht/~mcf/oasis",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Oasis Linux",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48028189",
-    "title": "Let's not fool ourselves about AI taking jobs. It's humans, laying humans off",
-    "url": "https://circuitbored.com/viewtopic.php?t=246",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Let's not fool ourselves about AI taking jobs. It's humans, laying humans off",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48019775",
-    "title": "LinkedIn locks your GDPR rights behind a paywall",
-    "url": "https://noyb.eu/en/linkedin-locks-your-gdpr-rights-behind-paywall",
-    "summary": "生成摘要时出错",
-    "chinese_title": "LinkedIn locks your GDPR rights behind a paywall",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48031594",
-    "title": "Why is southern Italy poorer than northern Italy?",
-    "url": "https://statsandsociety.substack.com/p/fully-explaining-the-italian-south",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why is southern Italy poorer than northern Italy?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48022266",
-    "title": "Richard Dawkins and the Claude Delusion",
-    "url": "https://flux.community/matthew-sheffield/2026/05/richard-dawkins-and-the-claude-delusion/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Richard Dawkins and the Claude Delusion",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48017014",
-    "title": "Woman's Talkspace therapy app sessions exposed in court",
-    "url": "https://www.proofnews.org/womans-talkspace-therapy-app-sessions-exposed-in-court/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Woman's Talkspace therapy app sessions exposed in court",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48014510",
-    "title": "AI startup JuliaHub raises $65M to rival Simulink",
-    "url": "https://www.axios.com/2026/04/30/bob-muglia-ai-hardware-engineering",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI startup JuliaHub raises $65M to rival Simulink",
+    "chinese_title": "The Old Guard: Confronting America's Gerontocratic Crisis",
     "chinese_summary": "生成摘要时出错"
   }
 ]
