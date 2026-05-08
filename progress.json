@@ -1,122 +1,90 @@
 [
   {
-    "id": "48031109",
-    "title": "Telus Uses AI to Alter Call-Agent Accents",
-    "url": "https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63",
-    "summary": "Telus, through its Telus Digital unit, is employing AI to modify the accents of its offshore call-centre agents in real time. The technology, a speech-to-speech tool developed by Tomato.ai, aims to reduce what Telus describes as \"accent-related friction.\"\n\nThis practice has drawn significant criticism from labour groups, who label it deceptive and are urging regulators to mandate customer disclosure. The initiative has provoked swift public backlash in Canada. Competitors Rogers and Bell have publicly stated they have no plans to adopt similar voice-altering technology.\n\nTechnically, real-time voice conversion involves complex systems combining automatic speech recognition, accent conversion models, and neural vocoders. Implementing this reliably in live contact centres faces operational challenges concerning latency, naturalness, and robustness in noisy environments.\n\nFrom an industry perspective, deploying real-time voice alteration raises critical questions about customer consent, transparency, worker rights, and voice-privacy regulations. The public distancing by major telecom competitors may influence broader adoption in the sector. Future developments to watch include potential regulatory responses from Canadian authorities on disclosure requirements and transparency policies from other contact-centre operators.",
-    "chinese_title": "研科用AI改变客服口音",
-    "chinese_summary": "Telus通过其Telus Digital部门，正在利用人工智能实时修改其离岸呼叫中心座席人员的口音。这项由Tomato.ai开发的语音到语音工具，旨在减少Telus所称的“口音相关摩擦”。\n\n这种做法已引发劳工团体的大量批评，他们称其为欺骗性行为，并敦促监管机构强制要求向客户披露。这项举措在加拿大迅速引起了公众强烈反弹。竞争对手Rogers和Bell已公开表示，他们没有计划采用类似的声音修改技术。\n\n从技术上讲，实时语音转换涉及结合了自动语音识别、口音转换模型和神经声码器的复杂系统。在实际联络中心可靠地实施这项技术，面临着关于延迟、自然度以及在嘈杂环境中鲁棒性等方面的运营挑战。\n\n从行业角度来看，部署实时语音修改技术引发了关于客户同意、透明度、员工权利和语音隐私法规等关键问题。主要电信竞争对手的公开划清界限可能会影响该行业更广泛的采用。值得关注的未来发展包括加拿大当局可能就披露要求出台的监管回应，以及其他联络中心运营商的透明度政策。"
-  },
-  {
-    "id": "48027455",
-    "title": "A Theory of Deep Learning",
-    "url": "https://elonlit.com/scrivings/a-theory-of-deep-learning/",
-    "summary": "This article proposes a novel theory to explain the perplexing generalization capabilities of deep learning, which defy classical statistical learning theory's predictions of catastrophic overfitting for overparameterized models. Traditional explanations struggle with phenomena like benign overfitting, double descent, implicit bias, and grokking.\n\nThe new theory shifts focus from parameter space to output space, treating neural networks as dynamical systems. Its core is the empirical Neural Tangent Kernel (eNTK), which governs how gradient steps affect predictions. The key insight is the time-integrated eNTK, \\(\\mathcal{W}_S\\), which partitions output space into a \"signal channel\" (where training dissipates loss) and a \"reservoir\" (where it dissipates nothing). Crucially, a \"test transfer operator\" is shown to vanish on this reservoir. This means any information, such as noise from the training data, that resides in the reservoir is \"test-invisible\" and therefore does not impact generalization.\n\nThis unified framework explains:\n*   **Benign overfitting:** Noise is memorized but resides in the test-invisible reservoir.\n*   **Double descent:** Noise moves between the signal channel and reservoir as model capacity changes.\n*   **Implicit bias:** Gradient flow prioritizes high-mobility signal modes, effectively finding minimum-norm solutions.\n*   **Grokking:** Signal slowly migrates from the reservoir into the signal channel during extended training.\n\nThe theory also yields practical applications, including a modified Adam optimizer that trains directly on population risk, accelerating grokking, suppressing memorization, and eliminating the need for validation sets. Future implications include analytically determining final network states and designing more efficient architectures that leverage the reservoir concept to optimally sequester noise.",
-    "chinese_title": "深度学习理论",
-    "chinese_summary": "本文提出了一种新颖的理论，用以解释深度学习令人费解的泛化能力，这种能力与经典统计学习理论对过参数化模型灾难性过拟合的预测相悖。传统解释难以处理良性过拟合、双下降、隐式偏置和Grokking等现象。\n\n新理论将焦点从参数空间转向输出空间，将神经网络视为动力系统。其核心是经验神经正切核 (eNTK)，它支配着梯度步长如何影响预测。关键的洞察是时间积分eNTK，\\(\\mathcal{W}_S\\)，它将输出空间划分为一个“信号通道”（训练在此处消散损失）和一个“储层”（训练在此处不消散任何东西）。至关重要的是，“测试转移算子”被证明在此储层上消失。这意味着任何存在于储层中的信息，例如来自训练数据的噪声，都是“测试不可见的”，因此不会影响泛化能力。\n\n这一统一框架解释了：\n*   **良性过拟合：** 噪声被记忆但存在于测试不可见的储层中。\n*   **双下降：** 随着模型容量的变化，噪声在信号通道和储层之间移动。\n*   **隐式偏置：** 梯度流优先处理高流动性信号模式，从而有效地找到最小范数解。\n*   **Grokking：** 在长时间训练期间，信号缓慢地从储层迁移到信号通道中。\n\n该理论还产生了实际应用，包括一种改进的Adam优化器，它直接在总体风险上进行训练，加速Grokking、抑制记忆化，并消除了对验证集的需求。未来的影响包括分析性地确定最终网络状态，以及设计更高效的架构，这些架构利用储层概念来最佳地隔离噪声。"
-  },
-  {
-    "id": "48038307",
-    "title": "Life During Class Wartime",
-    "url": "https://www.tbray.org/ongoing/When/202x/2026/05/03/Life-During-Class-Wartime",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Life During Class Wartime",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48028546",
-    "title": "Why most product tours get skipped",
-    "url": "https://productonboarding.com/articles/why-product-tours-get-skipped",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why most product tours get skipped",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48050278",
-    "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
-    "url": "https://deepmind.google/blog/alphaevolve-impact/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48047970",
-    "title": "LinkedIn profile visitor lists belong to the people, says Noyb",
-    "url": "https://www.theregister.com/offbeat/2026/05/05/noyb-cries-foul-on-linkedin-withholding-profile-visitor-data/5225338",
-    "summary": "Privacy advocacy group Noyb is challenging LinkedIn over its practice of charging users to see a full list of their profile visitors, arguing it violates GDPR Article 15. While premium LinkedIn users can view names, job titles, and employers of profile visitors for up to 365 days, free users receive only vague information (e.g., \"12 people found you through the homepage\") and are redirected to a premium signup page for details.\n\nAn unnamed LinkedIn user invoked their GDPR Article 15 right to access all personal data processed by the company, specifically requesting their full profile visitor list. LinkedIn denied the request, citing data protection, and falsely claimed that premium membership isn't required to see full visitor details.\n\nNoyb, supporting the user, contends that GDPR Article 15 explicitly grants data subjects the right to a free copy of *any and all* personal data processed about them. Noyb lawyer Martin Baumann argues that if LinkedIn provides this data to paying premium users, it cannot logically claim that providing it to free users would adversely affect the privacy rights of the visitors. The core issue is whether companies can sell access to personal data that users have a right to access for free.\n\nNoyb hopes this case will set a legal precedent, clarifying that personal data available for purchase must also be accessible free of charge under GDPR Article 15, impacting not just LinkedIn but other businesses with similar practices.",
-    "chinese_title": "Noyb 表示，领英个人资料访客列表归人民所有。",
-    "chinese_summary": "Privacy advocacy group Noyb is challenging LinkedIn over its practice of charging users to see a full list of their profile visitors, arguing it violates GDPR Article 15. While premium LinkedIn users can view names, job titles, and employers of profile visitors for up to 365 days, free users receive only vague information (e.g., \"12 people found you through the homepage\") and are redirected to a premium signup page for details.\n\nAn unnamed LinkedIn user invoked their GDPR Article 15 right to access all personal data processed by the company, specifically requesting their full profile visitor list. LinkedIn denied the request, citing data protection, and falsely claimed that premium membership isn't required to see full visitor details.\n\nNoyb, supporting the user, contends that GDPR Article 15 explicitly grants data subjects the right to a free copy of *any and all* personal data processed about them. Noyb lawyer Martin Baumann argues that if LinkedIn provides this data to paying premium users, it cannot logically claim that providing it to free users would adversely affect the privacy rights of the visitors. The core issue is whether companies can sell access to personal data that users have a right to access for free.\n\nNoyb hopes this case will set a legal precedent, clarifying that personal data available for purchase must also be accessible free of charge under GDPR Article 15, impacting not just LinkedIn but other businesses with similar practices."
-  },
-  {
-    "id": "48038864",
-    "title": "Going Full Time on Open Source",
-    "url": "https://jdx.dev/posts/2026-04-17-going-full-time-on-open-source/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Going Full Time on Open Source",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48037724",
-    "title": "Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem",
-    "url": "https://tilde.run/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48050540",
-    "title": "Motherboard sales 'collapse' amid unprecedented shortages fueled by AI",
-    "url": "https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers",
-    "summary": "Motherboard sales are experiencing an \"unprecedented collapse,\" with projections showing a more than 25% drop in 2024 compared to 2023. This downturn is primarily attributed to chipmakers prioritizing high-margin AI accelerator production over components for traditional desktop PCs, leading to severe shortages of essential chipsets and controllers for consumer motherboards.\n\nASUS, the largest motherboard vendor, is expected to see its sales plummet by 20% in 2024, selling 4.5 million fewer boards, and an additional 500,000 fewer in 2025, totaling a 5 million unit decline over two years. Other major manufacturers like Gigabyte, MSI, and ASRock are also projected to face significant sales reductions, with MSI expecting to sell 1.2 million fewer boards.\n\nThe shift in manufacturing focus means that components typically allocated to the enthusiast PC market are being diverted to the booming AI sector, effectively strangling the supply for consumer-grade motherboards. This situation is impacting both Intel and AMD platforms, making it challenging for vendors to meet even reduced demand and signaling a tough period for the PC components market.",
-    "chinese_title": "在AI推动的史无前例的短缺背景下，主板销量“暴跌”",
-    "chinese_summary": "Motherboard sales are experiencing an \"unprecedented collapse,\" with projections showing a more than 25% drop in 2024 compared to 2023. This downturn is primarily attributed to chipmakers prioritizing high-margin AI accelerator production over components for traditional desktop PCs, leading to severe shortages of essential chipsets and controllers for consumer motherboards.\n\nASUS, the largest motherboard vendor, is expected to see its sales plummet by 20% in 2024, selling 4.5 million fewer boards, and an additional 500,000 fewer in 2025, totaling a 5 million unit decline over two years. Other major manufacturers like Gigabyte, MSI, and ASRock are also projected to face significant sales reductions, with MSI expecting to sell 1.2 million fewer boards.\n\nThe shift in manufacturing focus means that components typically allocated to the enthusiast PC market are being diverted to the booming AI sector, effectively strangling the supply for consumer-grade motherboards. This situation is impacting both Intel and AMD platforms, making it challenging for vendors to meet even reduced demand and signaling a tough period for the PC components market."
-  },
-  {
     "id": "48045012",
     "title": "Diskless Linux boot using ZFS, iSCSI and PXE",
     "url": "https://aniket.foo/posts/20260505-netboot/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Diskless Linux boot using ZFS, iSCSI and PXE",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "This article details setting up a diskless Linux boot environment using ZFS, iSCSI, and PXE. The author's motivation was to create an isolated Linux system for AI model testing without disturbing a Windows gaming installation, avoiding issues with GRUB, local disk partitioning, or easily misplaced USB drives, while also learning about PXE over iSCSI.\n\nThe setup leverages a central Debian 13 server (Proxmox host) functioning as the PXE boot server, TFTP server, iSCSI target, and ZFS host. DNSMasq on the router directs client boot requests to this server.\n\nThe process involves several key steps:\n1.  **Netboot.xyz Configuration:** Installing Netboot.xyz, customizing its templates and a specific menu entry (`debian13-iscsi.ipxe`). This entry configures the iSCSI server, target, initiator IQN, and mutual CHAP authentication details, attempting to `sanboot` (boot from iSCSI) or falling back to a network-based Debian installer.\n2.  **TFTP and DNSMasq:** Configuring `tftpd-hpa` to serve iPXE binaries and setting up DNSMasq on the router to direct different client architectures (BIOS/UEFI/iPXE) to the correct netboot files.\n3.  **ZFS ZVol and iSCSI Target:** Creating a ZFS ZVol (`tank/debian-disk-12700k`) on the Proxmox host. This ZVol is then exported as an iSCSI block device using `targetcli`, complete with an iSCSI target, ACLs for the client's IQN, and mutual CHAP authentication.\n4.  **Debian Installation:** The client PC boots via PXE, selecting the custom iSCSI boot option. If no OS is found, it proceeds to the Debian network installer. During the installer's disk detection phase, the user switches to a TTY to manually configure the iSCSI initiator's IQN (`/etc/iscsi/initiatorname.iscsi`), restarts `iscsid`, and then logs into the iSCSI target with the defined credentials. Finally, Debian is installed onto the remotely provided iSCSI volume, creating a persistent diskless Linux system.",
+    "chinese_title": "ZFS、iSCSI 和 PXE 无盘 Linux 启动",
+    "chinese_summary": "本文详细介绍了如何使用ZFS、iSCSI和PXE设置无盘Linux启动环境。作者的动机是创建一个隔离的Linux系统进行AI模型测试，同时不干扰现有的Windows游戏安装，避免GRUB、本地磁盘分区或U盘易丢失等问题，并借此机会学习通过iSCSI实现PXE启动。\n\n该设置利用一台中央Debian 13服务器（Proxmox主机）作为PXE启动服务器、TFTP服务器、iSCSI目标和ZFS主机。路由器上的DNSMasq负责将客户端的启动请求指向该服务器。\n\n该过程涉及以下几个关键步骤：\n1.  **Netboot.xyz配置：** 安装Netboot.xyz，自定义其模板和一个特定的菜单条目（`debian13-iscsi.ipxe`）。该条目配置了iSCSI服务器、目标、发起方IQN和相互CHAP认证的详细信息，尝试`sanboot`（从iSCSI启动），或在失败时回退到基于网络的Debian安装程序。\n2.  **TFTP和DNSMasq：** 配置`tftpd-hpa`以提供iPXE二进制文件，并在路由器上设置DNSMasq，将不同客户端架构（BIOS/UEFI/iPXE）的请求导向正确的网络启动文件。\n3.  **ZFS ZVol和iSCSI目标：** 在Proxmox主机上创建一个ZFS ZVol（`tank/debian-disk-12700k`）。然后使用`targetcli`将此ZVol作为iSCSI块设备导出，并配置iSCSI目标、客户端IQN的ACL（访问控制列表）以及相互CHAP认证。\n4.  **Debian安装：** 客户端PC通过PXE启动，选择自定义的iSCSI启动选项。如果未找到操作系统，它将进入Debian网络安装程序。在安装程序的磁盘检测阶段，用户切换到TTY手动配置iSCSI发起方的IQN（`/etc/iscsi/initiatorname.iscsi`），重启`iscsid`，然后使用定义的凭据登录iSCSI目标。最后，Debian被安装到远程提供的iSCSI卷上，从而创建了一个持久化的无盘Linux系统。"
+  },
+  {
+    "id": "48061884",
+    "title": "David Attenborough's 100th Birthday",
+    "url": "https://www.bbc.com/news/articles/cp3pww9g0p5o",
+    "summary": "Sir David Attenborough's 100th birthday is being celebrated with a wave of tributes, led by King Charles III and Queen Camilla, who shared personal photographs and wished him well. Prince William praised Attenborough's ongoing inspiration, while Prince Harry described him as a \"secular saint\" for his impact on climate awareness. Celebrities including David Beckham, Joanna Lumley, Chris Packham, Dame Judi Dench, Morgan Freeman, Hans Zimmer, and Sir Ian McKellen also shared heartfelt messages, lauding his unique contribution to natural history and his ability to engage audiences.\n\nAttenborough expressed being \"completely overwhelmed\" by the outpouring of affection. The celebrations culminate in a special concert at the Royal Albert Hall, hosted by Kirsty Young. This event will feature reflections on his life and legacy from guests like Sir Michael Palin, live music from the BBC Concert Orchestra recalling iconic TV moments, and performances by artists such as Dan Smith (Bastille) and Sigur Rós.\n\nThe BBC has marked the centenary with a week of special programming, including classic documentaries and new series. Further honouring his legacy, the Natural History Museum named a newly identified parasitic wasp, *Attenboroughnculus tau*, after him, adding to several other species already bearing his name. Born in 1926, Sir David joined the BBC in 1952, pioneering numerous groundbreaking natural history series.",
+    "chinese_title": "戴维·阿滕伯勒的100岁生日",
+    "chinese_summary": "戴维·阿滕伯勒爵士的百岁生日正通过一波又一波的致敬活动来庆祝，由查尔斯三世国王和卡米拉王后带头，他们分享了私人照片并表达了对他的美好祝愿。威廉王子赞扬了阿滕伯勒持续的启发作用，而哈里王子则因他对气候意识的影响称他为“世俗圣人”。包括大卫·贝克汉姆、乔安娜·拉姆利、克里斯·帕卡姆、朱迪·丹奇女爵士、摩根·弗里曼、汉斯·季默和伊恩·麦克莱恩爵士在内的名人也分享了真挚的祝福，赞扬他对自然历史的独特贡献以及吸引观众的能力。\n\n阿滕伯勒表示对如潮般的爱意感到“完全受宠若惊”。庆祝活动的高潮是在皇家阿尔伯特音乐厅举行的一场由柯斯蒂·杨主持的特别音乐会。该活动将邀请迈克尔·佩林爵士等嘉宾回顾他的一生和遗产，由BBC音乐会管弦乐团现场演奏音乐，重现标志性电视时刻，并有丹·史密斯（巴士底乐队）和席格洛斯等艺术家的表演。\n\nBBC也以一周的特别节目来纪念这一百年诞辰，其中包括经典纪录片和新剧集。为了进一步纪念他的遗产，自然历史博物馆将一种新发现的寄生蜂命名为*Attenboroughnculus tau*，以他的名字命名，此前已有其他几种物种以他命名。戴维爵士生于1926年，于1952年加入BBC，开创了众多具有里程碑意义的自然历史系列节目。"
+  },
+  {
+    "id": "48063240",
+    "title": "Tesla is recalling its cheaper Cybertruck because the wheels might fall off",
+    "url": "https://www.theverge.com/transportation/926741/tesla-cybertruck-cheaper-recall",
+    "summary": "Tesla is recalling all 173 of its RWD Cybertruck Long Range models, specifically the $70,000 variant with 18-inch steel wheels, due to a critical safety concern. The recall, reported by Emma Roth on May 8, 2026, stems from faulty brake rotors where stud holes may crack, potentially causing the wheels to detach, especially under strenuous driving conditions.\n\nThis marks the 11th recall for the Cybertruck, following previous issues with the accelerator, trim, and cameras. While Tesla has identified three warranty claims related to this problem, the company has not reported any collisions, fatalities, or injuries.\n\nThe RWD Cybertruck, launched last April and discontinued months later, is the affected model. A newer, $60,000 dual-motor AWD Cybertruck released in February is not part of this recall. Tesla will resolve the issue by replacing the front and rear brake rotors, hubs, and lug nuts on affected vehicles free of charge.",
+    "chinese_title": "特斯拉召回其较便宜的Cybertruck，原因是车轮可能脱落。",
+    "chinese_summary": "特斯拉正在召回全部173辆后驱版Cybertruck长续航车型，特指售价7万美元、配备18英寸钢轮的型号，原因是一个关键安全问题。据Emma Roth于2026年5月8日报道，此次召回源于有缺陷的刹车盘，其螺栓孔可能会开裂，可能导致车轮脱落，尤其是在剧烈驾驶条件下。\n\n这是Cybertruck的第11次召回，此前曾因加速踏板、内饰和摄像头问题而被召回。尽管特斯拉已确认了三起与此问题相关的保修索赔，但该公司尚未报告任何碰撞、死亡或受伤事件。\n\n受影响的车型是去年4月推出并在数月后停产的后驱版Cybertruck。今年2月发布的售价6万美元的新款双电机全驱版Cybertruck不在此次召回范围内。特斯拉将通过免费更换受影响车辆上的前后刹车盘、轮毂和车轮螺母来解决此问题。"
+  },
+  {
+    "id": "48056158",
+    "title": "Nonprofit hospitals spend billions on consultants with no clear effect",
+    "url": "https://www.uchicagomedicine.org/forefront/research-and-discoveries-articles/nonprofit-hospitals-spend-billions-on-management-consultants",
+    "summary": "A new study published in JAMA reveals that nonprofit hospitals spend billions on management consultants with no clear evidence of positive impact. This first large-scale empirical analysis, led by Joseph Dov Bruch, PhD, examined IRS Form 990 filings from 2010-2022, comparing 306 hospitals that hired consultants with a matched control group.\n\nOver 20% of all nonprofit hospitals engaged management consultants during the study period, spending at least $7.8 billion—an average of $15.7 million per hospital—on these services. When including other types of consultants like HR and IT, the total expenditure exceeded $25 billion.\n\nDespite these substantial investments, the study found no statistically significant or systematic improvements in key metrics such as net patient revenue, operating margin, staffing, operations, or patient outcomes like readmission and mortality rates. Bruch noted that consultants delivered \"neither the dramatic efficiencies they promise nor the harms that critics sometimes fear,\" concluding there's no evidence of \"meaningful improvements.\" The only exception observed was a slight negative effect: a small increase in stroke readmissions.\n\nThe authors recommend greater caution from hospital executives and advocate for increased transparency and public accountability regarding how tax-subsidized dollars are spent. The research also aims to inform students considering careers in healthcare management consulting, providing much-needed evidence on the actual impact of such roles.",
+    "chinese_title": "非营利医院斥资数十亿聘请顾问，收效甚微。",
+    "chinese_summary": "《美国医学会杂志》发表的一项新研究显示，非营利医院在管理咨询顾问上花费了数十亿美元，但没有明确证据表明其产生了积极影响。这项由约瑟夫·多夫·布鲁赫博士牵头的首次大规模实证分析，审查了2010年至2022年间的美国国税局990表申报文件，对比了306家聘请了咨询顾问的医院和一个匹配的对照组。\n\n在研究期间，超过20%的非营利医院聘请了管理咨询顾问，用于这些服务的支出至少达78亿美元，平均每家医院1570万美元。如果包括人力资源和IT等其他类型的咨询顾问，总支出则超过250亿美元。\n\n尽管投入了巨额资金，但研究发现，在患者净收入、运营利润、人员配置、运营或患者结果（如再入院率和死亡率）等关键指标方面，均未出现统计学上显著或系统性的改善。布鲁赫指出，咨询顾问带来的结果是“既没有他们承诺的显著效率，也没有批评者有时担心的危害”，并总结称，没有证据表明存在“有意义的改善”。唯一观察到的例外是一个轻微的负面影响：中风再入院率略有上升。\n\n作者建议医院高管应更加谨慎，并呼吁提高税收补贴资金使用方式的透明度和公共问责制。这项研究还旨在为考虑从事医疗管理咨询职业的学生提供信息，提供关于此类角色实际影响的急需证据。"
+  },
+  {
+    "id": "48057209",
+    "title": "GPT-5.5 Price Increase: What It Costs",
+    "url": "https://openrouter.ai/announcements/gpt55-cost-analysis",
+    "summary": "A recent analysis by OpenRouter reveals the actual cost impact of OpenAI's GPT-5.5, which launched with a 2x price increase over GPT-5.4. Input tokens increased from $2.50/M to $5.00/M, and output tokens from $15/M to $30/M.\n\nThe study, based on a \"switcher cohort\" of users transitioning from GPT-5.4 to GPT-5.5, found that actual costs for users increased between 49% and 92%.\n\nA key finding is that GPT-5.5's noted reduced verbosity only benefits longer prompts. For prompts exceeding 10K tokens, the model produced 19-34% fewer completion tokens. This mitigation partially offsets the price hike, resulting in cost increases of 49-62% for these longer prompts (e.g., 50K-128K tokens saw a 49% increase).\n\nConversely, shorter prompts experienced a higher net cost impact. For prompts under 2K tokens, completions were 7% longer, leading to a 92% cost increase. Prompts between 2K-10K tokens saw completions 52% longer, resulting in a 69% cost increase, as the benefit of shorter completions did not apply.\n\nThe methodology involved analyzing billed costs from OpenRouter's request logs, normalizing costs to average cost per million OpenRouter tokens for direct comparison.",
+    "chinese_title": "GPT-5.5 涨价：费用详情",
+    "chinese_summary": "OpenRouter最近的一项分析揭示了OpenAI GPT-5.5的实际成本影响，该版本推出时比GPT-5.4价格上涨了2倍。输入token从每百万2.50美元增加到每百万5.00美元，输出token从每百万15美元增加到每百万30美元。\n\n这项研究基于从GPT-5.4过渡到GPT-5.5的“转换用户群”，发现用户的实际成本增加了49%到92%。\n\n一个关键发现是，GPT-5.5所宣称的减少冗余只对较长的提示词有益。对于超过10K token的提示词，模型生成的补全token减少了19-34%。这种缓解措施部分抵消了价格上涨，使得这些较长提示词的成本增加幅度为49-62%（例如，50K-128K token的提示词成本增加了49%）。\n\n相反，较短的提示词经历了更高的净成本影响。对于2K token以下的提示词，补全内容反而长了7%，导致成本增加了92%。对于2K-10K token之间的提示词，补全内容长了52%，导致成本增加了69%，因为缩短补全内容的益处并未体现。\n\n该方法涉及分析OpenRouter请求日志中的计费成本，并将成本标准化为每百万OpenRouter token的平均成本，以便直接比较。"
   },
   {
     "id": "48044311",
     "title": "The Vatican's Website in Latin",
     "url": "https://www.vatican.va/latin/latin_index.html",
+    "summary": "The article, titled \"The Vatican's Website in Latin,\" highlights the presence of Latin content on the official Holy See website. The provided text, \"Documenta Lingua Latina exarata,\" directly translates to \"Documents written in the Latin language.\" This indicates that the Vatican's digital platform includes a dedicated section offering various materials, likely official pronouncements, historical texts, or theological writings, presented in Latin. It underscores the Vatican's continued commitment to maintaining Latin as a significant language for its communications and archives.",
+    "chinese_title": "梵蒂冈拉丁语网站",
+    "chinese_summary": "这篇题为“梵蒂冈的拉丁语网站”的文章，强调了圣座官方网站上拉丁语内容的存在。所提供的文本“Documenta Lingua Latina exarata”直接翻译为“用拉丁语写的文件”。这表明梵蒂冈的数字平台包含一个专门的板块，提供各种拉丁语材料，可能包括官方声明、历史文献或神学著作。这强调了梵蒂冈持续致力于将拉丁语作为其交流和档案的重要语言。"
+  },
+  {
+    "id": "48065360",
+    "title": "Cartoon Network Flash Games",
+    "url": "https://www.webdesignmuseum.org/flash-game-exhibitions/cartoon-network-flash-games",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Vatican's Website in Latin",
+    "chinese_title": "Cartoon Network Flash Games",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48050751",
-    "title": "DeepSeek 4 Flash local inference engine for Metal",
-    "url": "https://github.com/antirez/ds4",
+    "id": "48049764",
+    "title": "The Self-Cancelling Subscription",
+    "url": "https://predr.ag/blog/the-self-cancelling-subscription/",
+    "summary": "The author details a frustrating experience with a \"self-cancelling\" streaming subscription, a perk linked to their credit card. The service repeatedly deactivated itself approximately five minutes after being reactivated. Initial attempts to fix it, including updating credit card information and toggling the perk on the bank's website, only provided temporary relief before the subscription cancelled again.\n\nCalls to both the credit card and streaming service support teams proved fruitless, with each side claiming \"no issues on our end\" and blaming the other. After a night of \"black-box debugging,\" the author's \"aha!\" moment led to unlinking the accounts from the bank's website, waiting overnight, and then re-linking them. This successfully resolved the issue.\n\nThe author's theory for the problem is a sync-vs-async race condition. Linking the subscription was a synchronous process, granting immediate access. However, unlinking was asynchronous, taking a few minutes to propagate. When the author rapidly re-linked after a cancellation, a delayed asynchronous cancellation from a *previous* unlinking event would eventually catch up and deactivate the newly active subscription. Waiting overnight allowed the asynchronous unlinking process to fully complete before a new, stable linking occurred. The original deactivation was likely triggered by an expired credit card on file, initiating the cycle of confusion.\n\nThe essay concludes by celebrating the complexity of systems and the incredible work of builders who make them mostly invisible and functional.",
+    "chinese_title": "自动取消订阅",
+    "chinese_summary": "The author details a frustrating experience with a \"self-cancelling\" streaming subscription, a perk linked to their credit card. The service repeatedly deactivated itself approximately five minutes after being reactivated. Initial attempts to fix it, including updating credit card information and toggling the perk on the bank's website, only provided temporary relief before the subscription cancelled again.\n\nCalls to both the credit card and streaming service support teams proved fruitless, with each side claiming \"no issues on our end\" and blaming the other. After a night of \"black-box debugging,\" the author's \"aha!\" moment led to unlinking the accounts from the bank's website, waiting overnight, and then re-linking them. This successfully resolved the issue.\n\nThe author's theory for the problem is a sync-vs-async race condition. Linking the subscription was a synchronous process, granting immediate access. However, unlinking was asynchronous, taking a few minutes to propagate. When the author rapidly re-linked after a cancellation, a delayed asynchronous cancellation from a *previous* unlinking event would eventually catch up and deactivate the newly active subscription. Waiting overnight allowed the asynchronous unlinking process to fully complete before a new, stable linking occurred. The original deactivation was likely triggered by an expired credit card on file, initiating the cycle of confusion.\n\nThe essay concludes by celebrating the complexity of systems and the incredible work of builders who make them mostly invisible and functional."
+  },
+  {
+    "id": "48061938",
+    "title": "US Government releases first batch of UAP documents and videos",
+    "url": "https://www.war.gov/UFO/",
     "summary": "生成摘要时出错",
-    "chinese_title": "DeepSeek 4 Flash local inference engine for Metal",
+    "chinese_title": "US Government releases first batch of UAP documents and videos",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48051562",
-    "title": "Agents need control flow, not more prompts",
-    "url": "https://bsuh.bearblog.dev/agents-need-control-flow/",
+    "id": "48062997",
+    "title": "Just Use Go",
+    "url": "https://blainsmith.com/articles/just-fucking-use-go/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Agents need control flow, not more prompts",
+    "chinese_title": "Just Use Go",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48029334",
-    "title": "Zuckerberg 'personally authorized' Meta's copyright infringement, publishers say",
-    "url": "https://apnews.com/article/meta-mark-zuckerberg-ai-publishers-lawsuit-llama-5609846d4d840014974a847b01079c32",
+    "id": "48045939",
+    "title": "Show HN: TRUST – Coding Rust like it's 1989",
+    "url": "https://github.com/wojtczyk/trust",
     "summary": "生成摘要时出错",
-    "chinese_title": "Zuckerberg 'personally authorized' Meta's copyright infringement, publishers say",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48040002",
-    "title": "Learning the Integral of a Diffusion Model",
-    "url": "https://sander.ai/2026/05/06/flow-maps.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Learning the Integral of a Diffusion Model",
+    "chinese_title": "Show HN: TRUST – Coding Rust like it's 1989",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -128,51 +96,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48038019",
-    "title": "Show HN: I built an open-source email builder, alternative to Beefree/Unlayer",
-    "url": "https://play.templatical.com",
+    "id": "48064312",
+    "title": "Serving a website on a Raspberry Pi Zero running in RAM",
+    "url": "https://btxx.org/posts/memory/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I built an open-source email builder, alternative to Beefree/Unlayer",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48039674",
-    "title": "Proton Meet",
-    "url": "https://proton.me/business/blog/introducing-proton-meet",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Proton Meet",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48053203",
-    "title": "AI Slop Is Killing Online Communities",
-    "url": "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI Slop Is Killing Online Communities",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48035617",
-    "title": "RAM prices are forcing companies to choose higher prices, worse specs, or both",
-    "url": "https://gizmodo.com/shrinkflation-is-quietly-making-all-gadgets-worse-2000754565",
-    "summary": "生成摘要时出错",
-    "chinese_title": "RAM prices are forcing companies to choose higher prices, worse specs, or both",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48034762",
-    "title": "Setting up a Sun Ray server on OpenIndiana Hipster 2025.10",
-    "url": "https://catstret.ch/202605/srss-hipster202510/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Setting up a Sun Ray server on OpenIndiana Hipster 2025.10",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48038489",
-    "title": "Colombia hosts talks on exiting fossil fuels as global energy crisis deepens",
-    "url": "https://www.latimes.com/environment/story/2026-04-26/colombia-hosts-talks-on-exiting-fossil-fuels-as-global-energy-crisis-deepens",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Colombia hosts talks on exiting fossil fuels as global energy crisis deepens",
+    "chinese_title": "Serving a website on a Raspberry Pi Zero running in RAM",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -184,27 +112,51 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48049764",
-    "title": "The Self-Cancelling Subscription",
-    "url": "https://predr.ag/blog/the-self-cancelling-subscription/",
+    "id": "48054386",
+    "title": "ShinyHunters claims data theft from 8,800 schools (Instructure/Canvas)",
+    "url": "https://www.bleepingcomputer.com/news/security/instructure-hacker-claims-data-theft-from-8-800-schools-universities/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Self-Cancelling Subscription",
+    "chinese_title": "ShinyHunters claims data theft from 8,800 schools (Instructure/Canvas)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48050499",
-    "title": "I want to live like Costco people",
-    "url": "https://tastecooking.com/i-want-to-live-like-costco-people/",
+    "id": "48056268",
+    "title": "Plasticity and language in the anaesthetized human hippocampus",
+    "url": "https://www.bcm.edu/news/researchers-discover-advanced-language-processing-in-the-unconscious-human-brain",
     "summary": "生成摘要时出错",
-    "chinese_title": "I want to live like Costco people",
+    "chinese_title": "Plasticity and language in the anaesthetized human hippocampus",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48029753",
-    "title": "Xbox CEO ends Copilot AI development and overhauls leadership",
-    "url": "https://www.dexerto.com/gaming/xbox-ceo-ends-copilot-ai-development-overhauls-leadership-3361353/",
+    "id": "48053842",
+    "title": "Two Home Affairs officials suspended after AI 'hallucinations' found",
+    "url": "https://www.citizen.co.za/news/home-affairs-officials-suspended-ai-hallucinations/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Xbox CEO ends Copilot AI development and overhauls leadership",
+    "chinese_title": "Two Home Affairs officials suspended after AI 'hallucinations' found",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48066169",
+    "title": "Apple, Intel have reached preliminary chip-making deal",
+    "url": "https://www.reuters.com/business/apple-intel-have-reached-preliminary-chip-making-deal-wsj-reports-2026-05-08/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple, Intel have reached preliminary chip-making deal",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48060918",
+    "title": "GeoJSON",
+    "url": "https://geojson.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GeoJSON",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48051025",
+    "title": "I switched from Mac to a Lenovo Chromebook",
+    "url": "https://blog.johnozbay.com/i-left-apples-ecosystem-for-a-lenovo-chromebook-and-you-can-too.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I switched from Mac to a Lenovo Chromebook",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -216,6 +168,22 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "48053816",
+    "title": "Mozilla says 271 vulnerabilities found by Mythos and \"almost no false positives\"",
+    "url": "https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Mozilla says 271 vulnerabilities found by Mythos and \"almost no false positives\"",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48056749",
+    "title": "GNU IFUNC is the real culprit behind CVE-2024-3094",
+    "url": "https://github.com/robertdfrench/ifuncd-up",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GNU IFUNC is the real culprit behind CVE-2024-3094",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "48043184",
     "title": "What British people mean when they say 'sorry'",
     "url": "https://www.bbc.com/travel/article/20260506-what-british-people-really-mean-when-they-say-sorry",
@@ -224,11 +192,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48031707",
-    "title": "Update on \"Co-authored-by: Copilot\" in commit messages",
-    "url": "https://github.com/microsoft/vscode/issues/314311",
+    "id": "48042817",
+    "title": "The Disappearance of the Public Bench",
+    "url": "https://placesjournal.org/article/the-disappearance-of-the-public-bench/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Update on \"Co-authored-by: Copilot\" in commit messages",
+    "chinese_title": "The Disappearance of the Public Bench",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48047082",
+    "title": "ZAYA1-8B matches DeepSeek-R1 on math with less than 1B active parameters",
+    "url": "https://firethering.com/zaya1-8b-open-source-math-coding-model/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ZAYA1-8B matches DeepSeek-R1 on math with less than 1B active parameters",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -237,6 +213,30 @@
     "url": "https://harpers.org/archive/2026/05/the-old-guard-samuel-moyn-gerontocracy/",
     "summary": "生成摘要时出错",
     "chinese_title": "The Old Guard: Confronting America's Gerontocratic Crisis",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48052333",
+    "title": "Principles for agent-native CLIs",
+    "url": "https://twitter.com/trevin/status/2051316002730991795",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Principles for agent-native CLIs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48062035",
+    "title": "Hackers breach JDownloader's website to serve malware-laced downloads",
+    "url": "https://www.neowin.net/news/if-you-downloaded-this-popular-software-recently-you-might-have-installed-malware/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hackers breach JDownloader's website to serve malware-laced downloads",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48051873",
+    "title": "California leaders report four to six weeks worth of gasoline and diesel supply",
+    "url": "https://kmph.com/news/local/california-leaders-report-four-to-six-weeks-worth-of-gasoline-and-diesel-in-supply",
+    "summary": "生成摘要时出错",
+    "chinese_title": "California leaders report four to six weeks worth of gasoline and diesel supply",
     "chinese_summary": "生成摘要时出错"
   }
 ]
