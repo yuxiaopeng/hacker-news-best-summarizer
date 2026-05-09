@@ -1,51 +1,107 @@
 [
   {
-    "id": "48045012",
-    "title": "Diskless Linux boot using ZFS, iSCSI and PXE",
-    "url": "https://aniket.foo/posts/20260505-netboot/",
-    "summary": "This article details setting up a diskless Linux boot environment using ZFS, iSCSI, and PXE. The author's motivation was to create an isolated Linux system for AI model testing without disturbing a Windows gaming installation, avoiding issues with GRUB, local disk partitioning, or easily misplaced USB drives, while also learning about PXE over iSCSI.\n\nThe setup leverages a central Debian 13 server (Proxmox host) functioning as the PXE boot server, TFTP server, iSCSI target, and ZFS host. DNSMasq on the router directs client boot requests to this server.\n\nThe process involves several key steps:\n1.  **Netboot.xyz Configuration:** Installing Netboot.xyz, customizing its templates and a specific menu entry (`debian13-iscsi.ipxe`). This entry configures the iSCSI server, target, initiator IQN, and mutual CHAP authentication details, attempting to `sanboot` (boot from iSCSI) or falling back to a network-based Debian installer.\n2.  **TFTP and DNSMasq:** Configuring `tftpd-hpa` to serve iPXE binaries and setting up DNSMasq on the router to direct different client architectures (BIOS/UEFI/iPXE) to the correct netboot files.\n3.  **ZFS ZVol and iSCSI Target:** Creating a ZFS ZVol (`tank/debian-disk-12700k`) on the Proxmox host. This ZVol is then exported as an iSCSI block device using `targetcli`, complete with an iSCSI target, ACLs for the client's IQN, and mutual CHAP authentication.\n4.  **Debian Installation:** The client PC boots via PXE, selecting the custom iSCSI boot option. If no OS is found, it proceeds to the Debian network installer. During the installer's disk detection phase, the user switches to a TTY to manually configure the iSCSI initiator's IQN (`/etc/iscsi/initiatorname.iscsi`), restarts `iscsid`, and then logs into the iSCSI target with the defined credentials. Finally, Debian is installed onto the remotely provided iSCSI volume, creating a persistent diskless Linux system.",
-    "chinese_title": "ZFS、iSCSI 和 PXE 无盘 Linux 启动",
-    "chinese_summary": "本文详细介绍了如何使用ZFS、iSCSI和PXE设置无盘Linux启动环境。作者的动机是创建一个隔离的Linux系统进行AI模型测试，同时不干扰现有的Windows游戏安装，避免GRUB、本地磁盘分区或U盘易丢失等问题，并借此机会学习通过iSCSI实现PXE启动。\n\n该设置利用一台中央Debian 13服务器（Proxmox主机）作为PXE启动服务器、TFTP服务器、iSCSI目标和ZFS主机。路由器上的DNSMasq负责将客户端的启动请求指向该服务器。\n\n该过程涉及以下几个关键步骤：\n1.  **Netboot.xyz配置：** 安装Netboot.xyz，自定义其模板和一个特定的菜单条目（`debian13-iscsi.ipxe`）。该条目配置了iSCSI服务器、目标、发起方IQN和相互CHAP认证的详细信息，尝试`sanboot`（从iSCSI启动），或在失败时回退到基于网络的Debian安装程序。\n2.  **TFTP和DNSMasq：** 配置`tftpd-hpa`以提供iPXE二进制文件，并在路由器上设置DNSMasq，将不同客户端架构（BIOS/UEFI/iPXE）的请求导向正确的网络启动文件。\n3.  **ZFS ZVol和iSCSI目标：** 在Proxmox主机上创建一个ZFS ZVol（`tank/debian-disk-12700k`）。然后使用`targetcli`将此ZVol作为iSCSI块设备导出，并配置iSCSI目标、客户端IQN的ACL（访问控制列表）以及相互CHAP认证。\n4.  **Debian安装：** 客户端PC通过PXE启动，选择自定义的iSCSI启动选项。如果未找到操作系统，它将进入Debian网络安装程序。在安装程序的磁盘检测阶段，用户切换到TTY手动配置iSCSI发起方的IQN（`/etc/iscsi/initiatorname.iscsi`），重启`iscsid`，然后使用定义的凭据登录iSCSI目标。最后，Debian被安装到远程提供的iSCSI卷上，从而创建了一个持久化的无盘Linux系统。"
+    "id": "48067119",
+    "title": "Google broke reCAPTCHA for de-googled Android users",
+    "url": "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users",
+    "summary": "The provided text, despite the title \"Google broke reCAPTCHA for de-googled Android users,\" discusses Brave browser. It introduces a new \"stripped down option\" from Brave, describing it as a \"surprisingly coherent product.\" The article indicates that the relevance and necessity of this Brave option are entirely dependent on the specific type of privacy user.",
+    "chinese_title": "谷歌破坏了去谷歌化安卓用户的reCAPTCHA",
+    "chinese_summary": "尽管标题为“谷歌为‘去谷歌化’的安卓用户破坏了reCAPTCHA”，但该文本讨论的是Brave浏览器。它介绍了Brave推出的一款新的“精简选项”，并称其为“一个出奇连贯的产品”。文章指出，这个Brave选项的相关性和必要性完全取决于特定类型的隐私用户。"
+  },
+  {
+    "id": "48054423",
+    "title": "Cloudflare to cut about 20% of its workforce",
+    "url": "https://www.reuters.com/business/world-at-work/cloudflare-cut-over-1100-jobs-2026-05-07/",
+    "summary": "Cloudflare plans to reduce its workforce by approximately 7% in the coming weeks, which translates to around 500 employees. This move, announced by CEO Matthew Prince in an email to staff and shared in a blog post, aims to make the company \"leaner and faster.\"\n\nThe job cuts are not attributed to performance issues, but rather to an overestimation of the company's growth trajectory during a period of rapid hiring. Cloudflare had rapidly expanded its team from 1,000 employees in 2019 to over 3,000 by 2022. The company, which specializes in web infrastructure and security, aims to improve its focus and efficiency.\n\nImpacted employees will receive a minimum of 16 weeks of pay, their Q1 2024 bonus, and equity vesting through February 2024, along with benefits and job search assistance. Cloudflare joins a growing list of tech companies, including Google, Amazon, and Microsoft, that have undertaken significant layoffs recently, signaling a broader trend of workforce adjustments in the industry.",
+    "chinese_title": "Cloudflare将裁员约20%员工",
+    "chinese_summary": "Cloudflare 计划在未来几周内裁员约 7%，相当于约 500 名员工。首席执行官 Matthew Prince 在给员工的电子邮件中宣布了这一举措，并在博客文章中分享，旨在使公司“更精简、更快速”。\n\n此次裁员并非源于业绩问题，而是由于在快速招聘期间高估了公司的增长轨迹。Cloudflare 的团队规模在 2019 年从 1,000 名员工迅速扩大到 2022 年的 3,000 多名。这家专注于网络基础设施和安全的公司，旨在提高其专注度和效率。\n\n受影响的员工将获得至少 16 周的工资、2024 年第一季度奖金、股权归属至 2024 年 2 月，以及福利和求职援助。Cloudflare 加入了包括谷歌、亚马逊和微软在内的越来越多的科技公司行列，这些公司近期都进行了大规模裁员，这预示着行业内劳动力调整的更广泛趋势。"
+  },
+  {
+    "id": "48062117",
+    "title": "Poland is now among the 20 largest economies",
+    "url": "https://apnews.com/article/poland-economy-growth-g20-gdp-26fe06e120398410f8d773ba5661e7aa",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Poland is now among the 20 largest economies",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48055913",
+    "title": "Canvas online again as ShinyHunters threatens to leak schools’ data",
+    "url": "https://www.theverge.com/tech/926458/canvas-shinyhunters-breach",
+    "summary": "The learning platform Canvas is back online after a massive outage caused by a data breach, with the hacking group ShinyHunters claiming responsibility. Students attempting to access the system saw a ransom message from ShinyHunters, which stated they had breached Instructure (Canvas's owner) again and threatened to leak school data if a settlement wasn't negotiated by May 12, 2026. The message included a list of allegedly compromised schools.\n\nInstructure confirmed an \"unauthorized actor\" made changes to login pages, prompting them to take Canvas offline \"out of an abundance of caution.\" The breach impacted student names, email addresses, ID numbers, and messages. Instructure identified an exploit related to their \"Free-For-Teacher\" accounts, which they have temporarily shut down.\n\nWhile most Canvas services are now available, Canvas Beta and Test systems remain in maintenance, and some users face issues logging into Student ePortfolios. ShinyHunters claims its leak site contains data from 9,000 schools, affecting 275 million students, teachers, and staff. Instructure had previously deployed security patches after an earlier breach, but ShinyHunters claimed these were insufficient. The group has a history of major cyberattacks on companies like Ticketmaster and AT&T.",
+    "chinese_title": "Canvas 再次上线，正值 ShinyHunters 威胁泄露学校数据",
+    "chinese_summary": "学习平台Canvas在因数据泄露导致大规模中断后已恢复上线，黑客组织ShinyHunters声称对此负责。试图访问系统的学生看到了ShinyHunters的勒索信息，其中声称他们再次入侵了Instructure（Canvas的所有者），并威胁说，如果未能在2026年5月12日前协商达成和解，他们将泄露学校数据。该信息中还附带了一份据称已被泄露数据的学校名单。\n\nInstructure证实，一名“未经授权的行为者”更改了登录页面，促使他们“出于高度谨慎”而将Canvas下线。此次泄露事件影响了学生的姓名、电子邮件地址、ID号码和信息。Instructure发现了一个与其“教师免费”账户相关的漏洞，并已暂时关闭了这些账户。\n\n虽然大多数Canvas服务现已可用，但Canvas Beta和测试系统仍处于维护状态，并且部分用户在登录学生电子档案时遇到问题。ShinyHunters声称其泄密网站包含来自9,000所学校的数据，影响了2.75亿学生、教师和教职员工。Instructure此前在一次早期泄露事件后部署了安全补丁，但ShinyHunters声称这些补丁不足以解决问题。该组织曾对Ticketmaster和AT&T等公司发动过重大网络攻击。"
+  },
+  {
+    "id": "48056227",
+    "title": "Maybe you shouldn't install new software for a bit",
+    "url": "https://xeiaso.net/blog/2026/abstain-from-install/",
+    "summary": "This very brief \"article\" consists of a title, \"Maybe you shouldn't install new software for a bit,\" followed by a single line of content in Chinese: \"正在确认你是不是机器人！ 加载中...请稍等，我们需要在继续之前检查您的连接安全性。\"\n\nTranslated, the content reads: \"Confirming if you are a robot! Loading...Please wait, we need to check your connection security before continuing.\"\n\nThe summary is that the piece offers a cautionary title advising against installing new software temporarily. The accompanying content describes a typical online security verification process, specifically a bot check and a connection security assessment. While the article does not elaborate on *why* one should avoid installing new software, it uses a common security hurdle as its sole textual example, implicitly linking general online security checks to the broader context of software installation caution.",
+    "chinese_title": "也许你最好暂时不要安装新软件。",
+    "chinese_summary": "This very brief \"article\" consists of a title, \"Maybe you shouldn't install new software for a bit,\" followed by a single line of content in Chinese: \"正在确认你是不是机器人！ 加载中...请稍等，我们需要在继续之前检查您的连接安全性。\"\n\nTranslated, the content reads: \"Confirming if you are a robot! Loading...Please wait, we need to check your connection security before continuing.\"\n\nThe summary is that the piece offers a cautionary title advising against installing new software temporarily. The accompanying content describes a typical online security verification process, specifically a bot check and a connection security assessment. While the article does not elaborate on *why* one should avoid installing new software, it uses a common security hurdle as its sole textual example, implicitly linking general online security checks to the broader context of software installation caution."
   },
   {
     "id": "48061884",
     "title": "David Attenborough's 100th Birthday",
     "url": "https://www.bbc.com/news/articles/cp3pww9g0p5o",
-    "summary": "Sir David Attenborough's 100th birthday is being celebrated with a wave of tributes, led by King Charles III and Queen Camilla, who shared personal photographs and wished him well. Prince William praised Attenborough's ongoing inspiration, while Prince Harry described him as a \"secular saint\" for his impact on climate awareness. Celebrities including David Beckham, Joanna Lumley, Chris Packham, Dame Judi Dench, Morgan Freeman, Hans Zimmer, and Sir Ian McKellen also shared heartfelt messages, lauding his unique contribution to natural history and his ability to engage audiences.\n\nAttenborough expressed being \"completely overwhelmed\" by the outpouring of affection. The celebrations culminate in a special concert at the Royal Albert Hall, hosted by Kirsty Young. This event will feature reflections on his life and legacy from guests like Sir Michael Palin, live music from the BBC Concert Orchestra recalling iconic TV moments, and performances by artists such as Dan Smith (Bastille) and Sigur Rós.\n\nThe BBC has marked the centenary with a week of special programming, including classic documentaries and new series. Further honouring his legacy, the Natural History Museum named a newly identified parasitic wasp, *Attenboroughnculus tau*, after him, adding to several other species already bearing his name. Born in 1926, Sir David joined the BBC in 1952, pioneering numerous groundbreaking natural history series.",
-    "chinese_title": "戴维·阿滕伯勒的100岁生日",
-    "chinese_summary": "戴维·阿滕伯勒爵士的百岁生日正通过一波又一波的致敬活动来庆祝，由查尔斯三世国王和卡米拉王后带头，他们分享了私人照片并表达了对他的美好祝愿。威廉王子赞扬了阿滕伯勒持续的启发作用，而哈里王子则因他对气候意识的影响称他为“世俗圣人”。包括大卫·贝克汉姆、乔安娜·拉姆利、克里斯·帕卡姆、朱迪·丹奇女爵士、摩根·弗里曼、汉斯·季默和伊恩·麦克莱恩爵士在内的名人也分享了真挚的祝福，赞扬他对自然历史的独特贡献以及吸引观众的能力。\n\n阿滕伯勒表示对如潮般的爱意感到“完全受宠若惊”。庆祝活动的高潮是在皇家阿尔伯特音乐厅举行的一场由柯斯蒂·杨主持的特别音乐会。该活动将邀请迈克尔·佩林爵士等嘉宾回顾他的一生和遗产，由BBC音乐会管弦乐团现场演奏音乐，重现标志性电视时刻，并有丹·史密斯（巴士底乐队）和席格洛斯等艺术家的表演。\n\nBBC也以一周的特别节目来纪念这一百年诞辰，其中包括经典纪录片和新剧集。为了进一步纪念他的遗产，自然历史博物馆将一种新发现的寄生蜂命名为*Attenboroughnculus tau*，以他的名字命名，此前已有其他几种物种以他命名。戴维爵士生于1926年，于1952年加入BBC，开创了众多具有里程碑意义的自然历史系列节目。"
+    "summary": "生成摘要时出错",
+    "chinese_title": "戴维·阿滕伯勒百岁诞辰",
+    "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48063240",
-    "title": "Tesla is recalling its cheaper Cybertruck because the wheels might fall off",
-    "url": "https://www.theverge.com/transportation/926741/tesla-cybertruck-cheaper-recall",
-    "summary": "Tesla is recalling all 173 of its RWD Cybertruck Long Range models, specifically the $70,000 variant with 18-inch steel wheels, due to a critical safety concern. The recall, reported by Emma Roth on May 8, 2026, stems from faulty brake rotors where stud holes may crack, potentially causing the wheels to detach, especially under strenuous driving conditions.\n\nThis marks the 11th recall for the Cybertruck, following previous issues with the accelerator, trim, and cameras. While Tesla has identified three warranty claims related to this problem, the company has not reported any collisions, fatalities, or injuries.\n\nThe RWD Cybertruck, launched last April and discontinued months later, is the affected model. A newer, $60,000 dual-motor AWD Cybertruck released in February is not part of this recall. Tesla will resolve the issue by replacing the front and rear brake rotors, hubs, and lug nuts on affected vehicles free of charge.",
-    "chinese_title": "特斯拉召回其较便宜的Cybertruck，原因是车轮可能脱落。",
-    "chinese_summary": "特斯拉正在召回全部173辆后驱版Cybertruck长续航车型，特指售价7万美元、配备18英寸钢轮的型号，原因是一个关键安全问题。据Emma Roth于2026年5月8日报道，此次召回源于有缺陷的刹车盘，其螺栓孔可能会开裂，可能导致车轮脱落，尤其是在剧烈驾驶条件下。\n\n这是Cybertruck的第11次召回，此前曾因加速踏板、内饰和摄像头问题而被召回。尽管特斯拉已确认了三起与此问题相关的保修索赔，但该公司尚未报告任何碰撞、死亡或受伤事件。\n\n受影响的车型是去年4月推出并在数月后停产的后驱版Cybertruck。今年2月发布的售价6万美元的新款双电机全驱版Cybertruck不在此次召回范围内。特斯拉将通过免费更换受影响车辆上的前后刹车盘、轮毂和车轮螺母来解决此问题。"
+    "id": "48053623",
+    "title": "Dirty Frag: Universal Linux LPE",
+    "url": "https://www.openwall.com/lists/oss-security/2026/05/07/8",
+    "summary": "This report details \"Dirty Frag,\" a critical universal Local Privilege Escalation (LPE) vulnerability affecting all major Linux distributions, allowing an unprivileged user to gain root privileges. Discovered by Hyunwoo Kim, its impact is compared to the previous \"Copy Fail\" vulnerability.\n\nThe public disclosure of Dirty Frag occurred prematurely due to a broken embargo, meaning no official patches or CVEs are currently available. The vulnerability chains two distinct kernel issues related to network functionalities, with specific kernel commit links provided.\n\nA temporary mitigation involves disabling the `esp4`, `esp6`, and `rxrpc` kernel modules by adding rules to `/etc/modprobe.d/dirtyfrag.conf` and then removing them.\n\nThe provided proof-of-concept exploit code demonstrates the LPE. It leverages unprivileged user and network namespaces (`CLONE_NEWUSER | CLONE_NEWNET`) and vulnerabilities in the `xfrm` (IPSec) and `rxrpc` kernel modules. The exploit constructs a small ELF payload designed to execute a root shell, then uses network socket operations (involving `xfrm_usersa_info` manipulation and `splice` calls via UDP encapsulation) to write this payload directly into the `/usr/bin/su` binary's page cache. This overwrite replaces the target's initial instructions, allowing subsequent execution of `/usr/bin/su` to grant immediate root access.",
+    "chinese_title": "脏碎片：通用 Linux 本地权限提升",
+    "chinese_summary": "本报告详细介绍了“Dirty Frag”，这是一个严重的通用本地权限提升（LPE）漏洞，影响所有主流Linux发行版，允许非特权用户获取root权限。该漏洞由Hyunwoo Kim发现，其影响与此前的“Copy Fail”漏洞相当。\n\n由于禁令被违反，Dirty Frag的公开披露过早发生，这意味着目前没有官方补丁或CVE可用。该漏洞串联了两个独立的与网络功能相关的内核问题，并提供了具体的内核提交链接。\n\n一种临时缓解措施是，通过向`/etc/modprobe.d/dirtyfrag.conf`添加规则来禁用`esp4`、`esp6`和`rxrpc`内核模块，然后将其移除。\n\n所提供的概念验证（PoC）漏洞利用代码演示了LPE。它利用了非特权用户和网络命名空间（`CLONE_NEWUSER | CLONE_NEWNET`），以及`xfrm` (IPSec) 和`rxrpc`内核模块中的漏洞。该漏洞利用构建了一个旨在执行root shell的小型ELF载荷，然后使用网络套接字操作（涉及`xfrm_usersa_info`操作和通过UDP封装进行的`splice`调用）将此载荷直接写入`/usr/bin/su`二进制文件的页缓存中。这种覆写替换了目标的初始指令，从而使得`/usr/bin/su`的后续执行能够立即授予root权限。"
   },
   {
-    "id": "48056158",
-    "title": "Nonprofit hospitals spend billions on consultants with no clear effect",
-    "url": "https://www.uchicagomedicine.org/forefront/research-and-discoveries-articles/nonprofit-hospitals-spend-billions-on-management-consultants",
-    "summary": "A new study published in JAMA reveals that nonprofit hospitals spend billions on management consultants with no clear evidence of positive impact. This first large-scale empirical analysis, led by Joseph Dov Bruch, PhD, examined IRS Form 990 filings from 2010-2022, comparing 306 hospitals that hired consultants with a matched control group.\n\nOver 20% of all nonprofit hospitals engaged management consultants during the study period, spending at least $7.8 billion—an average of $15.7 million per hospital—on these services. When including other types of consultants like HR and IT, the total expenditure exceeded $25 billion.\n\nDespite these substantial investments, the study found no statistically significant or systematic improvements in key metrics such as net patient revenue, operating margin, staffing, operations, or patient outcomes like readmission and mortality rates. Bruch noted that consultants delivered \"neither the dramatic efficiencies they promise nor the harms that critics sometimes fear,\" concluding there's no evidence of \"meaningful improvements.\" The only exception observed was a slight negative effect: a small increase in stroke readmissions.\n\nThe authors recommend greater caution from hospital executives and advocate for increased transparency and public accountability regarding how tax-subsidized dollars are spent. The research also aims to inform students considering careers in healthcare management consulting, providing much-needed evidence on the actual impact of such roles.",
-    "chinese_title": "非营利医院斥资数十亿聘请顾问，收效甚微。",
-    "chinese_summary": "《美国医学会杂志》发表的一项新研究显示，非营利医院在管理咨询顾问上花费了数十亿美元，但没有明确证据表明其产生了积极影响。这项由约瑟夫·多夫·布鲁赫博士牵头的首次大规模实证分析，审查了2010年至2022年间的美国国税局990表申报文件，对比了306家聘请了咨询顾问的医院和一个匹配的对照组。\n\n在研究期间，超过20%的非营利医院聘请了管理咨询顾问，用于这些服务的支出至少达78亿美元，平均每家医院1570万美元。如果包括人力资源和IT等其他类型的咨询顾问，总支出则超过250亿美元。\n\n尽管投入了巨额资金，但研究发现，在患者净收入、运营利润、人员配置、运营或患者结果（如再入院率和死亡率）等关键指标方面，均未出现统计学上显著或系统性的改善。布鲁赫指出，咨询顾问带来的结果是“既没有他们承诺的显著效率，也没有批评者有时担心的危害”，并总结称，没有证据表明存在“有意义的改善”。唯一观察到的例外是一个轻微的负面影响：中风再入院率略有上升。\n\n作者建议医院高管应更加谨慎，并呼吁提高税收补贴资金使用方式的透明度和公共问责制。这项研究还旨在为考虑从事医疗管理咨询职业的学生提供信息，提供关于此类角色实际影响的急需证据。"
+    "id": "48063199",
+    "title": "Google Cloud Fraud Defence is just WEI repackaged",
+    "url": "https://privatecaptcha.com/blog/google-cloud-fraud-defence-wei/",
+    "summary": "Google Cloud Fraud Defense, launched in May 2026 as \"the next evolution of reCAPTCHA,\" is presented as a repackaging of the previously rejected \"Web Environment Integrity\" (WEI) proposal from 2023. WEI, which sought to have device hardware cryptographically attest to browser and device integrity, was withdrawn after strong opposition from Mozilla and the Electronic Frontier Foundation, who labeled it \"Chrome's Plan to DRM the Web\" and a threat to the open internet and user privacy.\n\nFraud Defense employs a QR code challenge, requiring users to scan with a \"modern Android device with Google Play Services installed, or modern iPhone/iPad.\" The article emphasizes that \"Google Play Services installed\" is key, as it leverages the Play Integrity API for device attestation—the same core mechanism as WEI. Unlike WEI, Fraud Defense launched commercially without public review.\n\nKey criticisms include:\n1.  **Bypassability:** Bots can easily defeat the QR challenge using inexpensive certified Android devices or automated camera setups.\n2.  **Phishing Risk:** It trains users to scan QR codes, making them vulnerable to malicious phishing campaigns.\n3.  **Exclusion:** Privacy-focused users running custom Android ROMs (e.g., GrapheneOS, LineageOS without Play Services) or browsers like Firefox for Android (which doesn't integrate Play Integrity) are effectively blocked.\n4.  **Tracking:** Each successful challenge signals to Google which certified device accessed which site, creating a persistent identifier and accumulating a comprehensive record of users' browsing activity, raising significant privacy concerns.\n\nThe article concludes that Fraud Defense is a device attestation system, not merely a reCAPTCHA update. It bypasses prior public review processes to build an attribution system that was previously rejected, while failing to offer a robust solution against bots.",
+    "chinese_title": "谷歌云防欺诈不过是重新包装的WEI。",
+    "chinese_summary": "Google Cloud 欺诈防御于2026年5月推出，被宣传为“reCAPTCHA的下一代演进”，实则是对2023年曾被否决的“Web环境完整性”（WEI）提案的重新包装。WEI旨在让设备硬件以加密方式证明浏览器和设备的完整性，但在Mozilla和电子前哨基金会的强烈反对下被撤回，两方均称其为“Chrome的Web数字版权管理（DRM）计划”，并认为它对开放互联网和用户隐私构成威胁。\n\n欺诈防御采用二维码挑战，要求用户使用“安装了Google Play服务的新型安卓设备，或新型iPhone/iPad”进行扫描。文章强调，“安装Google Play服务”是关键，因为它利用Play Integrity API进行设备证明——这与WEI的核心机制相同。与WEI不同的是，欺诈防御在未经公众审查的情况下商业发布。\n\n主要批评包括：\n1.  **可规避性：** 机器人可以使用廉价的认证安卓设备或自动化摄像头装置，轻易地规避二维码挑战。\n2.  **网络钓鱼风险：** 它培养用户扫描二维码的习惯，使他们容易受到恶意网络钓鱼活动的攻击。\n3.  **排他性：** 运行定制安卓ROM（例如GrapheneOS、未安装Play服务的LineageOS）的注重隐私的用户，或使用Firefox for Android（未集成Play Integrity）等浏览器的用户将被有效阻止。\n4.  **追踪：** 每一次成功的挑战都会向Google发送信号，告知哪个认证设备访问了哪个网站，从而创建一个持久性标识符，并累积用户的全面浏览活动记录，引发重大的隐私担忧。\n\n文章总结道，欺诈防御是一个设备证明系统，而不仅仅是reCAPTCHA的更新。它规避了此前的公众审查流程，旨在建立一个曾被否决的归因系统，同时未能提供针对机器人的强大解决方案。"
   },
   {
-    "id": "48057209",
-    "title": "GPT-5.5 Price Increase: What It Costs",
-    "url": "https://openrouter.ai/announcements/gpt55-cost-analysis",
-    "summary": "A recent analysis by OpenRouter reveals the actual cost impact of OpenAI's GPT-5.5, which launched with a 2x price increase over GPT-5.4. Input tokens increased from $2.50/M to $5.00/M, and output tokens from $15/M to $30/M.\n\nThe study, based on a \"switcher cohort\" of users transitioning from GPT-5.4 to GPT-5.5, found that actual costs for users increased between 49% and 92%.\n\nA key finding is that GPT-5.5's noted reduced verbosity only benefits longer prompts. For prompts exceeding 10K tokens, the model produced 19-34% fewer completion tokens. This mitigation partially offsets the price hike, resulting in cost increases of 49-62% for these longer prompts (e.g., 50K-128K tokens saw a 49% increase).\n\nConversely, shorter prompts experienced a higher net cost impact. For prompts under 2K tokens, completions were 7% longer, leading to a 92% cost increase. Prompts between 2K-10K tokens saw completions 52% longer, resulting in a 69% cost increase, as the benefit of shorter completions did not apply.\n\nThe methodology involved analyzing billed costs from OpenRouter's request logs, normalizing costs to average cost per million OpenRouter tokens for direct comparison.",
-    "chinese_title": "GPT-5.5 涨价：费用详情",
-    "chinese_summary": "OpenRouter最近的一项分析揭示了OpenAI GPT-5.5的实际成本影响，该版本推出时比GPT-5.4价格上涨了2倍。输入token从每百万2.50美元增加到每百万5.00美元，输出token从每百万15美元增加到每百万30美元。\n\n这项研究基于从GPT-5.4过渡到GPT-5.5的“转换用户群”，发现用户的实际成本增加了49%到92%。\n\n一个关键发现是，GPT-5.5所宣称的减少冗余只对较长的提示词有益。对于超过10K token的提示词，模型生成的补全token减少了19-34%。这种缓解措施部分抵消了价格上涨，使得这些较长提示词的成本增加幅度为49-62%（例如，50K-128K token的提示词成本增加了49%）。\n\n相反，较短的提示词经历了更高的净成本影响。对于2K token以下的提示词，补全内容反而长了7%，导致成本增加了92%。对于2K-10K token之间的提示词，补全内容长了52%，导致成本增加了69%，因为缩短补全内容的益处并未体现。\n\n该方法涉及分析OpenRouter请求日志中的计费成本，并将成本标准化为每百万OpenRouter token的平均成本，以便直接比较。"
+    "id": "48062178",
+    "title": "A web page that shows you everything the browser told it without asking",
+    "url": "https://sinceyouarrived.world/taken",
+    "summary": "The web page \"Since You Arrived · Vol. IV\" aims to transparently demonstrate the extensive personal data your browser automatically discloses to any website, \"without asking.\" It emphasizes that while this information is constantly disclosed, JavaScript is essential for the page to *show* you what it has learned.\n\nThe page utilizes standard browser APIs and documented techniques, not exploits, to gather data. This includes your IP address (used for approximate geolocation via a third-party, though only partially displayed), detailed device specifications (screen, GPU, battery status, language, operating system, installed fonts), and browser characteristics. It highlights font fingerprinting as a strong signal for unique user identification and references research on how battery data can be used for tracking.\n\nA unique \"barcode\" is generated based on this device data, computed locally in your browser and never transmitted. Crucially, the page clarifies several prevalent tracking methods it *did not* employ, such as canvas fingerprinting, accessing your clipboard, or detecting logged-in accounts on other sites, while noting these are commonly used elsewhere.\n\nThe creators stress their commitment to privacy: they do not track, store any data (no cookies, local storage), or log personal information. Only two anonymous events (arrival, finish) are sent to their server, with no identifying data retained. The content is hand-written, not AI-generated. The overarching message is to expose how easily users can be uniquely identified across the web due to inherent browser design, urging awareness of what every page silently learns about you.",
+    "chinese_title": "A web page that shows you everything the browser told it without asking",
+    "chinese_summary": "The web page \"Since You Arrived · Vol. IV\" aims to transparently demonstrate the extensive personal data your browser automatically discloses to any website, \"without asking.\" It emphasizes that while this information is constantly disclosed, JavaScript is essential for the page to *show* you what it has learned.\n\nThe page utilizes standard browser APIs and documented techniques, not exploits, to gather data. This includes your IP address (used for approximate geolocation via a third-party, though only partially displayed), detailed device specifications (screen, GPU, battery status, language, operating system, installed fonts), and browser characteristics. It highlights font fingerprinting as a strong signal for unique user identification and references research on how battery data can be used for tracking.\n\nA unique \"barcode\" is generated based on this device data, computed locally in your browser and never transmitted. Crucially, the page clarifies several prevalent tracking methods it *did not* employ, such as canvas fingerprinting, accessing your clipboard, or detecting logged-in accounts on other sites, while noting these are commonly used elsewhere.\n\nThe creators stress their commitment to privacy: they do not track, store any data (no cookies, local storage), or log personal information. Only two anonymous events (arrival, finish) are sent to their server, with no identifying data retained. The content is hand-written, not AI-generated. The overarching message is to expose how easily users can be uniquely identified across the web due to inherent browser design, urging awareness of what every page silently learns about you."
   },
   {
-    "id": "48044311",
-    "title": "The Vatican's Website in Latin",
-    "url": "https://www.vatican.va/latin/latin_index.html",
-    "summary": "The article, titled \"The Vatican's Website in Latin,\" highlights the presence of Latin content on the official Holy See website. The provided text, \"Documenta Lingua Latina exarata,\" directly translates to \"Documents written in the Latin language.\" This indicates that the Vatican's digital platform includes a dedicated section offering various materials, likely official pronouncements, historical texts, or theological writings, presented in Latin. It underscores the Vatican's continued commitment to maintaining Latin as a significant language for its communications and archives.",
-    "chinese_title": "梵蒂冈拉丁语网站",
-    "chinese_summary": "这篇题为“梵蒂冈的拉丁语网站”的文章，强调了圣座官方网站上拉丁语内容的存在。所提供的文本“Documenta Lingua Latina exarata”直接翻译为“用拉丁语写的文件”。这表明梵蒂冈的数字平台包含一个专门的板块，提供各种拉丁语材料，可能包括官方声明、历史文献或神学著作。这强调了梵蒂冈持续致力于将拉丁语作为其交流和档案的重要语言。"
+    "id": "48071262",
+    "title": "A recent experience with ChatGPT 5.5 Pro",
+    "url": "https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A recent experience with ChatGPT 5.5 Pro",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48061566",
+    "title": "An Introduction to Meshtastic",
+    "url": "https://meshtastic.org/docs/introduction/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "An Introduction to Meshtastic",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48074265",
+    "title": "Internet Archive Switzerland",
+    "url": "https://blog.archive.org/2026/05/06/internet-archive-switzerland-expanding-a-global-mission-to-preserve-knowledge/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Internet Archive Switzerland",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48066524",
+    "title": "AI is breaking two vulnerability cultures",
+    "url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI is breaking two vulnerability cultures",
+    "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "48065360",
@@ -56,12 +112,28 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48049764",
-    "title": "The Self-Cancelling Subscription",
-    "url": "https://predr.ag/blog/the-self-cancelling-subscription/",
-    "summary": "The author details a frustrating experience with a \"self-cancelling\" streaming subscription, a perk linked to their credit card. The service repeatedly deactivated itself approximately five minutes after being reactivated. Initial attempts to fix it, including updating credit card information and toggling the perk on the bank's website, only provided temporary relief before the subscription cancelled again.\n\nCalls to both the credit card and streaming service support teams proved fruitless, with each side claiming \"no issues on our end\" and blaming the other. After a night of \"black-box debugging,\" the author's \"aha!\" moment led to unlinking the accounts from the bank's website, waiting overnight, and then re-linking them. This successfully resolved the issue.\n\nThe author's theory for the problem is a sync-vs-async race condition. Linking the subscription was a synchronous process, granting immediate access. However, unlinking was asynchronous, taking a few minutes to propagate. When the author rapidly re-linked after a cancellation, a delayed asynchronous cancellation from a *previous* unlinking event would eventually catch up and deactivate the newly active subscription. Waiting overnight allowed the asynchronous unlinking process to fully complete before a new, stable linking occurred. The original deactivation was likely triggered by an expired credit card on file, initiating the cycle of confusion.\n\nThe essay concludes by celebrating the complexity of systems and the incredible work of builders who make them mostly invisible and functional.",
-    "chinese_title": "自动取消订阅",
-    "chinese_summary": "The author details a frustrating experience with a \"self-cancelling\" streaming subscription, a perk linked to their credit card. The service repeatedly deactivated itself approximately five minutes after being reactivated. Initial attempts to fix it, including updating credit card information and toggling the perk on the bank's website, only provided temporary relief before the subscription cancelled again.\n\nCalls to both the credit card and streaming service support teams proved fruitless, with each side claiming \"no issues on our end\" and blaming the other. After a night of \"black-box debugging,\" the author's \"aha!\" moment led to unlinking the accounts from the bank's website, waiting overnight, and then re-linking them. This successfully resolved the issue.\n\nThe author's theory for the problem is a sync-vs-async race condition. Linking the subscription was a synchronous process, granting immediate access. However, unlinking was asynchronous, taking a few minutes to propagate. When the author rapidly re-linked after a cancellation, a delayed asynchronous cancellation from a *previous* unlinking event would eventually catch up and deactivate the newly active subscription. Waiting overnight allowed the asynchronous unlinking process to fully complete before a new, stable linking occurred. The original deactivation was likely triggered by an expired credit card on file, initiating the cycle of confusion.\n\nThe essay concludes by celebrating the complexity of systems and the incredible work of builders who make them mostly invisible and functional."
+    "id": "48071940",
+    "title": "Using Claude Code: The unreasonable effectiveness of HTML",
+    "url": "https://twitter.com/trq212/status/2052809885763747935",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Using Claude Code: The unreasonable effectiveness of HTML",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48057901",
+    "title": "Mojo 1.0 Beta",
+    "url": "https://mojolang.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Mojo 1.0 Beta",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48072190",
+    "title": "EU calls VPNs \"a loophole that needs closing\" in age verification push",
+    "url": "https://cyberinsider.com/eu-calls-vpns-a-loophole-that-needs-closing-in-age-verification-push/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "EU calls VPNs \"a loophole that needs closing\" in age verification push",
+    "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "48061938",
@@ -72,27 +144,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48062997",
-    "title": "Just Use Go",
-    "url": "https://blainsmith.com/articles/just-fucking-use-go/",
+    "id": "48069192",
+    "title": "Meta Shuts Down End-to-End Encryption for Instagram Messaging",
+    "url": "https://www.pcmag.com/news/meta-shuts-down-end-to-end-encryption-for-instagram-dms-messaging",
     "summary": "生成摘要时出错",
-    "chinese_title": "Just Use Go",
+    "chinese_title": "Meta Shuts Down End-to-End Encryption for Instagram Messaging",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48045939",
-    "title": "Show HN: TRUST – Coding Rust like it's 1989",
-    "url": "https://github.com/wojtczyk/trust",
+    "id": "48073246",
+    "title": "LLMs corrupt your documents when you delegate",
+    "url": "https://arxiv.org/abs/2604.15597",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: TRUST – Coding Rust like it's 1989",
+    "chinese_title": "LLMs corrupt your documents when you delegate",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48043736",
-    "title": "Iran hit more U.S. military targets than has been reported, satellite images",
-    "url": "https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/",
+    "id": "48059662",
+    "title": "ClojureScript Gets Async/Await",
+    "url": "https://clojurescript.org/news/2026-05-07-release",
     "summary": "生成摘要时出错",
-    "chinese_title": "Iran hit more U.S. military targets than has been reported, satellite images",
+    "chinese_title": "ClojureScript Gets Async/Await",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48058197",
+    "title": "AWS North Virginia data center outage – resolved",
+    "url": "https://www.cnbc.com/2026/05/08/aws-outage-data-center-fanduel-coinbase.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AWS North Virginia data center outage – resolved",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -104,35 +184,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48045174",
-    "title": "ProgramBench: Can language models rebuild programs from scratch?",
-    "url": "https://arxiv.org/abs/2605.03546",
+    "id": "48066592",
+    "title": "Teaching Claude Why",
+    "url": "https://www.anthropic.com/research/teaching-claude-why",
     "summary": "生成摘要时出错",
-    "chinese_title": "ProgramBench: Can language models rebuild programs from scratch?",
+    "chinese_title": "Teaching Claude Why",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48054386",
-    "title": "ShinyHunters claims data theft from 8,800 schools (Instructure/Canvas)",
-    "url": "https://www.bleepingcomputer.com/news/security/instructure-hacker-claims-data-theft-from-8-800-schools-universities/",
+    "id": "48059606",
+    "title": "Nintendo announces price increases for Nintendo Switch 2",
+    "url": "https://www.nintendo.co.jp/corporate/release/en/2026/260508.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "ShinyHunters claims data theft from 8,800 schools (Instructure/Canvas)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48056268",
-    "title": "Plasticity and language in the anaesthetized human hippocampus",
-    "url": "https://www.bcm.edu/news/researchers-discover-advanced-language-processing-in-the-unconscious-human-brain",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Plasticity and language in the anaesthetized human hippocampus",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48053842",
-    "title": "Two Home Affairs officials suspended after AI 'hallucinations' found",
-    "url": "https://www.citizen.co.za/news/home-affairs-officials-suspended-ai-hallucinations/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Two Home Affairs officials suspended after AI 'hallucinations' found",
+    "chinese_title": "Nintendo announces price increases for Nintendo Switch 2",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -144,6 +208,70 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "48063240",
+    "title": "Tesla is recalling its cheaper Cybertruck because the wheels might fall off",
+    "url": "https://www.theverge.com/transportation/926741/tesla-cybertruck-cheaper-recall",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tesla is recalling its cheaper Cybertruck because the wheels might fall off",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48057209",
+    "title": "GPT-5.5 Price Increase: What It Costs",
+    "url": "https://openrouter.ai/announcements/gpt55-cost-analysis",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GPT-5.5 Price Increase: What It Costs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48067734",
+    "title": "You gave me a u32. I gave you root. (io_uring ZCRX freelist LPE)",
+    "url": "https://ze3tar.github.io/post-zcrx.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "You gave me a u32. I gave you root. (io_uring ZCRX freelist LPE)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48065511",
+    "title": "The React2Shell Story",
+    "url": "https://lachlan.nz/blog/the-react2shell-story/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The React2Shell Story",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48062997",
+    "title": "Just Use Go",
+    "url": "https://blainsmith.com/articles/just-fucking-use-go/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Just Use Go",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48056158",
+    "title": "Nonprofit hospitals spend billions on consultants with no clear effect",
+    "url": "https://www.uchicagomedicine.org/forefront/research-and-discoveries-articles/nonprofit-hospitals-spend-billions-on-management-consultants",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nonprofit hospitals spend billions on consultants with no clear effect",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48074952",
+    "title": "The hypocrisy of cyberlibertarianism",
+    "url": "https://matduggan.com/the-intolerable-hypocrisy-of-cyberlibertarianism/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The hypocrisy of cyberlibertarianism",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48075144",
+    "title": "GrapheneOS fixes Android VPN leak Google refused to patch",
+    "url": "https://cyberinsider.com/grapheneos-fixes-android-vpn-leak-google-refused-to-patch/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GrapheneOS fixes Android VPN leak Google refused to patch",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "48060918",
     "title": "GeoJSON",
     "url": "https://geojson.org/",
@@ -152,27 +280,75 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48051025",
-    "title": "I switched from Mac to a Lenovo Chromebook",
-    "url": "https://blog.johnozbay.com/i-left-apples-ecosystem-for-a-lenovo-chromebook-and-you-can-too.html",
+    "id": "48071496",
+    "title": "Over 97% of the 'Linux' Foundation's Budget Goes Not to Linux",
+    "url": "https://techrights.org/n/2026/05/08/Over_97_of_the_Linux_Foundation_s_Budget_Goes_Not_to_Linux.shtml",
     "summary": "生成摘要时出错",
-    "chinese_title": "I switched from Mac to a Lenovo Chromebook",
+    "chinese_title": "Over 97% of the 'Linux' Foundation's Budget Goes Not to Linux",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48046397",
-    "title": "Making LLM Training Faster with Unsloth and NVIDIA",
-    "url": "https://unsloth.ai/blog/nvidia-collab",
+    "id": "48056268",
+    "title": "Plasticity and language in the anaesthetized human hippocampus",
+    "url": "https://www.bcm.edu/news/researchers-discover-advanced-language-processing-in-the-unconscious-human-brain",
     "summary": "生成摘要时出错",
-    "chinese_title": "Making LLM Training Faster with Unsloth and NVIDIA",
+    "chinese_title": "Plasticity and language in the anaesthetized human hippocampus",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48053816",
-    "title": "Mozilla says 271 vulnerabilities found by Mythos and \"almost no false positives\"",
-    "url": "https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/",
+    "id": "48054386",
+    "title": "ShinyHunters claims data theft from 8,800 schools (Instructure/Canvas)",
+    "url": "https://www.bleepingcomputer.com/news/security/instructure-hacker-claims-data-theft-from-8-800-schools-universities/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Mozilla says 271 vulnerabilities found by Mythos and \"almost no false positives\"",
+    "chinese_title": "ShinyHunters claims data theft from 8,800 schools (Instructure/Canvas)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48067790",
+    "title": "Let’s Encrypt: Stopping Issuance for Potential Incident – Resolved",
+    "url": "https://letsencrypt.status.io/pages/incident/55957a99e800baa4470002da/69fe2d6698ca07050eb4b1b3",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Let’s Encrypt: Stopping Issuance for Potential Incident – Resolved",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48063521",
+    "title": "PC Engine CPU",
+    "url": "https://jsgroth.dev/blog/posts/pc-engine-cpu/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "PC Engine CPU",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48053842",
+    "title": "Two Home Affairs officials suspended after AI 'hallucinations' found",
+    "url": "https://www.citizen.co.za/news/home-affairs-officials-suspended-ai-hallucinations/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Two Home Affairs officials suspended after AI 'hallucinations' found",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48062745",
+    "title": "Podman rootless containers and the Copy Fail exploit",
+    "url": "https://garrido.io/notes/podman-rootless-containers-copy-fail/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Podman rootless containers and the Copy Fail exploit",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48070548",
+    "title": "People Hate AI Art",
+    "url": "https://mccue.dev/pages/5-8-26-ai-art",
+    "summary": "生成摘要时出错",
+    "chinese_title": "People Hate AI Art",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48072720",
+    "title": "All my clients wanted a carousel, now it's an AI chatbot",
+    "url": "https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md",
+    "summary": "生成摘要时出错",
+    "chinese_title": "All my clients wanted a carousel, now it's an AI chatbot",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -184,43 +360,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48043184",
-    "title": "What British people mean when they say 'sorry'",
-    "url": "https://www.bbc.com/travel/article/20260506-what-british-people-really-mean-when-they-say-sorry",
+    "id": "48053816",
+    "title": "Mozilla says 271 vulnerabilities found by Mythos and \"almost no false positives\"",
+    "url": "https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/",
     "summary": "生成摘要时出错",
-    "chinese_title": "What British people mean when they say 'sorry'",
+    "chinese_title": "Mozilla says 271 vulnerabilities found by Mythos and \"almost no false positives\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48042817",
-    "title": "The Disappearance of the Public Bench",
-    "url": "https://placesjournal.org/article/the-disappearance-of-the-public-bench/",
+    "id": "48067197",
+    "title": "What we lost the last time code got cheap",
+    "url": "https://www.poppastring.com/blog/what-we-lost-the-last-time-code-got-cheap",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Disappearance of the Public Bench",
+    "chinese_title": "What we lost the last time code got cheap",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48047082",
-    "title": "ZAYA1-8B matches DeepSeek-R1 on math with less than 1B active parameters",
-    "url": "https://firethering.com/zaya1-8b-open-source-math-coding-model/",
+    "id": "48065254",
+    "title": "Can LLMs model real-world systems in TLA+?",
+    "url": "https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/",
     "summary": "生成摘要时出错",
-    "chinese_title": "ZAYA1-8B matches DeepSeek-R1 on math with less than 1B active parameters",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48043706",
-    "title": "The Old Guard: Confronting America's Gerontocratic Crisis",
-    "url": "https://harpers.org/archive/2026/05/the-old-guard-samuel-moyn-gerontocracy/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Old Guard: Confronting America's Gerontocratic Crisis",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48052333",
-    "title": "Principles for agent-native CLIs",
-    "url": "https://twitter.com/trevin/status/2051316002730991795",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Principles for agent-native CLIs",
+    "chinese_title": "Can LLMs model real-world systems in TLA+?",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -232,11 +392,411 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48051873",
-    "title": "California leaders report four to six weeks worth of gasoline and diesel supply",
-    "url": "https://kmph.com/news/local/california-leaders-report-four-to-six-weeks-worth-of-gasoline-and-diesel-in-supply",
+    "id": "48063548",
+    "title": "Show HN: Git for AI Agents",
+    "url": "https://github.com/regent-vcs/re_gent",
     "summary": "生成摘要时出错",
-    "chinese_title": "California leaders report four to six weeks worth of gasoline and diesel supply",
+    "chinese_title": "Show HN: Git for AI Agents",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48058644",
+    "title": "Blaise – A modern self-hosting zero-legacy Object Pascal compiler targeting QBE",
+    "url": "https://github.com/graemeg/blaise",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Blaise – A modern self-hosting zero-legacy Object Pascal compiler targeting QBE",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48056359",
+    "title": "Gambling ads on social media reach more than twice as many men as women: study",
+    "url": "https://www.cam.ac.uk/research/news/gambling-ads-on-social-media-reach-more-than-twice-as-many-men-as-women",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Gambling ads on social media reach more than twice as many men as women: study",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48077231",
+    "title": "Bun ported to Rust in 6 days",
+    "url": "https://twitter.com/jarredsumner/status/2053047748191232310",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Bun ported to Rust in 6 days",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48074087",
+    "title": "Forking the Web",
+    "url": "https://dillo-browser.org/lab/web-fork/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Forking the Web",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48066038",
+    "title": "Court to DOGE: Asking ChatGPT 'Is This DEI?' Is Not Proper Legal Process",
+    "url": "https://www.techdirt.com/2026/05/08/court-to-doge-bros-asking-chatgpt-yo-is-this-dei-is-not-proper-legal-process-also-a-first-amendment-violation/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Court to DOGE: Asking ChatGPT 'Is This DEI?' Is Not Proper Legal Process",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48059633",
+    "title": "QBE – Compiler Back End",
+    "url": "https://c9x.me/compile/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "QBE – Compiler Back End",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48070115",
+    "title": "Tesla Model Y Passes NHTSA's New 'Advanced Driver Assistance System' Tests",
+    "url": "https://www.nhtsa.gov/press-releases/tesla-model-y-first-vehicle-pass-nhtsa-new-advanced-driver-assistance-system-tests",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tesla Model Y Passes NHTSA's New 'Advanced Driver Assistance System' Tests",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48067496",
+    "title": "Apple Is Holding My Pictures Hostage Until I Accept Their New Terms of Service",
+    "url": "https://probablydance.com/2026/05/01/apple-is-holding-my-pictures-hostage-until-i-accept-their-new-terms-of-service/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple Is Holding My Pictures Hostage Until I Accept Their New Terms of Service",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48067870",
+    "title": "Discord Incident – Resolved",
+    "url": "https://discordstatus.com",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Discord Incident – Resolved",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48065916",
+    "title": "How do I deal with memory leaks? (2022)",
+    "url": "https://www.stroustrup.com/bs_faq2.html#memory-leaks",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How do I deal with memory leaks? (2022)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48054732",
+    "title": "Utah senator smacks ABC reporters phone out of hand amid Data Center controversy",
+    "url": "https://www.abc4.com/news/digital-exclusives/reporter-jj-nursery-utah-senator-jerry-stevenson-box-elder-county-data-center/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Utah senator smacks ABC reporters phone out of hand amid Data Center controversy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48055238",
+    "title": "Cloudflare lays off 1,100 employees (~20% of workforce)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/cloudflare-announces-first-quarter-2026-201500778.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cloudflare lays off 1,100 employees (~20% of workforce)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48053770",
+    "title": "Creating for a niche",
+    "url": "https://www.davesnider.com/posts/working-in-a-niche",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Creating for a niche",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48076173",
+    "title": "I’ve banned query strings",
+    "url": "https://chrismorgan.info/no-query-strings",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I’ve banned query strings",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48054293",
+    "title": "Draw Marc Andreessen on an Egg",
+    "url": "https://eieio.games/blog/marc-andreessen-egg-game/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Draw Marc Andreessen on an Egg",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48073680",
+    "title": "Bun's experimental Rust rewrite hits 99.8% test compatibility on Linux x64 glibc",
+    "url": "https://twitter.com/jarredsumner/status/2053047748191232310",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Bun's experimental Rust rewrite hits 99.8% test compatibility on Linux x64 glibc",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48073394",
+    "title": "Killswitch: Per-function short-circuit mitigation primitive",
+    "url": "https://lwn.net/ml/all/20260507070547.2268452-1-sashal@kernel.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Killswitch: Per-function short-circuit mitigation primitive",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48074829",
+    "title": "Read Programming as Theory Building",
+    "url": "https://codeutopia.net/blog/2026/05/09/you-should-read-programming-as-theory-building/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Read Programming as Theory Building",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48058340",
+    "title": "US will start revoking passports for parents who owe child support",
+    "url": "https://apnews.com/article/passports-unpaid-child-support-penalty-state-department-42d90cfa8a06ee349bb9145f668919b6",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US will start revoking passports for parents who owe child support",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48075185",
+    "title": "The FCC wants your ID before you get a phone number",
+    "url": "https://reclaimthenet.org/the-fcc-wants-your-id-before-you-get-a-phone-number",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The FCC wants your ID before you get a phone number",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48075366",
+    "title": "Distributing Mac software is increasing my cortisol levels",
+    "url": "https://blog.kronis.dev/blog/apple-is-increasing-my-cortisol-levels",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Distributing Mac software is increasing my cortisol levels",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48069354",
+    "title": "Judge rules DOGE cancellation of humanities grants was unconstitutional",
+    "url": "https://apnews.com/article/trump-doge-humanities-funding-cuts-dda1383436c41be08da3bbf7cc08818e",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Judge rules DOGE cancellation of humanities grants was unconstitutional",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48062530",
+    "title": "UFO Release 1: Presidential Unsealing and Reporting System for UAP Encounters",
+    "url": "https://www.war.gov/UFO/#release",
+    "summary": "生成摘要时出错",
+    "chinese_title": "UFO Release 1: Presidential Unsealing and Reporting System for UAP Encounters",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48072319",
+    "title": "I Will Never Use AI to Code",
+    "url": "https://antman-does-software.com/i-will-never-use-ai-to-code-or-write",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I Will Never Use AI to Code",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48068254",
+    "title": "When is your birthday? The math behind hash collisions",
+    "url": "https://0xkrt26.github.io/math_behind_security/2026/05/08/birthday-problem.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "When is your birthday? The math behind hash collisions",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48056804",
+    "title": "Komai: a fine Matrix chat app you can get to love",
+    "url": "https://etke.cc/blog/introducing-komai",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Komai: a fine Matrix chat app you can get to love",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48076465",
+    "title": "CPanel's Black Week: 3 New Vulnerabilities Patched After Attack on 44k Servers",
+    "url": "https://www.copahost.com/blog/cpanels-black-week-three-new-vulnerabilities-patched-after-ransomware-attack-on-44000-servers/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "CPanel's Black Week: 3 New Vulnerabilities Patched After Attack on 44k Servers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48070161",
+    "title": "The Tax of Living in a Low-Trust Society: How Collapsed Trust Costs You",
+    "url": "https://yourbrainonmoney.substack.com/p/low-trust-society-cost",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Tax of Living in a Low-Trust Society: How Collapsed Trust Costs You",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48075528",
+    "title": "PipeDream on the Acorn Archimedes",
+    "url": "https://stonetools.ghost.io/pipedream-archimedes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "PipeDream on the Acorn Archimedes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48058337",
+    "title": "Digging into Drama at the Document Foundation",
+    "url": "https://lwn.net/Articles/1066418/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Digging into Drama at the Document Foundation",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48076651",
+    "title": "Zed Editor Theme-Builder",
+    "url": "https://zed.dev/theme-builder",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Zed Editor Theme-Builder",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48072945",
+    "title": "Hondurasgate: US, Israeli Plot to Destabilize Mexico, Latin America",
+    "url": "https://english.elpais.com/international/2026-05-07/hondurasgate-the-alleged-us-and-israeli-interference-plot-to-destabilize-mexico-and-other-progressive-governments.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hondurasgate: US, Israeli Plot to Destabilize Mexico, Latin America",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48056128",
+    "title": "Let Me Convince You to Be Prolific",
+    "url": "https://3quarksdaily.com/3quarksdaily/2026/05/let-me-convince-you-to-be-prolific.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Let Me Convince You to Be Prolific",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48075520",
+    "title": "First, the FBI Searched Her Home. Then, She Won a Pulitzer.",
+    "url": "https://www.nytimes.com/2026/05/05/business/media/hannah-natanson-washington-post-pulitzer.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "First, the FBI Searched Her Home. Then, She Won a Pulitzer.",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48057842",
+    "title": "Claude Code CVE-2026-39861:sandbox escape via symlink",
+    "url": "https://github.com/advisories/GHSA-vp62-r36r-9xqp",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Claude Code CVE-2026-39861:sandbox escape via symlink",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48068947",
+    "title": "Non-determinism is an issue with patching CVEs",
+    "url": "https://flox.dev/blog/achieving-rapid-cve-remediation-in-an-era-of-escalating-vulnerabilities/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Non-determinism is an issue with patching CVEs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48073978",
+    "title": "Aids Creeps Back in Parts of Zambia, a Year After U.S. Cuts to HIV Assistance",
+    "url": "https://www.nytimes.com/2026/04/25/health/pepfar-hiv-aids-zambia.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Aids Creeps Back in Parts of Zambia, a Year After U.S. Cuts to HIV Assistance",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48067686",
+    "title": "My first in-prod corrupted hard drive problem",
+    "url": "https://blog.pavementlink.ch/2026/05/07/my-first-corrupted-hard-drive-problem/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "My first in-prod corrupted hard drive problem",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48057294",
+    "title": "AWS EC2 outage in use1-az4 (us-east-1)",
+    "url": "https://health.aws.amazon.com/health/status?t=2026-05-07",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AWS EC2 outage in use1-az4 (us-east-1)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48073887",
+    "title": "Vladimir Putin is losing his grip on Russia",
+    "url": "https://www.economist.com/by-invitation/2026/05/06/vladimir-putin-is-losing-his-grip-on-russia",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Vladimir Putin is losing his grip on Russia",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48056003",
+    "title": "OpenClaw had a rough week",
+    "url": "https://openclaw.ai/blog/openclaw-rough-week",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenClaw had a rough week",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48065203",
+    "title": "Show HN: GETadb.com – every GET request creates a DB",
+    "url": "https://www.getadb.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: GETadb.com – every GET request creates a DB",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48058217",
+    "title": "New York state set to ban law enforcement, including ICE, from wearing masks",
+    "url": "https://www.reuters.com/legal/government/new-york-state-set-ban-law-enforcement-including-ice-wearing-masks-2026-05-07/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "New York state set to ban law enforcement, including ICE, from wearing masks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48077126",
+    "title": "Meta's Embrace of A.I. Is Making Its Employees Miserable",
+    "url": "https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Meta's Embrace of A.I. Is Making Its Employees Miserable",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48069088",
+    "title": "AWS data center outage hits trading on Fanduel, Coinbase",
+    "url": "https://www.cnbc.com/2026/05/08/aws-outage-data-center-fanduel-coinbase.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AWS data center outage hits trading on Fanduel, Coinbase",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48058393",
+    "title": "Copy Fail 2: Electric Boogaloo",
+    "url": "https://github.com/0xdeadbeefnetwork/Copy_Fail2-Electric_Boogaloo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Copy Fail 2: Electric Boogaloo",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48053435",
+    "title": "Colored Shadow Penumbra",
+    "url": "https://chosker.github.io/blog/colored-shadow-penumbra",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Colored Shadow Penumbra",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48069487",
+    "title": "GrapheneOS isn't vulnerable to the 3 recent Linux memory logic vulnerabilities",
+    "url": "https://discuss.grapheneos.org/d/35353-grapheneos-isnt-vulnerable-to-the-3-recent-linux-memory-logic-vulnerabilities",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GrapheneOS isn't vulnerable to the 3 recent Linux memory logic vulnerabilities",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48069313",
+    "title": "Compound drivers of Antarctic sea ice loss and Southern Ocean destratification",
+    "url": "https://www.science.org/doi/10.1126/sciadv.aeb0166",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Compound drivers of Antarctic sea ice loss and Southern Ocean destratification",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48075645",
+    "title": "The context window has been shattered: Subquadratic debuts a 12M token window",
+    "url": "https://thenewstack.io/subquadratic-12-million-context-window/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The context window has been shattered: Subquadratic debuts a 12M token window",
     "chinese_summary": "生成摘要时出错"
   }
 ]
