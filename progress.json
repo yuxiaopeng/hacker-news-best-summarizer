@@ -1,98 +1,122 @@
 [
   {
-    "id": "48120629",
-    "title": "I moved my digital stack to Europe",
-    "url": "https://monokai.com/articles/how-i-moved-my-digital-stack-to-europe/",
-    "summary": "The author details their deliberate migration of a personal and business digital stack to European infrastructure, driven by a commitment to digital sovereignty. Dissatisfaction with US-based services stemmed from concerns over data control, unpredictable jurisdictions, and misaligned corporate incentives, leading to a desire for infrastructure aligned with personal values and GDPR compliance.\n\nKey migrations included switching from Google Analytics to self-hosted Matomo, Google Workspace and 1Password to Swiss-based Proton Mail and Proton Pass, and DigitalOcean/AWS to Scaleway for compute and object storage. Offsite backups moved from Backblaze to OVHcloud, transactional emails from SendGrid to Lettermint, error tracking from Sentry to self-hosted Bugsink, and AI API integrations from OpenAI to Mistral.\n\nSome services, however, remained unchanged. Cloudflare was retained for public-facing CDN due to its robust features and the inherently public nature of the data. Stripe (payments) was deferred due to integration complexity, though Mollie was identified as a European alternative. For AI code assistance, the author switched from OpenAI to US-based Claude Code, prioritizing quality and Anthropic's values, while also noting the rise of capable local models like Qwen. GitHub remains for public-facing open-source projects due to its strong network effects.\n\nDespite initial friction and research, the migrations were largely manageable and successful, completing in two months without incident. The author concludes that running a reliable, professional digital stack predominantly from European infrastructure is entirely feasible, emphasizing conscious control over data and infrastructure as a core principle.",
-    "chinese_title": "我把我的数字栈搬到了欧洲。",
-    "chinese_summary": "作者详细介绍了他们如何出于对数字主权的承诺，刻意将个人和商业数字技术栈迁移到欧洲基础设施。对美国服务的不满源于对数据控制、不确定的司法管辖权以及激励机制错位的担忧，促使他们寻求符合个人价值观并遵守GDPR的基础设施。\n\n主要的迁移包括：将Google Analytics切换为自托管的Matomo；将Google Workspace和1Password切换为瑞士的Proton Mail和Proton Pass；将DigitalOcean/AWS的计算和对象存储服务切换为Scaleway。异地备份从Backblaze迁移到OVHcloud；事务性邮件从SendGrid迁移到Lettermint；错误跟踪从Sentry迁移到自托管的Bugsink；AI API集成从OpenAI迁移到Mistral。\n\n然而，有些服务保持不变。Cloudflare因其强大的功能和数据固有的公共性质，被保留用于面向公众的CDN服务。Stripe（支付）因集成复杂性而被推迟，尽管Mollie被确定为一个欧洲替代方案。在AI代码辅助方面，作者从OpenAI转向了美国公司Anthropic的Claude Code，优先考虑其质量和价值观，同时也注意到像Qwen这样有能力的本地模型的崛起。GitHub因其强大的网络效应，仍用于面向公众的开源项目。\n\n尽管最初遇到了一些磨合和研究，但这些迁移在两个月内顺利完成，未发生任何事故，总体上是可控且成功的。作者总结道，主要依靠欧洲基础设施运行一个可靠、专业的数字技术栈是完全可行的，并强调将对数据和基础设施的自主控制作为核心原则。"
+    "id": "48138136",
+    "title": "Removing the modem and GPS from my 2024 RAV4 hybrid",
+    "url": "https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/",
+    "summary": "This article details a DIY project to enhance privacy by physically removing the modem (Data Communication Module or DCM) and built-in GPS from a 2024 RAV4 Hybrid. The author emphasizes that modern cars extensively collect and transmit sensitive telemetry data—including location, speed, fuel levels, driver behavior, and even camera footage—to manufacturers and third-party data brokers, posing significant privacy and security risks.\n\nThe project aims to halt this data transmission at the source. Removing the DCM disables cloud-based services, over-the-air updates, SOS functionality, and automatic crash notifications. The in-car microphone, also routed through the DCM, is restored using a specific DCM Bypass Kit. Additionally, the car's built-in GPS is disconnected to prevent a known CarPlay bug where bad location data from the car could interfere with phone navigation. The author notes that while this might void parts of the warranty related to telematics, it won't void the entire car warranty due to the Magnuson–Moss Warranty Act.\n\nA crucial point is that connecting a phone via Bluetooth allows the car to use the phone's internet to transmit data, so the author advises using a wired USB connection for CarPlay or a Bluetooth-to-USB adapter.\n\nThe process, deemed medium difficulty and taking a few hours, involves disassembling the center console and infotainment area to access and detach the DCM, install the bypass kit, and then disconnect the GPS antenna from the head unit. Confirmation of success includes a \"no connection\" icon on the infotainment screen, an unlit SOS light, and a functional microphone. The author expresses satisfaction but acknowledges potential future challenges due to increasing car integration and anti-right-to-repair efforts, advocating for stronger federal privacy laws.",
+    "chinese_title": "2024款RAV4混动版移除调制解调器和GPS",
+    "chinese_summary": "本文详细介绍了一个DIY项目，旨在通过物理移除2024款RAV4混动车型的调制解调器（数据通信模块，简称DCM）和内置GPS来增强隐私。作者强调，现代汽车大量收集并向制造商和第三方数据经纪人传输敏感的遥测数据——包括位置、速度、燃油水平、驾驶行为，甚至摄像头录像——这构成了重大的隐私和安全风险。\n\n该项目旨在从源头阻止这种数据传输。移除DCM会禁用云服务、OTA更新、SOS功能和自动碰撞通知。通过DCM路由的车载麦克风则使用特定的DCM旁路套件进行恢复。此外，还断开了汽车内置的GPS，以防止一个已知的CarPlay错误，即汽车中错误的定位数据可能会干扰手机导航。作者指出，虽然这可能会使部分与远程信息处理相关的保修失效，但根据《马格努森-莫斯保修法案》，它不会使整个汽车保修失效。\n\n一个关键点是，通过蓝牙连接手机会允许汽车利用手机的互联网传输数据，因此作者建议使用有线USB连接CarPlay或蓝牙转USB适配器。\n\n这个被认为是中等难度且需要几个小时的过程，涉及拆卸中控台和信息娱乐区域，以接触并拆下DCM，安装旁路套件，然后从主机断开GPS天线。成功确认的标志包括信息娱乐屏幕上出现“无连接”图标、SOS指示灯不亮以及麦克风功能正常。作者对此表示满意，但承认由于汽车集成度日益提高和反“维修权”的努力，未来可能面临挑战，并倡导制定更强的联邦隐私法。"
   },
   {
-    "id": "48115127",
-    "title": "Restore full BambuNetwork support for Bambu Lab printers",
-    "url": "https://github.com/FULU-Foundation/OrcaSlicer-bambulab",
-    "summary": "This OrcaSlicer release re-enables full BambuNetwork support for Bambu Lab printers, allowing users to print and manage their devices over the internet with complete functionality, just as before. It is no longer limited to LAN-only operation.\n\nFor installation:\n*   **Windows:** Requires WSL 2. Before the first launch, users must run two `dism.exe` commands in an elevated Command Prompt or PowerShell to enable `Microsoft-Windows-Subsystem-Linux` and `VirtualMachinePlatform` features, then restart Windows before opening Orca Studio.\n*   **Linux:** A standard installation process is sufficient.\n*   **macOS:** Support is currently under development.\n\nThe author also recommends using BMCU firmware, which can be found in their repositories.",
-    "chinese_title": "恢复对 Bambu Lab 打印机的完整 BambuNetwork 支持",
-    "chinese_summary": "本次 OrcaSlicer 发布重新为 Bambu Lab 打印机启用了完整的 BambuNetwork 支持，允许用户像以前一样通过互联网全面地打印和管理他们的设备。它不再仅限于局域网操作。\n\n安装说明：\n*   **Windows:** 需要 WSL 2。首次启动前，用户必须在管理员权限的命令提示符或 PowerShell 中运行两条 `dism.exe` 命令，以启用 `Microsoft-Windows-Subsystem-Linux` 和 `VirtualMachinePlatform` 功能，然后在打开 Orca Studio 前重启 Windows。\n*   **Linux:** 标准安装过程即可。\n*   **macOS:** 目前正在开发支持中。\n\n作者还建议使用 BMCU 固件，该固件可在其存储库中找到。"
-  },
-  {
-    "id": "48121266",
-    "title": "Leaving GitHub for Forgejo",
-    "url": "https://jorijn.com/en/blog/leaving-github-for-forgejo/",
-    "summary": "The author migrated their code from GitHub to a self-hosted Forgejo instance, `code.jorijn.com`, driven by concerns over digital autonomy and ownership, a move echoed by the Dutch government.\n\nThe decision to leave GitHub stems from several factors:\n1.  **Lack of Independent Leadership:** GitHub was absorbed into Microsoft's CoreAI division in August 2025, losing its CEO and independent leadership, making it a unit of Microsoft's AI organization.\n2.  **AI Training Data Defaults:** Effective April 24, 2026, Copilot Free, Pro, and Pro+ user-interaction data became opt-out for AI training, with no repository-level control, meaning codebases can become training material regardless of licensing.\n3.  **US Jurisdiction Risk:** As a US company, GitHub is subject to US law (FISA Section 702, CLOUD Act) regardless of data residency, exposing data to potential silent US government access. Outages, though frequent, are seen as symptoms of GitHub's aggressive AI strategy.\n\nThe Dutch Ministry of the Interior similarly chose Forgejo for `code.overheid.nl` because it is fully open source, has no open-core split, and provides the freedoms necessary for digital autonomy, aligning with their \"Open, tenzij\" policy.\n\nThe author picked Forgejo over GitLab due to Forgejo's GPLv3+ copyleft license and non-profit governance under Codeberg e.V., which ensures community control and resists commercial capture.\n\nThe author's setup utilizes Forgejo v15 LTS on an Intel NUC. A key security focus is the Forgejo Actions runner, which executes untrusted code. It employs a multi-layered defense: a KVM-isolated virtual machine, gVisor as the Docker runtime, weekly destructive rebuilds from a fresh base image, and an `nftables` egress filter to ensure containment and security.",
-    "chinese_title": "离开 GitHub 转向 Forgejo",
-    "chinese_summary": "作者出于对数字自主权和所有权的担忧，将其代码从GitHub迁移到了自托管的Forgejo实例`code.jorijn.com`，此举也得到了荷兰政府的响应。\n\n离开GitHub的决定源于以下几个因素：\n1.  **缺乏独立领导层：** GitHub于2025年8月被并入微软的CoreAI部门，失去了其首席执行官和独立领导权，使其成为微软人工智能组织的一个单位。\n2.  **AI训练数据默认设置：** 自2026年4月24日起，Copilot Free、Pro和Pro+的用户交互数据成为默认用于AI训练，用户需选择退出，且没有仓库级别的控制权，这意味着无论代码库的许可如何，都可能成为训练材料。\n3.  **美国管辖权风险：** 作为一家美国公司，GitHub无论数据驻留何处，都受美国法律（《外国情报监视法》第702条、CLOUD法案）的管辖，使数据面临美国政府潜在的秘密访问风险。尽管频繁发生服务中断，但这些被视为GitHub激进AI战略的征兆。\n\n荷兰内政部也为`code.overheid.nl`选择了Forgejo，因为它是一个完全开源的项目，没有开放核心（open-core）拆分，并提供了数字自主所需的自由，这与他们的“开放，除非”（Open, tenzij）政策相符。\n\n作者选择Forgejo而非GitLab，是因为Forgejo采用GPLv3+ copyleft许可证，并在Codeberg e.V.的非营利组织治理下，这确保了社区的控制权并抵制了商业侵占。\n\n作者的设置是在一台Intel NUC上运行Forgejo v15 LTS。一个关键的安全重点是执行不受信任代码的Forgejo Actions runner。它采用了多层防御机制：KVM隔离的虚拟机、使用gVisor作为Docker运行时、每周从全新的基础镜像进行破坏性重建，以及`nftables`出站过滤器，以确保隔离和安全。"
-  },
-  {
-    "id": "48122635",
-    "title": "Setting up a free *.city.state.us locality domain (2025)",
-    "url": "https://fredchan.org/blog/locality-domains-guide/",
-    "summary": "This article details how to obtain a free `*.city.state.us` locality domain name in the US. These domains, first created in 1992, require the applicant to be a US citizen/resident or a US-based organization.\n\nThe process involves five main steps:\n\n1.  **Choose a locality domain:** Consult the old list of delegated subdomains to find an email for the registrar managing your desired `city.state.us` domain (e.g., `seattle.wa.us`). You may need to hunt for updated contact information. If your specific locality isn't delegated, you can try `gen.your-state.us`. Undelegated domains are generally reserved for government agencies.\n2.  **Acquire nameservers:** Since you need nameservers *before* registration, use Amazon Lightsail's free DNS zone feature. Create an AWS account, navigate to Lightsail, create a DNS zone for your intended domain, and note the provided nameserver addresses.\n3.  **Fill out the Interim .US Domain Template v2.0:** Complete this form with your chosen domain, personal address (if for individual use), description of purpose, your contact details for administrative and technical contacts, and the Lightsail nameservers (including their IP addresses found via DNS lookup). For US Nexus requirements, select \"personal use\" and \"Natural person who is a United States Citizen.\"\n4.  **Send the form and wait:** Email the completed form to the registrar identified in Step 1. Registration is manual and can take days or weeks.\n5.  **Finish DNS setup in Lightsail:** Once registered, return to your Lightsail DNS zone to create DNS records (A, CNAME, etc.) that point your new domain to your web host or other servers.\n\nNotably, WHOIS requests for these domains do not reveal personal addresses, only registrar information. The article also suggests that geographical residence within the chosen locality may not be strictly enforced.",
-    "chinese_title": "设置免费的 *.city.state.us 地方域名 (2025年)",
-    "chinese_summary": "本文详细介绍了如何在美国获取免费的`*.city.state.us`地方域名。这些域名于1992年首次创建，要求申请人必须是美国公民/居民或美国境内的组织。\n\n这个过程包含五个主要步骤：\n\n1.  **选择一个地方域名：** 查阅已授权子域名的旧列表，以找到管理您所需`city.state.us`域名（例如`seattle.wa.us`）的注册商的电子邮件地址。您可能需要寻找更新的联系方式。如果您的特定地方域名未被授权，您可以尝试`gen.your-state.us`。未授权的域名通常保留给政府机构。\n2.  **获取名称服务器：** 由于您在注册前需要名称服务器，请使用Amazon Lightsail的免费DNS区域功能。创建一个AWS账户，导航到Lightsail，为您打算使用的域名创建一个DNS区域，并记下提供的名称服务器地址。\n3.  **填写 .US 临时域名模板 v2.0：** 请用您选择的域名、个人地址（如果用于个人用途）、用途描述、您作为管理联系人和技术联系人的详细联系方式，以及Lightsail的名称服务器（包括通过DNS查找获得的IP地址）填写此表格。对于美国连接要求（US Nexus），请选择“personal use”（个人用途）和“Natural person who is a United States Citizen”（美国公民自然人）。\n4.  **发送表格并等待：** 将填好的表格通过电子邮件发送给在步骤1中确定的注册商。注册是手动完成的，可能需要数天或数周。\n5.  **在Lightsail中完成DNS设置：** 注册成功后，返回您的Lightsail DNS区域，创建DNS记录（A、CNAME等），将您的新域名指向您的网络主机或其他服务器。\n\n值得注意的是，这些域名的WHOIS查询不会显示个人地址，只会显示注册商信息。文章还指出，所选区域内的地理居住地要求可能不会被严格执行。"
-  },
-  {
-    "id": "48136262",
-    "title": "A message from President Kornbluth about funding and the talent pipeline",
-    "url": "https://president.mit.edu/writing-speeches/video-transcript-message-president-kornbluth-about-funding-and-talent-pipeline",
-    "summary": "MIT President Sally Kornbluth has issued an update on critical challenges facing the Institute: funding and its talent pipeline.\n\nFor over a year, MIT has managed budget pressures exacerbated by an 8% tax on its endowment. Despite internal cuts, the financial outlook remains grim. Federal funding, although partially restored by Congress, is not reaching MIT as expected. Federal campus research activity and new awards are both down over 20% compared to last year. Consequently, MIT's total sponsored-research activity, combining federal and non-federal sources, is 10% smaller than a year ago—a significant loss for the institution.\n\nThe talent pipeline is also impacted. Policy changes are discouraging international students, while federal funding uncertainty makes departments cautious about admitting new graduate students. This year, graduate student enrollment decreased, and next year it's projected to drop by nearly 20% (about 500 students outside Sloan). This represents a severe loss of \"creative brilliance\" for MIT and a reduction in future scientists for the nation.\n\nTo address these issues, MIT is aggressively pursuing new avenues. Faculty are developing proposals for emerging federal opportunities (e.g., 176 for the DOE Genesis Mission). The Institute is seeking new industry funding, exploring income generation through educational offerings, and boosting philanthropic efforts. Crucially, MIT is increasing advocacy in Washington against the endowment tax and for the transformative impact of curiosity-driven science, with President Kornbluth frequently meeting with leaders to champion MIT's value.",
-    "chinese_title": "科恩布鲁斯校长关于资金与人才输送的致辞",
-    "chinese_summary": "麻省理工学院院长萨莉·科恩布鲁斯发布了一份关于学院面临的关键挑战的最新报告：资金和人才储备。\n\n一年多来，麻省理工学院一直在应对因其捐赠基金被征收8%税款而加剧的预算压力。尽管进行了内部削减，财政前景依然严峻。联邦拨款虽然国会部分恢复，但未能如预期般拨付给麻省理工学院。与去年相比，联邦校园研究活动和新获资助项目均下降了20%以上。因此，麻省理工学院的联邦和非联邦来源的总资助研究活动比一年前减少了10%——这对学院来说是一个重大损失。\n\n人才储备也受到了影响。政策变化正在阻碍国际学生，而联邦资金的不确定性使得各系对招收新的研究生持谨慎态度。今年研究生入学人数有所下降，预计明年将下降近20%（斯隆管理学院之外约500名学生）。这对麻省理工学院来说，意味着“创新才华”的严重流失，也意味着国家未来科学家数量的减少。\n\n为解决这些问题，麻省理工学院正积极寻求新的途径。教职员工正在为新兴的联邦机会（例如，为美国能源部“创世纪任务”提交了176份提案）制定方案。学院正在寻求新的产业资金，探索通过教育产品创收，并加大慈善募捐力度。至关重要的是，麻省理工学院正在华盛顿加大游说力度，反对征收捐赠基金税，并倡导好奇心驱动的科学所带来的变革性影响，科恩布鲁斯院长频繁会见各界领袖，以宣传麻省理工学院的价值。"
-  },
-  {
-    "id": "48130950",
-    "title": "Claude for Small Business",
-    "url": "https://www.anthropic.com/news/claude-for-small-business",
-    "summary": "Anthropic has launched \"Claude for Small Business\" on May 13, 2026, a new offering designed to help small businesses leverage AI by integrating Claude directly into their existing tools. This initiative addresses the lag in AI adoption among small businesses, despite their significant contribution to the U.S. economy.\n\nThe package provides connectors and ready-to-run workflows for popular platforms like Intuit QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365. Users can \"toggle install\" Claude to automate tasks such as planning payroll, closing the month, running sales campaigns, and chasing invoices. Operating within Claude Cowork, it offers 15 agentic workflows and 15 skills across finance, operations, sales, marketing, HR, and customer service, with users approving all actions before execution.\n\nAddressing a primary concern, Claude for Small Business prioritizes trust and data security. Users maintain control, initiating all tasks and approving plans. Existing permissions are respected, and user data is not used for training on Team and Enterprise Plans by default.\n\nTo enhance AI literacy, Anthropic partnered with PayPal to offer \"AI Fluency for Small Business,\" a free online course. They are also launching the \"Claude SMB Tour,\" providing free half-day training workshops in various cities. Furthermore, Anthropic is investing in partnerships with non-profits and Community Development Financial Institutions (CDFIs) like LISC and the Workday Foundation, to empower solopreneurs and help CDFIs use AI to expand funding opportunities for small businesses.",
-    "chinese_title": "小型企业克劳德",
-    "chinese_summary": "Anthropic于2026年5月13日推出了“Claude小企业版”，这是一项新产品，旨在通过将Claude直接整合到现有工具中，帮助小企业利用AI。尽管小企业对美国经济做出了重大贡献，但这项举措旨在解决它们在AI采用方面滞后的问题。\n\n该套餐为Intuit QuickBooks、PayPal、HubSpot、Canva、Docusign、Google Workspace和Microsoft 365等常用平台提供连接器和即时可用的工作流。用户可以“切换安装”Claude，以自动化规划薪资、月度结算、开展销售活动和催收发票等任务。它在Claude Cowork中运行，提供跨财务、运营、销售、营销、人力资源和客户服务的15个代理工作流和15项技能，用户在执行前批准所有操作。\n\n针对主要关注点，“Claude小企业版”优先考虑信任和数据安全。用户保持控制，启动所有任务并批准计划。系统尊重现有权限，并且在团队和企业计划中，默认情况下用户数据不会用于训练。\n\n为了提升AI素养，Anthropic与PayPal合作，提供免费在线课程“小企业AI流畅度”。他们还将推出“Claude SMB巡演”，在各个城市提供免费的半天培训研讨会。此外，Anthropic正在投资与LISC和Workday基金会等非营利组织和社区发展金融机构（CDFIs）建立合作关系，以赋能个体创业者，并帮助CDFIs利用AI为小企业扩大融资机会。"
-  },
-  {
-    "id": "48113895",
-    "title": "How to make your text look futuristic (2016)",
-    "url": "https://typesetinthefuture.com/2016/02/18/futuristic/",
-    "summary": "In his 2016 article, Dave Addey presents six \"easy rules\" for making text look futuristic, building upon the effectiveness of fonts like Eurostile Bold. He demonstrates these rules by progressively transforming a simple sans-serif word.\n\nThe rules are:\n1.  **Add an italic slant:** To suggest movement towards the future.\n2.  **Incorporate curves and angles:** Mixing typographic styles for a modern feel.\n3.  **Use \"consummate Vs\":** A specific stylistic addition to letters.\n4.  **Combine letters (kerning):** Addressing the \"Kern Wars\" by merging segments.\n5.  **Remove arbitrary segments:** Deleting parts of letters, like horizontal lines.\n6.  **Apply textures and effects:** Adding noise, steel-brushed metal, moody blue lighting, embossment, and a star field.\n\nAddey illustrates the combined effect of these rules, culminating in a dramatic futuristic aesthetic. He then shows how various permutations of these principles have been applied across numerous movies and TV shows to establish a futuristic timeframe. Examples include iconic titles like *Blade Runner*, *Battlestar Galactica*, *Transformers*, *Guardians of the Galaxy*, *RoboCop*, *Star Wars*, *Back To The Future*, and *Star Trek: The Next Generation*, highlighting the widespread and consistent use of these design elements to signify the future.",
-    "chinese_title": "如何让你的文字看起来有未来感 (2016)",
-    "chinese_summary": "Dave Addey 在他2016年的文章中，提出了六条让文字看起来具有未来感的“简易规则”，这些规则建立在 Eurostile Bold 等字体有效性的基础上。他通过逐步改造一个简单的无衬线字体单词来演示这些规则。\n\n这些规则是：\n1.  **增加斜体倾斜：** 旨在暗示向未来的运动。\n2.  **融入曲线和角度：** 混合字体风格以营造现代感。\n3.  **使用“完美的V形”：** 对字母进行特定的风格化添加。\n4.  **组合字母（字距调整）：** 通过合并笔画来应对“字距大战”。\n5.  **删除任意笔画：** 删除字母的部分，如横线。\n6.  **应用纹理和效果：** 添加噪点、拉丝金属、忧郁的蓝色灯光、浮雕效果和星场。\n\nAddey 阐释了这些规则的综合效果，最终呈现出一种引人注目的未来主义美学。他接着展示了这些原则的各种排列组合如何应用于众多电影和电视剧中，以确立未来时间背景。例子包括《银翼杀手》、《太空堡垒卡拉狄加》、《变形金刚》、《银河护卫队》、《机械战警》、《星球大战》、《回到未来》和《星际迷航：下一代》等标志性片名，凸显了这些设计元素在表示未来方面的广泛而持续的应用。"
-  },
-  {
-    "id": "48115438",
-    "title": "Twin brothers wipe 96 government databases minutes after being fired",
-    "url": "https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Twin brothers wipe 96 government databases minutes after being fired",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48115807",
-    "title": "Tell NYT, Atlantic, USA Today to keep Wayback Machine",
-    "url": "https://www.savethearchive.com/newsleaders/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tell NYT, Atlantic, USA Today to keep Wayback Machine",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48118727",
-    "title": "The Emacsification of Software",
-    "url": "https://sockpuppet.org/blog/2026/05/12/emacsification/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Emacsification of Software",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48123198",
-    "title": "Kickstarter is forced to ban adult content by payment processors",
-    "url": "https://kotaku.com/kickstarter-is-the-latest-platform-seemingly-forced-to-ban-adult-content-by-payment-processors-2000695648",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Kickstarter is forced to ban adult content by payment processors",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48132488",
+    "title": "Rewrite Bun in Rust has been merged",
+    "url": "https://github.com/oven-sh/bun/pull/30412",
+    "summary": "Jarred-Sumner announced on May 8, 2026, that the rewrite of Bun in Rust has been successfully merged. This significant update involved re-implementing Bun's core logic in Rust while largely maintaining its existing architecture and data structures, and without introducing async Rust or many new third-party libraries.\n\nThe merge brings several key improvements:\n*   **Stability:** It passes Bun's pre-existing test suite on all platforms, resolving several memory leaks and flaky tests.\n*   **Performance:** Benchmarks show results ranging from neutral to faster.\n*   **Efficiency:** The binary size has shrunk by 3 MB to 8 MB.\n*   **Developer Experience:** Crucially, the move to Rust provides compiler-assisted tools for catching and preventing memory bugs, which historically consumed considerable development and debugging time.\n\nUsers can try the new Rust-powered Bun by running `bun upgrade --canary` and are encouraged to file any issues encountered. Further optimization work and code cleanup are planned before the update lands in non-canary versions.",
+    "chinese_title": "Bun 的 Rust 重写已合并",
+    "chinese_summary": "Jarred-Sumner 于 2026 年 5 月 8 日宣布，使用 Rust 重写的 Bun 已成功合并。这次重大更新将 Bun 的核心逻辑用 Rust 重新实现，同时基本保留了其现有架构和数据结构，并且没有引入异步 Rust 或许多新的第三方库。\n\n这次合并带来了几项关键改进：\n*   **稳定性：** 它通过了 Bun 在所有平台上现有的测试套件，解决了多项内存泄漏和不稳定的测试。\n*   **性能：** 基准测试显示结果从持平到更快不等。\n*   **效率：** 二进制文件大小缩减了 3 MB 到 8 MB。\n*   **开发者体验：** 至关重要的是，转向 Rust 提供了编译器辅助工具来捕获和防止内存错误，这些错误在过去耗费了大量的开发和调试时间。\n\n用户可以通过运行 `bun upgrade --canary` 来试用新的 Rust 驱动的 Bun，并鼓励他们提交遇到的任何问题。在更新发布到非 Canary 版本之前，还计划进行进一步的优化工作和代码清理。"
   },
   {
     "id": "48137145",
     "title": "RTX 5090 and M4 MacBook Air: Can It Game?",
     "url": "https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/",
+    "summary": "The article details an ambitious project to enable an NVIDIA RTX 5090 eGPU for gaming and AI inference on an M4 MacBook Air. Given macOS's lack of native NVIDIA drivers for Apple Silicon, the approach involves running a Linux ARM64 virtual machine on the MacBook Air and using PCI passthrough to grant the VM direct access to the Thunderbolt-connected GPU.\n\nThis required overcoming significant technical challenges in engineering PCI passthrough on macOS. The first hurdle involved mapping PCI Base Address Registers (BARs), which initially caused host kernel crashes. This was resolved by identifying that `HV_MEMORY_EXEC` flags for device memory mappings in Apple's Hypervisor.framework were problematic; switching to read-write only flags prevented crashes. However, this imposes performance penalties, making BAR writes about 10x slower than optimal due to stricter memory type handling.\n\nThe second major challenge was Direct Memory Access (DMA). Apple Silicon's DART unit, an IOMMU equivalent, handles memory translation for devices. However, DART has critical limitations for VM passthrough: a ~1.5GB total mapping limit (insufficient for modern GPUs), a ~64k mapping cap for individual buffers, and no control over assigned addresses or alignment. These constraints severely complicate the process of robustly enabling GPU DMA within the Linux VM.",
+    "chinese_title": "RTX 5090 和 M4 MacBook Air：能玩游戏吗？",
+    "chinese_summary": "本文详细介绍了一个雄心勃勃的项目，旨在让 NVIDIA RTX 5090 eGPU 在 M4 MacBook Air 上用于游戏和AI推理。鉴于 macOS 缺少适用于 Apple Silicon 的原生 NVIDIA 驱动程序，该方法涉及在 MacBook Air 上运行一个 Linux ARM64 虚拟机，并利用 PCI 直通技术赋予虚拟机直接访问通过 Thunderbolt 连接的 GPU 的权限。\n\n这需要在 macOS 上实现 PCI 直通技术时克服重大的技术挑战。第一个障碍是映射 PCI 基地址寄存器 (BAR)，这最初导致了宿主内核崩溃。解决方法是发现 Apple 的 Hypervisor.framework 中用于设备内存映射的 `HV_MEMORY_EXEC` 标志存在问题；改用只读写标志则避免了崩溃。然而，这会带来性能损失，由于更严格的内存类型处理，BAR 写入速度比最佳状态慢约 10 倍。\n\n第二个主要挑战是直接内存访问 (DMA)。Apple Silicon 的 DART 单元（一个 IOMMU 等效组件）负责处理设备的内存转换。然而，DART 在虚拟机直通方面存在关键限制：总映射限制约为 1.5GB（不足以满足现代 GPU 的需求），单个缓冲区映射上限约为 64KB，并且无法控制分配的地址或对齐方式。这些限制严重复杂化了在 Linux 虚拟机中可靠启用 GPU DMA 的过程。"
+  },
+  {
+    "id": "48136262",
+    "title": "A message from President Kornbluth about funding and the talent pipeline",
+    "url": "https://president.mit.edu/writing-speeches/video-transcript-message-president-kornbluth-about-funding-and-talent-pipeline",
+    "summary": "On May 14, 2026, MIT President Sally Kornbluth informed the community about significant challenges in funding and the talent pipeline. The Institute has faced budget pressures for over a year, exacerbated by an 8% tax on its endowment, necessitating difficult cuts.\n\nDespite partial restoration of federal appropriations, funding is not flowing to MIT as before, with some agencies considering geography over scientific merit. This has led to a more than 20% decline in both campus research activity and new federal research awards compared to last year. While non-federal funding is growing, it's insufficient, resulting in a 10% overall reduction in sponsored research activity.\n\nThe talent pipeline is also impacted. Policy changes deter international students, and federal funding uncertainty makes PIs cautious about admitting new graduate students. This has caused a decline in graduate enrollment this year, projected to continue, potentially resulting in 500 fewer graduate students (outside Sloan). This loss threatens MIT's research mission, reduces undergraduate mentorship, and deprives talented individuals of an MIT education.\n\nKornbluth stressed this isn't mere \"belt-tightening\" but a real drop in research, potentially harming national innovation. Despite the \"chilly\" outlook, MIT is actively responding: faculty are pursuing new federal opportunities (e.g., 176 proposals for DOE's Genesis Mission), aggressively seeking industry funding, exploring new educational income streams, enhancing philanthropic efforts, and advocating in Washington against the endowment tax and for the value of curiosity-driven science. MIT is leveraging its community's energy to navigate these challenges.",
+    "chinese_title": "科恩布鲁斯校长关于资金与人才输送管道的致辞",
+    "chinese_summary": "2026年5月14日，麻省理工学院校长萨莉·科恩布鲁斯向全体教职员工和学生通报了学院在资金和人才储备方面面临的严峻挑战。学院一年多来一直面临预算压力，其捐赠基金被征收8%的税收使其雪上加霜，导致不得不进行艰难的削减。\n\n尽管联邦拨款得到部分恢复，但资金流向麻省理工学院的情况不如从前，一些机构在考量时将地域因素置于科学价值之上。这导致校园研究活动和新获得的联邦研究资助与去年相比均下降了20%以上。虽然非联邦资金有所增长，但不足以弥补缺口，导致赞助研究活动总体减少了10%。\n\n人才储备也受到了影响。政策变化阻碍了国际学生的入学，而联邦资金的不确定性使得首席研究员（PIs）在招收新研究生时变得谨慎。这导致今年的研究生入学人数下降，预计将持续下去，可能导致研究生人数（斯隆管理学院除外）减少500名。这种损失威胁到麻省理工学院的研究使命，削弱了对本科生的指导，并剥夺了有才华的个人接受麻省理工学院教育的机会。\n\n科恩布鲁斯强调，这不仅仅是“勒紧裤腰带”，而是研究活动的实际下降，可能损害国家创新能力。尽管前景“严峻”，麻省理工学院仍在积极应对：教职员工正在寻求新的联邦机会（例如，为美国能源部“创世纪任务”提交了176份提案），积极争取产业资金，探索新的教育收入来源，加强慈善募捐工作，并在华盛顿游说，反对征收捐赠基金税，并倡导好奇心驱动的科学研究的价值。麻省理工学院正在利用其社区的活力来应对这些挑战。"
+  },
+  {
+    "id": "48140922",
+    "title": "New arXiv policy: 1-year ban for hallucinated references",
+    "url": "https://twitter.com/tdietterich/status/2055000956144935055",
+    "summary": "The content provided is an error message stating \"JavaScript is disabled\" and instructions to enable it or switch browsers, rather than the article itself.\n\nTherefore, I cannot summarize the article titled \"New arXiv policy: 1-year ban for hallucinated references\" as its text is not available. Please provide the actual content of the article for me to summarize.",
+    "chinese_title": "arXiv 新政策：虚构参考文献，禁投一年",
+    "chinese_summary": "所提供的内容是一条错误消息，提示“JavaScript 已禁用”并附带了启用它或切换浏览器的说明，而非文章本身。\n\n因此，我无法总结标题为“arXiv新政策：因虚构参考文献而禁言一年”的文章，因为其文本不可用。请提供文章的实际内容，以便我进行总结。"
+  },
+  {
+    "id": "48143880",
+    "title": "Mullvad exit IPs are surprisingly identifying",
+    "url": "https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector/",
+    "summary": "A recent analysis reveals that Mullvad VPN's exit IP assignment, while appearing diverse, is surprisingly identifying due to its deterministic nature. Mullvad assigns exit IPs based on a user's WireGuard key, which only rotates every 1-30 days, or never for third-party clients.\n\nA script testing 3650 pubkeys across 9 servers uncovered that despite trillions of theoretical IP combinations, only 284 unique combinations were assigned. This happens because the IP selection algorithm consistently picks an exit IP that falls within the *same percentile* of each server's total IP pool for a given pubkey.\n\nThis behavior is attributed to a common programming misconception: Mullvad likely uses a seed-based random number generator (seeded by the pubkey) to select an IP *index*. In languages like Rust, the internal float value generated by such an RNG remains consistent regardless of the 'bounds' (pool size) provided, leading to the same relative position being chosen from different server IP ranges.\n\nThis significantly compromises user anonymity. A specific combination of IPs can narrow down a user to a few hundred individuals (e.g., 0.34% of Mullvad's user base, or ~340 users). This allows for highly accurate correlation attacks: if IP logs from two different connections (even to different Mullvad servers) show overlapping \"float ranges,\" there's a >99% chance they belong to the same person. This deanonymization risk applies to data breaches or legally obtained IP logs.\n\nTo protect oneself, users should avoid switching servers without rotating their pubkey and can force a pubkey rotation by logging out of the Mullvad app.",
+    "chinese_title": "穆瓦瓦德出口IP的识别性令人惊讶。",
+    "chinese_summary": "最新分析显示，Mullvad VPN 的出口 IP 分配尽管表面上多样，却因其确定性而具有惊人的识别性。Mullvad 根据用户的 WireGuard 密钥分配出口 IP，而该密钥每 1-30 天才轮换一次，对于第三方客户端则永不轮换。\n\n一个针对 9 台服务器测试了 3650 个公钥的脚本发现，尽管理论上存在数万亿个 IP 组合，实际却只分配了 284 个独特的组合。发生这种情况是因为 IP 选择算法对于给定的公钥，始终选择一个落在每个服务器总 IP 池中“相同百分位”的出口 IP。\n\n这种行为归因于一个常见的编程误解：Mullvad 可能使用一个以公钥作为种子的随机数生成器来选择一个 IP“索引”。在 Rust 等语言中，这种随机数生成器产生的内部浮点数值无论提供的“边界”（池大小）如何都保持一致，导致从不同的服务器 IP 范围中选择了相同的相对位置。\n\n这极大地损害了用户的匿名性。特定 IP 组合可以将用户范围缩小到几百人（例如，占 Mullvad 用户群的 0.34%，或约 340 名用户）。这使得高度准确的关联攻击成为可能：如果来自两个不同连接（即使连接到不同的 Mullvad 服务器）的 IP 日志显示出重叠的“浮点范围”，那么他们属于同一人的可能性超过 99%。这种去匿名化风险适用于数据泄露或合法获取的 IP 日志。\n\n为保护自身安全，用户应避免在不轮换公钥的情况下切换服务器，并且可以通过退出 Mullvad 应用程序来强制进行公钥轮换。"
+  },
+  {
+    "id": "48130950",
+    "title": "Claude for Small Business",
+    "url": "https://www.anthropic.com/news/claude-for-small-business",
+    "summary": "On May 13, 2026, Anthropic launched \"Claude for Small Business,\" aiming to help small business owners leverage AI and automate tasks within their existing tools. Recognizing that small businesses often lag larger enterprises in AI adoption due to a lack of tailored solutions, this offering seeks to bridge that gap.\n\nClaude for Small Business integrates directly into popular platforms like Intuit QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365. It functions as a \"toggle install,\" providing 15 ready-to-run workflows and 15 skills across various business functions, including finance, operations, sales, and marketing. Capabilities include planning payroll, closing the month, running sales campaigns, chasing invoices, generating marketing assets, and providing business insights.\n\nThe system operates by allowing users to select a job within Claude Cowork; Claude then performs the work, requiring user approval before finalizing any actions. Trust and security are prioritized, ensuring tasks are user-initiated, existing tool permissions are maintained, and user data is not used for training by default on Team and Enterprise plans.\n\nTo support effective adoption, Anthropic has partnered with PayPal to offer \"AI Fluency for Small Business,\" a free online course. Additionally, the \"Claude SMB Tour\" provides free, hands-on training workshops in various cities. As part of its public benefit mission, Anthropic is also collaborating with organizations like the Workday Foundation/LISC to support solopreneurs and Community Development Financial Institutions (CDFIs) to help small businesses access capital through AI-powered tools.",
+    "chinese_title": "克劳德小型企业版",
+    "chinese_summary": "2026年5月13日，Anthropic推出了“Claude中小企业版”，旨在帮助小型企业主在其现有工具中利用人工智能并实现任务自动化。鉴于小型企业因缺乏量身定制的解决方案而在人工智能采纳方面常落后于大型企业，该产品旨在弥合这一差距。\n\nClaude中小企业版直接集成到Intuit QuickBooks、PayPal、HubSpot、Canva、Docusign、Google Workspace和Microsoft 365等流行平台中。它以“一键安装”的形式运行，提供15个即用型工作流程和15项技能，涵盖财务、运营、销售和营销等各种业务职能。功能包括规划薪资、月度结账、开展销售活动、催收发票、生成营销素材和提供业务洞察。\n\n该系统允许用户在Claude Cowork中选择一项工作；Claude随后执行该工作，所有操作在最终确定前均需用户批准。信任和安全是首要考量，确保任务由用户发起、维护现有工具权限，并且在团队版和企业版计划中，用户数据默认不用于模型训练。\n\n为支持有效采纳，Anthropic与PayPal合作，提供名为“小型企业AI流畅度”的免费在线课程。此外，“Claude中小企业巡展”在多个城市提供免费的实践培训研讨会。作为其公共利益使命的一部分，Anthropic还与Workday基金会/LISC等组织合作，支持个体创业者和社区发展金融机构（CDFIs），以帮助小型企业通过人工智能工具获取资金。"
+  },
+  {
+    "id": "48139148",
+    "title": "AI is making me dumb",
+    "url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
     "summary": "生成摘要时出错",
-    "chinese_title": "RTX 5090 and M4 MacBook Air: Can It Game?",
+    "chinese_title": "AI is making me dumb",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48142251",
+    "title": "UK government replaces Palantir software with internally-built refugee system",
+    "url": "https://www.bbc.com/news/articles/c2l2j1lxdk5o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "UK government replaces Palantir software with internally-built refugee system",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48150431",
+    "title": "Project Gutenberg – keeps getting better",
+    "url": "https://www.gutenberg.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Project Gutenberg – keeps getting better",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48140529",
+    "title": "Codex is now in the ChatGPT mobile app",
+    "url": "https://openai.com/index/work-with-codex-from-anywhere/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Codex is now in the ChatGPT mobile app",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48139219",
+    "title": "First public macOS kernel memory corruption exploit on Apple M5",
+    "url": "https://blog.calif.io/p/first-public-kernel-memory-corruption",
+    "summary": "生成摘要时出错",
+    "chinese_title": "First public macOS kernel memory corruption exploit on Apple M5",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48146129",
+    "title": "Explore Wikipedia Like a Windows XP Desktop",
+    "url": "https://explorer.samismith.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Explore Wikipedia Like a Windows XP Desktop",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48138268",
+    "title": "New Nginx Exploit",
+    "url": "https://github.com/DepthFirstDisclosures/Nginx-Rift",
+    "summary": "生成摘要时出错",
+    "chinese_title": "New Nginx Exploit",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48142108",
+    "title": "A few words on DS4",
+    "url": "https://antirez.com/news/165",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A few words on DS4",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -112,43 +136,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48114356",
-    "title": "Scrcpy v4.0",
-    "url": "https://github.com/Genymobile/scrcpy/releases/tag/v4.0",
+    "id": "48148391",
+    "title": "We are retiring our bug bounty program",
+    "url": "https://turso.tech/blog/the-wonders-of-ai",
     "summary": "生成摘要时出错",
-    "chinese_title": "Scrcpy v4.0",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48132488",
-    "title": "Rewrite Bun in Rust has been merged",
-    "url": "https://github.com/oven-sh/bun/pull/30412",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Rewrite Bun in Rust has been merged",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48138136",
-    "title": "Removing the modem and GPS from my 2024 RAV4 hybrid",
-    "url": "https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Removing the modem and GPS from my 2024 RAV4 hybrid",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48125617",
-    "title": "MacBook Neo Deep Dive: Benchmarks, Wafer Economics, and the 8GB Gamble",
-    "url": "https://www.jdhodges.com/blog/macbook-neo-benchmarks-analysis/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "MacBook Neo Deep Dive: Benchmarks, Wafer Economics, and the 8GB Gamble",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48116781",
-    "title": "Starship V3",
-    "url": "https://www.spacex.com/updates#starship-v3",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Starship V3",
+    "chinese_title": "We are retiring our bug bounty program",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -160,27 +152,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48117810",
-    "title": "Deterministic Fully-Static Whole-Binary Translation Without Heuristics",
-    "url": "https://arxiv.org/abs/2605.08419",
+    "id": "48142188",
+    "title": "Ontario auditors find doctors' AI note takers routinely blow basic facts",
+    "url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
     "summary": "生成摘要时出错",
-    "chinese_title": "Deterministic Fully-Static Whole-Binary Translation Without Heuristics",
+    "chinese_title": "Ontario auditors find doctors' AI note takers routinely blow basic facts",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48123015",
-    "title": "Open Source Resistance: keep OSS alive on company time",
-    "url": "https://ossresistance.com/",
+    "id": "48150900",
+    "title": "Bun Rust rewrite: \"codebase fails basic miri checks, allows for UB in safe rust\"",
+    "url": "https://github.com/oven-sh/bun/issues/30719",
     "summary": "生成摘要时出错",
-    "chinese_title": "Open Source Resistance: keep OSS alive on company time",
+    "chinese_title": "Bun Rust rewrite: \"codebase fails basic miri checks, allows for UB in safe rust\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48139148",
-    "title": "AI is making me dumb",
-    "url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
+    "id": "48146369",
+    "title": "Show HN: Find the best local LLM for your hardware, ranked by benchmarks",
+    "url": "https://github.com/Andyyyy64/whichllm",
     "summary": "生成摘要时出错",
-    "chinese_title": "AI is making me dumb",
+    "chinese_title": "Show HN: Find the best local LLM for your hardware, ranked by benchmarks",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -192,11 +184,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48121299",
-    "title": "Dutch suicide prevention website shares data with tech companies without consent",
-    "url": "https://nltimes.nl/2026/05/13/dutch-suicide-prevention-hotline-shares-visitor-data-tech-companies",
+    "id": "48148337",
+    "title": "Amazon workers under pressure to up their AI usage are making up tasks",
+    "url": "https://www.fastcompany.com/91541586/amazon-workers-pressured-to-up-ai-use-extraneous-tasks",
     "summary": "生成摘要时出错",
-    "chinese_title": "Dutch suicide prevention website shares data with tech companies without consent",
+    "chinese_title": "Amazon workers under pressure to up their AI usage are making up tasks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48148460",
+    "title": "A 0-click exploit chain for the Pixel 10",
+    "url": "https://projectzero.google/2026/05/pixel-10-exploit.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A 0-click exploit chain for the Pixel 10",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -208,30 +208,6 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48115823",
-    "title": "Kraftwerk's radical 1976 track",
-    "url": "https://www.bbc.com/culture/article/20260511-kraftwerks-radical-1976-track-radioactivity-became-an-anti-nuclear-anthem",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Kraftwerk's radical 1976 track",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48115059",
-    "title": "EFF to 4th Circuit: Electronic Device Searches at the Border Require a Warrant",
-    "url": "https://www.eff.org/deeplinks/2026/05/eff-fourth-circuit-electronic-device-searches-border-require-warrant",
-    "summary": "生成摘要时出错",
-    "chinese_title": "EFF to 4th Circuit: Electronic Device Searches at the Border Require a Warrant",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48121929",
-    "title": "The US is winning the AI race where it matters most: commercialization",
-    "url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The US is winning the AI race where it matters most: commercialization",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "48134993",
     "title": "USDA Projects Smallest US Wheat Harvest Since 1972 Due to Plains Drought",
     "url": "https://www.agweb.com/news/usda-projects-smallest-us-wheat-harvest-1972-due-plains-drought",
@@ -240,27 +216,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48118763",
-    "title": "SecurityBaseline.eu",
-    "url": "https://internetcleanup.foundation/2026/05/european-governments-3000-tracking-sites-1000-phpmyadmins-and-99pct-poorly-encrypted-email-introducing-securitybaseline-eu/",
+    "id": "48144380",
+    "title": "Details of the Daring Airdrop at Tristan Da Cunha",
+    "url": "https://www.tristandc.com/government/news-2026-05-11-airdrop.php",
     "summary": "生成摘要时出错",
-    "chinese_title": "SecurityBaseline.eu",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48126000",
-    "title": "\"Not Medically Necessary\": Helping America's Health Insurers Deny Coverage",
-    "url": "https://www.propublica.org/article/evicore-health-insurance-denials-cigna-unitedhealthcare-aetna-prior-authorizations",
-    "summary": "生成摘要时出错",
-    "chinese_title": "\"Not Medically Necessary\": Helping America's Health Insurers Deny Coverage",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48116207",
-    "title": "My graduation cap runs Rust",
-    "url": "https://ericswpark.com/blog/2026/2026-05-12-my-graduation-cap-runs-rust/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "My graduation cap runs Rust",
+    "chinese_title": "Details of the Daring Airdrop at Tristan Da Cunha",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -272,411 +232,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48126981",
-    "title": "Meta won't let you block its AI account on Threads",
-    "url": "https://www.theverge.com/tech/929091/meta-ai-threads-account-block",
+    "id": "48150971",
+    "title": "We don't know why Malawi is poor",
+    "url": "https://newsletter.deenamousa.com/p/we-dont-know-why-malawi-is-poor",
     "summary": "生成摘要时出错",
-    "chinese_title": "Meta won't let you block its AI account on Threads",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48138268",
-    "title": "New Nginx Exploit",
-    "url": "https://github.com/DepthFirstDisclosures/Nginx-Rift",
-    "summary": "生成摘要时出错",
-    "chinese_title": "New Nginx Exploit",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48134429",
-    "title": "Sam Altman's Business Dealings Under GOP Scrutiny Ahead of OpenAI's IPO",
-    "url": "https://www.wsj.com/tech/ai/sam-altmans-business-dealings-under-gop-scrutiny-ahead-of-openais-ipo-52c1cc4d",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Sam Altman's Business Dealings Under GOP Scrutiny Ahead of OpenAI's IPO",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48124002",
-    "title": "Haiku",
-    "url": "https://www.haiku-os.org",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Haiku",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48135782",
-    "title": "Meta's New Reality: Record High Profits. Record Low Morale",
-    "url": "https://www.wired.com/story/meta-layoffs-bad-vibes-mark-zuckerberg-ai/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Meta's New Reality: Record High Profits. Record Low Morale",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48116064",
-    "title": "When “idle” isn't idle: how a Linux kernel optimization became a QUIC bug",
-    "url": "https://blog.cloudflare.com/quic-death-spiral-fix/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "When “idle” isn't idle: how a Linux kernel optimization became a QUIC bug",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48134743",
-    "title": "Computer Hobby Movement in Canada",
-    "url": "https://museum.eecs.yorku.ca/exhibits/show/hobby_canada/hobby_canada",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Computer Hobby Movement in Canada",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48123090",
-    "title": "50K Tahoe residents need power as utility eyes redirecting lines to data centers",
-    "url": "https://fortune.com/2026/05/12/lake-tahoe-data-center-49000-residents-power-source/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "50K Tahoe residents need power as utility eyes redirecting lines to data centers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48129789",
-    "title": "Mystery Microsoft bug leaker keeps the zero-days coming",
-    "url": "https://www.theregister.com/security/2026/05/13/disgruntled-researcher-releases-two-more-microsoft-zero-days/5239758",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mystery Microsoft bug leaker keeps the zero-days coming",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48132030",
-    "title": "Classic 7 is a Windows 10 LTSC mod to look 1:1 to Windows 7",
-    "url": "https://classic7.lol/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Classic 7 is a Windows 10 LTSC mod to look 1:1 to Windows 7",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48126156",
-    "title": "Making the news available at no cost is a victory",
-    "url": "https://www.sltrib.com/opinion/commentary/2026/05/12/just-days-tribune-reporting/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Making the news available at no cost is a victory",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48123546",
-    "title": "S-100 Virtual Workbench",
-    "url": "https://grantmestrength.github.io/S100/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "S-100 Virtual Workbench",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48115681",
-    "title": "Fuck You, Bambu Lab. Go Ahead, Sue Us",
-    "url": "https://gamersnexus.net/fk-you-bambu-lab",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Fuck You, Bambu Lab. Go Ahead, Sue Us",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48136662",
-    "title": "Anthropic forms $200M partnership with the Gates Foundation",
-    "url": "https://www.anthropic.com/news/gates-foundation-partnership",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Anthropic forms $200M partnership with the Gates Foundation",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48127889",
-    "title": "A desire for a loud car correlates with higher scores on psychopathy and sadism",
-    "url": "https://cipp.ug.edu.pl/A-desire-for-a-loud-car-with-a-modified-muffler-is-predicted-by-being-a-man-and-higher,162006,0,2.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A desire for a loud car correlates with higher scores on psychopathy and sadism",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48133561",
-    "title": "Show HN: Running the second public ODoH relay",
-    "url": "https://numa.rs/blog/posts/odoh-anonymous-dns-without-an-account.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Running the second public ODoH relay",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48134014",
-    "title": "The European Union backs Italy's right to make Meta pay for news",
-    "url": "https://www.niemanlab.org/2026/05/the-eu-backs-italys-right-to-make-meta-pay-for-news/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The European Union backs Italy's right to make Meta pay for news",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48137353",
-    "title": "Cuba says it has run out of fuel, blames U.S. embargo",
-    "url": "https://www.upi.com/Top_News/World-News/2026/05/14/Cuba-says-oil-reserves-totally-drained/9311778746907/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cuba says it has run out of fuel, blames U.S. embargo",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48125801",
-    "title": "Altman forced to confront claims at OpenAI trial that he's a prolific liar",
-    "url": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Altman forced to confront claims at OpenAI trial that he's a prolific liar",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48129561",
-    "title": "The other half of AI safety",
-    "url": "https://personalaisafety.com/p/the-other-half-of-ai-safety",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The other half of AI safety",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48124436",
-    "title": "Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration",
-    "url": "https://www.tryardent.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48121717",
-    "title": "Software Developers Say AI Is Rotting Their Brains",
-    "url": "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Software Developers Say AI Is Rotting Their Brains",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48129934",
-    "title": "Avoiding and reducing microplastic false positives from dry glove contact",
-    "url": "https://pubs.rsc.org/en/content/articlelanding/2026/ay/d5ay01801c",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Avoiding and reducing microplastic false positives from dry glove contact",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48126675",
-    "title": "Rars: a Rust RAR implementation, mostly written by LLMs",
-    "url": "https://bitplane.net/log/2026/05/rars/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Rars: a Rust RAR implementation, mostly written by LLMs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48139355",
-    "title": "The AI Zombification of Universities",
-    "url": "https://www.thenewcritic.com/p/the-great-zombification",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The AI Zombification of Universities",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48119326",
-    "title": "Cost of enum-to-string: C++26 reflection vs. the old ways",
-    "url": "https://vittorioromeo.com/index/blog/refl_enum_to_string.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cost of enum-to-string: C++26 reflection vs. the old ways",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48130186",
-    "title": "Show HN: Nibble",
-    "url": "https://github.com/glouw/nibble",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Nibble",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48138572",
-    "title": "Bun's Rust rewrite has been merged",
-    "url": "https://old.reddit.com/r/rust/comments/1tcrmjs/rewrite_bun_in_rust_has_been_merged/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Bun's Rust rewrite has been merged",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48139912",
-    "title": "Germany's Sovereign Tech Fund Backs KDE with €1.3M",
-    "url": "https://www.theregister.com/oses/2026/05/14/kde-bags-13m-as-europe-realizes-it-might-need-an-os-of-its-own/5240562",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Germany's Sovereign Tech Fund Backs KDE with €1.3M",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48134084",
-    "title": "The Siri for Families Apple Will Never Build",
-    "url": "https://taoofmac.com/space/blog/2026/05/14/1220",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Siri for Families Apple Will Never Build",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48129953",
-    "title": "delta time",
-    "url": "https://www.deltatime.life/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "delta time",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48120351",
-    "title": "Using OR-Tools CP-SAT for Scheduling Problems",
-    "url": "https://atalaykutlay.com/or-tools-cp-sat-for-scheduling-problems.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Using OR-Tools CP-SAT for Scheduling Problems",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48127815",
-    "title": "Medicare's new payment model is built for AI. Most of the tech world has no idea",
-    "url": "https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Medicare's new payment model is built for AI. Most of the tech world has no idea",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48122954",
-    "title": "The limits of Rust, or why you should probably not follow Amazon and Cloudflare",
-    "url": "https://kerkour.com/the-limits-of-rust",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The limits of Rust, or why you should probably not follow Amazon and Cloudflare",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48133908",
-    "title": "Myths about /dev/urandom (2014)",
-    "url": "https://www.2uo.de/myths-about-urandom/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Myths about /dev/urandom (2014)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48125494",
-    "title": "ReactOS",
-    "url": "https://reactos.org/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ReactOS",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48122624",
-    "title": "The AI Backlash Could Get Ugly",
-    "url": "https://www.theatlantic.com/technology/2026/05/ai-backlash-data-centers-political-violence/687151/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The AI Backlash Could Get Ugly",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48134400",
-    "title": "What happens when you post a real Monet and say it's AI?",
-    "url": "https://twitter.com/jediwolf/status/2054776716770320631",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What happens when you post a real Monet and say it's AI?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48129889",
-    "title": "SQLite Code of Ethics",
-    "url": "https://sqlite.org/codeofethics.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SQLite Code of Ethics",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48114997",
-    "title": "YellowKey Bitlocker Bypass Vulnerability",
-    "url": "https://github.com/Nightmare-Eclipse/YellowKey",
-    "summary": "生成摘要时出错",
-    "chinese_title": "YellowKey Bitlocker Bypass Vulnerability",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48139219",
-    "title": "First public macOS kernel memory corruption exploit on Apple M5",
-    "url": "https://blog.calif.io/p/first-public-kernel-memory-corruption",
-    "summary": "生成摘要时出错",
-    "chinese_title": "First public macOS kernel memory corruption exploit on Apple M5",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48125557",
-    "title": "A sentimental tour of late 1990s and early 2000s hacking tools",
-    "url": "https://andreafortuna.org/2026/05/13/amarcord/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A sentimental tour of late 1990s and early 2000s hacking tools",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48114461",
-    "title": "Meta employees protest against mouse tracking tech at US offices",
-    "url": "https://www.reuters.com/sustainability/society-equity/meta-us-employees-organize-protest-against-mouse-tracking-tech-2026-05-12/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Meta employees protest against mouse tracking tech at US offices",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48120514",
-    "title": "Composer leaks contents of tokens configured as GitHub OAuth tokens",
-    "url": "https://github.com/composer/composer/security/advisories/GHSA-f9f8-rm49-7jv2",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Composer leaks contents of tokens configured as GitHub OAuth tokens",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48137553",
-    "title": "HDD Firmware Hacking",
-    "url": "https://icode4.coffee/?p=1465",
-    "summary": "生成摘要时出错",
-    "chinese_title": "HDD Firmware Hacking",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48137004",
-    "title": "LinkedIn Fanfiction",
-    "url": "https://www.marginalia.nu/log/a_137_linkedin_fanfiction/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "LinkedIn Fanfiction",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48130711",
-    "title": "Arena AI Model ELO History",
-    "url": "https://mayerwin.github.io/AI-Arena-History/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Arena AI Model ELO History",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48139115",
-    "title": "Grok Build",
-    "url": "https://x.ai/news/grok-build-cli",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Grok Build",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48123594",
-    "title": "Residents furious as Utah approves datacenter twice the size of Manhattan",
-    "url": "https://www.theguardian.com/us-news/2026/may/13/utah-approves-datacenter-backlash",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Residents furious as Utah approves datacenter twice the size of Manhattan",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48113518",
-    "title": "Beyond Semantic Similarity",
-    "url": "https://arxiv.org/abs/2605.05242",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Beyond Semantic Similarity",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48134389",
-    "title": "New York, California pension leaders oppose 'extreme' SpaceX control structure",
-    "url": "https://www.reuters.com/legal/government/new-york-california-pension-leaders-oppose-extreme-spacex-control-structure-2026-05-14/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "New York, California pension leaders oppose 'extreme' SpaceX control structure",
+    "chinese_title": "We don't know why Malawi is poor",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -688,67 +248,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48133728",
-    "title": "They Said It Would Cost $54M. We Said \"No Thanks.\"",
-    "url": "https://nateglubish.substack.com/p/they-said-it-would-cost-54-million",
+    "id": "48150069",
+    "title": "Image-blaster: Creates 3D environments, SFX, and meshes from a single image",
+    "url": "https://github.com/neilsonnn/image-blaster",
     "summary": "生成摘要时出错",
-    "chinese_title": "They Said It Would Cost $54M. We Said \"No Thanks.\"",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48118672",
-    "title": "“I applied to be pope”: Losing grip on reality while using ChatGPT",
-    "url": "https://www.thestandard.com.hk/world/article/331886/I-applied-to-be-pope-Losing-grip-on-reality-while-using-ChatGPT",
-    "summary": "生成摘要时出错",
-    "chinese_title": "“I applied to be pope”: Losing grip on reality while using ChatGPT",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48134869",
-    "title": "The Whole Anthropic Kerfuffle",
-    "url": "https://twitter.com/josevalim/status/2054887621336174799",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Whole Anthropic Kerfuffle",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48126281",
-    "title": "Claude subscription changes coverage of `claude -p`",
-    "url": "https://x.com/i/trending/2054617957440143639",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Claude subscription changes coverage of `claude -p`",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48117190",
-    "title": "Temu is advertising filet mignon on X",
-    "url": "https://twitter.com/shoptemu/status/2053092200632685016",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Temu is advertising filet mignon on X",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48121017",
-    "title": "EU browser choice rules send millions more users Firefox's way",
-    "url": "https://www.theregister.com/software/2026/05/12/eu-law-bestows-6m-more-firefox-users-upon-us-moz-says/5238623",
-    "summary": "生成摘要时出错",
-    "chinese_title": "EU browser choice rules send millions more users Firefox's way",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48125623",
-    "title": "Neanderthals drilled cavities to treat a toothache 59,000 years ago",
-    "url": "https://arstechnica.com/science/2026/05/neanderthals-drilled-cavities-to-treat-a-toothache-59000-years-ago/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Neanderthals drilled cavities to treat a toothache 59,000 years ago",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48116873",
-    "title": "Zero-native – Build native desktop apps with web UI",
-    "url": "https://zero-native.dev",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Zero-native – Build native desktop apps with web UI",
+    "chinese_title": "Image-blaster: Creates 3D environments, SFX, and meshes from a single image",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -760,11 +264,83 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48127469",
-    "title": "I was asked to install malware during a fake interview",
-    "url": "https://ashishb.net/security/contagious-interview/",
+    "id": "48137004",
+    "title": "LinkedIn Fanfiction",
+    "url": "https://www.marginalia.nu/log/a_137_linkedin_fanfiction/",
     "summary": "生成摘要时出错",
-    "chinese_title": "I was asked to install malware during a fake interview",
+    "chinese_title": "LinkedIn Fanfiction",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48134389",
+    "title": "New York, California pension leaders oppose 'extreme' SpaceX control structure",
+    "url": "https://www.reuters.com/legal/government/new-york-california-pension-leaders-oppose-extreme-spacex-control-structure-2026-05-14/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "New York, California pension leaders oppose 'extreme' SpaceX control structure",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48148309",
+    "title": "High dimensional geometry is transforming the MRI industry (2017) [pdf]",
+    "url": "https://www.ams.org/government/DonohoPresentation06-28-17Final.pdf",
+    "summary": "生成摘要时出错",
+    "chinese_title": "High dimensional geometry is transforming the MRI industry (2017) [pdf]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48143366",
+    "title": "7 in 10 Americans oppose data centers being built in their communities",
+    "url": "https://www.washingtonpost.com/nation/2026/05/13/7-10-americans-oppose-data-centers-being-built-their-communities/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "7 in 10 Americans oppose data centers being built in their communities",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48130711",
+    "title": "Arena AI Model ELO History",
+    "url": "https://mayerwin.github.io/AI-Arena-History/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Arena AI Model ELO History",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48142553",
+    "title": "Have a Coherent AI Policy",
+    "url": "https://brianmeeker.me/2026/05/14/have-a-coherent-ai-policy/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Have a Coherent AI Policy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48152553",
+    "title": "ABC News has taken all FiveThirtyEight articles offline",
+    "url": "https://twitter.com/baseballot/status/2055309076209492208",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ABC News has taken all FiveThirtyEight articles offline",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48151767",
+    "title": "Waymo recalls 3,800 robotaxis after they drive into flood waters",
+    "url": "https://www.cnbc.com/2026/05/12/waymo-recalls-3800-robotaxis-after-able-drive-into-standing-water.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Waymo recalls 3,800 robotaxis after they drive into flood waters",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48132159",
+    "title": "What the Hell Was Going on with Cigarette Ads in the 70s? (2024)",
+    "url": "https://tohippo.com/what-the-hell-was-going-on-with-cigarette-ads-in-the-70s/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What the Hell Was Going on with Cigarette Ads in the 70s? (2024)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48150723",
+    "title": "OpenAI is connecting ChatGPT to bank accounts via Plaid",
+    "url": "https://firethering.com/chatgpt-bank-account-plaid-openai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenAI is connecting ChatGPT to bank accounts via Plaid",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -776,27 +352,115 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48123900",
-    "title": "U.S. intelligence shows Iran retains substantial missile capabilities",
-    "url": "https://www.nytimes.com/2026/05/12/us/politics/iran-missiles-us-intelligence.html",
+    "id": "48133728",
+    "title": "They Said It Would Cost $54M. We Said \"No Thanks.\"",
+    "url": "https://nateglubish.substack.com/p/they-said-it-would-cost-54-million",
     "summary": "生成摘要时出错",
-    "chinese_title": "U.S. intelligence shows Iran retains substantial missile capabilities",
+    "chinese_title": "They Said It Would Cost $54M. We Said \"No Thanks.\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48129598",
-    "title": "Who Trusts Sam Altman?",
-    "url": "https://techcrunch.com/2026/05/13/who-trusts-sam-altman/",
+    "id": "48148797",
+    "title": "Check Your Fucking Sources, People",
+    "url": "https://brodzinski.com/2026/05/check-fcking-sources.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Who Trusts Sam Altman?",
+    "chinese_title": "Check Your Fucking Sources, People",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48126438",
-    "title": "New Claude Code programmatic usage restrictions",
-    "url": "https://twitter.com/i/status/2054610152817619388",
+    "id": "48136949",
+    "title": "Safari and Firefox change how big sites render based on the domain",
+    "url": "https://denodell.com/blog/browsers-treat-big-sites-differently",
     "summary": "生成摘要时出错",
-    "chinese_title": "New Claude Code programmatic usage restrictions",
+    "chinese_title": "Safari and Firefox change how big sites render based on the domain",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48134869",
+    "title": "The Whole Anthropic Kerfuffle",
+    "url": "https://twitter.com/josevalim/status/2054887621336174799",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Whole Anthropic Kerfuffle",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48144670",
+    "title": "Show HN: GlycemicGPT – Open-source AI-powered diabetes management",
+    "url": "https://github.com/GlycemicGPT/GlycemicGPT",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: GlycemicGPT – Open-source AI-powered diabetes management",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48126281",
+    "title": "Claude subscription changes coverage of `claude -p`",
+    "url": "https://x.com/i/trending/2054617957440143639",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Claude subscription changes coverage of `claude -p`",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48142964",
+    "title": "Elevated error rates on Opus 4.7",
+    "url": "https://status.claude.com/incidents/8z7l5zcy0v3b",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Elevated error rates on Opus 4.7",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48135764",
+    "title": "Show HN: Race to the Bottom",
+    "url": "https://race-to-the-bottom.onrender.com",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Race to the Bottom",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48147021",
+    "title": "The sigmoids won't save you",
+    "url": "https://www.astralcodexten.com/p/the-sigmoids-wont-save-you",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The sigmoids won't save you",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48150097",
+    "title": "I built Zenith: a live local-first fixed viewport planetarium",
+    "url": "https://smorgasb.org/zenith-tech/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I built Zenith: a live local-first fixed viewport planetarium",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48127469",
+    "title": "I was asked to install malware during a fake interview",
+    "url": "https://ashishb.net/security/contagious-interview/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I was asked to install malware during a fake interview",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48145913",
+    "title": "Where's Ed: Anthropic Told Court $5B but Public $19B",
+    "url": "https://www.flyingpenguin.com/wheres-ed-anthropic-told-court-5-billion-but-public-19-billion/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Where's Ed: Anthropic Told Court $5B but Public $19B",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48146656",
+    "title": "Overseas fakers using AI videos to push a narrative of UK decline, BBC finds",
+    "url": "https://www.bbc.co.uk/news/articles/ckgpyn30dp3o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Overseas fakers using AI videos to push a narrative of UK decline, BBC finds",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48141902",
+    "title": "Show HN: GridTravel – A community based travel app for users to share routes",
+    "url": "https://www.gridtravel.app",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: GridTravel – A community based travel app for users to share routes",
     "chinese_summary": "生成摘要时出错"
   }
 ]
