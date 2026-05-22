@@ -1,802 +1,242 @@
 [
   {
-    "id": "48212493",
-    "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-    "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
-    "summary": "On May 20, 2026, OpenAI announced that an internal AI model has disproved a central conjecture in discrete geometry: the planar unit distance problem. First posed by Paul Erdős in 1946, this problem asks for the maximum number of pairs of points exactly distance 1 apart among *n* points in a plane. For decades, it was widely believed that constructions like the \"square grid\" were optimal, yielding *n*^(1+o(1)) unit-distance pairs.\n\nThe general-purpose reasoning model, without specialized training for mathematics, produced a proof that constructs configurations of *n* points with at least *n*^(1+δ) unit-distance pairs for some fixed exponent δ > 0 (e.g., δ=0.014), thereby disproving the longstanding *n*^(1+o(1)) conjecture.\n\nThe proof was verified and hailed by prominent mathematicians like Tim Gowers and Noga Alon as a \"milestone in AI mathematics.\" Surprisingly, the solution leverages advanced concepts from algebraic number theory, such as infinite class field towers and Golod–Shafarevich theory, creating an unexpected connection to elementary geometric questions.\n\nThis achievement marks the first time AI has autonomously resolved a major open problem central to a mathematical subfield, demonstrating profound reasoning capabilities. It highlights a new era of AI-human collaboration in research, revealing new mathematical connections and offering a glimpse into AI's potential as a powerful research partner across science and engineering.",
-    "chinese_title": "一个OpenAI模型已证伪离散几何学的一项核心猜想。",
-    "chinese_summary": "2026年5月20日，OpenAI宣布其内部一个AI模型推翻了离散几何学中的一个核心猜想：平面单位距离问题。该问题由保罗·埃尔德什于1946年首次提出，旨在探究平面上*n*个点中精确距离为1的点对的最大数量。几十年来，人们普遍认为“方格网格”等构造是最佳的，能产生*n*^(1+o(1))个单位距离点对。\n\n这个未经专门数学训练的通用推理模型，提出了一个证明，构造了*n*个点的配置，其具有至少*n*^(1+δ)个单位距离点对，其中某个固定指数δ > 0 (例如，δ=0.014)，从而推翻了长期以来关于*n*^(1+o(1))的猜想。\n\n该证明得到了蒂姆·高瓦斯和诺加·阿隆等著名数学家的验证和赞扬，称之为“AI数学领域的里程碑”。令人惊讶的是，该解决方案利用了代数数论中的高级概念，例如无限类域塔和戈洛德-沙法列维奇理论，在基本的几何问题之间建立了意想不到的联系。\n\n这一成就标志着人工智能首次自主解决了某个数学子领域的核心重大开放问题，展示了深刻的推理能力。它预示着研究中人机协作的新时代，揭示了新的数学联系，并展示了人工智能作为跨科学和工程领域的强大研究伙伴的潜力。"
-  },
-  {
-    "id": "48206768",
-    "title": "Meta blocks human rights accounts from reaching audiences in Saudi Arabia, UAE",
-    "url": "https://www.alqst.org/ar/posts/1190",
-    "summary": "A coalition of human rights organizations has condemned Meta's decision to restrict Facebook and Instagram accounts of independent NGOs, researchers, and civil society figures from reaching audiences in Saudi Arabia and the United Arab Emirates (UAE). This geo-blocking, effective since April 30, 2026, has affected groups like ALQST for Human Rights and individuals such as Abdullah Alaoudh and Yahya Assiri, with over 100 accounts restricted since March 2026, mirroring similar actions on X (formerly Twitter).\n\nMeta states it acted in response to \"local legal requirements\" and government requests, citing Saudi and UAE cybercrime laws. However, the signatory organizations argue these are arbitrary, discriminatory measures violating freedom of expression, as these draconian laws are routinely used by governments to suppress dissent and imprison critics. They highlight a recent tightening of information control following regional geopolitical conflicts.\n\nDespite Meta's claims of conducting human rights due diligence, the organizations find these assertions irreconcilable with the documented pattern of digital repression in the Gulf. They call on Meta to immediately restore full access to all affected accounts, publish the legal requests and its human rights assessments, provide specific details to users about content triggering restrictions, and explain the role of its regional offices in processing these demands.",
-    "chinese_title": "Meta阻止人权账户触达沙特阿拉伯、阿联酋受众",
-    "chinese_summary": "人权组织联盟谴责Meta决定限制独立非政府组织、研究人员和民间社会人士的Facebook和Instagram账户在沙特阿拉伯和阿拉伯联合酋长国（阿联酋）的受众可见范围。这项自2026年4月30日起生效的地理封锁，已影响了ALQST人权组织等团体以及Abdullah Alaoudh和Yahya Assiri等个人，自2026年3月以来已有100多个账户受到限制，与X（前身为Twitter）上的类似行动如出一辙。\n\nMeta声明其是响应“当地法律要求”和政府请求而采取行动，并援引了沙特和阿联酋的网络犯罪法。然而，签署组织认为这些是任意的、歧视性的措施，侵犯了言论自由，因为这些严苛的法律经常被政府用来压制异议和监禁批评者。他们强调，在区域地缘政治冲突之后，信息控制最近有所收紧。\n\n尽管Meta声称进行了人权尽职调查，但这些组织认为其说法与海湾地区有记录的数字压制模式不符。他们呼吁Meta立即恢复所有受影响账户的完全访问权限，公布法律请求及其人权评估，向用户提供导致限制内容的具体细节，并解释其区域办事处在处理这些要求中的作用。"
-  },
-  {
-    "id": "48207660",
-    "title": "GitHub confirms breach of 3,800 repos via malicious VSCode extension",
-    "url": "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/",
-    "summary": "GitHub has confirmed a breach of approximately 3,800 internal repositories after an employee installed a malicious VS Code extension, later identified as a trojanized version of the Nx Console extension linked to the TanStack npm supply-chain attack. The company has removed the malicious extension, secured the compromised device, and is investigating, stating its assessment of affected repositories is consistent with the claims. GitHub has found no evidence that customer data outside the internal repositories has been affected.\n\nThe TeamPCP hacker group claimed responsibility, asserting access to \"around 4,000 repos of private code\" on a cybercrime forum. TeamPCP is demanding at least $50,000 for the stolen data, indicating it's not a ransom but a sale, threatening to leak the data for free if no buyer is found. The group has a history of massive supply chain attacks targeting developer platforms.\n\nThis incident underscores a persistent security challenge, as numerous malicious VS Code extensions have previously been found on the marketplace, used for stealing developer credentials, installing cryptominers, or exfiltrating sensitive data from millions of installs. GitHub, a platform hosting over 420 million code repositories, continues to grapple with these evolving threats.",
-    "chinese_title": "GitHub 证实 3,800 个仓库遭恶意 VSCode 扩展入侵",
-    "chinese_summary": "GitHub 已证实其约 3,800 个内部代码库遭到泄露，此前一名员工安装了一个恶意 VS Code 扩展，该扩展后来被确认为与 TanStack npm 供应链攻击相关的木马化版 Nx Console 扩展。该公司已移除该恶意扩展，保护了受感染设备，并正在进行调查，声明其对受影响代码库的评估与相关说法一致。GitHub 尚未发现内部代码库之外的客户数据受到影响的证据。\n\n黑客组织 TeamPCP 在一个网络犯罪论坛上声称对此负责，并称已访问“大约 4,000 个私人代码库”。TeamPCP 为被盗数据索要至少 50,000 美元，表明这并非赎金，而是一笔交易，并威胁称如果找不到买家，将免费泄露这些数据。该组织曾多次对开发者平台发起大规模供应链攻击。\n\n此次事件凸显了一个持续存在的安全挑战，因为此前已在市场上发现大量恶意 VS Code 扩展，它们被用于窃取开发者凭据、安装加密货币挖矿软件或从数百万次安装中窃取敏感数据。GitHub 作为一个托管着超过 4.2 亿个代码库的平台，仍在努力应对这些不断演变的威胁。"
-  },
-  {
-    "id": "48207004",
-    "title": "Goodbye Visa and Mastercard: 130M Europeans switching to sovereign payment",
-    "url": "https://www.lesnumeriques.com/banque-en-ligne/adieu-visa-et-mastercard-130-millions-d-europeens-basculent-vers-un-paiement-100-souverain-des-2026-n250918.html",
-    "summary": "Europe is embarking on a significant initiative to establish a 100% sovereign payment system, challenging the dominance of Visa and Mastercard. Five major national payment champions – France's Wero, Spain's Bizum, Italy's Bancomat, Portugal's MB WAY, and the Nordics' Vipps MobilePay – are uniting. This alliance currently represents 130 million active users across 13 countries.\n\nThe primary goal is to create a robust European alternative capable of handling billions of annual transactions, critically ensuring no user data passes through US servers, thereby enhancing digital sovereignty. The project hinges on establishing a central interoperability hub in the first half of 2026. This platform will enable seamless communication between different national systems, allowing users to conduct cross-border payments with the same ease as domestic ones (e.g., a French Wero user transferring money to a Spanish Bizum user).\n\nThe deployment will be phased, with person-to-person transfers becoming available across all 13 participating countries in 2026. Online and in-store payments are scheduled to follow in 2027. Ultimately, this coalition aims to cover 72% of the population in the European Union and Norway. The existing EuroPA alliance, which has successfully facilitated transactions between Spain, Portugal, Italy, and Andorra since March 2025, serves as a promising prototype for this ambitious push for European autonomy in the payment sector.",
-    "chinese_title": "告别Visa和Mastercard：1.3亿欧洲人转向主权支付",
-    "chinese_summary": "欧洲正在启动一项重大倡议，旨在建立一个100%主权的支付系统，挑战Visa和Mastercard的主导地位。法国的Wero、西班牙的Bizum、意大利的Bancomat、葡萄牙的MB WAY以及北欧地区的Vipps MobilePay这五个主要的国家级支付平台正在联合起来。该联盟目前覆盖13个国家的1.3亿活跃用户。\n\n其主要目标是创建一个强大的欧洲替代方案，能够处理每年数十亿笔交易，最重要的是确保用户数据不会经过美国服务器，从而提升数字主权。该项目的关键在于2026年上半年建立一个中央互操作性枢纽。该平台将实现不同国家系统之间的无缝通信，使用户能够像进行国内支付一样轻松地进行跨境支付（例如，法国Wero用户向西班牙Bizum用户转账）。\n\n部署将分阶段进行，点对点（P2P）转账功能将于2026年在所有13个参与国推出。在线支付和店内支付计划于2027年推出。最终，该联盟的目标是覆盖欧盟和挪威72%的人口。现有的EuroPA联盟自2025年3月起已成功促进了西班牙、葡萄牙、意大利和安道尔之间的交易，为欧洲在支付领域实现自主权的这一雄心勃勃的努力提供了一个有前景的原型。"
-  },
-  {
-    "id": "48220647",
-    "title": "Flipper One – we need your help",
-    "url": "https://blog.flipper.net/flipper-one-we-need-your-help/",
-    "summary": "Flipper One is an ambitious new project, distinct from the Flipper Zero, aiming to redefine the Linux cyberdeck as an open, high-performance platform. Its creators describe it as an \"incredibly hard project,\" both financially and technically, and are going public to seek community help.\n\nFlipper One targets versatile use cases, from 5G network analysis to SDR with local AI, featuring extensive hardware expansion via M.2 modules (supporting PCI Express, USB 3.0, SATA for modems, SDRs, SSDs, AI accelerators) and a GPIO connector. It offers robust networking with 2x Gigabit Ethernet, USB Ethernet, and Wi-Fi 6E.\n\nA central goal is to build the most open ARM computer, ensuring full mainline Linux kernel support for the Rockchip RK3576 SoC, free of binary blobs. They've partnered with Collabora to achieve this and are soliciting community help to eliminate the last binary blob (DDR trainer) and upstream remaining drivers.\n\nThe device utilizes a unique co-processor architecture, pairing an 8-core RK3576 CPU (running Linux) with a low-power RP2350 microcontroller (managing display, power, and inputs), enabling basic functionality even when the CPU is off.\n\nTo enhance the mobile Linux experience, Flipper One introduces Flipper OS, a Debian-based system with \"profiles\" for managing different software configurations. They're also developing FlipCTL, a UI framework for small screens, to create intuitive, menu-based interfaces for existing Linux utilities, akin to Flipper Zero's acclaimed UI.\n\nThe \"Flipper One Developer Portal\" provides an open development process, sharing internal documentation, task trackers, and discussions across various sub-projects (Hardware, Linux Software, UI, etc.), inviting all enthusiasts to contribute.",
-    "chinese_title": "弗利珀一号——我们需要你的帮助",
-    "chinese_summary": "Flipper One 是一个雄心勃勃的新项目，与 Flipper Zero 不同，旨在将 Linux cyberdeck 重新定义为一个开放、高性能的平台。它的创造者将其描述为一个“极其艰难的项目”，无论是在财务还是技术层面，因此正在寻求社区帮助。\n\nFlipper One 旨在支持多种多样的用例，从 5G 网络分析到结合本地 AI 的 SDR，并通过 M.2 模块（支持 PCI Express、USB 3.0、SATA，用于调制解调器、SDR、SSD、AI 加速器）和 GPIO 连接器实现广泛的硬件扩展。它提供强大的网络连接能力，包括两个千兆以太网口、USB 以太网和 Wi-Fi 6E。\n\n一个核心目标是构建最开放的 ARM 计算机，确保瑞芯微 RK3576 SoC 获得完整的上游 Linux 内核支持，且不含二进制私有驱动。他们已与 Collabora 合作以实现这一目标，并正在征集社区帮助以消除最后一个二进制私有驱动（DDR 训练器）并将剩余驱动程序上游化。\n\n该设备采用独特的协处理器架构，将一个 8 核 RK3576 CPU（运行 Linux）与一个低功耗 RP2350 微控制器（管理显示、电源和输入）配对，即使 CPU 关闭也能实现基本功能。\n\n为了增强移动 Linux 体验，Flipper One 推出了 Flipper OS，这是一个基于 Debian 的系统，带有用于管理不同软件配置的“配置文件”。他们还在开发 FlipCTL，一个用于小屏幕的 UI 框架，旨在为现有 Linux 实用程序创建直观的、基于菜单的界面，类似于 Flipper Zero 备受赞誉的用户界面。\n\n“Flipper One 开发者门户”提供了一个开放的开发流程，共享硬件、Linux 软件、用户界面等各个子项目的内部文档、任务追踪器和讨论，邀请所有爱好者贡献力量。"
-  },
-  {
-    "id": "48208502",
-    "title": "Tennessee man jailed 37 days for Trump meme wins settlement after lawsuit",
-    "url": "https://www.fire.org/news/victory-tennessee-man-jailed-37-days-trump-meme-wins-835000-settlement-after-first-amendment",
-    "summary": "Retired Tennessee law enforcement officer Larry Bushart has won an $835,000 settlement after being jailed for 37 days for posting a meme. Represented by the Foundation for Individual Rights and Expression (FIRE), Bushart sued Sheriff Nick Weems, Investigator Jason Morrow, and Perry County, Tennessee, for violating his First Amendment rights.\n\nBushart's arrest followed his sharing of a meme that quoted Donald Trump's \"We have to get over it\" statement after a school shooting. The meme referenced a 2024 shooting at Perry High School in Perry, Iowa. Sheriff Weems and Investigator Morrow sought an arrest warrant, claiming the meme could be interpreted as a threat against Perry County High School in Tennessee, despite knowing it referred to an actual event over 500 miles away in a different state. This crucial context was omitted from the warrant application.\n\nBushart was held on a $2 million bond, lost his post-retirement job, and missed significant family events before being released after his plight went viral. He expressed satisfaction that his First Amendment rights were vindicated. FIRE senior attorney Adam Steinbaugh criticized the authorities for jailing Bushart over a harmless meme. FIRE hopes the settlement sends a message to law enforcement to uphold constitutional rights, noting this case is one of many instances of censorship following conservative activist Charlie Kirk's assassination.",
-    "chinese_title": "田纳西州一男子因特朗普表情包被监禁37天，起诉后获赔。",
-    "chinese_summary": "退休的田纳西州执法官员拉里·布沙特因发布一个梗图被监禁37天后，获得了83.5万美元的和解金。在个人权利与表达基金会（FIRE）的代表下，布沙特起诉了警长尼克·威姆斯、调查员贾森·莫罗以及田纳西州的佩里县，控告他们侵犯了他的第一修正案权利。\n\n布沙特被捕是因为他分享了一个梗图，该梗图引用了唐纳德·特朗普在一次校园枪击事件后所说的“我们必须克服它”的言论。该梗图指的是2024年发生在爱荷华州佩里市佩里高中的枪击事件。警长威姆斯和调查员莫罗申请了逮捕令，声称该梗图可以被解读为对田纳西州佩里县高中的威胁，尽管他们知道它指的是500多英里外另一个州发生的一起真实事件。这一关键背景信息在逮捕令申请中被省略了。\n\n布沙特被要求支付200万美元保释金，失去了他退休后的工作，并错过了重要的家庭活动，直到他的困境引起广泛关注后才被释放。他对自己第一修正案权利得到伸张表示满意。FIRE高级律师亚当·斯坦鲍批评当局因一个无害的梗图而监禁布沙特。FIRE希望这次和解能向执法部门传递一个信息，即要维护宪法权利，并指出此案是保守派活动家查理·柯克被暗杀后出现的众多审查事件之一。"
-  },
-  {
-    "id": "48222383",
-    "title": "AI is just unauthorised plagiarism at a bigger scale",
-    "url": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
-    "summary": "The article, dated May 20, 2026, vehemently argues that AI constitutes unauthorized plagiarism on a massive scale. The author contends that AI systems ingest data without original authors' consent, \"learn\" from it, and then AI companies profit by selling these derived results without compensation. Furthermore, users of AI tools exacerbate the problem by selling AI-generated content, profiting from material originally copied from the internet.\n\nThe author questions if this practice signifies the \"pinnacle of human\" as lazy and greedy. Providing a personal anecdote, the writer, an author of original e-commerce tutorials, discovered that \"lazy website authors\" were using ChatGPT to copy well-performing tutorials online and publish them as their own. Evidence of this plagiarism included these AI-generated articles ranking higher in Google search results and even containing direct, unedited links back to the author's original website. The article concludes with strong condemnation of Google for prioritizing these \"copycat\" websites over original content.",
-    "chinese_title": "人工智能不过是更大规模的未经授权的抄袭。",
-    "chinese_summary": "这篇日期为2026年5月20日的文章强烈主张，人工智能构成大规模的未经授权的剽窃。作者认为，人工智能系统在未经原创作者同意的情况下摄取数据并从中“学习”，然后人工智能公司通过出售这些衍生结果获利，却不支付任何报酬。此外，人工智能工具的用户通过出售人工智能生成的内容来加剧问题，而这些内容却是从互联网上复制的材料中获利。\n\n作者质疑这种做法是否是人类“懒惰和贪婪的巅峰”的体现。作者举了一个亲身经历的例子：作为一名原创电商教程的作者，他发现“懒惰的网站作者”正在使用ChatGPT复制网上表现良好的教程并将其发布为自己的内容。这种剽窃行为的证据包括：这些人工智能生成的文章在谷歌搜索结果中排名更高，甚至含有直接指向作者原创网站的未编辑链接。文章最后强烈谴责谷歌优先考虑这些“山寨”网站而非原创内容。"
-  },
-  {
-    "id": "48205626",
-    "title": "Qwen3.7-Max: The Agent Frontier",
-    "url": "https://qwen.ai/blog?id=qwen3.7",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Qwen3.7-Max: The Agent Frontier",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48201316",
-    "title": "GitHub is investigating unauthorized access to their internal repositories",
-    "url": "https://twitter.com/github/status/2056884788179726685",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GitHub is investigating unauthorized access to their internal repositories",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48214449",
-    "title": "Google Declaring War on the Web",
-    "url": "https://tante.cc/2026/05/20/on-google-declaring-war-on-the-web/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google Declaring War on the Web",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48201484",
-    "title": "Incident Report: Railway Blocked by Google Cloud [resolved]",
-    "url": "https://status.railway.com/incident/I23M92U0",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Incident Report: Railway Blocked by Google Cloud [resolved]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48220105",
-    "title": "We're testing new ad formats in Search and expanding our Direct Offers pilot",
-    "url": "https://blog.google/products/ads-commerce/google-marketing-live-search-ads/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "We're testing new ad formats in Search and expanding our Direct Offers pilot",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48212046",
-    "title": "Flipper One Tech Specs",
-    "url": "https://docs.flipper.net/one/general/tech-specs",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Flipper One Tech Specs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48210263",
-    "title": "Apparently Google hates us now",
-    "url": "https://twitter.com/pokemoncentral/status/2057123807404638250",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Apparently Google hates us now",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48203698",
-    "title": "Everything in C is undefined behavior",
-    "url": "https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Everything in C is undefined behavior",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48204770",
-    "title": "Incident Report: May 19, 2026 – GCP Account Suspension",
-    "url": "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Incident Report: May 19, 2026 – GCP Account Suspension",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48205699",
-    "title": "Map of Metal",
-    "url": "https://mapofmetal.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Map of Metal",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48222529",
-    "title": "Google's Antigravity bait and switch",
-    "url": "https://www.0xsid.com/blog/antigravity-bait-n-switch",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google's Antigravity bait and switch",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48213933",
-    "title": "SpaceX S-1",
-    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SpaceX S-1",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48219992",
-    "title": "Stop throwing AI-generated walls of text into conversations",
-    "url": "https://noslopgrenade.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Stop throwing AI-generated walls of text into conversations",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48206340",
-    "title": "Saying goodbye to asm.js",
-    "url": "https://spidermonkey.dev/blog/2026/05/20/saying-goodbye-to-asmjs.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Saying goodbye to asm.js",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48215979",
-    "title": "Show HN: I reverse engineered Apple's video wallpapers",
-    "url": "https://github.com/kageroumado/phosphene",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I reverse engineered Apple's video wallpapers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48200569",
-    "title": "Remove-AI-Watermarks – CLI and library for removing AI watermarks from images",
-    "url": "https://github.com/wiltodelta/remove-ai-watermarks",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Remove-AI-Watermarks – CLI and library for removing AI watermarks from images",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48201973",
-    "title": "FiveThirtyEight articles on the Internet Archive",
-    "url": "https://fivethirtyeightindex.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FiveThirtyEight articles on the Internet Archive",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48206241",
-    "title": "College students drown out AI-praising commencement speeches with boos",
-    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/college-students-drown-out-ai-praising-commencement-speeches-with-boos-deal-with-it-one-speaker-fires-back-as-students-heckle-positive-pitches-for-ais-role",
-    "summary": "生成摘要时出错",
-    "chinese_title": "College students drown out AI-praising commencement speeches with boos",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48202047",
-    "title": "Japan is gripped by mass allergies. A 1950s project is to blame",
-    "url": "https://www.bbc.com/future/article/20260515-the-1950s-blunder-which-causes-mass-hay-fever-in-japan",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Japan is gripped by mass allergies. A 1950s project is to blame",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48226588",
-    "title": "Seattle Shield, an intelligence-sharing network operated by the Seattle police",
-    "url": "https://prismreports.org/2026/05/20/seattle-shield-private-companies-surveillance/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Seattle Shield, an intelligence-sharing network operated by the Seattle police",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48215418",
-    "title": "DOS Zone",
-    "url": "https://dos.zone/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DOS Zone",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48214049",
-    "title": "Declining America",
-    "url": "https://www.tbray.org/ongoing/When/202x/2026/05/19/Declining-America",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Declining America",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48222366",
-    "title": "Shunning AI is the human choice",
-    "url": "https://www.thehandbasket.co/p/hating-ai-is-good-actually",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Shunning AI is the human choice",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48205782",
-    "title": "Google’s AI is being manipulated. The search giant is quietly fighting back",
-    "url": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google’s AI is being manipulated. The search giant is quietly fighting back",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48219060",
-    "title": "Vivaldi 8.0",
-    "url": "https://vivaldi.com/blog/vivaldi-on-desktop-8-0/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Vivaldi 8.0",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48220696",
-    "title": "Python 3.15: features that didn't make the headlines",
-    "url": "https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Python 3.15: features that didn't make the headlines",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48225297",
-    "title": "Project Hail Mary – Stellar Navigation Chart",
-    "url": "https://valhovey.github.io/gaia-mary/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Project Hail Mary – Stellar Navigation Chart",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48214017",
-    "title": "Anthropic is expanding to Colossus2. Will use GB200",
-    "url": "https://twitter.com/nottombrown/status/2057194829986300375",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Anthropic is expanding to Colossus2. Will use GB200",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48206640",
-    "title": "Anna's Archive hit with $19.5M default judgment and global domain takedown order",
-    "url": "https://torrentfreak.com/annas-archive-hit-with-19-5m-default-judgment-and-global-domain-takedown-order/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Anna's Archive hit with $19.5M default judgment and global domain takedown order",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48202993",
-    "title": "GitHub Compromised",
-    "url": "https://twitter.com/github/status/2056949168208552080",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GitHub Compromised",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48216016",
-    "title": "The Letter S, by Donald Knuth (1980) [pdf]",
-    "url": "https://gwern.net/doc/design/typography/1980-knuth.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Letter S, by Donald Knuth (1980) [pdf]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48216278",
-    "title": "Intuit to lay off over 3k employees to refocus on AI",
-    "url": "https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Intuit to lay off over 3k employees to refocus on AI",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48220639",
-    "title": "Lost Images from the 1945 Trinity Nuclear Test Restored",
-    "url": "https://spectrum.ieee.org/trinity-nuclear-test",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Lost Images from the 1945 Trinity Nuclear Test Restored",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48222241",
-    "title": "US employers spend more than $1.5B a year to fight labor unions, report finds",
-    "url": "https://www.theguardian.com/us-news/2026/may/20/how-much-companies-spend-fight-unions",
-    "summary": "生成摘要时出错",
-    "chinese_title": "US employers spend more than $1.5B a year to fight labor unions, report finds",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48213651",
-    "title": "Colorado Amended SB051 (Age Verification Bill) to Exclude Open Source Projects",
-    "url": "https://legiscan.com/CO/bill/SB051/2026",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Colorado Amended SB051 (Age Verification Bill) to Exclude Open Source Projects",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48222733",
-    "title": "Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)",
-    "url": "https://blog.simbastack.com/indexed-a-year-of-video-locally/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48221915",
-    "title": "A Bipartisan Amendment Would End Police License Plate Tracking Nationwide",
-    "url": "https://www.wired.com/story/a-bipartisan-amendment-would-end-police-license-plate-tracking-nationwide/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A Bipartisan Amendment Would End Police License Plate Tracking Nationwide",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48212992",
-    "title": "Not alive, but not dead: disembodied human brains used for drug testing",
-    "url": "https://www.science.org/content/article/not-alive-not-dead-disembodied-human-brains-used-drug-testing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Not alive, but not dead: disembodied human brains used for drug testing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48212279",
-    "title": "Tracking Starbucks' 'widely recyclable' cups: none ended up at recycling",
-    "url": "https://www.beyondplastics.org/press-releases/starbucks-cups-recyclable-report",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tracking Starbucks' 'widely recyclable' cups: none ended up at recycling",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48223258",
-    "title": "Get your passwords out of Bitwarden while you still can",
-    "url": "https://www.osnews.com/story/145029/get-your-passwords-out-of-bitwarden-while-you-still-can/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Get your passwords out of Bitwarden while you still can",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48211409",
-    "title": "Qian Xuesen: The missile genius America lost and China gained (2025)",
-    "url": "https://www.usni.org/magazines/naval-history/2025/december/missile-genius-america-lost-and-china-gained",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Qian Xuesen: The missile genius America lost and China gained (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48226944",
-    "title": "BBEdit 16",
-    "url": "https://www.barebones.com/products/bbedit/bbedit16.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "BBEdit 16",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48225426",
-    "title": "Waymo pauses Atlanta service as its robotaxis keep driving into floods",
-    "url": "https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Waymo pauses Atlanta service as its robotaxis keep driving into floods",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48216983",
-    "title": "Haskell Foundation 2026 Update",
-    "url": "https://discourse.haskell.org/t/haskell-foundation-2026-update/14136",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Haskell Foundation 2026 Update",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48205415",
-    "title": "Learnings from 100K lines of Rust with AI (2025)",
-    "url": "https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Learnings from 100K lines of Rust with AI (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48210226",
-    "title": "OpenAI Is Preparing to File for an IPO Soon",
-    "url": "https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI Is Preparing to File for an IPO Soon",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48203536",
-    "title": "Infomaniak transitions to a foundation model to protect user data privacy",
-    "url": "https://news.infomaniak.com/en/infomaniak-foundation-sovereign-cloud/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "因福马尼亚克转型为基金会模式以保护用户数据隐私",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48225489",
-    "title": "London Mayor Blocks Palantir",
-    "url": "https://www.theguardian.com/uk-news/2026/may/21/london-mayor-sadiq-khan-blocks-met-police-deal-with-palantir",
-    "summary": "生成摘要时出错",
-    "chinese_title": "London Mayor Blocks Palantir",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48209558",
-    "title": "SBCL: the ultimate assembly code breadboard (2014)",
-    "url": "https://pvk.ca/Blog/2014/03/15/sbcl-the-ultimate-assembly-code-breadboard/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SBCL: the ultimate assembly code breadboard (2014)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48219918",
-    "title": "Show HN: Rmux – A programmable terminal multiplexer with a Playwright-style SDK",
-    "url": "https://github.com/helvesec/rmux",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Rmux – A programmable terminal multiplexer with a Playwright-style SDK",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48212242",
-    "title": "Node.js 26.0.0 (Now with Temporal)",
-    "url": "https://nodejs.org/en/blog/release/v26.0.0",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Node.js 26.0.0 (Now with Temporal)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48211134",
-    "title": "Why is Inkwell stuck in review",
-    "url": "https://www.manton.org/2026/05/19/why-is-inkwell-stuck-in.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why is Inkwell stuck in review",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48220552",
-    "title": "Earth is now heating up twice as fast as in previous decades",
-    "url": "https://www.newscientist.com/article/2518362-earth-is-now-heating-up-twice-as-fast-as-in-previous-decades/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Earth is now heating up twice as fast as in previous decades",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48225838",
-    "title": "News outlets are limiting the Internet Archive’s access to their journalism",
-    "url": "https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "News outlets are limiting the Internet Archive’s access to their journalism",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48217052",
-    "title": "OpenAI to confidentially file for IPO as soon as Friday",
-    "url": "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI to confidentially file for IPO as soon as Friday",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48209323",
-    "title": "Formal Verification Gates for AI Coding Loops",
-    "url": "https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Formal Verification Gates for AI Coding Loops",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48210644",
-    "title": "After Town Bans Flock, Councilmember Crashes Out, Proposes Internet, Phone Ban",
-    "url": "https://www.404media.co/after-town-bans-flock-councilmember-crashes-out-proposes-internet-and-phone-ban/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "After Town Bans Flock, Councilmember Crashes Out, Proposes Internet, Phone Ban",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48214558",
-    "title": "Starship's Twelfth Flight Test",
-    "url": "https://www.spacex.com/launches/starship-flight-12",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Starship's Twelfth Flight Test",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48203333",
-    "title": "India's hottest district shuts at 10 am as mercury breaches 48 C mark",
-    "url": "https://www.hindustantimes.com/india-news/indias-hottest-district-banda-shuts-at-10-am-as-mercury-breaches-48-degrees-celsius-mark-101779240653594.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "India's hottest district shuts at 10 am as mercury breaches 48 C mark",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48221877",
-    "title": "Who wins and who loses in prediction markets? Evidence from Polymarket",
-    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6443103",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Who wins and who loses in prediction markets? Evidence from Polymarket",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48214617",
-    "title": "Cloudflare CEO on how he chooses which employees to replace with AI",
-    "url": "https://www.wsj.com/opinion/how-i-choose-which-cloudflare-employees-to-replace-with-ai-40a197e5",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cloudflare CEO on how he chooses which employees to replace with AI",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48226038",
-    "title": "Chewing gum restores dad's taste and smell years after Covid",
-    "url": "https://discover.swns.com/2026/05/chewing-gum-restores-dads-taste-and-smell-years-after-covid/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Chewing gum restores dad's taste and smell years after Covid",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48210450",
-    "title": "Hormuz closure could trigger 'agrifood shock', price crisis within a year",
-    "url": "https://www.reuters.com/world/middle-east/hormuz-closure-could-trigger-agrifood-shock-price-crisis-within-year-fao-warns-2026-05-20/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Hormuz closure could trigger 'agrifood shock', price crisis within a year",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48209105",
-    "title": "Stable Audio 3",
-    "url": "https://arxiv.org/abs/2605.17991",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Stable Audio 3",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48210667",
-    "title": "Why I don’t vibe code",
-    "url": "https://jacobharr.is/personal/i-dont-vibe-code",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why I don’t vibe code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48200827",
-    "title": "Railway Is Having a Major Outage",
-    "url": "https://status.railway.com/#/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Railway Is Having a Major Outage",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48208685",
-    "title": "Testing distributed systems with AI agents",
-    "url": "https://github.com/shenli/distributed-system-testing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Testing distributed systems with AI agents",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48207251",
-    "title": "America's Greatest Strategic Blunder: The Imprisonment of Qian Xuesen",
-    "url": "https://danieltan.weblog.lol/2026/05/americas-greatest-strategic-blunder-the-imprisonment-of-qian-xuesen",
-    "summary": "生成摘要时出错",
-    "chinese_title": "America's Greatest Strategic Blunder: The Imprisonment of Qian Xuesen",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48221976",
-    "title": "Gemini randomly dumped its system prompt",
-    "url": "https://gist.github.com/mkaramuk/44a44d83178e632ec0dd1f02186d822c",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Gemini randomly dumped its system prompt",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48203628",
-    "title": "Ex-Apple engineer says Apple deliberately slows older phones via updates",
-    "url": "https://www.macobserver.com/news/ex-apple-software-engineer-claims-apple-deliberately-slows-down-old-iphone-models/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ex-Apple engineer says Apple deliberately slows older phones via updates",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48214399",
-    "title": "Show HN: CPU-only transcription for YouTube, TikTok, X, Instagram videos",
-    "url": "https://github.com/kouhxp/yapsnap",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: CPU-only transcription for YouTube, TikTok, X, Instagram videos",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48203031",
-    "title": "Even by Trumpian standards, a $1.8B fund for friends is bad",
-    "url": "https://www.economist.com/united-states/2026/05/19/even-by-trumpian-standards-a-18bn-fund-for-friends-is-bad",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Even by Trumpian standards, a $1.8B fund for friends is bad",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48223362",
-    "title": "Show HN: Freenet, a peer-to-peer platform for decentralized apps",
-    "url": "https://freenet.org/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Freenet, a peer-to-peer platform for decentralized apps",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48216619",
-    "title": "What is a Demand Coop",
-    "url": "https://cahootzcoops.com/blog/what-is-a-demand-coop",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What is a Demand Coop",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48223303",
-    "title": "Michael Keating has died",
-    "url": "https://www.bigfinish.com/news/v/michael-keating-1947-2026",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Michael Keating has died",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48205580",
-    "title": "No way to parse integers in C (2022)",
-    "url": "https://blog.habets.se/2022/10/No-way-to-parse-integers-in-C.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "No way to parse integers in C (2022)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48221415",
-    "title": "FatGid: FreeBSD 14.x kernel local privilege escalation",
-    "url": "https://fatgid.io/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FatGid: FreeBSD 14.x kernel local privilege escalation",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48203484",
-    "title": "There's no earthly way of knowing which direction we are going",
-    "url": "https://kottke.org/26/05/theres-no-earthly-way-of-knowing-which-direction-we-are-going",
-    "summary": "生成摘要时出错",
-    "chinese_title": "There's no earthly way of knowing which direction we are going",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48222105",
-    "title": "Magic the Gathering format: Fun 40",
-    "url": "https://fabiensanglard.net/mtg/fun/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Magic the Gathering format: Fun 40",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48198724",
-    "title": "I am not a Software Engineer",
-    "url": "https://huronbikes.mataroa.blog/blog/i-am-not-a-software-engineer/",
+    "id": "48233177",
+    "title": "Deepfakes Tore a High School Apart",
+    "url": "https://www.404media.co/radnor-high-school-pennsylvania-ai-deepfakes-child-sexual-abuse-material/",
     "summary": "生成摘要时出错",
-    "chinese_title": "I am not a Software Engineer",
+    "chinese_title": "深度伪造撕裂高中",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48204166",
-    "title": "Ex-Google CEO Eric Schmidt booed at Arizona U commencement speech",
-    "url": "https://www.theguardian.com/us-news/2026/may/18/eric-schmidt-ai-university-commencement-speech-booed",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ex-Google CEO Eric Schmidt booed at Arizona U commencement speech",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48201222",
-    "title": "HTML-in-Canvas Demos",
-    "url": "https://github.com/GoogleChromeLabs/css-web-ui-demos/blob/main/html-in-canvas/awesome-html-in-canvas.md",
-    "summary": "生成摘要时出错",
-    "chinese_title": "HTML-in-Canvas Demos",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48200003",
-    "title": "Donald Trump and sons to be 'forever' exempt from tax audits",
-    "url": "https://www.ft.com/content/57334fae-a475-4ab0-a202-8df3766927e4",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Donald Trump and sons to be 'forever' exempt from tax audits",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48220446",
-    "title": "IBM invented semiconductor manufacturing automation",
-    "url": "https://spectrum.ieee.org/semiconductor-fabrication",
-    "summary": "生成摘要时出错",
-    "chinese_title": "IBM invented semiconductor manufacturing automation",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48209668",
-    "title": "Show HN: Lance – image/video generation and understanding in one model",
-    "url": "https://github.com/bytedance/Lance",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Lance – image/video generation and understanding in one model",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48240323",
+    "title": "USCIS Will Grant 'Adjustment of Status' Only in Extraordinary Circumstances",
+    "url": "https://www.uscis.gov/newsroom/news-releases/us-citizenship-and-immigration-services-will-grant-adjustment-of-status-only-in-extraordinary",
+    "summary": "On May 22, 2026, U.S. Citizenship and Immigration Services (USCIS) announced a new policy stating that \"Adjustment of Status\" – the process for non-citizens to apply for a Green Card while in the U.S. – will now only be granted in \"extraordinary circumstances.\"\n\nThe new directive reiterates that, consistent with long-standing law, aliens seeking a Green Card must typically do so through consular processing at U.S. embassies or consulates abroad via the Department of State. USCIS officers are instructed to evaluate each case individually to determine if it warrants this \"extraordinary form of relief.\"\n\nUSCIS Spokesman Zach Kahler explained that this policy aims to return to the \"original intent of the law,\" ensuring individuals navigate the immigration system properly and preventing loopholes. He stated that temporary visitors, such as students, temporary workers, or tourists, are expected to leave when their visit ends, not use it as a first step to permanent residency.\n\nThe agency believes this approach will make the immigration system function as intended, reduce the need to track down those who overstay, and free up limited USCIS resources. These resources can then be reallocated to other priorities, including processing visas for victims of violent crime and human trafficking, and naturalization applications, ultimately making the system fairer and more efficient.",
+    "chinese_title": "USCIS Will Grant 'Adjustment of Status' Only in Extraordinary Circumstances",
+    "chinese_summary": "On May 22, 2026, U.S. Citizenship and Immigration Services (USCIS) announced a new policy stating that \"Adjustment of Status\" – the process for non-citizens to apply for a Green Card while in the U.S. – will now only be granted in \"extraordinary circumstances.\"\n\nThe new directive reiterates that, consistent with long-standing law, aliens seeking a Green Card must typically do so through consular processing at U.S. embassies or consulates abroad via the Department of State. USCIS officers are instructed to evaluate each case individually to determine if it warrants this \"extraordinary form of relief.\"\n\nUSCIS Spokesman Zach Kahler explained that this policy aims to return to the \"original intent of the law,\" ensuring individuals navigate the immigration system properly and preventing loopholes. He stated that temporary visitors, such as students, temporary workers, or tourists, are expected to leave when their visit ends, not use it as a first step to permanent residency.\n\nThe agency believes this approach will make the immigration system function as intended, reduce the need to track down those who overstay, and free up limited USCIS resources. These resources can then be reallocated to other priorities, including processing visas for victims of violent crime and human trafficking, and naturalization applications, ultimately making the system fairer and more efficient."
   },
   {
-    "id": "48223693",
-    "title": "We Reverse-Engineered Docker Sandbox's Undocumented MicroVM API",
-    "url": "https://rivet.dev/blog/2026-02-04-we-reverse-engineered-docker-sandbox-undocumented-microvm-api/",
+    "id": "48233939",
+    "title": "FSFE intervenes against Apple before EUCJ for the second time",
+    "url": "https://fsfe.org/news/2026/news-20260519-01.en.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "We Reverse-Engineered Docker Sandbox's Undocumented MicroVM API",
+    "chinese_title": "FSFE intervenes against Apple before EUCJ for the second time",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48205143",
-    "title": "Public have more fear than hope on AI and future of work, study finds",
-    "url": "https://www.kcl.ac.uk/news/one-in-five-britons-think-ai-will-create-civil-unrest-study-finds",
+    "id": "48226440",
+    "title": "GitHub faces a fight for its survival at Microsoft",
+    "url": "https://www.theverge.com/tech/935250/microsoft-github-struggles-notepad",
     "summary": "生成摘要时出错",
-    "chinese_title": "Public have more fear than hope on AI and future of work, study finds",
+    "chinese_title": "GitHub faces a fight for its survival at Microsoft",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48199011",
-    "title": "What Is Happening to Publishing?",
-    "url": "https://resobscura.substack.com/p/what-is-happening-to-publishing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What Is Happening to Publishing?",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48236770",
+    "title": "Launch HN: Superset (YC P26) – IDE for the agents era",
+    "url": "https://github.com/superset-sh/superset",
+    "summary": "Superset (YC P26) is introduced as an \"IDE for the agents era,\" a dedicated code editor for AI agents. It allows developers to orchestrate multiple CLI-based AI coding agents, such as Claude Code, OpenAI Codex CLI, and GitHub Copilot, simultaneously and in parallel.\n\nThe platform's core advantage is eliminating context switching overhead by isolating each task in its own git worktree, ensuring agents don't interfere with each other. Key features include parallel execution (10+ agents concurrently), agent monitoring with notifications, a built-in diff viewer and editor for quick change review, and one-click handoff to external IDEs or terminals. Superset offers universal compatibility with any CLI agent that runs in a terminal and provides workspace presets for automating environment setup.\n\nCurrently available for macOS, it requires Bun v1.0+, Git 2.20+, GitHub CLI, and Caddy. Users can download a pre-built version or build from source, with customizable keyboard shortcuts and workspace configuration. The project is source-available under the Elastic License 2.0, emphasizing privacy and explicit control over agent connections. Superset encourages community involvement through Discord, Twitter, and GitHub for support, feedback, and contributions.",
+    "chinese_title": "HN 发布：Superset (YC P26)——智能体时代的 IDE",
+    "chinese_summary": "Superset (YC P26) 被介绍为“智能体时代”的IDE，一个专用于AI智能体的代码编辑器。它允许开发者同时并行地编排多个基于CLI的AI编程智能体，例如Claude Code、OpenAI Codex CLI和GitHub Copilot。\n\n该平台的核心优势在于通过将每个任务隔离在独立的git工作区（git worktree）中，消除了上下文切换开销，确保智能体之间互不干扰。主要功能包括并行执行（10+智能体同时运行）、带通知的智能体监控、用于快速审查更改的内置diff查看器和编辑器，以及一键移交到外部IDE或终端。Superset与任何在终端中运行的CLI智能体都具有通用兼容性，并提供工作区预设以自动化环境设置。\n\n目前适用于macOS，需要Bun v1.0+、Git 2.20+、GitHub CLI和Caddy。用户可以下载预构建版本或从源代码构建，并可自定义键盘快捷键和工作区配置。该项目在Elastic License 2.0下以源代码可用形式发布，强调隐私和对智能体连接的明确控制。Superset通过Discord、Twitter和GitHub鼓励社区参与，以获取支持、反馈和贡献。"
   },
   {
-    "id": "48210413",
-    "title": "Standard Chartered CEO walks back comment about 'lower-value human capital'",
-    "url": "https://www.wsj.com/finance/banking/ceo-walks-back-comment-about-replacing-lower-value-human-capital-with-ai-15bdfc5c",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Standard Chartered CEO walks back comment about 'lower-value human capital'",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48234503",
+    "title": "Breakthroughs for batteries could soon make them better",
+    "url": "https://www.economist.com/science-and-technology/2026/05/20/breakthroughs-for-batteries-could-soon-make-them-much-better",
+    "summary": "Unable to access the article link.",
+    "chinese_title": "电池技术突破有望使其很快变得更好。",
+    "chinese_summary": "无法访问文章链接。"
   },
   {
-    "id": "48205026",
-    "title": "A new book about humanity's obsession with gold",
-    "url": "https://www.economist.com/culture/2026/05/14/the-weird-wild-story-of-humanitys-obsession-with-gold",
+    "id": "48231815",
+    "title": "SpaceX not the behemoth everyone thought",
+    "url": "https://www.axios.com/2026/05/21/spacex-ipo-musk-ai",
     "summary": "生成摘要时出错",
-    "chinese_title": "A new book about humanity's obsession with gold",
+    "chinese_title": "SpaceX not the behemoth everyone thought",
     "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "48213724",
     "title": "Bolt CEO says he let go of HR team for creating problems that didn't exist",
     "url": "https://fortune.com/2026/05/19/bolt-ceo-ryan-breslow-cut-hr-department-causing-problems-fintech-startup-turn-around/",
+    "summary": "Bolt CEO Ryan Breslow revealed he eliminated the company's HR team, stating they \"created problems that didn't exist,\" which disappeared after their departure. This drastic move is part of his \"wartime\" strategy to resurrect Bolt, a fintech company he co-founded, which saw its valuation plummet from $11 billion in 2022 to an estimated $300 million by 2024, after overspending and poor decision-making.\n\nBreslow, who returned as CEO in 2025, also implemented sweeping workforce cuts, laying off approximately 30% of employees, and eventually replacing nearly the entire prior leadership team. He attributed these layoffs to a \"sense of entitlement\" and a lack of hard work among employees who had grown comfortable during the company's boom years, unable to adapt to a leaner, startup culture.\n\nHe replaced the HR team with a smaller \"people operations\" team focused on essential training and resources, distinguishing it from what he called the \"wrong energy\" of traditional HR. Breslow also abandoned previous perks like four-day workweeks and unlimited PTO to bring the company back to a \"gritty place.\"\n\nDespite rumors of withheld pay, which Breslow denied, he claims the strategy is succeeding. Bolt has slimmed down to about 100 junior, harder-working employees, and customers are reportedly receiving better attention.",
+    "chinese_title": "Bolt首席执行官称，他裁撤了人力资源团队，理由是他们制造了无中生有的问题。",
+    "chinese_summary": "Bolt 首席执行官 Ryan Breslow 透露他解散了公司的 HR 团队，声称他们“制造了不存在的问题”，这些问题在他们离开后就消失了。这项激进举措是他“战时”战略的一部分，旨在重振他联合创办的金融科技公司 Bolt。该公司在过度开支和糟糕的决策后，其估值从2022年的110亿美元暴跌至2024年预计的3亿美元。\n\n于2025年回归担任首席执行官的布雷斯洛还实施了大规模裁员，解雇了约30%的员工，并最终替换了几乎整个前领导团队。他将这些裁员归因于员工在公司繁荣时期变得安逸，产生了“优越感”并缺乏努力工作，无法适应更精简的创业文化。\n\n他用一个规模更小、专注于基本培训和资源的“人才运营”团队取代了HR团队，以此将其与他所称的传统HR的“错误能量”区分开来。布雷斯洛还放弃了此前的一些福利，例如四天工作制和无限带薪休假，以使公司回归“艰苦奋斗”的状态。\n\n尽管有布雷斯洛否认的拖欠工资传闻，他声称这一战略正在奏效。Bolt 已精简至约100名初级、更努力工作的员工，据报道，客户也得到了更好的服务。"
+  },
+  {
+    "id": "48231477",
+    "title": "Logging Off",
+    "url": "https://user8.bearblog.dev/logging-off/",
+    "summary": "On May 22, 2026, the author expresses profound frustration with the internet, viewing it as a \"net negative\" that distorts their perception of the world into a \"horrible place.\" They resolve to significantly reduce their online engagement, actively devising strategies to achieve this. As an immediate step and reminder, they have reactivated Cold Turkey Blocker, a tool previously utilized. The author's ultimate goal is to live fully in the present, within the physical world, from waking until sleeping, reiterating the belief that true reality exists offline, not in the digital realm.",
+    "chinese_title": "注销",
+    "chinese_summary": "On May 22, 2026, the author expresses profound frustration with the internet, viewing it as a \"net negative\" that distorts their perception of the world into a \"horrible place.\" They resolve to significantly reduce their online engagement, actively devising strategies to achieve this. As an immediate step and reminder, they have reactivated Cold Turkey Blocker, a tool previously utilized. The author's ultimate goal is to live fully in the present, within the physical world, from waking until sleeping, reiterating the belief that true reality exists offline, not in the digital realm."
+  },
+  {
+    "id": "48214188",
+    "title": "PopuLoRA: Co-Evolving LLM Populations for Reasoning Self- Play",
+    "url": "https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play",
     "summary": "生成摘要时出错",
-    "chinese_title": "Bolt CEO says he let go of HR team for creating problems that didn't exist",
+    "chinese_title": "PopuLoRA: 协同演化LLM群体实现推理自博弈",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48201344",
-    "title": "El Niño is coming. The last time ocean temp. looked like this, millions died",
-    "url": "https://respublicamgz.substack.com/p/a-super-el-nino-is-coming-the-last",
+    "id": "48239347",
+    "title": "A scoping review of bicycling interventions’ impacts on well-being",
+    "url": "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2026.1807791/full",
     "summary": "生成摘要时出错",
-    "chinese_title": "El Niño is coming. The last time ocean temp. looked like this, millions died",
+    "chinese_title": "A scoping review of bicycling interventions’ impacts on well-being",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48225357",
-    "title": "Spotify will start reserving concert tickets for fans",
-    "url": "https://www.hollywoodreporter.com/music/music-industry-news/spotify-will-start-reserving-concert-tickets-for-superfans-1236603106/",
+    "id": "48238568",
+    "title": "1940 Air Terminal Museum Begins Liquidation",
+    "url": "https://www.1940airterminal.org/news/liquidation-of-simulators",
     "summary": "生成摘要时出错",
-    "chinese_title": "Spotify will start reserving concert tickets for fans",
+    "chinese_title": "1940 Air Terminal Museum Begins Liquidation",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48237985",
+    "title": "Built AI forensic accounting software with my dad",
+    "url": "https://case-trail.com/blog/ai-forensic-accounting-automation",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Built AI forensic accounting software with my dad",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48229813",
+    "title": "US DHS put out alert on comedian who created parody ICE tip website",
+    "url": "https://www.theguardian.com/us-news/2026/may/21/dhs-bolo-ben-palmer-parody-ice-tip-website",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US DHS put out alert on comedian who created parody ICE tip website",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48229528",
+    "title": "The SpaceX IPO It's Worse Than You Think [video]",
+    "url": "https://www.youtube.com/watch?v=-X6YzlY_8tM",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The SpaceX IPO It's Worse Than You Think [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48239790",
+    "title": "Bun's unreleased Rust port has 13,365 unsafe blocks",
+    "url": "https://bun.com/bun-unsafe-audit",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Bun's unreleased Rust port has 13,365 unsafe blocks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48238429",
+    "title": "Lawmakers Demand Answers as CISA Tries to Contain Data Leak",
+    "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Lawmakers Demand Answers as CISA Tries to Contain Data Leak",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48230720",
+    "title": "How you probably will find Satoshi",
+    "url": "https://foxchapelresearch.substack.com/p/how-you-probably-will-find-satoshi",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How you probably will find Satoshi",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48219682",
+    "title": "The famous O3 \"GeoGuessr\" prompt did not work",
+    "url": "https://www.seangoedecke.com/the-o3-geoguessr-prompt-did-not-work/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The famous O3 \"GeoGuessr\" prompt did not work",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48214215",
+    "title": "GitHub's take on age assurance for developers",
+    "url": "https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GitHub's take on age assurance for developers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48240198",
+    "title": "Anthropic's \"Profitability\" Swindle",
+    "url": "https://www.wheresyoured.at/anthropics-profitability-swindle/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Anthropic's \"Profitability\" Swindle",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48238817",
+    "title": "CBS Radio signs off after nearly 100 years of broadcasting",
+    "url": "https://www.cbsnews.com/news/cbs-news-radio-last-day/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "CBS Radio signs off after nearly 100 years of broadcasting",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48225149",
+    "title": "Heretic has been served a legal notice by Meta, Inc",
+    "url": "https://old.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Heretic has been served a legal notice by Meta, Inc",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48214722",
+    "title": "Sam Altman makes 'mic drop' offer to every Y Combinator startup",
+    "url": "https://techcrunch.com/2026/05/20/sam-altman-makes-mic-drop-offer-to-every-y-combinator-startup/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Sam Altman makes 'mic drop' offer to every Y Combinator startup",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48229260",
+    "title": "Curtis Yarvin and the Political Evolution of Silicon Valley Reactionaries",
+    "url": "https://www.dontbeasucker.blog/p/the-butterflies-in-your-stomach",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Curtis Yarvin and the Political Evolution of Silicon Valley Reactionaries",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48220493",
+    "title": "Denmark's wind and solar investments shield it from global energy turmoil",
+    "url": "https://www.pbs.org/newshour/show/how-denmarks-wind-and-solar-investments-shield-it-from-global-energy-turmoil",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Denmark's wind and solar investments shield it from global energy turmoil",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48213550",
+    "title": "SpaceX punts Starship launch as investigation opens into Starbase worker's death",
+    "url": "https://www.scientificamerican.com/article/spacex-punts-starship-v3-launch-to-may-21-as-investigation-opens-into-starbase-worker-death/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "SpaceX punts Starship launch as investigation opens into Starbase worker's death",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48228283",
+    "title": "AI-assisted engineers are burning out, is this fine?",
+    "url": "https://evilmartians.com/chronicles/ai-assisted-engineers-are-burning-out-is-this-fine",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI-assisted engineers are burning out, is this fine?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48213569",
+    "title": "Google published exploit code for an unfixed Chromium bug",
+    "url": "https://arstechnica.com/security/2026/05/google-publishes-exploit-code-threatening-millions-of-chromium-users/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google published exploit code for an unfixed Chromium bug",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48236392",
+    "title": "Bank boss sorry after describing workers as 'lower value human capital'",
+    "url": "https://www.bbc.com/news/articles/c98rqld1j3yo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Bank boss sorry after describing workers as 'lower value human capital'",
     "chinese_summary": "生成摘要时出错"
   }
 ]
