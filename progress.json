@@ -1,138 +1,74 @@
 [
   {
-    "id": "48260140",
-    "title": "CBP Directive 3340-049B: Border Search of Electronic Devices",
-    "url": "https://www.cbp.gov/document/directives/cbp-directive-no-3340-049b-border-search-electronic-devices",
-    "summary": "CBP Directive 3340-049B, titled \"Border Search of Electronic Devices,\" provides comprehensive guidance and standard operating procedures for U.S. Customs and Border Protection (CBP) personnel. The directive addresses the searching, reviewing, retaining, and sharing of information contained within a broad range of electronic and digital devices. This includes computers, tablets, mobile phones, cameras, music players, and various forms of removable media and storage devices.\n\nThese procedures apply to both inbound and outbound border searches conducted by CBP. Classified as an Administrative Handbook and Policy Guidance, the directive is relevant to principles of Accountability and Transparency, and the Freedom of Information Act (FOIA). The directive itself is dated January 28, 2026, with an accompanying memo for distribution dated February 2, 2026.",
-    "chinese_title": "CBP 指令 3340-049B：电子设备边境搜查",
-    "chinese_summary": "CBP 指令 3340-049B，题为“电子设备边境搜查”，为美国海关及边境保护局 (CBP) 人员提供了全面的指导和标准操作程序。该指令涉及对存储在各类电子和数字设备中的信息进行搜查、审查、保留和共享。这包括电脑、平板电脑、手机、相机、音乐播放器，以及各种形式的可移动媒体和存储设备。\n\n这些程序适用于由CBP执行的进出境边境搜查。该指令被归类为行政手册和政策指南，与问责制和透明度原则以及《信息自由法案》(FOIA) 相关。该指令本身的日期为2026年1月28日，并附有一份日期为2026年2月2日的分发备忘录。"
+    "id": "48270111",
+    "title": "The bootstrapper's EU stack for under €10 per month",
+    "url": "https://eualternative.eu/guides/bootstrapper-free-tier-eu-stack/",
+    "summary": "This guide outlines a comprehensive EU-based tech stack for bootstrappers aiming to launch a product for under €10 per month, primarily utilizing permanent free tiers or highly affordable services. The core principle is to avoid US hyperscalers and minimize infrastructure costs until a product gains traction.\n\nThe only fixed cost identified is hosting, with **Hetzner Cloud's CX33 server** recommended at around €7/month, offering 4 vCPUs, 8 GB RAM, and 80 GB disk—sufficient for many early-stage applications. Netcup is a runner-up with plans under €5/month.\n\nFor other essential services, the article suggests:\n*   **Transactional Email:** Ahasend (1,000 free emails/month), Lettermint (300 free emails/month), or Brevo (300 free emails/day).\n*   **Newsletters/Marketing:** Sender.net (up to 2,500 subscribers, 15,000 emails/month free) or Brevo.\n*   **Analytics:** Simple Analytics (free for small projects) or TelemetryDeck (generous free tier).\n*   **Monitoring:** UptimeRobot (50 monitors free) or Healthchecks.io (20 checks free).\n*   **Forms:** Tally (unlimited forms/responses free) or Formbricks (open source, free hosted tier).\n*   **Authentication:** Hanko (free tier with passkeys).\n*   **Payments:** Mollie (no monthly fees, pay-per-transaction) or Creem (Merchant of Record for digital products).\n\nThe guide emphasizes that while free tiers have limits, exceeding them typically means a product has found success, and the subsequent paid upgrades are usually incremental, allowing the stack to scale smoothly. This approach offers digital sovereignty and cost-effectiveness for early-stage development.",
+    "chinese_title": "创业者的欧盟技术栈，每月不到10欧元。",
+    "chinese_summary": "本指南概述了一个全面的、基于欧盟的技术栈，适用于旨在每月花费不到10欧元推出产品的自力更生创业者，主要利用永久免费套餐或价格实惠的服务。核心原则是避免使用美国超大规模服务商，并在产品获得关注之前最大限度地降低基础设施成本。\n\n唯一确定的固定成本是主机托管，推荐使用 **Hetzner Cloud 的 CX33 服务器**，月费约7欧元，提供4个虚拟CPU、8GB内存和80GB磁盘空间——足以满足许多早期应用程序的需求。Netcup 紧随其后，提供每月不到5欧元的套餐。\n\n对于其他基本服务，文章建议：\n*   **事务性邮件:** Ahasend（每月1,000封免费邮件）、Lettermint（每月300封免费邮件）或 Brevo（每日300封免费邮件）。\n*   **新闻简报/营销:** Sender.net（最多2,500名订阅者，每月15,000封免费邮件）或 Brevo。\n*   **分析:** Simple Analytics（小型项目免费）或 TelemetryDeck（慷慨的免费套餐）。\n*   **监控:** UptimeRobot（50个免费监控器）或 Healthchecks.io（20次免费检查）。\n*   **表单:** Tally（无限免费表单/回复）或 Formbricks（开源，免费托管套餐）。\n*   **身份验证:** Hanko（提供通行密钥的免费套餐）。\n*   **支付:** Mollie（无月费，按交易付费）或 Creem（数字产品的备案商家）。\n\n该指南强调，尽管免费套餐有其限制，但超出限制通常意味着产品已获得成功，并且随后的付费升级通常是增量的，使技术栈能够平稳扩展。这种方法为早期开发提供了数字主权和成本效益。"
   },
   {
-    "id": "48259192",
-    "title": "Building Pi with Pi",
-    "url": "https://lucumr.pocoo.org/2026/5/24/pi-oss/",
-    "summary": "Armin Ronacher reflects on using \"Pi\" (an AI agent, or \"clanker\") to develop the \"Pi\" software project, observing significant challenges and implications for open source. A key problem is \"slop issues\": AI-generated bug reports are often confidently inaccurate, expand scope unnecessarily, and are treated as evidence by other agents, leading them astray. Ronacher advocates for concise, human-observed issue descriptions.\n\nThis \"slop\" extends to code, where AI models frequently over-engineer solutions by adding local defenses against bad states, rather than enforcing global invariants or preventing bad data at its source, thus increasing complexity. The sheer volume of low-quality, LLM-assisted contributions creates a massive maintenance burden, overwhelming issue trackers and fragmenting effort. Ronacher stresses that the responsibility for this \"slop\" lies with the human users, not the platforms.\n\nDespite these issues, Pi is used for specific tasks like parallel issue reproduction. Custom commands guide agents to independently verify behavior and derive analyses, explicitly distrusting pre-existing \"slop.\"\n\nUltimately, Ronacher argues that AI, while increasing code and project volume, fragments open-source efforts and encourages isolated work, undermining the core value of open source: human collaboration, communication, and solving hard problems together to build strong, shared foundations. He emphasizes that agency belongs to humans, not machines.",
-    "chinese_title": "用树莓派构建树莓派",
-    "chinese_summary": "Armin Ronacher反思了使用“Pi”（一个AI代理，或称“笨重机器人”）开发“Pi”软件项目的情况，并指出了对开源项目带来的严峻挑战和深远影响。一个关键问题是“浮泛问题”：AI生成的bug报告常常自信地不准确，不必要地扩大范围，并被其他代理视为证据，从而误导它们。Ronacher倡导简洁的、由人类观察到的问题描述。\n\n这种“浮泛”也延伸到了代码层面，AI模型经常通过添加针对不良状态的局部防御来过度设计解决方案，而不是强制全局不变量或从源头阻止不良数据，从而增加了复杂性。大量低质量的、由LLM（大型语言模型）辅助的贡献带来了巨大的维护负担，使问题追踪器不堪重负，并分散了精力。Ronacher强调，这种“浮泛”的责任在于人类使用者，而非平台。\n\n尽管存在这些问题，“Pi”仍被用于特定任务，例如并行问题复现。自定义指令引导代理独立验证行为并进行分析，明确不信任已存在的“浮泛”内容。\n\n最终，Ronacher认为，AI尽管增加了代码量和项目数量，却分散了开源工作，并鼓励孤立作业，从而破坏了开源的核心价值：人类协作、沟通以及共同解决难题，以构建强大、共享的基础。他强调，主导权在于人类，而非机器。"
+    "id": "48279453",
+    "title": "Dropbox CEO Drew Houston to step down",
+    "url": "https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html",
+    "summary": "Dropbox CEO Drew Houston is stepping down after 19 years, transitioning to an executive chairman role. Ashraf Alkarmi, promoted from product chief, will initially serve as co-CEO alongside Houston before assuming the top job solo.\n\nHouston, who founded Dropbox at age 24, pioneered the cloud storage market and was the first Y Combinator company to go public, building a net worth over $2 billion. Despite these achievements, Dropbox's market cap is half its 2018 IPO high and revenue has been flat recently, facing intense competition from tech giants and rival Box. The company also grapples with concerns about AI's potential to disrupt the subscription software industry.\n\nHouston, now 43, acknowledges the challenges but dismisses comparisons to more highly valued peers like Airbnb, expressing pride that \"a percentage of the planet still uses\" Dropbox, which has over 18 million paying users. He believes fears of an \"SaaS Apocalypse\" due to AI are exaggerated, noting customers aren't canceling subscriptions for ChatGPT.\n\nDropbox is integrating AI, with its Dash feature allowing users to search and interact with various content types. Houston sees great potential in AI and plans to pursue new entrepreneurial ventures in the field. Mike Torres from Google will join as chief product officer. Houston stated there was no perfect time for his departure, expressing trust in Alkarmi and confidence in the company's current standing.",
+    "chinese_title": "Dropbox 首席执行官德鲁·休斯顿将卸任",
+    "chinese_summary": "Dropbox 首席执行官 Drew Houston 在任职 19 年后将卸任，转任执行董事长。产品主管 Ashraf Alkarmi 获晋升，将先与 Houston 共同担任联席首席执行官，之后独自执掌最高职位。\n\nHouston 在 24 岁时创立了 Dropbox，开创了云存储市场，并成为首家上市的 Y Combinator 公司，积累了超过 20 亿美元的净资产。尽管取得了这些成就，Dropbox 的市值仅为其 2018 年 IPO 高点的一半，近期营收持平，面临着来自科技巨头和竞争对手 Box 的激烈竞争。该公司还面临着对人工智能可能颠覆订阅软件行业的担忧。\n\n现年 43 岁的 Houston 承认这些挑战，但驳斥了将其与 Airbnb 等估值更高的同行进行比较的说法，并自豪地表示“全球仍有一定比例的人使用”Dropbox，该公司拥有超过 1800 万付费用户。他认为，由于人工智能而导致的“SaaS 行业末日”的担忧被夸大了，并指出客户并没有因为 ChatGPT 而取消订阅。\n\nDropbox 正在整合人工智能，其 Dash 功能允许用户搜索和与各种内容类型进行交互。Houston 看好人工智能的巨大潜力，并计划在该领域寻求新的创业项目。来自谷歌的 Mike Torres 将加入担任首席产品官。Houston 表示，他卸任没有一个完美时机，并表达了对 Alkarmi 的信任以及对公司目前状况的信心。"
   },
   {
-    "id": "48259861",
-    "title": "Defeating Git Rigour Fatigue with Jujutsu",
-    "url": "https://ikesau.co/blog/defeating-git-rigour-fatigue-with-jujutsu/",
-    "summary": "The article addresses \"git rigour fatigue,\" the difficulty of maintaining a clean, sequential commit history (e.g., \"define types,\" \"add DB functions\") during complex feature development. Often, commits become a mixed \"mayhem\" of fixes, test code, and scattered changes, breaking the intended narrative. While Jujutsu offers tools like `jj absorb` and `jj squash -i`, they have limitations such as incorrect change assignment or merge conflict issues.\n\nThe author proposes a new Jujutsu technique to resolve this. It involves first creating an ideal, empty commit history. Then, all actual development changes are squashed into a single \"everything commit.\" Finally, the developer interactively squashes specific changes *from* this \"everything commit\" *into* the predefined clean commits, effectively sorting the \"pile of laundry\" into the right conceptual boxes until the \"everything commit\" is empty.\n\nThis method allows for flexible, improvised development with temporary debugging code, deferring the rigorous cleanup to the end. It's considered superior to `jj split` for easier hunk sorting and avoids the merge conflicts that can arise from incremental `jj squash -i` operations, as the final \"everything commit\" state ensures conflict-free distribution. A key drawback is that intermediate commits might not always compile.",
-    "chinese_title": "以柔术克服Git严谨性疲劳",
-    "chinese_summary": "本文探讨了“Git严谨性疲劳”，即在复杂功能开发过程中，难以维护干净、连续的提交历史（例如，“定义类型”、“添加数据库函数”）的问题。通常，提交会变成修复、测试代码和零散改动的混杂“混乱”，打破了预期的叙述性。尽管Jujutsu提供了`jj absorb`和`jj squash -i`等工具，但它们仍有局限性，例如更改分配不正确或存在合并冲突问题。\n\n作者提出了一种新的Jujutsu技术来解决此问题。该技术首先创建了一个理想的、空的提交历史。然后，将所有实际开发更改合并到一个“所有改动提交”中。最后，开发人员通过交互方式将特定的更改从这个“所有改动提交”合并到预定义的干净提交中，从而有效地将“一堆待洗衣服”分拣到正确的概念箱中，直到“所有改动提交”为空。\n\n这种方法允许进行灵活的、即兴的开发，其中可以包含临时调试代码，并将严格的清理工作推迟到最后。它被认为优于`jj split`，因为它更容易对改动块进行排序，并且避免了增量`jj squash -i`操作可能引起的合并冲突，因为最终的“所有改动提交”状态确保了无冲突的分发。一个主要的缺点是中间提交可能不总是能编译通过。"
+    "id": "48278610",
+    "title": "Outsourcing plus local AI will soon become more economical vs. frontier labs",
+    "url": "https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/",
+    "summary": "The article, \"Outsourcing plus local AI will soon become more economical vs. frontier labs,\" argues that a combination of global outsourcing and local AI solutions will soon offer a more cost-effective and competitive alternative to large frontier AI labs like OpenAI and Anthropic.\n\nThe core premise is that the cost of AI development is rapidly declining due to advances in open-source models (e.g., Llama 3, Mistral), cheaper specialized hardware (e.g., Apple Silicon, consumer GPUs), and efficient inference techniques. This allows for powerful AI capabilities to be run locally or on-premises.\n\nOutsourcing, a proven model for software development, can leverage skilled AI engineers from regions with lower labor costs. When these outsourced teams develop and fine-tune open-source LLMs to run on affordable local hardware, businesses can avoid the high API costs, data privacy concerns, and general-purpose nature of frontier lab offerings.\n\nLocal AI provides benefits such as significant cost savings (no per-token API fees), enhanced data privacy and security, greater customization through fine-tuning for specific business needs, and reduced dependency on external services. The author likens this shift to the rise of open-source Linux and commodity hardware disrupting proprietary systems.\n\nUltimately, the article predicts that this synergy of outsourced talent and local, fine-tuned open-source AI will empower businesses to achieve powerful, tailored AI solutions at a fraction of the cost of relying on expensive frontier models, leading to a significant market shift.",
+    "chinese_title": "外包加本地AI很快将比前沿实验室更划算。",
+    "chinese_summary": "文章《外包加本地AI将很快比前沿实验室更经济》指出，全球外包与本地AI解决方案的结合，很快将为OpenAI和Anthropic等大型前沿AI实验室提供一个更具成本效益和竞争力的替代方案。\n\n其核心前提是，由于开源模型（如Llama 3、Mistral）的进步、更便宜的专用硬件（如Apple Silicon、消费级GPU）以及高效推理技术的发展，AI开发成本正在迅速下降。这使得强大的AI能力可以在本地或内部部署运行。\n\n作为一种经过验证的软件开发模式，外包可以利用劳动力成本较低地区的技术熟练AI工程师。当这些外包团队开发并微调开源大型语言模型（LLMs），使其在经济实惠的本地硬件上运行时，企业便可避免前沿实验室产品的高昂API成本、数据隐私担忧以及其通用性。\n\n本地AI带来的好处包括显著的成本节约（无按token计费的API费用）、增强的数据隐私和安全性、通过针对特定业务需求进行微调而实现更大程度的定制，以及减少对外部服务的依赖。作者将这一转变比作开源Linux和商用硬件颠覆专有系统的崛起。\n\n最终，文章预测，外包人才与本地微调开源AI的这种协同作用，将使企业能够以依赖昂贵前沿模型一小部分的成本实现强大、量身定制的AI解决方案，从而导致显著的市场转变。"
   },
   {
-    "id": "48266435",
-    "title": "Pope Leo: opaque AI run by few firms risks \"New Forms of Dehumanization\"",
-    "url": "https://variety.com/2026/biz/global/pope-leo-ai-encyclical-algorithms-threaten-dehumanisation-1236758186/",
-    "summary": "Pope Leo issued a significant AI manifesto, \"Magnificent Humanity,\" warning that \"opaque algorithms\" controlled by a \"handful of powerful private companies\" risk \"new forms of dehumanization.\" The pontiff, in an unusual move, personally presented the encyclical at the Vatican alongside Christopher Olah, founder of major AI developer Anthropic.\n\nPope Leo stressed that AI must not remain in the hands \"of a few,\" citing its recent use in the U.S.-Israel War on Iran, and cautioned against the technological revolution being driven by the \"idolatry of profit.\" While technology is not \"inherently evil,\" he clarified it's never neutral, reflecting the characteristics of its creators and users.\n\nHe called for \"more active political involvement\" to slow down rapid advancements, advocating for \"robust legal frameworks, independent oversight, informed users and a political system that does not abdicate its responsibility.\" The encyclical includes a J.R.R. Tolkien quote on shared responsibility. Anthropic, which has engaged with religious communities, previously refused the Pentagon's demands for unrestricted use of its AI assistant, Claude.",
-    "chinese_title": "教宗良：少数公司掌控的不透明人工智能恐致“新形式非人化”",
-    "chinese_summary": "教皇利奥发布了一份重要的AI宣言《壮丽的人性》，警告称“少数强大的私人公司”控制的“不透明算法”有导致“新形式的非人化”的风险。教宗采取了不寻常的举动，亲自在梵蒂冈与主要人工智能开发商Anthropic的创始人克里斯托弗·奥拉一起发布了这份通谕。\n\n教皇利奥强调，人工智能绝不能“掌握在少数人手中”，他提到其最近在美国-以色列对伊朗的战争中的应用，并警告不要让技术革命被“对利润的盲目崇拜”所驱动。他阐明，尽管技术本身并非“邪恶”，但它绝不是中立的，它反映了其创造者和使用者的特点。\n\n他呼吁“更积极的政治参与”以减缓快速发展，主张建立“健全的法律框架、独立的监督、知情用户以及一个不推卸责任的政治体系”。这份通谕包含J.R.R.托尔金关于共同责任的一段引文。曾与宗教团体接触的Anthropic公司此前曾拒绝五角大楼无限制使用其人工智能助手Claude的要求。"
+    "id": "48271327",
+    "title": "Yoti age checks share facial photos and device fingerprints with third parties",
+    "url": "https://techxplore.com/news/2026-05-online-age-pointless-privacy.html",
+    "summary": "The article criticizes Yoti's age verification methods, which are increasingly adopted online due to regulatory pressures, particularly from new UK laws like the Digital Markets, Competition and Consumers Act and the Online Safety Act. While aiming to protect minors, these systems raise significant privacy concerns.\n\nYoti's technology, used by platforms like Instagram and TikTok, requires users to submit a photo of their face and a document like a driver's license or passport. This data, including facial geometry and device fingerprints, is then shared with Yoti, a third-party company. The article highlights that sharing such sensitive biometric and device data with external entities poses substantial risks, as this information could be exploited by hackers or used for targeted advertising and surveillance.\n\nThe author argues that these online age checks are largely \"pointless\" as they are easily circumvented by tech-savvy children using VPNs, fake IDs, or older siblings' details. Instead of protecting children, the primary outcome is the collection of vast amounts of personal data from adults and children alike. The article concludes that these mandated age verification systems represent a privacy-eroding \"digital ID system by the back door,\" transforming the internet into a less anonymous and more surveilled environment without effectively solving the problem they are meant to address.",
+    "chinese_title": "Yoti 年龄验证会与第三方共享人脸照片和设备指纹。",
+    "chinese_summary": "文章批评了Yoti的年龄验证方法，这些方法由于监管压力，特别是受到英国新法律，如《数字市场、竞争和消费者法案》和《网络安全法案》的影响，正日益在网络上普及。尽管旨在保护未成年人，这些系统却引发了重大的隐私担忧。\n\nYoti的技术被Instagram和TikTok等平台使用，它要求用户提交面部照片以及驾驶执照或护照等证件。这些数据，包括面部几何特征和设备指纹，随后会被分享给第三方公司Yoti。文章强调，将如此敏感的生物识别和设备数据分享给外部实体会带来巨大风险，因为这些信息可能被黑客利用，或用于精准广告和监控。\n\n作者认为，这些在线年龄验证大体上是“徒劳的”，因为精通技术的儿童可以轻易地通过使用VPN、伪造身份或冒用兄弟姐妹的信息来规避这些检查。这些系统非但没有保护儿童，其主要结果却是收集了大量来自成人和儿童的个人数据。文章总结道，这些强制性的年龄验证系统构成了一个侵蚀隐私的“后门数字身份系统”，将互联网变成一个匿名性更低、更受监控的环境，却未能有效解决它们旨在解决的问题。"
   },
   {
-    "id": "48257532",
-    "title": "The seed oil panic is hurting my cardiac patients",
-    "url": "https://www.statnews.com/2026/05/22/seed-oils-healthy-fats-tallow-fact-check-cardiac-health/",
-    "summary": "The provided text describes an episode of the \"First Opinion Podcast\" released on May 23, 2026. The episode's topic is specifically titled \"How the perimenopause movement is hurting women.\"\n\nIt is important to note that the main title provided for this article, \"The seed oil panic is hurting my cardiac patients,\" does not correspond to the content describing this specific podcast episode. The provided content exclusively details the podcast episode on perimenopause.",
-    "chinese_title": "籽油恐慌正在伤害我的心脏病患者。",
-    "chinese_summary": "所提供的文本描述了于2026年5月23日发布的“第一观点播客”的一集。该集的主题具体标题为“围绝经期运动如何伤害女性”。\n\n值得注意的是，为本文提供的主标题“籽油恐慌正在伤害我的心脏病患者”与描述这一特定播客剧集的内容不符。所提供的内容专门详细介绍了关于围绝经期的播客剧集。"
-  },
-  {
-    "id": "48256475",
-    "title": "Mastering Dyalog APL",
-    "url": "https://mastering.dyalog.com/README.html",
-    "summary": "The \"Mastering Dyalog APL\" book serves as the primary resource for learning Dyalog APL. The first edition, authored by Bernard Legrand in November 2009, is becoming outdated as Dyalog APL evolves and technology changes rapidly.\n\nTo address this, an updated and more modern rework is currently in progress, led by Rodrigo Girão Serrão. This new version is being created using Jupyter Notebooks to provide an interactive learning experience, with a static online version available and a printed edition planned. The rework updates and rewrites prose and examples from the original edition, while also adding new sections and chapters to cover features introduced since Dyalog APL 12.0 (2009).\n\nThe online version is explicitly stated as a work in progress, with missing content and potential for heavy revision. Readers are encouraged to provide feedback, suggest corrections, or report typos via GitHub issues or email to mdapl@dyalog.com. A changelog is available to review the differences between this rework and the original version.",
-    "chinese_title": "精通 Dyalog APL",
-    "chinese_summary": "《精通Dyalog APL》一书是学习Dyalog APL的主要资源。该书第一版由Bernard Legrand于2009年11月撰写，但随着Dyalog APL的发展和技术的快速变化，该版本正变得过时。\n\n为解决此问题，目前由Rodrigo Girão Serrão牵头，正在进行一次更新且更现代的修订工作。这个新版本正使用Jupyter Notebooks创建，旨在提供交互式学习体验，目前已有一个静态在线版本可用，并计划推出印刷版。此次修订更新并重写了原版中的散文和示例，同时还增加了新的章节，以涵盖Dyalog APL 12.0（2009年）以来引入的新功能。\n\n在线版本明确声明仍在开发中，存在内容缺失和大幅修订的可能性。我们鼓励读者通过GitHub issues或发送邮件至mdapl@dyalog.com提供反馈、提出修改建议或报告错别字。提供了变更日志，供读者查阅此次修订与原始版本之间的差异。"
+    "id": "48279321",
+    "title": "AWS Fired the One Employee Who Gave a Damn",
+    "url": "https://www.seuros.com/blog/aws-fired-the-human-who-made-the-difference/",
+    "summary": "The article, \"AWS Fired the One Employee Who Gave a Damn,\" concludes a trilogy detailing the author's experience with AWS. In August 2025, AWS deleted the author's 10-year account without warning. It was restored only after Tarus Balog, an AWS Open Source Strategy team member and 20-year open-source veteran, escalated the case to CEO attention, considering it his proudest achievement.\n\nNow, Tarus has been fired. The author outlines a timeline: Tarus's intervention in August 2025, followed by AWS layoffs and his eventual dismissal in May 2026. The article argues that AWS \"optimized away\" Tarus, failing to reward his genuine \"customer obsession\" and human problem-solving. This is set against AWS's aggressive pivot to GenAI, which Tarus observed overshadowed foundational services and human value.\n\nThe author connects Tarus's firing to a pattern of AWS denying AI's role in critical failures, citing his own account deletion, the Kiro incident (December 2025), and a 6.3 million order loss (March 2026). Despite initial denials, these events led to mandated safety resets, revealing a system that blames humans while fighting AI-induced fires.\n\nThe \"Correction of Error\" process launched after the author's incident proved ineffectual, with systemic issues unaddressed and the key advocate for change removed. The author concludes that individuals like Tarus, who challenge broken systems, are eventually \"optimized away,\" warning users to maintain distributed backups and exit strategies, as AWS has lost a critical \"human circuit breaker.\"",
+    "chinese_title": "AWS 解雇了唯一一个真正在乎的员工。",
+    "chinese_summary": "文章《AWS解雇了那个真正关心的人》是详细记述作者AWS经历的三部曲的完结篇。2025年8月，AWS未经警告删除了作者使用十年的账户。此事经AWS开源战略团队成员、20年开源老兵Tarus Balog升级至CEO层面才得以恢复，Tarus认为这是他最引以为豪的成就。\n\n现在，Tarus已被解雇。作者梳理了时间线：Tarus于2025年8月介入，随后AWS进行了裁员，而他本人最终于2026年5月被解雇。文章指出，AWS“优化掉”了Tarus，未能奖励他真正的“客户至上”精神和人本的解决问题方式。这与AWS积极转向生成式AI的背景形成对比，Tarus观察到，这种转向遮蔽了基础服务和人的价值。\n\n作者将Tarus被解雇一事与AWS否认AI在关键故障中作用的模式联系起来，列举了其自身的账户删除事件、Kiro事件（2025年12月）以及630万订单损失（2026年3月）。尽管最初予以否认，但这些事件导致了强制性的安全重置，揭示了一个在扑灭AI引发的“大火”时却将责任归咎于人类的系统。\n\n作者账户事件后启动的“错误纠正”流程被证明无效，系统性问题未得到解决，而关键的变革倡导者却被移除。作者总结道，像Tarus这样挑战存在问题的系统的人最终都会被“优化掉”，并警告用户要维护分布式备份和退出策略，因为AWS已失去了一个关键的“人类断路器”。"
   },
   {
     "id": "48266422",
     "title": "Microsoft pulls plug on plans for 244-acre data center in Caledonia (2025)",
     "url": "https://www.tmj4.com/news/racine-county/microsoft-pulls-plug-on-plans-for-244-acre-data-center-in-caledonia-after-community-pushback",
-    "summary": "Microsoft has officially withdrawn its plans for a 244-acre data center in the Village of Caledonia, Wisconsin, citing significant community pushback. The tech giant's decision follows widespread opposition, including hundreds of residents voicing concerns and over 2,000 people signing a petition against the proposed rezoning for the site, located on County Line Road and State Highway 32 near residential and farmland properties.\n\nWhile abandoning this specific location, Microsoft affirmed its continued interest in investing in Southeast Wisconsin. The company expressed its intention to work with Caledonia and Racine County leaders to identify an alternative site that aligns with both community priorities and its development goals.\n\nResidents like Prescott Balch welcomed the news, calling it a \"great day\" for Caledonia, believing their arguments successfully swayed the corporation. Village Trustee Nancy Pierce also respected Microsoft's decision to listen to constituent feedback. Both Balch and Pierce indicated they are open to working with Microsoft in the future, suggesting that earlier and more direct community engagement would be crucial for any subsequent proposals. Village Administrator Todd Willis noted that no official withdrawal has been submitted to the Village yet.",
+    "summary": "Microsoft has abandoned its plans for a 244-acre data center in the Village of Caledonia, Wisconsin, due to significant community opposition. The tech giant's decision followed extensive pushback from residents, including over 2,000 signatures on a petition opposing the rezoning necessary for the project.\n\nThe proposed site was located on County Line Road and State Highway 32, southwest of the WE Energies Oak Creek Power Plant, an area characterized by farmland and residential properties. A Microsoft spokesperson confirmed the withdrawal, stating they \"chosen not to move forward with this site\" based on community feedback.\n\nDespite this setback, Microsoft affirmed its continued interest in investing in Southeast Wisconsin. The company expressed its intent to work with Caledonia and Racine County leaders to identify an alternative site that better aligns with both community priorities and Microsoft's long-term development objectives.\n\nResidents, like Prescott Balch, welcomed the news with excitement, while Village Trustee Nancy Pierce respected Microsoft's decision to listen to community concerns and board questions. Both stakeholders expressed openness to Microsoft investing in Caledonia but advocated for earlier and more direct engagement between the company and the community in future planning processes. Village Administrator Todd Willis noted that nothing official regarding the withdrawal had been submitted to the Village yet.",
     "chinese_title": "微软叫停在喀里多尼亚建设244英亩数据中心的计划 (2025年)",
-    "chinese_summary": "微软已正式撤回在威斯康星州卡利多尼亚村建设一个244英亩数据中心的计划，理由是遭到社区的强烈反对。这家科技巨头的决定是由于广泛的反对声浪，其中包括数百名居民表达担忧，以及超过2000人签署请愿书，反对将该地块（位于县界路和32号州道交界处，毗邻住宅和农田）重新规划用途。\n\n尽管放弃了这一特定地点，微软仍重申其继续投资威斯康星州东南部的兴趣。该公司表示，打算与卡利多尼亚和拉辛县的领导人合作，以确定一个既符合社区优先事项又符合其发展目标的替代地点。\n\n普雷斯科特·巴尔奇等居民对这一消息表示欢迎，称这是卡利多尼亚的“伟大一天”，认为他们的论点成功地说服了这家公司。村受托人南希·皮尔斯也尊重微软倾听民众反馈的决定。巴尔奇和皮尔斯都表示，他们未来对与微软合作持开放态度，并建议任何后续提案的关键在于更早、更直接的社区参与。村行政官托德·威利斯指出，村里尚未收到任何正式的撤回文件。"
+    "chinese_summary": "Microsoft has abandoned its plans for a 244-acre data center in the Village of Caledonia, Wisconsin, due to significant community opposition. The tech giant's decision followed extensive pushback from residents, including over 2,000 signatures on a petition opposing the rezoning necessary for the project.\n\nThe proposed site was located on County Line Road and State Highway 32, southwest of the WE Energies Oak Creek Power Plant, an area characterized by farmland and residential properties. A Microsoft spokesperson confirmed the withdrawal, stating they \"chosen not to move forward with this site\" based on community feedback.\n\nDespite this setback, Microsoft affirmed its continued interest in investing in Southeast Wisconsin. The company expressed its intent to work with Caledonia and Racine County leaders to identify an alternative site that better aligns with both community priorities and Microsoft's long-term development objectives.\n\nResidents, like Prescott Balch, welcomed the news with excitement, while Village Trustee Nancy Pierce respected Microsoft's decision to listen to community concerns and board questions. Both stakeholders expressed openness to Microsoft investing in Caledonia but advocated for earlier and more direct engagement between the company and the community in future planning processes. Village Administrator Todd Willis noted that nothing official regarding the withdrawal had been submitted to the Village yet."
   },
   {
-    "id": "48252192",
-    "title": "Don't Roll Your Own",
-    "url": "https://susam.net/do-not-roll-your-own.html",
+    "id": "48267126",
+    "title": "C extensions, portability, and alternative compilers",
+    "url": "https://lemon.rip/w/6-c-extensions-compilers/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Don't Roll Your Own",
+    "chinese_title": "C扩展、可移植性与替代编译器",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48254020",
-    "title": "Alexander Grothendieck Revolutionized 20th-Century Mathematics",
-    "url": "https://www.quantamagazine.org/how-alexander-grothendieck-revolutionized-20th-century-mathematics-20260520/",
+    "id": "48273169",
+    "title": "CVE-2026-28952: Apple macOS 26.5 Kernel Vuln found by Claude",
+    "url": "https://support.apple.com/en-us/127115",
     "summary": "生成摘要时出错",
-    "chinese_title": "Alexander Grothendieck Revolutionized 20th-Century Mathematics",
+    "chinese_title": "CVE-2026-28952: Apple macOS 26.5 Kernel Vuln found by Claude",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48254236",
-    "title": "The C64 Dead Test Font",
-    "url": "https://www.masswerk.at/nowgobang/2026/c64-dead-test-font",
+    "id": "48266435",
+    "title": "Pope Leo: opaque AI run by few firms risks \"New Forms of Dehumanization\"",
+    "url": "https://variety.com/2026/biz/global/pope-leo-ai-encyclical-algorithms-threaten-dehumanisation-1236758186/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The C64 Dead Test Font",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48258254",
-    "title": "Ruby for Good",
-    "url": "https://ti.to/codeforgood/rubyforgood",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ruby for Good",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48269580",
-    "title": "Exit IP VPN servers mitigation rollout",
-    "url": "https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Exit IP VPN servers mitigation rollout",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48250980",
-    "title": "Air France and Airbus found guilty of manslaughter over 2009 plane crash",
-    "url": "https://www.bbc.com/news/articles/czd2qmdvmq6o",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Air France and Airbus found guilty of manslaughter over 2009 plane crash",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48252535",
-    "title": "My I3-Emacs Integration",
-    "url": "https://khz.ac/software/i3-integration.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "My I3-Emacs Integration",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48253182",
-    "title": "Justice Department scrubs its website of news releases about Jan. 6 defendants",
-    "url": "https://apnews.com/article/justice-department-capitol-riot-news-releases-purged-29c580044a9ed27b643c99feac9e2964",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Justice Department scrubs its website of news releases about Jan. 6 defendants",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48256565",
-    "title": "Perceptual Image Codec: What Matters in Practical Learned Image Compression",
-    "url": "https://apple.github.io/ml-pico/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Perceptual Image Codec: What Matters in Practical Learned Image Compression",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48265049",
-    "title": "Rising seas will swallow New Orleans. People need to start relocating now",
-    "url": "https://www.cnn.com/2026/05/25/climate/new-orleans-sea-level-rise-relocation",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Rising seas will swallow New Orleans. People need to start relocating now",
+    "chinese_title": "Pope Leo: opaque AI run by few firms risks \"New Forms of Dehumanization\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -144,51 +80,67 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48254345",
-    "title": "'Fuck you, Bambu': How one private message could change the face of 3D printing",
-    "url": "https://www.theverge.com/tech/931532/bambu-agpl-pawel-jarczak-open-source-threat-dmca-github",
-    "summary": "Bambu Lab, a prominent 3D printer company, is facing intense backlash after privately threatening developer Paweł Jarczak. Jarczak created open-source code that enabled users to remote control Bambu printers without proprietary software and support third-party accessories, bypassing Bambu's authentication. Bambu demanded he remove his code, implying legal action under the DMCA and citing security concerns. Jarczak complied but publicly revealed Bambu's aggressive tactics.\n\nThis sparked a furious response from the open-source 3D printing community. Influential figures like Louis Rossmann and GamersNexus pledged financial support for Jarczak, announced boycotts, and began \"forking\" Bambu's code. The Software Freedom Conservancy joined, accusing Bambu of violating the AGPL open-source license, under which Bambu Studio is built. They argue Bambu's proprietary networking plug-in, despite intimate communication with its open-source components, is not being shared as \"Corresponding Source\" as required by the license.\n\nBambu defends its actions, stating the networking plug-in is a \"separately delivered, optional networking component\" not covered by AGPL and citing security threats like DDoS attacks. Legal experts note that the AGPL's application to cloud services and plug-ins is complex and largely untested in court. While Bambu raises valid security points, critics contend the company could implement proper security without suppressing open-source innovation, making Jarczak an unwitting martyr in a larger battle over the future of open hardware and software ecosystems.",
-    "chinese_title": "'Fuck you, Bambu': How one private message could change the face of 3D printing",
-    "chinese_summary": "Bambu Lab, a prominent 3D printer company, is facing intense backlash after privately threatening developer Paweł Jarczak. Jarczak created open-source code that enabled users to remote control Bambu printers without proprietary software and support third-party accessories, bypassing Bambu's authentication. Bambu demanded he remove his code, implying legal action under the DMCA and citing security concerns. Jarczak complied but publicly revealed Bambu's aggressive tactics.\n\nThis sparked a furious response from the open-source 3D printing community. Influential figures like Louis Rossmann and GamersNexus pledged financial support for Jarczak, announced boycotts, and began \"forking\" Bambu's code. The Software Freedom Conservancy joined, accusing Bambu of violating the AGPL open-source license, under which Bambu Studio is built. They argue Bambu's proprietary networking plug-in, despite intimate communication with its open-source components, is not being shared as \"Corresponding Source\" as required by the license.\n\nBambu defends its actions, stating the networking plug-in is a \"separately delivered, optional networking component\" not covered by AGPL and citing security threats like DDoS attacks. Legal experts note that the AGPL's application to cloud services and plug-ins is complex and largely untested in court. While Bambu raises valid security points, critics contend the company could implement proper security without suppressing open-source innovation, making Jarczak an unwitting martyr in a larger battle over the future of open hardware and software ecosystems."
-  },
-  {
-    "id": "48267126",
-    "title": "C extensions, portability, and alternative compilers",
-    "url": "https://lemon.rip/w/6-c-extensions-compilers/",
+    "id": "48281611",
+    "title": "The real cost of owning a home",
+    "url": "https://ericturner.dev/posts/cost-of-home-ownership/",
     "summary": "生成摘要时出错",
-    "chinese_title": "C extensions, portability, and alternative compilers",
+    "chinese_title": "The real cost of owning a home",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48270111",
-    "title": "The bootstrapper's EU stack for under €10 per month",
-    "url": "https://eualternative.eu/guides/bootstrapper-free-tier-eu-stack/",
+    "id": "48281226",
+    "title": "A sleep-like consolidation mechanism for LLMs",
+    "url": "https://arxiv.org/abs/2605.26099",
+    "summary": "The paper \"Language Models Need Sleep\" proposes a novel sleep-like consolidation mechanism for large language models (LLMs) to overcome the scalability limitations of transformer attention with long context lengths, particularly for long-horizon tasks.\n\nThe proposed method involves periodically converting recent contextual information into \"persistent fast weights\" before clearing the model's key-value cache. During this \"sleep\" phase, the LLM performs $N$ offline recurrent passes over the accumulated context, updating the fast weights within its State-Space Model (SSM) blocks using a learned local rule. This design offloads computationally intensive consolidation to the sleep phase, thus preserving prediction latency during \"wake-time\" inference.\n\nExperiments were conducted on controlled synthetic tasks, including cellular automata and multi-hop graph retrieval, as well as a realistic math reasoning task, where standard transformers and SSM-attention hybrid models failed. The results demonstrate that increasing the \"sleep duration\" ($N$) consistently improves the model's performance, with the most significant gains observed in tasks requiring deeper reasoning. This approach offers a bio-inspired solution to enable LLMs to manage and leverage extended contexts more effectively.",
+    "chinese_title": "A sleep-like consolidation mechanism for LLMs",
+    "chinese_summary": "The paper \"Language Models Need Sleep\" proposes a novel sleep-like consolidation mechanism for large language models (LLMs) to overcome the scalability limitations of transformer attention with long context lengths, particularly for long-horizon tasks.\n\nThe proposed method involves periodically converting recent contextual information into \"persistent fast weights\" before clearing the model's key-value cache. During this \"sleep\" phase, the LLM performs $N$ offline recurrent passes over the accumulated context, updating the fast weights within its State-Space Model (SSM) blocks using a learned local rule. This design offloads computationally intensive consolidation to the sleep phase, thus preserving prediction latency during \"wake-time\" inference.\n\nExperiments were conducted on controlled synthetic tasks, including cellular automata and multi-hop graph retrieval, as well as a realistic math reasoning task, where standard transformers and SSM-attention hybrid models failed. The results demonstrate that increasing the \"sleep duration\" ($N$) consistently improves the model's performance, with the most significant gains observed in tasks requiring deeper reasoning. This approach offers a bio-inspired solution to enable LLMs to manage and leverage extended contexts more effectively."
+  },
+  {
+    "id": "48283914",
+    "title": "Stop Advertising in Your Commits",
+    "url": "https://akselmo.dev/posts/stop-advertising-in-your-commits/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The bootstrapper's EU stack for under €10 per month",
+    "chinese_title": "Stop Advertising in Your Commits",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48258736",
-    "title": "FreeBSD Foundation executive director tries daily driving FreeBSD on laptop",
-    "url": "https://www.phoronix.com/news/FreeBSD-On-Laptop-Driver",
+    "id": "48271448",
+    "title": "A few interesting modern pixel fonts",
+    "url": "https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/",
     "summary": "生成摘要时出错",
-    "chinese_title": "FreeBSD Foundation executive director tries daily driving FreeBSD on laptop",
+    "chinese_title": "A few interesting modern pixel fonts",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48257058",
-    "title": "Microsoft's 6502 BASIC is now Open Source (2025)",
-    "url": "https://opensource.microsoft.com/blog/2025/09/03/microsoft-open-source-historic-6502-basic/",
+    "id": "48274711",
+    "title": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
+    "url": "https://earthiongame.com/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Microsoft's 6502 BASIC is now Open Source (2025)",
+    "chinese_title": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48251528",
-    "title": "A self-powered computer in actual credit-card size (~1mm thick)",
-    "url": "https://old.reddit.com/r/electronics/comments/1td7yxl/i_built_a_fully_selfpowered_computer_in_actual/",
+    "id": "48265049",
+    "title": "Rising seas will swallow New Orleans. People need to start relocating now",
+    "url": "https://www.cnn.com/2026/05/25/climate/new-orleans-sea-level-rise-relocation",
     "summary": "生成摘要时出错",
-    "chinese_title": "A self-powered computer in actual credit-card size (~1mm thick)",
+    "chinese_title": "Rising seas will swallow New Orleans. People need to start relocating now",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48281539",
+    "title": "Is \"colorectal cancer\" rising in \"young people\"?",
+    "url": "https://dynomight.net/crc-rates/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Is \"colorectal cancer\" rising in \"young people\"?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48273147",
+    "title": "Performance of Rust Language [pdf]",
+    "url": "https://github.com/yugr/rust-slides/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Performance of Rust Language [pdf]",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -200,6 +152,38 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "48282709",
+    "title": "Stack Overflow’s forum is dead but the company’s still kicking",
+    "url": "https://sherwood.news/tech/stack-overflow-forum-dead-thanks-ai-but-companys-still-kicking-ai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Stack Overflow’s forum is dead but the company’s still kicking",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48280636",
+    "title": "Don't Subscribe So Casually",
+    "url": "https://thebestworstcase.substack.com/p/dont-subscribe-so-casually",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Don't Subscribe So Casually",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48277355",
+    "title": "Flatpak Will Depend on Systemd",
+    "url": "https://www.osnews.com/story/145071/flatpak-will-depend-on-systemd/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Flatpak Will Depend on Systemd",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48277537",
+    "title": "I bypassed AWS API Gateway auth with a trailing slash. Got $12K bounty",
+    "url": "https://theguptalog.blogspot.com/2026/04/i-bypassed-aws-api-gateway-auth-with.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I bypassed AWS API Gateway auth with a trailing slash. Got $12K bounty",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "48265745",
     "title": "GPT Guesses Between 1 and 100",
     "url": "https://github.com/exmergo/research-chatgpt-guesses-between-1-and-100",
@@ -208,35 +192,43 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48250712",
-    "title": "Data Centers Now Consume 6% of US Electricity–and the Backlash Has Begun",
-    "url": "https://singularityhub.com/2026/05/22/data-centers-now-consume-6-of-electricity-in-the-us-and-the-backlash-has-begun/",
+    "id": "48270497",
+    "title": "Anthropic Cofounder Chris Olah's Remarks on Pope Leo XIV's \"Magnifica Humanitas\"",
+    "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
     "summary": "生成摘要时出错",
-    "chinese_title": "Data Centers Now Consume 6% of US Electricity–and the Backlash Has Begun",
+    "chinese_title": "Anthropic Cofounder Chris Olah's Remarks on Pope Leo XIV's \"Magnifica Humanitas\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48258236",
-    "title": "When (if ever) it's appropriate to make jokes before the US Supreme Court",
-    "url": "https://www.scotusblog.com/2026/05/when-if-ever-its-appropriate-to-make-jokes-take-selfies-or-curse-before-the-court/",
+    "id": "48278090",
+    "title": "Incident with Actions and Pages",
+    "url": "https://www.githubstatus.com/incidents/gnftqj9htp0g",
     "summary": "生成摘要时出错",
-    "chinese_title": "When (if ever) it's appropriate to make jokes before the US Supreme Court",
+    "chinese_title": "Incident with Actions and Pages",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48263711",
-    "title": "Why Do We Sleep Under Blankets, Even on the Hottest Nights? (2017)",
-    "url": "https://www.atlasobscura.com/articles/blankets-summer-hot",
+    "id": "48281367",
+    "title": "The Ballad of TIGIT",
+    "url": "https://www.owlposting.com/p/the-ballad-of-tigit",
     "summary": "生成摘要时出错",
-    "chinese_title": "Why Do We Sleep Under Blankets, Even on the Hottest Nights? (2017)",
+    "chinese_title": "The Ballad of TIGIT",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48262841",
-    "title": "D. Trump Jr. and Eric Trump Running Felony Fraud Scheme Prosecutable in New York",
-    "url": "https://cmarmitage.substack.com/p/donald-trump-jr-and-eric-trump-are",
+    "id": "48272393",
+    "title": "Show HN: OpenBrief – Local-first video downloader/summarizer",
+    "url": "https://github.com/tantara/openbrief",
     "summary": "生成摘要时出错",
-    "chinese_title": "D. Trump Jr. and Eric Trump Running Felony Fraud Scheme Prosecutable in New York",
+    "chinese_title": "Show HN: OpenBrief – Local-first video downloader/summarizer",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48264635",
+    "title": "Show HN: Geomatic – A command-driven geometry studio enabled with autodiff",
+    "url": "https://www.tinyvolt.com/geomatic",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Geomatic – A command-driven geometry studio enabled with autodiff",
     "chinese_summary": "生成摘要时出错"
   }
 ]
