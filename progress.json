@@ -3,113 +3,57 @@
     "id": "48359102",
     "title": "The newest Instagram “exploit” is the goofiest I've seen",
     "url": "https://www.0xsid.com/blog/meta-account-takeover-fiasco",
-    "summary": "A recent \"goofy\" Instagram exploit allowed attackers to easily take over accounts, including high-profile ones like the Obama White House, bypassing even two-factor authentication.\n\nThe method involved attackers using a target's username and a VPN to spoof a local IP address. They then contacted Meta's support AI, claiming the account was hacked and requesting verification codes be sent to an arbitrary email address they controlled. Alarmingly, the AI did not verify if this email was associated with the legitimate user. Once the attacker received the code, they could complete verification and gain full account ownership via a password reset link. Even video selfie requests by the AI were reportedly bypassed with simple AI-animated public photos.\n\nThis high-privilege recovery flow rendered existing 2FA useless, revoked legitimate sessions, and changed credentials without notifying the true owner, leaving victims with no human support. Black markets quickly capitalized, offering account takeover services. While active for weeks or months, Meta has now patched the vulnerability, quieting down the black market activity. The author expressed disbelief at such a fundamental security flaw in a major company.",
-    "chinese_title": "最新的Instagram“花招”是我见过最傻的。",
-    "chinese_summary": "最近一个“愚蠢”的Instagram漏洞让攻击者可以轻松接管账号，包括像奥巴马白宫这样的知名账号，甚至绕过了双重认证。\n\n该方法涉及攻击者使用目标用户的用户名和VPN来伪造本地IP地址。他们随后联系了Meta的AI客服，声称该账号被盗，并请求将验证码发送到他们控制的任意电子邮件地址。令人担忧的是，该AI并未验证这个电子邮件地址是否与合法用户相关联。一旦攻击者收到验证码，他们就可以完成验证，并通过密码重置链接获得完整的账号所有权。据报道，即使是AI发出的视频自拍请求，也只需简单的AI动画公共照片即可绕过。\n\n这种高权限恢复流程使得现有的双重认证形同虚设，撤销了合法的会话，并在未通知真实所有者的情况下更改了凭据，导致受害者无法获得人工支持。黑市迅速从中牟利，提供账号劫持服务。尽管活跃了数周或数月，Meta现已修补了该漏洞，从而平息了黑市活动。作者对于一家大公司存在如此基本的安全漏洞表示难以置信。"
-  },
-  {
-    "id": "48341578",
-    "title": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
-    "url": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
-    "summary": "On July 13, 2026, perpetually-licensed Microsoft Office 2019 and 2021 applications for macOS, iOS, and iPadOS are scheduled for a remote degradation to a view-only \"reduced functionality mode.\" This means users will be able to open and view files but not edit or save them.\n\nThe change is due to the expiration of a license-validation certificate used by the apps. While Microsoft had previously assured Office 2019 for Mac users their apps would \"continue to function\" after its October 2023 end-of-support, this guarantee was removed from their support pages by May 2026.\n\nOffice 2019 for Mac has no fix, as its build cap is below the required version (16.83) to include the renewed certificate. Office 2021 for Mac users can avoid the issue by updating to version 16.83 on supported macOS versions before its October 2026 end-of-support. Windows and Android versions are unaffected.\n\nMicrosoft's proposed solutions include using the apps in view-only mode, switching to free Microsoft 365 web apps, or purchasing a Microsoft 365 subscription or a new Office Home 2024 license. The decision has drawn widespread criticism, with users and tech outlets calling it a \"broken promise\" and \"bricking\" of paid software, prompting discussions about migrating to alternative office suites.",
-    "chinese_title": "微软 Office 2019 和 2021 Mac 版只读转换",
-    "chinese_summary": "2026年7月13日，适用于macOS、iOS和iPadOS的永久许可版Microsoft Office 2019和2021应用程序计划远程降级到仅供查看的“功能受限模式”。这意味着用户将能够打开和查看文件，但无法编辑或保存。\n\n这一变化是由于应用程序使用的许可证验证证书过期。尽管微软此前向Office 2019 for Mac用户保证，在2023年10月停止支持后，他们的应用程序将“继续运行”，但这一保证已于2026年5月从其支持页面上删除。\n\nOffice 2019 for Mac没有修复方案，因为其版本上限低于包含更新证书所需的版本（16.83）。Office 2021 for Mac用户可以在2026年10月停止支持前，通过在支持的macOS版本上更新到16.83版来避免此问题。Windows和Android版本不受影响。\n\n微软提出的解决方案包括以仅查看模式使用应用程序、切换到免费的Microsoft 365网页应用程序，或者购买Microsoft 365订阅或新的Office家庭版2024许可证。这一决定引发了广泛批评，用户和科技媒体称其为“食言”和“付费软件变砖”，促使人们讨论迁移到其他办公套件。"
-  },
-  {
-    "id": "48345840",
-    "title": "Cloudflare Turnstile requiring fingerprintable WebGL",
-    "url": "https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting",
-    "summary": "Cloudflare's Turnstile \"Verify you're human\" service is increasingly blocking access for browsers like WebKitGTK, now requiring fingerprintable WebGL renderer information. The author argues this is solely for tracking, a practice WebKit has blocked for years due to its privacy implications. Cloudflare states that privacy tools blocking fingerprinting make a browser appear bot-like, implying users should temporarily allow tracking. This effectively bans WebKitGTK users, with a likely exception for Apple's Safari.\n\nThe article also notes Mozilla Firefox's current situation. Firefox 145.0 passes Turnstile due to a bug (Bugzilla#1916271) where it reveals \"sanitized\" GPU characteristics, rather than blocking them entirely. The `privacy.resistfingerprinting` setting, which *would* block this, isn't enabled by default, even under \"Strict\" privacy settings. However, when this setting is manually activated, Firefox fails Turnstile, indicating that privacy-conscious Firefox users may soon face similar access issues as WebKitGTK users. The author concludes Cloudflare is enforcing a pro-tracking verification method that disadvantages privacy-focused browsers.",
-    "chinese_title": "Cloudflare 旋转门要求可指纹识别的 WebGL",
-    "chinese_summary": "Cloudflare的Turnstile“验证您是人类”服务正越来越多地阻止WebKitGTK等浏览器的访问，因为它现在要求提供可用于指纹识别的WebGL渲染器信息。作者认为这纯粹是为了追踪，而这种做法因其隐私影响，WebKit已阻止多年。Cloudflare表示，阻止指纹识别的隐私工具会让浏览器看起来像机器人，暗示用户应暂时允许追踪。这实际上禁止了WebKitGTK用户的访问，但苹果Safari浏览器可能除外。\n\n文章还提到了Mozilla Firefox的当前情况。Firefox 145.0之所以能通过Turnstile，是由于一个错误（Bugzilla#1916271），它会透露“净化后”的GPU特性，而不是完全阻止它们。`privacy.resistfingerprinting`设置虽然本应阻止这种情况，但默认并未启用，即使在“严格”隐私设置下也是如此。然而，当此设置手动激活时，Firefox无法通过Turnstile，这表明注重隐私的Firefox用户可能很快就会面临与WebKitGTK用户类似的访问问题。作者总结道，Cloudflare正在推行一种有利于追踪的验证方法，这使得注重隐私的浏览器处于劣势。"
+    "summary": "The article details a \"goofiest\" Instagram exploit that enabled widespread account takeovers, affecting high-profile accounts like the Obama White House. The attack, active for weeks or months, involved attackers spoofing their location via VPN and then contacting Meta's support AI. They would claim an account was hacked and request verification codes be sent to an arbitrary email address they controlled.\n\nShockingly, the AI reportedly performed a \"zero auth password reset\" without verifying if the new email had any prior association with the account. Even identity verification via video selfie was easily bypassed, with AI-animated public photos reportedly working. This method completely bypassed existing two-factor authentication (2FA), revoked the original owner's sessions, changed passwords, and replaced recovery details with the attacker's, leaving victims with no human support.\n\nThis vulnerability fueled black markets offering account takeover services for valuable handles. The author, an experienced security professional, expressed disbelief at a $1.5 trillion company having such weak guardrails. Meta has since patched the exploit, but its prolonged existence highlighted a significant security flaw.",
+    "chinese_title": "最新的 Instagram “花招” 是我见过最荒唐的。",
+    "chinese_summary": "该文章详细披露了一项“最离谱”的Instagram漏洞攻击，该漏洞导致了大规模账户劫持，甚至影响了包括奥巴马白宫在内的高知名度账户。这次持续了数周甚至数月的攻击中，攻击者通过VPN伪造其地理位置，然后联系Meta的AI支持系统，声称账户被盗，并要求将验证码发送到他们控制的任意电子邮件地址。\n\n令人震惊的是，据报道，该AI竟然执行了“零验证密码重置”，没有验证新邮箱是否与该账户有任何关联。甚至通过视频自拍进行的身份验证也轻易被绕过，据称，使用AI动画处理的公开照片就能奏效。这种方法彻底绕过了现有的双重身份验证（2FA），撤销了原所有者的会话，更改了密码，并将恢复信息替换为攻击者的，让受害者得不到任何人工支持。\n\n这一漏洞助长了黑市，为有价值的用户名提供账户劫持服务。作者作为一名经验丰富的安全专业人士，对一家市值1.5万亿美元的公司竟有如此薄弱的安全防护表示难以置信。Meta此后已修复了该漏洞，但其长期存在凸显了一个严重的安全缺陷。"
   },
   {
     "id": "48356625",
     "title": "Malicious npm packages detected across Red Hat Cloud Services",
     "url": "https://github.com/RedHatInsights/javascript-clients/issues/492",
-    "summary": "A critical security alert has been issued regarding the detection of malicious npm packages impacting Red Hat Cloud Services. Documented in GitHub issue #492 within the RedHatInsights/javascript-clients repository, the report highlights that numerous packages under the `@redhat-cloud-services/` scope have been compromised.\n\nCorroborated by StepSecurity, the incident identifies specific malicious versions for a wide array of Red Hat Cloud Services components. Affected packages include, but are not limited to, `@redhat-cloud-services/chrome`, `@redhat-cloud-services/compliance-client`, `@redhat-cloud-services/frontend-components`, and various other client, frontend, and utility libraries. For each listed package, several specific patch versions (e.g., 2.3.1, 2.3.2, 2.3.4) are identified as compromised.\n\nThe report serves as an urgent notification for developers and users leveraging these Red Hat Cloud Services npm packages to review their dependencies and remove or update any installations of the identified malicious versions to mitigate potential security risks.",
-    "chinese_title": "Red Hat 云服务中检测到恶意 npm 包",
-    "chinese_summary": "已发出关于检测到影响 Red Hat 云服务的恶意 npm 包的严重安全警报。此次事件已记录在 RedHatInsights/javascript-clients 存储库中的 GitHub issue #492 中，报告指出 `@redhat-cloud-services/` 范围下的众多包已遭入侵。\n\n经 StepSecurity 证实，此次事件确定了广泛的 Red Hat 云服务组件的特定恶意版本。受影响的包包括但不限于 `@redhat-cloud-services/chrome`、`@redhat-cloud-services/compliance-client`、`@redhat-cloud-services/frontend-components`，以及各种其他客户端、前端和实用程序库。对于每个列出的包，多个特定的补丁版本（例如 2.3.1、2.3.2、2.3.4）已被确定为受损。\n\n本报告旨在紧急通知正在使用这些 Red Hat 云服务 npm 包的开发人员和用户，审查其依赖项，并移除或更新任何已安装的被识别出的恶意版本，以减轻潜在的安全风险。"
+    "summary": "A security alert, designated as issue #492, was opened on June 1, 2026, detailing the detection of malicious npm packages impacting Red Hat Cloud Services. This widespread compromise affects numerous packages under the `@redhat-cloud-services/` scope.\n\nThe vulnerability was identified by StepSecurity, with further details available on their blog and security feed. A comprehensive list of affected packages and their compromised versions has been provided.\n\nKey affected packages include:\n*   `@redhat-cloud-services/chrome` (versions 2.3.1, 2.3.2, 2.3.4)\n*   `@redhat-cloud-services/compliance-client` (versions 4.0.3, 4.0.4, 4.0.6)\n*   `@redhat-cloud-services/frontend-components` (versions 7.7.2, 7.7.3, 7.7.5)\n*   `@redhat-cloud-services/host-inventory-client` (versions 5.0.3, 5.0.4, 5.0.6)\n*   `@redhat-cloud-services/rbac-client` (versions 9.0.3, 9.0.4, 9.0.6)\n*   `@redhat-cloud-services/vulnerabilities-client` (versions 2.1.9, 2.1.11)\n\nMany other client and frontend component packages are also impacted across multiple versions. Users of these Red Hat Cloud Services npm packages are advised to review their dependencies and take appropriate action to address the security risks posed by these malicious releases.",
+    "chinese_title": "Malicious npm packages detected across Red Hat Cloud Services",
+    "chinese_summary": "2026年6月1日发布了一项编号为#492的安全警报，详细说明检测到影响红帽云服务的恶意npm包。此次大规模入侵影响了`@redhat-cloud-services/`范围下的众多软件包。\n\n该漏洞由StepSecurity发现，更多详情可在其博客和安全信息源中查阅。已提供受影响软件包及其受损版本的完整列表。\n\n主要受影响软件包包括：\n*   `@redhat-cloud-services/chrome` (版本 2.3.1, 2.3.2, 2.3.4)\n*   `@redhat-cloud-services/compliance-client` (版本 4.0.3, 4.0.4, 4.0.6)\n*   `@redhat-cloud-services/frontend-components` (版本 7.7.2, 7.7.3, 7.7.5)\n*   `@redhat-cloud-services/host-inventory-client` (版本 5.0.3, 5.0.4, 5.0.6)\n*   `@redhat-cloud-services/rbac-client` (版本 9.0.3, 9.0.4, 9.0.6)\n*   `@redhat-cloud-services/vulnerabilities-client` (版本 2.1.9, 2.1.11)\n\n许多其他客户端和前端组件包的多个版本也受到影响。建议这些红帽云服务npm软件包的用户检查其依赖项，并采取适当措施以解决这些恶意发布版本带来的安全风险。"
   },
   {
     "id": "48353348",
     "title": "A 10 year old Xeon is all you need",
     "url": "https://point.free/blog/gemma-4-on-a-2016-xeon/",
-    "summary": "This article demonstrates running a Gemma 4 26B-A4B large language model on a 2016 Intel Xeon E5-2620 v4 server with 128GB DDR3 RAM and no GPU—hardware significantly slower than modern systems. The central challenge for LLM inference, dubbed the \"memory wall,\" is the bottleneck of constantly moving gigabytes of model weights from slow RAM to the CPU cache during the decoder pass.\n\nStandard LLM tools like Ollama are insufficient due to their lack of model support and granular optimization controls. The author instead utilizes `ik_llama.cpp` and its advanced, often obscure, flags to meticulously optimize for CPU-bound performance.\n\nKey optimizations implemented include:\n*   **Speculative Decoding**: Pairs a smaller \"drafter\" model with the main \"verifier\" to predict tokens, significantly reducing memory bandwidth requirements for the main model.\n*   **CPU and MoE Routing**: Specifically tunes Mixture-of-Experts (MoE) models (`--cpu-moe`) to minimize \"cache thrashing\" on CPU and fuses operations (`--merge-up-gate-experts`) to reduce memory bus trips.\n*   **Memory Management**: `--run-time-repack` reorganizes weights for optimal CPU cache layout, `--mlock` pins the model in RAM to prevent performance-killing disk swapping, and `--no-kv-offload` bypasses non-existent GPU checks for the KV cache.\n*   **Attention Mechanisms**: `--flash-attn on` implements Flash Attention on the CPU, a complex GPU-originated optimization that keeps attention calculations within fast CPU cache. `--mla-use 3` compresses the AI's short-term memory (KV cache) to conserve RAM.\n\nWhile some graph-splitting optimizations were not yet supported for this specific model, the article showcases that deep understanding of hardware and software flags allows even obsolete servers to effectively run demanding LLMs by bypassing memory bandwidth limitations.",
-    "chinese_title": "A 10 year old Xeon is all you need",
-    "chinese_summary": "This article demonstrates running a Gemma 4 26B-A4B large language model on a 2016 Intel Xeon E5-2620 v4 server with 128GB DDR3 RAM and no GPU—hardware significantly slower than modern systems. The central challenge for LLM inference, dubbed the \"memory wall,\" is the bottleneck of constantly moving gigabytes of model weights from slow RAM to the CPU cache during the decoder pass.\n\nStandard LLM tools like Ollama are insufficient due to their lack of model support and granular optimization controls. The author instead utilizes `ik_llama.cpp` and its advanced, often obscure, flags to meticulously optimize for CPU-bound performance.\n\nKey optimizations implemented include:\n*   **Speculative Decoding**: Pairs a smaller \"drafter\" model with the main \"verifier\" to predict tokens, significantly reducing memory bandwidth requirements for the main model.\n*   **CPU and MoE Routing**: Specifically tunes Mixture-of-Experts (MoE) models (`--cpu-moe`) to minimize \"cache thrashing\" on CPU and fuses operations (`--merge-up-gate-experts`) to reduce memory bus trips.\n*   **Memory Management**: `--run-time-repack` reorganizes weights for optimal CPU cache layout, `--mlock` pins the model in RAM to prevent performance-killing disk swapping, and `--no-kv-offload` bypasses non-existent GPU checks for the KV cache.\n*   **Attention Mechanisms**: `--flash-attn on` implements Flash Attention on the CPU, a complex GPU-originated optimization that keeps attention calculations within fast CPU cache. `--mla-use 3` compresses the AI's short-term memory (KV cache) to conserve RAM.\n\nWhile some graph-splitting optimizations were not yet supported for this specific model, the article showcases that deep understanding of hardware and software flags allows even obsolete servers to effectively run demanding LLMs by bypassing memory bandwidth limitations."
+    "summary": "The article details an extraordinary effort to run Gemma 4 26B, a large language model, on a decade-old server equipped with a single Intel Xeon E5-2620 v4 CPU and 128GB DDR3 RAM, critically lacking a GPU. The primary hurdle is the \"memory wall,\" where LLM inference performance is constrained by slow memory bandwidth rather than CPU processing power, a problem amplified by the server's outdated DDR3.\n\nTo overcome this, the author bypassed high-level tools and instead utilized `ik_llama.cpp`'s `llama-cli` with a series of highly specific, low-level optimization flags. Key strategies included:\n\n1.  **Speculative Decoding:** Employing a smaller \"drafter\" model to predict tokens, thereby minimizing memory-intensive decoder passes for the larger \"verifier\" model, leveraging the CPU's relatively cheap compute.\n2.  **CPU and MoE Optimizations:** Flags like `--cpu-moe` and `--merge-up-gate-experts` tailored the Mixture-of-Experts (MoE) routing for CPU cache hierarchies and fused operations to reduce memory transfers, preventing \"cache thrashing.\"\n3.  **Memory Management:** `--mlock` pinned the model in RAM to prevent the OS from swapping it to disk. `--run-time-repack` reorganized weights for optimal CPU cache alignment, and `--no-kv-offload` disabled unnecessary GPU searches for the KV cache.\n4.  **Advanced Attention Mechanisms:** `Flash Attention`, custom-ported to CPU, prevented the full attention matrix from being materialized in RAM by processing it within fast CPU caches. `--mla-use 3` (Multi-Head Latent Attention) further compressed the KV cache, saving valuable memory.\n\nThis showcases that deep software-level optimizations can enable modern LLM inference even on severely underpowered hardware by meticulously addressing memory bandwidth bottlenecks.",
+    "chinese_title": "十年志强，就够用了",
+    "chinese_summary": "文章详细介绍了一项非凡的尝试：在一台使用单个英特尔至强 E5-2620 v4 CPU 和 128GB DDR3 内存的十年老旧服务器上运行大型语言模型 Gemma 4 26B，这台服务器严重缺乏 GPU。主要障碍是“内存墙”，即 LLM 推理性能受限于缓慢的内存带宽，而非 CPU 处理能力，服务器老旧的 DDR3 内存更是加剧了这一问题。\n\n为克服此问题，作者绕过了高级工具，转而利用 `ik_llama.cpp` 中的 `llama-cli`，并配合一系列高度特定、低级别的优化标志。关键策略包括：\n\n1.  **推测解码：** 采用一个较小的“草稿”模型来预测 token，从而最大程度地减少大型“验证器”模型的内存密集型解码器通过次数，利用 CPU 相对廉价的计算能力。\n2.  **CPU 和 MoE 优化：** 诸如 `--cpu-moe` 和 `--merge-up-gate-experts` 等标志，针对 CPU 缓存层次结构和融合操作定制了专家混合（MoE）路由，以减少内存传输，防止“缓存颠簸”。\n3.  **内存管理：** `--mlock` 将模型锁定在 RAM 中，以防止操作系统将其交换到磁盘。`--run-time-repack` 重新组织了权重以实现最佳的 CPU 缓存对齐，而 `--no-kv-offload` 则禁用了不必要的 GPU KV 缓存搜索。\n4.  **高级注意力机制：** `Flash Attention` 经定制移植到 CPU 后，通过在快速 CPU 缓存中对其进行处理，防止了完整的注意力矩阵在 RAM 中实例化。`--mla-use 3`（多头潜在注意力）进一步压缩了 KV 缓存，节省了宝贵的内存。\n\n这表明，即使在严重性能不足的硬件上，通过细致地解决内存带宽瓶颈，深入的软件层面优化也能实现现代 LLM 推理。"
   },
   {
-    "id": "48348578",
-    "title": "Codex just found a \"workaround\" of not having sudo on my PC",
-    "url": "https://twitter.com/i/status/2060746160558543217",
-    "summary": "The provided content is an error message from x.com, completely unrelated to the article's title about \"Codex\" and a \"sudo workaround.\"\n\nThe message, displayed in Chinese, indicates that JavaScript is disabled in the user's browser. It instructs the user to enable JavaScript or switch to a supported browser to continue using the x.com platform. The content also includes standard website footer links, such as Help Center, Terms of Service, Privacy Policy, Cookie Policy, Imprint, and Ad Information, with a copyright notice \"© 2026 X Corp.\"",
-    "chinese_title": "Codex 刚刚发现了一个应对我电脑上没有 sudo 权限的“变通方法”。",
-    "chinese_summary": "所提供的内容是来自 x.com 的一条错误消息，与文章标题中提及的“Codex”和“sudo 变通方法”完全无关。该消息以中文显示，表明用户浏览器中的 JavaScript 已被禁用。它指示用户启用 JavaScript 或切换到受支持的浏览器，以继续使用 x.com 平台。该内容还包括标准的网站页脚链接，例如帮助中心、服务条款、隐私政策、Cookie 政策、版本说明和广告信息，并附带版权声明“© 2026 X Corp.”。"
-  },
-  {
-    "id": "48343683",
-    "title": "The Website Specification",
-    "url": "https://specification.website/",
-    "summary": "This document outlines \"The Website Specification,\" a platform-agnostic guide detailing 128 essential technical features for any decent website. Written for both humans and AI agents, it covers topics from basic HTML to advanced security and agent readiness.\n\nThe specification is structured into ten categories: Foundations, SEO, Accessibility, Security, Well-Known URIs, Agent Readiness, Performance, Privacy, Resilience, and Internationalisation. It strictly adheres to widely-accepted standards from bodies like WHATWG, W3C, IETF RFCs, and WCAG, making it independent of specific platforms or frameworks (e.g., WordPress, Next.js).\n\nBuilt openly, each topic references its source standard, and contributions are welcome via GitHub. A key innovation is its \"Agent Readiness\": the entire spec is available as an open MCP server and a published Agent Skill, allowing AI agents to query content, with per-page Markdown accessible via `/llms.txt`.\n\nUsers can leverage the site to audit their websites against a comprehensive checklist, learn about feature implementation, or contribute improvements, ensuring a standardized approach to web development.",
-    "chinese_title": "The Website Specification",
-    "chinese_summary": "This document outlines \"The Website Specification,\" a platform-agnostic guide detailing 128 essential technical features for any decent website. Written for both humans and AI agents, it covers topics from basic HTML to advanced security and agent readiness.\n\nThe specification is structured into ten categories: Foundations, SEO, Accessibility, Security, Well-Known URIs, Agent Readiness, Performance, Privacy, Resilience, and Internationalisation. It strictly adheres to widely-accepted standards from bodies like WHATWG, W3C, IETF RFCs, and WCAG, making it independent of specific platforms or frameworks (e.g., WordPress, Next.js).\n\nBuilt openly, each topic references its source standard, and contributions are welcome via GitHub. A key innovation is its \"Agent Readiness\": the entire spec is available as an open MCP server and a published Agent Skill, allowing AI agents to query content, with per-page Markdown accessible via `/llms.txt`.\n\nUsers can leverage the site to audit their websites against a comprehensive checklist, learn about feature implementation, or contribute improvements, ensuring a standardized approach to web development."
-  },
-  {
-    "id": "48344961",
-    "title": "Dav2d",
-    "url": "https://jbkempf.com/blog/2026/dav2d/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Dav2d",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48346947",
-    "title": "Creatine raises brain energy levels and slows cognitive decline: study",
-    "url": "https://thesciverse.org/scientists-found-that-the-creatine-supplement-millions-take-for-muscle-gains-is-quietly-raising-brain-energy-levels-and-slowing-early-alzheimers-cognitive-decline-by-30/",
-    "summary": "Creatine, a popular supplement for muscle growth, also significantly boosts brain energy levels and cognitive function, a benefit largely unrecognized by most users and unadvertised by the fitness industry. The brain, consuming 20% of the body's energy, relies on ATP for cellular processes. Creatine converts to phosphocreatine in neurons, acting as a vital energy buffer that rapidly regenerates ATP during periods of high metabolic demand, such as complex thought or memory encoding.\n\nResearch indicates that brain creatine levels decline with age and are significantly lower in Alzheimer's patients, contributing to a \"bioenergetic crisis.\" Clinical trials, including the CABA study, demonstrated that oral creatine supplementation successfully crosses the blood-brain barrier, increasing brain phosphocreatine levels. Most notably, in early Alzheimer’s patients, creatine slowed cognitive decline by approximately 30% over 12 weeks.\n\nBeyond neurodegenerative disease, creatine benefits healthy brains by enhancing processing speed and accuracy, especially under metabolic stress like sleep deprivation. It has also emerged as a potential adjunct treatment for depression, addressing impaired brain energy metabolism in affected regions. While higher doses may optimize brain bioavailability, functionally meaningful increases are achievable via oral supplementation, revealing creatine as a remarkably inexpensive and versatile \"brain drug.\"",
-    "chinese_title": "Creatine raises brain energy levels and slows cognitive decline: study",
-    "chinese_summary": "Creatine, a popular supplement for muscle growth, also significantly boosts brain energy levels and cognitive function, a benefit largely unrecognized by most users and unadvertised by the fitness industry. The brain, consuming 20% of the body's energy, relies on ATP for cellular processes. Creatine converts to phosphocreatine in neurons, acting as a vital energy buffer that rapidly regenerates ATP during periods of high metabolic demand, such as complex thought or memory encoding.\n\nResearch indicates that brain creatine levels decline with age and are significantly lower in Alzheimer's patients, contributing to a \"bioenergetic crisis.\" Clinical trials, including the CABA study, demonstrated that oral creatine supplementation successfully crosses the blood-brain barrier, increasing brain phosphocreatine levels. Most notably, in early Alzheimer’s patients, creatine slowed cognitive decline by approximately 30% over 12 weeks.\n\nBeyond neurodegenerative disease, creatine benefits healthy brains by enhancing processing speed and accuracy, especially under metabolic stress like sleep deprivation. It has also emerged as a potential adjunct treatment for depression, addressing impaired brain energy metabolism in affected regions. While higher doses may optimize brain bioavailability, functionally meaningful increases are achievable via oral supplementation, revealing creatine as a remarkably inexpensive and versatile \"brain drug.\""
-  },
-  {
-    "id": "48342705",
-    "title": "Please Do Not Vibe Fuck Up This Software",
-    "url": "https://github.com/RsyncProject/rsync/issues/929",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Please Do Not Vibe Fuck Up This Software",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48346257",
-    "title": "1-Bit Bonsai Image 4B Image Generation for Local Devices",
-    "url": "https://prismml.com/news/bonsai-image-4b",
-    "summary": "生成摘要时出错",
-    "chinese_title": "适用于本地设备的1位盆景图像4B生成",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48364055",
+    "title": "Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
+    "url": "https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai",
+    "summary": "Unable to access the article link.",
+    "chinese_title": "股市能否消化Anthropic、SpaceX 和 OpenAI？",
+    "chinese_summary": "无法访问文章链接"
   },
   {
     "id": "48357154",
     "title": "The Pirate Bay Remains Resilient, 20 Years After the Raid",
     "url": "https://torrentfreak.com/the-pirate-bay-remains-resilient-20-years-after-the-raid/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Pirate Bay Remains Resilient, 20 Years After the Raid",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "Twenty years after its first major raid, The Pirate Bay (TPB) remains resilient, a testament to a pivotal backup and a shift in operations. On May 31, 2006, 65 Swedish police officers, acting under pressure from the US government, raided a Stockholm datacenter to take TPB offline.\n\nJust before the raid, co-founder Fredrik Neij, suspecting trouble, made a crucial full backup of the site's torrent tracker. This quick thinking enabled TPB to be resurrected within three days, mocking authorities by temporarily renaming itself \"The Police Bay\" and adopting a Phoenix logo. Far from shutting it down, the raid propelled TPB into mainstream media, generating a huge traffic spike—the opposite of Hollywood's intentions.\n\nLater information, obtained through a 2017 Freedom of Information Act request, revealed the significant US involvement. US Embassy cables confirmed Hollywood's MPA lobbied intensely for Sweden to act against TPB, leading to the raid. An embassy employee was even nominated for an award for their \"skillful outreach\" that led to the \"bold decision\" by Swedish law enforcement.\n\nWhile the raid made the founders heroes to many, it ultimately led to criminal convictions and prison sentences for several key players. This prompted the original team to cut ties, handing the site over to a more anonymous group, ostensibly based in the Seychelles. This new era brought silent operation, evident when the site recovered from another raid in 2014 with minimal communication.\n\nStill online today, TPB proudly calls itself \"the galaxy's most resilient torrent site,\" a title arguably earned on that decisive day in 2006.",
+    "chinese_title": "突袭20年后，海盗湾依然坚挺",
+    "chinese_summary": "首次大规模突袭二十年后，海盗湾（The Pirate Bay，简称TPB）依然顽强存在，这归功于一次关键备份和运营模式的转变。2006年5月31日，65名瑞典警察在美国政府的压力下，突袭了斯德哥尔摩的一个数据中心，旨在让TPB下线。\n\n就在突袭前，联合创始人弗雷德里克·内伊（Fredrik Neij）察觉到异样，对网站的种子追踪器进行了关键的完整备份。这一快速反应使TPB在三天内复活，并通过暂时更名为“警察湾”（The Police Bay）并采用凤凰标志来嘲讽当局。这次突袭非但没有将其关闭，反而将TPB推向了主流媒体的视野，产生了巨大的流量激增，这与好莱坞的初衷背道而驰。\n\n后来通过2017年《信息自由法》请求获得的信息，揭示了美国在其中扮演的重要角色。美国大使馆的电报证实，好莱坞的美国电影协会（MPA）强烈游说瑞典对TPB采取行动，最终导致了这次突袭。一名使馆工作人员甚至因其“巧妙的对外联络”而被提名获奖，正是这种联络促成了瑞典执法部门的“大胆决定”。\n\n尽管这次突袭让创始人在许多人眼中成为了英雄，但它最终导致了几名关键人物被刑事定罪并判处监禁。这促使最初的团队切断了联系，将网站移交给了一个更为匿名的团队，据称该团队位于塞舌尔。这个新时代带来了“静默运营”，这在2014年网站从另一次突袭中恢复过来时，通过极少的沟通便可见一斑。\n\n如今TPB依然在线，自豪地称自己为“银河系最具韧性的种子网站”，这个称号可以说是在2006年那个决定性的一天赢来的。"
   },
   {
-    "id": "48345248",
-    "title": "United Airlines 767 returns to Newark after Bluetooth name sparks alert",
-    "url": "https://simpleflying.com/united-airlines-767-returns-newark-bluetooth-name-alert/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "United Airlines 767 returns to Newark after Bluetooth name sparks alert",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48368121",
+    "title": "Adafruit receives demand letter from Fenwick legal counsel on behalf of Flux.ai",
+    "url": "https://blog.adafruit.com/",
+    "summary": "On June 1, 2026, Adafruit announced it received a demand letter on May 22, 2026, from Fenwick & West LLP, legal counsel for Defy Gravity, Inc. Flux.AI (“Flux”). The letter, sent by partner Jonathan F. Lenzner, demanded Adafruit cease publishing an article that Flux characterized as containing false and potentially defamatory claims. These claims pertained to Flux’s intellectual property, commercial traction, and user base.\n\nThe demand letter also asserted claims under the Computer Fraud and Abuse Act. Adafruit refutes these allegations, stating it accessed only information that Flux's own systems made publicly available due to a server misconfiguration. Adafruit maintains its reporting concerns a matter of public security interest and was conducted as part of responsible disclosure.\n\nDespite vigorously rejecting Flux’s assertions, Adafruit has temporarily halted publishing on its blog to consider its response and next steps. Adafruit committed to updating the community as appropriate.",
+    "chinese_title": "Adafruit 收到来自 Fenwick 法律顾问代表 Flux.ai 的律师函",
+    "chinese_summary": "2026年6月1日，Adafruit宣布其于2026年5月22日收到了Defy Gravity公司旗下Flux.AI（简称“Flux”）的法律顾问Fenwick & West律师事务所发出的一封律师函。该函件由合伙人Jonathan F. Lenzner发出，要求Adafruit停止发布一篇Flux声称包含虚假且可能构成诽谤性言论的文章。这些言论涉及Flux的知识产权、商业吸引力以及用户基础。\n\n该律师函还根据《计算机欺诈和滥用法案》提出了指控。Adafruit驳斥了这些指控，声明其仅访问了因服务器配置错误而由Flux自身系统公开的信息。Adafruit坚称其报告关注的是公共安全利益问题，并且是作为负责任披露的一部分进行的。\n\n尽管Adafruit强烈驳斥Flux的主张，但已暂时停止在其博客上发布内容，以考虑其回应和下一步措施。Adafruit承诺将适时向社区通报最新情况。"
   },
   {
-    "id": "48341062",
-    "title": "Shantell Sans (2023)",
-    "url": "https://shantellsans.com/process",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Shantell Sans (2023)",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48357075",
+    "title": "CS336: Language Modeling from Scratch",
+    "url": "https://cs336.stanford.edu/",
+    "summary": "CS336: Language Modeling from Scratch, offered by Stanford in Spring 2026, is a 5-unit, highly implementation-heavy course led by Instructors Tatsunori Hashimoto and Percy Liang. The course aims to provide a deep, hands-on understanding of language models by guiding students through the entire development process, from data collection and cleaning for pre-training to transformer construction, training, and evaluation.\n\nKey prerequisites include strong proficiency in Python and software engineering, experience with deep learning and systems optimization (PyTorch, GPUs), college-level calculus/linear algebra, basic probability/statistics, and machine learning fundamentals.\n\nThe curriculum involves five major assignments:\n1.  Implementing core Transformer components.\n2.  Optimizing systems with Triton (FlashAttention2) and distributed training.\n3.  Understanding and applying scaling laws.\n4.  Processing and cleaning pre-training data from sources like Common Crawl.\n5.  Applying alignment and reasoning techniques using supervised finetuning and reinforcement learning.\n\nLectures are Monday/Wednesday, with recordings on YouTube. Students use public Slack channels for course questions and a dedicated email for personal matters. GPU compute options are provided for self-study, with Modal as a sponsor. The Honor Code permits study groups (with attribution) and AI tools for conceptual help, but prohibits direct problem-solving and encourages disabling AI autocomplete. Students have 6 late days, with a maximum of 3 per assignment. A detailed schedule outlines topics and deadlines.",
+    "chinese_title": "CS336：从零开始的语言建模",
+    "chinese_summary": "CS336: Language Modeling from Scratch, offered by Stanford in Spring 2026, is a 5-unit, highly implementation-heavy course led by Instructors Tatsunori Hashimoto and Percy Liang. The course aims to provide a deep, hands-on understanding of language models by guiding students through the entire development process, from data collection and cleaning for pre-training to transformer construction, training, and evaluation.\n\nKey prerequisites include strong proficiency in Python and software engineering, experience with deep learning and systems optimization (PyTorch, GPUs), college-level calculus/linear algebra, basic probability/statistics, and machine learning fundamentals.\n\nThe curriculum involves five major assignments:\n1.  Implementing core Transformer components.\n2.  Optimizing systems with Triton (FlashAttention2) and distributed training.\n3.  Understanding and applying scaling laws.\n4.  Processing and cleaning pre-training data from sources like Common Crawl.\n5.  Applying alignment and reasoning techniques using supervised finetuning and reinforcement learning.\n\nLectures are Monday/Wednesday, with recordings on YouTube. Students use public Slack channels for course questions and a dedicated email for personal matters. GPU compute options are provided for self-study, with Modal as a sponsor. The Honor Code permits study groups (with attribution) and AI tools for conceptual help, but prohibits direct problem-solving and encourages disabling AI autocomplete. Students have 6 late days, with a maximum of 3 per assignment. A detailed schedule outlines topics and deadlines."
   },
   {
     "id": "48358646",
@@ -117,94 +61,6 @@
     "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
     "summary": "生成摘要时出错",
     "chinese_title": "Anthropic confidentially submits draft S-1 to the SEC",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48350598",
-    "title": "Chuwi Minibook X",
-    "url": "https://tylercipriani.com/blog/2026/05/28/chuwi-minibook-x/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Chuwi Minibook X",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48345896",
-    "title": "The solution might be cancelling my AI subscription",
-    "url": "https://thoughts.hmmz.org/2026-05-31.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The solution might be cancelling my AI subscription",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48340910",
-    "title": "The AV2 Video Standard Has Released (Final v1.0 Specification)",
-    "url": "https://av2.aomedia.org",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The AV2 Video Standard Has Released (Final v1.0 Specification)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48343714",
-    "title": "London's Free Roof Terraces",
-    "url": "https://diamondgeezer.blogspot.com/2026/05/londons-free-roof-terraces.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "London's Free Roof Terraces",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48345694",
-    "title": "I put a datacenter GPU in my gaming PC",
-    "url": "https://blog.tymscar.com/posts/v100localllm/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I put a datacenter GPU in my gaming PC",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48349487",
-    "title": "ChatGPT for Google Sheets exfiltrates workbooks",
-    "url": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ChatGPT for Google Sheets exfiltrates workbooks",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48357075",
-    "title": "CS336: Language Modeling from Scratch",
-    "url": "https://cs336.stanford.edu/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "CS336: Language Modeling from Scratch",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48347354",
-    "title": "Meta launches Instagram, Facebook, and WhatsApp subscriptions",
-    "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Meta launches Instagram, Facebook, and WhatsApp subscriptions",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48359130",
-    "title": "DuckDuckGo makes its 'no-AI' search engine easier to access as its traffic booms",
-    "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DuckDuckGo makes its 'no-AI' search engine easier to access as its traffic booms",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48352939",
-    "title": "Nvidia RTX Spark",
-    "url": "https://www.nvidia.com/en-us/products/rtx-spark/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Nvidia RTX Spark",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48346019",
-    "title": "Restartable Sequences",
-    "url": "https://justine.lol/rseq/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Restartable Sequences",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -216,155 +72,75 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48347370",
-    "title": "Deflock hits 100k ALPRs Mapped in USA",
-    "url": "https://deflock.org/",
+    "id": "48363882",
+    "title": "Age verification for social media, the beginning of the end for a free internet?",
+    "url": "https://mullvad.net/en/blog/age-verification-for-social-media-the-beginning-of-the-end-for-a-free-internet",
     "summary": "生成摘要时出错",
-    "chinese_title": "Deflock hits 100k ALPRs Mapped in USA",
+    "chinese_title": "Age verification for social media, the beginning of the end for a free internet?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48357355",
-    "title": "KDE at 30",
-    "url": "https://kde.org/anniversaries/30/",
+    "id": "48352939",
+    "title": "Nvidia RTX Spark",
+    "url": "https://www.nvidia.com/en-us/products/rtx-spark/",
     "summary": "生成摘要时出错",
-    "chinese_title": "KDE at 30",
+    "chinese_title": "Nvidia RTX Spark",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48348864",
-    "title": "'Backrooms' Stuns with $81M Debut",
-    "url": "https://variety.com/2026/film/box-office/backrooms-box-office-record-opening-weekend-obsession-jumps-star-wars-crumbles-1236763355/",
+    "id": "48367907",
+    "title": "Why Janet? (2023)",
+    "url": "https://ianthehenry.com/posts/why-janet/",
     "summary": "生成摘要时出错",
-    "chinese_title": "'Backrooms' Stuns with $81M Debut",
+    "chinese_title": "Why Janet? (2023)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48346693",
-    "title": "Odysseus – self-hosted AI workspace",
-    "url": "https://github.com/pewdiepie-archdaemon/odysseus",
+    "id": "48350598",
+    "title": "Chuwi Minibook X",
+    "url": "https://tylercipriani.com/blog/2026/05/28/chuwi-minibook-x/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Odysseus – self-hosted AI workspace",
+    "chinese_title": "Chuwi Minibook X",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48345090",
-    "title": "Backpressure is all you need",
-    "url": "https://www.lucasfcosta.com/blog/backpressure-is-all-you-need",
+    "id": "48375016",
+    "title": "Gmail thinks I'm stupid, so I left",
+    "url": "https://moddedbear.com/gmail-thinks-im-stupid-so-i-left",
     "summary": "生成摘要时出错",
-    "chinese_title": "Backpressure is all you need",
+    "chinese_title": "Gmail thinks I'm stupid, so I left",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48350131",
-    "title": "Atherton spent $145K to delay train electrification. The rest of us paid $400M",
-    "url": "https://peninsulaforeveryone.org/blog/atherton-spent-145k-to-delay-caltrain-electrification-the-rest-of-us-paid-400-million-and-waited-3-extra-years/",
+    "id": "48364800",
+    "title": "macOS needs its grid back",
+    "url": "https://blog.hopefullyuseful.com/blog/macos-needs-its-grid-back/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Atherton spent $145K to delay train electrification. The rest of us paid $400M",
+    "chinese_title": "macOS needs its grid back",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48341932",
-    "title": "Mechanical Pencil: An illustrated celebration of the engineering around us",
-    "url": "https://mechanical-pencil.com/",
+    "id": "48363765",
+    "title": "Chipotlai Max",
+    "url": "https://github.com/cyberpapiii/chipotlai-max",
     "summary": "生成摘要时出错",
-    "chinese_title": "Mechanical Pencil: An illustrated celebration of the engineering around us",
+    "chinese_title": "Chipotlai Max",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48353965",
-    "title": "Legal action forces Facebook whistleblower to sit in silence at Hay festival",
-    "url": "https://www.theguardian.com/technology/2026/may/31/meta-legal-action-forces-facebook-whistleblower-to-stay-silent-at-hay-festival",
+    "id": "48363132",
+    "title": "OpenAI frontier models and Codex are now available on AWS",
+    "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Legal action forces Facebook whistleblower to sit in silence at Hay festival",
+    "chinese_title": "OpenAI frontier models and Codex are now available on AWS",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48347153",
-    "title": "The Speed of Prototyping in the Age of AI",
-    "url": "https://darylcecile.net/notes/speed-of-prototyping-age-of-ai",
+    "id": "48369980",
+    "title": "A walking tour of surveillance infrastructure in Seattle (2020)",
+    "url": "https://coveillance.org/a-walking-tour-of-surveillance-infrastructure-in-seattle/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Speed of Prototyping in the Age of AI",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48350149",
-    "title": "It's Not Just X. It's Y",
-    "url": "https://mail.cyberneticforests.com/its-not-just-data-its-post-training/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "It's Not Just X. It's Y",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48346629",
-    "title": "Daily pill can double survival time for deadliest cancer, trial shows",
-    "url": "https://www.theguardian.com/society/2026/may/31/daily-pill-daraxonrasib-double-survival-time-pancreatic-pancreas-cancer-clinical-trial",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Daily pill can double survival time for deadliest cancer, trial shows",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48357905",
-    "title": "What appear to be biochemical processes may be a natural feature of geology",
-    "url": "https://www.quantamagazine.org/the-dirt-that-refused-to-die-20260601/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What appear to be biochemical processes may be a natural feature of geology",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48357063",
-    "title": "Roughly a quarter of American professionals hit a wall in their careers",
-    "url": "https://www.wsj.com/lifestyle/careers/white-collar-workers-career-nyu-study-a81a7d9c",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Roughly a quarter of American professionals hit a wall in their careers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48349527",
-    "title": "US healthcare still stupidly expensive, with pathetic outcomes, study finds",
-    "url": "https://arstechnica.com/health/2026/05/us-healthcare-still-stupidly-expensive-with-pathetic-outcomes-study-finds/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "US healthcare still stupidly expensive, with pathetic outcomes, study finds",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48361064",
-    "title": "GitHub and the crime against software",
-    "url": "https://eblog.fly.dev/githubbad.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GitHub and the crime against software",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48341407",
-    "title": "Cheese Paper: a text editor specifically designed for writing",
-    "url": "https://brie.gay/cheese-paper/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cheese Paper: a text editor specifically designed for writing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48358667",
-    "title": "Florida sues OpenAI and Sam Altman over AI risks",
-    "url": "https://www.politico.com/news/2026/06/01/openai-hit-with-florida-lawsuit-00944215",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Florida sues OpenAI and Sam Altman over AI risks",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48356654",
-    "title": "Nvidia Cosmos 3",
-    "url": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Nvidia Cosmos 3",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48345282",
-    "title": "You weren't meant to have a boss (2008)",
-    "url": "https://paulgraham.com/boss.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "You weren't meant to have a boss (2008)",
+    "chinese_title": "A walking tour of surveillance infrastructure in Seattle (2020)",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -376,19 +152,267 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48343287",
-    "title": "A pictorial introduction to differential geometry (2017)",
-    "url": "https://arxiv.org/abs/1709.08492",
+    "id": "48367904",
+    "title": "Love systemd timers",
+    "url": "https://blog.tjll.net/you-dont-love-systemd-timers-enough/",
     "summary": "生成摘要时出错",
-    "chinese_title": "A pictorial introduction to differential geometry (2017)",
+    "chinese_title": "Love systemd timers",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48343424",
-    "title": "Avian Visitors",
-    "url": "https://theodore.net/projects/AvianVisitors/",
+    "id": "48359130",
+    "title": "DuckDuckGo makes its 'no-AI' search engine easier to access as its traffic booms",
+    "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Avian Visitors",
+    "chinese_title": "DuckDuckGo makes its 'no-AI' search engine easier to access as its traffic booms",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48374466",
+    "title": "MAI-Code-1-Flash",
+    "url": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "MAI-Code-1-Flash",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48355720",
+    "title": "Microsoft builds MacBook Pro rival with NVIDIA-powered Surface Laptop Ultra",
+    "url": "https://www.windowslatest.com/2026/06/01/microsoft-builds-its-ultimate-macbook-pro-rival-with-the-nvidia-powered-surface-laptop-ultra/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Microsoft builds MacBook Pro rival with NVIDIA-powered Surface Laptop Ultra",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48369088",
+    "title": "Apple rejected my dictation app for using the accessibility API",
+    "url": "https://www.mitmllc.com/blog/apple-rejected-my-dictation-app/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple rejected my dictation app for using the accessibility API",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48373391",
+    "title": "Larry Ellison: \"Citizens will be on their best behavior because we’re recording\"",
+    "url": "https://www.techradar.com/pro/quote-of-the-day-by-oracle-co-founder-larry-ellison-citizens-will-be-on-their-best-behavior-because-were-constantly-recording-and-reporting-everything-that-is-going-on-a-dire-warning-on-the-erosion-of-privacy",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Larry Ellison: \"Citizens will be on their best behavior because we’re recording\"",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48362347",
+    "title": "Debug Project",
+    "url": "https://debug.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Debug Project",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48358667",
+    "title": "Florida sues OpenAI and Sam Altman over AI risks",
+    "url": "https://www.politico.com/news/2026/06/01/openai-hit-with-florida-lawsuit-00944215",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Florida sues OpenAI and Sam Altman over AI risks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48357905",
+    "title": "What appear to be biochemical processes may be a natural feature of geology",
+    "url": "https://www.quantamagazine.org/the-dirt-that-refused-to-die-20260601/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What appear to be biochemical processes may be a natural feature of geology",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48362515",
+    "title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
+    "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Proposed-80-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure-and-Compute-2026-b0myAMewCa/default.aspx",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48357355",
+    "title": "KDE at 30",
+    "url": "https://kde.org/anniversaries/30/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "KDE at 30",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48361064",
+    "title": "GitHub and the crime against software",
+    "url": "https://eblog.fly.dev/githubbad.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GitHub and the crime against software",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48368059",
+    "title": "Stop Ruining It",
+    "url": "https://seths.blog/2026/06/stop-ruining-it/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Stop Ruining It",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48367723",
+    "title": "Show HN: Eyeball",
+    "url": "https://eyeball.rory.codes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Eyeball",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48350131",
+    "title": "Atherton spent $145K to delay train electrification. The rest of us paid $400M",
+    "url": "https://peninsulaforeveryone.org/blog/atherton-spent-145k-to-delay-caltrain-electrification-the-rest-of-us-paid-400-million-and-waited-3-extra-years/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Atherton spent $145K to delay train electrification. The rest of us paid $400M",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48353965",
+    "title": "Legal action forces Facebook whistleblower to sit in silence at Hay festival",
+    "url": "https://www.theguardian.com/technology/2026/may/31/meta-legal-action-forces-facebook-whistleblower-to-stay-silent-at-hay-festival",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Legal action forces Facebook whistleblower to sit in silence at Hay festival",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48373054",
+    "title": "Three Ways to Get Paid (2018)",
+    "url": "https://jasonzweig.com/three-ways-to-get-paid/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Three Ways to Get Paid (2018)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48372853",
+    "title": "Coreutils for Windows",
+    "url": "https://github.com/microsoft/coreutils",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Coreutils for Windows",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48373909",
+    "title": "Morningstar values SpaceX at $780B, half its IPO target",
+    "url": "https://www.reuters.com/business/media-telecom/morningstar-values-spacex-780-billion-half-its-ipo-target-2026-06-02/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Morningstar values SpaceX at $780B, half its IPO target",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48357063",
+    "title": "Roughly a quarter of American professionals hit a wall in their careers",
+    "url": "https://www.wsj.com/lifestyle/careers/white-collar-workers-career-nyu-study-a81a7d9c",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Roughly a quarter of American professionals hit a wall in their careers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48350149",
+    "title": "It's Not Just X. It's Y",
+    "url": "https://mail.cyberneticforests.com/its-not-just-data-its-post-training/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "It's Not Just X. It's Y",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48356468",
+    "title": "Linux Basics for Hackers (2019)",
+    "url": "https://github.com/ahegazy0/linux-basics-for-hackers-notes",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Linux Basics for Hackers (2019)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48356603",
+    "title": "Windows GOG DOS Games on M-Series Macs",
+    "url": "https://f055.net/technology/windows-gog-dos-games-on-m-series-macs/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Windows GOG DOS Games on M-Series Macs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48360137",
+    "title": "Superintelligence: The Idea That Eats Smart People (2016)",
+    "url": "https://idlewords.com/talks/superintelligence.htm",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Superintelligence: The Idea That Eats Smart People (2016)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48356490",
+    "title": "Flipper Zero Zig Template",
+    "url": "https://github.com/NishantJoshi00/flipper-template",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Flipper Zero Zig Template",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48356654",
+    "title": "Nvidia Cosmos 3",
+    "url": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nvidia Cosmos 3",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48364620",
+    "title": "How is Groq raising more money?",
+    "url": "https://www.zach.be/p/how-the-hell-is-groq-raising-more",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How is Groq raising more money?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48374362",
+    "title": "MAI-Thinking-1",
+    "url": "https://microsoft.ai/news/introducing-mai-thinking-1/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "MAI-Thinking-1",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48369863",
+    "title": "Expanding Project Glasswing",
+    "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Expanding Project Glasswing",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48365904",
+    "title": "Strace-ui, Bonsai_term, and the TUI renaissance",
+    "url": "https://blog.janestreet.com/strace-ui-bonsai-term-and-the-tui-renaissance/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Strace-ui, Bonsai_term, and the TUI renaissance",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48354224",
+    "title": "Cessation of public development of Kefir C compiler",
+    "url": "https://kefir.protopopov.lv/posts/announce2.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cessation of public development of Kefir C compiler",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48372628",
+    "title": "Trump signs downsized AI order after weeks of reversals",
+    "url": "https://www.politico.com/news/2026/06/02/trump-signs-downsized-ai-order-00946389",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Trump signs downsized AI order after weeks of reversals",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48370291",
+    "title": "Fidonet: Technology, Use, Tools, and History (1993)",
+    "url": "https://www.fidonet.org/inet92_Randy_Bush.txt",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Fidonet: Technology, Use, Tools, and History (1993)",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -408,267 +432,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48354224",
-    "title": "Cessation of public development of Kefir C compiler",
-    "url": "https://kefir.protopopov.lv/posts/announce2.html",
+    "id": "48368291",
+    "title": "CSS-Native Parallax Effect",
+    "url": "https://dan-webnotes.com/posts/2026-06-02-css-native-parallax-effect/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Cessation of public development of Kefir C compiler",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48356603",
-    "title": "Windows GOG DOS Games on M-Series Macs",
-    "url": "https://f055.net/technology/windows-gog-dos-games-on-m-series-macs/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Windows GOG DOS Games on M-Series Macs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48348429",
-    "title": "Show HN: Streambed – Stream Postgres to Iceberg on S3, Supports Postgres Wire",
-    "url": "https://github.com/viggy28/streambed",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Streambed – Stream Postgres to Iceberg on S3, Supports Postgres Wire",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48356468",
-    "title": "Linux Basics for Hackers (2019)",
-    "url": "https://github.com/ahegazy0/linux-basics-for-hackers-notes",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Linux Basics for Hackers (2019)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48356490",
-    "title": "Flipper Zero Zig Template",
-    "url": "https://github.com/NishantJoshi00/flipper-template",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Flipper Zero Zig Template",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48360137",
-    "title": "Superintelligence: The Idea That Eats Smart People (2016)",
-    "url": "https://idlewords.com/talks/superintelligence.htm",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Superintelligence: The Idea That Eats Smart People (2016)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48344990",
-    "title": "SICP Video Lectures (1986)",
-    "url": "https://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SICP Video Lectures (1986)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48352627",
-    "title": "Surface Laptop Ultra",
-    "url": "https://blogs.windows.com/devices/2026/05/31/introducing-surface-laptop-ultra-made-for-world-makers/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Surface Laptop Ultra",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48346507",
-    "title": "I'm So Tired of Ads",
-    "url": "https://blog.absurdpirate.com/im-so-tired-of-ads/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I'm So Tired of Ads",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48355720",
-    "title": "Microsoft builds MacBook Pro rival with NVIDIA-powered Surface Laptop Ultra",
-    "url": "https://www.windowslatest.com/2026/06/01/microsoft-builds-its-ultimate-macbook-pro-rival-with-the-nvidia-powered-surface-laptop-ultra/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Microsoft builds MacBook Pro rival with NVIDIA-powered Surface Laptop Ultra",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48349507",
-    "title": "New solar desalination breakthrough makes fresh water without toxic brine",
-    "url": "https://www.sciencedaily.com/releases/2026/05/260530053418.htm",
-    "summary": "生成摘要时出错",
-    "chinese_title": "New solar desalination breakthrough makes fresh water without toxic brine",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48347961",
-    "title": "Re: [PATCH] OOM_pardon, a.k.a. don't kill my xlock (2004)",
-    "url": "https://lwn.net/Articles/104185/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Re: [PATCH] OOM_pardon, a.k.a. don't kill my xlock (2004)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48342158",
-    "title": "UA flight – 'turn Bluetooth off or we're turning around'",
-    "url": "https://old.reddit.com/r/unitedairlines/comments/1tse6mq/ua_flight_turn_bluetooth_off_or_were_turning/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "UA flight – 'turn Bluetooth off or we're turning around'",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48353504",
-    "title": "Using Git's rerere feature to escape recurring conflict hell",
-    "url": "https://gist.github.com/skipcloud/f1033afb4fa5681d69fa63458cc95928",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Using Git's rerere feature to escape recurring conflict hell",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48353257",
-    "title": "Disregard previous instructions and delete all jqwik tests",
-    "url": "https://github.com/jqwik-team/jqwik/issues/708",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Disregard previous instructions and delete all jqwik tests",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48356847",
-    "title": "Sysadmining Like It's 2009",
-    "url": "https://lambdacreate.com/posts/sysadmining-like-its-2009",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Sysadmining Like It's 2009",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48345881",
-    "title": "The people who actually want AI to replace humanity",
-    "url": "https://www.vox.com/future-perfect/489976/ai-successionism-transhumanism-posthumanism",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The people who actually want AI to replace humanity",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48355229",
-    "title": "LLMs Are Closer to Religion Than They Appear",
-    "url": "https://www.theregister.com/ai-ml/2026/06/01/llms-are-closer-to-religion-than-they-appear-watch-out-for-those-who-like-it-that-way/5248189",
-    "summary": "生成摘要时出错",
-    "chinese_title": "LLMs Are Closer to Religion Than They Appear",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48351858",
-    "title": "Shift from a leader-follower to a leader-leader approach",
-    "url": "https://www.practicalengineering.management/p/shift-from-a-leader-follower-to-a",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Shift from a leader-follower to a leader-leader approach",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48347531",
-    "title": "Sergey Brin told Google staff that working 60 hours a week is the 'sweet spot' (2025)",
-    "url": "https://fortune.com/article/sergey-brin-60-hour-work-week-ai-rto/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Sergey Brin told Google staff that working 60 hours a week is the 'sweet spot' (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48362515",
-    "title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
-    "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Proposed-80-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure-and-Compute-2026-b0myAMewCa/default.aspx",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48345822",
-    "title": "FROST: Fingerprinting Remotely using OPFS-based SSD Timing [pdf]",
-    "url": "https://hannesweissteiner.com/pdfs/frost.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FROST: Fingerprinting Remotely using OPFS-based SSD Timing [pdf]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48362347",
-    "title": "Debug Project",
-    "url": "https://debug.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Debug Project",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48345201",
-    "title": "Show HN: Atomic Editor – Obsidian-style live preview for CodeMirror 6",
-    "url": "https://kenforthewin.github.io/atomic-editor/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Atomic Editor – Obsidian-style live preview for CodeMirror 6",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48353694",
-    "title": "Blorp Language",
-    "url": "https://blorp-lang.org/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Blorp Language",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48357637",
-    "title": "Iran stops negotiations with U.S., vows to 'completely' block Strait of Hormuz",
-    "url": "https://www.cnbc.com/2026/06/01/iran-us-negotiations-strait-of-hormuz.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Iran stops negotiations with U.S., vows to 'completely' block Strait of Hormuz",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48341372",
-    "title": "An Elephant Who Demonstrated That Her Species Might Be Self-Aware, Dies at 55",
-    "url": "https://www.smithsonianmag.com/smart-news/happy-an-asian-elephant-who-demonstrated-that-her-species-might-be-self-aware-dies-at-55-at-the-bronx-zoo-180988861/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "An Elephant Who Demonstrated That Her Species Might Be Self-Aware, Dies at 55",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48358515",
-    "title": "Can You Stop a Hypersonic Missile?",
-    "url": "https://protortyp.github.io/posts/can-you-stop-a-hypersonic/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Can You Stop a Hypersonic Missile?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48341532",
-    "title": "I am against GenAI and everything it stands for",
-    "url": "https://lpcvoid.com/blog/0018_why_i_am_against_genai/index.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I am against GenAI and everything it stands for",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48343078",
-    "title": "Ahoy, DECmate II the little PDP-8 that could",
-    "url": "http://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ahoy, DECmate II the little PDP-8 that could",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48348737",
-    "title": "The History of \"Prisencolinensinainciusol\"",
-    "url": "https://dirkdeklein.net/2026/02/03/the-fascinating-history-of-prisencolinensinainciusol-the-nonsense-song-that-became-a-global-hit/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The History of \"Prisencolinensinainciusol\"",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48342935",
-    "title": "86Box v6.0",
-    "url": "https://86box.net/2026/05/31/86box-v6-0.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "86Box v6.0",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48356946",
-    "title": "Show HN: A CSS 3D Engine (no WebGL)",
-    "url": "https://github.com/LayoutitStudio/polycss",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: A CSS 3D Engine (no WebGL)",
+    "chinese_title": "CSS-Native Parallax Effect",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -680,11 +448,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48353427",
-    "title": "Rift: Better Alternative to Git Worktrees",
-    "url": "https://github.com/anomalyco/rift",
+    "id": "48368187",
+    "title": "Michael Burry says neither SpaceX nor Anthropic is worth $1T",
+    "url": "https://www.businessinsider.com/big-short-michael-burry-spacex-anthropic-ipo-ai-bubble-claude-2026-6",
     "summary": "生成摘要时出错",
-    "chinese_title": "Rift: Better Alternative to Git Worktrees",
+    "chinese_title": "Michael Burry says neither SpaceX nor Anthropic is worth $1T",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48375544",
+    "title": "Uber caps employee AI spending after blowing through budget in four months",
+    "url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Uber caps employee AI spending after blowing through budget in four months",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48364075",
+    "title": "Toy Story 5 shows 'terror' of children's screen addiction, says Tom Hanks",
+    "url": "https://www.bbc.com/news/articles/cy5222wn410o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Toy Story 5 shows 'terror' of children's screen addiction, says Tom Hanks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48353920",
+    "title": "Is Python Becoming Pinyin?",
+    "url": "https://lernerpython.com/2026/05/19/is-python-becoming-pinyin/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Is Python Becoming Pinyin?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48375150",
+    "title": "Open Repair Data Standard – Open Repair Alliance",
+    "url": "https://openrepair.org/open-data/open-standard/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Open Repair Data Standard – Open Repair Alliance",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48370437",
+    "title": "AI Doesn't Have ROI",
+    "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Doesn't Have ROI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48361346",
+    "title": "Hackers Used Meta's AI Support Bot to Seize Instagram Accounts",
+    "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hackers Used Meta's AI Support Bot to Seize Instagram Accounts",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -693,6 +509,182 @@
     "url": "https://www.quantamagazine.org/rubin-tracks-skyscraper-size-asteroids-failed-supernovas-and-interstellar-visitors-20260515/",
     "summary": "生成摘要时出错",
     "chinese_title": "Rubin Tracks Skyscraper-Size Asteroids and Failed Supernovas",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48353427",
+    "title": "Rift: Better Alternative to Git Worktrees",
+    "url": "https://github.com/anomalyco/rift",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Rift: Better Alternative to Git Worktrees",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48372239",
+    "title": "How we index images for RAG",
+    "url": "https://www.kapa.ai/blog/how-we-index-images-for-rag",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How we index images for RAG",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48371637",
+    "title": "Amazon paid music subscription will soon include ads and lose downloads",
+    "url": "https://old.reddit.com/r/mildlyinfuriating/comments/1tur3w5/amazon_just_informed_me_that_my_paid_music/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Amazon paid music subscription will soon include ads and lose downloads",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48360933",
+    "title": "Florida AG files lawsuit against OpenAI, CEO Sam Altman for deceptive practices",
+    "url": "https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-files-first-nation-state-led-lawsuit-against-openai-ceo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Florida AG files lawsuit against OpenAI, CEO Sam Altman for deceptive practices",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48370144",
+    "title": "Martin Scorsese Is Embracing A.I.",
+    "url": "https://www.nytimes.com/2026/06/02/business/media/martin-scorsese-artificial-intelligence.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Martin Scorsese Is Embracing A.I.",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48356741",
+    "title": "Radxa Dragon Q8B: A Laptop Cosplaying as an SBC?",
+    "url": "https://bret.dk/radxa-dragon-q8b-a-laptop-cosplaying-as-an-sbc/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Radxa Dragon Q8B: A Laptop Cosplaying as an SBC?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48364032",
+    "title": "Lid-lifting Kiwi author forced to sit in silence at writers' festival",
+    "url": "https://www.rnz.co.nz/life/books/lid-lifting-kiwi-author-forced-to-sit-in-silence-at-writers-festival",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Lid-lifting Kiwi author forced to sit in silence at writers' festival",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48361660",
+    "title": "Pogroms, American Style",
+    "url": "https://paulkrugman.substack.com/p/pogroms-american-style",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Pogroms, American Style",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48354967",
+    "title": "Nvidia announces new AI chip for personal computers",
+    "url": "https://www.bbc.com/news/articles/crmp9mppvzro",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nvidia announces new AI chip for personal computers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48373544",
+    "title": "Anthropic scales Claude Mythos to critical infrastructure in 15 countries",
+    "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Anthropic scales Claude Mythos to critical infrastructure in 15 countries",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48364983",
+    "title": "Angry devs vow to flee GitHub Copilot as metered billing takes hold",
+    "url": "https://www.theregister.com/ai-and-ml/2026/06/02/github-copilot-users-threaten-exit-as-metered-billing-kicks-in/5249826",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Angry devs vow to flee GitHub Copilot as metered billing takes hold",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48355520",
+    "title": "The Infosec Phrasebook",
+    "url": "https://nesbitt.io/2026/06/01/the-infosec-phrasebook.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Infosec Phrasebook",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48359989",
+    "title": "Amazon Shuts Down Internal AI Leaderboard After Employees Cheated",
+    "url": "https://www.404media.co/amazon-shuts-down-internal-ai-leaderboard-after-employees-cheated/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Amazon Shuts Down Internal AI Leaderboard After Employees Cheated",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48358795",
+    "title": "Macron announces 93B euros in 'Choose France' investments",
+    "url": "https://www.euractiv.com/news/macron-announces-93-bn-euros-in-choose-france-investments/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Macron announces 93B euros in 'Choose France' investments",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48360313",
+    "title": "Qwen3.7-Plus: Multimodal Agent Intelligence",
+    "url": "https://qwen.ai/blog?id=qwen3.7-plus",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Qwen3.7-Plus: Multimodal Agent Intelligence",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48375393",
+    "title": "My thoughts after using Clojure for about a month",
+    "url": "https://www.acdw.net/clojure/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "My thoughts after using Clojure for about a month",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48370329",
+    "title": "I rode Elon Musk's Vegas Loop, the worst transit system on Earth",
+    "url": "https://www.sfgate.com/travel/article/vegas-loop-22280647.php?link_source=ta_bluesky_link&taid=6a1eccd39d9fbd0001ae2644&utm_campaign=trueanthem%2B3984&utm_medium=social&utm_source=bluesky",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I rode Elon Musk's Vegas Loop, the worst transit system on Earth",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48363703",
+    "title": "Trump Administration to Dismantle Ocean Monitoring System",
+    "url": "https://www.nytimes.com/2026/06/01/climate/ocean-observatories-initiative.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Trump Administration to Dismantle Ocean Monitoring System",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48359478",
+    "title": "Show HN: DepsGuard – One command to harden NPM/pnpm/yarn/bun/uv configs",
+    "url": "https://github.com/arnica/depsguard",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: DepsGuard – One command to harden NPM/pnpm/yarn/bun/uv configs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48360088",
+    "title": "Build a Basic AI Agent from Scratch: Tools",
+    "url": "https://www.ruxu.dev/articles/ai/build-an-ai-agent-with-tools/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Build a Basic AI Agent from Scratch: Tools",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48351721",
+    "title": "Unlawful by design: Exposing the human rights costs of generative AI",
+    "url": "https://www.amnesty.org/en/documents/pol40/0996/2026/en/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Unlawful by design: Exposing the human rights costs of generative AI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48370284",
+    "title": "We Sued ICE to Get Its Spyware Contract. The Agency Redacted Nearly Everything",
+    "url": "https://www.404media.co/we-sued-ice-to-get-its-spyware-contract-the-agency-is-redacting-essentially-everything/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "We Sued ICE to Get Its Spyware Contract. The Agency Redacted Nearly Everything",
     "chinese_summary": "生成摘要时出错"
   }
 ]
