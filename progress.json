@@ -1,122 +1,122 @@
 [
   {
-    "id": "48528371",
-    "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
-    "url": "https://github.com/nex-agi/Nex-N2/issues/4",
-    "summary": "An issue has been raised by Nex-AGI, alleging that Rio-3.5-Open-397B, a large language model (LLM) presented by IplanRIO as an original creation, is not \"homegrown\" but rather a direct element-wise merge of existing models.\n\nAccording to Nex-AGI, Rio-3.5-Open-397B's weights are approximately a 60% blend of their own model, Nex-N2_pro, and 40% of the official Qwen3.5-397B-A17B base. They claim there is no evidence of IplanRIO's own training.\n\nNex-AGI provides two key pieces of evidence:\n1.  **Self-identification:** When Rio-3.5-Open-397B's hard-coded \"You are Rio\" system prompt is removed, the model identifies itself as \"Nex, from Nex-AGI\" 79% of the time, even reciting Nex-AGI's specific backstory, while never identifying as \"Rio.\"\n2.  **Weight analysis:** Every weight tensor in Rio-3.5-Open-397B consistently shows the precise 0.6/0.4 blend of Nex and Qwen across all 60 layers and network components. Nex-AGI states that this consistent interpolation cannot be explained by standard finetuning processes.",
-    "chinese_title": "里约热内卢的“本土”大语言模型，看来是现有模型的一个合并版。",
-    "chinese_summary": "Nex-AGI提出一项指控，声称IplanRIO宣称为原创的大型语言模型 (LLM) Rio-3.5-Open-397B并非“自主研发”，而是现有模型的直接逐元素合并。\n\nNex-AGI指出，Rio-3.5-Open-397B的权重中约60%来自他们自己的模型Nex-N2_pro，40%来自官方的Qwen3.5-397B-A17B基座。他们声称没有证据表明IplanRIO进行了自主训练。\n\nNex-AGI提供了两项关键证据：\n1.  **自我识别：** 当移除Rio-3.5-Open-397B模型中硬编码的“你是Rio”系统提示后，该模型在79%的情况下会识别自己为“我是Nex，来自Nex-AGI”，甚至会复述Nex-AGI的特定背景故事，而从未将自己识别为“Rio”。\n2.  **权重分析：** Rio-3.5-Open-397B中的每个权重张量，在所有60个层和网络组件中，都一致地显示出Nex和Qwen模型精确的0.6/0.4混合比例。Nex-AGI指出，这种一致的插值无法用标准的微调过程来解释。"
+    "id": "48533848",
+    "title": "Your ePub Is fine",
+    "url": "https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/",
+    "summary": "This content, a repeated title from André Klein's website, points to a technical issue regarding EPUB files. It suggests that while an EPUB file might be considered correctly formatted (\"fine\"), it encounters problems or is deemed incorrect when used with Kobo. The author, André Klein, attributes the root cause of this incompatibility or rendering problem to Adobe.",
+    "chinese_title": "你的 ePub 没问题。",
+    "chinese_summary": "This content, a repeated title from André Klein's website, points to a technical issue regarding EPUB files. It suggests that while an EPUB file might be considered correctly formatted (\"fine\"), it encounters problems or is deemed incorrect when used with Kobo. The author, André Klein, attributes the root cause of this incompatibility or rendering problem to Adobe."
   },
   {
-    "id": "48524293",
-    "title": "Phoenix LiveView 1.2",
-    "url": "https://phoenixframework.org/blog/phoenix-liveview-1-2-released",
-    "summary": "Phoenix LiveView 1.2 has been released, primarily featuring **Colocated CSS**. Building on Colocated Hooks and JavaScript from LiveView 1.1, developers can now embed CSS directly within HEEx templates using `<style :type={MyApp.ColocatedCSS}>`. LiveView extracts this CSS at compile time for processing by bundlers like Tailwind or Esbuild.\n\nA major challenge with colocated styles is scoping. LiveView addresses this by leveraging the new `@scope` CSS rule, which accepts root and optional limit selectors. To facilitate this, LiveView introduces a configurable `phx-r` attribute for all outermost template elements (acting as a limit selector) and unique `phx-css-*` attributes for component roots. This allows CSS rules like `@scope ([phx-css-foo]) to ([phx-r]) { p { font-weight: bold; } }` to apply only within a specific component's boundaries.\n\nWhile the technical groundwork for `@scope` is laid, LiveView 1.2 does not ship it by default due to limited browser support (as of June 2026). Instead, it provides a `@behaviour` for implementing custom scoping strategies, with the `@scope` implementation detailed in the documentation for early adopters. The implementation of Colocated CSS also led to a significant refactoring of HEEx template compilation, splitting it into tokenization and parsing steps for improved maintainability.\n\nOther notable improvements in LiveView 1.2 include:\n*   `Phoenix.LiveView.HTMLFormatter.TagFormatter` for formatting `<script>` and `<style>` tags.\n*   Automatic encoding of `Phoenix.LiveView.JS` structs when sent with `push_event`.\n*   Module-level configuration for HEEx debug annotations (`@debug_heex_annotations`, `@debug_attributes`).\n*   Configurable test warnings by category.\n*   Separate documentation for the JavaScript client.\n\nThe release encourages feedback and bug reports, with special thanks to Dashbit for sponsoring the work.",
-    "chinese_title": "Phoenix LiveView 1.2",
-    "chinese_summary": "Phoenix LiveView 1.2 已发布，主要特性是 **共置 CSS**。基于 LiveView 1.1 中的共置 Hook 和 JavaScript，开发者现在可以使用 `<style :type={MyApp.ColocatedCSS}>` 直接在 HEEx 模板中嵌入 CSS。LiveView 会在编译时提取此 CSS，供 Tailwind 或 Esbuild 等打包工具处理。\n\n共置样式的一个主要挑战是作用域。LiveView 通过利用新的 `@scope` CSS 规则来解决此问题，该规则接受根选择器和可选的限制选择器。为实现这一点，LiveView 为所有最外层模板元素引入了一个可配置的 `phx-r` 属性（作为限制选择器），并为组件根引入了唯一的 `phx-css-*` 属性。这使得像 `@scope ([phx-css-foo]) to ([phx-r]) { p { font-weight: bold; } }` 这样的 CSS 规则只能应用于特定组件的边界内。\n\n尽管 `@scope` 的技术基础已经奠定，但由于浏览器支持有限（截至 2026 年 6 月），LiveView 1.2 默认不提供此功能。相反，它提供了一个 `@behaviour` 用于实现自定义作用域策略，并且 `@scope` 的实现细节在文档中为早期采用者进行了详细说明。共置 CSS 的实现也导致 HEEx 模板编译进行了重大重构，将其拆分为词法分析和解析步骤，以提高可维护性。\n\nLiveView 1.2 的其他显著改进包括：\n*   用于格式化 `<script>` 和 `<style>` 标签的 `Phoenix.LiveView.HTMLFormatter.TagFormatter`。\n*   使用 `push_event` 发送 `Phoenix.LiveView.JS` 结构体时自动编码。\n*   HEEx 调试注解（`@debug_heex_annotations`、`@debug_attributes`）的模块级配置。\n*   按类别配置测试警告。\n*   JavaScript 客户端的独立文档。\n\n本次发布鼓励反馈和错误报告，并特别感谢 Dashbit 赞助了这项工作。"
-  },
-  {
-    "id": "48513728",
-    "title": "Shepherd's Dog: A Game by Fable",
-    "url": "https://koenvangilst.nl/lab/claude-fable-shepherds-dog",
-    "summary": "The article describes a user's test of Anthropic's recently released, purportedly \"dangerous\" AI model. The author challenged the AI to build a game idea they'd envisioned for years, \"Shepherd's Dog,\" in a single attempt.\n\nAfter a 45-minute reasoning session and costing over €20 in tokens, the AI successfully generated a complete, 2,319-line `index.html` file with zero dependencies for the game. The author expressed delight, stating the game is \"really fun and exactly how I imagined it,\" and noted it was the first time an AI model had achieved this for them in one go. The piece provides links to play the AI-generated game and view earlier attempts with other models.",
-    "chinese_title": "牧羊犬：Fable出品",
-    "chinese_summary": "文章描述了一位用户对Anthropic公司最近发布的、据称“危险”的AI模型进行的测试。作者挑战该AI模型，一次性构建他们构思多年的一个游戏理念——“牧羊犬”。\n\n经过45分钟的推理，并花费了超过20欧元的token，该AI模型成功生成了一个完整的、2,319行且零依赖的游戏`index.html`文件。作者对此表示欣喜，称这款游戏“非常有趣，完全符合我的想象”，并指出这是AI模型首次为他们一次性实现这样的成果。该文章提供了链接，可用于玩这款AI生成的游戏，并查看其他模型之前的尝试。"
-  },
-  {
-    "id": "48526661",
-    "title": "The Birth and Death of JavaScript (2014)",
-    "url": "https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript",
-    "summary": "This article introduces \"The Birth & Death of JavaScript,\" a talk delivered by Gary Bernhardt at PyCon 2014. Described as a \"science fiction / comedy / completely serious\" presentation, it traces the history of JavaScript and programming from 1995 through to a futuristic 2035.\n\nThe talk adopts a balanced stance, frankly discussing the language's flaws while ultimately highlighting its \"tremendously positive\" impact on the industry. For those interested in Bernhardt's more serious programming insights, his Destroy All Software screencasts are recommended.\n\nThe article also promotes \"Execute Program,\" a platform offering interactive courses on topics like TypeScript, Modern JavaScript, SQL, and regular expressions, featuring hundreds of live code examples.",
-    "chinese_title": "JavaScript的诞生与消亡 (2014)",
-    "chinese_summary": "本文介绍了Gary Bernhardt在2014年PyCon大会上发表的演讲“JavaScript的诞生与消亡”。这场被描述为“科幻/喜剧/极其严肃”的演讲，追溯了JavaScript和编程从1995年到未来2035年的历史。\n\n该演讲采取了平衡的视角，坦诚地讨论了该语言的缺陷，同时最终强调了它对行业“极其积极”的影响。对于那些对Bernhardt更严肃的编程见解感兴趣的人，推荐观看他的“Destroy All Software”系列截屏视频。\n\n本文还推广了一个名为“Execute Program”的平台，该平台提供关于TypeScript、现代JavaScript、SQL和正则表达式等主题的互动课程，其中包含数百个实时代码示例。"
-  },
-  {
-    "id": "48524135",
-    "title": "Pac-Man, but you're the ghost",
-    "url": "https://garrit.xyz/posts/2026-06-13-pac-man-but-you-re-the-ghost",
+    "id": "48542480",
+    "title": "Iroh 1.0",
+    "url": "https://www.iroh.computer/blog/v1",
     "summary": "生成摘要时出错",
-    "chinese_title": "吃豆人，但你是幽灵",
+    "chinese_title": "Iroh 1.0",
     "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48537165",
+    "title": "Curl will not accept vulnerability reports during July 2026",
+    "url": "https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Curl will not accept vulnerability reports during July 2026",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48526360",
+    "title": "How to earn a billion dollars",
+    "url": "https://paulgraham.com/earn.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How to earn a billion dollars",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48538229",
+    "title": "What happened to nerds?",
+    "url": "https://mrmarket.lol/what-the-fuck-happened-to-nerds/",
+    "summary": "The article laments the drastic shift in the public perception and behavior of tech leaders, from \"charming nerds\" to \"terrifying overlords.\" Historically, figures like Steve Jobs (perfectionist) and Steve Wozniak (humble genius) cultivated trust because their focus was on their products and craft, not personal fame or attention. This implied core \"nerd values\" like curiosity, a love of learning, and domain obsession.\n\nThe author outlines three phases of this transformation: from founders as charismatic byproducts (pre-2007), to parables of innovation (2007-2015), and finally to the current \"grift-adjacent\" era (2015-now). In this latest phase, egomaniacal leaders are openly pursuing fame and power, often through self-promotional online content and by turning their companies into media firms that prioritize attention over integrity.\n\nThe \"Founders Fund Mafia Game\" video, featuring influential tech figures playing a deception game, is cited as a prime example of this problematic trend. The author criticizes it as a \"charm offensive\" designed to humanize powerful individuals (involved in AI, autonomous weapons, and politics) and normalize their immense influence, potentially backfiring if future scandals emerge.\n\nThe article urges founders to resist this trajectory, recommending transparency about goals, balancing ego, and focusing on earning admiration through product strength, business acumen, and customer value. Founders should return to projecting core \"nerd values\"—enthusiasm for technical pursuits, learning, and humility—rather than an obsession with wealth and power, to rebuild genuine trust and reputation.",
+    "chinese_title": "书呆子怎么了？",
+    "chinese_summary": "文章哀叹科技领袖的公众形象和行为发生了巨大转变，从“迷人的书呆子”变成了“可怕的霸主”。历史上，史蒂夫·乔布斯（完美主义者）和史蒂夫·沃兹尼亚克（谦逊的天才）等人物之所以能赢得信任，是因为他们专注于产品和技艺，而非个人名声或关注。这体现了核心的“书呆子价值观”，例如好奇心、热爱学习和对专业领域的执着。\n\n作者概述了这一转变的三个阶段：从（2007年之前）创始人作为魅力附带品，到（2007-2015年）创新寓言，再到当前（2015年至今）“与骗局沾边”的时代。在这最新阶段，自大狂妄的领袖们公然追求名望和权力，常常通过自我推销的在线内容，并将公司转变为媒体公司，将关注度置于诚信之上。\n\n《创始人基金黑手党游戏》视频，其中有颇具影响力的科技界人士玩欺骗游戏，被引作这一问题趋势的典型例证。作者批评其为一种“魅力攻势”，旨在使这些（涉足人工智能、自主武器和政治的）权势人物人性化，并使其巨大影响力常态化，如果未来出现丑闻，则可能适得其反。\n\n文章敦促创始人抵制这一趋势，建议对目标保持透明，平衡自我，并通过产品实力、商业敏锐度和客户价值来赢得赞赏。创始人应回归展现核心的“书呆子价值观”——对技术追求的热情、学习精神和谦逊——而非对财富和权力的痴迷，以重建真正的信任和声誉。"
   },
   {
     "id": "48529990",
     "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
     "url": "https://github.com/tamnd/kage",
-    "summary": "Kage (影, \"shadow\") is a Go-based tool designed to create fully offline, static copies of dynamic websites, solving the issue of modern JavaScript-heavy pages failing when simply \"saved.\"\n\nKage works by driving a real headless Chrome browser. For each page, it waits for the content to fully render and all JavaScript to execute, then captures the final DOM. It subsequently strips out all scripts, localizes CSS, images, and fonts, rewriting all paths to be relative to the local copy. This process results in a browsable folder of static `.html` files that run no code, make no external network calls, and are entirely functional offline.\n\nKey commands include `kage clone` to mirror a site (with options for depth, page limits, and scope), and `kage serve` to preview the local copy via a lightweight HTTP server. For portability and sharing, `kage pack` can collapse a mirror into a single file. This can be either an open-standard ZIM archive (compatible with Kiwix for offline reading across many devices) or a self-contained executable binary. The binary bundles Kage and the site, allowing it to serve the content on any machine without needing Kage installed. An optional \"webview\" build tag allows packed sites to open in a native OS window, offering an app-like experience instead of a browser tab. Kage's design prioritizes long-term preservation, privacy, and ease of sharing web content.",
-    "chinese_title": "HN 展示: Kage — 将任意网站打包为单个二进制文件，以供离线浏览",
-    "chinese_summary": "Kage（影，“影子”）是一个基于Go语言的工具，旨在为动态网站创建完全离线、静态的副本，解决了现代JavaScript密集型页面简单地“保存”时出现的故障问题。\n\nKage通过驱动一个真实的无头Chrome浏览器工作。对于每个页面，它会等待内容完全渲染和所有JavaScript执行完毕，然后捕获最终的DOM。随后，它会剥离所有脚本，本地化CSS、图片和字体，并重写所有路径，使其相对于本地副本。这个过程会生成一个可浏览的静态`.html`文件文件夹，这些文件不运行任何代码，不进行任何外部网络调用，并且完全离线可用。\n\n主要命令包括`kage clone`（用于镜像一个网站，带有深度、页面限制和范围等选项）和`kage serve`（通过轻量级HTTP服务器预览本地副本）。为了便携性和共享，`kage pack`可以将镜像打包成一个单一文件。这可以是一个开放标准的ZIM存档（兼容Kiwix，可在多种设备上离线阅读），也可以是一个自包含的可执行二进制文件。该二进制文件将Kage和网站内容打包在一起，使其无需安装Kage即可在任何机器上提供内容服务。一个可选的“webview”构建标签允许打包的网站在原生操作系统窗口中打开，提供类似应用程序的体验，而非浏览器标签页。Kage的设计优先考虑网络内容的长期保存、隐私保护和便捷共享。"
-  },
-  {
-    "id": "48529149",
-    "title": "Swiss voters reject proposal to cap population at ten million",
-    "url": "https://www.swissinfo.ch/eng/swiss-politics/swiss-voters-reject-proposal-to-cap-population-at-ten-million/91548146",
-    "summary": "The article's title indicates that Swiss voters have rejected a proposal that sought to cap the country's population at ten million.\n\nHowever, the provided content within the article text diverges completely, discussing the challenges faced by Doctors Without Borders (MSF) in reaching people in need in Sudan, citing difficulties in accessing those requiring assistance. There is no information presented in the provided body text that elaborates on the Swiss vote or its implications.\n\nTherefore, based on the provided text, the only substantive information relates to MSF's operational difficulties in Sudan, while the details of the Swiss population cap vote are solely conveyed through the headline.",
-    "chinese_title": "瑞士选民否决将人口上限设为一千万的提案",
-    "chinese_summary": "文章标题显示，瑞士选民拒绝了一项旨在将该国人口上限设为一千万的提案。\n\n然而，文章内文所提供的内容却完全偏离，讨论的是无国界医生（MSF）在苏丹接触有需要人群时面临的挑战，并指出难以接触到那些需要帮助的人。所提供的正文中没有阐述瑞士投票或其影响的信息。\n\n因此，根据所提供的文本，唯一实质性的信息与无国界医生在苏丹的行动困难有关，而瑞士人口上限投票的细节则完全通过标题传达。"
-  },
-  {
-    "id": "48515385",
-    "title": "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
-    "url": "https://github.com/Paca-AI/paca",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
+    "chinese_title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48527658",
-    "title": "A 'cold blob' in the Atlantic could be a sign of AMOC shutdown",
-    "url": "https://www.cnn.com/2026/06/12/climate/cold-blob-atlantic-amoc-ocean-circulation",
+    "id": "48533101",
+    "title": "Windows 11 users are tired of MS account requirements creeping into everything",
+    "url": "https://www.windowscentral.com/microsoft/windows-11/windows-11-users-are-tired-of-microsoft-account-requirements-and-workarounds",
     "summary": "生成摘要时出错",
-    "chinese_title": "A 'cold blob' in the Atlantic could be a sign of AMOC shutdown",
+    "chinese_title": "Windows 11 users are tired of MS account requirements creeping into everything",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48528729",
-    "title": "Linux 7.1",
-    "url": "https://lore.kernel.org/lkml/CAHk-=wi4BF4bMhZNZ1tqs+FFV4OuZRe3ZqdWB+LxRLmRweUzQw@mail.gmail.com/T/#u",
-    "summary": "The displayed page is a robot verification challenge powered by \"Anubis,\" a server protection mechanism. Its primary goal is to prevent AI companies from aggressively scraping website content, which can lead to server crashes and service disruption for all users.\n\nAnubis employs a Proof-of-Work (PoW) mechanism, similar to Hashcash, designed to impose a negligible computational burden on individual legitimate users while creating a significant, cumulative cost for large-scale AI scrapers. This deters abusive data collection.\n\nCurrently, Anubis serves as a temporary solution, allowing time for the development of more sophisticated methods like fingerprinting and identifying headless browsers, aiming to reduce the need for PoW challenges for legitimate users. Crucially, modern JavaScript functionality is required for Anubis to operate. Users must disable plugins like JShelter that may block these functions, as JavaScript is mandatory for the current verification due to AI companies altering the 'social contract' of website hosting. Solutions that do not require JavaScript are actively under development.",
-    "chinese_title": "Linux 7.1",
-    "chinese_summary": "The displayed page is a robot verification challenge powered by \"Anubis,\" a server protection mechanism. Its primary goal is to prevent AI companies from aggressively scraping website content, which can lead to server crashes and service disruption for all users.\n\nAnubis employs a Proof-of-Work (PoW) mechanism, similar to Hashcash, designed to impose a negligible computational burden on individual legitimate users while creating a significant, cumulative cost for large-scale AI scrapers. This deters abusive data collection.\n\nCurrently, Anubis serves as a temporary solution, allowing time for the development of more sophisticated methods like fingerprinting and identifying headless browsers, aiming to reduce the need for PoW challenges for legitimate users. Crucially, modern JavaScript functionality is required for Anubis to operate. Users must disable plugins like JShelter that may block these functions, as JavaScript is mandatory for the current verification due to AI companies altering the 'social contract' of website hosting. Solutions that do not require JavaScript are actively under development."
-  },
-  {
-    "id": "48527766",
-    "title": "UK set to announce social media ban for under-16s",
-    "url": "https://www.manchestereveningnews.co.uk/news/uk-news/uk-set-announce-social-media-34119132",
+    "id": "48540854",
+    "title": "CrankGPT",
+    "url": "https://crankgpt.com",
     "summary": "生成摘要时出错",
-    "chinese_title": "UK set to announce social media ban for under-16s",
+    "chinese_title": "CrankGPT",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48519011",
-    "title": "The adder at the heart of Intel's 8087 floating-point chip",
-    "url": "https://www.righto.com/2026/06/intel-8087-adder-reverse-engineered.html",
+    "id": "48527700",
+    "title": "Not everyone is using AI for everything",
+    "url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
     "summary": "生成摘要时出错",
-    "chinese_title": "The adder at the heart of Intel's 8087 floating-point chip",
+    "chinese_title": "Not everyone is using AI for everything",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48527634",
-    "title": "Rio de Janeiro's city government model Rio3.5 beats Qwen3.7 in recent benchmarks",
-    "url": "https://twitter.com/zenmagnets/status/2065796012820848699",
+    "id": "48543475",
+    "title": "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
+    "url": "https://tinywind.io",
     "summary": "生成摘要时出错",
-    "chinese_title": "里约热内卢市政府的模型 Rio3.5 在最近的基准测试中击败了 Qwen3.7。",
+    "chinese_title": "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48527533",
-    "title": "Extinction-Level Capitalism",
-    "url": "https://matthewbutterick.com/extinction-level-capitalism.html",
+    "id": "48536776",
+    "title": "Apple Foundation Models",
+    "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
     "summary": "生成摘要时出错",
-    "chinese_title": "Extinction-Level Capitalism",
+    "chinese_title": "苹果基础模型",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48527145",
-    "title": "Caddy compatibility for zeroserve: 3x throughput and 70% lower latency",
-    "url": "https://su3.io/posts/zeroserve-caddy-compat",
+    "id": "48523080",
+    "title": "Honda Civics and the Evil Valet",
+    "url": "https://juniperspring.org/posts/honda-evil-valet/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Caddy compatibility for zeroserve: 3x throughput and 70% lower latency",
+    "chinese_title": "Honda Civics and the Evil Valet",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48528371",
+    "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+    "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48523992",
+    "title": "Free SQL→ER diagram tool, runs in the browser, nothing uploaded",
+    "url": "https://sqltoerdiagram.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Free SQL→ER diagram tool, runs in the browser, nothing uploaded",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48535886",
+    "title": "Even more batteries included with Emacs",
+    "url": "https://karthinks.com/software/even-more-batteries-included-with-emacs/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Even more batteries included with Emacs",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -128,99 +128,323 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48528025",
-    "title": "Measles surge in Utah sparks fears US could undo decades of progress",
-    "url": "https://www.dailymail.com/news/article-15897903/measles-surge-utah-US-elimination-status.html",
+    "id": "48528729",
+    "title": "Linux 7.1",
+    "url": "https://lore.kernel.org/lkml/CAHk-=wi4BF4bMhZNZ1tqs+FFV4OuZRe3ZqdWB+LxRLmRweUzQw@mail.gmail.com/T/#u",
     "summary": "生成摘要时出错",
-    "chinese_title": "Measles surge in Utah sparks fears US could undo decades of progress",
+    "chinese_title": "Linux 7.1",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48520080",
-    "title": "Running DOS on Behringers DDX3216 with a DIY x86-Bios from Scratch",
-    "url": "https://chrisdevblog.com/2026/06/08/running-dos-on-behringers-ddx3216-using-a-diy-x86-bios/",
+    "id": "48522486",
+    "title": "ReactOS (FOSS \"Windows\") achieves 3D-accelerated Half-Life on real hardware",
+    "url": "https://www.phoronix.com/news/ReactOS-Running-Half-Life",
     "summary": "生成摘要时出错",
-    "chinese_title": "Running DOS on Behringers DDX3216 with a DIY x86-Bios from Scratch",
+    "chinese_title": "ReactOS (FOSS \"Windows\") achieves 3D-accelerated Half-Life on real hardware",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48520110",
-    "title": "What happens to an economy when it's too hot to work?",
-    "url": "https://www.bloomberg.com/news/features/2026-06-12/india-s-extreme-heat-is-hurting-its-economy-and-workers",
+    "id": "48546294",
+    "title": "A backdoor in a LinkedIn job offer",
+    "url": "https://roman.pt/posts/linkedin-backdoor/",
     "summary": "生成摘要时出错",
-    "chinese_title": "What happens to an economy when it's too hot to work?",
+    "chinese_title": "A backdoor in a LinkedIn job offer",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48527297",
-    "title": "KPMG pulls report on AI usage due to apparent hallucinations",
-    "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+    "id": "48524620",
+    "title": "Don't trust large context windows",
+    "url": "https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows",
     "summary": "生成摘要时出错",
-    "chinese_title": "KPMG pulls report on AI usage due to apparent hallucinations",
+    "chinese_title": "Don't trust large context windows",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48509133",
-    "title": "/architect: Reduce Fable tokens by 80%, Fable orchestrates/reviews, Codex builds",
-    "url": "https://github.com/DanMcInerney/architect-loop",
+    "id": "48540844",
+    "title": "Hetzner Price Adjustment",
+    "url": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/#cloud-servers",
     "summary": "生成摘要时出错",
-    "chinese_title": "/architect: Reduce Fable tokens by 80%, Fable orchestrates/reviews, Codex builds",
+    "chinese_title": "Hetzner Price Adjustment",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48517412",
-    "title": "Orthodox C++ (2016)",
-    "url": "https://bkaradzic.github.io/posts/orthodoxc++/",
-    "summary": "Orthodox C++ (or C+) defines a minimal subset of C++ designed to enhance C while eschewing the complexities of \"Modern C++.\" Its proponents argue that many contemporary C++ features, like RTTI, exceptions, and streams, have proven to be unnecessary, lead to increased code complexity, or impose hidden runtime costs.\n\nThe philosophy aims for codebases that are simpler, easier to understand, compatible with older compilers, and more portable. Orthodox C++ strives for a \"C-like\" readability.\n\nKey \"Don't\" rules include:\n*   **Avoid exceptions:** They incur runtime costs even when unused, offer no compile-time enforcement, and clash with C-style error codes.\n*   **No RTTI.**\n*   **Use C standard headers:** Prefer `<stdio.h>` over `<cstdio>`.\n*   **Opt for `printf` style functions:** Shun C++ streams like `<iostream>`.\n*   **Limit STL containers that allocate memory:** Unless explicit memory management is not a concern.\n*   **Use metaprogramming sparingly:** Only when it genuinely reduces complexity.\n*   **Be wary of new C++ standard features:** Wait for them to mature (e.g., C++year + 5 rule) to ensure compiler adoption and stability.\n*   **Avoid modules:** They introduce portability issues, build system complexity, and refactoring without significant benefits for most developers.\n\nOrthodox C++ advocates for pragmatism and simplicity, prioritizing maintainability and broad compatibility. It aligns with similar \"minimal C++\" approaches and is exemplified in projects like Doom 3 BFG and Qt (configured without RTTI/exceptions).",
-    "chinese_title": "Orthodox C++ (2016)",
-    "chinese_summary": "Orthodox C++ (or C+) defines a minimal subset of C++ designed to enhance C while eschewing the complexities of \"Modern C++.\" Its proponents argue that many contemporary C++ features, like RTTI, exceptions, and streams, have proven to be unnecessary, lead to increased code complexity, or impose hidden runtime costs.\n\nThe philosophy aims for codebases that are simpler, easier to understand, compatible with older compilers, and more portable. Orthodox C++ strives for a \"C-like\" readability.\n\nKey \"Don't\" rules include:\n*   **Avoid exceptions:** They incur runtime costs even when unused, offer no compile-time enforcement, and clash with C-style error codes.\n*   **No RTTI.**\n*   **Use C standard headers:** Prefer `<stdio.h>` over `<cstdio>`.\n*   **Opt for `printf` style functions:** Shun C++ streams like `<iostream>`.\n*   **Limit STL containers that allocate memory:** Unless explicit memory management is not a concern.\n*   **Use metaprogramming sparingly:** Only when it genuinely reduces complexity.\n*   **Be wary of new C++ standard features:** Wait for them to mature (e.g., C++year + 5 rule) to ensure compiler adoption and stability.\n*   **Avoid modules:** They introduce portability issues, build system complexity, and refactoring without significant benefits for most developers.\n\nOrthodox C++ advocates for pragmatism and simplicity, prioritizing maintainability and broad compatibility. It aligns with similar \"minimal C++\" approaches and is exemplified in projects like Doom 3 BFG and Qt (configured without RTTI/exceptions)."
-  },
-  {
-    "id": "48512915",
-    "title": "Our response to the US ban on Fable 5 and Mythos 5",
-    "url": "https://isaacus.com/blog/our-response-to-the-us-ban-on-fable-5-and-mythos-5",
+    "id": "48540126",
+    "title": "Salesforce to Acquire Fin (formerly Intercom) for $3.6B",
+    "url": "https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/?bc=HL",
     "summary": "生成摘要时出错",
-    "chinese_title": "Our response to the US ban on Fable 5 and Mythos 5",
+    "chinese_title": "Salesforce to Acquire Fin (formerly Intercom) for $3.6B",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48510357",
-    "title": "AMD Stiffs Researcher $10k Bug Bounty",
-    "url": "https://www.gadgetreview.com/amd-stiffs-researcher-10000-bug-bounty-after-critical-security-flaw-takes-124-days-to-fix",
+    "id": "48526661",
+    "title": "The Birth and Death of JavaScript (2014)",
+    "url": "https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript",
     "summary": "生成摘要时出错",
-    "chinese_title": "AMD Stiffs Researcher $10k Bug Bounty",
+    "chinese_title": "The Birth and Death of JavaScript (2014)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48509143",
-    "title": "Mmorpg World of ClaudeCraft, vibe coded with Fable 5",
-    "url": "https://worldofclaudecraft.com/",
+    "id": "48527658",
+    "title": "A 'cold blob' in the Atlantic could be a sign of AMOC shutdown",
+    "url": "https://www.cnn.com/2026/06/12/climate/cold-blob-atlantic-amoc-ocean-circulation",
     "summary": "生成摘要时出错",
-    "chinese_title": "Mmorpg World of ClaudeCraft, vibe coded with Fable 5",
+    "chinese_title": "A 'cold blob' in the Atlantic could be a sign of AMOC shutdown",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48540499",
+    "title": "Fox to buy Roku",
+    "url": "https://www.wsj.com/business/deals/fox-roku-deal-f6e564f9",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Fox to buy Roku",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48544396",
+    "title": "Typst 0.15.0",
+    "url": "https://typst.app/docs/changelog/0.15.0/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Typst 0.15.0",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48541014",
+    "title": "Can Europe train a frontier AI model on the compute it owns?",
+    "url": "https://github.com/sammysltd/euromesh",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Can Europe train a frontier AI model on the compute it owns?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48531449",
+    "title": "Chaosnet (1981)",
+    "url": "https://tumbleweed.nu/r/lm-3/uv/amber.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Chaosnet (1981)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48526793",
+    "title": "How did Atari apply side art to Arcade Cabinets?",
+    "url": "https://arcadeblogger.com/2026/06/14/how-did-atari-apply-side-art-to-arcade-cabinets/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How did Atari apply side art to Arcade Cabinets?",
     "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "48523203",
     "title": "4 things to know about the new sunscreen ingredient the FDA approved",
     "url": "https://www.npr.org/2026/06/13/nx-s1-5856385/sunscreen-skin-protection-bemotrizinol",
-    "summary": "The FDA has approved bemotrizinol, the first new chemical UV filter for U.S. sunscreens in nearly three decades, an approval widely praised by dermatologists. This ingredient, which will be sold as Parsol Shield, offers several significant advantages.\n\n1.  **Broad-Spectrum and Photostable Protection:** Bemotrizinol provides comprehensive protection against both UVA (aging) and UVB (sunburn) rays. Unlike older U.S. chemical filters like avobenzone, it is photostable, meaning its protective capabilities break down much more slowly in sunlight, offering more consistent and longer-lasting defense.\n2.  **Long International Track Record:** Widely used and trusted in Europe and Asia for decades, bemotrizinol's delayed U.S. approval is attributed to the FDA's rigorous classification of sunscreens as over-the-counter drugs, requiring extensive and costly safety and efficacy testing, unlike Europe's cosmetic classification.\n3.  **Well-Documented Safety Profile:** The rigorous testing means bemotrizinol boasts more safety data than any other chemical sunscreen ingredient currently approved in the U.S. It has been shown to be non-irritating, causes no reproductive harm, and its larger molecules are minimally absorbed into the bloodstream, addressing key safety concerns raised about other chemical filters and countering misinformation about sunscreen.\n4.  **Improved Aesthetics:** Unlike mineral sunscreens (e.g., zinc oxide) which can leave a noticeable white cast, bemotrizinol is transparent on the skin. Its potent protection also reduces the need for a multitude of other chemical filters and stabilizers, promising less greasy and more aesthetically pleasing sunscreen formulations that consumers will be more inclined to use regularly.\n\nThis approval is hailed as a major public health victory, improving sunscreen effectiveness, safety, and user experience. Sunscreen products containing bemotrizinol are expected to be available in U.S. stores around September.",
-    "chinese_title": "4 things to know about the new sunscreen ingredient the FDA approved",
-    "chinese_summary": "The FDA has approved bemotrizinol, the first new chemical UV filter for U.S. sunscreens in nearly three decades, an approval widely praised by dermatologists. This ingredient, which will be sold as Parsol Shield, offers several significant advantages.\n\n1.  **Broad-Spectrum and Photostable Protection:** Bemotrizinol provides comprehensive protection against both UVA (aging) and UVB (sunburn) rays. Unlike older U.S. chemical filters like avobenzone, it is photostable, meaning its protective capabilities break down much more slowly in sunlight, offering more consistent and longer-lasting defense.\n2.  **Long International Track Record:** Widely used and trusted in Europe and Asia for decades, bemotrizinol's delayed U.S. approval is attributed to the FDA's rigorous classification of sunscreens as over-the-counter drugs, requiring extensive and costly safety and efficacy testing, unlike Europe's cosmetic classification.\n3.  **Well-Documented Safety Profile:** The rigorous testing means bemotrizinol boasts more safety data than any other chemical sunscreen ingredient currently approved in the U.S. It has been shown to be non-irritating, causes no reproductive harm, and its larger molecules are minimally absorbed into the bloodstream, addressing key safety concerns raised about other chemical filters and countering misinformation about sunscreen.\n4.  **Improved Aesthetics:** Unlike mineral sunscreens (e.g., zinc oxide) which can leave a noticeable white cast, bemotrizinol is transparent on the skin. Its potent protection also reduces the need for a multitude of other chemical filters and stabilizers, promising less greasy and more aesthetically pleasing sunscreen formulations that consumers will be more inclined to use regularly.\n\nThis approval is hailed as a major public health victory, improving sunscreen effectiveness, safety, and user experience. Sunscreen products containing bemotrizinol are expected to be available in U.S. stores around September."
-  },
-  {
-    "id": "48511168",
-    "title": "As a result of a US Government directive, we are suspending access to Fable 5",
-    "url": "https://twitter.com/ClaudeDevs/status/2065597942602531163",
     "summary": "生成摘要时出错",
-    "chinese_title": "As a result of a US Government directive, we are suspending access to Fable 5",
+    "chinese_title": "4 things to know about the new sunscreen ingredient the FDA approved",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48516558",
-    "title": "Sam Bankman-Fried loses bid to appeal against fraud conviction in FTX case",
-    "url": "https://www.theguardian.com/business/2026/jun/12/sam-bankman-fried-loses-appeal",
+    "id": "48533976",
+    "title": "US and Iran announce deal to end military operations",
+    "url": "https://www.bbc.com/news/live/cj0grpyg4v1t",
     "summary": "生成摘要时出错",
-    "chinese_title": "Sam Bankman-Fried loses bid to appeal against fraud conviction in FTX case",
+    "chinese_title": "US and Iran announce deal to end military operations",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48524084",
+    "title": "Software Architecture Guide (2019)",
+    "url": "https://martinfowler.com/architecture/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Software Architecture Guide (2019)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48523752",
+    "title": "Making Claude a Chemist",
+    "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Making Claude a Chemist",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48544451",
+    "title": "How TimescaleDB compresses time-series data",
+    "url": "https://roszigit.com/en/blog/timescaledb-compression-hypercore",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How TimescaleDB compresses time-series data",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48527946",
+    "title": "Ponytail – make your AI agent think like the laziest senior dev in the room",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Ponytail – make your AI agent think like the laziest senior dev in the room",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48543392",
+    "title": "How memory safety CVEs differ between Rust and C/C++",
+    "url": "https://kobzol.github.io/rust/2026/06/15/how-memory-safety-cves-differ-between-rust-and-c-cpp.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How memory safety CVEs differ between Rust and C/C++",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48535215",
+    "title": "The hallucinogenic mushroom that contains no known psychedelic",
+    "url": "https://psychedelics.co.uk/news/a-mushroom-genus-that-gets-people-high-but-not-the",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The hallucinogenic mushroom that contains no known psychedelic",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48524434",
+    "title": "Tribblix: The retro Illumos distribution",
+    "url": "http://tribblix.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tribblix: The retro Illumos distribution",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48523773",
+    "title": "The redistribution of housing wealth caused by rent control (2023) [pdf]",
+    "url": "https://www.rhawa.org/file/secure/shs-the-impact-of-rent-control-in-st-paul.pdf",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The redistribution of housing wealth caused by rent control (2023) [pdf]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48532722",
+    "title": "Abu Fanous",
+    "url": "https://en.wikipedia.org/wiki/Abu_Fanous",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Abu Fanous",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48542209",
+    "title": "Fox Is Buying Roku",
+    "url": "https://www.fastcompany.com/91559558/fox-corp-buying-roku-stock-prices-fall-on-tv-streaming-merger",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Fox Is Buying Roku",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48532116",
+    "title": "Vibe Coder vs. Software Engineer",
+    "url": "https://yusufaytas.com/vibe-coder-vs-software-engineer",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Vibe Coder vs. Software Engineer",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48527731",
+    "title": "Dangerous hormone-disrupting chemicals found in US breast milk samples",
+    "url": "https://www.theguardian.com/us-news/2026/jun/14/breast-milk-research-chemicals",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Dangerous hormone-disrupting chemicals found in US breast milk samples",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48521709",
+    "title": "Human Routers of Machine Words",
+    "url": "https://borretti.me/article/human-routers-of-machine-words",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Human Routers of Machine Words",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48523271",
+    "title": "Meta’s chaotic AI strategy",
+    "url": "https://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Meta’s chaotic AI strategy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48527623",
+    "title": "Show HN: Dual YOLOv8n UAV Detection on RK3588S at 42 FPS Using NPU",
+    "url": "https://github.com/alebal123bal/khadas_yolov8n_multithread",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Dual YOLOv8n UAV Detection on RK3588S at 42 FPS Using NPU",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48543269",
+    "title": "Boot Naked Linux",
+    "url": "https://nick.zoic.org/art/boot-naked-linux/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Boot Naked Linux",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48523705",
+    "title": "Weave: Merging based on language structure and not lines",
+    "url": "https://ataraxy-labs.github.io/weave/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Weave: Merging based on language structure and not lines",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48546306",
+    "title": "US Air Force B-52 bomber crashes after takeoff, Edwards Air Force Base says",
+    "url": "https://www.reuters.com/business/aerospace-defense/us-air-force-b-52-bomber-crashes-after-takeoff-edwards-air-force-base-says-2026-06-15/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US Air Force B-52 bomber crashes after takeoff, Edwards Air Force Base says",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48527574",
+    "title": "EU Commission looking at practical consequences of Anthropic decision",
+    "url": "https://www.reuters.com/legal/litigation/eu-commission-looking-practical-consequences-anthropic-decision-spokesperson-2026-06-14/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "EU Commission looking at practical consequences of Anthropic decision",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48522675",
+    "title": "State Attorneys General Are Investigating OpenAI",
+    "url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "State Attorneys General Are Investigating OpenAI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48537709",
+    "title": "Under-16s to be banned from social media, Starmer announces",
+    "url": "https://www.bbc.co.uk/news/live/c77yx1jpg1nt",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Under-16s to be banned from social media, Starmer announces",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48527377",
+    "title": "Conversations with a six-year-old on functional programming (2018)",
+    "url": "https://byorgey.wordpress.com/2018/05/06/conversations-with-a-six-year-old-on-functional-programming/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Conversations with a six-year-old on functional programming (2018)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48543245",
+    "title": "Show HN: machine0 – Persistent NixOS VMs You Control from the CLI",
+    "url": "https://machine0.io",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: machine0 – Persistent NixOS VMs You Control from the CLI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48529645",
+    "title": "Dillo directory – Directory of useful sites that work reasonably well on Dillo",
+    "url": "https://dir.dillo-browser.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Dillo directory – Directory of useful sites that work reasonably well on Dillo",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48523615",
+    "title": "Building a serial and VGA \"everything console\"",
+    "url": "http://oldvcr.blogspot.com/2026/06/building-serial-and-vga-everything.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Building a serial and VGA \"everything console\"",
     "chinese_summary": "生成摘要时出错"
   }
 ]
