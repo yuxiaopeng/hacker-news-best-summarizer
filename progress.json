@@ -1,234 +1,242 @@
 [
   {
-    "id": "48594715",
-    "title": "Let's Encrypt had a higher error rate for 90 minutes today",
-    "url": "https://letsencrypt.status.io/#2026",
-    "summary": "On June 18, 2026, Let's Encrypt experienced a period of degraded performance for its production API (acme-v02.api.letsencrypt.org), resulting in a higher error rate for some clients. The incident began at 16:04 UTC, causing some users to encounter 400 and 500 error responses, though most clients still succeeded.\n\nThe issue was attributed to an upstream network event that disrupted traffic between two of Let's Encrypt's high-assurance datacenters. By 16:35 UTC, approximately 31 minutes after the initial report, Let's Encrypt successfully re-routed traffic, restoring success rates to normal for users.\n\nWhile client-facing performance was resolved, services continued to operate with reduced redundancy. As of June 19, 2026, 04:45 UTC, Let's Encrypt was still actively working with its upstream ISP to fully identify and resolve the underlying network issue to restore complete redundancy.",
-    "chinese_title": "Let's Encrypt 今天有90分钟的较高错误率。",
-    "chinese_summary": "2026年6月18日，Let's Encrypt 的生产API (acme-v02.api.letsencrypt.org) 经历了性能下降，导致部分客户端的错误率升高。该事件始于世界标准时间16:04（UTC），致使一些用户遇到400和500错误响应，尽管大多数客户端仍能成功。\n\n该问题归因于一次上游网络事件，它中断了Let's Encrypt的两个高安全数据中心之间的流量。截至世界标准时间16:35（UTC），即初步报告发布后约31分钟，Let's Encrypt 成功重新路由了流量，使用户的成功率恢复正常。\n\n尽管面向客户端的性能已解决，但服务仍以降低冗余的方式运行。截至2026年6月19日世界标准时间04:45（UTC），Let's Encrypt 仍在积极与其上游ISP合作，以全面识别并解决潜在的网络问题，从而恢复完全的冗余。"
+    "id": "48620342",
+    "title": "The minimum viable unit of saleable software",
+    "url": "https://brandur.org/minimum-viable-unit",
+    "summary": "In \"The Minimum Viable Unit of Saleable Software,\" the author Brandur discusses the viability of building a software business in the age of AI, particularly addressing the \"buy vs. build\" calculus with powerful Large Language Models (LLMs).\n\nHe argues that while LLMs make software considerably cheaper to build, \"cheap does not equal zero.\" Human effort is still required for prompting, refining, and maintaining LLM-generated code, which carries a significant cost. He illustrates this with an example: replacing a $400/month Jira subscription with an internal LLM-built tracker would, he calculates, cost far more in engineering hours (initial build plus ongoing maintenance) than simply paying for Jira.\n\nHowever, for very high-priced SaaS products (e.g., Salesforce at $25k/month for 50 seats), building an internal alternative *does* become more economically viable. This leads him to propose \"the zone of viability\" for saleable software, defined by two conditions:\n1.  **Sufficient novelty:** The software must be complex enough to make an LLM-powered rebuild non-trivial and require ongoing maintenance.\n2.  **Reasonable pricing:** The price must not be so exorbitant as to strongly encourage a rebuild.\n\nThe \"minimum viable unit of saleable software\" lies at the point where the cost of buying a third-party solution becomes less than or equal to the effort and cost of rebuilding it internally, even with LLM assistance.\n\nThe author applies this framework to his own side project, River, a job queue for Go and Postgres. He believes River Pro, offering advanced features and a sublinearly scaling pricing model ($125/month for small teams), falls within this zone of viability, making it a plausible business despite the advancements in AI.",
+    "chinese_title": "可销售软件的最小可行单元",
+    "chinese_summary": "在《可销售软件的最小可行单元》一文中，作者Brandur探讨了在人工智能时代构建软件业务的可行性，特别是针对强大的大型语言模型（LLM）出现后“购买与自建”的权衡。\n\n他认为，尽管LLM大大降低了软件的开发成本，但“便宜不等于免费”。LLM生成的代码仍需要人工进行提示、优化和维护，这其中包含显著的成本。他举例说明：将每月400美元的Jira订阅替换为内部通过LLM构建的追踪器，他计算出其工程小时成本（初始构建加持续维护）将远高于直接支付Jira费用。\n\n然而，对于价格非常高的SaaS产品（例如，50个席位每月2.5万美元的Salesforce），自建内部替代方案确实变得更经济可行。这使他提出了可销售软件的“可行性区域”，该区域由两个条件定义：\n1.  **足够的独特性：** 软件必须足够复杂，以至于通过LLM驱动的重建并非微不足道，并且需要持续维护。\n2.  **合理的定价：** 价格不能高得离谱，以至于强烈促使用户选择自建。\n\n“可销售软件的最小可行单元”位于一个临界点：购买第三方解决方案的成本小于或等于内部重建（即使有LLM辅助）所需付出的努力和成本。\n\n作者将此框架应用于他的个人项目River，一个用于Go和Postgres的作业队列。他相信River Pro，通过提供高级功能和非线性扩展的定价模型（小型团队每月125美元），正处于这个可行性区域内，使其尽管在人工智能进步的背景下，仍然是一项可行的业务。"
   },
   {
-    "id": "48605301",
-    "title": "How to feed a dictator",
-    "url": "https://www.theguardian.com/film/2026/jun/09/how-to-feed-a-dictator-film",
-    "summary": "\"How to Feed a Dictator,\" a new documentary directed by Andrew Neel and based on Witold Szabłowski's book, examines the lives of personal chefs to brutal strongmen like Idi Amin, Saddam Hussein, Kim Jong-il, Pol Pot, and Augusto Pinochet. The film probes the moral dilemmas faced by these individuals, who operated in a dangerous world where the dining table often doubled as a stage for power.\n\nThe chefs' experiences varied greatly. Charles Otonde Odera, Amin's former cook, initially found prosperity but became tormented by his boss’s atrocities, including being ordered to cook a human heart and facing a death sentence for a child’s stomach ache. Ermanno Furlanis, Kim Jong-il’s pizzaiolo, endured constant surveillance. Pol Pot’s chef, Keo Samoun, struggles to reconcile the man who helped her with the genocidal leader, facing a powerful challenge from an interpreter who suffered under the Khmer Rouge. In stark contrast, Coco Pacheco, Pinochet’s chef, and an anonymous chef for Saddam Hussein remain fiercely loyal, dismissing their leaders' horrific human rights abuses.\n\nThe documentary highlights the \"great gig\" mentality, where the allure of comfort and status often justified their roles. These chefs enjoyed significant perks, and the idea of poisoning their employers was unthinkable due to deep trust and isolation within the dictator's inner circle. Neel emphasizes the \"banality of evil,\" where everyday acts like cooking take on a sinister dimension under tyrannical rule. The film ultimately suggests that individuals, through complicity or self-preservation, play a role in sustaining authoritarian regimes, leaving a complex legacy for society.",
-    "chinese_title": "如何喂养独裁者",
-    "chinese_summary": "“如何喂养独裁者”是一部由安德鲁·尼尔执导，改编自维托尔德·沙布沃斯基著作的新纪录片，它审视了伊迪·阿明、萨达姆·侯赛因、金正日、波尔布特和奥古斯托·皮诺切特等残暴强人的私人厨师们的生活。影片探讨了这些人在一个危险世界中所面临的道德困境，在这个世界里，餐桌常常成为权力的舞台。\n\n厨师们的经历大相径庭。阿明的前厨师查尔斯·奥通德·奥德拉，最初享受着富裕的生活，但后来却被老板的暴行所折磨，包括被命令烹饪人心，并因一个孩子的胃痛而面临死刑。金正日的披萨师埃尔曼诺·富尔拉尼斯，忍受着持续的监视。波尔布特的厨师吉奥·萨蒙，努力调和那位曾帮助过她的人与那位种族灭绝领导者的形象，她面临着一位在红色高棉统治下受苦的翻译带来的巨大挑战。与此形成鲜明对比的是，皮诺切特的厨师科科·帕切科以及萨达姆·侯赛因的一位匿名厨师，则始终忠心耿耿，对他们领导人骇人听闻的侵犯人权行为不屑一顾。\n\n这部纪录片强调了“好差事”心态，即舒适和地位的诱惑常常成为他们扮演角色的正当理由。这些厨师享受着丰厚的待遇，而给他们的雇主下毒的想法是不可想象的，这既是因为独裁者核心圈内的深厚信任，也是因为他们与外界的隔绝。尼尔强调了“恶的平庸性”，即在暴政统治下，烹饪等日常行为也带上了邪恶的色彩。影片最终指出，个体通过共谋或自我保护，在维系威权政权中扮演着角色，给社会留下了复杂的遗产。"
+    "id": "48618488",
+    "title": "Show HN: Teach your kids perfect pitch",
+    "url": "https://github.com/paytonjjones/bsharp",
+    "summary": "BSharp is a mobile app designed to help young children acquire absolute (perfect) pitch, leveraging a critical developmental window that closes around age six. Available on the Play Store, it employs Eguchi's chord identification method, teaching children to associate piano chords with distinct colors.\n\nThe learning process begins with two chords (red and yellow), gradually introducing more as the child masters each level with 100% accuracy. The recommended practice schedule is five sessions daily, each lasting 2-3 minutes (20-25 identifications). New chords are introduced no sooner than every two weeks. BSharp tracks accuracy, uses an adaptive weighting algorithm to present harder chords more often, and supports multiple user profiles.\n\nThe app progresses through 9 initial white-key chords (e.g., Yellow for F/C, Blue for G/B), followed by 5 black-key chords. BSharp is based on Paul Ganssle's open-source CIM Trainer and is licensed under the Apache License 2.0. Development requires Node.js.",
+    "chinese_title": "Show HN: 教孩子绝对音感",
+    "chinese_summary": "BSharp 是一款移动应用程序，旨在帮助幼童习得绝对音高（即完美音高），它利用了在六岁左右关闭的关键发育窗口期。该应用可在Play商店下载，它采用了江口（Eguchi）的和弦识别方法，教导儿童将钢琴和弦与不同颜色关联起来。\n\n学习过程从两个和弦（红色和黄色）开始，随着孩子以100%的准确率掌握每个级别，逐步引入更多和弦。建议的练习时间表是每天五次练习，每次持续2-3分钟（20-25次识别）。新和弦的引入时间间隔不早于两周。BSharp 会跟踪准确性，使用自适应加权算法更频繁地呈现难度更高的和弦，并支持多个用户配置文件。\n\n该应用会逐步学习9个初始白键和弦（例如，黄色代表F/C，蓝色代表G/B），随后是5个黑键和弦。BSharp 基于 Paul Ganssle 的开源 CIM 训练器，并采用 Apache 许可证 2.0。开发需要 Node.js。"
   },
   {
-    "id": "48593731",
-    "title": "Datasette Apps: Host custom HTML applications inside Datasette",
-    "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/",
-    "summary": "Datasette Apps, launched on June 18th, 2026, enable hosting self-contained HTML+JavaScript applications within a Datasette instance, running in a tightly constrained `<iframe>` sandbox. These apps can execute read-only SQL queries and perform write operations via pre-configured \"stored queries\" against Datasette data.\n\nSecurity is a core design principle: apps are isolated using `<iframe> sandbox=\"allow-scripts allow-forms\"` and a strict Content Security Policy (CSP) header. This prevents access to cookies, localStorage, and external HTTP requests, safeguarding private data. Communication for SQL operations is securely handled via `postMessage()` and `MessageChannel()`. The system also provides visible logs for queries and errors, aiding development.\n\nInspired by Claude Artifacts and flexible HTML tools, Datasette Apps aim to combine Datasette's backend power with a customizable, interactive frontend. The plugin facilitates AI assistance; the app creation form generates a prompt for LLMs to build new apps, and Datasette Agent can manage them. AI also played a critical role in development and security evaluation, identifying a significant vulnerability related to CSP allow-listing, which led to new permissions for trusted users.\n\nThis release marks Datasette's evolution beyond a read-only data server, offering a richer ecosystem for creating custom interfaces and visualizations to explore and interact with data.",
-    "chinese_title": "Datasette 应用：在 Datasette 中托管自定义 HTML 应用",
-    "chinese_summary": "Datasette App 于 2026 年 6 月 18 日发布，使得在 Datasette 实例中托管独立的 HTML+JavaScript 应用程序成为可能，这些应用程序在一个严格受限的 `<iframe>` 沙箱中运行。这些应用可以执行只读的 SQL 查询，并通过预配置的“存储查询”对 Datasette 数据执行写入操作。\n\n安全是核心设计原则：应用程序通过 `<iframe> sandbox=\"allow-scripts allow-forms\"` 和严格的 Content Security Policy (CSP) 头部进行隔离。这可以防止应用程序访问 cookies、localStorage 和外部 HTTP 请求，从而保护私有数据。SQL 操作的通信通过 `postMessage()` 和 `MessageChannel()` 安全处理。系统还提供查询和错误的可见日志，以辅助开发。\n\n受 Claude Artifacts 和灵活的 HTML 工具启发，Datasette App 旨在将 Datasette 的后端能力与可定制的交互式前端结合起来。该插件有助于 AI 辅助；应用程序创建表单会为大型语言模型（LLMs）生成提示以构建新的应用程序，并且 Datasette Agent 可以管理它们。AI 还在开发和安全评估中发挥了关键作用，识别出一个与 CSP 允许列表相关的重大漏洞，这促使为受信任的用户设置了新的权限。\n\n此版本标志着 Datasette 从只读数据服务器的演进，提供了一个更丰富的生态系统，用于创建自定义界面和可视化，以探索和交互数据。"
+    "id": "48623434",
+    "title": "Good results fine tuning a local LLM like Qwen 3:0.6B to categorize questions",
+    "url": "https://www.teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions",
+    "summary": "Torgeir Helgevold undertook a personal project to develop a household chatbot that categorizes user questions for improved RAG searches in a vector database. The core hypothesis was whether a very small local LLM, specifically Qwen 3:0.6B, could be fine-tuned to reliably categorize questions into predefined metadata categories (e.g., pool, car, hvac).\n\nInitially, using the Qwen 0.6B model \"as is\" with prompting alone yielded poor results, achieving only 10% accuracy on a test set of 131 questions. The model frequently misclassified questions into broad categories or invented new ones.\n\nFor the first fine-tuning attempt, leveraging Unsloth with QLora on a dataset of ~850 household questions, accuracy significantly improved to 79%. However, the model still struggled, sometimes emitting fragments of categories (e.g., \"ac\" instead of \"hvac\") or confusing semantically similar categories like \"fountain,\" \"water heater,\" and \"pool.\"\n\nThe second fine-tuning experiment introduced a crucial tweak: instead of asking the model to output full category names, it was prompted to return fixed, two-character opaque codes (e.g., \"KK\" for \"hvac\"). This simple change dramatically boosted accuracy to 92%. While some \"water-based\" confusions (e.g., water heater -> pool) persisted, the fine-tuned LLM proved to be a generally reliable predictor, making it suitable for the chatbot's pre-processing step. The author plans to further refine the training data to address remaining ambiguities. An update also noted exploration into Logistic Regression as an alternative classification approach.",
+    "chinese_title": "微调Qwen 3:0.6B等本地LLM用于问题分类，效果良好。",
+    "chinese_summary": "Torgeir Helgevold 开展了一个个人项目，旨在开发一个家用聊天机器人，用于对用户问题进行分类，以改进向量数据库中的RAG搜索效果。其核心假设是，一个非常小的本地大型语言模型，特别是Qwen 3:0.6B，能否通过微调可靠地将问题分类到预定义的元数据类别中（例如，游泳池、汽车、暖通空调）。\n\n最初，仅通过提示词直接使用Qwen 0.6B模型，效果很差，在一个包含131个问题的测试集上，准确率仅为10%。该模型经常将问题误分类到宽泛的类别中，或者凭空创造出新的类别。\n\n首次微调尝试中，利用Unsloth和QLora在一个包含约850个家庭问题的数据集上进行训练，准确率显著提升至79%。然而，模型仍然存在问题，有时会输出类别的片段（例如，“ac”而非“hvac”），或者混淆语义相似的类别，如“喷泉”、“热水器”和“游泳池”。\n\n第二次微调实验引入了一个关键的调整：即不再要求模型输出完整的类别名称，而是提示它返回固定的两位字符不透明代码（例如，“KK”代表“hvac”）。这一简单的改变将准确率大幅提升至92%。尽管一些“与水相关”的混淆（例如，热水器被错误分类为游泳池）仍然存在，但微调后的LLM被证明是一个普遍可靠的预测器，使其适用于聊天机器人的预处理步骤。作者计划进一步完善训练数据，以解决剩余的歧义。一项更新还提到，正在探索使用逻辑回归作为替代分类方法。"
   },
   {
-    "id": "48596910",
-    "title": "Norway greenlights first full-scale ship tunnel",
-    "url": "https://eandt.theiet.org/2026/06/18/norway-greenlights-world-s-first-full-scale-ship-tunnel",
-    "summary": "Norway has given the final green light for the construction of the Stad Ship Tunnel, a world-first full-scale tunnel designed to allow ships to bypass the notoriously dangerous Stadhavet Sea. The Norwegian Coastal Administration (NCA) announced the approval, with construction expected to begin in 2026 and completion targeted for 2030.\n\nThe 1.7-kilometer-long tunnel will be 36 meters wide and 49 meters high, capable of accommodating vessels up to 16,000 gross tonnes, including coastal express ships and larger freight vessels. It will link the Moldefjord and Kjødepollen, significantly improving safety and efficiency for maritime traffic navigating the exposed Stad peninsula, an area known for its fierce winds, strong currents, and challenging sea conditions.\n\nThe project, estimated to cost around NOK 3.9 billion (approximately £290 million), aims to create a safer and more predictable passage, reduce journey times, and open up new opportunities for commercial and passenger transport along Norway's western coast. While smaller canals have been built for vessels, the Stad Ship Tunnel stands out as the first to be designed for larger ships. The design includes innovative blasting techniques to create the massive bore and sophisticated traffic management systems for safe transit.",
-    "chinese_title": "挪威为首个大型船舶隧道开绿灯",
-    "chinese_summary": "挪威已最终批准斯塔德船舶隧道项目的建设，这是世界上首个全尺寸隧道，旨在让船只避开臭名昭著的危险斯塔德哈维特海域。挪威海岸管理局 (NCA) 宣布了这一批准，预计将于2026年开工，目标是在2030年完工。\n\n这条1.7公里长的隧道将宽36米，高49米，能够容纳高达16,000总吨的船只，包括沿海快船和大型货船。它将连接莫尔德峡湾和谢德波伦，显著提高航行于暴露的斯塔德半岛区域的海上交通的安全性和效率。该区域以其狂风、强流和恶劣海况而闻名。\n\n该项目预计耗资约39亿挪威克朗（约合2.9亿英镑），旨在创造一个更安全、更可预测的通道，缩短航程时间，并为挪威西海岸的商业和客运开辟新的机遇。尽管已经为船只修建了较小的运河，斯塔德船舶隧道却是首个为大型船只设计的隧道。其设计包括创新的爆破技术来开凿巨大的隧道，以及复杂的交通管理系统以确保安全通行。"
+    "id": "48629064",
+    "title": "Why Drawing Tablet Brands Won't Collaborate on Linux Floss Drivers",
+    "url": "https://www.davidrevoy.com/article1154/why-drawing-tablet-brands-wont-collaborate-on-linux-floss-drivers",
+    "summary": "The author, a tech reviewer, tests drawing tablets on GNU/Linux using Free/Libre and Open Source (FLOSS) software and drivers. Historically, they've extracted tablet specifications and reported them to Red Hat developers, Peter Hutterer and Benjamin Tissoire, who then create FLOSS drivers via `udev-hid-bpf`.\n\nFinding this process exhaustive, the author recently attempted a new strategy: direct collaboration with brands like Gaomon, XpPen, and Huion to share their device specifications. After extensive outreach, they successfully connected with a technical contact at Huion, who appeared to manage drivers for several brands. The author shared details of the existing FLOSS driver projects.\n\nHowever, the initiative was politely rejected by Gaomon. Their technical team cited concerns that the current Linux FLOSS driver infrastructure (e.g., `libwacom`, `wacom-hid-descriptors`) is \"Wacom-led\" and branded after their largest competitor. They worried about sharing their device specifications directly with a Wacom-branded project and perceived limited impact for Gaomon if their devices were still associated with Wacom branding.\n\nThe author identifies this historical \"Wacom branding\" within the open-source infrastructure as a major barrier preventing other brands from collaborating. Despite the setback, the author will revert to their previous method of individually reviewing tablets and documenting their specifications, relying on the Red Hat developers' efforts. They hope this highlights the need for funding to rebrand and evolve the FLOSS driver repositories to foster broader industry collaboration.",
+    "chinese_title": "数位板品牌为何不合作开发 Linux 开源驱动？",
+    "chinese_summary": "The author, a tech reviewer, tests drawing tablets on GNU/Linux using Free/Libre and Open Source (FLOSS) software and drivers. Historically, they've extracted tablet specifications and reported them to Red Hat developers, Peter Hutterer and Benjamin Tissoire, who then create FLOSS drivers via `udev-hid-bpf`.\n\nFinding this process exhaustive, the author recently attempted a new strategy: direct collaboration with brands like Gaomon, XpPen, and Huion to share their device specifications. After extensive outreach, they successfully connected with a technical contact at Huion, who appeared to manage drivers for several brands. The author shared details of the existing FLOSS driver projects.\n\nHowever, the initiative was politely rejected by Gaomon. Their technical team cited concerns that the current Linux FLOSS driver infrastructure (e.g., `libwacom`, `wacom-hid-descriptors`) is \"Wacom-led\" and branded after their largest competitor. They worried about sharing their device specifications directly with a Wacom-branded project and perceived limited impact for Gaomon if their devices were still associated with Wacom branding.\n\nThe author identifies this historical \"Wacom branding\" within the open-source infrastructure as a major barrier preventing other brands from collaborating. Despite the setback, the author will revert to their previous method of individually reviewing tablets and documenting their specifications, relying on the Red Hat developers' efforts. They hope this highlights the need for funding to rebrand and evolve the FLOSS driver repositories to foster broader industry collaboration."
   },
   {
-    "id": "48605355",
-    "title": "LLMs Are Complicated Now",
-    "url": "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/",
-    "summary": "LLMs, once characterized by clean Transformer stacks, have become significantly more complicated, mirroring the evolutionary path of recommendation systems (recsys). This increased complexity stems from diverse attention variants (e.g., query grouping, sliding-window), the expansion of Mixture-of-Experts (MoE) beyond feed-forward layers to attention blocks and residual streams, the integration of vision and audio encoders, and the overheads of multi-GPU inference.\n\nLike recsys, which evolved from straightforward neural nets to intricate systems driven by the need for both capability and inference efficiency, LLMs face a similar tension. While it's tempting to believe AI agents will automatically optimize these complex architectures, relying solely on them is problematic. Generating optimally fused kernels requires a fixed, verifiable baseline to ensure correctness. However, as performance improvements become load-bearing and crucial for real-world deployment, the gap between a pure conceptual model and an optimized, production-ready one shrinks, making it hard to evaluate new, unoptimized variants.\n\nThe research iteration loop suffers when unoptimized new ideas appear vastly inferior to highly fused existing ones. Hand-fusing new components is time-consuming, and pure auto-generation lacks critical baselines. The article argues that the only viable solution is to design for composability upfront. PyTorch's FlexAttention, which uses Triton templates to generate kernels for a class of attention operations, exemplifies this approach, allowing exploration with minimal performance impact due to its inherent composability and verifiability. This principle, of cutting architectures to their essence and ensuring composability, is also emphasized by experts like Andrej Karpathy as crucial for advancing frontier AI research.",
-    "chinese_title": "大语言模型现在变得复杂了",
-    "chinese_summary": "LLM，曾经以简洁的Transformer堆栈为特征，如今已变得显著更加复杂，这反映了推荐系统（recsys）的演进路径。这种复杂性的增加源于多样化的注意力变体（例如，查询分组、滑动窗口）、专家混合模型（MoE）从前馈层扩展到注意力块和残差连接、视觉和音频编码器的集成，以及多GPU推理的开销。\n\n就像推荐系统一样，从简单的神经网络演变为复杂的系统，这种演变是由对能力和推理效率的需求驱动的，LLM也面临着类似的困境。尽管人们可能倾向于相信AI智能体将自动优化这些复杂的架构，但仅仅依赖它们是存在问题的。生成最优融合的核函数需要一个固定且可验证的基线来确保正确性。然而，随着性能改进变得举足轻重并对实际部署至关重要，纯粹的概念模型与优化后的生产就绪模型之间的差距缩小，这使得评估新的、未优化的变体变得困难。\n\n当未经优化的新想法显得远不如高度融合的现有方案时，研究迭代循环就会受阻。手动融合新组件耗时费力，而纯粹的自动生成又缺乏关键的基线。文章认为，唯一可行的解决方案是从一开始就进行可组合性设计。PyTorch的FlexAttention便体现了这种方法，它使用Triton模板为一类注意力操作生成核函数，由于其固有的可组合性和可验证性，使得探索可以在性能影响最小的情况下进行。Andrej Karpathy等专家也强调了这种将架构精髓化并确保可组合性的原则，认为它对于推进前沿AI研究至关重要。"
+    "id": "48615680",
+    "title": "Building reliable agentic AI systems",
+    "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+    "summary": "The article details the development of PRINCE (Preclinical Information Center), a cloud-hosted platform by Bayer AG and Thoughtworks, designed to revolutionize drug development by addressing challenges in accessing vast preclinical data. Initially a keyword-based search tool, PRINCE evolved into an intelligent research assistant, leveraging Agentic Retrieval-Augmented Generation (RAG) and Text-to-SQL to integrate decades of safety study reports.\n\nPRINCE's evolution spans three phases: \"Search\" (consolidating structured metadata), \"Ask\" (AI-powered RAG for natural language queries on unstructured PDFs), and \"Do\" (a multi-agent system executing complex tasks like drafting regulatory documents). The system's architecture, orchestrated with LangGraph, employs specialized agents (Clarify User Intent, Researcher, Reflection, Writer) and emphasizes \"context engineering\" to optimize information flow and \"harness engineering\" for robust orchestration, recovery, and observability.\n\nKey design principles include prioritizing trust through transparency, explainability, and human-in-the-loop integration. The system features resilience mechanisms like LLM fallbacks, retries, and error context, along with extensive monitoring (Langfuse, Cloudwatch) and evaluation (RAGAS framework). PRINCE significantly improves data accessibility and research efficiency in pharmaceuticals, ensuring governance and compliance while demonstrating AI's transformative potential.",
+    "chinese_title": "构建可靠的智能体AI系统",
+    "chinese_summary": "本文详细介绍了PRINCE（临床前信息中心）的开发，该平台由拜耳公司和Thoughtworks共同打造，是一个云端平台，旨在通过解决访问海量临床前数据面临的挑战，彻底改变药物开发。PRINCE最初是一个基于关键词的搜索工具，后来发展成为一个智能研究助手，利用智能体检索增强生成（RAG）和Text-to-SQL技术，整合了数十年的安全性研究报告。\n\nPRINCE的演进分为三个阶段：“搜索”（整合结构化元数据）、“提问”（利用AI驱动的RAG对非结构化PDF进行自然语言查询）和“执行”（一个多智能体系统，执行起草监管文件等复杂任务）。该系统的架构由LangGraph编排，采用专门的智能体（澄清用户意图、研究员、反思、撰写者），并强调“上下文工程”以优化信息流，以及“驾驭工程”以实现强大的编排、恢复和可观测性。\n\n关键设计原则包括通过透明度、可解释性和人机协作整合来优先建立信任。该系统具备LLM回退、重试和错误上下文等弹性机制，并辅以广泛的监控（Langfuse、Cloudwatch）和评估（RAGAS框架）。PRINCE显著提升了制药领域的数据可访问性和研究效率，确保了治理和合规性，同时展示了AI的变革潜力。"
   },
   {
-    "id": "48602918",
-    "title": "Surprising economics of load-balanced systems",
-    "url": "https://brooker.co.za/blog/2020/08/06/erlang.html",
-    "summary": "Marc Brooker's \"Surprising Economics of Load-Balanced Systems\" investigates how client-observed latency changes in an M/M/c queuing system as the number of servers (c) increases, given a constant per-server load. Counter-intuitively, the mean request time does not remain constant; instead, it decreases quickly, asymptotically approaching the base service time of one second.\n\nThis surprising result is explained by Erlang's C formula. As 'c' grows, even with a proportionally increased total load, the probability of an incoming request being enqueued (and thus experiencing additional latency) drops significantly. For example, doubling servers and total load can dramatically reduce the percentage of requests that queue. This means a larger system inherently handles a higher proportion of traffic without delays.\n\nSimulations further confirm that this improvement isn't limited to the mean; high percentiles (like p99 and p99.9) also show a similar positive trend. The economic implication is substantial for cloud and service providers: larger 'c' allows for better latency at the same utilization, or better utilization for the same latency, all while maintaining the same per-server throughput. This efficiency gain is particularly beneficial as it accrues significantly even at modest server counts, making it a rare instance where scaling a distributed system simplifies a problem. While M/M/c assumptions are idealized, the fundamental principle holds.",
-    "chinese_title": "意想不到的负载均衡系统经济学",
-    "chinese_summary": "Marc Brooker的《负载均衡系统的惊人经济学》探讨了在一个M/M/c排队系统中，当服务器数量(c)增加且每个服务器负载保持不变时，客户端观察到的延迟如何变化。与直觉相反的是，平均请求时间并非保持不变，而是迅速下降，渐近地接近一秒钟的基本服务时间。\n\n这个惊人的结果可以通过爱尔兰C公式来解释。随着“c”的增长，即使总负载按比例增加，入站请求被排队（从而经历额外延迟）的概率也会显著下降。例如，将服务器和总负载翻倍可以大幅减少排队请求的百分比。这意味着一个更大的系统天生就能处理更高比例的无延迟流量。\n\n仿真进一步证实，这种改进不仅限于平均值；高百分位数（如p99和p99.9）也显示出类似的积极趋势。这对云服务和提供商具有重大的经济意义：更大的“c”可以在相同利用率下实现更好的延迟，或者在相同延迟下实现更好的利用率，同时保持每个服务器相同的吞吐量。这种效率增益尤其有益，因为它即使在适度的服务器数量下也能显著累积，使其成为分布式系统扩展反而能简化问题的罕见案例。尽管M/M/c的假设是理想化的，但其基本原理仍然成立。"
+    "id": "48616017",
+    "title": "The 100k whys of AI",
+    "url": "https://lcamtuf.substack.com/p/the-100000-whys-of-ai",
+    "summary": "The article \"The 100k whys of AI\" by lcamtuf critically examines the current state and limitations of AI, particularly Large Language Models (LLMs), by questioning their true understanding and generalization capabilities. The author argues that while LLMs excel at pattern matching and generating plausible text, they fundamentally lack a causal understanding of the world.\n\nThe core argument is that LLMs don't comprehend *why* things are true, but merely *what* sequences of words typically follow others. This reliance on statistical correlation makes them brittle and prone to \"hallucinations\" or logical errors when encountering scenarios outside their training data or requiring genuine reasoning. The author differentiates between \"shallow\" learning, where systems identify patterns, and \"deep\" understanding, which involves cause-and-effect relationships and true generalization.\n\nThe article suggests that current AI advancements are akin to sophisticated statistical parrots, impressive in their mimicry but devoid of genuine intelligence or common sense. It warns against overstating AI capabilities and emphasizes the need for breakthroughs that move beyond mere correlation to build models that grasp causality and context, similar to how humans learn from a tiny fraction of data. The pursuit of \"100k whys\" implies seeking a profound, causal understanding rather than just a vast statistical database.",
+    "chinese_title": "人工智能的十万个为什么",
+    "chinese_summary": "lcamtuf的文章《人工智能的十万个为什么》批判性地审视了人工智能（特别是大型语言模型LLM）的现状和局限性，通过质疑它们的真正理解能力和泛化能力。作者认为，尽管LLM擅长模式匹配和生成看似合理的文本，但它们根本缺乏对世界的因果理解。\n\n核心论点是LLM并不理解事物“为什么”是真的，而仅仅知道“什么”词序列通常跟在其他词之后。这种对统计相关性的依赖使得它们在遇到训练数据之外的情景或需要真正推理时，变得脆弱并容易产生“幻觉”或逻辑错误。作者区分了“浅层”学习（系统识别模式）和“深层”理解（涉及因果关系和真正的泛化）。\n\n文章指出，当前的人工智能进展类似于复杂的统计学鹦鹉，它们在模仿方面令人印象深刻，但缺乏真正的智能或常识。它警告不要夸大AI的能力，并强调需要取得突破，超越单纯的相关性，构建能够理解因果关系和上下文的模型，就像人类从极少量数据中学习一样。对“十万个为什么”的追求意味着寻求深刻的因果理解，而不仅仅是庞大的统计数据库。"
   },
   {
-    "id": "48595331",
-    "title": "So You Want to Define a Well-Known URI",
-    "url": "https://mnot.net/blog/2026/well_known_uris",
-    "summary": "Mark Nottingham, a co-author and Designated Expert for the Well-Known URI specification, clarifies their appropriate use. Well-Known URIs are best suited for scenarios where a client knows an origin (site) and needs to efficiently discover or interact with something relevant to the *entire site*, like `robots.txt` for access policies or a site-wide password change mechanism.\n\nThey are the wrong tool if used merely to confer legitimacy, boost adoption, or as a URL shortener when a full URL could be conveyed. Using them as a shortcut creates rigidity, locking services into a 1:1 relationship with sites, which can hinder deployment flexibility.\n\nNottingham highlights common pitfalls:\n*   **Discovery:** Assuming a clear \"site\" for discovery is problematic. Clients might start at a subdomain (e.g., `login.example.com`), while the well-known location is at the apex (`example.com`), requiring careful design for reliable hostname resolution.\n*   **Content Metadata:** Centralized metadata (like `robots.txt`) is challenging for sites hosting multiple publishers, as it creates a tension between convenience and granularity, often necessitating parallel metadata mechanisms.\n\nOther considerations include planning transitions for existing fixed locations, explicitly enumerating all applicable URL schemes beyond just HTTP/HTTPS, and ensuring proper registration in the official registry. Well-Known URIs solve specific problems, and their misuse can introduce unnecessary complications.",
-    "chinese_title": "So You Want to Define a Well-Known URI",
-    "chinese_summary": "马克·诺丁汉，知名URI（Well-Known URI）规范的合著者和指定专家，阐明了它们的恰当用法。知名URI最适用于客户端已知源（网站）并需要高效发现或与整个网站相关的事物进行交互的场景，例如用于访问策略的`robots.txt`或全站范围的密码更改机制。\n\n如果仅仅为了赋予合法性、促进采用，或在能提供完整URL时用作URL缩短器，那么它们就是错误的工具。将它们用作快捷方式会产生僵化，将服务锁定为与网站的1:1关系，从而阻碍部署灵活性。\n\n诺丁汉强调了常见陷阱：\n*   **发现：** 假设存在一个清晰的“网站”进行发现是有问题的。客户端可能从子域名（例如`login.example.com`）开始，而知名位置却位于顶级域名（例如`example.com`），这需要仔细设计以实现可靠的主机名解析。\n*   **内容元数据：** 集中式元数据（如`robots.txt`）对于托管多个发布者的网站来说具有挑战性，因为它在便利性和粒度之间产生了冲突，往往需要并行的元数据机制。\n\n其他考虑因素包括规划现有固定位置的过渡、明确列出除HTTP/HTTPS之外所有适用的URL方案，以及确保在官方注册表中正确注册。知名URI解决了特定的问题，而滥用它们可能会引入不必要的复杂性。"
+    "id": "48619831",
+    "title": "(How to Write a (Lisp) Interpreter (In Python)) (2010)",
+    "url": "https://norvig.com/lispy.html",
+    "summary": "This article, titled \"(How to Write a (Lisp) Interpreter (In Python))\" and published in 2010, is an instructional piece. Its main purpose, as indicated by the title, is to guide readers through the practical steps of building an interpreter for the Lisp programming language. A key aspect of this guide is its chosen implementation language: Python. Therefore, the article likely details the process, techniques, and code examples necessary to construct a Lisp interpreter using Python as the development tool. The publication year, 2010, places the content within that specific technological and pedagogical context.",
+    "chinese_title": "如何编写 Lisp 解释器 (Python 版) (2010)",
+    "chinese_summary": "本文题为《如何用Python编写Lisp解释器》，于2010年发表，是一篇教学性文章。其主要目的，正如标题所示，是指导读者逐步实践，构建一个Lisp编程语言的解释器。这篇指南的一个关键方面是它选择了Python作为实现语言。因此，文章很可能详细阐述了使用Python作为开发工具来构建Lisp解释器所需的流程、技术和代码示例。2010年的发表年份将内容置于当时特定的技术和教学背景之下。"
   },
   {
-    "id": "48609373",
-    "title": "Ubisoft co-founder Claude Guillemot has died in a plane crash",
-    "url": "https://www.reuters.com/world/ubisofts-co-founder-claude-guillemot-dies-plane-crash-2026-06-20/",
+    "id": "48622234",
+    "title": "Ask for no, don't ask for yes (2022)",
+    "url": "https://www.mooreds.com/wordpress/archives/3518",
     "summary": "生成摘要时出错",
-    "chinese_title": "Ubisoft co-founder Claude Guillemot has died in a plane crash",
+    "chinese_title": "Ask for no, don't ask for yes (2022)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48593093",
-    "title": "Update on Ocean Observatories Initiative",
-    "url": "https://www.nsf.gov/news/update-ocean-observatories-initiative",
-    "summary": "The U.S. National Science Foundation (NSF) announced on June 18, 2026, a significant update to its Ocean Observatories Initiative (OOI) in response to stakeholder concerns about data reliance.\n\nEffective immediately, NSF will cease any further removal or descoping of equipment from the remaining OOI arrays and will continue operations, including planned maintenance. While the Endurance Array has already been removed, NSF is developing plans to redeploy it after servicing.\n\nMoving forward, NSF will issue a \"Dear Colleague Letter\" to gather stakeholder input. Additionally, an expert panel will be convened to assess observational needs, evaluate available data sources, consider responses to the letter, and help identify a sustainable path for NSF’s ocean observing systems. NSF reaffirmed its commitment to ocean sciences, responsible stewardship of its research infrastructure, and supporting its dependent stakeholders.",
-    "chinese_title": "海洋观测计划最新进展",
-    "chinese_summary": "The U.S. National Science Foundation (NSF) announced on June 18, 2026, a significant update to its Ocean Observatories Initiative (OOI) in response to stakeholder concerns about data reliance.\n\nEffective immediately, NSF will cease any further removal or descoping of equipment from the remaining OOI arrays and will continue operations, including planned maintenance. While the Endurance Array has already been removed, NSF is developing plans to redeploy it after servicing.\n\nMoving forward, NSF will issue a \"Dear Colleague Letter\" to gather stakeholder input. Additionally, an expert panel will be convened to assess observational needs, evaluate available data sources, consider responses to the letter, and help identify a sustainable path for NSF’s ocean observing systems. NSF reaffirmed its commitment to ocean sciences, responsible stewardship of its research infrastructure, and supporting its dependent stakeholders."
-  },
-  {
-    "id": "48604584",
-    "title": "Iran requires insurance on ships using Strait of Hormuz, fees likely to follow",
-    "url": "https://www.lloydslist.com/LL1157571/Iran-imposes-mandatory-insurance-on-ships-transiting-Strait-of-Hormuz-with-fees-likely-to-follow",
+    "id": "48630171",
+    "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+    "url": "https://hustvl.github.io/Moebius/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Iran requires insurance on ships using Strait of Hormuz, fees likely to follow",
+    "chinese_title": "Moebius: 0.2B image inpainting model with 10B-level performance",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48609194",
-    "title": "From PGP to Mythos: a brief history of export controls that didn't stop anyone",
-    "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+    "id": "48628731",
+    "title": "Alan Greenspan has died",
+    "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
     "summary": "生成摘要时出错",
-    "chinese_title": "From PGP to Mythos: a brief history of export controls that didn't stop anyone",
+    "chinese_title": "Alan Greenspan has died",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48600593",
-    "title": "AURpocalypse now: a look at the recent AUR attacks",
-    "url": "https://lwn.net/SubscriberLink/1077619/f7b07c5489fdd43a/",
-    "summary": "The Arch User Repository (AUR) has recently experienced a large-scale, sustained attack where malicious actors created new accounts to adopt orphaned packages and inject malware. Starting around May 27, 2026, attackers pushed updates installing malicious npm packages like `crypto-javascript` and `atomic-lockfile`, exfiltrating sensitive user data. Over 1,500 packages were affected, marking this as a significantly larger incident than previous attacks.\n\nThe AUR's open-door policy facilitates these vulnerabilities: there's no formal review process for packages or updates, and any registered user can easily adopt orphaned packages. Unlike services such as Fedora's Copr, AUR packages reside in a single namespace, making ownership changes simple to abuse. While users are warned to \"use at their own risk\" and review PKGBUILDs, this often doesn't happen, especially during updates.\n\nIn response, AUR new-user registration was temporarily disabled multiple times. The attackers also attempted to obfuscate their install commands. Discussions for long-term solutions include AI-powered threat detection, locking orphaned packages until proper adoption requests are reviewed, or integrating \"loud warnings\" into AUR helpers for adopted packages. However, concerns exist about discouraging legitimate contributions and the ability of simple scanning to keep pace with evolving attacker tactics. The incident highlights the inherent challenges of securing large, trust-based community repositories.",
-    "chinese_title": "AURpocalypse now: a look at the recent AUR attacks",
-    "chinese_summary": "The Arch User Repository (AUR) has recently experienced a large-scale, sustained attack where malicious actors created new accounts to adopt orphaned packages and inject malware. Starting around May 27, 2026, attackers pushed updates installing malicious npm packages like `crypto-javascript` and `atomic-lockfile`, exfiltrating sensitive user data. Over 1,500 packages were affected, marking this as a significantly larger incident than previous attacks.\n\nThe AUR's open-door policy facilitates these vulnerabilities: there's no formal review process for packages or updates, and any registered user can easily adopt orphaned packages. Unlike services such as Fedora's Copr, AUR packages reside in a single namespace, making ownership changes simple to abuse. While users are warned to \"use at their own risk\" and review PKGBUILDs, this often doesn't happen, especially during updates.\n\nIn response, AUR new-user registration was temporarily disabled multiple times. The attackers also attempted to obfuscate their install commands. Discussions for long-term solutions include AI-powered threat detection, locking orphaned packages until proper adoption requests are reviewed, or integrating \"loud warnings\" into AUR helpers for adopted packages. However, concerns exist about discouraging legitimate contributions and the ability of simple scanning to keep pace with evolving attacker tactics. The incident highlights the inherent challenges of securing large, trust-based community repositories."
-  },
-  {
-    "id": "48609766",
-    "title": "DOS Game \"F-15 Strike Eagle II\" reversing project needs DOS test pilots",
-    "url": "https://neuviemeporte.github.io/f15-se2/2026/06/20/needyou.html",
+    "id": "48619140",
+    "title": "Who owns your ATProto identity?",
+    "url": "https://kevinak.se/blog/who-actually-owns-your-atproto-identity-hint-its-probably-not-you",
     "summary": "生成摘要时出错",
-    "chinese_title": "DOS Game \"F-15 Strike Eagle II\" reversing project needs DOS test pilots",
+    "chinese_title": "Who owns your ATProto identity?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48610827",
-    "title": "SMPTE Makes Its Standards Freely Accessible",
-    "url": "https://www.smpte.org/blog/smpte-makes-its-standards-freely-accessible-openingstandards-library-to-the-global-media-technology-community",
+    "id": "48622731",
+    "title": "PowerFox Browser",
+    "url": "https://powerfox.jazzzny.me/",
     "summary": "生成摘要时出错",
-    "chinese_title": "SMPTE Makes Its Standards Freely Accessible",
+    "chinese_title": "PowerFox Browser",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48602571",
-    "title": "Companies rein in AI usage as costs strain budgets",
-    "url": "https://www.ft.com/content/1d37cc08-e0aa-45a4-a45d-4ad282529314",
+    "id": "48632652",
+    "title": "Mexican government unveils a prototype for a new homegrown, ultra-affordable EV",
+    "url": "https://gizmodo.com/mexico-just-showed-off-a-new-extremely-cheap-government-backed-ev-2000769080",
     "summary": "生成摘要时出错",
-    "chinese_title": "Companies rein in AI usage as costs strain budgets",
+    "chinese_title": "Mexican government unveils a prototype for a new homegrown, ultra-affordable EV",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48603664",
-    "title": "Zenzizenzizenzic",
-    "url": "https://en.wikipedia.org/wiki/Zenzizenzizenzic",
+    "id": "48619394",
+    "title": "Fossil Fuels Are 40% of Freight Shipping Tonnage, but Half Its Fuel Use",
+    "url": "https://cleantechnica.com/2026/06/16/shipping-freight-energy-fossil-cargo/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Zenzizenzizenzic",
+    "chinese_title": "Fossil Fuels Are 40% of Freight Shipping Tonnage, but Half Its Fuel Use",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48608591",
-    "title": "Lithuanian startup launches open-source network to detect Shahed-type drones",
-    "url": "https://www.lrt.lt/en/news-in-english/19/2965205/lithuanian-startup-launches-open-source-network-to-detect-shahed-type-drones",
+    "id": "48616713",
+    "title": "A 3D voxel game engine written in APL",
+    "url": "https://github.com/namgyaaal/avoxelgame",
     "summary": "生成摘要时出错",
-    "chinese_title": "Lithuanian startup launches open-source network to detect Shahed-type drones",
+    "chinese_title": "A 3D voxel game engine written in APL",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48608394",
-    "title": "Temporary Cloudflare accounts for AI agents",
-    "url": "https://blog.cloudflare.com/temporary-accounts/",
+    "id": "48623419",
+    "title": "Japanese verb conjugation the simple hard way",
+    "url": "https://underreacted.leaflet.pub/3mmevu6woys27",
     "summary": "生成摘要时出错",
-    "chinese_title": "Temporary Cloudflare accounts for AI agents",
+    "chinese_title": "Japanese verb conjugation the simple hard way",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48609421",
-    "title": "The European Social Stack",
-    "url": "https://european.social",
+    "id": "48612740",
+    "title": "Alice is impatient",
+    "url": "https://brooker.co.za/blog/2026/06/19/waiting.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "The European Social Stack",
+    "chinese_title": "Alice is impatient",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48608255",
-    "title": "Bootimus – A Self-Contained PXE and HTTP Boot Server",
-    "url": "https://bootimus.com",
-    "summary": "Bootimus is described as a self-contained PXE and HTTP Boot Server, designed for simplicity and ease of use. Its core feature is being a single Go binary that embeds all necessary components, including iPXE, a web user interface, SQLite database, and all other assets. This architecture eliminates runtime dependencies, allowing for extremely straightforward deployment—users can simply copy (scp) the binary and run it without needing to install additional software.",
-    "chinese_title": "Bootimus – A Self-Contained PXE and HTTP Boot Server",
-    "chinese_summary": "Bootimus is described as a self-contained PXE and HTTP Boot Server, designed for simplicity and ease of use. Its core feature is being a single Go binary that embeds all necessary components, including iPXE, a web user interface, SQLite database, and all other assets. This architecture eliminates runtime dependencies, allowing for extremely straightforward deployment—users can simply copy (scp) the binary and run it without needing to install additional software."
-  },
-  {
-    "id": "48603761",
-    "title": "The UK's new under-16 social media ban will cause more harm than it prevents",
-    "url": "https://www.eff.org/deeplinks/2026/06/uks-new-under-16-social-media-ban-will-cause-more-harm-it-prevents",
+    "id": "48616173",
+    "title": "Windows UI evolution: Clicking an unassociated file",
+    "url": "https://movq.de/blog/postings/2026-06-20/0/POSTING-en.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "The UK's new under-16 social media ban will cause more harm than it prevents",
+    "chinese_title": "Windows UI evolution: Clicking an unassociated file",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48591066",
-    "title": "Zork name origin got an update on Wikipedia",
-    "url": "https://www.dpolakovic.space/blogs/zork-part2#update",
+    "id": "48624195",
+    "title": "The Doom Justifies the Valuation",
+    "url": "https://geohot.github.io//blog/jekyll/update/2026/06/21/the-doom-justifies-the-valuation.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Zork name origin got an update on Wikipedia",
+    "chinese_title": "The Doom Justifies the Valuation",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48594733",
-    "title": "Fable Converted Pylint to Rust",
-    "url": "https://pypi.org/project/prylint/",
+    "id": "48617782",
+    "title": "The case against geometric algebra (2024)",
+    "url": "https://alexkritchevsky.com/2024/02/28/geometric-algebra.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Fable Converted Pylint to Rust",
+    "chinese_title": "The case against geometric algebra (2024)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48610224",
-    "title": "Show HN: StartupWiki – A Free Alternative to Crunchbase",
-    "url": "https://startupwiki.tech/",
+    "id": "48632327",
+    "title": "NSF slashes research programs to support new tech initiative, insiders say",
+    "url": "https://www.science.org/content/article/exclusive-nsf-slashes-research-programs-support-new-tech-initiative-insiders-say",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: StartupWiki – A Free Alternative to Crunchbase",
+    "chinese_title": "NSF slashes research programs to support new tech initiative, insiders say",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48604558",
-    "title": "Russell Vought is going to destroy American Science",
-    "url": "https://elizabethginexi.substack.com/p/summary-of-key-changes-in-ombs-proposed",
+    "id": "48613008",
+    "title": "Supermarket giant Tesco sues VMware for breach of contract (2025)",
+    "url": "https://www.theregister.com/software/2025/09/03/supermarket-giant-tesco-sues-vmware-for-breach-of-contract/1420651",
     "summary": "生成摘要时出错",
-    "chinese_title": "Russell Vought is going to destroy American Science",
+    "chinese_title": "Supermarket giant Tesco sues VMware for breach of contract (2025)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48610853",
-    "title": "UHF X11: X11 Built for VisionOS and Apple Vision Pro",
-    "url": "https://www.lispm.net/apps/uhf-x11/",
+    "id": "48622590",
+    "title": "Show HN: Recall – Local project memory for Claude Code",
+    "url": "https://github.com/raiyanyahya/recall",
     "summary": "生成摘要时出错",
-    "chinese_title": "UHF X11: X11 Built for VisionOS and Apple Vision Pro",
+    "chinese_title": "Show HN: Recall – Local project memory for Claude Code",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48597939",
-    "title": "Leave a Trace",
-    "url": "https://www.jakeworth.com/posts/leave-a-trace",
+    "id": "48614809",
+    "title": "White House delays US voting-machine vulnerability report",
+    "url": "https://www.reuters.com/world/white-house-delays-release-us-voting-machine-study-midterms-near-2026-06-19/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Leave a Trace",
+    "chinese_title": "White House delays US voting-machine vulnerability report",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48611083",
-    "title": "The ability to regrow body parts is dormant in mammals, not lost",
-    "url": "https://www.sciencedaily.com/releases/2026/06/260617032207.htm",
+    "id": "48634694",
+    "title": "Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed",
+    "url": "https://ipvm.com/reports/police-chiefs-track",
     "summary": "生成摘要时出错",
-    "chinese_title": "The ability to regrow body parts is dormant in mammals, not lost",
+    "chinese_title": "Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48605208",
-    "title": "A record 242 US cities now have starter homes that cost $1M",
-    "url": "https://investors.zillowgroup.com/news-and-events/news/news-details/2026/A-record-242-US-cities-now-have-starter-homes-that-cost-1M/default.aspx",
+    "id": "48620462",
+    "title": "Burnout is real for open source maintainers",
+    "url": "https://openjsf.org/blog/burnout-is-real-for-open-source-maintainers",
     "summary": "生成摘要时出错",
-    "chinese_title": "A record 242 US cities now have starter homes that cost $1M",
+    "chinese_title": "Burnout is real for open source maintainers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48622987",
+    "title": "Rent collections are down in New York",
+    "url": "https://www.politico.com/news/2026/06/21/rent-collections-are-down-in-new-york-and-no-ones-sure-why-00966982",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Rent collections are down in New York",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48631888",
+    "title": "Prompt Injection as Role Confusion",
+    "url": "https://role-confusion.github.io",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Prompt Injection as Role Confusion",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48631058",
+    "title": "DHL Set to Transport Goods on New Wind-Powered Cargo Ships",
+    "url": "https://www.wsj.com/pro/sustainable-business/dhl-set-to-transport-goods-on-new-wind-powered-cargo-ships-eca5d5a0",
+    "summary": "生成摘要时出错",
+    "chinese_title": "DHL Set to Transport Goods on New Wind-Powered Cargo Ships",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48620142",
+    "title": "The early hiring funnel is now breaking on both ends",
+    "url": "https://hbr.org/2026/06/ai-has-broken-hiring-heres-how-to-fix-it",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The early hiring funnel is now breaking on both ends",
     "chinese_summary": "生成摘要时出错"
   }
 ]
