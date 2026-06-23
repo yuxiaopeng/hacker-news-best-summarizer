@@ -1,178 +1,26 @@
 [
   {
-    "id": "48620342",
-    "title": "The minimum viable unit of saleable software",
-    "url": "https://brandur.org/minimum-viable-unit",
-    "summary": "In \"The Minimum Viable Unit of Saleable Software,\" the author Brandur discusses the viability of building a software business in the age of AI, particularly addressing the \"buy vs. build\" calculus with powerful Large Language Models (LLMs).\n\nHe argues that while LLMs make software considerably cheaper to build, \"cheap does not equal zero.\" Human effort is still required for prompting, refining, and maintaining LLM-generated code, which carries a significant cost. He illustrates this with an example: replacing a $400/month Jira subscription with an internal LLM-built tracker would, he calculates, cost far more in engineering hours (initial build plus ongoing maintenance) than simply paying for Jira.\n\nHowever, for very high-priced SaaS products (e.g., Salesforce at $25k/month for 50 seats), building an internal alternative *does* become more economically viable. This leads him to propose \"the zone of viability\" for saleable software, defined by two conditions:\n1.  **Sufficient novelty:** The software must be complex enough to make an LLM-powered rebuild non-trivial and require ongoing maintenance.\n2.  **Reasonable pricing:** The price must not be so exorbitant as to strongly encourage a rebuild.\n\nThe \"minimum viable unit of saleable software\" lies at the point where the cost of buying a third-party solution becomes less than or equal to the effort and cost of rebuilding it internally, even with LLM assistance.\n\nThe author applies this framework to his own side project, River, a job queue for Go and Postgres. He believes River Pro, offering advanced features and a sublinearly scaling pricing model ($125/month for small teams), falls within this zone of viability, making it a plausible business despite the advancements in AI.",
-    "chinese_title": "可销售软件的最小可行单元",
-    "chinese_summary": "在《可销售软件的最小可行单元》一文中，作者Brandur探讨了在人工智能时代构建软件业务的可行性，特别是针对强大的大型语言模型（LLM）出现后“购买与自建”的权衡。\n\n他认为，尽管LLM大大降低了软件的开发成本，但“便宜不等于免费”。LLM生成的代码仍需要人工进行提示、优化和维护，这其中包含显著的成本。他举例说明：将每月400美元的Jira订阅替换为内部通过LLM构建的追踪器，他计算出其工程小时成本（初始构建加持续维护）将远高于直接支付Jira费用。\n\n然而，对于价格非常高的SaaS产品（例如，50个席位每月2.5万美元的Salesforce），自建内部替代方案确实变得更经济可行。这使他提出了可销售软件的“可行性区域”，该区域由两个条件定义：\n1.  **足够的独特性：** 软件必须足够复杂，以至于通过LLM驱动的重建并非微不足道，并且需要持续维护。\n2.  **合理的定价：** 价格不能高得离谱，以至于强烈促使用户选择自建。\n\n“可销售软件的最小可行单元”位于一个临界点：购买第三方解决方案的成本小于或等于内部重建（即使有LLM辅助）所需付出的努力和成本。\n\n作者将此框架应用于他的个人项目River，一个用于Go和Postgres的作业队列。他相信River Pro，通过提供高级功能和非线性扩展的定价模型（小型团队每月125美元），正处于这个可行性区域内，使其尽管在人工智能进步的背景下，仍然是一项可行的业务。"
+    "id": "48636380",
+    "title": "ytr: YouTube Radio for Emacs",
+    "url": "https://xenodium.com/ytr-youtube-radio-for-emacs",
+    "summary": "The article introduces \"ytr,\" a new and experimental Emacs package designed to function as a YouTube radio. The author developed \"ytr\" to fulfill their need for streaming YouTube audio within Emacs, a use case not well-suited for their existing, file-driven \"ready-player\" package.\n\nInstead of refactoring \"ready-player,\" the author created \"ytr\" as a separate project to experiment with a widget-like user experience. Users interact with \"ytr\" by adding a YouTube channel URL; the package then automatically pulls and presents the channel's content metadata in a child frame. It features visual animations, reminiscent of Winamp, which require an Emacs GUI environment.\n\n\"ytr\" leverages `mpv` and `yt-dlp` for its streaming capabilities. It is currently a brand new, first-iteration package, available on GitHub, and has only been tested on macOS so far. The author encourages users to try it out, provide feedback, and consider sponsoring its continued development.",
+    "chinese_title": "ytr：Emacs 版 YouTube 广播",
+    "chinese_summary": "The article introduces \"ytr,\" a new and experimental Emacs package designed to function as a YouTube radio. The author developed \"ytr\" to fulfill their need for streaming YouTube audio within Emacs, a use case not well-suited for their existing, file-driven \"ready-player\" package.\n\nInstead of refactoring \"ready-player,\" the author created \"ytr\" as a separate project to experiment with a widget-like user experience. Users interact with \"ytr\" by adding a YouTube channel URL; the package then automatically pulls and presents the channel's content metadata in a child frame. It features visual animations, reminiscent of Winamp, which require an Emacs GUI environment.\n\n\"ytr\" leverages `mpv` and `yt-dlp` for its streaming capabilities. It is currently a brand new, first-iteration package, available on GitHub, and has only been tested on macOS so far. The author encourages users to try it out, provide feedback, and consider sponsoring its continued development."
   },
   {
-    "id": "48618488",
-    "title": "Show HN: Teach your kids perfect pitch",
-    "url": "https://github.com/paytonjjones/bsharp",
-    "summary": "BSharp is a mobile app designed to help young children acquire absolute (perfect) pitch, leveraging a critical developmental window that closes around age six. Available on the Play Store, it employs Eguchi's chord identification method, teaching children to associate piano chords with distinct colors.\n\nThe learning process begins with two chords (red and yellow), gradually introducing more as the child masters each level with 100% accuracy. The recommended practice schedule is five sessions daily, each lasting 2-3 minutes (20-25 identifications). New chords are introduced no sooner than every two weeks. BSharp tracks accuracy, uses an adaptive weighting algorithm to present harder chords more often, and supports multiple user profiles.\n\nThe app progresses through 9 initial white-key chords (e.g., Yellow for F/C, Blue for G/B), followed by 5 black-key chords. BSharp is based on Paul Ganssle's open-source CIM Trainer and is licensed under the Apache License 2.0. Development requires Node.js.",
-    "chinese_title": "Show HN: 教孩子绝对音感",
-    "chinese_summary": "BSharp 是一款移动应用程序，旨在帮助幼童习得绝对音高（即完美音高），它利用了在六岁左右关闭的关键发育窗口期。该应用可在Play商店下载，它采用了江口（Eguchi）的和弦识别方法，教导儿童将钢琴和弦与不同颜色关联起来。\n\n学习过程从两个和弦（红色和黄色）开始，随着孩子以100%的准确率掌握每个级别，逐步引入更多和弦。建议的练习时间表是每天五次练习，每次持续2-3分钟（20-25次识别）。新和弦的引入时间间隔不早于两周。BSharp 会跟踪准确性，使用自适应加权算法更频繁地呈现难度更高的和弦，并支持多个用户配置文件。\n\n该应用会逐步学习9个初始白键和弦（例如，黄色代表F/C，蓝色代表G/B），随后是5个黑键和弦。BSharp 基于 Paul Ganssle 的开源 CIM 训练器，并采用 Apache 许可证 2.0。开发需要 Node.js。"
-  },
-  {
-    "id": "48623434",
-    "title": "Good results fine tuning a local LLM like Qwen 3:0.6B to categorize questions",
-    "url": "https://www.teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions",
-    "summary": "Torgeir Helgevold undertook a personal project to develop a household chatbot that categorizes user questions for improved RAG searches in a vector database. The core hypothesis was whether a very small local LLM, specifically Qwen 3:0.6B, could be fine-tuned to reliably categorize questions into predefined metadata categories (e.g., pool, car, hvac).\n\nInitially, using the Qwen 0.6B model \"as is\" with prompting alone yielded poor results, achieving only 10% accuracy on a test set of 131 questions. The model frequently misclassified questions into broad categories or invented new ones.\n\nFor the first fine-tuning attempt, leveraging Unsloth with QLora on a dataset of ~850 household questions, accuracy significantly improved to 79%. However, the model still struggled, sometimes emitting fragments of categories (e.g., \"ac\" instead of \"hvac\") or confusing semantically similar categories like \"fountain,\" \"water heater,\" and \"pool.\"\n\nThe second fine-tuning experiment introduced a crucial tweak: instead of asking the model to output full category names, it was prompted to return fixed, two-character opaque codes (e.g., \"KK\" for \"hvac\"). This simple change dramatically boosted accuracy to 92%. While some \"water-based\" confusions (e.g., water heater -> pool) persisted, the fine-tuned LLM proved to be a generally reliable predictor, making it suitable for the chatbot's pre-processing step. The author plans to further refine the training data to address remaining ambiguities. An update also noted exploration into Logistic Regression as an alternative classification approach.",
-    "chinese_title": "微调Qwen 3:0.6B等本地LLM用于问题分类，效果良好。",
-    "chinese_summary": "Torgeir Helgevold 开展了一个个人项目，旨在开发一个家用聊天机器人，用于对用户问题进行分类，以改进向量数据库中的RAG搜索效果。其核心假设是，一个非常小的本地大型语言模型，特别是Qwen 3:0.6B，能否通过微调可靠地将问题分类到预定义的元数据类别中（例如，游泳池、汽车、暖通空调）。\n\n最初，仅通过提示词直接使用Qwen 0.6B模型，效果很差，在一个包含131个问题的测试集上，准确率仅为10%。该模型经常将问题误分类到宽泛的类别中，或者凭空创造出新的类别。\n\n首次微调尝试中，利用Unsloth和QLora在一个包含约850个家庭问题的数据集上进行训练，准确率显著提升至79%。然而，模型仍然存在问题，有时会输出类别的片段（例如，“ac”而非“hvac”），或者混淆语义相似的类别，如“喷泉”、“热水器”和“游泳池”。\n\n第二次微调实验引入了一个关键的调整：即不再要求模型输出完整的类别名称，而是提示它返回固定的两位字符不透明代码（例如，“KK”代表“hvac”）。这一简单的改变将准确率大幅提升至92%。尽管一些“与水相关”的混淆（例如，热水器被错误分类为游泳池）仍然存在，但微调后的LLM被证明是一个普遍可靠的预测器，使其适用于聊天机器人的预处理步骤。作者计划进一步完善训练数据，以解决剩余的歧义。一项更新还提到，正在探索使用逻辑回归作为替代分类方法。"
-  },
-  {
-    "id": "48629064",
-    "title": "Why Drawing Tablet Brands Won't Collaborate on Linux Floss Drivers",
-    "url": "https://www.davidrevoy.com/article1154/why-drawing-tablet-brands-wont-collaborate-on-linux-floss-drivers",
-    "summary": "The author, a tech reviewer, tests drawing tablets on GNU/Linux using Free/Libre and Open Source (FLOSS) software and drivers. Historically, they've extracted tablet specifications and reported them to Red Hat developers, Peter Hutterer and Benjamin Tissoire, who then create FLOSS drivers via `udev-hid-bpf`.\n\nFinding this process exhaustive, the author recently attempted a new strategy: direct collaboration with brands like Gaomon, XpPen, and Huion to share their device specifications. After extensive outreach, they successfully connected with a technical contact at Huion, who appeared to manage drivers for several brands. The author shared details of the existing FLOSS driver projects.\n\nHowever, the initiative was politely rejected by Gaomon. Their technical team cited concerns that the current Linux FLOSS driver infrastructure (e.g., `libwacom`, `wacom-hid-descriptors`) is \"Wacom-led\" and branded after their largest competitor. They worried about sharing their device specifications directly with a Wacom-branded project and perceived limited impact for Gaomon if their devices were still associated with Wacom branding.\n\nThe author identifies this historical \"Wacom branding\" within the open-source infrastructure as a major barrier preventing other brands from collaborating. Despite the setback, the author will revert to their previous method of individually reviewing tablets and documenting their specifications, relying on the Red Hat developers' efforts. They hope this highlights the need for funding to rebrand and evolve the FLOSS driver repositories to foster broader industry collaboration.",
-    "chinese_title": "数位板品牌为何不合作开发 Linux 开源驱动？",
-    "chinese_summary": "The author, a tech reviewer, tests drawing tablets on GNU/Linux using Free/Libre and Open Source (FLOSS) software and drivers. Historically, they've extracted tablet specifications and reported them to Red Hat developers, Peter Hutterer and Benjamin Tissoire, who then create FLOSS drivers via `udev-hid-bpf`.\n\nFinding this process exhaustive, the author recently attempted a new strategy: direct collaboration with brands like Gaomon, XpPen, and Huion to share their device specifications. After extensive outreach, they successfully connected with a technical contact at Huion, who appeared to manage drivers for several brands. The author shared details of the existing FLOSS driver projects.\n\nHowever, the initiative was politely rejected by Gaomon. Their technical team cited concerns that the current Linux FLOSS driver infrastructure (e.g., `libwacom`, `wacom-hid-descriptors`) is \"Wacom-led\" and branded after their largest competitor. They worried about sharing their device specifications directly with a Wacom-branded project and perceived limited impact for Gaomon if their devices were still associated with Wacom branding.\n\nThe author identifies this historical \"Wacom branding\" within the open-source infrastructure as a major barrier preventing other brands from collaborating. Despite the setback, the author will revert to their previous method of individually reviewing tablets and documenting their specifications, relying on the Red Hat developers' efforts. They hope this highlights the need for funding to rebrand and evolve the FLOSS driver repositories to foster broader industry collaboration."
-  },
-  {
-    "id": "48615680",
-    "title": "Building reliable agentic AI systems",
-    "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
-    "summary": "The article details the development of PRINCE (Preclinical Information Center), a cloud-hosted platform by Bayer AG and Thoughtworks, designed to revolutionize drug development by addressing challenges in accessing vast preclinical data. Initially a keyword-based search tool, PRINCE evolved into an intelligent research assistant, leveraging Agentic Retrieval-Augmented Generation (RAG) and Text-to-SQL to integrate decades of safety study reports.\n\nPRINCE's evolution spans three phases: \"Search\" (consolidating structured metadata), \"Ask\" (AI-powered RAG for natural language queries on unstructured PDFs), and \"Do\" (a multi-agent system executing complex tasks like drafting regulatory documents). The system's architecture, orchestrated with LangGraph, employs specialized agents (Clarify User Intent, Researcher, Reflection, Writer) and emphasizes \"context engineering\" to optimize information flow and \"harness engineering\" for robust orchestration, recovery, and observability.\n\nKey design principles include prioritizing trust through transparency, explainability, and human-in-the-loop integration. The system features resilience mechanisms like LLM fallbacks, retries, and error context, along with extensive monitoring (Langfuse, Cloudwatch) and evaluation (RAGAS framework). PRINCE significantly improves data accessibility and research efficiency in pharmaceuticals, ensuring governance and compliance while demonstrating AI's transformative potential.",
-    "chinese_title": "构建可靠的智能体AI系统",
-    "chinese_summary": "本文详细介绍了PRINCE（临床前信息中心）的开发，该平台由拜耳公司和Thoughtworks共同打造，是一个云端平台，旨在通过解决访问海量临床前数据面临的挑战，彻底改变药物开发。PRINCE最初是一个基于关键词的搜索工具，后来发展成为一个智能研究助手，利用智能体检索增强生成（RAG）和Text-to-SQL技术，整合了数十年的安全性研究报告。\n\nPRINCE的演进分为三个阶段：“搜索”（整合结构化元数据）、“提问”（利用AI驱动的RAG对非结构化PDF进行自然语言查询）和“执行”（一个多智能体系统，执行起草监管文件等复杂任务）。该系统的架构由LangGraph编排，采用专门的智能体（澄清用户意图、研究员、反思、撰写者），并强调“上下文工程”以优化信息流，以及“驾驭工程”以实现强大的编排、恢复和可观测性。\n\n关键设计原则包括通过透明度、可解释性和人机协作整合来优先建立信任。该系统具备LLM回退、重试和错误上下文等弹性机制，并辅以广泛的监控（Langfuse、Cloudwatch）和评估（RAGAS框架）。PRINCE显著提升了制药领域的数据可访问性和研究效率，确保了治理和合规性，同时展示了AI的变革潜力。"
-  },
-  {
-    "id": "48616017",
-    "title": "The 100k whys of AI",
-    "url": "https://lcamtuf.substack.com/p/the-100000-whys-of-ai",
-    "summary": "The article \"The 100k whys of AI\" by lcamtuf critically examines the current state and limitations of AI, particularly Large Language Models (LLMs), by questioning their true understanding and generalization capabilities. The author argues that while LLMs excel at pattern matching and generating plausible text, they fundamentally lack a causal understanding of the world.\n\nThe core argument is that LLMs don't comprehend *why* things are true, but merely *what* sequences of words typically follow others. This reliance on statistical correlation makes them brittle and prone to \"hallucinations\" or logical errors when encountering scenarios outside their training data or requiring genuine reasoning. The author differentiates between \"shallow\" learning, where systems identify patterns, and \"deep\" understanding, which involves cause-and-effect relationships and true generalization.\n\nThe article suggests that current AI advancements are akin to sophisticated statistical parrots, impressive in their mimicry but devoid of genuine intelligence or common sense. It warns against overstating AI capabilities and emphasizes the need for breakthroughs that move beyond mere correlation to build models that grasp causality and context, similar to how humans learn from a tiny fraction of data. The pursuit of \"100k whys\" implies seeking a profound, causal understanding rather than just a vast statistical database.",
-    "chinese_title": "人工智能的十万个为什么",
-    "chinese_summary": "lcamtuf的文章《人工智能的十万个为什么》批判性地审视了人工智能（特别是大型语言模型LLM）的现状和局限性，通过质疑它们的真正理解能力和泛化能力。作者认为，尽管LLM擅长模式匹配和生成看似合理的文本，但它们根本缺乏对世界的因果理解。\n\n核心论点是LLM并不理解事物“为什么”是真的，而仅仅知道“什么”词序列通常跟在其他词之后。这种对统计相关性的依赖使得它们在遇到训练数据之外的情景或需要真正推理时，变得脆弱并容易产生“幻觉”或逻辑错误。作者区分了“浅层”学习（系统识别模式）和“深层”理解（涉及因果关系和真正的泛化）。\n\n文章指出，当前的人工智能进展类似于复杂的统计学鹦鹉，它们在模仿方面令人印象深刻，但缺乏真正的智能或常识。它警告不要夸大AI的能力，并强调需要取得突破，超越单纯的相关性，构建能够理解因果关系和上下文的模型，就像人类从极少量数据中学习一样。对“十万个为什么”的追求意味着寻求深刻的因果理解，而不仅仅是庞大的统计数据库。"
-  },
-  {
-    "id": "48619831",
-    "title": "(How to Write a (Lisp) Interpreter (In Python)) (2010)",
-    "url": "https://norvig.com/lispy.html",
-    "summary": "This article, titled \"(How to Write a (Lisp) Interpreter (In Python))\" and published in 2010, is an instructional piece. Its main purpose, as indicated by the title, is to guide readers through the practical steps of building an interpreter for the Lisp programming language. A key aspect of this guide is its chosen implementation language: Python. Therefore, the article likely details the process, techniques, and code examples necessary to construct a Lisp interpreter using Python as the development tool. The publication year, 2010, places the content within that specific technological and pedagogical context.",
-    "chinese_title": "如何编写 Lisp 解释器 (Python 版) (2010)",
-    "chinese_summary": "本文题为《如何用Python编写Lisp解释器》，于2010年发表，是一篇教学性文章。其主要目的，正如标题所示，是指导读者逐步实践，构建一个Lisp编程语言的解释器。这篇指南的一个关键方面是它选择了Python作为实现语言。因此，文章很可能详细阐述了使用Python作为开发工具来构建Lisp解释器所需的流程、技术和代码示例。2010年的发表年份将内容置于当时特定的技术和教学背景之下。"
-  },
-  {
-    "id": "48622234",
-    "title": "Ask for no, don't ask for yes (2022)",
-    "url": "https://www.mooreds.com/wordpress/archives/3518",
+    "id": "48634787",
+    "title": "British Columbia, Time Zones, and Postgres",
+    "url": "https://www.crunchydata.com/blog/british-columbia-and-time-zone-changes",
     "summary": "生成摘要时出错",
-    "chinese_title": "Ask for no, don't ask for yes (2022)",
+    "chinese_title": "British Columbia, Time Zones, and Postgres",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48630171",
-    "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
-    "url": "https://hustvl.github.io/Moebius/",
+    "id": "48647444",
+    "title": "Digital euro clears key hurdle as EU seeks to break free from U.S. credit cards",
+    "url": "https://finance.yahoo.com/markets/currencies/articles/ecb-secures-key-parliamentary-backing-102718449.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Moebius: 0.2B image inpainting model with 10B-level performance",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48628731",
-    "title": "Alan Greenspan has died",
-    "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Alan Greenspan has died",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48619140",
-    "title": "Who owns your ATProto identity?",
-    "url": "https://kevinak.se/blog/who-actually-owns-your-atproto-identity-hint-its-probably-not-you",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Who owns your ATProto identity?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48622731",
-    "title": "PowerFox Browser",
-    "url": "https://powerfox.jazzzny.me/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "PowerFox Browser",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48632652",
-    "title": "Mexican government unveils a prototype for a new homegrown, ultra-affordable EV",
-    "url": "https://gizmodo.com/mexico-just-showed-off-a-new-extremely-cheap-government-backed-ev-2000769080",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mexican government unveils a prototype for a new homegrown, ultra-affordable EV",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48619394",
-    "title": "Fossil Fuels Are 40% of Freight Shipping Tonnage, but Half Its Fuel Use",
-    "url": "https://cleantechnica.com/2026/06/16/shipping-freight-energy-fossil-cargo/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Fossil Fuels Are 40% of Freight Shipping Tonnage, but Half Its Fuel Use",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48616713",
-    "title": "A 3D voxel game engine written in APL",
-    "url": "https://github.com/namgyaaal/avoxelgame",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A 3D voxel game engine written in APL",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48623419",
-    "title": "Japanese verb conjugation the simple hard way",
-    "url": "https://underreacted.leaflet.pub/3mmevu6woys27",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Japanese verb conjugation the simple hard way",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48612740",
-    "title": "Alice is impatient",
-    "url": "https://brooker.co.za/blog/2026/06/19/waiting.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Alice is impatient",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48616173",
-    "title": "Windows UI evolution: Clicking an unassociated file",
-    "url": "https://movq.de/blog/postings/2026-06-20/0/POSTING-en.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Windows UI evolution: Clicking an unassociated file",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48624195",
-    "title": "The Doom Justifies the Valuation",
-    "url": "https://geohot.github.io//blog/jekyll/update/2026/06/21/the-doom-justifies-the-valuation.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Doom Justifies the Valuation",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48617782",
-    "title": "The case against geometric algebra (2024)",
-    "url": "https://alexkritchevsky.com/2024/02/28/geometric-algebra.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The case against geometric algebra (2024)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48632327",
-    "title": "NSF slashes research programs to support new tech initiative, insiders say",
-    "url": "https://www.science.org/content/article/exclusive-nsf-slashes-research-programs-support-new-tech-initiative-insiders-say",
-    "summary": "生成摘要时出错",
-    "chinese_title": "NSF slashes research programs to support new tech initiative, insiders say",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48613008",
-    "title": "Supermarket giant Tesco sues VMware for breach of contract (2025)",
-    "url": "https://www.theregister.com/software/2025/09/03/supermarket-giant-tesco-sues-vmware-for-breach-of-contract/1420651",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Supermarket giant Tesco sues VMware for breach of contract (2025)",
+    "chinese_title": "Digital euro clears key hurdle as EU seeks to break free from U.S. credit cards",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -180,63 +28,215 @@
     "title": "Show HN: Recall – Local project memory for Claude Code",
     "url": "https://github.com/raiyanyahya/recall",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Recall – Local project memory for Claude Code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48614809",
-    "title": "White House delays US voting-machine vulnerability report",
-    "url": "https://www.reuters.com/world/white-house-delays-release-us-voting-machine-study-midterms-near-2026-06-19/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "White House delays US voting-machine vulnerability report",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48634694",
-    "title": "Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed",
-    "url": "https://ipvm.com/reports/police-chiefs-track",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48620462",
-    "title": "Burnout is real for open source maintainers",
-    "url": "https://openjsf.org/blog/burnout-is-real-for-open-source-maintainers",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Burnout is real for open source maintainers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48622987",
-    "title": "Rent collections are down in New York",
-    "url": "https://www.politico.com/news/2026/06/21/rent-collections-are-down-in-new-york-and-no-ones-sure-why-00966982",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Rent collections are down in New York",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48631888",
-    "title": "Prompt Injection as Role Confusion",
-    "url": "https://role-confusion.github.io",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Prompt Injection as Role Confusion",
+    "chinese_title": "HN展示：Recall — Claude Code 的本地项目记忆",
     "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "48631058",
     "title": "DHL Set to Transport Goods on New Wind-Powered Cargo Ships",
     "url": "https://www.wsj.com/pro/sustainable-business/dhl-set-to-transport-goods-on-new-wind-powered-cargo-ships-eca5d5a0",
+    "summary": "Unable to access the article link.",
+    "chinese_title": "敦豪将启用新型风力货船运输货物",
+    "chinese_summary": "无法访问文章链接。"
+  },
+  {
+    "id": "48649011",
+    "title": "Fired by Google for creating the Google workspace CLI",
+    "url": "https://twitter.com/JPoehnelt/status/2069482265953087602",
+    "summary": "Justin Poehnelt announced he was fired by Google two months ago for independently creating the Google Workspace CLI. The tool quickly went viral, topping Hacker News and accumulating thousands of GitHub stars and users within days.\n\nInitially, Google directors and leaders showed interest, questioning what they could learn from it. However, legal soon raised concerns about the use of Google's branding and logo on the project's repositories. Poehnelt believes his termination stemmed from a broader fear within Workspace leadership regarding disruption from \"agents,\" rather than just his specific CLI.\n\nHe noted the profound irony that Google announced an official Workspace CLI at Cloud Next just two days before his termination. Poehnelt shared his story publicly as a way to own his experience, facilitate explanation, and aid in his healing process after nearly seven years with the company. He expressed gratitude for his supportive manager and teammates during his tenure.",
+    "chinese_title": "被谷歌解雇，因为创建了 Google Workspace CLI",
+    "chinese_summary": "贾斯汀·波内尔特 (Justin Poehnelt) 宣布，他因独立创建 Google Workspace CLI，于两个月前被谷歌解雇。这个工具很快走红，登上 Hacker News 榜首，并在几天内积累了数千个 GitHub 星标和用户。\n\n最初，谷歌的董事和领导们表现出兴趣，询问他们能从中学到什么。然而，法务部门很快就对项目存储库上使用谷歌品牌和标识提出了担忧。波内尔特认为，他的解雇源于 Workspace 领导层对来自“代理人”的颠覆的更广泛担忧，而不仅仅是因为他的特定 CLI。\n\n他指出，具有深刻讽刺意味的是，就在他被解雇两天前，谷歌在 Cloud Next 大会上宣布推出官方的 Workspace CLI。波内尔特公开分享他的经历，是为了正视自己的体验，便于解释，并帮助他在公司近七年后的疗愈过程。他对他任职期间支持他的经理和同事表示感谢。"
+  },
+  {
+    "id": "48633941",
+    "title": "Linux and Secure Boot certificate expiration (2025)",
+    "url": "https://lwn.net/Articles/1029767/",
+    "summary": "Linux users employing Secure Boot face a significant challenge as Microsoft's 2011 signing key for the `shim` UEFI bootloader expires in September 2025. This key is essential for Linux distributions to boot with Secure Boot enabled. Post-expiration, new Linux installations will not boot unless their `shim` is signed with Microsoft's newer 2023 UEFI key.\n\nWhile the 2023 key has been available, many systems might not have it installed. Hardware vendors are expected to issue firmware updates to add this new key to the system's database. The Linux Vendor Firmware Service (LVFS) and its `fwupd` tool are crucial in delivering these updates, either as full firmware updates or via \"key exchange key\" (KEK) updates.\n\nHowever, several complications are anticipated. Some vendors may not provide updates, and older BIOS systems could face update failures due to limited EFI variable space. The KEK update process is also new and largely untested at scale. For systems lacking updates, disabling Secure Boot might become the only option for new installs.\n\nExisting Linux installations should continue to boot, as their `shim` is already trusted. However, any security updates to `shim` would require a new signature, which Microsoft will not provide with the expired key, potentially forcing users to run outdated, vulnerable versions or disable Secure Boot. While Linux maintainers are working to mitigate the impact, users should be aware of possible issues, underscoring the ongoing difficulties Linux faces in a hardware ecosystem largely focused on Windows.",
+    "chinese_title": "Linux 和安全启动证书到期 (2025)",
+    "chinese_summary": "使用安全启动（Secure Boot）的Linux用户正面临一个重大挑战，因为微软用于`shim` UEFI引导加载程序的2011年签名密钥将于2025年9月过期。这个密钥对于启用了安全启动的Linux发行版启动至关重要。密钥过期后，新的Linux安装将无法启动，除非其`shim`已使用微软较新的2023年UEFI密钥进行签名。\n\n尽管2023年的密钥已经可用，但许多系统可能尚未安装它。硬件供应商预计将发布固件更新，以将此新密钥添加到系统的数据库中。Linux供应商固件服务（LVFS）及其`fwupd`工具在提供这些更新方面至关重要，无论是作为完整的固件更新还是通过“密钥交换密钥”（KEK）更新。\n\n然而，预计会出现一些复杂情况。一些供应商可能不提供更新，较旧的BIOS系统可能会因EFI变量空间有限而面临更新失败。KEK更新过程也是新的，并且尚未经过大规模测试。对于缺乏更新的系统，禁用安全启动可能成为新安装的唯一选择。\n\n现有的Linux安装应该能够继续启动，因为它们的`shim`已经受信任。然而，对`shim`的任何安全更新都需要新的签名，而微软将不会使用已过期的密钥提供签名，这可能迫使用户运行过时、易受攻击的版本或禁用安全启动。尽管Linux维护者正在努力减轻影响，用户仍应注意可能出现的问题，这凸显了Linux在一个主要以Windows为中心的硬件生态系统中持续面临的困难。"
+  },
+  {
+    "id": "48643407",
+    "title": "Wikipedia cofounder Larry Sanger blocked from editing Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/User:Larry_Sanger",
+    "summary": "Wikipedia co-founder Larry Sanger has been blocked from editing the English Wikipedia by its community, a status clearly indicated on his user page, which is now fully protected.\n\nSanger states he returned to Wikipedia in Fall 2025, after a long absence, with the aim of reforming the platform. He is currently working on \"WikiProject Intellectual Diversity,\" an unapproved initiative seeking to make Wikipedia more open and welcoming to a broader range of contributors.\n\nHis proposals for reform are outlined in his \"Nine Theses on Wikipedia,\" developed in 2025. These include significant changes such as ending \"consensus\"-based decision-making, enabling competing articles, abolishing source blacklists, reviving the original neutrality policy, repealing \"Ignore all rules,\" revealing Wikipedia's leadership, allowing public rating of articles, ending indefinite blocking, and adopting a legislative process. Sanger describes these theses as a realistic plan for improvement.\n\nHe also reiterates advice from his 2002 departure, advocating for an open, welcoming, and neutral encyclopedia focused on well-referenced content and respectful interaction. Sanger identifies himself as an \"Inclusionist Wikipedian\" and a member of \"WikiProject Reforming Wikipedia\" and \"WikiProject Countering systemic bias,\" aligning with his push for systemic change despite his blocked status.",
+    "chinese_title": "维基百科联合创始人拉斯·桑格被禁止编辑维基百科",
+    "chinese_summary": "维基百科联合创始人拉里·桑格已被其社区禁止编辑英文维基百科，这一状态在他的用户页上清晰标明，该页面现已完全保护。\n\n桑格表示，他在长期缺席后于2025年秋季重返维基百科，旨在改革该平台。他目前正在致力于“维基百科知识多元化专题”，这是一个未经批准的倡议，旨在使维基百科对更广泛的贡献者更开放、更受欢迎。\n\n他的改革提议概述于其2025年撰写的“维基百科九大论纲”中。这些提议包括重大变革，例如结束基于“共识”的决策制定、允许竞争性条目存在、废除来源黑名单、恢复最初的中立性政策、废除“忽略所有规则”、公开维基百科的领导层、允许公众对条目进行评级、结束无限期封禁，以及采纳立法程序。桑格将这些论纲描述为一个切实的改进计划。\n\n他还重申了其在2002年离开时提出的建议，倡导建立一个开放、包容、中立且专注于良好引用的内容和相互尊重的互动环境的百科全书。桑格自称是一名“包容主义维基人”，并且是“维基百科改革专题”和“反系统性偏见专题”的成员，这与他尽管被封禁但仍推动系统性变革的努力相符。"
+  },
+  {
+    "id": "48622987",
+    "title": "Rent collections are down in New York",
+    "url": "https://www.politico.com/news/2026/06/21/rent-collections-are-down-in-new-york-and-no-ones-sure-why-00966982",
+    "summary": "Unable to access the article link.",
+    "chinese_title": "Rent collections are down in New York",
+    "chinese_summary": "Unable to access the article link."
+  },
+  {
+    "id": "48647823",
+    "title": "San Diego photologs from the 1970s",
+    "url": "https://www.beautifulpublicdata.com/san-diego-photologs-from-the-1970s/",
     "summary": "生成摘要时出错",
-    "chinese_title": "DHL Set to Transport Goods on New Wind-Powered Cargo Ships",
+    "chinese_title": "San Diego photologs from the 1970s",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48620142",
-    "title": "The early hiring funnel is now breaking on both ends",
-    "url": "https://hbr.org/2026/06/ai-has-broken-hiring-heres-how-to-fix-it",
+    "id": "48633410",
+    "title": "Finding the best dog treat with statistics",
+    "url": "https://www.wespiser.com/posts/2026-06-19-best-dog-treat.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "The early hiring funnel is now breaking on both ends",
+    "chinese_title": "Finding the best dog treat with statistics",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48636100",
+    "title": "Tacky men with ridiculous glasses want you to wear them too",
+    "url": "https://manualdousuario.net/en/smart-glasses-ugly-tacky/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tacky men with ridiculous glasses want you to wear them too",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48632613",
+    "title": "DisplayMate",
+    "url": "https://www.displaymate.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "DisplayMate",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48648779",
+    "title": "Swift Package Index joins Apple",
+    "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Swift Package Index joins Apple",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48629387",
+    "title": "window.showDirectoryPicker opens up a whole new world",
+    "url": "https://steveharrison.dev/showdirectorypicker-opens-up-a-whole-new-world/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "window.showDirectoryPicker opens up a whole new world",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48629356",
+    "title": "Becoming a dad changes men's brains",
+    "url": "https://www.scientificamerican.com/article/how-becoming-a-dad-changes-mens-brains/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Becoming a dad changes men's brains",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48636632",
+    "title": "Meta pauses AI training program tracking employee keystrokes after internal leak",
+    "url": "https://www.businessinsider.com/meta-ai-training-data-leak-exposed-employee-activity-across-company-2026-6",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Meta pauses AI training program tracking employee keystrokes after internal leak",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48647486",
+    "title": "The worthlessness of Vitamin D is mildly exaggerated",
+    "url": "https://dynomight.net/vitamin-d/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The worthlessness of Vitamin D is mildly exaggerated",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48626918",
+    "title": "Investors get real-time view of UK bond market activity for the first time",
+    "url": "https://www.fca.org.uk/news/press-releases/investors-get-real-time-view-uk-bond-market-activity-first-time",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Investors get real-time view of UK bond market activity for the first time",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48643620",
+    "title": "Oracle shed about 20k roles globally in the last year",
+    "url": "https://www.bbc.com/news/articles/c4gy0x0j5deo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Oracle shed about 20k roles globally in the last year",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48639165",
+    "title": "An Introduction to YOLO26",
+    "url": "https://blog.roboflow.com/yolo26/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "An Introduction to YOLO26",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48632859",
+    "title": "Blogger defeats photographer's copyright claim",
+    "url": "https://blog.ericgoldman.org/archives/2026/06/blogger-defeats-photographers-copyright-claim-sokolskyfilm-v-messiah.htm",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Blogger defeats photographer's copyright claim",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48622241",
+    "title": "Nintendo Wii U games running from a 1980's Bernoulli disk [video]",
+    "url": "https://www.youtube.com/watch?v=8GZDOpV2OXk",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nintendo Wii U games running from a 1980's Bernoulli disk [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48645721",
+    "title": "Lift4D: Harmonizing Single-View 3D Estimation for 4D Reconstruction In-the-Wild",
+    "url": "https://lift4d.github.io/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Lift4D: Harmonizing Single-View 3D Estimation for 4D Reconstruction In-the-Wild",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48648558",
+    "title": "The truth about being a manager",
+    "url": "https://sofiakodar.github.io/posts/becomingmanager/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The truth about being a manager",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48648619",
+    "title": "FUTO Swipe – A new swipe typing model",
+    "url": "https://swipe.futo.tech/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "FUTO Swipe – A new swipe typing model",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48629982",
+    "title": "Die analysis of the 8087 math coprocessor's fast bit shifter (2020)",
+    "url": "https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Die analysis of the 8087 math coprocessor's fast bit shifter (2020)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48641927",
+    "title": "AI Built a Nuke and Still Lost",
+    "url": "https://www.lwilko.com/blog/i-gave-an-ai-a-civilization",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Built a Nuke and Still Lost",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48643079",
+    "title": "Apple is going to raise device prices, but when?",
+    "url": "https://daringfireball.net/linked/2026/06/22/apple-device-prices-when",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple is going to raise device prices, but when?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48630220",
+    "title": "Nvidia Halos",
+    "url": "https://www.nvidia.com/en-us/ai-trust-center/halos/autonomous-vehicles/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nvidia Halos",
     "chinese_summary": "生成摘要时出错"
   }
 ]
