@@ -1,250 +1,82 @@
 [
   {
-    "id": "48698617",
-    "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
-    "url": "https://github.com/bikini/exploitarium",
-    "summary": "An anonymous GitHub account, identified by Discord handle `@ashdfrkl`, has launched \"Exploitarium,\" a public repository mass-dropping undisclosed 0-day vulnerabilities. The author, a researcher with a degree and published papers in fuzzing methodology, acknowledges initial findings were \"kinda ass\" but promises future drops will be high-quality, focusing on projects like Floci, libssh2, FFmpeg, and c-ares.\n\nThe researcher clarifies their use of AI: GPT-5.5-3-Codex-Spark automated the fuzzing workflow with a strict harness, not for \"vibe-coding\" or generating PoCs (except for RustDesk due to language unfamiliarity). They emphasize that efficient harnesses and human oversight are more crucial than state-of-the-art AI models for identifying issues. README files, however, are AI-generated and reviewed.\n\nThe repository includes a diverse collection of vulnerabilities for applications like 7zip, Anydesk, Docker, Firefox, Ghidra, ImageMagick, Nmap, PHP, VLC, and several others. Some entries are preserved from older standalone repos, while others are new, direct additions. The author credits another researcher for a superior `objdump` finding.\n\nPromising a major new drop soon, followed by daily PoCs, the author also plans to broaden PoC usability. They invite collaboration via Discord and stress that the research is for good-faith, open disclosure, explicitly condemning malicious use.",
-    "chinese_title": "匿名 GitHub 账号批量投放未公开的零日漏洞",
-    "chinese_summary": "An anonymous GitHub account, identified by Discord handle `@ashdfrkl`, has launched \"Exploitarium,\" a public repository mass-dropping undisclosed 0-day vulnerabilities. The author, a researcher with a degree and published papers in fuzzing methodology, acknowledges initial findings were \"kinda ass\" but promises future drops will be high-quality, focusing on projects like Floci, libssh2, FFmpeg, and c-ares.\n\nThe researcher clarifies their use of AI: GPT-5.5-3-Codex-Spark automated the fuzzing workflow with a strict harness, not for \"vibe-coding\" or generating PoCs (except for RustDesk due to language unfamiliarity). They emphasize that efficient harnesses and human oversight are more crucial than state-of-the-art AI models for identifying issues. README files, however, are AI-generated and reviewed.\n\nThe repository includes a diverse collection of vulnerabilities for applications like 7zip, Anydesk, Docker, Firefox, Ghidra, ImageMagick, Nmap, PHP, VLC, and several others. Some entries are preserved from older standalone repos, while others are new, direct additions. The author credits another researcher for a superior `objdump` finding.\n\nPromising a major new drop soon, followed by daily PoCs, the author also plans to broaden PoC usability. They invite collaboration via Discord and stress that the research is for good-faith, open disclosure, explicitly condemning malicious use."
+    "id": "48704373",
+    "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+    "url": "https://github.com/itsthelore/wayfinder-router",
+    "summary": "Wayfinder Router is an offline, deterministic tool designed to route LLM queries based on their complexity, optimizing cost and latency. Instead of making a model call to decide, it scores each prompt's structure (length, headings, lists, code) and optionally wording (proofs, math, constraints) into a 0.0–1.0 complexity score. \"Easy\" prompts are routed to local/small models, while \"hard\" ones go to larger, often more expensive, hosted models.\n\nThis routing decision is sub-millisecond, entirely offline, and deterministic, requiring no API keys or network calls for the decision itself. It contrasts with most routers that incur latency, cost, and randomness by using a trained classifier or LLM judge.\n\nWayfinder operates as an OpenAI-compatible API gateway. Users simply point their existing client's `base_url` to Wayfinder, which then transparently forwards requests to the chosen local (e.g., Ollama, vLLM) or hosted (e.g., OpenAI, Groq) backend. It supports self-hosting and allows calibration on a user's own data to tune routing thresholds or tiers, including cost-aware objectives.\n\nConfiguration is done via a `wayfinder-router.toml` file, specifying models and routing logic. Individual requests can override the default routing via the `model` field (e.g., `model=\"local\"`), `X-Wayfinder-Threshold` headers, or in-message slash directives for granular control. This system ensures consistent, efficient, and cost-effective LLM usage.",
+    "chinese_title": "寻路者路由器：本地与托管LLM之间的确定性查询路由",
+    "chinese_summary": "Wayfinder Router是一个离线、确定性工具，旨在根据LLM查询的复杂性进行路由，从而优化成本和延迟。它不通过模型调用来做决策，而是根据每个提示的结构（长度、标题、列表、代码）以及可选地根据措辞（证明、数学、约束）进行评分，生成一个0.0到1.0的复杂性分数。“简单”的提示会被路由到本地/小型模型，而“困难”的提示则会发送到更大、通常更昂贵、托管模型。\n\n这种路由决策在毫秒级以下完成，完全离线且是确定性的，决策过程本身不需要API密钥或网络调用。这与大多数路由器形成对比，后者通过使用训练好的分类器或LLM判断器，带来延迟、成本和随机性。\n\nWayfinder作为OpenAI兼容的API网关运行。用户只需将其现有客户端的`base_url`指向Wayfinder，Wayfinder随后会透明地将请求转发到选定的本地（例如Ollama、vLLM）或托管（例如OpenAI、Groq）后端。它支持自托管，并允许用户根据自己的数据进行校准，以调整路由阈值或层级，包括考虑成本的目标。\n\n配置通过一个`wayfinder-router.toml`文件完成，用于指定模型和路由逻辑。单个请求可以通过`model`字段（例如`model=\"local\"`）、`X-Wayfinder-Threshold`头部，或消息内的斜杠指令来覆盖默认路由，实现精细控制。该系统确保LLM使用的一致性、效率和成本效益。"
   },
   {
-    "id": "48696585",
-    "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
-    "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+    "id": "48719361",
+    "title": "CachyOS June 2026 Release",
+    "url": "https://cachyos.org/blog/2606-june-release/",
+    "summary": "The CachyOS June 2026 Release, the year's fourth, introduces the new CachyOS Hyprland Noctalia desktop option, accompanied by a preview video in the installer.\n\nPerformance is boosted with extended PGO for Python workloads and a GCC patch for improved x86 branch misprediction tuning on modern CPUs. Pacman now features network isolation for scriptlets and hooks, and OpenBLAS regression on high-core count CPUs has been fixed. Proton-cachyos is renamed to proton-cachyos-native.\n\nThe installer removes paru, recommending Shelly, and MangoWM now uses SDDM. GNOME System Monitor is replaced by Resources, and live session keyboard detection is improved.\n\nCachyOS-Welcome adds DNS-over-QUIC (DoQ) support via blocky, a dedicated Troubleshooting page, Ptyxis terminal support, and new Azerbaijani and Greek localizations. chwd now resolves multi-GPU driver conflicts, includes a 32-bit Vulkan driver for VMs, and gets Turkish localization. cachyos-settings applies user service timeouts (15s startup, 10s shutdown) to prevent 90-second shutdown delays.\n\nKey fixes include corrected installer configurations (keyboard, locale, pacman), proper Calamares cleanup, and CachyOS-Welcome stability improvements, preventing crashes related to app installation or unreadable settings. Existing users can update via `sudo pacman -Syu`.",
+    "chinese_title": "CachyOS 2026年6月发布",
+    "chinese_summary": "CachyOS 2026年6月版本是本年度的第四个版本，引入了全新的CachyOS Hyprland Noctalia桌面选项，并在安装程序中附带了预览视频。\n\n为Python工作负载扩展了PGO，并通过GCC补丁改进了现代CPU上的x86分支预测错误调优，从而提升了性能。Pacman现在为脚本和钩子提供了网络隔离，并修复了高核心数CPU上OpenBLAS的性能退化问题。Proton-cachyos已更名为proton-cachyos-native。\n\n安装程序移除了paru，推荐使用Shelly；MangoWM现在使用SDDM。GNOME系统监视器被Resources取代，实时会话键盘检测得到改进。\n\nCachyOS-Welcome通过blocky增加了对DNS-over-QUIC (DoQ) 的支持、一个专门的故障排除页面、Ptyxis终端支持，以及新增阿塞拜疆语和希腊语本地化。chwd现在可以解决多GPU驱动冲突，包含一个用于虚拟机的32位Vulkan驱动，并增加了土耳其语本地化。cachyos-settings应用了用户服务超时设置（启动15秒，关机10秒），以防止90秒的关机延迟。\n\n主要修复包括修正了安装程序配置（键盘、区域设置、pacman）、正确的Calamares清理，以及CachyOS-Welcome的稳定性改进，防止了与应用程序安装或不可读设置相关的崩溃。现有用户可以通过`sudo pacman -Syu`进行更新。"
+  },
+  {
+    "id": "48707146",
+    "title": "Austria Lobbies EU to Host Anthropic After US Access Curbs",
+    "url": "https://www.bloomberg.com/news/articles/2026-06-28/austria-lobbies-eu-to-host-anthropic-after-us-access-curbs",
     "summary": "生成摘要时出错",
-    "chinese_title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+    "chinese_title": "奥地利游说欧盟，在美国准入限制后争取安索罗匹克落户",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48697560",
-    "title": "OpenRA",
-    "url": "https://www.openra.net/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenRA",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48701342",
+    "title": "A Farmer Arrested for Going 5 Seconds over His Time Limit at Data Center Meeting",
+    "url": "https://www.gadgetreview.com/arrest-him-the-moment-police-handcuffed-a-farmer-for-going-5-seconds-over-his-time-limit-at-data-center-meeting",
+    "summary": "Claremore resident Darren Blanchard was arrested and charged with trespass at a February city council meeting for speaking slightly past a three-minute public comment limit. The incident occurred during a meeting discussing Project Mustang, a proposed 300-acre data center campus.\n\nBodycam footage, which a local requester initially struggled to obtain (quoted $1,750, ultimately paid $120), shows officers arresting Blanchard after he asked to submit documents. His legal team has reportedly filed a motion to dismiss and requested the city attorney's recusal, claiming the arrest was retaliation for protected speech and has chilled community participation.\n\nProject Mustang, a multi-building data center developed by Beale Infrastructure, faces resident opposition. Many residents argue key project terms and incentives were set before meaningful public input, raising concerns about water consumption, power demand, farmland loss, and unaccounted costs. While officials frame it as economic development, opponents view it as a high-impact industrial project.\n\nThe arrest sparks debate on whether exceeding a public comment timer by seconds justifies a trespass charge, and highlights broader questions about how towns handle dissent when large infrastructure projects are introduced.",
+    "chinese_title": "一名农民因在数据中心会议上超时5秒被捕",
+    "chinese_summary": "克莱尔莫尔居民达伦·布兰查德在二月的一次市议会会议上，因在公开评论环节发言略微超出三分钟限制，而被捕并被控非法侵入。该事件发生在一场讨论“野马项目”的会议上，该项目是一个拟议的占地300英亩的数据中心园区。\n\n执法记录仪录像显示，在布兰查德要求提交文件后，警官将其逮捕。该录像是一名当地申请人最初费尽周折才获得的（最初报价1750美元，最终支付120美元）。据报道，布兰查德的法律团队已提交动议要求撤销指控，并要求市检察官回避，声称此次逮捕是对受保护言论的报复，并已经遏制了社区参与。\n\n由贝尔基础设施公司开发的“野马项目”是一个多栋建筑的数据中心，面临着居民的反对。许多居民认为，关键的项目条款和激励措施是在有意义的公众意见征集之前确定的，引发了对用水量、电力需求、耕地流失以及未核算成本的担忧。尽管官员们将其定位为经济发展，但反对者则认为这是一个高影响的工业项目。\n\n此次逮捕引发了关于超出公众评论时间几秒是否足以构成非法侵入罪的辩论，并凸显了当大型基础设施项目引入时，城镇如何处理异议的更广泛问题。"
   },
   {
-    "id": "48698684",
-    "title": "Zuckerberg's war on whistleblowers",
-    "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Zuckerberg's war on whistleblowers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48696982",
-    "title": "Fintech Engineering Handbook",
-    "url": "https://w.pitula.me/fintech-engineering-handbook/",
-    "summary": "The Fintech Engineering Handbook outlines critical software engineering patterns for reliable money systems, targeting fintech professionals and newcomers. It's built on three principles: **No invented data** (preventing duplicates/arbitrary updates via idempotency, deduplication, reconciliation), **No lost data** (tracking everything with full precision, at-least-once delivery, event sourcing, audit trails, immutability), and **No trust** (verifying external/internal components and failing loudly).\n\n**Representing Money** covers fundamental decisions:\n*   **Precision handling:** Avoid floating-points; prefer arbitrary precision (e.g., BigDecimal), minor-units (integers for smallest units, careful with crypto's high decimals), or rational numbers. Serialize money as a string or smallest-unit integer to prevent precision loss.\n*   **Rounding strategies:** Explicit, business-driven, round as seldom as possible, and acknowledge that rounding can break sums.\n*   **Currency handling:** Always pair amount with currency in a custom type. Prohibit cross-currency arithmetic without explicit conversion. Use controlled currency sets and understand that crypto requires network/contract address for identification.\n*   **FX Rates:** Rates are directional and time-sensitive (current vs. value date). Distinguish transactional rates from reference rates, and note that there's no single canonical rate, so sources are crucial.\n\n**Recording Money: The Ledger** details how money movements are tracked:\n*   **Double-entry bookkeeping:** The core method, where every transaction (credit, debit, amount) ensures books always balance. Balances are derived, not stored, and accounts are typed. Posted entries are immutable, with corrections made by new compensating entries.\n*   **Value time vs. Booking time vs. Settlement time:** Differentiate these critical timestamps, as they often diverge and are important for various reporting and traceability needs.\n*   **Audits and audit trails:** Systems require robust audit trails to explain state changes (what, when, who, why) for regulatory scrutiny, covering money movements, manual interventions, and configuration changes.\n*   **Event sourcing:** A principled approach where state is derived from an immutable stream of events (the ledger itself is an example), ensuring the audit trail is the source of truth, though it adds system complexity.\n*   **Immutability:** Records must be append-only, with updates/deletions forbidden. Corrections are new records. This is enforced through construction, runtime checks, or tamper-evidence mechanisms.",
-    "chinese_title": "金融科技工程手册",
-    "chinese_summary": "The Fintech Engineering Handbook outlines critical software engineering patterns for reliable money systems, targeting fintech professionals and newcomers. It's built on three principles: **No invented data** (preventing duplicates/arbitrary updates via idempotency, deduplication, reconciliation), **No lost data** (tracking everything with full precision, at-least-once delivery, event sourcing, audit trails, immutability), and **No trust** (verifying external/internal components and failing loudly).\n\n**Representing Money** covers fundamental decisions:\n*   **Precision handling:** Avoid floating-points; prefer arbitrary precision (e.g., BigDecimal), minor-units (integers for smallest units, careful with crypto's high decimals), or rational numbers. Serialize money as a string or smallest-unit integer to prevent precision loss.\n*   **Rounding strategies:** Explicit, business-driven, round as seldom as possible, and acknowledge that rounding can break sums.\n*   **Currency handling:** Always pair amount with currency in a custom type. Prohibit cross-currency arithmetic without explicit conversion. Use controlled currency sets and understand that crypto requires network/contract address for identification.\n*   **FX Rates:** Rates are directional and time-sensitive (current vs. value date). Distinguish transactional rates from reference rates, and note that there's no single canonical rate, so sources are crucial.\n\n**Recording Money: The Ledger** details how money movements are tracked:\n*   **Double-entry bookkeeping:** The core method, where every transaction (credit, debit, amount) ensures books always balance. Balances are derived, not stored, and accounts are typed. Posted entries are immutable, with corrections made by new compensating entries.\n*   **Value time vs. Booking time vs. Settlement time:** Differentiate these critical timestamps, as they often diverge and are important for various reporting and traceability needs.\n*   **Audits and audit trails:** Systems require robust audit trails to explain state changes (what, when, who, why) for regulatory scrutiny, covering money movements, manual interventions, and configuration changes.\n*   **Event sourcing:** A principled approach where state is derived from an immutable stream of events (the ledger itself is an example), ensuring the audit trail is the source of truth, though it adds system complexity.\n*   **Immutability:** Records must be append-only, with updates/deletions forbidden. Corrections are new records. This is enforced through construction, runtime checks, or tamper-evidence mechanisms."
-  },
-  {
-    "id": "48692995",
-    "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
-    "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
-    "summary": "生成摘要时出错",
-    "chinese_title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48693391",
-    "title": "Om",
-    "url": "https://daringfireball.net/2026/06/om",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Om",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48692051",
-    "title": "We can still stop California's 3D printer surveillance scheme",
-    "url": "https://www.eff.org/deeplinks/2026/06/we-can-still-stop-californias-3d-printer-surveillance-scheme",
-    "summary": "The California State Assembly has advanced AB 2047, a bill mandating surveillance software for 3D printers, despite warnings from the EFF about its dangers and impracticality. The legislation, initially aimed at preventing unlicensed firearm manufacturing, is opposed due to severe risks to privacy, free speech, and consumer rights, while being ineffective for its stated purpose.\n\nWhile a welcome amendment removed criminalization for the private resale of 3D printers, most changes have exacerbated concerns. Carveouts for open-source tools are deemed insufficient, as they still require developers to integrate \"compliant censorship software,\" burdening them with ambiguous standards and chilling open-source experimentation.\n\nCrucially, the bill drops any pretense of the technology actually working, changing its performance standard from \"effectively prevent\" circumvention to merely \"substantially reduce the likelihood of foreseeable circumvention attempts.\" This maintains surveillance on all prints but acknowledges its futility against determined users, creating an unclear process reliant on non-governmental bodies and self-policing.\n\nA new carveout benefits large entertainment studios, exempting them from surveillance, but excludes indie filmmakers, cosplayers, and small creators. This creates a two-tiered system and raises risks of IP theft for surveilled commercial users.\n\nThe article concludes that this \"printer surveillance system\" will not achieve its intended goal but will instead harm law-abiding users through ineffective, invasive surveillance. It urges California Senators to oppose AB 2047 and protect creators' tools.",
-    "chinese_title": "我们仍能阻止加州3D打印机监控方案",
-    "chinese_summary": "The California State Assembly has advanced AB 2047, a bill mandating surveillance software for 3D printers, despite warnings from the EFF about its dangers and impracticality. The legislation, initially aimed at preventing unlicensed firearm manufacturing, is opposed due to severe risks to privacy, free speech, and consumer rights, while being ineffective for its stated purpose.\n\nWhile a welcome amendment removed criminalization for the private resale of 3D printers, most changes have exacerbated concerns. Carveouts for open-source tools are deemed insufficient, as they still require developers to integrate \"compliant censorship software,\" burdening them with ambiguous standards and chilling open-source experimentation.\n\nCrucially, the bill drops any pretense of the technology actually working, changing its performance standard from \"effectively prevent\" circumvention to merely \"substantially reduce the likelihood of foreseeable circumvention attempts.\" This maintains surveillance on all prints but acknowledges its futility against determined users, creating an unclear process reliant on non-governmental bodies and self-policing.\n\nA new carveout benefits large entertainment studios, exempting them from surveillance, but excludes indie filmmakers, cosplayers, and small creators. This creates a two-tiered system and raises risks of IP theft for surveilled commercial users.\n\nThe article concludes that this \"printer surveillance system\" will not achieve its intended goal but will instead harm law-abiding users through ineffective, invasive surveillance. It urges California Senators to oppose AB 2047 and protect creators' tools."
-  },
-  {
-    "id": "48697335",
-    "title": "The case for physical media ownership",
-    "url": "https://dervis.de/physical/",
-    "summary": "The article argues that digital media purchases typically grant a revocable license rather than true ownership, in stark contrast to physical media like Blu-rays, game cartridges, or books. This distinction has significant implications for consumers.\n\nPhysical media can be owned, resold, lent, archived, and used offline, retaining secondary market value. Digital licenses, however, are often tied to accounts, non-transferable, and lack resale value. Court rulings, like the ReDigi case, confirm that the first-sale doctrine doesn't apply to digital files.\n\nA primary concern is the potential for content removal. Digital items can disappear due to licensing expirations, policy changes, or even store shutdowns. Numerous examples highlight this, including Disney+ and HBO Max removing original titles, Sony delisting purchased content from PlayStation Store, Konami's P.T. demo, and various games being delisted (Scott Pilgrim, Deadpool). Furthermore, digital storefronts like Microsoft's ebook store, Google Play Music, Nintendo's eShops, and Google Stadia have shut down, often rendering purchased content inaccessible.\n\nSubscriptions, a common model for digital access, entail continuous payments that can increase (e.g., Netflix, Adobe Creative Cloud). If payments stop, access is lost, unlike a one-time physical purchase.\n\nQuality also differs; physical Blu-rays offer significantly higher video bitrates and lossless audio compared to compressed streaming, providing a more faithful experience independent of internet conditions.\n\nFinally, digital content is susceptible to remote alteration or censorship, as seen with Amazon removing books from Kindles, Disney+ editing classic films, and Rockstar altering games in remasters. Physical media, once acquired, remains in its original form, offering greater control and permanence.",
-    "chinese_title": "The case for physical media ownership",
-    "chinese_summary": "The article argues that digital media purchases typically grant a revocable license rather than true ownership, in stark contrast to physical media like Blu-rays, game cartridges, or books. This distinction has significant implications for consumers.\n\nPhysical media can be owned, resold, lent, archived, and used offline, retaining secondary market value. Digital licenses, however, are often tied to accounts, non-transferable, and lack resale value. Court rulings, like the ReDigi case, confirm that the first-sale doctrine doesn't apply to digital files.\n\nA primary concern is the potential for content removal. Digital items can disappear due to licensing expirations, policy changes, or even store shutdowns. Numerous examples highlight this, including Disney+ and HBO Max removing original titles, Sony delisting purchased content from PlayStation Store, Konami's P.T. demo, and various games being delisted (Scott Pilgrim, Deadpool). Furthermore, digital storefronts like Microsoft's ebook store, Google Play Music, Nintendo's eShops, and Google Stadia have shut down, often rendering purchased content inaccessible.\n\nSubscriptions, a common model for digital access, entail continuous payments that can increase (e.g., Netflix, Adobe Creative Cloud). If payments stop, access is lost, unlike a one-time physical purchase.\n\nQuality also differs; physical Blu-rays offer significantly higher video bitrates and lossless audio compared to compressed streaming, providing a more faithful experience independent of internet conditions.\n\nFinally, digital content is susceptible to remote alteration or censorship, as seen with Amazon removing books from Kindles, Disney+ editing classic films, and Rockstar altering games in remasters. Physical media, once acquired, remains in its original form, offering greater control and permanence."
-  },
-  {
-    "id": "48707719",
-    "title": "EU to legislate about Chat Control behind closed doors",
-    "url": "https://www.patrick-breyer.de/en/double-threat-to-private-communications-undemocratic-chat-control-backroom-deals-and-imminent-concessions-spark-relaunch-of-fightchatcontrol-eu/",
-    "summary": "Civil rights activist Dr. Patrick Breyer warns of an unprecedented \"double-attack\" by EU institutions threatening secure messaging and anonymous communication. Ahead of critical EU meetings this Friday and Monday, Breyer highlights two significant threats.\n\nFirstly, European Parliament President Roberta Metsola is reportedly attempting an undemocratic \"power play\" to resurrect the expired \"Chat Control 1.0\" mass scanning regime. This move, which ignores the Parliament's prior rejection, is being pushed via a Council meeting this Friday to adopt a first-reading position.\n\nSecondly, on Monday, final trilogue negotiations for the permanent \"Chat Control 2.0\" (CSAR) regulation will take place. Breyer fears the European Parliament is rushing a new mandate on detection/scanning, potentially leading to \"fatal concessions.\" The worst-case scenario includes the return of mass scanning of private messages (potentially made mandatory), warrantless scanning orders without court approval, and mandatory age verification for online services, effectively ending anonymous communication.\n\nIn response, the civil society campaign fightchatcontrol.eu has been urgently relaunched, enabling citizens to email EU lawmakers and government representatives. Breyer emphasizes that genuine child protection is achievable through targeted investigations, security-by-design, and proactive darknet deletion, rather than error-prone algorithms that undermine fundamental rights. He urges citizens to take action this weekend to defend digital civil liberties.",
-    "chinese_title": "欧盟将闭门立法聊天监控。",
-    "chinese_summary": "Civil rights activist Dr. Patrick Breyer warns of an unprecedented \"double-attack\" by EU institutions threatening secure messaging and anonymous communication. Ahead of critical EU meetings this Friday and Monday, Breyer highlights two significant threats.\n\nFirstly, European Parliament President Roberta Metsola is reportedly attempting an undemocratic \"power play\" to resurrect the expired \"Chat Control 1.0\" mass scanning regime. This move, which ignores the Parliament's prior rejection, is being pushed via a Council meeting this Friday to adopt a first-reading position.\n\nSecondly, on Monday, final trilogue negotiations for the permanent \"Chat Control 2.0\" (CSAR) regulation will take place. Breyer fears the European Parliament is rushing a new mandate on detection/scanning, potentially leading to \"fatal concessions.\" The worst-case scenario includes the return of mass scanning of private messages (potentially made mandatory), warrantless scanning orders without court approval, and mandatory age verification for online services, effectively ending anonymous communication.\n\nIn response, the civil society campaign fightchatcontrol.eu has been urgently relaunched, enabling citizens to email EU lawmakers and government representatives. Breyer emphasizes that genuine child protection is achievable through targeted investigations, security-by-design, and proactive darknet deletion, rather than error-prone algorithms that undermine fundamental rights. He urges citizens to take action this weekend to defend digital civil liberties."
-  },
-  {
-    "id": "48692946",
-    "title": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
-    "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48703759",
-    "title": "Marfa Public Radio Puts You to Sleep",
-    "url": "https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Marfa Public Radio Puts You to Sleep",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48703452",
-    "title": "The best response to AI slop and online noise is from Robin Williams",
-    "url": "https://jayacunzo.com/blog/your-move-chief",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The best response to AI slop and online noise is from Robin Williams",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48691346",
-    "title": "PlayStation Is Deleting 551 Movies from Customers' Accounts",
-    "url": "https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013",
-    "summary": "生成摘要时出错",
-    "chinese_title": "PlayStation Is Deleting 551 Movies from Customers' Accounts",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48700834",
-    "title": "IP Crawl: Living atlas of open webcams discovered on the public internet",
-    "url": "https://ipcrawl.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "IP Crawl: Living atlas of open webcams discovered on the public internet",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48707673",
-    "title": "Flock cameras track more than your license plate, and they're spreading fast",
-    "url": "https://www.engadget.com/2203000/flock-cameras-recording-license-plate/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Flock cameras track more than your license plate, and they're spreading fast",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48692058",
-    "title": "The gap between open weights LLMs and closed source LLMs",
-    "url": "https://blog.doubleword.ai/frontier-os-llm",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The gap between open weights LLMs and closed source LLMs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48699928",
-    "title": "Turn your site into a place people can bump into each other",
-    "url": "https://cauenapier.com/blog/townsquare_release/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Turn your site into a place people can bump into each other",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48697768",
-    "title": "Streaming services' obnoxiously loud ads become illegal on July 1 in California",
-    "url": "https://arstechnica.com/gadgets/2026/06/streaming-services-obnoxiously-loud-ads-become-illegal-on-july-1-in-california/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Streaming services' obnoxiously loud ads become illegal on July 1 in California",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48707763",
-    "title": "5k menus from the New York Public Library’s Buttolph Collection (1880-1920)",
-    "url": "https://pudding.cool/2026/06/menu-story/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "5k menus from the New York Public Library’s Buttolph Collection (1880-1920)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48698151",
-    "title": "Suspicious Discontinuities (2020)",
-    "url": "https://danluu.com/discontinuities/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Suspicious Discontinuities (2020)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48697958",
-    "title": "Asian AI startups launch Mythos-like models",
-    "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Asian AI startups launch Mythos-like models",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48702273",
-    "title": "Choosing a Public DNS Resolver",
-    "url": "https://evilbit.de/dns-resolver-guide.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Choosing a Public DNS Resolver",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48703968",
-    "title": "Ford hired AI and sacked humans. It backfired badly",
-    "url": "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ford hired AI and sacked humans. It backfired badly",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48695149",
-    "title": "OpenTTD 16.0-Beta1",
-    "url": "https://www.openttd.org/news/2026/06/25/openttd-16-0-beta1",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenTTD 16.0-Beta1",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48703258",
-    "title": "AMD Strix Halo RDMA Cluster Setup Guide",
-    "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AMD Strix Halo RDMA Cluster Setup Guide",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48692883",
-    "title": "AI in mathematics is forcing big questions",
-    "url": "https://spectrum.ieee.org/ai-in-mathematics",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI in mathematics is forcing big questions",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48701822",
-    "title": "'Careless People' author claims Meta surveilled her for 12mos to enforce silence",
-    "url": "https://fortune.com/2026/06/26/meta-wynn-williams-surveillance-gag-order-lawsuit-2026/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "'Careless People' author claims Meta surveilled her for 12mos to enforce silence",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48707769",
-    "title": "Michigan bill would bar employers from requiring after-hours coms with workers",
-    "url": "https://www.cbsnews.com/detroit/news/workplace-boundaries-act-employees-after-hours/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Michigan bill would bar employers from requiring after-hours coms with workers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48702060",
-    "title": "Michigan spent $1.8B and only created 602 jobs",
-    "url": "https://www.msn.com/en-us/money/general/michigan-spent-1-8-billion-and-only-created-602-jobs/ar-AA26Cusu",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Michigan spent $1.8B and only created 602 jobs",
-    "chinese_summary": "生成摘要时出错"
+    "id": "48709186",
+    "title": "Show HN: DRM-Free Books",
+    "url": "https://frequal.com/Perspectives/DrmFreeAuthors.html",
+    "summary": "This article, titled \"Show HN: DRM-Free Books,\" highlights authors and platforms offering books without Digital Rights Management.\n\nIt features three contemporary authors:\n*   **Andrew Oliver** with his mystery novel \"Means and Motive,\" available on Amazon and Barnes & Noble, offering free EPUB and PDF sample chapters.\n*   **Timothy Zahn** presenting his sci-fi book \"The Icarus Needle,\" available on Baen.\n*   **Kacey Ezell** with her fantasy novel \"Blood on the Sand,\" also available on Baen.\n\nThe article then provides guidance on finding more DRM-free books:\n*   **Amazon:** Look for books that offer EPUB and PDF downloads.\n*   **TOR:** All books from this publisher have been DRM-free for over a decade.\n*   **Baen:** Check for titles explicitly stating \"this title is sold without DRM.\"\n*   **Bookshop.org:** Use the \"Formats/Ebook/DRM-free\" filter in search results.\n*   **Cory Doctorow:** All his ebooks are sold without DRM.\n\nFinally, for out-of-copyright DRM-free books, the article recommends **Project Gutenberg** and **Standard Ebooks**.",
+    "chinese_title": "Show HN: DRM-Free Books",
+    "chinese_summary": "本文题为《Show HN：无DRM图书》，重点介绍了提供无数字版权管理（DRM）图书的作者和平台。\n\n文章介绍了三位当代作者：\n*   **安德鲁·奥利弗**：他的悬疑小说《手段与动机》可在亚马逊和巴诺书店购买，并提供免费的EPUB和PDF试读章节。\n*   **蒂莫西·扎恩**：他的科幻小说《伊卡洛斯之针》可在Baen出版社购买。\n*   **凯西·埃泽尔**：她的奇幻小说《沙中血迹》也可在Baen出版社购买。\n\n文章接着提供了查找更多无DRM图书的指南：\n*   **亚马逊（Amazon）**：查找提供EPUB和PDF下载的图书。\n*   **TOR出版社**：该出版社的所有图书十多年来一直都是无DRM的。\n*   **Baen出版社**：查找明确标明“本书不含DRM”的标题。\n*   **Bookshop.org**：在搜索结果中使用“格式/电子书/无DRM”筛选器。\n*   **科里·多克托罗（Cory Doctorow）**：他所有的电子书均不含DRM销售。\n\n最后，对于已过版权保护期的无DRM图书，文章推荐**古腾堡计划（Project Gutenberg）**和**标准电子书（Standard Ebooks）**。"
   },
   {
     "id": "48706877",
     "title": "The origins of the school system aimed to produce independent, critical thinkers (2024)",
     "url": "https://www.cbc.ca/radio/ideas/humboldt-education-system-bildung-1.7172093",
+    "summary": "Two hundred years ago, Prussian philosopher Wilhelm von Humboldt swiftly created the public education system and modern research university, systems now adopted worldwide. At the heart of his philosophy was \"Bildung\"—a concept evolving from religious roots to signify reaching one's full individual inner potential and fostering self-cultivation.\n\nInfluenced by Jean-Jacques Rousseau, Humboldt believed education should develop a person's capacities, free from external constraints like commercial or state demands. He envisioned a system that taught students \"how to learn,\" encouraging critical thinking, independent research, and comprehension of high-level theory and philosophy, rather than mere memorization. This, he argued, would produce self-aware, independent thinkers and even more effective civil servants capable of understanding policy principles.\n\nHumboldt's ambition was to create a society of intellectually capable individuals who could improve their world. However, as his public education system was adopted and modified globally, the crucial element of Bildung—the cultivation of human potential—was often overlooked. Over time, the state's influence and agenda began to shape education, potentially departing from Humboldt's original vision of holistic individual development.",
+    "chinese_title": "教育体系的初衷是培养独立的、批判性思考者 (2024)",
+    "chinese_summary": "两百年前，普鲁士哲学家威廉·冯·洪堡迅速创建了公共教育体系和现代研究型大学，这些体系如今已被全球采纳。他哲学的核心是“教养”（Bildung）——一个源于宗教根源的概念，旨在表明个体充分发挥其内在潜能并培养自我修养。\n\n受让-雅克·卢梭的影响，洪堡认为教育应该发展人的能力，摆脱商业或国家需求等外部限制。他设想了一个教导学生“如何学习”的体系，鼓励批判性思维、独立研究以及对高深理论和哲学的理解，而非仅仅死记硬背。他认为，这将培养出具有自我意识的独立思考者，乃至能理解政策原则、更高效的公务员。\n\n洪堡的抱负是创建一个由智力卓越的个体组成的社会，这些个体能够改善他们的世界。然而，随着他的公共教育体系在全球范围内被采纳和修改，“教养”（即人类潜能的培养）这一关键要素却常常被忽视。随着时间的推移，国家的影响和议程开始塑造教育，这可能偏离了洪堡最初关于个体全面发展的愿景。"
+  },
+  {
+    "id": "48704454",
+    "title": "Bashblog – a single bash script to create blogs",
+    "url": "https://github.com/cfenollosa/bashblog",
+    "summary": "Bashblog is a unique, single Bash script designed to create simple, dependency-free blogs. It enables users to post blog entries to a public server folder with minimal requirements, running on GNU/Linux, OSX, and BSD. Its usage is straightforward: copy `bb.sh` to a public folder, and type `./bb.sh post` to begin writing your blogpost, with support for Markdown by default.\n\nKey features include ultra-simple operation with no installation or templating, relying only on base system utilities like `date`, `grep`, and `sed`. It automatically generates static HTML content, RSS feeds, and pages for tags/categories. Bashblog also supports drafts, Disqus comments, Twitter integration, Feedburner, and Google Analytics. A clean stylesheet is included, and the site automatically backs up with each new post.\n\nConfiguration is flexible, allowing users to modify variables directly in `bb.sh` or override them using a `.config` file, which is useful for easier updates. The project emphasizes minimalism and maintainability, welcoming bugfixes but requiring strong justification for new features to preserve its concise codebase and adhere to the UNIX philosophy. Bashblog is licensed under the GNU General Public License v3.",
+    "chinese_title": "Bashblog — 一个单一的 Bash 脚本，用于创建博客",
+    "chinese_summary": "Bashblog 是一个独特的、单一的 Bash 脚本，旨在创建简单、无依赖的博客。它允许用户以极低的要求将博客文章发布到公共服务器文件夹，可在 GNU/Linux、OSX 和 BSD 上运行。其用法简单明了：将 `bb.sh` 复制到一个公共文件夹，然后输入 `./bb.sh post` 即可开始撰写您的博客文章，默认支持 Markdown。\n\n主要功能包括超简单的操作，无需安装或模板，仅依赖于 `date`、`grep` 和 `sed` 等基础系统工具。它自动生成静态 HTML 内容、RSS 订阅源以及标签/分类页面。Bashblog 还支持草稿、Disqus 评论、Twitter 集成、Feedburner 和 Google Analytics。附带一个简洁的样式表，并且每次发布新文章时网站都会自动备份。\n\n配置灵活，用户可以直接在 `bb.sh` 中修改变量，也可以使用 `.config` 文件覆盖它们，这有助于更轻松地进行更新。该项目强调极简主义和可维护性，欢迎错误修复，但新功能需要充分的理由才能被采纳，以保持其简洁的代码库并遵循 UNIX 哲学。Bashblog 采用 GNU 通用公共许可证 v3 许可。"
+  },
+  {
+    "id": "48706554",
+    "title": "More evidence is consistent with possible ancient life on Mars (2025)",
+    "url": "https://www.cbc.ca/radio/quirks/more-evidence-of-life-on-mars-but-still-no-life-1.7649645",
+    "summary": "NASA's Perseverance rover has found new geological evidence consistent with possible ancient life on Mars, though definitive proof remains elusive. In July 2024, the rover discovered vivianite and greigite in a former river delta, chemicals often formed by microbial activity on Earth. However, these formations can also result from non-biological chemical reactions.\n\nThis latest finding adds to a long history of tantalizing clues and subsequent debunkings, starting with Percival Lowell's mistaken observation of Martian canals in 1894. Later robotic missions revealed dried riverbeds, suggesting past water and thus potential life. In 1976, Viking landers detected reactions consistent with microbes but found no organic molecules. The 1996 discovery of a worm-like structure in a Martian meteorite also faced non-biological explanations, though NASA's Curiosity rover recently detected complex organic molecules, reigniting the debate.\n\nDespite over a century of exploration, no conclusive evidence of surface life has been found. Scientists are now increasingly focusing on the possibility of life thriving deep within the Martian crust, similar to Earth's underground microbial ecosystems. This shielded environment, potentially with liquid water beneath a permafrost layer, represents a promising new avenue for future exploration, suggesting astronauts may need to drill deep to uncover Mars' secrets.",
+    "chinese_title": "更多证据与火星上可能存在的古代生命一致 (2025)",
+    "chinese_summary": "NASA's Perseverance rover has found new geological evidence consistent with possible ancient life on Mars, though definitive proof remains elusive. In July 2024, the rover discovered vivianite and greigite in a former river delta, chemicals often formed by microbial activity on Earth. However, these formations can also result from non-biological chemical reactions.\n\nThis latest finding adds to a long history of tantalizing clues and subsequent debunkings, starting with Percival Lowell's mistaken observation of Martian canals in 1894. Later robotic missions revealed dried riverbeds, suggesting past water and thus potential life. In 1976, Viking landers detected reactions consistent with microbes but found no organic molecules. The 1996 discovery of a worm-like structure in a Martian meteorite also faced non-biological explanations, though NASA's Curiosity rover recently detected complex organic molecules, reigniting the debate.\n\nDespite over a century of exploration, no conclusive evidence of surface life has been found. Scientists are now increasingly focusing on the possibility of life thriving deep within the Martian crust, similar to Earth's underground microbial ecosystems. This shielded environment, potentially with liquid water beneath a permafrost layer, represents a promising new avenue for future exploration, suggesting astronauts may need to drill deep to uncover Mars' secrets."
+  },
+  {
+    "id": "48708721",
+    "title": "Reflections on software engineering in the age of AI",
+    "url": "https://adiamond.me/2026/06/software-engineering-in-the-age-of-ai/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The origins of the school system aimed to produce independent, critical thinkers (2024)",
+    "chinese_title": "Reflections on software engineering in the age of AI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48718995",
+    "title": "Building Principia for Windows XP",
+    "url": "https://voxelmanip.se/2026/06/28/building-principia-for-windows-xp/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Building Principia for Windows XP",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -256,107 +88,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48692083",
-    "title": "Evan's Jujutsu Tutorial",
-    "url": "https://evmar.github.io/jjtut/",
+    "id": "48722052",
+    "title": "Ornith-1.0: self-improving open-source models for agentic coding",
+    "url": "https://github.com/deepreinforce-ai/Ornith-1",
     "summary": "生成摘要时出错",
-    "chinese_title": "Evan's Jujutsu Tutorial",
+    "chinese_title": "Ornith-1.0: 用于智能体编程的自改进开源模型",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48708721",
-    "title": "Reflections on software engineering in the age of AI",
-    "url": "https://adiamond.me/2026/06/software-engineering-in-the-age-of-ai/",
+    "id": "48721308",
+    "title": "The Radiation Exposure Lie",
+    "url": "https://worksinprogress.co/issue/how-to-lie-about-radiation/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Reflections on software engineering in the age of AI",
+    "chinese_title": "The Radiation Exposure Lie",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48701936",
-    "title": "Enhancing x11 Application Security with LXC (2025)",
-    "url": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
+    "id": "48718753",
+    "title": "NixOS 26.05",
+    "url": "https://nixos.org/blog/announcements/2026/nixos-2605/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Enhancing x11 Application Security with LXC (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48699617",
-    "title": "Doctors suspected man had brain cancer. He had worms",
-    "url": "https://arstechnica.com/health/2026/06/doctors-suspected-man-had-brain-cancer-he-actually-had-worms/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Doctors suspected man had brain cancer. He had worms",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48708859",
-    "title": "Daisugi, the Japanese technique of growing trees out of other trees (2020)",
-    "url": "https://www.openculture.com/2020/10/daisugi.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Daisugi, the Japanese technique of growing trees out of other trees (2020)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48710232",
-    "title": "Librepods: AirPods liberated from Apple's ecosystem",
-    "url": "https://github.com/librepods-org/librepods",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Librepods: AirPods liberated from Apple's ecosystem",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48708795",
-    "title": "Tokenmaxxing is dead, long live tokenmaxxing",
-    "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tokenmaxxing is dead, long live tokenmaxxing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48694563",
-    "title": "Software Is Becoming Marketing",
-    "url": "https://www.terezatizkova.com/writing/software-abundance",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Software Is Becoming Marketing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48703083",
-    "title": "America's Large Homebuilders Shift the Cost of Shoddy Construction to Buyers",
-    "url": "https://hntrbrk.com/investigations/homebuilders",
-    "summary": "生成摘要时出错",
-    "chinese_title": "America's Large Homebuilders Shift the Cost of Shoddy Construction to Buyers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48710082",
-    "title": "The cost YAGNI was never about",
-    "url": "https://newsletter.kentbeck.com/p/the-cost-yagni-was-never-about",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The cost YAGNI was never about",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48698188",
-    "title": "Running a software jam in a world of slop",
-    "url": "https://foxmoss.com/blog/radish/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Running a software jam in a world of slop",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48708700",
-    "title": "Examining circuit boards from the Space Shuttle's I/O Processor",
-    "url": "https://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Examining circuit boards from the Space Shuttle's I/O Processor",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48709187",
-    "title": "Working around dragons with the Lemote Yeeloong laptop and OpenBSD",
-    "url": "http://oldvcr.blogspot.com/2026/06/working-around-dragons-with-lemote.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Working around dragons with the Lemote Yeeloong laptop and OpenBSD",
+    "chinese_title": "NixOS 26.05",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -368,11 +120,107 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48700805",
-    "title": "Ships keep moving through Hormuz despite strike",
-    "url": "https://www.lloydslist.com/LL1157680/Ships-keep-moving-through-Hormuz-despite-strike-and-suspension-of-IMO-exit-strategy",
+    "id": "48711604",
+    "title": "Mel Brooks is 100 today",
+    "url": "https://www.theatlantic.com/culture/2026/06/long-live-mel-brooks/687730/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Ships keep moving through Hormuz despite strike",
+    "chinese_title": "Mel Brooks is 100 today",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48720591",
+    "title": "Microsoft Needs Windows Lite",
+    "url": "https://philipbohun.com/blog/0011.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Microsoft Needs Windows Lite",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48710414",
+    "title": "Do LLMs pass the mirror test?",
+    "url": "https://blog.pascalschuster.de/article/do-llms-pass-the-mirror-test",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Do LLMs pass the mirror test?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48713887",
+    "title": "Tell Congress: Don't Force Age Checks Online",
+    "url": "https://act.eff.org/action/tell-congress-don-t-force-age-checks-online",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tell Congress: Don't Force Age Checks Online",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48712324",
+    "title": "Xonaly – Canada's Independent Search Engine",
+    "url": "https://xonaly.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Xonaly – Canada's Independent Search Engine",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48701936",
+    "title": "Enhancing x11 Application Security with LXC (2025)",
+    "url": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Enhancing x11 Application Security with LXC (2025)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48717905",
+    "title": "Rebuilding the Computer Room",
+    "url": "https://alexwlchan.net/2026/computer-room/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Rebuilding the Computer Room",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48711981",
+    "title": "30-Year Sentence for Transporting Zines Is a Five-Alarm Fire for Free Speech",
+    "url": "https://theintercept.com/2026/06/26/daniel-sanchez-estrada-zines-prairieland-free-speech/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "30-Year Sentence for Transporting Zines Is a Five-Alarm Fire for Free Speech",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48719521",
+    "title": "You Don't Know Jack About Formal Verification",
+    "url": "https://queue.acm.org/detail.cfm?id=3819084",
+    "summary": "生成摘要时出错",
+    "chinese_title": "You Don't Know Jack About Formal Verification",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48703083",
+    "title": "America's Large Homebuilders Shift the Cost of Shoddy Construction to Buyers",
+    "url": "https://hntrbrk.com/investigations/homebuilders",
+    "summary": "生成摘要时出错",
+    "chinese_title": "America's Large Homebuilders Shift the Cost of Shoddy Construction to Buyers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48721227",
+    "title": "In San Francisco, even $180k tech salaries are no longer enough",
+    "url": "https://www.nytimes.com/2026/06/29/technology/san-francisco-tech-salaries.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "In San Francisco, even $180k tech salaries are no longer enough",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48719665",
+    "title": "A field guide to the modern front end for developers who hand-wrote HTML",
+    "url": "https://davidpoblador.com/deep-dives/the-descent/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A field guide to the modern front end for developers who hand-wrote HTML",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "48715630",
+    "title": "Replacing Systemd with OpenRC in Debian",
+    "url": "https://danielcordova.me/blog/debian-openrc/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Replacing Systemd with OpenRC in Debian",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -381,318 +229,6 @@
     "url": "https://social.anoxinon.de/@codebergstatus/116824443563698727",
     "summary": "生成摘要时出错",
     "chinese_title": "Codeberg Is Down",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48695694",
-    "title": "Is America becoming a gerontocracy?",
-    "url": "https://www.economist.com/culture/2026/06/25/is-america-becoming-a-gerontocracy",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Is America becoming a gerontocracy?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48695363",
-    "title": "IBM MCGA Gate Array Reverse Engineering",
-    "url": "https://github.com/schlae/IBM_MCGA",
-    "summary": "生成摘要时出错",
-    "chinese_title": "IBM MCGA Gate Array Reverse Engineering",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48710749",
-    "title": "Ford rehires 'gray beard' engineers after AI falls short",
-    "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ford rehires 'gray beard' engineers after AI falls short",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48698886",
-    "title": "Tuta: They are bringing back ChatControl",
-    "url": "https://mastodon.social/@Tutanota/116815262001889776",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tuta: They are bringing back ChatControl",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48696127",
-    "title": "Researchers have developed pixels that can emit and analyse light together",
-    "url": "https://ethz.ch/en/news-and-events/eth-news/news/2026/06/a-new-type-of-pixel.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Researchers have developed pixels that can emit and analyse light together",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48705276",
-    "title": "Can China build its own ASML?",
-    "url": "https://nikkei.shorthandstories.com/can-china-build-its-own-asml/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Can China build its own ASML?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48692157",
-    "title": "The Nationwide Backlash Against Cameras Watching Your Car",
-    "url": "https://www.wsj.com/us-news/the-nationwide-backlash-against-cameras-watching-your-car-401a656a",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Nationwide Backlash Against Cameras Watching Your Car",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48699589",
-    "title": "Climate.us launches independent website for trusted climate information",
-    "url": "https://www.climate.us/news-features/feed/climateus-launches-independent-website-trusted-climate-information",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Climate.us launches independent website for trusted climate information",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48699010",
-    "title": "A peek into Reddit's anti-spam internals",
-    "url": "https://lyra.horse/blog/2026/06/reddit-spam-internals/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A peek into Reddit's anti-spam internals",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48702825",
-    "title": "Apple Neural Engine: Architecture, Programming, and Performance",
-    "url": "https://arxiv.org/abs/2606.22283",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Apple Neural Engine: Architecture, Programming, and Performance",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48706554",
-    "title": "More evidence is consistent with possible ancient life on Mars (2025)",
-    "url": "https://www.cbc.ca/radio/quirks/more-evidence-of-life-on-mars-but-still-no-life-1.7649645",
-    "summary": "生成摘要时出错",
-    "chinese_title": "More evidence is consistent with possible ancient life on Mars (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48708991",
-    "title": "Professor denounces mass AI fraud on an exam at Brown University",
-    "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Professor denounces mass AI fraud on an exam at Brown University",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48699483",
-    "title": "Anthropic says Alibaba used 25k accounts to mine Claude",
-    "url": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Anthropic says Alibaba used 25k accounts to mine Claude",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48692101",
-    "title": "AgentKits – 60 production-ready AI agent blueprints with guardrails",
-    "url": "https://www.agent-kits.com",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AgentKits – 60 production-ready AI agent blueprints with guardrails",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48709670",
-    "title": "Semgrep: GLM 5.2 beats Claude in our Cyber Benchmarks",
-    "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Semgrep: GLM 5.2 beats Claude in our Cyber Benchmarks",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48697107",
-    "title": "Factorio 2.1 Experimental Release",
-    "url": "https://factorio.com/blog/post/fff-444",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Factorio 2.1 Experimental Release",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48704529",
-    "title": "It's dead, Jim – the old Microsoft UEFI CA from 2011 expired yesterday",
-    "url": "https://blog.einval.com/2026/06/27",
-    "summary": "生成摘要时出错",
-    "chinese_title": "It's dead, Jim – the old Microsoft UEFI CA from 2011 expired yesterday",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48701462",
-    "title": "Mojo programming language will become open-source soon",
-    "url": "https://console.modular.com/signup",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mojo programming language will become open-source soon",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48699213",
-    "title": "You've tried DuckDuckGo and Brave Search, now get serious with SearXNG",
-    "url": "https://www.neowin.net/editorials/youve-tried-duckduckgo-and-brave-search-now-get-serious-with-searxng/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "You've tried DuckDuckGo and Brave Search, now get serious with SearXNG",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48709186",
-    "title": "Show HN: DRM-Free Books",
-    "url": "https://frequal.com/Perspectives/DrmFreeAuthors.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: DRM-Free Books",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48704816",
-    "title": "Armadillo – A DNS Server in Gleam for Homelab Use",
-    "url": "https://github.com/vshakitskiy/armadillo",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Armadillo – A DNS Server in Gleam for Homelab Use",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48702053",
-    "title": "The AI Industry as You Know It Died Today",
-    "url": "https://www.thealgorithmicbridge.com/p/the-ai-industry-as-you-know-it-died",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The AI Industry as You Know It Died Today",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48698030",
-    "title": "Russian citizens told \"switch to Android\" after Apple blocks key Russian apps",
-    "url": "https://arstechnica.com/gadgets/2026/06/russian-citizens-told-switch-to-android-after-apple-blocks-key-russian-apps/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Russian citizens told \"switch to Android\" after Apple blocks key Russian apps",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48701477",
-    "title": "Check out the new US passport",
-    "url": "https://mishtalk.com/economics/does-president-trump-have-any-idea-what-passports-are-for/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Check out the new US passport",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48706903",
-    "title": "Greece Is Richer. So Why Do So Many Greeks Still Feel Poor?",
-    "url": "https://www.dnews.gr/eidhseis/news-in-english/596650/greece-is-richer-so-why-do-so-many-greeks-still-feel-poor",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Greece Is Richer. So Why Do So Many Greeks Still Feel Poor?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48708496",
-    "title": "Programmable Probabilistic Computer with 1M p-bits",
-    "url": "https://arxiv.org/abs/2606.25313",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Programmable Probabilistic Computer with 1M p-bits",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48698781",
-    "title": "Dr. Alan Kay on the meaning of \"object-oriented programming\" (2003)",
-    "url": "https://notes.shixiangxi.com/en/docs/appendix/alan-kay-on-oop/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Dr. Alan Kay on the meaning of \"object-oriented programming\" (2003)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48710092",
-    "title": "Historical memory prices 1960-2026",
-    "url": "https://dam.stanford.edu/memory-prices.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Historical memory prices 1960-2026",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48701478",
-    "title": "What If a Man Practised Shooting a Million Times? Shot 90172, Football Progress [video]",
-    "url": "https://www.youtube.com/watch?v=CI9oUUnUzw0",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What If a Man Practised Shooting a Million Times? Shot 90172, Football Progress [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48702104",
-    "title": "Show HN: Starglyphs - A constellation puzzle game based on Euler paths",
-    "url": "https://starglyphs.com",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Starglyphs - A constellation puzzle game based on Euler paths",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48691895",
-    "title": "Perry – compiles TypeScript to native GUI and CLI apps. No runtime / Electron",
-    "url": "https://perryts.com",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Perry – compiles TypeScript to native GUI and CLI apps. No runtime / Electron",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48702361",
-    "title": "Set Up Your Own DoH Service",
-    "url": "https://nochan.net/b/Internet-Crap/20260602-Set-Up-Your-Own-DoH-Service/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Set Up Your Own DoH Service",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48697379",
-    "title": "Germany: Hottest temperature on record 41.3C (106.3°F)",
-    "url": "https://phys.org/news/2026-06-germany-hottest-temperature-413c-weather.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Germany: Hottest temperature on record 41.3C (106.3°F)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48703848",
-    "title": "Yap – free offline voice dictation for Mac/Windows/Linux (Wispr Flow alt)",
-    "url": "https://github.com/AkuchiS/yap",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Yap – free offline voice dictation for Mac/Windows/Linux (Wispr Flow alt)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48702917",
-    "title": "I Build a 10 Inch Mini Rack from Aluminium Extrusions",
-    "url": "https://louwrentius.com/i-build-a-10-inch-mini-rack-from-aluminium-extrusions.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I Build a 10 Inch Mini Rack from Aluminium Extrusions",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48700317",
-    "title": "The Card That Made the Apple II Serious",
-    "url": "https://www.wiseowl.com/articles/a2fpga-videx-01-the-card-that-made-the-apple-ii-serious/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Card That Made the Apple II Serious",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48692038",
-    "title": "32bit Apple app running on M4 natively",
-    "url": "https://old.reddit.com/r/MacOS/comments/1ufug75/major_breakthrough_32bit_apple_app_running_on_m4/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "32bit Apple app running on M4 natively",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48701902",
-    "title": "Peppa Pig studio wants to clone child actors' voices with AI indefinitely",
-    "url": "https://www.gadgetreview.com/peppa-pigs-ai-voice-clause-draws-nearly-1000-industry-objections",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Peppa Pig studio wants to clone child actors' voices with AI indefinitely",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48710437",
-    "title": "The US Used to Demand the Best Tech. Now We Ban It",
-    "url": "https://www.pcmag.com/opinions/the-us-used-to-demand-the-best-tech-now-we-ban-it",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The US Used to Demand the Best Tech. Now We Ban It",
     "chinese_summary": "生成摘要时出错"
   }
 ]
