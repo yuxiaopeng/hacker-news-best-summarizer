@@ -1,474 +1,242 @@
 [
   {
-    "id": "48781597",
-    "title": "Soatok's Informal Guide to Threat Models",
-    "url": "https://soatok.blog/2026/06/30/soatoks-informal-guide-to-threat-models/",
-    "summary": "Soatok's informal guide clarifies \"threat models,\" a term often misused as a buzzword, for beginners. It emphasizes that while formal, informal threat modeling during design can significantly improve product outcomes. A useful threat model must answer four core questions: what are we protecting, who wants to harm it, how might they attack, and what prevents those attacks?\n\nBeyond these basics, crucial details include understanding asset relationships (thinking in graphs), explicitly stating all assumptions (as incorrect assumptions compromise the model), and acknowledging threats deliberately *not* addressed. Highlighting assumptions helps identify \"unknown unknowns,\" and threat models should be living documents.\n\nTo get started, map system components and their interactions. Then, iteratively drill down from high-level views to specific components, detailing inputs/outputs and applying the core questions, while noting assumptions about underlying layers.\n\nThe author presents their project's threat model as an effective example, organizing it by assumptions, assets, actors, and categorized risks. In contrast, Matrix's threat model is critiqued for being a mere list of attack types, lacking explicit assumptions, asset relationships, or cryptographic detail. Signal is deemed worse for having no explicit threat model.\n\nEffective threat modeling empowers defenders to dictate attack terrain, fostering true defense-in-depth. For instance, understanding why people reuse passwords leads to adopting passkeys to prevent credential stuffing and phishing. Good threat modeling leads to design choices that eliminate attack vectors and enhance usability, embodying the principle: \"Security at the expense of usability comes at the expense of security.\"",
-    "chinese_title": "Soatok的非正式威胁模型指南",
-    "chinese_summary": "Soatok的非正式指南为初学者澄清了“威胁模型”这一术语，该术语常被误用为流行语。它强调，在设计过程中进行正式或非正式的威胁建模，都能显著改善产品成果。一个有用的威胁模型必须回答四个核心问题：我们正在保护什么？谁想对其造成伤害？他们可能如何攻击？以及什么可以阻止这些攻击？\n\n除了这些基础知识，关键细节还包括理解资产关系（以图论思维），明确说明所有假设（因为不正确的假设会损害模型），以及承认那些刻意不予解决的威胁。突出假设有助于识别“未知未知数”，并且威胁模型应该是动态文档。\n\n要开始威胁建模，首先要绘制系统组件及其交互图。然后，从高层视图迭代地深入到特定组件，详细说明输入/输出，并应用核心问题，同时记录对底层所做的假设。\n\n作者展示了他们项目的威胁模型作为有效范例，按假设、资产、行为者和分类风险进行组织。相比之下，Matrix的威胁模型被批评为仅仅是攻击类型列表，缺乏明确的假设、资产关系或加密细节。Signal因没有明确的威胁模型而被认为更糟。\n\n有效的威胁建模使防御者能够主导攻击态势，从而实现真正的深度防御。例如，理解人们为何重复使用密码有助于促使采用通行密钥来防止凭据填充和钓鱼攻击。良好的威胁建模能带来消除攻击向量和提升可用性的设计选择，体现了“以牺牲可用性为代价的安全，是以牺牲安全性为代价的”这一原则。"
+    "id": "48809542",
+    "title": "Price per 1M tokens is meaningless",
+    "url": "https://janilowski.pl/en/blog/2026/price-per-m-tokens/",
+    "summary": "The article contends that comparing AI model costs solely by \"$X per 1M tokens\" is meaningless and misleading, as it fails to reflect true expenditure.\n\nTwo primary reasons underpin this claim:\n1.  **Incomparable Tokenizers**: Different AI labs, and even models within the same provider, employ proprietary tokenizers. These tokenizers split identical text into varying token counts (e.g., GPT-4o uses 160 tokens for a text, while GPT-4 uses 200). Adjustments to tokenizers, such as Anthropic's recent modification leading to a 30% increase in token count for the same text, can equate to hidden price hikes.\n2.  **Extreme Variance of Token Efficiency**: Beyond the raw token price, the \"worth\" or achievement derived per token varies greatly. A significant portion of token consumption in complex tasks is spent on \"thinking\" or \"chain-of-thought\" processes, billed at the same rate as output tokens. This hidden consumption can be the main cost driver and varies wildly between models.\n\nAn empirical analysis with a table comparing several models (e.g., Claude, GPT, GLM, DeepSeek) demonstrates this. Despite GPT-5.5 being nominally more expensive per 1M tokens than Claude Opus 4.8, it completes benchmark tasks at almost half the cost, indicating higher token efficiency. Conversely, GLM-5.2 is much cheaper per token but its cost per task isn't proportionally lower. DeepSeek V4 Pro, despite a lower intelligence score, exhibits extremely low cost per task, making it a strong cost-efficiency outlier.\n\nThe article concludes that \"$X per 1M tokens\" is not a meaningful cost indicator. To make informed model-selection decisions and avoid higher prices for inferior performance, users must focus on the \"actual cost per task.\"",
+    "chinese_title": "每百万token的价格毫无意义",
+    "chinese_summary": "文章认为，仅以“每百万token $X”来比较AI模型的成本毫无意义且具有误导性，因为它未能反映真实的支出。\n\n这一主张主要基于两个原因：\n1.  **不可比较的分词器**：不同的AI实验室，甚至同一供应商内部的不同模型，都采用专有的分词器。这些分词器将相同的文本分割成不同的token数量（例如，GPT-4o对一段文本使用160个token，而GPT-4使用200个）。对分词器的调整，例如Anthropic最近的修改导致相同文本的token数量增加30%，这可能等同于隐性涨价。\n2.  **token效率的巨大差异**：除了原始的token价格之外，每个token所产生的“价值”或“成果”也大相径庭。在复杂任务中，很大一部分token消耗用于“思考”或“思维链”过程，而这些消耗与输出token以相同的费率计费。这种隐性消耗可能是主要的成本驱动因素，并且在不同模型之间差异巨大。\n\n一项包含多个模型（例如Claude、GPT、GLM、DeepSeek）对比表格的实证分析证明了这一点。尽管GPT-5.5名义上每百万token比Claude Opus 4.8更昂贵，但它完成基准任务的成本几乎只有后者的一半，这表明其token效率更高。相反，GLM-5.2每token便宜得多，但其每任务成本并没有成比例地降低。尽管DeepSeek V4 Pro的智能得分较低，但其每任务成本极低，使其成为成本效率方面的一个显著例外。\n\n文章总结道，“每百万token $X”并非一个有意义的成本指标。为了做出明智的模型选择决策，并避免为较差的性能支付更高的价格，用户必须关注“实际每任务成本”。"
   },
   {
-    "id": "48776780",
-    "title": "US residents angry datacenters 'shoved down our throats' are recalling officials",
-    "url": "https://www.theguardian.com/us-news/2026/jul/03/datacenter-recall-elections",
-    "summary": "US residents are increasingly angered by the proliferation of datacenters, leading to widespread protests, demands for moratoriums, and efforts to recall elected officials who approve these projects. Communities nationwide feel datacenters are being \"shoved down our throats\" due to a pervasive lack of transparency from developers and local officials, often involving non-disclosure agreements (NDAs) that conceal the true corporate beneficiaries.\n\nThe opposition stems from significant concerns about the environmental and economic impacts. Datacenters consume vast amounts of water (up to 5 million gallons daily for large ones) and electricity (equivalent to thousands of homes), straining local resources, driving up utility costs, and causing noise and air pollution. Residents also fear diminished property values and potential job losses, contradicting claims of economic benefits.\n\nThis grassroots movement has fostered a rare unity between Republicans and Democrats. Examples include Lenox, Michigan, where a recall petition was filed over perceived secrecy; Festus, Missouri, where residents are legally challenging a city council's datacenter approval despite a recall petition; and Yukon, Oklahoma, where a vice-mayor resigned after facing recall efforts.\n\nDespite some politicians and investors falsely claiming foreign influence, experts find no evidence of China driving the opposition. Instead, the resistance is driven by community frustration with secretive dealings and the tangible negative effects of these facilities, leading to a significant number of datacenter projects being blocked or delayed across the country.",
-    "chinese_title": "美国居民因数据中心被“强塞”而愤怒，正在罢免官员。",
-    "chinese_summary": "美国居民对数据中心的激增日益感到愤怒，这导致了广泛的抗议、暂停建设的要求，以及罢免批准这些项目的民选官员的行动。全国各地的社区都觉得数据中心“被强加给我们的”，原因是开发商和地方官员普遍缺乏透明度，通常涉及保密协议（NDA），隐瞒了真正的企业受益方。\n\n这种反对源于对环境和经济影响的重大担忧。数据中心消耗大量水（大型数据中心每天高达500万加仑）和电（相当于数千户家庭的用电量），耗尽当地资源，推高公用事业成本，并造成噪音和空气污染。居民还担心房产价值贬值和潜在的失业，这与经济利益的说法相悖。\n\n这场草根运动促成了共和党和民主党之间罕见的团结。例如，密歇根州莱诺克斯市因被认为存在秘密操作而提交了罢免请愿书；密苏里州费斯图斯市的居民尽管提交了罢免请愿书，仍在通过法律途径挑战市议会批准数据中心的决定；俄克拉荷马州育空市的一位副市长在面临罢免努力后辞职。\n\n尽管一些政客和投资者错误地声称存在外国影响，但专家们发现没有证据表明是中国在推动这种反对。相反，这种抵制是由社区对秘密交易以及这些设施实际负面影响的不满所驱动的，导致全国范围内大量数据中心项目被阻止或延迟。"
+    "id": "48807225",
+    "title": "OfficeCLI: Office suite for AI agents to read and edit Microsoft Office files",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "summary": "OfficeCLI is introduced as the world's first and best Office suite designed for AI agents, providing them full control over Microsoft Word, Excel, and PowerPoint files through a single line of code. It is open-source, distributed as a self-contained single binary, requiring no Office installation or external dependencies, and functions across all platforms.\n\nA core innovation is its built-in, high-fidelity HTML rendering engine, which enables AI agents to \"see\" documents by rendering .docx, .xlsx, and .pptx files to HTML or PNG. This capability facilitates a \"render → look → fix\" loop, crucial for visual feedback and iterative document generation, even in headless environments.\n\nOfficeCLI dramatically simplifies Office automation, replacing dozens of lines of traditional code with single CLI commands for tasks like creating, reading, modifying, and formatting documents. It supports comprehensive functionalities across all three Office formats, including advanced features like full internationalization for Word, a formula and pivot engine for Excel (auto-evaluating 350+ functions and native pivot tables), and rich shape/chart manipulation for PowerPoint.\n\nKey primitives include a template `merge` function for data population, a `dump` command to serialize existing documents or subtrees into replayable JSON for learning and replication, and `resident` and `batch` modes for efficient multi-step workflows. Installation for AI agents is a simple `curl` command, while humans can use the AionUi GUI or CLI, and developers can quickly set up live previews. The tool ships as a single binary with an embedded .NET runtime, ensuring easy deployment and automatic updates.",
+    "chinese_title": "OfficeCLI：供AI代理读写Microsoft Office文件的办公套件",
+    "chinese_summary": "OfficeCLI 被引入，成为全球首个也是最佳的专为AI代理设计的Office套件，使它们能够通过一行代码完全控制Microsoft Word、Excel和PowerPoint文件。它是一个开源工具，以自包含的单一二进制文件形式分发，无需安装Office或任何外部依赖，并可在所有平台上运行。\n\n其核心创新是内置的高保真HTML渲染引擎，它能够将.docx、.xlsx和.pptx文件渲染成HTML或PNG，使AI代理能够“看到”文档。这一功能有助于实现“渲染→查看→修正”的循环，这对于在无头环境中提供视觉反馈和迭代生成文档至关重要。\n\nOfficeCLI 极大地简化了Office自动化，将传统代码中数十行的工作量替换为单个CLI命令，用于创建、读取、修改和格式化文档等任务。它支持所有三种Office格式的全面功能，包括Word的完全国际化、Excel的公式和数据透视表引擎（自动评估350多个函数和原生数据透视表），以及PowerPoint的丰富形状/图表操作等高级功能。\n\n关键原语包括用于数据填充的模板`merge`函数；一个`dump`命令，用于将现有文档或子树序列化为可重放的JSON，以便学习和复制；以及用于高效多步工作流的`resident`和`batch`模式。AI代理的安装只需一个简单的`curl`命令，而人类用户可以使用AionUi GUI或CLI，开发者可以快速设置实时预览。该工具以包含嵌入式.NET运行时的单一二进制文件形式发布，确保了轻松部署和自动更新。"
   },
   {
-    "id": "48787042",
-    "title": "No more than 100 000 faint satellites should orbit Earth",
-    "url": "https://www.eso.org/public/news/eso2607/",
-    "summary": "A new European Southern Observatory (ESO) study reveals that current proposals for over 1.7 million new satellites, including extremely bright ones, pose a \"grave threat\" to night sky observation and astronomy. The study, led by Olivier Hainaut, recommends limiting the total number of satellites to no more than 100,000 faint ones, below naked-eye visibility, to safeguard our ability to observe the universe.\n\nCurrently, over 14,000 satellites orbit Earth, primarily SpaceX's Starlink. However, SpaceX plans another million for data centers, which would make hundreds to thousands of satellites visible nightly. Reflect Orbital's proposal for 50,000 large, mirror-like satellites to provide nighttime illumination is particularly alarming; these would be the brightest ever, appearing brighter than Venus, and one satellite beaming could be four times brighter than the full Moon. Such constellations would ruin astronomical images with bright trails and significantly increase the overall brightness of the night sky, potentially making it three to four times brighter.\n\nThese impacts would hinder observations of faint cosmic targets and could render most images from advanced telescopes unusable for hours each night. ESO, collaborating with other astronomical bodies, has lodged objections with the US Federal Communications Commission (FCC), highlighting the \"existential threat\" to optical astronomy. The article also notes broader concerns about light pollution's impact on health, ecosystems, and atmospheric pollution. It urges international collaboration to limit future launches and implement strict mitigation measures to preserve Low Earth Orbit for future generations.",
-    "chinese_title": "环绕地球的暗淡卫星不应超过十万颗。",
-    "chinese_summary": "欧洲南方天文台（ESO）一项新研究显示，目前提议发射的逾170万颗新卫星，包括一些极其明亮的卫星，对夜空观测和天文学构成“严重威胁”。这项由奥利维耶·海诺（Olivier Hainaut）领导的研究建议，将卫星总数限制在不超过10万颗肉眼不可见的暗淡卫星，以保护我们观测宇宙的能力。\n\n目前，地球轨道上有超过1.4万颗卫星，主要来自SpaceX的“星链”计划。然而，SpaceX计划再发射一百万颗用于数据中心，这将导致每晚有数百到数千颗卫星肉眼可见。Reflect Orbital公司提议发射5万颗大型、镜面般的卫星以提供夜间照明，这尤其令人担忧；这些卫星将是迄今为止最亮的，比金星还要亮，一颗卫星发出的光束可能比满月亮四倍。此类卫星群将以明亮的轨迹破坏天文图像，并显著增加夜空的整体亮度，可能使其亮度增加三到四倍。\n\n这些影响将阻碍对暗弱宇宙目标的观测，并可能导致先进望远镜每晚拍摄的大部分图像在数小时内无法使用。ESO与其他天文机构合作，已向美国联邦通信委员会（FCC）提出反对意见，强调这对光学天文学构成“生存威胁”。文章还指出，人们普遍担心光污染对健康、生态系统和大气污染的影响。它敦促国际社会合作，限制未来的发射，并实施严格的缓解措施，为子孙后代保护近地轨道。"
+    "id": "48790913",
+    "title": "University of Oxford Is Older Than the Aztec Empire and Other Facts of History (2013)",
+    "url": "https://www.smithsonianmag.com/smart-news/university-oxford-older-than-aztec-empire-other-facts-will-change-your-perspective-history-1529607/",
+    "summary": "This article, \"University of Oxford Is Older Than the Aztec Empire and Other Facts of History,\" challenges common misconceptions about historical timelines. It highlights that teaching at Oxford began around 1096, predating the 1325 founding of Tenochtitlán, the Aztec capital, by 229 years. The Aztec Empire, lasting from 1325 to 1521, existed for less than a century, meaning the White House (cornerstone 1792) has stood longer than the Aztecs ruled their capital.\n\nWhile Oxford is the oldest university in the English-speaking world, it notes that the University of al-Qarawiyyin (859) is the world's oldest continuously operating institution of higher education, and the University of Bologna (1088) is the oldest of its kind in the Western world.\n\nThe article's main point is that our understanding of history is often \"skewed,\" with timelines distorted and compressed. To illustrate, it explains that Cleopatra ruled ancient Egypt at the tail end of its 3,000-year existence and is closer in time to 2024 than to the building of the Great Pyramids. It also points out that seemingly disparate figures like Anne Frank and Martin Luther King Jr. were born in the same year (1929), while figures often grouped together, such as Attila the Hun and Prophet Muhammad, lived centuries apart. The piece concludes that contextualizing historical events is crucial for a clearer understanding of the past.",
+    "chinese_title": "牛津大学比阿兹特克帝国历史更悠久，以及其他历史事实 (2013)",
+    "chinese_summary": "牛津大学比阿兹特克帝国更古老，以及其他历史事实\n\n这篇文章，“牛津大学比阿兹特克帝国更古老，以及其他历史事实”，挑战了人们对历史时间线的普遍误解。文章指出，牛津大学的教学活动始于大约1096年，比阿兹特克首都特诺奇蒂特兰（Tenochtitlán）于1325年建立早了229年。阿兹特克帝国从1325年持续到1521年，存在时间不足一个世纪，这意味着白宫（1792年奠基）矗立的时间比阿兹特克人统治其首都的时间还要长。\n\n尽管牛津大学是英语世界中最古老的大学，但文章指出，卡鲁因大学（University of al-Qarawiyyin，建于859年）是世界上持续运作时间最长的高等教育机构，而博洛尼亚大学（University of Bologna，建于1088年）则是西方世界同类大学中最古老的。\n\n这篇文章的重点是，我们对历史的理解常常是“扭曲的”，时间线被歪曲和压缩。为此，文章解释说，埃及艳后克利奥帕特拉统治古埃及时，正值其长达3000年历史的末期，她所处的时代更接近2024年，而不是金字塔建造的时代。文章还指出，安妮·弗兰克和马丁·路德·金等看似迥异的人物都出生于同一年（1929年），而阿提拉和先知穆罕默德等常被一同提及的人物却相隔数百年。文章总结说，将历史事件置于语境中理解对于更清晰地认识过去至关重要。"
   },
   {
-    "id": "48774704",
-    "title": "Hackers shoveled snow for company, were rewarded with network admin access",
-    "url": "https://www.theregister.com/security/2026/07/02/hackers-shoveled-snow-for-company-were-rewarded-with-network-admin-access/5265240",
-    "summary": "Professional red teamers Kristopher Johnson and Michael, supervised by Dahvid Schloss, successfully breached a company's network by exploiting physical security and human trust. Posing as new IT employees, they gained entry after offering to shovel snow for the maintenance crew, who then let Johnson into the building without a badge.\n\nJohnson planted a Raspberry Pi in an unprotected conference room network port, hiding it with trash cans. While initially blocked by network access control (NAC) in another location, this port lacked such protection, allowing the Pi to remain connected and undetected for two weeks.\n\nThe red teamers were physically \"caught\" when the maintenance crew thanked the IT department for Michael's help, revealing no such employees existed. Despite security reviewing camera footage, the hidden Raspberry Pi was not found.\n\nDuring its two weeks connected, the red team used the Pi to access the company's Active Directory. They password-sprayed accounts using \"winter2023!\", gaining access to 50-60 employee accounts. They then mapped the network, enumerated Active Directory Certificate Services (ADCS), and exploited ESC1, ESC4, and ESC8 vulnerabilities to achieve full domain administrative access. A janitor only discovered the Pi two weeks later, after the breach was complete.\n\nThe incident underscored significant security failures: a lack of physical security awareness among employees (dubbed \"ski mask bias\"), an unprotected network port, a weak password policy, and the absence of multi-factor authentication.",
-    "chinese_title": "黑客为公司铲雪，获赠网管权限。",
-    "chinese_summary": "专业的红队队员克里斯托弗·约翰逊和迈克尔在达维德·施洛斯的监督下，通过利用物理安全漏洞和人类信任，成功攻破了一家公司的网络。他们冒充新入职的IT员工，在主动提出为维修人员铲雪后获得了进入许可，维修人员随后让约翰逊在没有门禁卡的情况下进入了大楼。\n\n约翰逊在一个未受保护的会议室网络端口植入了一个树莓派，并用垃圾桶将其藏了起来。尽管在另一位置最初被网络访问控制（NAC）阻止，但这个端口缺乏此类保护，使得树莓派保持连接并两周未被发现。\n\n当维修人员感谢IT部门对迈克尔的帮助时，红队队员的真实身份被物理上“抓到”，因为公司中根本没有这些员工。尽管安保人员查看了监控录像，隐藏的树莓派仍未被发现。\n\n在其连接的两周内，红队利用树莓派访问了公司的Active Directory（活动目录）。他们使用“winter2023!”进行密码喷洒攻击，获得了50-60个员工账户的访问权限。随后他们绘制了网络拓扑，枚举了活动目录证书服务（ADCS），并利用ESC1、ESC4和ESC8漏洞，取得了完整的域管理权限。在攻击完成后，一名清洁工在两周后才发现了这个树莓派。\n\n这起事件凸显了重大的安全漏洞：员工缺乏物理安全意识（被称为“滑雪面罩偏见”）、未受保护的网络端口、弱密码策略以及缺乏多因素认证。"
+    "id": "48790349",
+    "title": "Egg consumption inversely correlated with Alzheimer's",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42002260/",
+    "summary": "A systematic review and meta-analysis, published in Food & Function, investigated the association between egg consumption and the risk of Alzheimer's disease (AD). The study analyzed data from 12 observational studies (7 case-control and 5 cohort studies) involving a total of 26,122 participants.\n\nThe pooled results demonstrated a significant inverse association between egg consumption and AD risk, indicating that individuals who consumed eggs had a lower risk of developing AD (pooled RR = 0.81; 95% CI: 0.70-0.93). This inverse correlation was more evident in cohort studies (RR = 0.75) compared to case-control studies.\n\nFurther analysis based on consumption frequency revealed that moderate egg consumption, defined as 3-6 eggs per week, was significantly associated with a reduced AD risk (RR = 0.76). However, high egg consumption (seven or more eggs per week) did not show a statistically significant association with AD risk (RR = 0.96).\n\nThe study's findings were robust, with meta-regression and sensitivity analyses confirming that the inverse association was not influenced by factors such as publication year, study design, or geographical region. The authors suggest that incorporating a moderate amount of eggs into the diet could be a potential strategy to reduce AD risk, though they emphasize the need for further prospective studies to confirm these findings and elucidate the underlying biological mechanisms.",
+    "chinese_title": "鸡蛋摄入与阿尔茨海默病呈负相关",
+    "chinese_summary": "发表在《食品与功能》杂志上的一项系统评价和荟萃分析，调查了鸡蛋摄入与阿尔茨海默病（AD）风险之间的关联。该研究分析了来自12项观察性研究（包括7项病例对照研究和5项队列研究）的数据，共涉及26,122名参与者。\n\n汇总结果显示，鸡蛋摄入与AD风险之间存在显著的负相关，表明摄入鸡蛋的个体患AD的风险较低（汇总RR = 0.81；95% CI：0.70-0.93）。相比病例对照研究，这种负相关在队列研究中更为明显（RR = 0.75）。\n\n基于摄入频率的进一步分析显示，适度鸡蛋摄入（定义为每周3-6个鸡蛋）与AD风险显著降低相关（RR = 0.76）。然而，大量鸡蛋摄入（每周7个或更多鸡蛋）未显示与AD风险有统计学上的显著关联（RR = 0.96）。\n\n该研究结果具有稳健性，荟萃回归和敏感性分析证实，这种负相关不受发表年份、研究设计或地理区域等因素的影响。作者认为，将适量鸡蛋纳入饮食可能是降低AD风险的一种潜在策略，尽管他们强调需要进一步的前瞻性研究来证实这些发现并阐明其潜在的生物学机制。"
   },
   {
-    "id": "48780469",
-    "title": "The Demoralization of the White-Collar Worker",
-    "url": "https://nooneshappy.com/article/the-demoralization-of-the-white-collar-worker/",
-    "summary": "\"The Demoralization of the White-Collar Worker\" outlines the profound challenges faced by professionals striving for the American Dream, leading to widespread disillusionment. The author's personal experience of disciplined saving over two decades culminating in buying an affordable home only by moving to a rural town, far from their career and social network, exemplifies this struggle.\n\nThe article details several systemic issues:\n1.  **Stagnant Wages:** Since 1979, worker productivity has risen 90%, but typical compensation only 33%. The lion's share has gone to executive pay, shareholder returns, and corporate profits. White-collar salaries have been flat or declining, with companies replacing experienced staff with cheaper, less capable hires.\n2.  **Unaffordable Housing:** Home prices have surged 53% since 2019, while median incomes rose only 24%. The median first-time homebuyer is now 40, and investors aggressively buy up housing stock, converting potential homes into rentals.\n3.  **Dysfunctional Healthcare:** The U.S. health insurance system is described as an \"extraction system\" designed to collect high premiums ($700/month for the author) and deny claims. Denials are often overturned on appeal, suggesting a profit motive over patient care, leading to delayed treatment and medical debt.\n4.  **Eroding Retirement Security:** The shift from defined-benefit pensions to 401(k)s has transferred investment risk to individuals. Median retirement savings are alarmingly low ($5,000 for families aged 32-61), leaving many unprepared for retirement.\n5.  **Broken Budgets:** Even a $100,000 salary leaves little surplus after essential costs like housing, healthcare, and particularly childcare, which can exceed rent for two children in all 50 states. Student loan debt further exacerbates these pressures. This isn't a spending problem, but a crisis of fixed, non-discretionary costs consuming income, requiring dual earners for diminishing returns and contributing to declining fertility rates.\n\nThe cumulative effect of these trends is a \"Great Detachment,\" where continuous effort no longer guarantees basic financial security or the traditional markers of success for white-collar workers.",
-    "chinese_title": "白领士气低落",
-    "chinese_summary": "《白领的士气消沉》概述了专业人士在追求美国梦过程中面临的严峻挑战，导致了普遍的幻灭感。作者的亲身经历便是这种挣扎的典型例证：二十年来，通过严格储蓄，最终却只能通过搬迁到远离其职业和社交网络的乡村小镇才能买得起房。\n\n文章详细阐述了几个系统性问题：\n1.  **薪资停滞不前：** 自1979年以来，工人生产力提高了90%，但平均薪酬仅增长了33%。绝大部分流向了高管薪酬、股东回报和企业利润。白领工资持平或下降，公司用更廉价、能力较差的员工取代有经验的员工。\n2.  **住房高不可攀：** 自2019年以来，房价飙升了53%，而家庭收入中位数仅增长了24%。首次购房者年龄中位数现已达到40岁，投资者积极抢购住房，将潜在的自住房转化为租赁物业。\n3.  **功能失调的医疗体系：** 美国医疗保险系统被描述为一个“榨取系统”，旨在收取高额保费（作者每月700美元）并拒绝赔付。拒绝赔付的决定在申诉后往往被推翻，这表明其以利润为导向而非以患者护理为重，导致治疗延迟和医疗债务。\n4.  **退休保障日益削弱：** 从固定福利养老金向401(k)计划的转变，将投资风险转嫁给了个人。退休储蓄中位数低得惊人（32-61岁家庭仅为5000美元），导致许多人对退休毫无准备。\n5.  **预算捉襟见肘：** 即使年薪10万美元，在支付住房、医疗保健，尤其是育儿等基本开销后，也所剩无几，育儿费用在全美50个州都可能超过两个孩子的租金。学生贷款债务进一步加剧了这些压力。这并非消费问题，而是固定、非自由支配开支吞噬收入的危机，导致双职工家庭付出更多却回报递减，并导致生育率下降。\n\n这些趋势的累积效应导致了一种“大脱节”，在此背景下，白领的持续努力不再能保证基本财务安全或传统的成功标志。"
+    "id": "48806575",
+    "title": "Show HN: Pulpie – Models for Cleaning the Web",
+    "url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web/",
+    "summary": "Pulpie, developed by Feyn Labs, introduces a family of Pareto-optimal models for extracting main content from HTML pages, offering near state-of-the-art (SOTA) quality at one-twentieth the cost and significantly higher speed. This innovation addresses the critical need for clean web data, as boilerplate content typically accounts for 70% of HTML pages, hindering language model pre-training and inference quality.\n\nThe key to Pulpie's efficiency is its encoder architecture, which labels every HTML block as content or boilerplate in a single forward pass. This design makes it compute-bound rather than memory-bandwidth-bound, unlike decoder-based extractors like Dripper.\n\nThe smallest model, `pulpie-orange-small` (210M parameters), scores 0.862 ROUGE-5 F1 on WebMainBench, closely matching Dripper's 0.864 F1 score, despite being a third of its size (600M parameters). Performance benchmarks are striking: on an NVIDIA L4 GPU, `pulpie-orange-small` processes 13.7 pages/sec, 20 times faster than Dripper's 0.68 pages/sec. This translates to cleaning one billion pages for $7,900 with Pulpie, compared to $159,000 with Dripper.\n\nPulpie's training involved creating a novel 14,959-page block-level labeled dataset using DeepSeek V3.2 and Dripper for cross-validation. A 2.1B parameter teacher model (EuroBERT) was then fine-tuned and distilled into the smaller, more efficient `orange-small` and `orange-base` models.\n\nThe models are open source on Hugging Face, with `pulpie-orange-small` recommended for its optimal balance of quality, speed, and cost, making high-quality web extraction at scale previously impossible, now accessible for LLM development.",
+    "chinese_title": "HN 展示：普尔佩——网络清理模型",
+    "chinese_summary": "由Feyn Labs开发的Pulpie推出了一系列帕累托最优模型，用于从HTML页面中提取主要内容，以二十分之一的成本和显著更高的速度提供接近最先进（SOTA）的质量。这一创新解决了对干净网络数据的关键需求，因为样板内容通常占HTML页面的70%，阻碍了语言模型的预训练和推理质量。\n\nPulpie高效的关键在于其编码器架构，该架构在一个前向传播中将每个HTML块标记为内容或样板。这种设计使其受计算限制而非内存带宽限制，这与Dripper等基于解码器的提取器不同。\n\n最小的模型`pulpie-orange-small`（2.1亿参数）在WebMainBench上获得了0.862的ROUGE-5 F1分数，与Dripper的0.864 F1分数非常接近，尽管其大小仅为Dripper（6亿参数）的三分之一。性能基准令人瞩目：在NVIDIA L4 GPU上，`pulpie-orange-small`每秒处理13.7页，比Dripper每秒0.68页的速度快20倍。这意味着使用Pulpie清理十亿页只需7,900美元，而使用Dripper则需159,000美元。\n\nPulpie的训练涉及创建一个新颖的14,959页块级标记数据集，使用DeepSeek V3.2和Dripper进行交叉验证。然后，一个21亿参数的教师模型（EuroBERT）被微调并蒸馏，成为更小、更高效的`orange-small`和`orange-base`模型。\n\n这些模型已在Hugging Face上开源，其中`pulpie-orange-small`因其在质量、速度和成本之间的最佳平衡而被推荐，使大规模高质量网络提取——此前不可能实现——现在可用于LLM开发。"
   },
   {
-    "id": "48775748",
-    "title": "Give Smart People the Tools to Do Smart Things",
-    "url": "https://superuserdone.com/posts/2026-07-03-give-smart-people-the-tools/",
-    "summary": "The article \"Give Smart People the Tools to Do Smart Things\" critically examines the pervasive AI narrative, branding it as marketing hype. It argues that claims of AI replacing industries, curing diseases, or eliminating programmers are designed to present AI as superior to humans, label experts as \"luddites,\" and push costly subscriptions.\n\nThe author contends that AI companies reduce \"work\" to visible \"artifacts,\" neglecting the vital human understanding, design, and decision-making inherent in the process. Drawing parallels to tools like compilers, spreadsheets, and CAD systems, the article asserts these technologies augmented experts' capabilities, making them faster and more effective, but never replaced their core knowledge or judgment. A programmer understands software; an accountant identifies crucial calculations; an engineer makes strategic decisions—tasks AI, as currently framed, cannot replicate. The \"cyberweapon\" marketing around Anthropic's Mythos, for example, devalues genuine security research.\n\nThis hype, the article suggests, stems from AI companies' need to capitalize on investor appetite for \"the future\" and secure capital and customers before demands for present-day revenue and margins override speculative promises.\n\nThe author envisions an AI future where technology complements human experts rather than threatening them. Citing game engines like Unity and Unreal as empowering tools for creators, the article advocates for AI that enhances expert capabilities—such as advanced diagnostic tools for doctors—making them dramatically more effective. The ultimate request to AI executives is to develop tools that empower smart people to do smart things, rather than promoting fear of human replacement.",
-    "chinese_title": "赋能智者，成就智慧之举",
-    "chinese_summary": "文章《给聪明人做聪明事的工具》批判性地审视了盛行的AI叙事，并将其定性为营销炒作。文章认为，AI取代行业、治愈疾病或淘汰程序员的说法，旨在将AI描绘成凌驾于人类之上，将专家贴上“勒德分子”的标签，并推动高价订阅。\n\n作者认为，AI公司将“工作”简化为可见的“产物”，却忽视了过程中固有的关键人类理解、设计和决策。文章将AI比作编译器、电子表格和CAD系统等工具，强调这些技术增强了专家的能力，使他们更快、更有效，但从未取代其核心知识或判断力。程序员理解软件；会计师识别关键计算；工程师做出战略决策——这些任务在目前AI的设定下无法复制。例如，围绕Anthropic的Mythos进行的“网络武器”营销，贬低了真正的安全研究。\n\n文章指出，这种炒作源于AI公司需要利用投资者对“未来”的渴望，在对当前收入和利润的要求超越投机性承诺之前，获取资本和客户。\n\n作者设想的AI未来是技术补充人类专家，而不是威胁他们。文章引用Unity和Unreal等游戏引擎作为创作者的赋能工具，倡导AI应增强专家能力——例如为医生提供先进的诊断工具——从而大幅提高其效率。对AI高管的最终请求是，开发能够赋能聪明人做聪明事的工具，而不是宣扬取代人类的恐惧。"
+    "id": "48806073",
+    "title": "1k Words: A Writing Contest",
+    "url": "https://writingclub.world/1picture1000words",
+    "summary": "\"1k Words: A Writing Contest\" challenges participants to write exactly 1,000 words inspired by a specific, unrevealed picture. The contest is open to any genre—be it creative nonfiction, sci-fi, a joke, or something entirely different—as long as the writing connects to the provided image.\n\nThe deadline for submissions is August 31st, 2026. The writer deemed to have the \"best writing\" will win a prize of $1,000.\n\nThe contest is organized by Quarter Mile, a project by Jordan and Carter, who have previously hosted contests like \"DEAR ALIENS\" and \"The Next Tiramisu.\" Those with questions or doubts can contact them via email. The text also mentions an option for those who wish to follow the results without participating.",
+    "chinese_title": "千字：征文比赛",
+    "chinese_summary": "“千字：写作比赛”挑战参赛者，要求他们以一张特定但尚未公开的图片为灵感，撰写恰好1000字的作品。比赛不限文体，无论是创意非虚构、科幻小说、一个笑话，还是其他任何形式的作品，只要与提供的图片相关即可。\n\n提交截止日期是2026年8月31日。作品被评为“最佳”的作者将赢得1000美元的奖金。\n\n本次比赛由Jordan和Carter的项目Quarter Mile组织，他们此前曾举办过“DEAR ALIENS”和“The Next Tiramisu”等比赛。有任何疑问者可通过电子邮件联系他们。文中还提到，对于那些不参赛但希望关注结果的人，也提供了相关选项。"
   },
   {
-    "id": "48775499",
-    "title": "Instead of banning AI, I made a classroom contract with my students",
-    "url": "https://www.science.org/content/article/instead-banning-ai-i-made-classroom-contract-my-students",
-    "summary": "Nicole Schrad, a high school English teacher, advocates against banning AI tools like ChatGPT, arguing it's an inevitable technology that students must learn to use responsibly. Instead of prohibiting it, she collaborated with her students to create a \"classroom contract\" for AI usage.\n\nThrough a multi-day process, students discussed and voted on rules for integrating AI into their academic work. Key principles of their contract include absolute transparency, requiring students to disclose all AI use; maintaining authenticity, ensuring AI doesn't generate entire drafts or mimic their unique voice; and critical evaluation, teaching students to identify AI's limitations, biases, and inaccuracies.\n\nThe contract positions AI as a supplementary tool for brainstorming, research assistance, or overcoming writer's block, not a substitute for original thought. This approach empowers students, fostering essential skills in digital literacy, ethical reasoning, and critical thinking, which are vital for future academic and professional success. Schrad's method prioritizes teaching students to harness AI responsibly to enhance their learning, rather than denying them access to a transformative technology.",
-    "chinese_title": "我没有禁止AI，而是和学生们制定了课堂公约。",
-    "chinese_summary": "高中英语老师Nicole Schrad反对禁止ChatGPT等AI工具，认为它是一种不可避免的技术，学生必须学会负责任地使用。她没有禁止AI，而是与学生合作制定了一份AI使用“课堂契约”。\n\n经过多天的讨论，学生们就如何将AI整合到他们的学习工作中进行了讨论和投票，制定了规则。他们契约的关键原则包括：绝对透明，要求学生披露所有AI使用；保持原创性，确保AI不会生成完整的草稿或模仿他们独特的文风；以及批判性评估，教导学生识别AI的局限性、偏见和不准确之处。\n\n该契约将AI定位为头脑风暴、研究辅助或克服写作障碍的辅助工具，而不是原创思维的替代品。这种方法赋予学生权力，培养了他们在数字素养、伦理推理和批判性思维方面的基本技能，这些技能对未来的学业和职业成功至关重要。Schrad的方法优先教导学生负责任地利用AI来提升学习，而不是剥夺他们接触这项变革性技术的机会。"
-  },
-  {
-    "id": "48775949",
-    "title": "Best Simple System for Now (2025)",
-    "url": "https://dannorth.net/blog/best-simple-system-for-now/",
+    "id": "48804626",
+    "title": "UEFA slams FIFA's 'unprecedented, unjustifiable' Balogun decision",
+    "url": "https://www.reuters.com/sports/soccer/uefa-slams-fifas-unprecedented-incomprehensible-unjustifiable-balogun-decision-2026-07-06/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Best Simple System for Now (2025)",
+    "chinese_title": "欧足联抨击国际足联“前所未有、毫无道理”的巴洛贡决定",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48780996",
-    "title": "The circuit that lets your brain think and see",
-    "url": "https://www.engineering.columbia.edu/about/news/circuit-lets-your-brain-think-and-see",
+    "id": "48791708",
+    "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+    "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The circuit that lets your brain think and see",
+    "chinese_title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48766598",
-    "title": "Lightning Memory-Mapped Database Manager (LMDB) 1.0",
-    "url": "http://www.lmdb.tech/doc/",
+    "id": "48808663",
+    "title": "Linux on the Atari Jaguar. No, really.",
+    "url": "https://cakehonolulu.github.io/linux-for-jaguar/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Lightning Memory-Mapped Database Manager (LMDB) 1.0",
+    "chinese_title": "Linux on the Atari Jaguar. No, really.",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48770477",
-    "title": "Faster embeddings: how we rebuilt the ONNX path in Manticore",
-    "url": "https://manticoresearch.com/blog/onnx-embeddings-speedup/",
+    "id": "48801059",
+    "title": "Android is almost dead – OSnews",
+    "url": "https://www.osnews.com/story/145415/android-is-almost-dead/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Faster embeddings: how we rebuilt the ONNX path in Manticore",
+    "chinese_title": "Android is almost dead – OSnews",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48777257",
-    "title": "AI saves about 3% of your hours, and almost none of it reaches the money",
-    "url": "https://okaneland.com/study/ai-productivity-roi-at-work/",
+    "id": "48793073",
+    "title": "Pi squared is nearly 10",
+    "url": "https://mihai.page/pi-square-is-10/",
     "summary": "生成摘要时出错",
-    "chinese_title": "AI saves about 3% of your hours, and almost none of it reaches the money",
+    "chinese_title": "Pi squared is nearly 10",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48772717",
-    "title": "Commodore 64 Basic for PostgreSQL",
-    "url": "https://thombrown.blogspot.com/2026/07/load-plcbmbasic81-commodore-64-basic.html",
+    "id": "48804278",
+    "title": "'There Is No Going Back': The Inside Story of Europe's Rupture with America",
+    "url": "https://www.wsj.com/world/europe/european-rupture-with-america-e3a9bb3c",
     "summary": "生成摘要时出错",
-    "chinese_title": "Commodore 64 Basic for PostgreSQL",
+    "chinese_title": "'There Is No Going Back': The Inside Story of Europe's Rupture with America",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48787329",
-    "title": "Verizon is About to Break our Watches",
-    "url": "https://www.jefftk.com/p/verizon-is-about-to-break-our-watches",
+    "id": "48795939",
+    "title": "Falling fertility on the left as key driver of US birth decline",
+    "url": "https://www.nature.com/articles/s41598-026-57582-3",
     "summary": "生成摘要时出错",
-    "chinese_title": "Verizon is About to Break our Watches",
+    "chinese_title": "Falling fertility on the left as key driver of US birth decline",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48776892",
-    "title": "Rust Coreutils cp Ended Up Breaking Ubuntu Image Builds with Incompatibility",
-    "url": "https://www.phoronix.com/news/Rust-Coreutils-cp-Ubuntu-Images",
+    "id": "48805985",
+    "title": "Electric anti-aircraft interceptor drone breaks world air speed record at 434mph",
+    "url": "https://www.tomshardware.com/tech-industry/drones/electric-drone-breaks-world-air-speed-record-at-434-mph-designed-for-anti-aircraft-interceptor-roles-german-firm-convincingly-smashed-the-official-409-mph-record-hopes-to-get-stamp-of-approval-from-guinness-soon",
     "summary": "生成摘要时出错",
-    "chinese_title": "Rust Coreutils cp Ended Up Breaking Ubuntu Image Builds with Incompatibility",
+    "chinese_title": "Electric anti-aircraft interceptor drone breaks world air speed record at 434mph",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48773871",
-    "title": "Open Source Touhou Clone",
-    "url": "https://taisei-project.org/",
+    "id": "48797656",
+    "title": "Show HN: Osint tool that finds exposed files on domains",
+    "url": "https://search.cerast-intelligence.com/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Open Source Touhou Clone",
+    "chinese_title": "Show HN: Osint tool that finds exposed files on domains",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48772363",
-    "title": "'guix substitute' and 'guix pull' Vulnerabilities",
-    "url": "https://guix.gnu.org/en/blog/2026/guix-substitute-pull-vulnerabilities/",
+    "id": "48794788",
+    "title": "Why DMARC's new \"NP\" tag can fail with DNSSEC",
+    "url": "https://dmarcwise.io/blog/dmarc-np-incompatibility-with-dnssec",
     "summary": "生成摘要时出错",
-    "chinese_title": "'guix substitute' and 'guix pull' Vulnerabilities",
+    "chinese_title": "Why DMARC's new \"NP\" tag can fail with DNSSEC",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48779352",
-    "title": "Kagi Changelog (July 2): Heads, tails, and an AI toggle",
-    "url": "https://kagi.com/changelog#10959",
+    "id": "48797771",
+    "title": "Dependencies should be fetched directly from VCS",
+    "url": "https://www.arp242.net/deps-vcs.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Kagi Changelog (July 2): Heads, tails, and an AI toggle",
+    "chinese_title": "Dependencies should be fetched directly from VCS",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48774068",
-    "title": "A Road to Common Lisp (2018)",
-    "url": "https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/",
+    "id": "48806296",
+    "title": "The AI Superforecasters Are Here",
+    "url": "https://www.astralcodexten.com/p/the-ai-superforecasters-are-here",
     "summary": "生成摘要时出错",
-    "chinese_title": "A Road to Common Lisp (2018)",
+    "chinese_title": "The AI Superforecasters Are Here",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48780812",
-    "title": "GitFut – Your GitHub stats turned into a World-Cup-style player card",
-    "url": "https://gitfut.com",
+    "id": "48799216",
+    "title": "Egg companies made $1.22B in profit off $6 carton",
+    "url": "https://fortune.com/2026/07/02/egg-price-fixing-crisis-cover-cash-and-eggs/",
     "summary": "生成摘要时出错",
-    "chinese_title": "GitFut – Your GitHub stats turned into a World-Cup-style player card",
+    "chinese_title": "Egg companies made $1.22B in profit off $6 carton",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48774429",
-    "title": "Gemini Code Assist will be shut down on July 17",
-    "url": "https://docs.cloud.google.com/gemini/docs/code-review/review-repo-code",
+    "id": "48791799",
+    "title": "Is The Economist Always Wrong?",
+    "url": "https://economist.com/interactive/finance-and-economics/2026/07/02/is-the-economist-always-wrong",
     "summary": "生成摘要时出错",
-    "chinese_title": "Gemini Code Assist will be shut down on July 17",
+    "chinese_title": "Is The Economist Always Wrong?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48786868",
-    "title": "Finland's last analogue landline phones go silent after 150 years",
-    "url": "https://www.euronews.com/next/2026/06/30/finlands-last-analogue-landline-phones-go-silent-after-150-years",
+    "id": "48807908",
+    "title": "Januscape: Guest-to-Host Escape in KVM/x86 [CVE-2026-53359]",
+    "url": "https://github.com/V4bel/Januscape",
     "summary": "生成摘要时出错",
-    "chinese_title": "Finland's last analogue landline phones go silent after 150 years",
+    "chinese_title": "Januscape: Guest-to-Host Escape in KVM/x86 [CVE-2026-53359]",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48777144",
-    "title": "Show HN: Mcpsnoop – Wireshark for MCP (transparent proxy and live TUI)",
-    "url": "https://github.com/kerlenton/mcpsnoop",
+    "id": "48798330",
+    "title": "New Microsoft 365 pricing live, some products up by 42% due to AI",
+    "url": "https://www.windowslatest.com/2026/07/05/microsoft-365-just-got-a-price-hike-over-continuous-innovation-but-copilot-is-the-ai-tax-on-businesses/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Mcpsnoop – Wireshark for MCP (transparent proxy and live TUI)",
+    "chinese_title": "New Microsoft 365 pricing live, some products up by 42% due to AI",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48773652",
-    "title": "Gun Mistakes in Fiction Writing: Handgun Edition",
-    "url": "https://www.swiftsilentdeadly.com/blog/gun-mistakes-in-fiction-writing-handgun-edition",
+    "id": "48809208",
+    "title": "What does Jeff Bezos think is going to happen?",
+    "url": "https://reprog.wordpress.com/2026/07/05/what-does-jeff-bezos-think-is-going-to-happen/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Gun Mistakes in Fiction Writing: Handgun Edition",
+    "chinese_title": "What does Jeff Bezos think is going to happen?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48785840",
-    "title": "Windows CE Dreamcast Community Edition (wince-dc)",
-    "url": "https://github.com/maximqaxd/wince-dc",
+    "id": "48802971",
+    "title": "How the U.S. Engineered Its Sovereignty",
+    "url": "https://spectrum.ieee.org/us-engineered-sovereignty",
     "summary": "生成摘要时出错",
-    "chinese_title": "Windows CE Dreamcast Community Edition (wince-dc)",
+    "chinese_title": "How the U.S. Engineered Its Sovereignty",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48768445",
-    "title": "The Intercept lost control of its Signal-based tip line for months",
-    "url": "https://twitter.com/ryangrim/status/2072761908231585845",
+    "id": "48790036",
+    "title": "Reflections on the Guillotine (1957)",
+    "url": "https://theanarchistlibrary.org/library/albert-camus-reflections-on-the-guillotine",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Intercept lost control of its Signal-based tip line for months",
+    "chinese_title": "Reflections on the Guillotine (1957)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48781433",
-    "title": "What does privatization of the US Postal Service mean?",
-    "url": "https://phenomenalworld.org/analysis/unstitching-america/",
+    "id": "48805652",
+    "title": "Multilingual experience linked to delayed aging",
+    "url": "https://fens2026.abstractserver.com/program/#/details/presentations/5474",
     "summary": "生成摘要时出错",
-    "chinese_title": "What does privatization of the US Postal Service mean?",
+    "chinese_title": "Multilingual experience linked to delayed aging",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48774246",
-    "title": "AI Data Centers Use More Water Than Most Tech Giants Report",
-    "url": "https://www.wsj.com/tech/ai/ai-data-centers-water-use-901e2902",
+    "id": "48804049",
+    "title": "Bryan Johnson: I have an autoimmune disease. My stomach is eating itself",
+    "url": "https://twitter.com/bryan_johnson/status/2072069730517860385",
     "summary": "生成摘要时出错",
-    "chinese_title": "AI Data Centers Use More Water Than Most Tech Giants Report",
+    "chinese_title": "Bryan Johnson: I have an autoimmune disease. My stomach is eating itself",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48787725",
-    "title": "As downtown Seattle offices empty, city facing years of 'zombie' towers",
-    "url": "https://www.seattletimes.com/business/local-business/as-downtown-seattle-offices-empty-city-facing-years-of-zombie-towers/",
+    "id": "48803338",
+    "title": "\"Software Engineering\" Is Not Engineering (2005)",
+    "url": "https://web.archive.org/web/20050615235108/http://www.geocities.com/tablizer/science.htm",
     "summary": "生成摘要时出错",
-    "chinese_title": "As downtown Seattle offices empty, city facing years of 'zombie' towers",
+    "chinese_title": "\"Software Engineering\" Is Not Engineering (2005)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48767834",
-    "title": "Simple, beautiful Emacs modeline: modusregel",
-    "url": "https://codeberg.org/jjba23/modusregel",
+    "id": "48801488",
+    "title": "Generate parametric, manufacturable 3D models in seconds",
+    "url": "https://kyrall.com/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Simple, beautiful Emacs modeline: modusregel",
+    "chinese_title": "Generate parametric, manufacturable 3D models in seconds",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48782890",
-    "title": "2026 Unslop AI-Written Fiction Contest Results",
-    "url": "https://www.hyperstitionai.com/unslop-results",
+    "id": "48799026",
+    "title": "Connections in Math: the two kinds of random",
+    "url": "https://stillthinking.net/posts/connections-in-math-two-kinds-of-random/",
     "summary": "生成摘要时出错",
-    "chinese_title": "2026 Unslop AI-Written Fiction Contest Results",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48775909",
-    "title": "It Still Can't Do My Job: Four Years of Moving Goalposts (2022–2026)",
-    "url": "https://publicznyprofil.github.io/ai_cant_do_your_work/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "It Still Can't Do My Job: Four Years of Moving Goalposts (2022–2026)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48784759",
-    "title": "The Common Lisp Cookbook – LispWorks Review",
-    "url": "https://lispcookbook.github.io/cl-cookbook/lispworks.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Common Lisp Cookbook – LispWorks Review",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48774368",
-    "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
-    "url": "https://arxiv.org/abs/2607.02512",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48767058",
-    "title": "Zuckerberg says AI agent development going slower than expected",
-    "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Zuckerberg says AI agent development going slower than expected",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48780352",
-    "title": "Goodbye, Forever, Probably",
-    "url": "https://whitep4nth3r.com/blog/goodbye-forever-probably/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Goodbye, Forever, Probably",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48773580",
-    "title": "Ed Zitron on CNBC: GenAI Doesn't Work, and Big Tech Is Out of Hypergrowth Ideas",
-    "url": "https://www.youtube.com/watch?v=TtmPccUTDP8",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ed Zitron on CNBC: GenAI Doesn't Work, and Big Tech Is Out of Hypergrowth Ideas",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48766297",
-    "title": "Wireless LAN SD",
-    "url": "https://www.sdcard.org/developers/sd-standard-overview/sdio-isdio/wireless-lan-sd/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Wireless LAN SD",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48786713",
-    "title": "Rob Pike – 'Concurrency Is Not Parallelism' [video] (2012)",
-    "url": "https://vimeo.com/49718712",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Rob Pike – 'Concurrency Is Not Parallelism' [video] (2012)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48785478",
-    "title": "How working memory could give rise to consciousness",
-    "url": "https://www.scientificamerican.com/article/how-working-memory-could-give-rise-to-consciousness/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How working memory could give rise to consciousness",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48785077",
-    "title": "The Fediverse Is Not the Way Forward",
-    "url": "https://trialandfailure.net/the-fediverse-is-not-the-way-forward/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Fediverse Is Not the Way Forward",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48775800",
-    "title": "AI coding is addictive. Engineers are paying the price",
-    "url": "https://leaddev.com/ai/ai-coding-is-addictive-engineers-are-paying-the-price",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI coding is addictive. Engineers are paying the price",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48767211",
-    "title": "Clojure 1.13 adds support for checked keys",
-    "url": "https://clojure.org/news/2026/07/02/clojure-1-13-alpha1",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Clojure 1.13 adds support for checked keys",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48782872",
-    "title": "Magit 4.6 Released",
-    "url": "https://emacsair.me/2026/07/01/magit-4.6/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Magit 4.6 Released",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48768374",
-    "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
-    "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48780826",
-    "title": "Dispersion loss counteracts embedding condensation in small language models",
-    "url": "https://chenliu-1996.github.io/projects/LM-Dispersion/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Dispersion loss counteracts embedding condensation in small language models",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48769696",
-    "title": "AI is 'not smart' so what's next in artificial intelligence?",
-    "url": "https://www.bbc.com/news/articles/cj6gr0xkyr3o",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI is 'not smart' so what's next in artificial intelligence?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48779415",
-    "title": "Pet projects are getting too big to pet",
-    "url": "https://www.nnehdi.me/p/pet-projects-are-getting-too-big",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Pet projects are getting too big to pet",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48784703",
-    "title": "Olive – Lisp VSCode Extension (Alternative to Alive)",
-    "url": "https://github.com/kchanqvq/olive",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Olive – Lisp VSCode Extension (Alternative to Alive)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48786880",
-    "title": "Plein Air",
-    "url": "https://art.joonas.wtf/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Plein Air",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48785459",
-    "title": "A martian rock has lots of carbon on it, and it's not clear why",
-    "url": "https://arstechnica.com/science/2026/07/a-martian-rock-has-lots-of-carbon-on-it-and-its-not-clear-why/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A martian rock has lots of carbon on it, and it's not clear why",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48770225",
-    "title": "California votes to ruin 3D printing right after voting to keep killing games [video]",
-    "url": "https://www.youtube.com/watch?v=_GIigWnNRVg",
-    "summary": "生成摘要时出错",
-    "chinese_title": "California votes to ruin 3D printing right after voting to keep killing games [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48766124",
-    "title": "A New Catalog of Stellar Rotation Periods for over a Million Stars",
-    "url": "https://aasnova.org/2026/07/01/a-new-catalog-of-stellar-rotation-periods-for-over-a-million-stars/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A New Catalog of Stellar Rotation Periods for over a Million Stars",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48784662",
-    "title": "The Reports of Jim Carrey's Death Are a Failure Mode",
-    "url": "https://tane.dev/2026/07/the-reports-of-jim-carreys-death-are-a-failure-mode/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Reports of Jim Carrey's Death Are a Failure Mode",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48782034",
-    "title": "This Month in Ladybird: June 2026",
-    "url": "https://ladybird.org/newsletter/2026-06-30/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "This Month in Ladybird: June 2026",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48773907",
-    "title": "Amazon has enough satellites to launch its Starlink competitor",
-    "url": "https://www.theverge.com/science/960563/amazon-leo-service-tipping-point",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Amazon has enough satellites to launch its Starlink competitor",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48788283",
-    "title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
-    "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48787201",
-    "title": "BareMetal RAM Dumper – Bare-metal x86 tool for Cold Boot Attack experiments",
-    "url": "https://github.com/pIat0n/BareMetal-RAM-Dumper",
-    "summary": "生成摘要时出错",
-    "chinese_title": "BareMetal RAM Dumper – Bare-metal x86 tool for Cold Boot Attack experiments",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "48787058",
-    "title": "Sick leave: Germany rising but not the worst in Europe",
-    "url": "https://www.dw.com/en/sick-leave-germany-rising-but-not-the-worst-in-europe/a-77815488",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Sick leave: Germany rising but not the worst in Europe",
+    "chinese_title": "Connections in Math: the two kinds of random",
     "chinese_summary": "生成摘要时出错"
   }
 ]
