@@ -1,242 +1,722 @@
 [
   {
-    "id": "48991139",
-    "title": "New US homeownership measure puts people first",
-    "url": "https://www.minneapolisfed.org/article/2026/new-homeownership-measure-puts-people-first",
-    "summary": "The article introduces a new measure for homeownership, the Homeowners-to-Population Ratio (HPOP), arguing that the traditional owner-occupancy rate (65%) is misleading as it tracks housing units, not individual owners. The HPOP, which measures the share of adults who own their homes, reveals a national homeownership rate of 53%. This alternative metric offers a more nuanced view for policy considerations, better reflecting economic well-being by including all adults, even those living in owner-occupied homes but not owning them (13.9% of adults).\n\nThe HPOP provides more accurate insights into homeownership across demographics. For instance, it shows a substantially lower homeownership rate for young adults under 35 (22%) compared to the owner-occupancy rate (37%), by accounting for co-residents and college dorm dwellers. It also highlights clearer trends for older adults.\n\nAt the state level, the HPOP reveals a stronger relationship between housing costs and homeownership. States with higher housing costs, like Hawaii, show a significantly larger difference between their owner-occupancy rate and HPOP (18.9 percentage points). Conversely, affordable states like North Dakota have a much smaller difference (3.9 percentage points), significantly altering their state-level rankings. The authors conclude that HPOP's person-centric approach offers a superior understanding of housing conditions, tying homeownership to individual economic realities and local housing affordability.",
-    "chinese_title": "美国新拥房措施以人为本",
-    "chinese_summary": "本文介绍了一种新的住房自有率衡量标准——房屋所有者人口比 (HPOP)，指出传统的房屋自住率 (65%) 具有误导性，因为它统计的是住房单元，而非个人所有者。HPOP 衡量的是拥有自己住房的成年人所占比例，数据显示全国住房自有率为 53%。这一替代指标为政策考量提供了更细致的视角，通过将所有成年人——甚至包括那些居住在自住房屋中但并非其所有者的人 (占成年人的 13.9%)——纳入考量，更好地反映了经济福祉。\n\nHPOP 为不同人口群体的住房自有率提供了更准确的洞察。例如，HPOP 通过将合住者和大学宿舍居住者考虑在内，显示 35 岁以下年轻人的住房自有率 (22%) 远低于房屋自住率 (37%)。它也为老年人住房自有率呈现了更清晰的趋势。\n\n在州层面，HPOP 揭示了住房成本与住房自有率之间更紧密的关系。住房成本较高的州，例如夏威夷，其房屋自住率和 HPOP 之间的差异显著更大 (18.9 个百分点)。反之，像北达科他州这样住房负担得起的州，差异则要小得多 (3.9 个百分点)，这显著改变了它们的州级排名。作者总结道，HPOP 以人为本的方法提供了对住房状况更深入的理解，将房屋所有权与个人经济现实和当地住房负担能力紧密联系起来。"
+    "id": "49033087",
+    "title": "Hetzner is working on LLM Inference",
+    "url": "https://sliplane.io/blog/hetzner-inference",
+    "summary": "Hetzner is exploring LLM inference with an experimental, OpenAI-compatible API called \"Hetzner Inference.\" Currently free and lacking an SLA, it features one model: Qwen/Qwen3.6-35B-A3B-FP8. This 35-billion-parameter Mixture-of-Experts model, with 3 billion active parameters, accepts text and images, boasts a 262K context window, and uses FP8 quantization. Early tests showed impressive speed, but these are not official benchmarks.\n\nThe author speculates Hetzner's motivation is to leverage its expertise in cost-efficient hardware and operations to offer a low-margin inference product, and improve GPU utilization by sharing capacity among users.\n\nA crucial factor is Hetzner's hardware. Its public GPU servers are workstation-grade (RTX 4000/PRO 6000), unsuitable for the massive models requiring high-end, multi-GPU clusters (e.g., B200/B300-class hardware). The author suggests that if Hetzner invests in such advanced GPU infrastructure, it could become a formidable competitor in the LLM inference market, given its existing data centers, network, and reputation for aggressive pricing. Without this hardware investment, it might remain a niche experiment. For now, the API is fast and free, making Hetzner's future hardware strategy the key aspect to monitor.",
+    "chinese_title": "赫兹纳正在进行大型语言模型推理",
+    "chinese_summary": "Hetzner 正在通过一个实验性的、与 OpenAI 兼容的 API（名为“Hetzner Inference”）探索 LLM 推理。目前该服务免费且没有 SLA（服务等级协议），它只提供一个模型：Qwen/Qwen3.6-35B-A3B-FP8。这个拥有 350 亿参数的 MoE（专家混合）模型，其中 30 亿参数处于激活状态，支持文本和图像输入，拥有 262K 的上下文窗口，并使用 FP8 量化。早期测试显示出惊人的速度，但这并非官方基准测试。\n\n作者推测，Hetzner 的动机是利用其在成本效益高的硬件和运营方面的专长，提供低利润的推理产品，并通过在用户之间共享容量来提高 GPU 利用率。\n\n一个关键因素是 Hetzner 的硬件。其公开的 GPU 服务器是工作站级别的（如 RTX 4000/PRO 6000），不适用于需要高端、多 GPU 集群（例如 B200/B300 级别硬件）的庞大模型。作者认为，如果 Hetzner 投资于这种先进的 GPU 基础设施，鉴于其现有的数据中心、网络和激进的定价策略声誉，它可能成为 LLM 推理市场中一个强大的竞争对手。如果没有这项硬件投资，它可能仍将是一个小众实验。目前，该 API 快速且免费，因此 Hetzner 未来的硬件策略将是需要关注的关键方面。"
   },
   {
-    "id": "49000600",
-    "title": "Ten Steps Towards Happiness (2015)",
-    "url": "http://hintjens.com/blog:99",
-    "summary": "Pieter Hintjens' \"Ten Steps Towards Happiness\" offers a practical guide to cultivating well-being through intentional actions and a shift in perspective, asserting that happiness doesn't require money or magic.\n\nThe ten steps advocate for:\n1.  **Investing in your senses:** Actively engaging with and appreciating sensory experiences like good food, music, and nature.\n2.  **Doing things you are bad at:** Embracing learning new skills to feel alive and build confidence.\n3.  **Enjoying other people:** Prioritizing social interaction, being kind, and mingling to foster connections.\n4.  **Being part of bigger things:** Contributing to communities or projects to feel valued and make a difference.\n5.  **Finishing your projects:** Achieving goals and documenting accomplishments to build hope and confidence.\n6.  **Getting rid of bad actors:** Removing toxic individuals who are sources of misery from your life.\n7.  **Grounding your emotions:** Recognizing and actively addressing negative feelings like anger or fear, replacing them with happiness.\n8.  **Revaluing your time:** Prioritizing meaningful activities and people over wasteful commitments, even if it means less income.\n9.  **Traveling light:** Minimizing material possessions, viewing them as burdens rather than sources of happiness.\n10. **Wanting nothing, accepting everything:** Cultivating a mindset free of desire or demand, embracing tolerance, and finding beauty in every moment to avoid disappointment.\n\nThis framework encourages an active, mindful approach to life, focusing on personal growth, meaningful connections, emotional intelligence, and detachment from material and negative influences.",
-    "chinese_title": "迈向幸福的十步 (2015)",
-    "chinese_summary": "彼得·欣琴斯（Pieter Hintjens）的《通往幸福的十个步骤》提供了一份实用的指南，通过有意的行动和观念的转变来培养幸福感，强调幸福不需要金钱或魔法。\n\n这十个步骤倡导：\n1.  **投资你的感官**：积极参与并欣赏美食、音乐和大自然等感官体验。\n2.  **做你不擅长的事**：勇于学习新技能，感受生命活力，建立自信。\n3.  **享受与他人相处**：优先进行社交互动，待人友善，与人交往以建立联系。\n4.  **成为更大集体的一部分**：为社区或项目做贡献，感受自身价值，有所作为。\n5.  **完成你的项目**：实现目标并记录成就，以建立希望和信心。\n6.  **摆脱有害之人**：将那些带来痛苦的负面人物从你的生活中剔除。\n7.  **稳固你的情绪**：识别并积极处理愤怒或恐惧等负面情绪，用幸福取而代之。\n8.  **重新评估你的时间**：优先考虑有意义的活动和人物，而非浪费时间的承诺，即使这意味着收入减少。\n9.  **轻装上阵**：尽量减少物质财产，将其视为负担而非幸福之源。\n10. **无欲无求，全盘接受**：培养一种没有欲望或要求的思维模式，拥抱宽容，在每一个瞬间发现美好，以避免失望。\n\n这一框架鼓励一种积极、专注的生活方式，专注于个人成长、有意义的人际关系、情商，并摆脱物质和负面影响。"
+    "id": "49047365",
+    "title": "Bitchat is now on Radicle",
+    "url": "https://radicle.network/nodes/rosa.radicle.network/rad%3Az2v9tRJz1oknFAqCSY5W5c76nVvm6",
+    "summary": "The title announces that \"Bitchat is now on Radicle.\" However, the provided content for the article does not elaborate on this announcement. Instead, the entire body of the article consists of a generic technical message stating that \"Javascript is disabled on your browser\" and instructing the user to \"Please enable Javascript to make use of this site.\"\n\nTherefore, based solely on the provided text, it is not possible to provide a summary of Bitchat's integration with Radicle, its features, or any related details. The content itself serves only as an alert for a browser setting.",
+    "chinese_title": "Bitchat 现已登陆 Radicle",
+    "chinese_summary": "标题宣布“Bitchat 现已登陆 Radicle”。然而，文章提供的正文内容并没有详细阐述这一公告。取而代之的是，整篇文章的正文内容由一条通用的技术信息组成，声明“您的浏览器已禁用 Javascript”，并指示用户“请启用 Javascript 以使用本网站”。\n\n因此，仅根据所提供的文本，无法提供 Bitchat 与 Radicle 的集成、其功能或任何相关细节的摘要。内容本身仅作为一个浏览器设置提醒。"
   },
   {
-    "id": "49008440",
-    "title": "Making",
-    "url": "https://beej.us/blog/data/ai-making/",
-    "summary": "In \"On Making,\" Brian \"Beej Jorgensen\" Hall, a Gen-X hacker and CS instructor, reflects on the profound personal fulfillment derived from creating things himself, contrasting it with the emptiness he feels from projects initiated by him but executed by others or AI.\n\nHall acknowledges the broader \"AI dev schism\" but focuses on the \"loss of making.\" He recounts examples of AI-generated content—a sci-fi excerpt, art, and code—and a contractor-built deck, stating he doesn't feel he \"made\" any of it. He attributes this discomfort to a distinction between personal creation and merely \"having something built,\" finding the latter devoid of pride.\n\nConversely, Hall feels immense satisfaction from a simple flash card system he coded entirely by hand, despite it taking 50 times longer than AI. He considers this genuine \"making.\" While recognizing the skill in AI prompting, he argues it's akin to \"asking someone else to make something,\" rather than direct creation.\n\nHe explores the \"gray area\" of tools like compilers: he feels he writes a C program even if the compiler translates it to machine code, and even if an AI acts as a compiler. The key difference, he suggests, lies between direct \"making\" and \"asking to be made,\" especially when interacting with AI in imprecise, human language, which feels more like a manager-report relationship than a tool-user one. This distinction is vital for his sense of accomplishment.",
-    "chinese_title": "制作",
-    "chinese_summary": "在布赖恩·“比吉·乔根森”·霍尔的《关于制作》一文中，这位X世代黑客兼计算机科学讲师反思了亲自创造事物所获得的深刻个人满足感，并将其与他发起但由他人或人工智能执行的项目所带来的空虚感进行了对比。\n\n霍尔承认更广泛的“人工智能开发分裂”，但着重探讨“制作的丧失”。他列举了人工智能生成的内容——一段科幻小说节选、艺术作品和代码——以及承包商建造的露台，称他觉得自己并没有“制作”其中任何一样东西。他将这种不适归因于“个人创作”与仅仅“让某物被建造出来”之间的区别，他认为后者缺乏自豪感。\n\n相反，霍尔从他完全亲手编写的一个简单闪存卡系统中获得了巨大的满足感，尽管这比使用人工智能耗时50倍。他认为这才是真正的“制作”。尽管他承认人工智能提示（prompting）的技巧，但他认为这更像是“要求别人制作某物”，而非直接创作。\n\n他探讨了编译器等工具的“灰色地带”：他觉得即使编译器将其翻译成机器代码，或者即使人工智能充当编译器，他仍然是在编写C程序。他认为，关键区别在于直接的“制作”与“请求被制作”，尤其是在使用不精确的人类语言与人工智能交互时，这更像是一种管理者与下属的关系，而非工具与用户之间的关系。这种区别对他而言，对其成就感至关重要。"
-  },
-  {
-    "id": "48999825",
-    "title": "It's a shame what's happened to radio",
-    "url": "https://blog.jimgrey.net/2026/07/21/its-a-shame-whats-happened-to-radio-3/",
-    "summary": "In an article updated from 2009, former radio DJ Jim Grey laments the drastic decline of radio, stating it's no longer enjoyable to listen to or work in. He reminisces about his nine-year career (1985-1994) at college station WMHD and professional stations WBOW and WZZQ in Terre Haute, where he cultivated his on-air skills and cherished connecting with listeners through requests and conversations.\n\nGrey attributes radio's current state to several factors. First, stations now narrowly target demographics favored by advertisers (e.g., \"thirtysomething moms\"), leading to repetitive formats and alienating broader audiences. Second, government deregulation has turned radio into a big business dominated by large corporations that prioritize cost-cutting over program quality. This has replaced live, local talent with satellite-delivered content and \"voicetracking,\" leaving many stations unstaffed and devoid of personality. Third, changes in ratings measurement, particularly the Portable People Meter, have led to shorter programming blocks and reduced human interaction, making stations feel like \"anonymous appliances.\"\n\nAs a result, Grey has largely abandoned commercial radio, preferring music on his iPhone and news from NPR. He notes that all the stations he once worked for are now off the air. Grey concludes that radio's self-inflicted irrelevance, by sacrificing local connection and quality for efficiency, is a profound shame.",
-    "chinese_title": "广播变成这样，真是可惜。",
-    "chinese_summary": "一位曾是电台DJ的吉姆·格雷（Jim Grey）在一篇2009年更新的文章中，哀叹广播电台的急剧衰落，称其无论是收听还是工作，都不再令人愉快。他回忆起自己在特雷霍特（Terre Haute）的大学电台WMHD以及专业电台WBOW和WZZQ九年（1985-1994）的职业生涯，在那里他磨练了主持技巧，并珍视通过听众点歌和互动来与他们建立联系的时光。\n\n格雷将广播电台的现状归因于几个因素。首先，电台现在狭隘地针对广告商青睐的人群（例如，“三十多岁的妈妈”），这导致节目形式重复且疏远了更广泛的听众。其次，政府放松管制使广播电台成为由大公司主导的庞大业务，这些公司优先考虑削减成本而非节目质量。这用卫星传输内容和“人声追踪”（voicetracking）取代了现场的本地人才，导致许多电台无人值守且缺乏个性。第三，收视率测量方式的改变，特别是便携式人员测量仪（Portable People Meter）的出现，导致节目时长缩短和人际互动减少，使得电台感觉就像是“匿名的电器”。\n\n因此，格雷已基本放弃了商业广播，转而使用iPhone听音乐，并从NPR获取新闻。他指出，他曾工作过的所有电台现在都已停播。格雷总结说，广播电台为了效率而牺牲本地联系和节目质量，这种自作自受的无关紧要化是一种深刻的耻辱。"
-  },
-  {
-    "id": "48984270",
-    "title": "I wrote an bash enumerator because I was sick of xargs",
-    "url": "https://numerlab.org/2025/07/20/bashumerate-enumerator/",
-    "summary": "I am unable to provide a summary of the article because the provided \"content\" consists solely of redirect messages: \"Redirecting… Click here if you are not redirected.\"\n\nTo summarize the article \"I wrote an bash enumerator because I was sick of xargs,\" I would need access to the actual text of the article itself, not just the redirection prompt. Please provide the full content of the article.",
-    "chinese_title": "我编写了一个bash枚举器，因为我受够了xargs。",
-    "chinese_summary": "我无法提供这篇文章的摘要，因为所提供的“内容”仅包含重定向消息：“正在重定向… 如果您未被重定向，请点击此处。”\n\n要总结题为“我写了一个bash枚举器，因为我厌倦了xargs”的文章，我需要访问文章本身的实际文本，而不仅仅是重定向提示。请提供文章的完整内容。"
-  },
-  {
-    "id": "49010167",
-    "title": "GigaToken: ~1000x faster Language model tokenization",
-    "url": "https://github.com/marcelroed/gigatoken/",
-    "summary": "Gigatoken is a new language model tokenizer designed to be up to 1000x faster than existing solutions like HuggingFace Tokenizers and Tiktoken, achieving tokenization speeds of gigabytes per second (GB/s). It offers a drop-in replacement functionality, allowing users to integrate it with minimal code changes for HuggingFace or Tiktoken models, though maximum performance is achieved using its native API.\n\nThe tool supports a broad range of CPU hardware (modern x86 and ARM) and commonly used tokenizers. Benchmarks across AMD EPYC, Apple M4 Max, and AMD Ryzen processors demonstrate Gigatoken's superior throughput, consistently showing hundreds to over a thousand times speed improvement over its competitors for various BPE-based tokenizers like GPT-2, Llama, Qwen, and others. For instance, on an AMD EPYC CPU, GPT-2 tokenization reached 24.53 GB/s, 989x faster than HF tokenizers.\n\nGigatoken achieves its speed through aggressive optimizations including SIMD for pretokenization, minimizing branching, heavily optimized caching of pretoken mappings, reducing Python interaction overhead, and avoiding inter-thread communication. While some tokenizers (especially SentencePiece-based ones) are less optimized currently, the project emphasizes accuracy, with outputs matching existing tokenizers in compatibility mode.\n\nInstallation is simple (`pip install gigatoken`), and it includes a CLI tool for benchmarking and validation. Known issues include Python ABI3 overhead, lack of file sinks, and incomplete optimization for SentencePiece and WordPiece. The codebase was primarily hand-crafted, with AI assistance in later stages for specific optimizations and API refinements.",
-    "chinese_title": "GigaToken：语言模型分词提速约1000倍",
-    "chinese_summary": "Gigatoken 是一款新型语言模型分词器，其设计目标是比现有解决方案（如 HuggingFace Tokenizers 和 Tiktoken）快达 1000 倍，可实现每秒吉字节（GB/s）的分词速度。它提供了即插即用的替换功能，用户只需进行最少的代码修改即可将其与 HuggingFace 或 Tiktoken 模型集成，尽管使用其原生 API 可以实现最高性能。\n\n该工具支持广泛的 CPU 硬件（现代 x86 和 ARM）和常用分词器。在 AMD EPYC、Apple M4 Max 和 AMD Ryzen 处理器上的基准测试表明，Gigatoken 具有卓越的吞吐量，在 GPT-2、Llama、Qwen 等各种基于 BPE 的分词器上，其速度始终比竞争对手提高数百到一千多倍。例如，在 AMD EPYC CPU 上，GPT-2 分词速度达到 24.53 GB/s，比 HF 分词器快 989 倍。\n\nGigatoken 通过激进的优化实现了其高速性能，包括利用 SIMD 进行预分词、最小化分支、高度优化的预分词映射缓存、减少 Python 交互开销以及避免线程间通信。尽管目前某些分词器（尤其是基于 SentencePiece 的分词器）的优化程度较低，但该项目强调准确性，在兼容模式下其输出与现有分词器匹配。\n\n安装十分简单（`pip install gigatoken`），并且它包含一个用于基准测试和验证的命令行工具。已知问题包括 Python ABI3 开销、缺少文件汇以及对 SentencePiece 和 WordPiece 的优化不完整。其代码库主要是手工编写的，后期在特定优化和 API 改进方面获得了 AI 辅助。"
-  },
-  {
-    "id": "49001472",
-    "title": "Never Enough",
-    "url": "https://dark.ronacher.eu/2026/7/21/never-enough/",
+    "id": "49045446",
+    "title": "MouthPad: A Tongue-Controlled Touchpad",
+    "url": "https://www.augmental.tech/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Never Enough",
+    "chinese_title": "MouthPad: A Tongue-Controlled Touchpad",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49010129",
-    "title": "Are AI Labs Pelicanmaxxing?",
-    "url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
-    "summary": "The article investigates whether AI labs are \"pelicanmaxxing\"—optimizing their models for Simon Willison's famous \"pelican riding a bicycle\" SVG generation benchmark.\n\nAuthor Dylan Castillo conducted an experiment generating 1,008 SVGs across seven frontier models (including GPT-5.6 Terra, Claude Sonnet 5, Gemini 3.5 Flash) using 48 animal-vehicle combinations, including the benchmark prompt. Each image was rendered, scored 1-5 by an LLM judge (GPT-5.6 Luna) for animal, vehicle, and coherence, and analyzed for scene elements.\n\nThe findings largely dismiss pelicanmaxxing:\n1.  **Visual Inspection:** No combination, including pelican-bicycle, visually stood out as consistently better for any model.\n2.  **Animal Ranking:** Pelicans ranked 6th out of 8 animals, behind cats, whales, and raccoons, suggesting they aren't uniquely prioritized.\n3.  **Vehicle Ranking:** Bicycles were second to last, performing poorly relative to simpler vehicles.\n4.  **Difficulty-Adjusted Analysis:** A statistical regression, accounting for inherent difficulty, found no significant \"boost\" for pelicans, bicycles, or the specific pelican-bicycle combination across models. One weak signal for bicycles in Gemini 3.5 Flash was deemed a likely false positive.\n5.  **Memorized Scenes:** While all 21 pelican-bicycle images faced right, this directionality is common for both pelicans and bicycles individually and not an outlier among other strong directional biases. No unique recurring scene elements suggested memorization.\n\nLimitations include using a single LLM judge and a limited budget. The author concludes there's \"little evidence that AI labs are pelicanmaxxing.\" Instead, a more plausible explanation for good SVG generation is general \"SVGmaxxing,\" where labs optimize overall SVG capabilities rather than specific benchmarks.",
-    "chinese_title": "AI实验室在烧钱扩张吗？",
-    "chinese_summary": "本文探讨了AI实验室是否正在进行“鹈鹕优化”（pelicanmaxxing）——即为西蒙·威利森著名的“骑自行车的鹈鹕”SVG生成基准优化其模型。\n\n作者迪伦·卡斯蒂略进行了一项实验，使用48种动物与交通工具的组合（包括基准提示词），在七个前沿模型（包括GPT-5.6 Terra、Claude Sonnet 5、Gemini 3.5 Flash）中生成了1,008张SVG图像。每张图像都被渲染，由一个LLM裁判（GPT-5.6 Luna）根据动物、交通工具和连贯性进行1-5分的评分，并分析了场景元素。\n\n研究结果很大程度上否定了“鹈鹕优化”现象：\n1.  **视觉检查：** 没有发现任何组合（包括鹈鹕-自行车）在视觉上对任何模型表现出持续的优越性。\n2.  **动物排名：** 鹈鹕在8种动物中排名第6，落后于猫、鲸鱼和浣熊，表明它们并未受到特殊优先关注。\n3.  **交通工具排名：** 自行车排名倒数第二，相对于更简单的交通工具表现不佳。\n4.  **难度调整分析：** 一项考虑了固有难度的统计回归分析显示，在所有模型中，鹈鹕、自行车或特定的鹈鹕-自行车组合都没有获得显著的“提升”。Gemini 3.5 Flash模型中关于自行车的微弱信号被认为是假阳性。\n5.  **记忆化场景：** 尽管所有21张鹈鹕-自行车图像都朝向右侧，但这种方向性对于单独的鹈鹕和自行车来说都很常见，并且在其他强烈的方向性偏好中并不突出。没有独特的重复场景元素表明存在记忆化。\n\n局限性包括使用单一的LLM裁判和有限的预算。作者总结道，“几乎没有证据表明AI实验室正在进行‘鹈鹕优化’。”相反，对良好SVG生成能力更合理的解释是普遍的“SVG优化”（SVGmaxxing），即实验室优化的是整体SVG生成能力，而非特定的基准。"
+    "id": "49038045",
+    "title": "Unitree As2-W",
+    "url": "https://www.unitree.com/As2-W/",
+    "summary": "The Unitree As2-W is a groundbreaking robotic platform designed to conquer any terrain. It combines the high-speed capability of wheels with the superior obstacle-overcoming power of legs. This hybrid design allows it to automatically adapt to challenging environments such as stairs, gravel, and steep slopes. It effortlessly traverses complex terrain, demonstrating the ability to climb obstacles up to 80 cm high and ascend slopes with an incline of up to 45°.",
+    "chinese_title": "宇树 As2-W",
+    "chinese_summary": "宇树As2-W是一款旨在征服任何地形的开创性机器人平台。它将轮式高速能力与腿部卓越的越障能力相结合。这种混合设计使其能够自动适应楼梯、碎石和陡坡等挑战性环境。它轻松穿越复杂地形，展现出攀爬高达80厘米障碍物和爬升倾角高达45°斜坡的能力。"
   },
   {
-    "id": "49002166",
-    "title": "Original Apollo 11 Guidance Computer source code for command and lunar modules",
-    "url": "https://github.com/chrislgarry/Apollo-11",
+    "id": "49036765",
+    "title": "Codeberg Divides",
+    "url": "https://lucumr.pocoo.org/2026/7/24/codeberg-divides/",
+    "summary": "Armin Ronacher discusses Codeberg's recent decision to exclude projects \"mostly\" written by generative AI. While acknowledging Codeberg's right as a democratic association, Ronacher argues that infrastructure platforms require predictability, dependability, and neutrality more than democracy, suggesting a democratic provider without a clear constitution can be worse than a corporation.\n\nHe criticizes the ambiguous wording of \"mostly,\" noting its unenforceability and the excessive policy delegation to moderators. Ronacher believes a clearer stance against LLM involvement or rules targeting autonomous repository spam would be preferable. He laments the deep division within the Open Source and Free Software communities over LLMs, recognizing valid concerns but stressing that these tools are becoming integral to software development. He urges the community to engage with this future, not just divide, highlighting LLMs' potential to reclaim power from corporations.\n\nRonacher desires strong competition for GitHub, particularly from European associations like Codeberg. However, he feels Codeberg's choice to be a smaller community with a strong political identity conflicts with its ambition to be a broad, dependable European alternative capable of hosting the \"software of tomorrow.\" He concludes that, despite Codeberg's right to make the decision, he believes it is not a good one.",
+    "chinese_title": "Codeberg 分裂",
+    "chinese_summary": "阿明·罗纳赫（Armin Ronacher）讨论了Codeberg最近决定排除“大部分”由生成式AI编写的项目。罗纳赫承认Codeberg作为民主协会的权利，但他认为基础设施平台相比民主更需要可预测性、可靠性和中立性，并提出一个没有明确章程的民主提供者可能比公司更糟糕。\n\n他批评“大部分”这一措辞模糊不清，指出其难以执行，并认为这过度地将政策制定权下放给了版主。罗纳赫认为，更明确地反对大语言模型（LLM）的参与，或者制定针对自动化仓库垃圾信息的规则，会是更好的选择。他哀叹开源和自由软件社区在LLM问题上存在严重分歧，他承认一些担忧是合理的，但强调这些工具正成为软件开发不可或缺的一部分。他敦促社区拥抱这个未来，而不是仅仅制造分裂，并强调LLM有潜力将权力从公司手中夺回。\n\n罗纳赫希望GitHub能有强劲的竞争对手，尤其是来自Codeberg这类欧洲协会。然而，他认为Codeberg选择成为一个具有强烈政治认同的小型社区，这与其成为一个能够承载“未来软件”的广泛、可靠的欧洲替代品的雄心相冲突。他总结道，尽管Codeberg有权做出此决定，但他认为这不是一个好的决定。"
+  },
+  {
+    "id": "49044492",
+    "title": "UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities",
+    "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
     "summary": "生成摘要时出错",
-    "chinese_title": "Original Apollo 11 Guidance Computer source code for command and lunar modules",
+    "chinese_title": "英国AISI/Caisi对Kimi K3网络能力的初步评估",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48984231",
-    "title": "The Power of Awareness: Overcoming Surveillance Capitalism",
-    "url": "https://www.scottrlarson.com/presentations/overcoming-surveillance-capitalism-with-awareness/",
+    "id": "49042528",
+    "title": "SpaceX Starship Flight 13 livestream [video]",
+    "url": "https://www.spacex.com/launches/starship-flight-13",
+    "summary": "The article refers to a livestream video of SpaceX's Starship Flight 13.",
+    "chinese_title": "SpaceX 星舰飞行13直播 [视频]",
+    "chinese_summary": "这篇文章提到了SpaceX星舰第13次飞行的直播视频。"
+  },
+  {
+    "id": "49042751",
+    "title": "Sperm Whales blow bubbles to achieve restful, vertical sleep",
+    "url": "https://news.st-andrews.ac.uk/archive/sperm-whales-blow-bubbles-to-achieve-restful-vertical-sleep/",
+    "summary": "New research from the Universities of St Andrews and Neuchâtel reveals how sperm whales achieve restful, vertical sleep just beneath the ocean surface: by blowing bubbles. Sperm whales are unique in their vertical resting posture, which protects them from surface waves without expending energy to dive deep.\n\nPublished in the *Journal of Experimental Biology*, the study explains that sperm whales are naturally positively buoyant due to spermaceti oil. To counteract this natural buoyancy and the expansion of lung gas while resting, they release gas bubbles. This precise regulation helps them achieve neutral buoyancy and remain submerged.\n\nResearchers used small suction-cup tags on sperm whales off the Norwegian coast to record sound and 3D movements. The tags detected distinct bubble sounds, and a simulation confirmed that bubble release effectively reduced positive buoyancy, allowing the whales to stay submerged while resting. The findings also suggest that whales start resting dives with less gas volume compared to deep foraging dives.\n\nProfessor Patrick Miller highlighted the fascinating ability of sperm whales to exquisitely control their buoyancy, making fine-scale adjustments even while asleep. The authors also hypothesize that this bubble-releasing behavior might be linked to the off-gassing of excess CO2 or N2 from tissues, potentially having implications for metabolic gas exchange.",
+    "chinese_title": "抹香鲸吹泡泡以达到安稳的垂直睡眠。",
+    "chinese_summary": "New research from the Universities of St Andrews and Neuchâtel reveals how sperm whales achieve restful, vertical sleep just beneath the ocean surface: by blowing bubbles. Sperm whales are unique in their vertical resting posture, which protects them from surface waves without expending energy to dive deep.\n\nPublished in the *Journal of Experimental Biology*, the study explains that sperm whales are naturally positively buoyant due to spermaceti oil. To counteract this natural buoyancy and the expansion of lung gas while resting, they release gas bubbles. This precise regulation helps them achieve neutral buoyancy and remain submerged.\n\nResearchers used small suction-cup tags on sperm whales off the Norwegian coast to record sound and 3D movements. The tags detected distinct bubble sounds, and a simulation confirmed that bubble release effectively reduced positive buoyancy, allowing the whales to stay submerged while resting. The findings also suggest that whales start resting dives with less gas volume compared to deep foraging dives.\n\nProfessor Patrick Miller highlighted the fascinating ability of sperm whales to exquisitely control their buoyancy, making fine-scale adjustments even while asleep. The authors also hypothesize that this bubble-releasing behavior might be linked to the off-gassing of excess CO2 or N2 from tissues, potentially having implications for metabolic gas exchange."
+  },
+  {
+    "id": "49035751",
+    "title": "Open Weights and American AI Leadership [pdf]",
+    "url": "https://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+    "summary": "I apologize, but I am unable to provide a summary for the provided content. The text you've given is raw PDF stream data (e.g., `%PDF-1.7`, `x��\\[�� ~ ����$�>�Z6`, `endstream`, `endobj`), which is not in a human-readable format. I cannot extract meaning or summarize content from this kind of raw file data.",
+    "chinese_title": "Open Weights and American AI Leadership [pdf]",
+    "chinese_summary": "我很抱歉，但我无法为所提供的内容提供摘要。您提供的文本是原始的PDF流数据（例如，`%PDF-1.7`，`x��\\[�� ~ ����$�>�Z6`，`endstream`，`endobj`），它不是人类可读的格式。我无法从这种原始文件数据中提取含义或总结内容。"
+  },
+  {
+    "id": "49046525",
+    "title": "The Fedora 45 Sausage Factory",
+    "url": "https://supakeen.com/weblog/the-fedora-45-sausage-factory/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Power of Awareness: Overcoming Surveillance Capitalism",
+    "chinese_title": "Fedora 45 香肠工厂",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49008642",
-    "title": "Does creatine make you smarter?",
-    "url": "https://dynomight.net/creatine/",
+    "id": "49034217",
+    "title": "The case for MUDs in modern times (2018)",
+    "url": "https://www.andrewzigler.com/feed/the-case-for-muds-in-modern-times",
     "summary": "生成摘要时出错",
-    "chinese_title": "Does creatine make you smarter?",
+    "chinese_title": "The case for MUDs in modern times (2018)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48996197",
-    "title": "AI makes programming differently difficult",
-    "url": "https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/",
+    "id": "49034342",
+    "title": "I Tried Building a Real App with AI. It Took a Year",
+    "url": "https://www.alexhyett.com/videos/tried-building-app-with-ai-it-took-a-year/",
+    "summary": "Alex Hyett chronicles his year-long endeavor to build a habit tracking app, HabitTed, using AI, driven by the inability to find an existing app that met his specific requirements (e.g., long lists, no cloud storage, gen-emojis, flexible goals, notes) and a reluctance to pay high subscription fees for alternatives like Grit.\n\nThough new to Swift, Hyett used AI (Cursor) and initially developed a functional app within just 6 hours, complete with core features and iCloud syncing. However, he soon discovered the AI-generated code was deeply flawed: messy, inefficient (e.g., 1000-line views, inconsistent styling), and full of bugs like a non-functional iCloud sync and performance issues. He felt he learned little during this initial phase.\n\nConsequently, Hyett spent many months manually refactoring the entire codebase, fixing critical bugs, optimizing performance, and adding missing features. He also encountered problems with the release of iOS 26, which AI couldn't help with due to its newness, forcing him to solve issues independently.\n\nAfter a year of development and extensive testing, he successfully launched HabitTed, now a maintainable app. While AI provided a kickstart, Hyett concludes that it \"gets you 80% there, but the last 20% will take you 80% of the time,\" especially if you don't understand the underlying code. He warns against over-reliance on AI, stating it hinders skill acquisition and raises concerns about the future of software development, potentially leading to a workforce losing core coding abilities or suffering burnout from constantly cleaning \"AI slop.\"",
+    "chinese_title": "I Tried Building a Real App with AI. It Took a Year",
+    "chinese_summary": "Alex Hyett chronicles his year-long endeavor to build a habit tracking app, HabitTed, using AI, driven by the inability to find an existing app that met his specific requirements (e.g., long lists, no cloud storage, gen-emojis, flexible goals, notes) and a reluctance to pay high subscription fees for alternatives like Grit.\n\nThough new to Swift, Hyett used AI (Cursor) and initially developed a functional app within just 6 hours, complete with core features and iCloud syncing. However, he soon discovered the AI-generated code was deeply flawed: messy, inefficient (e.g., 1000-line views, inconsistent styling), and full of bugs like a non-functional iCloud sync and performance issues. He felt he learned little during this initial phase.\n\nConsequently, Hyett spent many months manually refactoring the entire codebase, fixing critical bugs, optimizing performance, and adding missing features. He also encountered problems with the release of iOS 26, which AI couldn't help with due to its newness, forcing him to solve issues independently.\n\nAfter a year of development and extensive testing, he successfully launched HabitTed, now a maintainable app. While AI provided a kickstart, Hyett concludes that it \"gets you 80% there, but the last 20% will take you 80% of the time,\" especially if you don't understand the underlying code. He warns against over-reliance on AI, stating it hinders skill acquisition and raises concerns about the future of software development, potentially leading to a workforce losing core coding abilities or suffering burnout from constantly cleaning \"AI slop.\""
+  },
+  {
+    "id": "49029538",
+    "title": "The Visual 6502",
+    "url": "http://visual6502.org/JSSim/index.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "AI makes programming differently difficult",
+    "chinese_title": "The Visual 6502",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48993059",
-    "title": "Claude Is Not a Compiler",
-    "url": "https://blog.exe.dev/claude-is-not-a-compiler",
+    "id": "49039448",
+    "title": "I got into YC Startup School by hacking it",
+    "url": "https://obaid.wtf/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Claude Is Not a Compiler",
+    "chinese_title": "I got into YC Startup School by hacking it",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49008406",
-    "title": "Show HN: HN Hall of Fame – browse 3,100 legendary Hacker News links",
-    "url": "https://www.orangecrumbs.com/hall/",
+    "id": "49044874",
+    "title": "Extinct Media Museum Tokyo",
+    "url": "https://extinct-media-museum.blog.jp/otemachi/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: HN Hall of Fame – browse 3,100 legendary Hacker News links",
+    "chinese_title": "Extinct Media Museum Tokyo",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49006195",
-    "title": "Back to Kagi",
-    "url": "https://blog.melashri.net/micro/back-to-kagi/",
+    "id": "49038352",
+    "title": "JEP 541: Deprecate the macOS/x64 Port for Removal",
+    "url": "https://openjdk.org/jeps/541",
     "summary": "生成摘要时出错",
-    "chinese_title": "Back to Kagi",
+    "chinese_title": "JEP 541: Deprecate the macOS/x64 Port for Removal",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49005747",
-    "title": "So Reddit has decided that plain HTML is unsafe",
-    "url": "https://www.cole-k.com/2026/07/21/reddit/",
+    "id": "49037031",
+    "title": "The front end framework for correctness: built on Effect, architected like Elm",
+    "url": "https://foldkit.dev/",
     "summary": "生成摘要时出错",
-    "chinese_title": "So Reddit has decided that plain HTML is unsafe",
+    "chinese_title": "The front end framework for correctness: built on Effect, architected like Elm",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48995409",
-    "title": "Firefox Containers Preview",
-    "url": "https://blog.mozilla.org/en/firefox/firefox-containers-preview/",
+    "id": "49027052",
+    "title": "Mourning Dan Williams",
+    "url": "https://lwn.net/Articles/1084545/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Firefox Containers Preview",
+    "chinese_title": "Mourning Dan Williams",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49007610",
-    "title": "“We have information that Moonshot distilled Fable for the development of K3”",
-    "url": "https://twitter.com/mkratsios47/status/2079933645888880708",
+    "id": "49048681",
+    "title": "The Dark Night of Mathematics",
+    "url": "https://kirwinhampshire.substack.com/p/the-dark-night-of-mathematics",
     "summary": "生成摘要时出错",
-    "chinese_title": "“We have information that Moonshot distilled Fable for the development of K3”",
+    "chinese_title": "The Dark Night of Mathematics",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48993465",
-    "title": "Amid Increased Scrutiny, ICE Detention and Deportation Data Goes Dark",
-    "url": "https://www.themarshallproject.org/2026/07/15/ice-data-immigration-detention-transparency",
+    "id": "49032072",
+    "title": "AMD's Instinct MI455X: Aiming for the Sun",
+    "url": "https://chipsandcheese.com/p/amds-instinct-mi455x-aiming-for-the",
     "summary": "生成摘要时出错",
-    "chinese_title": "Amid Increased Scrutiny, ICE Detention and Deportation Data Goes Dark",
+    "chinese_title": "AMD's Instinct MI455X: Aiming for the Sun",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49005973",
-    "title": "Businesses with ugly AI menu redesigns",
-    "url": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
+    "id": "49042354",
+    "title": "AIs don't do what you want. This is bad",
+    "url": "https://rewardhacking.org",
     "summary": "生成摘要时出错",
-    "chinese_title": "Businesses with ugly AI menu redesigns",
+    "chinese_title": "AIs don't do what you want. This is bad",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49005329",
-    "title": "10 REM\"_(C2SLFF4",
-    "url": "https://beej.us/blog/data/mystery-comment/",
+    "id": "49048819",
+    "title": "Wind turbine is being used to produce zero-carbon \"green ammonia\" fertilizer",
+    "url": "https://energiesmedia.com/wind-turbine-stopped-electricity-wind-water-air/",
     "summary": "生成摘要时出错",
-    "chinese_title": "10 REM\"_(C2SLFF4",
+    "chinese_title": "Wind turbine is being used to produce zero-carbon \"green ammonia\" fertilizer",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49003386",
-    "title": "Codeberg bans vibe coded projects",
-    "url": "https://codeberg.org/Codeberg/org/pulls/1253#issuecomment-19820434",
+    "id": "49040989",
+    "title": "What if we made advertising illegal?",
+    "url": "https://simone.org/advertising/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Codeberg bans vibe coded projects",
+    "chinese_title": "What if we made advertising illegal?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48995796",
-    "title": "Apple Private Cloud Compute SoC 3 audit reports",
-    "url": "https://support.apple.com/guide/certifications/apple-private-cloud-compute-soc-3-audit-apc95a31b9d8/web",
+    "id": "49048212",
+    "title": "Engineering management after the cost of code collapsed",
+    "url": "https://karimjedda.com/engineering-management-after-cost-of-code-collapse/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Apple Private Cloud Compute SoC 3 audit reports",
+    "chinese_title": "Engineering management after the cost of code collapsed",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48990886",
-    "title": "Israeli spyware vans infiltrate American streets and your phones",
-    "url": "https://cybernews.com/privacy/us-police-israeli-spy-vans-falconet-cognyte/",
+    "id": "49030474",
+    "title": "Police removed prominent scientists from American Diabetes Association meeting",
+    "url": "https://www.the-scientist.com/police-removed-prominent-scientists-from-the-ada-meeting-researchers-respond-74607",
     "summary": "生成摘要时出错",
-    "chinese_title": "Israeli spyware vans infiltrate American streets and your phones",
+    "chinese_title": "Police removed prominent scientists from American Diabetes Association meeting",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48987846",
-    "title": "Running Doom on Our Custom CPU and Going Viral",
-    "url": "https://www.armaangomes.com/blogs/doom/",
+    "id": "49035314",
+    "title": "Oracle fires 21,000 employees to fund AI spending",
+    "url": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-903442",
     "summary": "生成摘要时出错",
-    "chinese_title": "Running Doom on Our Custom CPU and Going Viral",
+    "chinese_title": "Oracle fires 21,000 employees to fund AI spending",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48993637",
-    "title": "Apple Fixes Hide My Email Vulnerability After 404 Media Coverage",
-    "url": "https://www.404media.co/apple-fixes-hide-my-email-vulnerability-after-404-media-coverage/",
+    "id": "49038393",
+    "title": "Claude Opus 5",
+    "url": "https://www.anthropic.com/news/claude-opus-5",
     "summary": "生成摘要时出错",
-    "chinese_title": "Apple Fixes Hide My Email Vulnerability After 404 Media Coverage",
+    "chinese_title": "Claude Opus 5",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48998606",
-    "title": "Gemini last models: temperature, top_p, and top_k are deprecated and ignored",
-    "url": "https://ai.google.dev/gemini-api/docs/latest-model",
-    "summary": "Google has announced the General Availability of its latest Gemini models: **Gemini 3.6 Flash** and **Gemini 3.5 Flash-Lite**, encouraging adoption of the new Interactions API.\n\n**Gemini 3.6 Flash** excels in complex agent tasks, multimodal operations, and code generation, offering improved performance, reduced token usage, and a lower output token price compared to Gemini 3.5 Flash. It operates with a \"medium\" default thinking level.\n\n**Gemini 3.5 Flash-Lite** is the fastest and most cost-effective in the 3.5 series, designed for high-throughput tasks such as data parsing, document extraction, and structured JSON parsing. It provides enhanced reasoning and multimodal performance with a \"minimal\" default thinking level. Both models support a 1 million token context window, 64,000 output tokens, and \"Computer Use\" functionality.\n\nThe most critical **API changes** for these new models and all future Gemini versions are:\n1.  **Deprecated Sampling Parameters:** `temperature`, `top_p`, and `top_k` are **now deprecated and ignored**. Developers must remove these parameters from their requests, as they will cause HTTP 400 errors in future model versions. The recommended approach for controlling determinism is to use `system_instruction`.\n2.  **Pre-filled Model Turns Validation:** API requests can no longer end with a non-empty model role turn, which will result in a 400 error. Instead of pre-filling model responses, `system_instruction` or `structured_output` should be used to guide model behavior.\n\nMigration involves updating the model IDs, removing the deprecated sampling parameters, and adapting to the new turn validation rules.",
-    "chinese_title": "Gemini last models: temperature, top_p, and top_k are deprecated and ignored",
-    "chinese_summary": "Google has announced the General Availability of its latest Gemini models: **Gemini 3.6 Flash** and **Gemini 3.5 Flash-Lite**, encouraging adoption of the new Interactions API.\n\n**Gemini 3.6 Flash** excels in complex agent tasks, multimodal operations, and code generation, offering improved performance, reduced token usage, and a lower output token price compared to Gemini 3.5 Flash. It operates with a \"medium\" default thinking level.\n\n**Gemini 3.5 Flash-Lite** is the fastest and most cost-effective in the 3.5 series, designed for high-throughput tasks such as data parsing, document extraction, and structured JSON parsing. It provides enhanced reasoning and multimodal performance with a \"minimal\" default thinking level. Both models support a 1 million token context window, 64,000 output tokens, and \"Computer Use\" functionality.\n\nThe most critical **API changes** for these new models and all future Gemini versions are:\n1.  **Deprecated Sampling Parameters:** `temperature`, `top_p`, and `top_k` are **now deprecated and ignored**. Developers must remove these parameters from their requests, as they will cause HTTP 400 errors in future model versions. The recommended approach for controlling determinism is to use `system_instruction`.\n2.  **Pre-filled Model Turns Validation:** API requests can no longer end with a non-empty model role turn, which will result in a 400 error. Instead of pre-filling model responses, `system_instruction` or `structured_output` should be used to guide model behavior.\n\nMigration involves updating the model IDs, removing the deprecated sampling parameters, and adapting to the new turn validation rules."
-  },
-  {
-    "id": "48993488",
-    "title": "Oracle could face $7B collateral bill for Wisconsin data centre",
-    "url": "https://www.ft.com/content/b37030b6-bda8-4ba9-8e08-e6b88687b8f5",
+    "id": "49029133",
+    "title": "A taxonomy of omnicidal futures involving artificial intelligence (2025)",
+    "url": "https://arxiv.org/abs/2507.09369",
     "summary": "生成摘要时出错",
-    "chinese_title": "Oracle could face $7B collateral bill for Wisconsin data centre",
+    "chinese_title": "A taxonomy of omnicidal futures involving artificial intelligence (2025)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "48992315",
-    "title": "Why Are There No Empires in Age of Empires? (2019)",
-    "url": "https://acoup.blog/2019/11/22/collections-why-are-there-no-empires-in-age-of-empires/",
+    "id": "49031917",
+    "title": "Russia's businesses under strain from Ukraine's attacks on Wildberries",
+    "url": "https://www.bbc.com/news/articles/cvg9n2y61w6o",
     "summary": "生成摘要时出错",
-    "chinese_title": "Why Are There No Empires in Age of Empires? (2019)",
+    "chinese_title": "Russia's businesses under strain from Ukraine's attacks on Wildberries",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49007525",
-    "title": "Most Americans say \"not in my backyard\" to AI data centers",
-    "url": "https://www.redfin.com/news/ai-data-centers-opposition-education-benefit/",
+    "id": "49039395",
+    "title": "Gsxui – Shadcn-style components for Go",
+    "url": "https://ui.gsxhq.dev/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Most Americans say \"not in my backyard\" to AI data centers",
+    "chinese_title": "Gsxui – Shadcn-style components for Go",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49034219",
+    "title": "German battery maker Varta files insolvency applications",
+    "url": "https://www.reuters.com/business/german-battery-maker-varta-files-insolvency-applications-2026-07-24/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "German battery maker Varta files insolvency applications",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49032095",
+    "title": "The PImpl idiom and the C++26 std:indirect type",
+    "url": "https://mariusbancila.ro/blog/2026/07/23/the-pimpl-idiom-and-the-cpp26-stdindirect-type/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The PImpl idiom and the C++26 std:indirect type",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49030547",
+    "title": "The Corporate Creep of Plex: Why it may be time to move to Jellyfin",
+    "url": "https://reprodev.com/the-corporate-creep-of-plex-why-it-may-be-time-to-move-to-jellyfin-and-the-open-source-reality/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Corporate Creep of Plex: Why it may be time to move to Jellyfin",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49050152",
+    "title": "Tile's security is so bad it's a feature for stalkers",
+    "url": "https://blog.adafruit.com/2026/03/05/tiles-security-is-so-bad-its-a-feature-for-stalkers/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tile's security is so bad it's a feature for stalkers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49033916",
+    "title": "The IBM PC, Part 1: Arrival",
+    "url": "https://technicshistory.com/2026/07/24/the-ibm-pc-part-1-arrival/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The IBM PC, Part 1: Arrival",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49038059",
+    "title": "Proving a human wrote something",
+    "url": "https://gjtorikian.online/posts/proving-a-human-wrote-something/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Proving a human wrote something",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49038181",
+    "title": "The rise and fall of language diversity through the Holocene",
+    "url": "https://www.science.org/doi/10.1126/science.adx4343",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The rise and fall of language diversity through the Holocene",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49038481",
+    "title": "DuckPGQ – A DuckDB community extension for graph workloads",
+    "url": "https://duckpgq.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "DuckPGQ – A DuckDB community extension for graph workloads",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49050566",
+    "title": "Show HN: Bribes.fyi – Know before you go. New feature added",
+    "url": "https://bribes.fyi/before-you-go",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Bribes.fyi – Know before you go. New feature added",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49033412",
+    "title": "Game of Trees – Git-based version control from OpenBSD folks",
+    "url": "https://www.gameoftrees.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Game of Trees – Git-based version control from OpenBSD folks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49027985",
+    "title": "Stripe in talks to buy OpenRouter for ~10B",
+    "url": "https://www.wsj.com/tech/ai/stripe-in-talks-to-buy-buzzy-ai-model-marketplace-openrouter-decc6a74",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Stripe in talks to buy OpenRouter for ~10B",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49036816",
+    "title": "The Reddit Problem – How a Reddit Alternative Was Banned from RedditAlternatives",
+    "url": "https://rhyme.com/post/53oy222/the-reddit-problem-and-how-our-reddit-alternative-was-banned",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Reddit Problem – How a Reddit Alternative Was Banned from RedditAlternatives",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49033388",
+    "title": "How do we stop vibe coding?",
+    "url": "https://alexklos.ca/blog/how-do-we-stop-vibe-coding",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How do we stop vibe coding?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49038977",
+    "title": "The small, real, original web",
+    "url": "https://spacetimetech.wordpress.com/2026/07/19/the-small-real-original-web/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The small, real, original web",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49034468",
+    "title": "Why is programming so captivating, yet so agonizing?",
+    "url": "https://elsewhere.news/en/zhenfund/why-is-programming-so-captivating-yet-so-agonizing",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Why is programming so captivating, yet so agonizing?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49048996",
+    "title": "Politician reads AI prompt during assembly",
+    "url": "https://www.youtube.com/watch?v=wlYa8NV5k-U",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Politician reads AI prompt during assembly",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49048120",
+    "title": "Prosecutor Investigating U.S. Boat Strikes Was Murdered in Ecuador",
+    "url": "https://www.dropsitenews.com/p/prosecutor-investigating-ecuador-boat-strikes-murdered",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Prosecutor Investigating U.S. Boat Strikes Was Murdered in Ecuador",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49047448",
+    "title": "Corporate America Has Suddenly Decided to Stop Blowing Money on AI",
+    "url": "https://www.wsj.com/business/china-us-ai-model-costs-53a12e96",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Corporate America Has Suddenly Decided to Stop Blowing Money on AI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49031262",
+    "title": "Zitron: The Subprime Datacenter Crisis",
+    "url": "https://www.wheresyoured.at/the-subprime-data-center-crisis/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Zitron: The Subprime Datacenter Crisis",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49037971",
+    "title": "Micro-SaaS Is Dead. Service With A Software Replaces It",
+    "url": "https://adriengonin.com/writing/service-with-a-software/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Micro-SaaS Is Dead. Service With A Software Replaces It",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49034673",
+    "title": "Programming language file extensions that match ISO 3166-1 alpha-2 country codes",
+    "url": "https://www.bruh.ltd/blog/programming-language-file-extensions-that-match-an-iso-3166-1-alpha-2-country-code/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Programming language file extensions that match ISO 3166-1 alpha-2 country codes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49032756",
+    "title": "The Book Prize Index",
+    "url": "https://book-prize-index.vercel.app",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Book Prize Index",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49035864",
+    "title": "Writing a Debugger from Scratch",
+    "url": "https://www.timdbg.com/posts/writing-a-debugger-from-scratch-part-1/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Writing a Debugger from Scratch",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49048645",
+    "title": "Brazilian farmers tokenized dairy cows to get loans, bypassing bank limits",
+    "url": "https://www.coindesk.com/markets/2026/07/24/brazilian-farmers-tokenized-dairy-cows-to-get-loans-bypassing-bank-lending-limits",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Brazilian farmers tokenized dairy cows to get loans, bypassing bank limits",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49032126",
+    "title": "The hardest way to make a GIF",
+    "url": "https://blog.willgrant.org/2026/07/23/the-hardest-way-to-make-gif.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The hardest way to make a GIF",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49035740",
+    "title": "Plants vs. Zombies for PlayStation 2",
+    "url": "https://github.com/OptiJuegos/pvz-ps2",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Plants vs. Zombies for PlayStation 2",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49026787",
+    "title": "Americans – including many Republicans – are losing faith in capitalism",
+    "url": "https://www.cnn.com/2026/07/23/politics/republicans-capitalism-socialism-poll",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Americans – including many Republicans – are losing faith in capitalism",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49047707",
+    "title": "Scanwheel is a drum style mechanical television you can build yourself",
+    "url": "https://github.com/AncientJames/Scanwheel/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Scanwheel is a drum style mechanical television you can build yourself",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49047563",
+    "title": "The Silurian Hypothesis (2020)",
+    "url": "https://www.theparisreview.org/blog/2020/01/23/the-silurian-hypothesis/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Silurian Hypothesis (2020)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49047198",
+    "title": "League of Legends designer shares game design field manual",
+    "url": "https://areadenial.games/design/preface#00-01",
+    "summary": "生成摘要时出错",
+    "chinese_title": "League of Legends designer shares game design field manual",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49034928",
+    "title": "Ah, the Codeberg Drama",
+    "url": "https://gagliardoni.net/#20260724_codeberg_drama",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Ah, the Codeberg Drama",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49028235",
+    "title": "FDA reports new outbreak of explosive diarrhea with 72 cases identified",
+    "url": "https://arstechnica.com/health/2026/07/fda-reports-new-outbreak-of-explosive-diarrhea-with-72-cases-identified/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "FDA reports new outbreak of explosive diarrhea with 72 cases identified",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49035561",
+    "title": "My Emacs Configuration (Dired)",
+    "url": "https://eugene-andrienko.com/2026-07-05-my-emacs-configuration-dired.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "My Emacs Configuration (Dired)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49035845",
+    "title": "WebGPU Unleashed: A Practical Tutorial",
+    "url": "https://shi-yan.github.io/webgpuunleashed/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "WebGPU Unleashed: A Practical Tutorial",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49035080",
+    "title": "How the God of Israel Was Born",
+    "url": "https://andreafontana.it/en/birth-god-israel-yahweh-el.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How the God of Israel Was Born",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49026669",
+    "title": "Don't put your name to bot-written content",
+    "url": "https://tris.sherliker.net/blog/dont-put-your-name-to-bot-written-content/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Don't put your name to bot-written content",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49040810",
+    "title": "Chrome's Breaking and Entering",
+    "url": "https://unsung.aresluna.org/chromes-breaking-and-entering/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Chrome's Breaking and Entering",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49036136",
+    "title": "3GPP Version 19",
+    "url": "https://www.3gpp.org/specifications-technologies/releases/release-19",
+    "summary": "生成摘要时出错",
+    "chinese_title": "3GPP Version 19",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49048689",
+    "title": "Bringing PyTorch Monarch to AMD GPUs",
+    "url": "https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Bringing PyTorch Monarch to AMD GPUs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49048584",
+    "title": "The whole premise of checking for human writing is daft",
+    "url": "https://mohammedshehu.com/checking-for-human-writing-is-daft/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The whole premise of checking for human writing is daft",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49047969",
+    "title": "The AI jobs apocalypse probably isn't coming anytime soon",
+    "url": "https://www.theguardian.com/technology/2026/jul/25/ai-jobs-apocalypse-human-labor",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The AI jobs apocalypse probably isn't coming anytime soon",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49045335",
+    "title": "Man convicted of child sex crime by added _ char \"Fus Ro Dah\" Skyrim username",
+    "url": "https://www.cbc.ca/news/canada/nova-scotia/how-a-single-underscore-led-to-an-innocent-halifax-man-s-conviction-9.7283149",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Man convicted of child sex crime by added _ char \"Fus Ro Dah\" Skyrim username",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49039868",
+    "title": "Show HN: I made some transistor animations",
+    "url": "https://brandonli.net/semisim/animations",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: I made some transistor animations",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49029249",
+    "title": "Stripe in talks to buy OpenRouter for about $10B",
+    "url": "https://twitter.com/andrewcurran_/status/2080397684134007189",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Stripe in talks to buy OpenRouter for about $10B",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49049015",
+    "title": "Amen Break",
+    "url": "https://en.wikipedia.org/wiki/Amen_break",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Amen Break",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49044057",
+    "title": "US accuses American of allegedly wiping his phone during border search",
+    "url": "https://techcrunch.com/2026/07/24/us-accuses-american-of-allegedly-wiping-his-phone-using-a-duress-password-during-border-search/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US accuses American of allegedly wiping his phone during border search",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49038187",
+    "title": "Apple won't let me show my app",
+    "url": "https://wisedayplanner.com/blog/apple-wont-let-me-show-my-app/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple won't let me show my app",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49050538",
+    "title": "The growing vigilante movement to knock out Flock surveillance cameras",
+    "url": "https://www.theguardian.com/us-news/ng-interactive/2026/jul/25/flock-surveillance-cameras",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The growing vigilante movement to knock out Flock surveillance cameras",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49039831",
+    "title": "SpaceX at $100 Would Imply Zero AI Value, Morgan Stanley Says",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-24/spacex-at-100-would-imply-zero-ai-value-says-morgan-stanley",
+    "summary": "生成摘要时出错",
+    "chinese_title": "SpaceX at $100 Would Imply Zero AI Value, Morgan Stanley Says",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49034864",
+    "title": "The Collapse at Netflix Signals the End of Audience Capture",
+    "url": "https://www.honest-broker.com/p/the-collapse-at-netflix-signals-the",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Collapse at Netflix Signals the End of Audience Capture",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49041546",
+    "title": "Show HN: Max Studio Tools – C++ DSP Modules for Max and Ableton Live",
+    "url": "https://github.com/apresta/max-studio-tools",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Max Studio Tools – C++ DSP Modules for Max and Ableton Live",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49031561",
+    "title": "For most US drivers, EVs offer emissions benefits and cost savings",
+    "url": "https://news.mit.edu/2026/us-drivers-electric-vehicles-offer-emissions-benefits-cost-savings-0512",
+    "summary": "生成摘要时出错",
+    "chinese_title": "For most US drivers, EVs offer emissions benefits and cost savings",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49047449",
+    "title": "Harddrive Is Probably Full",
+    "url": "https://www.marginalia.nu/log/a_139_hdd/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Harddrive Is Probably Full",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49046303",
+    "title": "ID requirement to halt freedom of information in Germany",
+    "url": "https://www.heise.de/en/news/Dobrindt-ID-requirement-to-halt-freedom-of-information-11376646.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ID requirement to halt freedom of information in Germany",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49037941",
+    "title": "Asked Codex to redesign a page; it pushed my repo to OpenAI infra",
+    "url": "https://bhanu.io/blog/codex-pushed-my-private-repo-to-an-openai-server",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Asked Codex to redesign a page; it pushed my repo to OpenAI infra",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49033363",
+    "title": "Launching Health in ChatGPT to US Users",
+    "url": "https://openai.com/index/health-in-chatgpt/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Launching Health in ChatGPT to US Users",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49039490",
+    "title": "BGP ORIGIN attribute manipulation and its impact on the Internet",
+    "url": "https://blog.cloudflare.com/bgp-origin-attribute/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "BGP ORIGIN attribute manipulation and its impact on the Internet",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49037724",
+    "title": "New Jersey bans grocery stores from using shoppers' personal data to set prices",
+    "url": "https://jerseyvindicator.org/2026/07/23/new-jersey-bans-grocery-stores-from-using-shoppers-personal-data-to-set-prices/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "New Jersey bans grocery stores from using shoppers' personal data to set prices",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49029771",
+    "title": "Australia to AI: Produce More Power Than You Burn, Stop Content 'Theft'",
+    "url": "https://www.theregister.com/ai-and-ml/2026/07/15/australia-demands-ai-companies-must-produce-more-energy-than-they-consume-stop-theft-of-content/5271535",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Australia to AI: Produce More Power Than You Burn, Stop Content 'Theft'",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49043192",
+    "title": "OpenAI did not notice Hugging Face hack for a week",
+    "url": "https://www.reuters.com/business/its-ai-agent-spent-days-hacking-company-sources-say-openai-did-not-notice-week-2026-07-24/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenAI did not notice Hugging Face hack for a week",
     "chinese_summary": "生成摘要时出错"
   }
 ]
