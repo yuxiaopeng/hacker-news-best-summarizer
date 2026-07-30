@@ -1,106 +1,74 @@
 [
   {
-    "id": "49076057",
-    "title": "Our position on open-weights models",
-    "url": "https://www.anthropic.com/news/position-open-weights-models",
-    "summary": "Anthropic CEO Dario Amodei clarifies Anthropic's position, stating they have never advocated for a ban on open-weights AI models. He argues that open-weights models without dangerous capabilities are a public good, providing value without significant cost.\n\nAmodei outlines two primary national security concerns that protectionist bans would not address:\n1.  **Authoritarian governments (like the CCP) building more powerful AI than the US**, leading to military superiority or deep repression. This risk is independent of whether models are open-weight or used by US businesses.\n2.  **Powerful AI models being misused for cyber or biological attacks**, and having alignment problems. While open-weights models *can* present higher risks due to difficulty in applying guardrails or monitoring, banning their use by US businesses won't deter malicious actors.\n\nInstead, Anthropic supports three key measures:\n1.  **Preventing the sale of powerful chips and chipmaking equipment to China**, and cracking down on smuggling, to curb their ability to train advanced models.\n2.  **Cracking down on industrial-scale distillation operations**, which allow countries like China to develop sophisticated models more efficiently, partially circumventing chip bans.\n3.  **Mandatory safety testing for all sufficiently capable models, both open and closed**, before release. This would directly address cyber, biological, and alignment risks, and should be a global effort.\n\nAmodei agrees with some benefits of open weights but disagrees with the notion that they necessarily improve safeguards or help defenders more than attackers, especially regarding biological threats, emphasizing empirical testing over assumptions. In essence, Anthropic advocates for targeted interventions on chips, distillation, and safety testing, not a blanket ban on open-weights models.",
-    "chinese_title": "我们对开放权重模型的立场",
-    "chinese_summary": "Anthropic首席执行官达里奥·阿莫迪澄清了Anthropic的立场，声明他们从未主张禁止开源权重AI模型。他认为，没有危险能力的开源权重模型是一种公共产品，能在没有显著成本的情况下提供价值。\n\n阿莫迪概述了两大保护主义禁令无法解决的国家安全担忧：\n1.  威权政府（如中国共产党）构建比美国更强大的AI，从而获得军事优势或进行深度压制。这一风险与模型是否开源权重或是否被美国企业使用无关。\n2.  强大的AI模型被滥用于网络或生物攻击，并存在对齐问题。尽管开源权重模型由于难以施加防护或进行监控而可能带来更高的风险，但禁止美国企业使用它们并不能阻止恶意行为者。\n\n相反，Anthropic支持三项关键措施：\n1.  阻止向中国出售强大的芯片和芯片制造设备，并打击走私行为，以限制其训练先进模型的能力。\n2.  打击工业规模的“蒸馏”操作，这使得像中国这样的国家能够更高效地开发复杂模型，部分规避了芯片禁令。\n3.  在发布前，对所有足够强大的模型（无论是开源还是闭源）进行强制性安全测试。这将直接解决网络、生物和对齐风险，并且应该是一项全球性工作。\n\n阿莫迪同意开源权重模型的一些好处，但不同意它们必然能改善防护措施或比攻击者更有助于防御者的观点，尤其是在生物威胁方面，他强调经验性测试而非假设。简而言之，Anthropic主张对芯片、“蒸馏”和安全测试采取有针对性的干预措施，而不是全面禁止开源权重模型。"
+    "id": "49098510",
+    "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+    "url": "https://github.com/drumih/turbo-fieldfare",
+    "summary": "TurboFieldfare is an open-source engine that enables the Gemma 4 26B-A4B instruction-tuned model to run efficiently on any Apple Silicon Mac, including 8 GB models, by limiting its active memory footprint to about 2 GB. Written in Swift and Metal, it achieves this by streaming model \"experts\" from SSD on demand, only loading them into memory when needed for each token, while keeping the 1.35 GB core and FP16 KV cache resident.\n\nThe project offers a native Mac app, a command-line interface (CLI), and an experimental OpenAI-compatible server. Users clone the GitHub repository, build with Swift, and then download and repackage the ~15 GB model (which occupies 14.3 GB on disk) via a streaming installer that avoids full checkpoint staging.\n\nPerformance benchmarks show 5.1-6.3 tokens/second on an 8 GB M2 MacBook Air and 31-35 tokens/second on a 24 GB M5 Pro. Key requirements include an Apple Silicon Mac running macOS 26 with Metal 4, Xcode 26, Swift 6.2+, and 14.3 GB of free storage. TurboFieldfare is text-only, supporting instruction chat and raw completion.\n\nThe engine utilizes custom Metal kernels for quantized operations, an SSD-backed expert cache, and chunked prompt prefill. It's a model-specific runtime, not a wrapper around existing frameworks, stemming from 103 documented experiments. The source code is Apache 2.0 licensed, with model weights governed by their original terms. The project is an independent research effort by iOS and Metal engineer Andrey Mikhaylov.",
+    "chinese_title": "展示 HN: 开源引擎，在任意 M 系列 Mac 上以 2 GB 内存运行 Gemma 4 26B",
+    "chinese_summary": "TurboFieldfare是一个开源引擎，它通过将其活跃内存占用限制在大约2 GB，使得Gemma 4 26B-A4B指令微调模型能够在包括8 GB型号在内的任何Apple Silicon Mac上高效运行。该引擎使用Swift和Metal编写，通过按需从SSD流式传输模型“专家”，仅在每个token需要时才将其加载到内存中，同时保持1.35 GB的核心模型和FP16 KV缓存常驻内存，从而实现了这一点。\n\n该项目提供了一个原生Mac应用、一个命令行界面（CLI）以及一个实验性的OpenAI兼容服务器。用户可以克隆GitHub仓库，使用Swift构建，然后通过一个流式安装程序下载并重新打包约15 GB的模型（该模型在磁盘上占用14.3 GB），该安装程序避免了完整的检查点暂存。\n\n性能基准测试显示，在8 GB M2 MacBook Air上达到5.1-6.3 token/秒，在24 GB M5 Pro上达到31-35 token/秒。主要要求包括运行macOS 26并支持Metal 4的Apple Silicon Mac、Xcode 26、Swift 6.2+以及14.3 GB的可用存储空间。TurboFieldfare仅支持文本，提供指令聊天和原始补全功能。\n\n该引擎利用定制的Metal内核进行量化操作、SSD支持的专家缓存以及分块的提示预填充。它是一个模型特定的运行时，而不是现有框架的封装，源于103次有记录的实验。源代码采用Apache 2.0许可，模型权重遵循其原始条款。该项目是iOS和Metal工程师Andrey Mikhaylov的一项独立研究成果。"
   },
   {
-    "id": "49080664",
-    "title": "7.1 Earthquake in Japan",
-    "url": "https://www.data.jma.go.jp/multi/quake/quake_detail.html?eventID=20260728163528&lang=en",
-    "summary": "The provided text indicates a **7.1 magnitude earthquake occurred in Japan**.\n\nWhile the title clearly states the event, the \"content\" section does not offer specific details about the earthquake's impact or exact locations. Instead, it provides a structured format outlining the key data points that would typically be reported following such a seismic event. These categories include:\n\n*   **都道府県 (Prefecture):** Indicating the prefectures affected.\n*   **震度 (Seismic Intensity):** Specifying the measured intensity of the tremor in various locations.\n*   **市町村名 (Municipality Name):** Detailing the specific cities, towns, or villages impacted.\n\nHowever, no actual data points for these categories are provided in the given text, meaning there are no specific prefectures, seismic intensities, or municipality names listed. The content merely acts as a template for reporting such information.",
-    "chinese_title": "日本7.1级地震",
-    "chinese_summary": "所提供的文本指出，**日本发生了一场7.1级地震**。\n\n尽管标题明确指出了该事件，但“内容”部分并未提供有关地震影响或确切地点的具体细节。相反，它提供了一个结构化的格式，概述了此类地震事件后通常会报告的关键数据点。这些类别包括：\n\n*   **都道府県 (Prefecture)：** 指明受影响的都道府县。\n*   **震度 (Seismic Intensity)：** 说明各地测得的震动强度。\n*   **市町村名 (Municipality Name)：** 详细列出受影响的具体市、町或村。\n\n然而，所提供的文本中并未给出这些类别的实际数据点，这意味着没有列出具体的都道府县、震度或市町村名。该内容仅作为一个报告此类信息的模板。"
+    "id": "49102774",
+    "title": "The coolest use for the Vision Pro",
+    "url": "https://christianselig.com/2026/07/vision-pro-house/",
+    "summary": "The author, a programmer, found traditional floor plans inadequate for visualizing their new home build, struggling with a sense of scale and commitment to design decisions. They discovered an \"incredible\" use for their Apple Vision Pro: creating immersive 3D walkthroughs of their future house.\n\nThe process involved several steps:\n1.  **3D Modeling:** Using Fusion 360, they built a basic 3D model of the floor plan (walls, floors, ceilings).\n2.  **Adding Detail:** Textures (wood, stone) were applied, and 3D furniture models were imported from sources like IKEA (requiring a Tampermonkey script and GLB to OBJ conversion) and 3D Warehouse (leveraging iOS USDZ sharing and OBJ conversion). This helped ground the perspective and provide scale.\n3.  **Vision Pro Integration:** The final 3D model was exported as a USDZ file. To enhance the viewing experience beyond the basic Files app, the author \"vibe coded\" a custom Vision Pro app called \"Prospector\" with AI assistance.\n\nProspector's features include controller support for walking, rotation, terrain following, a \"toggle real life\" safety feature, flight mode for moving between floors, and a speed mode for traversing larger properties. This custom app allowed for seamless and intuitive exploration of the virtual home.\n\nThe author found this immersive experience profoundly powerful, offering a far better understanding of the space than architect-provided 3D walkthroughs. They conclude that such personalized, immersive 3D visualization will become a core part of future home design.",
+    "chinese_title": "Vision Pro 最酷的用途",
+    "chinese_summary": "作者是一位程序员，他发现传统的平面图不足以可视化他们新建的房屋，难以把握空间尺度，也难以坚定设计决策。他们为自己的Apple Vision Pro发现了一个“不可思议”的用途：创建了他们未来房屋的沉浸式3D漫游体验。\n\n该过程涉及以下几个步骤：\n1.  **3D建模：** 他们使用Fusion 360搭建了平面图的基本3D模型（墙壁、地板、天花板）。\n2.  **添加细节：** 应用了纹理（木材、石材），并从宜家（需要Tampermonkey脚本和GLB到OBJ的转换）和3D Warehouse（利用iOS USDZ共享和OBJ转换）等来源导入了3D家具模型。这有助于建立透视感并提供尺度参考。\n3.  **Vision Pro集成：** 最终的3D模型被导出为USDZ文件。为了增强超越基本文件应用程序的观看体验，作者在AI辅助下“快速开发”了一个名为“Prospector”的定制Vision Pro应用程序。\n\nProspector的功能包括支持控制器控制行走、旋转、地形跟随、“切换现实生活”安全功能、用于楼层间移动的飞行模式，以及用于穿越较大物业的速度模式。这个定制应用程序实现了虚拟家居的无缝且直观的探索。\n\n作者发现这种沉浸式体验极其强大，比建筑师提供的3D漫游更能让他们深入了解空间。他们总结说，这种个性化的沉浸式3D可视化将成为未来家居设计的核心组成部分。"
   },
   {
-    "id": "49084938",
-    "title": "Stop Killing the Internet: No Digital ID and No Age Verification",
-    "url": "https://citizens-initiative.europa.eu/initiatives/details/2026/000011_en",
+    "id": "49098965",
+    "title": "Superlogical",
+    "url": "https://www.superlogical.com/",
     "summary": "生成摘要时出错",
-    "chinese_title": "停止扼杀互联网：无数字身份，无年龄验证",
+    "chinese_title": "超逻辑",
     "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49083314",
-    "title": "New HIV vaccine shows unprecedented success in preclinical study",
-    "url": "https://www.lji.org/news-events/news/post/new-hiv-vaccine-shows-unprecedented-success-in-preclinical-study/",
-    "summary": "Scientists from La Jolla Institute for Immunology (LJI), Scripps Research, and IAVI have developed a groundbreaking HIV vaccine, demonstrating unprecedented success in preclinical studies. Published on July 6, 2026, this vaccine is the first to generate high numbers of \"broadly neutralizing\" antibodies (bnAbs) in non-human primates, offering significant potential to protect humans from HIV infection.\n\nCo-led by LJI's Shane Crotty, Ph.D., and Scripps Research's William Schief, Ph.D., the vaccine tackles HIV's formidable defenses: its sugar cloak, rapid mutation, and shape-shifting, which typically prevent the immune system from developing effective antibodies. The innovative \"germline targeting\" approach trains naive B cells. It involves a \"priming\" vaccine followed by \"shepherding\" booster shots that mimic key HIV envelope protein antigens. This regimen guides B cells to mature and produce the rare, potent bnAbs capable of recognizing and neutralizing diverse HIV strains.\n\nIn rhesus macaques, approximately 44% produced abundant bnAbs, mirroring those found in rare humans who naturally develop such antibodies. While direct infection prevention wasn't tested, the presence of these antibodies in the bloodstream is crucial for potentially blocking the virus. The priming immunogen is already in human trials (HVTN 144 and IAVI G004), and plans are advancing to evaluate the full immunization regimen in future human clinical studies, with scientists optimistic about its success in humans.",
-    "chinese_title": "新HIV疫苗在临床前研究中取得前所未有的成功。",
-    "chinese_summary": "来自莱霍亚免疫学研究所 (LJI)、斯克里普斯研究所和IAVI的科学家们开发出一种突破性艾滋病疫苗，在临床前研究中取得了前所未有的成功。这项疫苗研究于2026年7月6日发表，是首个在非人灵长类动物体内产生大量“广谱中和”抗体 (bnAbs) 的疫苗，为保护人类免受艾滋病病毒感染提供了巨大潜力。\n\n该疫苗由LJI的Shane Crotty博士和斯克里普斯研究所的William Schief博士共同领导，它攻克了艾滋病病毒强大的防御机制：其糖衣、快速变异和形态转换，这些因素通常会阻止免疫系统产生有效抗体。该创新性的“种系靶向”方法旨在训练幼稚B细胞，包括一种“初免”疫苗，随后辅以模拟关键艾滋病病毒包膜蛋白抗原的“引导性”加强针。这种方案引导B细胞成熟，并产生稀有的、强效的bnAbs，这些抗体能够识别并中和多种艾滋病病毒株。\n\n在恒河猴中，约有44%的个体产生了大量bnAbs，这与少数能自然产生此类抗体的人类情况相似。尽管尚未直接测试其预防感染的有效性，但血液中存在这些抗体对于潜在地阻断病毒至关重要。初免免疫原已进入人体试验阶段 (HVTN 144和IAVI G004)，并且科学家们正在推进计划，在未来的人体临床研究中评估完整的免疫方案，他们对其在人体中的成功充满乐观。"
-  },
-  {
-    "id": "49086788",
-    "title": "Substack writers, you need a website",
-    "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
-    "summary": "The article strongly advises Substack writers to establish and maintain their own independent websites, arguing that Substack should be seen merely as a distribution channel, not a digital home. The author critiques the growing trend of writers making Substack their primary online presence, even if linking a custom domain, as it limits control over SEO and customization compared to a full Content Management System.\n\nThe core argument is that relying solely on any platform, including Substack, makes writers \"digital sharecroppers\" or \"tenants\" on rented land. Platforms inevitably change rules, prioritize profit, and can lose content or shift algorithmic biases (often favoring US-centric narratives), jeopardizing a writer's long-term visibility and work. The \"siren call of convenience\" offered by platforms, with promises of audience and monetization, is deemed an illusion of a safe space.\n\nInstead, writers should adopt the POSSE (Publish on Own Site, Syndicate Elsewhere) method. This means publishing original content on a personal website (a domain they own and control) first, then using platforms like Substack, X, or Bluesky to amplify and distribute that content, directing readers back to the owned site. John Scalzi, who has maintained an independent website for 28 years, is cited as an example of this enduring approach. The article concludes that anchoring work on an independent website with open distribution channels like RSS protects content from platform instability and exhaustion, asserting that platforms should serve to find readers and bring them \"back to your house.\"",
-    "chinese_title": "Substack作者，你需要一个网站",
-    "chinese_summary": "文章强烈建议Substack的作者建立并维护自己的独立网站，认为Substack应仅被视为一个分发渠道，而非数字家园。作者批评了作家日益增长的趋势，即便是链接了自定义域名，也把Substack作为其主要的在线存在，因为与完整的内容管理系统相比，这限制了对搜索引擎优化（SEO）和自定义的控制。\n\n核心论点是，仅仅依赖包括Substack在内的任何平台，都会使作者成为“数字佃农”或在租赁土地上的“租户”。平台不可避免地会改变规则、优先考虑利润，并可能丢失内容或改变算法偏见（通常偏向以美国为中心的叙事），从而危及作者的长期可见度和作品。平台所提供的“便利的诱惑之声”，以及对受众和变现的承诺，被认为是一个安全空间的幻觉。\n\n相反，作者们应该采用POSSE（在自有网站发布，在其他地方分发）方法。这意味着首先在个人网站（他们拥有并控制的域名）上发布原创内容，然后利用Substack、X或Bluesky等平台来放大和分发这些内容，将读者引导回自有网站。维护独立网站长达28年的约翰·斯卡尔齐被引用为这种持久方法的典范。文章总结道，将作品固定在具有RSS等开放分发渠道的独立网站上，可以保护内容免受平台不稳定和消耗的影响，并强调平台的作用应该是寻找读者并将其“带回你的家”。"
   },
   {
     "id": "49095865",
     "title": "KOReader",
     "url": "https://koreader.rocks/",
-    "summary": "KOReader refers to a software project, providing a comprehensive set of resources for its users and contributors.\n\nFor users, it offers a direct **Download** link to acquire the software, a **User Guide** for operational instructions, and a **Wiki** for broader information and FAQs. Community interaction and support are facilitated through a **Forum**, while a **Bug Report** system allows users to submit issues and feedback.\n\nFor those interested in contributing to the project, dedicated sections like **Develop** and **Developer Docs** provide pathways and resources for participation. Additionally, a **Logo Gallery** is available, showcasing the project's branding assets.",
-    "chinese_title": "KOReader",
-    "chinese_summary": "KOReader 指的是一个软件项目，它为其用户和贡献者提供一套全面的资源。\n\n对于用户，它提供一个直接的**下载**链接来获取软件，一个包含操作说明的**用户指南**，以及一个提供更广泛信息和常见问题的**维基**。社区互动和支持通过**论坛**得以促进，同时**Bug报告**系统允许用户提交问题和反馈。\n\n对于那些有兴趣为该项目做贡献的人，**开发**和**开发者文档**等专用部分提供了参与途径和资源。此外，还提供一个**Logo图库**，展示项目的品牌资产。"
+    "summary": "This page serves as a central hub for KOReader, an open-source e-reader application. It provides essential resources for users and developers alike.\n\nUsers can access a comprehensive User Guide, download the software, and find detailed information on the project's Wiki. Support and community interaction are available through a Forum, and a dedicated Bug Report system allows users to report issues. For those interested in contributing to the project, there are \"Develop\" resources and \"Developer Docs.\" Additionally, a Logo Gallery showcases the project's branding.",
+    "chinese_title": "柯阅读器",
+    "chinese_summary": "本页面是开源电子阅读器应用程序KOReader的中心枢纽。它为用户和开发者提供重要资源。用户可以访问详尽的用户指南，下载软件，并在项目维基上找到详细信息。支持和社区互动可通过论坛获得；专门的错误报告系统则允许用户报告问题。对于有意为项目贡献者，这里提供了“开发”资源和“开发者文档”。此外，一个标志画廊展示了项目的品牌形象。"
   },
   {
     "id": "49089755",
     "title": "Codex Security",
     "url": "https://github.com/openai/codex-security",
-    "summary": "Codex Security, an offering from OpenAI, is a CLI and TypeScript SDK designed to identify, validate, and remediate security vulnerabilities in code. It enables users to scan repositories, review code changes, track security findings over time, and integrate security checks into Continuous Integration (CI) pipelines.\n\nTo use Codex Security, users need Node.js 22+, Python 3.10+, and access to the service. Installation is done via `npm install @openai/codex-security`, followed by `npx @openai/codex-security login`. Scans are initiated with `npx @openai/codex-security scan .`, with options to specify models (e.g., `--model gpt-5.6-terra`) and effort levels (e.g., `--effort high`).\n\nFor CI environments, authentication relies on the `OPENAI_API_KEY` environment variable. Interactive scans allow choosing between ChatGPT sign-in and an API key, while non-interactive scans prioritize the API key. Users can explicitly select credentials using `--auth chatgpt` or `--auth api-key`, and unset API keys to make ChatGPT the default.\n\nScan history is stored in a workbench state directory, which can be customized via `CODEX_SECURITY_STATE_DIR`. A TypeScript SDK is also available, allowing programmatic interaction through `import { CodexSecurity } from \"@openai/codex-security\";`. Comprehensive details on installation, authentication, and CI setup are available in the official documentation.",
-    "chinese_title": "Codex Security",
-    "chinese_summary": "Codex Security, an offering from OpenAI, is a CLI and TypeScript SDK designed to identify, validate, and remediate security vulnerabilities in code. It enables users to scan repositories, review code changes, track security findings over time, and integrate security checks into Continuous Integration (CI) pipelines.\n\nTo use Codex Security, users need Node.js 22+, Python 3.10+, and access to the service. Installation is done via `npm install @openai/codex-security`, followed by `npx @openai/codex-security login`. Scans are initiated with `npx @openai/codex-security scan .`, with options to specify models (e.g., `--model gpt-5.6-terra`) and effort levels (e.g., `--effort high`).\n\nFor CI environments, authentication relies on the `OPENAI_API_KEY` environment variable. Interactive scans allow choosing between ChatGPT sign-in and an API key, while non-interactive scans prioritize the API key. Users can explicitly select credentials using `--auth chatgpt` or `--auth api-key`, and unset API keys to make ChatGPT the default.\n\nScan history is stored in a workbench state directory, which can be customized via `CODEX_SECURITY_STATE_DIR`. A TypeScript SDK is also available, allowing programmatic interaction through `import { CodexSecurity } from \"@openai/codex-security\";`. Comprehensive details on installation, authentication, and CI setup are available in the official documentation."
+    "summary": "Codex Security, developed by OpenAI, is a CLI and TypeScript SDK designed to find, validate, and fix security vulnerabilities in code. It requires Node.js 22.x/24.x/26.x, Python 3.10+, and Trusted Access for optimal performance.\n\nTo get started, users install it via npm, then log in and scan their code using commands like `npx @openai/codex-security login` and `npx @openai/codex-security scan .`. Scans can specify models (e.g., `gpt-5.6-terra`) and effort levels (e.g., `high`).\n\nFor continuous integration (CI), API keys (OPENAI_API_KEY or CODEX_API_KEY) are used instead of interactive sign-in, ensuring they are not stored. Local sign-in utilizes Codex's configured credential backend. When both a ChatGPT sign-in and an API key are present, interactive scans prompt for a choice, while CI defaults to API keys. Users can explicitly select credentials or unset API keys to make ChatGPT the default.\n\nScan history and credentials are stored in a private, persistent state directory. Scans can compare findings between two states (BEFORE_SCAN_ID and AFTER_SCAN_ID) to categorize vulnerabilities as new, persisting, reopened, or resolved.\n\nA TypeScript SDK is also available, allowing programmatic interaction: `new CodexSecurity().run(\".\").close()`. Further details on commands, defaults, and SDK options are available in the package README and official CLI reference.",
+    "chinese_title": "法典安全",
+    "chinese_summary": "由 OpenAI 开发的 Codex Security 是一个命令行界面 (CLI) 和 TypeScript SDK，旨在发现、验证和修复代码中的安全漏洞。为获得最佳性能，它需要 Node.js 22.x/24.x/26.x、Python 3.10+ 和 Trusted Access。\n\n要开始使用，用户可以通过 npm 安装它，然后使用诸如 `npx @openai/codex-security login` 和 `npx @openai/codex-security scan .` 等命令登录并扫描其代码。扫描可以指定模型（例如 `gpt-5.6-terra`）和工作量级别（例如 `high`）。\n\n对于持续集成 (CI)，使用 API 密钥（OPENAI_API_KEY 或 CODEX_API_KEY）代替交互式登录，确保它们不会被存储。本地登录利用 Codex 配置的凭据后端。当 ChatGPT 登录和 API 密钥同时存在时，交互式扫描会提示用户进行选择，而 CI 默认使用 API 密钥。用户可以明确选择凭据或取消设置 API 密钥，使 ChatGPT 成为默认选项。\n\n扫描历史和凭据存储在一个私有的、持久性状态目录中。扫描可以比较两个状态（BEFORE_SCAN_ID 和 AFTER_SCAN_ID）之间的发现结果，以将漏洞分类为新的、持续存在的、重新打开的或已解决的。\n\n此外，还提供了一个 TypeScript SDK，允许以编程方式进行交互：`new CodexSecurity().run(\".\").close()`。有关命令、默认设置和 SDK 选项的更多详细信息可在软件包 README 和官方 CLI 参考中找到。"
   },
   {
-    "id": "49085698",
-    "title": "Kimi K3 Architecture Overview and Notes",
-    "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
-    "summary": "The Kimi K3 architecture represents a substantial leap as the largest open-weight model to date, scaling up from its predecessor, Kimi Linear, from 48 billion to 2.8 trillion parameters.\n\nA key addition is the LatentMoE, which, similar to Nemotron 3 Ultra, aims to compress large linear layers. This reflects a broader emphasis on inference efficiency in Kimi K3, where many components are replaced with optimized versions like multi-head latent attention and Kimi Delta Attention.\n\nBeyond efficiency, Kimi K3 incorporates \"attention residuals\" (inherited from Kimi Linear) to enhance the residual path. These connect residuals across layers using attention scores for weighting, consistently improving performance with a slight increase in training and inference costs.\n\nNotably, Kimi K3 deviates from recent trends by entirely replacing RoPE layers with NoPE (No Positional Embeddings) everywhere, a unique approach for a frontier-level model also inherited from Kimi Linear.\n\nFinally, Kimi K3 introduces native multimodal support. The author praises this release as a truly great advancement in model architecture.",
-    "chinese_title": "Kimi K3 架构概述和注意事项",
-    "chinese_summary": "Kimi K3 架构代表了一个巨大的飞跃，作为迄今为止最大的开源权重模型，它相较于其前身 Kimi Linear，从 480 亿参数扩展到 2.8 万亿参数。\n\n一个关键的补充是 LatentMoE，它类似于 Nemotron 3 Ultra，旨在压缩大型线性层。这反映了 Kimi K3 对推理效率的更广泛关注，其中许多组件都被诸如多头潜在注意力 (multi-head latent attention) 和 Kimi Delta 注意力 (Kimi Delta Attention) 等优化版本所取代。\n\n除了效率之外，Kimi K3 还引入了“注意力残差”（继承自 Kimi Linear）以增强残差路径。它们使用注意力分数进行加权，从而连接跨层残差，持续提升性能，同时训练和推理成本略有增加。\n\n值得注意的是，Kimi K3 背离了近期趋势，完全用 NoPE（无位置编码）取代了所有 RoPE 层，这对于前沿模型而言是一种独特的方法，也继承自 Kimi Linear。\n\n最后，Kimi K3 引入了原生多模态支持。作者称赞此次发布是模型架构上一个真正巨大的进步。"
+    "id": "49103285",
+    "title": "AI's top startups are barely publishing their research",
+    "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
+    "summary": "AI's leading startups, including OpenAI, Anthropic, and Google DeepMind, are dramatically reducing the publication of their core research, marking a significant departure from traditional academic norms and even their own past openness. This trend is raising alarms among the broader scientific community, which fears it will stifle progress, impede reproducibility, and create a \"lost generation\" of publicly accessible AI knowledge.\n\nThe article highlights a steep decline in academic papers from companies like OpenAI since 2020, with Anthropic publishing very little. Even Google DeepMind, while still active, is increasingly withholding crucial model details.\n\nThis shift is driven by several factors. A primary reason is competitive advantage, as companies seek to protect proprietary methods and intellectual property in a lucrative market. Safety concerns are also cited, with firms arguing against prematurely releasing potentially dangerous AI capabilities. Additionally, there's a pivot from pure research to product development, where internal documentation takes precedence, and some believe it helps retain top talent by reducing their visibility to competitors.\n\nCritics argue that this secrecy impedes the AI community's ability to reproduce findings, build upon existing work, and independently scrutinize the safety and ethical implications of advanced AI. It centralizes knowledge and power within a few private corporations, making AI development more opaque and potentially less accountable, posing a major challenge to the principles of open science.",
+    "chinese_title": "顶尖AI初创公司几乎不发表他们的研究成果。",
+    "chinese_summary": "包括OpenAI、Anthropic和Google DeepMind在内的领先AI初创公司正在大幅减少其核心研究的发表，这标志着它们与传统学术规范甚至自身过去的开放性都大相径庭。这一趋势正引起更广泛科学界的警惕，他们担心这将阻碍进步、妨碍可重复性，并造成“失落的一代”公共可访问AI知识。\n\n文章指出，自2020年以来，OpenAI等公司的学术论文发表量急剧下降，而Anthropic则鲜有发表。即使是Google DeepMind，虽然仍保持活跃，但也在日益保留关键的模型细节。\n\n这种转变由多种因素驱动。首要原因是为了竞争优势，因为公司在一个利润丰厚的市场中寻求保护专有方法和知识产权。安全顾虑也被提及，公司主张不应过早发布可能危险的AI能力。此外，还存在从纯粹研究转向产品开发的趋势，在此过程中，内部文档优先，并且一些人认为这有助于通过降低顶尖人才在竞争对手面前的可见度来留住他们。\n\n批评者认为，这种保密性阻碍了AI社区重现研究成果、在现有工作基础上发展以及独立审查先进AI的安全性和伦理影响的能力。这将知识和权力集中在少数几家私营公司手中，使得AI开发变得更加不透明，并可能降低其问责制，对开放科学原则构成了重大挑战。"
   },
   {
-    "id": "49098510",
-    "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
-    "url": "https://github.com/drumih/turbo-fieldfare",
+    "id": "49101852",
+    "title": "Kimi K3-256k",
+    "url": "https://www.kimi.com/code/docs/en/kimi-code/models",
+    "summary": "Kimi Code offers two primary models: Kimi K3 and Kimi K2.7 Code, available via distinct Model IDs like `k3` and `k3-256k`.\n\nThe `k3-256k` model is a Kimi K3 variant with a fixed 256k context window, designed to deliver the same quality as K3 (1M) but with significantly reduced quota consumption. It's ideal for everyday Q&A, code completion, routine development, and small-file edits, though it **does not support video input**. K3 (1M) offers up to 1M context (for higher-tier members) and supports image/video input.\n\nWhen switching from K3 (1M) to K3-256k, it's recommended to manually \"compact\" the current session's context to within 256k to avoid exceeding the limit and preserve task key points, especially if video files are present, as K3-256k doesn't support them. Switching from K3-256k to K3 (1M) can be done directly without cache issues.\n\nOther models include Kimi K2.7 Code, good for general coding, and its HighSpeed variant (`kimi-for-coding-highspeed`), which offers 6x faster output but consumes 3x more quota.\n\nKey usage advice:\n1.  **Start a new session** when switching models to avoid increased token consumption due to cache invalidation.\n2.  Always use the **Model ID** (e.g., `k3-256k`), not the model version name, when interacting with models.\n3.  **Troubleshooting:** 401 errors often indicate insufficient membership plan for the requested model or context size. If HighSpeed isn't faster, check for a mistyped Model ID or remember that it only speeds up model output, not tool/script execution.\n\nModels can be switched in official clients via commands or dropdowns, or in third-party tools by setting the correct Model ID and Base URL. For K3 in third-party tools, manually configure the context window for 1M access and understand the `reasoning_effort` mapping.",
+    "chinese_title": "奇米 K3-256K",
+    "chinese_summary": "Kimi Code 提供两种主要模型：Kimi K3 和 Kimi K2.7 Code，它们通过不同的模型ID（例如 `k3` 和 `k3-256k`）提供。\n\n`k3-256k` 模型是 Kimi K3 的一个变体，拥有固定的 256k 上下文窗口，旨在提供与 K3 (1M) 相同的质量，但显著降低配额消耗。它非常适合日常问答、代码补全、常规开发和小型文件编辑，但**不支持视频输入**。K3 (1M) 提供高达 1M 的上下文（面向更高级别会员），并支持图像/视频输入。\n\n从 K3 (1M) 切换到 K3-256k 时，建议手动“压缩”当前会话的上下文至 256k 以内，以避免超出限制并保留任务关键点，特别是在存在视频文件的情况下，因为 K3-256k 不支持视频。从 K3-256k 切换到 K3 (1M) 可以直接进行，不会出现缓存问题。\n\n其他模型包括 Kimi K2.7 Code，适用于通用编码，以及其高速变体 (`kimi-for-coding-highspeed`)，后者提供 6 倍的输出速度，但消耗 3 倍的配额。\n\n主要使用建议：\n1.  切换模型时请**开启新会话**，以避免因缓存失效导致令牌消耗增加。\n2.  与模型交互时，请始终使用**模型ID**（例如 `k3-256k`），而非模型版本名称。\n3.  **故障排除：** 401 错误通常表示当前会员计划不支持所请求的模型或上下文大小。如果高速模式没有更快，请检查模型ID是否拼写错误，或记住它只加速模型输出，而不加速工具/脚本的执行。\n\n在官方客户端中，可以通过命令或下拉菜单切换模型；在第三方工具中，则通过设置正确的模型ID和基础URL进行切换。对于第三方工具中的 K3，需要手动配置上下文窗口以访问 1M 上下文，并理解 `reasoning_effort` 的映射关系。"
+  },
+  {
+    "id": "49089500",
+    "title": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident",
+    "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+    "chinese_title": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49076923",
-    "title": "Netflix employee fired for sharing personal details in retreat trust exercise",
-    "url": "https://nypost.com/2026/07/26/us-news/netflix-exec-goes-ballistic-after-being-fired-for-stunning-trust-exercise-confession-at-retreat-suit/",
+    "id": "49099715",
+    "title": "Keychron announces first open-source firmware for gaming mice",
+    "url": "https://www.digitalfoundry.net/news/2026/07/keychron-announces-first-open-source-firmware-for-gaming-mice",
     "summary": "生成摘要时出错",
-    "chinese_title": "Netflix employee fired for sharing personal details in retreat trust exercise",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49090607",
-    "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
-    "url": "https://github.com/twalichiewicz/HNewhere",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49076391",
-    "title": "Benchmarking Opus 5 on SlopCodeBench",
-    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Benchmarking Opus 5 on SlopCodeBench",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49076116",
-    "title": "A missing underscore sent innocent man to prison for 18 months",
-    "url": "https://arstechnica.com/tech-policy/2026/07/police-missed-one-underscore-and-sent-the-wrong-man-to-prison/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A missing underscore sent innocent man to prison for 18 months",
+    "chinese_title": "Keychron announces first open-source firmware for gaming mice",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -112,75 +80,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "49109440",
+    "title": "'VPNs are lawful technical tools,' says EU Court in landmark copyright ruling",
+    "url": "https://remysharp.com/links/2026-07-23-35890312",
+    "summary": "生成摘要时出错",
+    "chinese_title": "'VPNs are lawful technical tools,' says EU Court in landmark copyright ruling",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49090607",
+    "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
+    "url": "https://github.com/twalichiewicz/HNewhere",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "49093569",
     "title": "More Tailscale tricks for your jailbroken Kindle",
     "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
     "summary": "生成摘要时出错",
     "chinese_title": "More Tailscale tricks for your jailbroken Kindle",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49098965",
-    "title": "Superlogical",
-    "url": "https://www.superlogical.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Superlogical",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49085731",
-    "title": "Delayed Gratification – Proud to Be 'Last to Breaking News'",
-    "url": "https://www.slow-journalism.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Delayed Gratification – Proud to Be 'Last to Breaking News'",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49078454",
-    "title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
-    "url": "https://fermisense.com/when-machines-take-the-wheel/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49078583",
-    "title": "Using an open model feels surprisingly good",
-    "url": "https://matthewsaltz.com/blog/using-an-open-model-feels-surprisingly-good/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Using an open model feels surprisingly good",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49096290",
-    "title": "French musician Kavinsky found dead",
-    "url": "https://www.euronews.com/culture/2026/07/29/dj-kavinsky-known-for-his-track-nightcall-found-dead-at-his-paris-home",
-    "summary": "生成摘要时出错",
-    "chinese_title": "French musician Kavinsky found dead",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49082022",
-    "title": "Kimi Linear: An Expressive, Efficient Attention Architecture (2025)",
-    "url": "https://arxiv.org/abs/2510.26692",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Kimi Linear: An Expressive, Efficient Attention Architecture (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49089814",
-    "title": "Half-Life ported to Mac OS 9",
-    "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Half-Life ported to Mac OS 9",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49085909",
-    "title": "A walk through of the DeltaNet family of linear attention variants",
-    "url": "https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A walk through of the DeltaNet family of linear attention variants",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -192,51 +112,67 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49085666",
-    "title": "Zig's Incremental Compilation Internals",
-    "url": "https://mlugg.co.uk/posts/incremental-compilation-internals/",
+    "id": "49112867",
+    "title": "Advancing the price-performance frontier with GPT‑5.6",
+    "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Zig's Incremental Compilation Internals",
+    "chinese_title": "Advancing the price-performance frontier with GPT‑5.6",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49084813",
-    "title": "Una GPS smart watch – Repairable, USB-C charging, developer-friendly",
-    "url": "https://unawatch.com/",
+    "id": "49104117",
+    "title": "LLM Honeypot",
+    "url": "https://llm2human.pages.dev/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Una GPS smart watch – Repairable, USB-C charging, developer-friendly",
+    "chinese_title": "LLM Honeypot",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49086971",
-    "title": "Steel Bank Common Lisp version 2.6.7",
-    "url": "https://sbcl.org/all-news.html?2.6.7",
+    "id": "49111237",
+    "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Steel Bank Common Lisp version 2.6.7",
+    "chinese_title": "Gemini Robotics 2 brings whole body intelligence to robots",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49088148",
-    "title": "Deflock Casa Grande",
-    "url": "https://deflockcg.com/",
+    "id": "49096654",
+    "title": "Darktable",
+    "url": "https://www.darktable.org/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Deflock Casa Grande",
+    "chinese_title": "Darktable",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49092499",
-    "title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
-    "url": "https://learnvector.ai/",
+    "id": "49104335",
+    "title": "The Productivity Mirage",
+    "url": "https://frantic.im/mirage/",
     "summary": "生成摘要时出错",
-    "chinese_title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
+    "chinese_title": "The Productivity Mirage",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49088451",
-    "title": "Donate to GrapheneOS",
-    "url": "https://grapheneos.org/donate",
+    "id": "49096290",
+    "title": "French musician Kavinsky found dead",
+    "url": "https://www.euronews.com/culture/2026/07/29/dj-kavinsky-known-for-his-track-nightcall-found-dead-at-his-paris-home",
     "summary": "生成摘要时出错",
-    "chinese_title": "Donate to GrapheneOS",
+    "chinese_title": "French musician Kavinsky found dead",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49113929",
+    "title": "UEFA and its national associations will not participate in FIFA competitions",
+    "url": "https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfbf454e3b-1000--statement-on-behalf-of-uefa-and-its-55-national-associations/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "UEFA and its national associations will not participate in FIFA competitions",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49096969",
+    "title": "Handbook.md shows that long policy documents do not reliably govern agents",
+    "url": "https://arxiv.org/abs/2607.25398",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Handbook.md shows that long policy documents do not reliably govern agents",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -248,467 +184,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49085798",
-    "title": "Show HN: XY – A Fast, composable, GPU-accelerated interactive plotting library",
-    "url": "https://github.com/reflex-dev/xy",
+    "id": "49089814",
+    "title": "Half-Life ported to Mac OS 9",
+    "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: XY – A Fast, composable, GPU-accelerated interactive plotting library",
+    "chinese_title": "Half-Life ported to Mac OS 9",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49076505",
-    "title": "Kimi K3 Now Available via Telnyx Inference API",
-    "url": "https://telnyx.com/release-notes/kimi-k3-telnyx-inference",
+    "id": "49107950",
+    "title": "Google will expand age checks on Android worldwide till the end of the year",
+    "url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Kimi K3 Now Available via Telnyx Inference API",
+    "chinese_title": "Google will expand age checks on Android worldwide till the end of the year",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49088887",
-    "title": "Uv 0.12.0",
-    "url": "https://github.com/astral-sh/uv/releases/tag/0.12.0",
+    "id": "49103089",
+    "title": "The Cold Email",
+    "url": "https://zachholman.com/posts/cold-email",
     "summary": "生成摘要时出错",
-    "chinese_title": "Uv 0.12.0",
+    "chinese_title": "The Cold Email",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49088058",
-    "title": "MCP 2026-07-28 Specification: transport going stateless",
-    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+    "id": "49112744",
+    "title": "Read this before you buy that TV streaming stick",
+    "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
     "summary": "生成摘要时出错",
-    "chinese_title": "MCP 2026-07-28 Specification: transport going stateless",
+    "chinese_title": "Read this before you buy that TV streaming stick",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49096885",
-    "title": "San Francisco: Don't Fall for Industry Defense of Surveillance Pricing",
-    "url": "https://www.eff.org/deeplinks/2026/07/san-francisco-dont-fall-industry-defense-surveillance-pricing",
+    "id": "49100043",
+    "title": "Show HN: CheapFoodMap – A map of good meals under $10",
+    "url": "https://cheapfoodmap.com/",
     "summary": "生成摘要时出错",
-    "chinese_title": "San Francisco: Don't Fall for Industry Defense of Surveillance Pricing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49076840",
-    "title": "DConf 2026 in London",
-    "url": "https://dconf.org/2026/index.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DConf 2026 in London",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49085811",
-    "title": "How Do I Profile eBPF Code?",
-    "url": "https://naveensrinivasan.com/posts/2026-07-22-how-do-i-profile-ebpf-code/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How Do I Profile eBPF Code?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49084091",
-    "title": "Italy Blocks Reproductive Health Websites Women on Web and Women Help Women",
-    "url": "https://ooni.org/post/2026-italy-blocks-wow-and-whw",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Italy Blocks Reproductive Health Websites Women on Web and Women Help Women",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49075350",
-    "title": "US DOT deleting bike lane references",
-    "url": "https://www.npr.org/2026/07/23/nx-s1-5900901/bike-lanes-dot-websites",
-    "summary": "生成摘要时出错",
-    "chinese_title": "US DOT deleting bike lane references",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49083239",
-    "title": "Show HN: Formally verified 3D CSG: Trust 93 lines spec, not 1000 lines AI code",
-    "url": "https://github.com/schildep/verified-3d-mesh-intersection",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Formally verified 3D CSG: Trust 93 lines spec, not 1000 lines AI code",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49079490",
-    "title": "Neutrino-1 8B",
-    "url": "https://www.fermionresearch.com/models/neutrino-8b/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Neutrino-1 8B",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49079727",
-    "title": "Ars Astronomica – English translations of rare Hebrew and Latin astronomy texts",
-    "url": "https://arsastronomica.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ars Astronomica – English translations of rare Hebrew and Latin astronomy texts",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49074680",
-    "title": "Professor's invisible prompt trap catches 32/35 students cheating with AI",
-    "url": "https://www.techspot.com/news/113243-professor-invisible-prompt-trap-catches-32-students-cheating.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Professor's invisible prompt trap catches 32/35 students cheating with AI",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49101852",
-    "title": "Kimi K3-256k",
-    "url": "https://www.kimi.com/code/docs/en/kimi-code/models",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Kimi K3-256k",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49085280",
-    "title": "Harmony Explained: Progress Towards a Scientific Theory of Music (2012)",
-    "url": "https://arxiv.org/abs/1202.4212",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Harmony Explained: Progress Towards a Scientific Theory of Music (2012)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49096953",
-    "title": "After the AI Crash",
-    "url": "https://potsandpansbyccg.com/2026/07/29/after-the-ai-crash/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "After the AI Crash",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49096811",
-    "title": "Shipping Godot VR and Porting to PSVR2: A Partial Post Mortem",
-    "url": "https://www.claire-blackshaw.com/blog/2026/07/shipping-godot-vr-and-porting-to-psvr2-a-partial-post-mortem/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Shipping Godot VR and Porting to PSVR2: A Partial Post Mortem",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49079175",
-    "title": "Why do we think we understand the world more than we actually do?",
-    "url": "https://thedecisionlab.com/biases/the-illusion-of-explanatory-depth",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why do we think we understand the world more than we actually do?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49077443",
-    "title": "Don't ask an LLM for a confidence score",
-    "url": "https://justinflick.com/2026/07/27/llm-confidence-scores.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Don't ask an LLM for a confidence score",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49093435",
-    "title": "Cracking Windows Open: Porting RADV to Win32",
-    "url": "https://www.collabora.com/news-and-blog/news-and-events/cracking-windows-open-porting-radv-to-win32.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cracking Windows Open: Porting RADV to Win32",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49083634",
-    "title": "VMs can't boot with Network Mode set to Bridged on Apple M5 Pro machines",
-    "url": "https://github.com/utmapp/UTM/issues/7658",
-    "summary": "生成摘要时出错",
-    "chinese_title": "VMs can't boot with Network Mode set to Bridged on Apple M5 Pro machines",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49078463",
-    "title": "EYG: A Programming Language for Humans",
-    "url": "https://crowdhailer.me/2026-06-08/a-programming-language-for-humans/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "EYG: A Programming Language for Humans",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49075264",
-    "title": "Solving Fermat: Andrew Wiles",
-    "url": "https://www.pbs.org/wgbh/nova/proof/wiles.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Solving Fermat: Andrew Wiles",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49074817",
-    "title": "Launch HN: Rise Reforming (YC S26) – Turning Waste Gases into Valuable Chemicals",
-    "url": "https://www.rise-reforming.com",
-    "summary": "生成摘要时出错",
-    "chinese_title": "HN 发布：Rise 重整 (YC S26)——将废气转化为有价值的化学品",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49097730",
-    "title": "Choose DuckDB rather than SQLite",
-    "url": "https://tracewayapp.com/blog/sqlite-vs-duckdb",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Choose DuckDB rather than SQLite",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49078266",
-    "title": "Residential Proxies Are a National Security Threat",
-    "url": "https://jacob.gold/posts/residential-proxies-are-a-national-security-threat/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Residential Proxies Are a National Security Threat",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49098130",
-    "title": "Self-hosting Kimi K3: 20% more hardware cost, 20% better task resolution",
-    "url": "https://aistack.imec-int.com/blog/gpu-self-hosting",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Self-hosting Kimi K3: 20% more hardware cost, 20% better task resolution",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49096427",
-    "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
-    "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Disrupting supply chain attacks on NPM and GitHub Actions",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49079454",
-    "title": "PyTorch: A Reference Language",
-    "url": "https://docs.pytorch.org/devlogs/compiler/2026-07-25-pytorch-a-reference-language/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "PyTorch: A Reference Language",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49097209",
-    "title": "Kalshi attacks a Wisconsin law banning election bets as 'voter suppression'",
-    "url": "https://www.npr.org/2026/07/27/nx-s1-5905360/kalshi-wisconsin-election-betting-prediction-markets",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Kalshi attacks a Wisconsin law banning election bets as 'voter suppression'",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49076791",
-    "title": "C/C++ projects packaged for Zig",
-    "url": "https://github.com/allyourcodebase",
-    "summary": "生成摘要时出错",
-    "chinese_title": "C/C++ projects packaged for Zig",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49098375",
-    "title": "Google shuts down Nobel Prize winning AlphaFold",
-    "url": "https://www.engadget.com/2225849/google-shuts-down-alphafold/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google shuts down Nobel Prize winning AlphaFold",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49085509",
-    "title": "So, you want to make a game engine (2023)",
-    "url": "https://lisyarus.github.io/blog/posts/so-you-want-to-make-a-game-engine.html#part-3",
-    "summary": "生成摘要时出错",
-    "chinese_title": "So, you want to make a game engine (2023)",
+    "chinese_title": "Show HN: CheapFoodMap – A map of good meals under $10",
     "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "49102150",
-    "title": "Claude Is Down",
+    "title": "Claude: Elevated errors across all models – Resolved",
     "url": "https://status.claude.com/incidents/q2kg8n613kr3",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Claude Is Down",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "On July 29, 2026, Claude experienced an incident with elevated error rates and increased latency across all its models.\n\nThe issue began with investigations around 19:49 UTC. By 20:33 UTC, an underlying problem was identified as the cause of the elevated errors. Efforts to resolve it commenced immediately. Partial recovery across most models was noted by 21:38 UTC.\n\nFurther progress was reported by 22:20 UTC, indicating a recovery in success rates across all Claude models, prompting close monitoring for stability. The incident was officially resolved by 22:36 UTC. The period of observed impact for the elevated errors was from 19:45 UTC to 21:26 UTC.",
+    "chinese_title": "Claude: Elevated errors across all models – Resolved",
+    "chinese_summary": "On July 29, 2026, Claude experienced an incident with elevated error rates and increased latency across all its models.\n\nThe issue began with investigations around 19:49 UTC. By 20:33 UTC, an underlying problem was identified as the cause of the elevated errors. Efforts to resolve it commenced immediately. Partial recovery across most models was noted by 21:38 UTC.\n\nFurther progress was reported by 22:20 UTC, indicating a recovery in success rates across all Claude models, prompting close monitoring for stability. The incident was officially resolved by 22:36 UTC. The period of observed impact for the elevated errors was from 19:45 UTC to 21:26 UTC."
   },
   {
-    "id": "49093232",
-    "title": "Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-Design",
-    "url": "https://transformer-transformer.github.io/",
+    "id": "49092499",
+    "title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
+    "url": "https://learnvector.ai/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-Design",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49089171",
-    "title": "DEF CON bans Meta-style 'pervert glasses'",
-    "url": "https://www.theregister.com/security/2026/07/28/def-con-bans-meta-style-pervert-glasses/5279763",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DEF CON bans Meta-style 'pervert glasses'",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49083389",
-    "title": "Show HN: tale.fyi, we deserve a home for fiction",
-    "url": "https://tale.fyi/@sam/announcing-tale-fyi-read-or-listen-to-an-entire-book-from-a-single-link",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: tale.fyi, we deserve a home for fiction",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49092549",
-    "title": "Chip stocks slide in US and Asia as AI jitters rattle investors",
-    "url": "https://www.bbc.com/news/articles/cly8zng43npo",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Chip stocks slide in US and Asia as AI jitters rattle investors",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49083132",
-    "title": "What AI developers could learn from Charles Bukowski?",
-    "url": "https://galjot.si/what-ai-developers-could-learn-from-charles-bukowski",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What AI developers could learn from Charles Bukowski?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49077040",
-    "title": "Interview with Boris Cherny [video]",
-    "url": "https://www.youtube.com/watch?v=qyPCVqFUyDo",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Interview with Boris Cherny [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49095628",
-    "title": "SpecForge – A Platform for Authoring Formal Specifications",
-    "url": "https://docs.imiron.io/v/0.5.10/en/tour.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SpecForge – A Platform for Authoring Formal Specifications",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49077725",
-    "title": "Teacher Arrested for Clapping in Support of Anti-Data Center Activists",
-    "url": "https://futurism.com/artificial-intelligence/high-school-teacher-arrested-clapping-data-center-activist",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Teacher Arrested for Clapping in Support of Anti-Data Center Activists",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49097003",
-    "title": "TokenTown: A visual way to understand how LLMs work",
-    "url": "https://laurentiugabriel.github.io/token-town/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "TokenTown: A visual way to understand how LLMs work",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49095714",
-    "title": "National Security Determination Threat Posed by Foreign-Produced Robotic Devices [pdf]",
-    "url": "https://www.fcc.gov/sites/default/files/robots-nsd.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "National Security Determination Threat Posed by Foreign-Produced Robotic Devices [pdf]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49086890",
-    "title": "WOFF 1.0: a milestone on W3C's journey of fonts on the web",
-    "url": "https://www.w3.org/blog/2026/woff-1-0-a-milestone-on-w3cs-journey-of-fonts-on-the-web/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "WOFF 1.0: a milestone on W3C's journey of fonts on the web",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49099804",
-    "title": "Some thoughts about Anthropic's new cryptanalysis results",
-    "url": "https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Some thoughts about Anthropic's new cryptanalysis results",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49098388",
-    "title": "GPT-5.6 vs. Claude Fable 5 for Physical AI, which performs best?",
-    "url": "https://juliahub.com/blog/frontier-models-physical-ai-evaluation",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GPT-5.6 vs. Claude Fable 5 for Physical AI, which performs best?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49091738",
-    "title": "The Difference Between a Button and a Link",
-    "url": "https://unplannedobsolescence.com/blog/buttons-vs-links/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Difference Between a Button and a Link",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49097591",
-    "title": "Valve Sponsors Work Bringing Open-Source RADV Driver to Windows",
-    "url": "https://www.phoronix.com/news/Valve-Sponsors-RADV-Windows",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Valve Sponsors Work Bringing Open-Source RADV Driver to Windows",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49093119",
-    "title": "FCC bans foreign-produced solar inverters, grid lockout begins today",
-    "url": "https://pv-magazine-usa.com/2026/07/28/fcc-bans-foreign-produced-solar-inverters-grid-lockout-begins-today/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FCC bans foreign-produced solar inverters, grid lockout begins today",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49083364",
-    "title": "Over 150k Flights: Airlines Just Flew the Busiest Day in Recorded History",
-    "url": "https://simpleflying.com/over-150000-flights-airlines-busiest-day-recorded-history/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Over 150k Flights: Airlines Just Flew the Busiest Day in Recorded History",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49082550",
-    "title": "Fast Remediation Is the New Trust Model (JFrog and OpenAI Zero-Day Findings)",
-    "url": "https://jfrog.com/blog/jfrog-and-openai-collaboration-on-zero-day-security-findings/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Fast Remediation Is the New Trust Model (JFrog and OpenAI Zero-Day Findings)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49079191",
-    "title": "\"Opus 5 is a really bad model\"",
-    "url": "https://twitter.com/HarukaKunori/status/2081697911847481502",
-    "summary": "生成摘要时出错",
-    "chinese_title": "\"Opus 5 is a really bad model\"",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49090083",
-    "title": "Anthropic publishes a practical key-recovery attack on HAWK-256",
-    "url": "https://github.com/anthropics/cryptography-research-demo",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Anthropic publishes a practical key-recovery attack on HAWK-256",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49079244",
-    "title": "eBay and former execs will pay $56M to settle harassment of Natick couple",
-    "url": "https://www.bostonglobe.com/2026/07/27/business/ebay-harassed-ina-david-steiner-settlement/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "eBay and former execs will pay $56M to settle harassment of Natick couple",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49096917",
-    "title": "Show HN: Bullshit Detector – agent skills that fact-check videos and articles",
-    "url": "https://github.com/SerhiiKorniienko/bullshit-detector",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Bullshit Detector – agent skills that fact-check videos and articles",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49092754",
-    "title": "Hooray for the Sockets Interface",
-    "url": "https://blog.apnic.net/2026/07/28/hooray-for-the-sockets-interface/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Hooray for the Sockets Interface",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49080217",
-    "title": "News outlet killed story on plagiarism after Cambridge prof hired law firm",
-    "url": "https://retractionwatch.com/2026/07/27/cambridge-jason-arday-plagiarism-allegations-times-higher-education-exclusive/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "News outlet killed story on plagiarism after Cambridge prof hired law firm",
+    "chinese_title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
     "chinese_summary": "生成摘要时出错"
   }
 ]
