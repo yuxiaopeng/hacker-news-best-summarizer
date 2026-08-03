@@ -1,19 +1,251 @@
 [
   {
-    "id": "49135365",
-    "title": "GitHub has alternatives, but no replacement",
-    "url": "https://lalitm.com/post/github-alternatives/",
-    "summary": "The article argues that while GitHub has numerous alternatives for Git repository hosting, none effectively replace its crucial \"social layer\" for open-source communities. This gap is evident as projects leave GitHub due to a deteriorating user experience, frequent outages, and a perceived neglect of core forge features in favor of AI integration (e.g., Copilot).\n\nSelf-hosting, though technically feasible, is deemed impractical for collaborative projects, as it burdens contributors with creating new accounts and learning unfamiliar interfaces, hindering discovery and participation. Existing alternatives each have significant drawbacks: GitLab is too corporate; SourceHut's email-oriented workflow is niche; Forgejo's federation project is still experimental; and Radicle is technologically interesting but too immature, requiring specific client software for interaction. Even promising new platforms like Tangled are in alpha.\n\nThe author proposes a \"boring company\" – a for-profit entity focused solely on reliable, pleasant open-source collaboration, charging directly, and devoid of venture-backed ambition – as a potential solution. However, the fundamental challenge remains the \"cold-start problem\": building the necessary scale for shared identity, conventions, and discovery. A true GitHub replacement, the article concludes, must actively develop and treat this social layer as its primary product, not something that automatically appears.",
-    "chinese_title": "GitHub有替代品，但无可取代",
-    "chinese_summary": "文章指出，尽管GitHub有许多Git仓库托管的替代方案，但没有一个能有效取代其对开源社区至关重要的“社交层”。这种缺失显而易见，因为项目正在离开GitHub，原因包括用户体验恶化、频繁中断，以及人们认为它忽视了核心开发协作功能，转而青睐AI集成（例如Copilot）。\n\n自托管虽然技术上可行，但对于协作项目来说被认为是不切实际的，因为它会给贡献者带来创建新账户和学习陌生界面的负担，从而阻碍了项目的发现和参与。现有的替代方案各有显著缺点：GitLab过于企业化；SourceHut的邮件导向工作流过于小众；Forgejo的联邦化项目仍处于实验阶段；Radicle在技术上很有趣但过于不成熟，需要特定的客户端软件才能交互。甚至像Tangled这样有前途的新平台也还处于Alpha阶段。\n\n作者提出了一种“无聊的公司”——一家只专注于提供可靠、愉快的开源协作，直接收费，并且没有风投支持野心的营利性实体——作为一种潜在的解决方案。然而，根本挑战仍然是“冷启动问题”：即为共享身份、约定和发现建立必要的规模。文章总结道，一个真正的GitHub替代品必须积极开发并把这个社交层作为其主要产品，而不是把它看作是会自动出现的东西。"
+    "id": "49151933",
+    "title": "Don't be a meat proxy",
+    "url": "https://gruhn.me/blog/2026-08-03/",
+    "summary": "The author criticizes the practice of simply relaying AI output verbatim in professional or personal communications, labeling this behavior as being a \"meat proxy.\" This often happens in Slack, code reviews, or chat groups, where users copy-paste responses from AI tools like Claude.\n\nThe core argument is that this practice adds no value. Recipients can interact with AI directly, controlling the context and getting faster answers. Furthermore, AI output is often verbose, can contain plausible but incorrect information, and is increasingly jargon-dense, making it extra effort for the reader to decipher. An example given is a complex sentence from Claude about \"NATS control-plane events\" that required extensive lookups.\n\nInstead of just relaying AI responses, the author urges users to prompt AI, but then to read, understand, and validate the output. The crucial step is to rewrite the response in one's own words, which serves as proof of comprehension and is the true value a human can add.\n\nThe article highlights code review as a prime example. Developers might copy-paste ticket descriptions into AI, generate code, and then use AI to address reviewer feedback without truly engaging with or understanding the code. In such scenarios, the AI and the reviewers become the de facto implementers, with the original developer merely acting as a conduit.",
+    "chinese_title": "不要做肉的替身",
+    "chinese_summary": "作者批评了在专业或个人交流中，仅仅逐字转发AI输出的做法，并将这种行为称为“人肉代理”。这种情况经常发生在Slack、代码审查或聊天群组中，用户复制粘贴像Claude这样的AI工具的回复。\n\n核心论点是这种做法毫无价值。接收者可以直接与AI互动，控制上下文并更快地获得答案。此外，AI输出往往冗长、可能包含看似合理但不正确的信息，并且越来越术语密集，这使得读者需要付出额外的努力来解读。一个例子是Claude关于“NATS控制平面事件”的复杂句子，需要进行大量的查阅才能理解。\n\n作者不主张仅仅转发AI的回复，而是敦促用户向AI提问，然后阅读、理解并验证其输出。关键一步是用自己的话重写回复，这既是理解的证明，也是人类可以添加的真正价值。\n\n文章将代码审查作为一个典型例子。开发者可能会将工单描述复制粘贴给AI，生成代码，然后利用AI来处理审查者的反馈，而没有真正地投入或理解代码。在这种情况下，AI和审查者成为了实际的执行者，而原始开发者仅仅充当了传导者。"
   },
   {
-    "id": "49143412",
-    "title": "Show HN: Fuse – statically typed functional programming language",
-    "url": "https://fuselang.org",
-    "summary": "Fuse is a new statically typed, purely functional programming language featuring higher-kinded types and ad-hoc polymorphism through \"traits.\" It compiles to native code via the GRIN whole-program optimizer and LLVM, promising fast, small binaries with zero-cost abstractions.\n\nThe language is designed for pure functional programming, incorporating algebraic data types, generics, pattern matching, higher-order functions, and do notation for expressive, composable code. Its type system is based on System F with higher-order polymorphism, supported by bidirectional type inference that largely eliminates the need for explicit type annotations, except for function signatures.\n\nFuse's syntax draws inspiration from Rust, Python, Scala, and Haskell, utilizing indentation-based blocks, lambda expressions, and an ML-like style for readability. The provided code examples demonstrate defining traits like `Functor`, implementing them for types such as `List`, and using generics, `fold`, `map`, and `fmap` to manipulate data in a functional manner.\n\nThe Fuse toolchain is available for Linux (x86_64) and macOS (ARM64), installable with a simple `curl` command. It aims to provide powerful domain modeling tools within a clean, efficient, and purely functional environment.",
-    "chinese_title": "HN 展示：Fuse —— 静态类型函数式编程语言",
-    "chinese_summary": "Fuse是一种新型的静态类型纯函数式编程语言，具有高阶类型和通过“特性（traits）”实现的即时多态性。它通过GRIN全程序优化器和LLVM编译为原生代码，承诺提供快速、小巧且具有零开销抽象的二进制文件。\n\n该语言专为纯函数式编程设计，融合了代数数据类型、泛型、模式匹配、高阶函数和do记法，以实现富有表达力、可组合的代码。其类型系统基于具有高阶多态性的System F，并由双向类型推断支持，这在很大程度上消除了显式类型注解的需要，但函数签名除外。\n\nFuse的语法借鉴了Rust、Python、Scala和Haskell，采用基于缩进的代码块、lambda表达式和类似ML的风格，以提高可读性。提供的代码示例展示了如何定义像`Functor`这样的特性，如何为`List`等类型实现这些特性，以及如何使用泛型、`fold`、`map`和`fmap`以函数式方式操作数据。\n\nFuse工具链适用于Linux (x86_64)和macOS (ARM64)，可通过简单的`curl`命令安装。它旨在在一个简洁、高效、纯函数式的环境中提供强大的领域建模工具。"
+    "id": "49150470",
+    "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+    "url": "https://qwen.ai/blog?id=qwen3.8",
+    "summary": "The provided article content consists solely of the word \"Qwen.\"\n\nWhile the title, \"Qwen3.8-Max: A New Bar for Coding and Cowork,\" strongly suggests that the article would discuss a new AI model named Qwen3.8-Max, emphasizing its advanced capabilities in areas like coding assistance and collaborative work, the actual content required to summarize these points is missing.\n\nTherefore, a concise summary capturing the main points and key information of the article cannot be generated from the provided input.",
+    "chinese_title": "Qwen3.8-Max：编程与协同的新标杆",
+    "chinese_summary": "提供的文章内容仅包含“Qwen”一词。\n\n尽管标题“Qwen3.8-Max：编码与协作的新标杆”强烈暗示文章会讨论一个名为Qwen3.8-Max的新AI模型，并强调其在编码辅助和协作工作等方面的先进能力，但实际文章中却缺失了总结这些要点的具体内容。\n\n因此，无法根据所提供的内容生成一份概括文章主要观点和关键信息的简洁摘要。"
+  },
+  {
+    "id": "49154332",
+    "title": "SQLite Critical CVEs or LLM Slop?",
+    "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+    "summary": "JFrog security researchers have debunked a series of critical SQLite vulnerability advisories, published on GitHub and initially flagged by NVD and CISA, as largely fabricated \"LLM slop.\" Their investigation revealed that the advisories cited non-existent code, referenced unrelated logic, provided non-functional Proof-of-Concept (PoC) payloads, and were not listed on SQLite's official advisory page. AI detection tools further indicated these advisories were AI-generated.\n\nFor instance, CVE-2026-51302, initially rated 10.0 Critical by Red Hat, was downgraded after JFrog demonstrated its claims were based on non-existent functions. Similar issues plagued other CVEs, with claims ranging from fabricated patches to impossible line numbers.\n\nThis incident exposes a systemic vulnerability in the CVE submission process. MITRE's public form lacks identity verification, and NIST's NVD has faced a massive backlog since February 2024, reducing its manual validation efforts. Crucially, the current system doesn't require PoCs, allowing plausible but fake advisories to enter the security pipeline.\n\nThe proliferation of \"slop CVEs\" can severely impact organizations, causing wasted time investigating non-existent threats, polluting vulnerability databases, and potentially leading AI-driven security tools to generate incorrect fixes. JFrog advises vigilance, recommending users verify new CVEs, especially from unvalidated sources. Red flags include missing vendor corroboration, absent commit history, contradictory metadata, and references to non-existent code. Always reproduce reported issues with PoCs in safe environments. JFrog has reported its findings to relevant authorities for remediation.",
+    "chinese_title": "SQLite 关键CVE 还是 LLM 糟粕？",
+    "chinese_summary": "JFrog 安全研究人员驳斥了一系列严重的 SQLite 漏洞通报，这些通报发布在 GitHub 上，最初由 NVD 和 CISA 标记，并被认定为大多是捏造的“大语言模型垃圾内容”。他们的调查显示，这些通报引用了不存在的代码，提及了不相关的逻辑，提供了无法运行的漏洞验证（PoC）代码，并且未列入 SQLite 官方通报页面。人工智能检测工具进一步表明这些通报是人工智能生成的。\n\n例如，CVE-2026-51302，最初被 Red Hat 评定为 10.0 级的严重漏洞，在 JFrog 证明其主张是基于不存在的函数后被降级。其他 CVE 也存在类似问题，其声称的问题包括捏造的补丁和不可能存在的行号。\n\n此次事件暴露了 CVE 提交流程中存在的系统性漏洞。MITRE 的公共表格缺乏身份验证，而 NIST 的 NVD 自 2024 年 2 月以来面临大量积压，从而减少了其人工验证工作。至关重要的是，当前系统不要求提供 PoC，这使得看似合理但虚假的通报能够进入安全流程。\n\n“垃圾 CVE”的泛滥可能会严重影响企业，导致浪费时间调查不存在的威胁，污染漏洞数据库，并可能导致人工智能驱动的安全工具生成错误的修复方案。JFrog 建议保持警惕，建议用户验证新的 CVE，尤其是来自未经证实来源的。警示标志包括缺乏供应商证实、缺失提交历史、矛盾的元数据以及引用不存在的代码。务必在安全环境中通过 PoC 重现报告的问题。JFrog 已将其调查结果报告给相关机构，以便采取补救措施。"
+  },
+  {
+    "id": "49140998",
+    "title": "Karpathy’s Pelican",
+    "url": "https://twitter.com/karpathy/status/2083749667410727319",
+    "summary": "Andrej Karpathy notes a shift in LLM testing, moving beyond simple image generation to complex, generative tasks. He demonstrated this by challenging Opus 5 to render the first paragraph of \"Lord of the Rings\" into a 3D JavaScript environment, providing a 1M token budget. Opus 5 spent two hours generating 5500 lines of procedural code, impressively orchestrating polygons and animations to render the story, albeit with some \"jank.\"\n\nKarpathy emphasizes LLMs' unique stamina and patience, allowing them to undertake \"hyper custom\" projects that humans would typically deem too time-consuming or complex. He envisions a future of \"hyper custom worlds\" or \"ephemeral GTA of X on demand,\" where players could immerse themselves in stories as NPCs or characters, all generated on demand.\n\nHowever, he also identifies a key weakness: LLMs' inability to efficiently audit their own visual work. Opus 5 had to rely on slow, painstaking screenshots to check its output, which led to errors and imperfections. Karpathy concludes that improved multimodal capabilities, particularly the ability for LLMs to natively perceive videos or play games within their creations, is crucial for higher quality and self-correction in such sophisticated generative tasks.",
+    "chinese_title": "卡帕西的鹈鹕",
+    "chinese_summary": "安德烈·卡帕西（Andrej Karpathy）指出LLM测试正在发生转变，不再局限于简单的图像生成，而是转向复杂的生成任务。他通过挑战Opus 5将《指环王》第一段渲染到一个3D JavaScript环境中来展示这一点，并提供了100万个token预算。Opus 5花费两小时生成了5500行程序代码，令人印象深刻地协调多边形和动画来渲染故事，尽管存在一些“瑕疵”。\n\n卡帕西强调了LLM独特的耐力和耐心，使它们能够承担人类通常认为过于耗时或复杂的“超定制”项目。他展望了一个“超定制世界”或“按需瞬时生成GTA-X”的未来，玩家可以作为NPC或角色沉浸在故事中，所有这些都是按需生成的。\n\n然而，他也指出了一个关键弱点：LLM无法有效审查自身的视觉作品。Opus 5不得不依赖缓慢而费力的屏幕截图来检查其输出，这导致了错误和不完善之处。卡帕西总结道，改进的多模态能力，特别是LLM在其创作中原生感知视频或玩游戏的能力，对于在这些复杂的生成任务中实现更高质量和自我纠正至关重要。"
+  },
+  {
+    "id": "49138188",
+    "title": "Diátaxis",
+    "url": "https://diataxis.fr/",
+    "summary": "Diátaxis is a systematic approach to technical documentation, prescribing methods for content, architecture, and form based on understanding user needs. It identifies four distinct user needs and corresponding documentation forms: tutorials, how-to guides, technical reference, and explanation, placing them in a systematic relationship and proposing documentation should be organized around these structures.\n\nThe framework solves problems concerning what to write (content), how to write it (style), and how to organize it (architecture). Beyond aiding documentation users in finding what they need, Diátaxis also benefits creators and maintainers. It is lightweight, easy to grasp, and straightforward to apply, bringing an active principle of quality to their work without imposing implementation constraints.\n\nTo get started, users are advised to read a brief primer and immediately apply its principles. Deeper theoretical understanding of Diátaxis's foundations and principles is also available. The approach is proven in practice, adopted successfully in hundreds of projects, with testimonials from companies like Vonage, Gatsby, and Cloudflare attesting to its effectiveness in improving documentation quality, discoverability, and overall user and contributor experience.",
+    "chinese_title": "结构",
+    "chinese_summary": "Diátaxis是一种系统化的技术文档方法，它根据对用户需求的理解，规定了内容、架构和形式的方法。它识别出四种不同的用户需求以及相应的文档形式：教程、操作指南、技术参考和解释，将它们置于系统的关系中，并提出文档应围绕这些结构进行组织。\n\n该框架解决了关于写什么（内容）、如何写（风格）以及如何组织（架构）的问题。Diátaxis不仅帮助文档用户找到他们所需，也惠及创建者和维护者。它轻量级、易于掌握且易于应用，为他们的工作带来了积极的质量原则，同时不施加实施限制。\n\n为便于开始，建议用户阅读一份简要的入门指南并立即应用其原则。也可以获取对Diátaxis基础和原则的更深入的理论理解。这种方法在实践中得到验证，已在数百个项目中成功采用，像Vonage、Gatsby和Cloudflare等公司的评价证明了它在提高文档质量、可发现性以及整体用户和贡献者体验方面的有效性。"
+  },
+  {
+    "id": "49138302",
+    "title": "Seedance 2.5",
+    "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+    "summary": "Seedance 2.5, a new-generation video creation model, officially launched on July 31, 2026, building on Seedance 2.0's multimodal architecture. It shifts focus from mere clip generation to completing creative works, offering major breakthroughs in long-form storytelling, multimodal referencing, and editing.\n\nFor long-form storytelling, Seedance 2.5 generates up to 30-second high-quality audio-video clips in one pass, supporting multi-round extensions for multi-minute content. It enhances continuity, shot transitions, and overall visual/audio quality, enabling complete stories to unfold with consistent audiovisual language.\n\nMultimodal referencing is significantly upgraded, allowing up to 30 images, 10 video clips, and 10 audio clips as reference inputs. Enhanced capabilities like clay render, motion, and creative referencing provide finer control over subjects, actions, and camera work, better grasping complex creative intents and ensuring multi-character consistency and realistic lighting.\n\nSeedance 2.5 also delivers more precise and stable editing capabilities. It offers timestamp-level control for targeted adjustments during and after generation. Advanced features like green screen, camera perspective, and reference-based editing are elevated to meet rigorous professional demands in fields like film and advertising, ensuring seamless subject integration into new environments.\n\nAvailable on Jimeng AI and Doubao Pro, with API access coming soon, Seedance 2.5 aims to unlock greater creative imagination and productivity, expanding into real-world applications such as education and manufacturing.",
+    "chinese_title": "希丹 2.5",
+    "chinese_summary": "Seedance 2.5，新一代视频创作模型，于2026年7月31日正式发布，在Seedance 2.0的多模态架构基础上，将重心从单纯的片段生成转向完成创意作品，并在长篇叙事、多模态参考和编辑方面实现了重大突破。\n\n在长篇叙事方面，Seedance 2.5一次性可生成长达30秒的高质量音视频片段，支持多轮扩展以创作数分钟的内容。它增强了连贯性、镜头切换和整体视听质量，使完整的故事能够以一致的视听语言展开。\n\n多模态参考功能得到显著升级，允许最多30张图片、10个视频片段和10个音频片段作为参考输入。粘土渲染、运动和创意参考等增强功能提供了对主题、动作和镜头工作的更精细控制，更好地理解复杂的创意意图，并确保多角色一致性和逼真的光照。\n\nSeedance 2.5 还提供了更精确、更稳定的编辑能力。它提供时间戳级别的控制，以便在生成过程中和生成后进行有针对性的调整。绿幕、镜头透视和基于参考的编辑等高级功能已提升以满足电影和广告等领域的严苛专业需求，确保主体无缝融入新环境。\n\nSeedance 2.5 已在即梦AI和豆包专业版上线，API接口即将开放，旨在释放更大的创意想象力和生产力，并将扩展到教育和制造等实际应用领域。"
+  },
+  {
+    "id": "49156111",
+    "title": "Devtools must be open source",
+    "url": "https://blog.exe.dev/devtools-must-be-open-source",
+    "summary": "The article argues that AI agents are revolutionizing software personalization, making it astonishingly easy and overturning previous challenges. Historically, engineers rarely wrote or significantly customized software for themselves due to high development and maintenance costs, often opting for rigid, off-the-shelf solutions.\n\nNow, agents empower users to personalize software by directly modifying its source code. They can download, build, and integrate changes locally, and crucially, automatically manage synchronization with upstream updates through nightly rebasing. This drastically reduces both the initial effort and ongoing maintenance, making personalized software a viable, low-ROI endeavor.\n\nThe author illustrates this with an example: integrating their `meat.dev` tool into Shelley (an agent) with a single prompt. This allowed Shelley to pre-process Git commits in the background and display filtered diffs, a complex task that would be \"convoluted misery\" with traditional, limited extension APIs like those in VS Code or Vim.\n\nThis agent-driven approach fundamentally differs from classic configuration or plugin systems. Agents understand and adapt the underlying source code, eliminating the need for complex, pre-designed extension points. This means software no longer requires elaborate plugin systems or large config files; an agent can directly implement desired features for individual users, even for small teams.\n\nUltimately, this personalization capability hinges entirely on access to the software's source code. While open-source agents like Shelley, Pi, or Codex can be deeply personalized, closed-source software like Claude Code limits users to pre-defined customization hooks, hindering the full potential of agent-driven tailoring. The age of personalized software demands open source.",
+    "chinese_title": "开发工具必须开源",
+    "chinese_summary": "文章认为，AI智能体正在彻底改变软件个性化，使其变得异常简单，并颠覆了以往的挑战。历史上，由于开发和维护成本高昂，工程师很少为自己编写或大幅定制软件，他们通常选择僵化、现成的解决方案。\n\n现在，智能体让用户能够通过直接修改软件源代码来实现个性化。它们可以在本地下载、构建和集成修改，最重要的是，通过每晚的rebase（变基）自动管理与上游更新的同步。这大大减少了初始工作量和持续维护，使得个性化软件成为一种投入成本低、易于实现且可行的尝试。\n\n作者以一个例子对此进行阐释：通过一个简单的提示，将他们的`meat.dev`工具集成到Shelley（一个智能体）中。这使得Shelley能够在后台预处理Git提交并显示过滤后的差异，这项复杂任务如果使用VS Code或Vim等传统、受限的扩展API，将会是“难以理清的痛苦”。\n\n这种智能体驱动的方法与经典的配置或插件系统有着根本性的不同。智能体理解并能适应底层源代码，从而无需复杂、预先设计的扩展点。这意味着软件不再需要精密的插件系统或庞大的配置文件；智能体可以直接为个人用户，甚至是小型团队，实现所需功能。\n\n归根结底，这种个性化能力完全取决于对软件源代码的访问权限。虽然Shelley、Pi或Codex等开源智能体可以深度个性化，但Claude Code等闭源软件将用户限制在预定义的定制钩子中，从而阻碍了智能体驱动的个性化定制的全部潜力。个性化软件时代需要开源。"
+  },
+  {
+    "id": "49140218",
+    "title": "Go 1.27 Interactive Tour",
+    "url": "https://victoriametrics.com/blog/go-1-27/index.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Go 1.27 交互式导览",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49151734",
+    "title": "More German than many Germans",
+    "url": "https://mertbulan.com/more-german-than-many-germans/",
+    "summary": "The author recounts their transformative journey from Turkey to Germany, beginning with a 2017 internship in Hamburg. Initially holding stereotypical views of Germans as cold and rule-bound, their perception shifted after positive experiences with a trusting flatmate and friendly, inclusive colleagues. They found work culture surprisingly supportive, emphasizing well-being over overwork, and appreciated the flat hierarchies and social democracy reflected in equitable access to services like restaurants.\n\nA key revelation was their affinity for German rules, both written (like fire safety) and unwritten (punctuality, *Ruhezeit*), finding them logical and trust-based. This appreciation led others to label them \"more German than many Germans.\" The author also delved into German history and culture through extensive reading, noting the country's unique self-reflection and commitment to democratic values, evident in public protests against the far-right.\n\nDespite a \"soft landing\" as an English-speaking professional in an international company, the author's observations extended to smaller German firms. Deciding to make Germany their home, they successfully navigated the citizenship process, emphasizing that becoming German meant embracing the country's democratic values, not just obtaining a passport. Their experience underscores a deep integration fostered by shared values rather than forced assimilation.",
+    "chinese_title": "比很多德国人更德国",
+    "chinese_summary": "The author recounts their transformative journey from Turkey to Germany, beginning with a 2017 internship in Hamburg. Initially holding stereotypical views of Germans as cold and rule-bound, their perception shifted after positive experiences with a trusting flatmate and friendly, inclusive colleagues. They found work culture surprisingly supportive, emphasizing well-being over overwork, and appreciated the flat hierarchies and social democracy reflected in equitable access to services like restaurants.\n\nA key revelation was their affinity for German rules, both written (like fire safety) and unwritten (punctuality, *Ruhezeit*), finding them logical and trust-based. This appreciation led others to label them \"more German than many Germans.\" The author also delved into German history and culture through extensive reading, noting the country's unique self-reflection and commitment to democratic values, evident in public protests against the far-right.\n\nDespite a \"soft landing\" as an English-speaking professional in an international company, the author's observations extended to smaller German firms. Deciding to make Germany their home, they successfully navigated the citizenship process, emphasizing that becoming German meant embracing the country's democratic values, not just obtaining a passport. Their experience underscores a deep integration fostered by shared values rather than forced assimilation."
+  },
+  {
+    "id": "49139102",
+    "title": "AI financial advice is surprisingly good, especially if you ask right questions",
+    "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI financial advice is surprisingly good, especially if you ask right questions",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49143414",
+    "title": "Wikimedia Foundation refuses union recognition, hires union-busting law firm",
+    "url": "https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2026-08-02/News_and_notes",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Wikimedia Foundation refuses union recognition, hires union-busting law firm",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49140396",
+    "title": "Show HN: I'm a 15 Year Old Wannabe Engineer, This Is a Cycloidal Gearbox I Built",
+    "url": "https://github.com/tom-ilan/cycloidal_gearbox",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: I'm a 15 Year Old Wannabe Engineer, This Is a Cycloidal Gearbox I Built",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49153374",
+    "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+    "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Prevent cognitive debt by manually retyping LLM-generated code",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49149966",
+    "title": "Show HN: Isopolis – Isometric pixel map of SF",
+    "url": "https://sf.isopolis.city/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Isopolis – Isometric pixel map of SF",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49155359",
+    "title": "Wind and solar overtake fossil fuels in Germany for the first time",
+    "url": "https://www.intellinews.com/wind-and-solar-overtake-fossil-fuels-in-germany-for-the-first-time-ever-458379/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Wind and solar overtake fossil fuels in Germany for the first time",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49137681",
+    "title": "Google has abandoned Google News?",
+    "url": "https://elgan.com/google-news-is-just-forrest-gumps-shrimp-boat-now",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google has abandoned Google News?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49157128",
+    "title": "Taylor Farms has rewritten its cyclospora statement four times in sixteen days",
+    "url": "https://www.marlerblog.com/case-news/taylor-farms-has-rewritten-its-cyclospora-statement-four-times-in-sixteen-days-it-still-has-not-said-what-changed-at-that-plant-after-2013-or-why-two-thousand-negative-tests-should-mean-an/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Taylor Farms has rewritten its cyclospora statement four times in sixteen days",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49157930",
+    "title": "Ten advances in mathematics and theoretical computer science",
+    "url": "https://openai.com/index/ten-advances-in-mathematics/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Ten advances in mathematics and theoretical computer science",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49147435",
+    "title": "'Crush this lady': how eBay harassment campaign led to $56M payout",
+    "url": "https://www.ft.com/content/06ec1b03-d4af-40cf-b12a-4ba5a410f6d2",
+    "summary": "生成摘要时出错",
+    "chinese_title": "“击垮这名女子”：eBay骚扰行动如何导致5600万美元赔款",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49152842",
+    "title": "Bonsai: Janestreet's UI Library",
+    "url": "https://github.com/janestreet/bonsai",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Bonsai: Janestreet's UI Library",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49147263",
+    "title": "SwiftUI After 7 Years",
+    "url": "https://ykvm.com/2026/07/swiftui-a-story-of-mediocrity/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "SwiftUI After 7 Years",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49145937",
+    "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
+    "url": "https://github.com/wie-project/kakehashi",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49145590",
+    "title": "How the words we teach English language learners changed",
+    "url": "https://pudding.cool/2026/07/essential-words/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How the words we teach English language learners changed",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49138045",
+    "title": "The Silicon Valley Founder Meat Grinder",
+    "url": "https://zaksa.zip/blog/silicon-valley-founder-meat-grinder/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Silicon Valley Founder Meat Grinder",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49154237",
+    "title": "ICE Collected Nearly 1M People's DNA Last Year–Including Young Children",
+    "url": "https://www.wired.com/story/ice-dna-collection-fbi-codis/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ICE Collected Nearly 1M People's DNA Last Year–Including Young Children",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49148128",
+    "title": "EU Age Verification Project Mandates Hardware-Bound Attestation",
+    "url": "https://linuxiac.com/eu-age-verification-project-mandates-hardware-bound-attestation/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "EU Age Verification Project Mandates Hardware-Bound Attestation",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49141073",
+    "title": "Running Kimi K3 on MI355X at Better Performance per Dollar Than B300",
+    "url": "https://www.wafer.ai/blog/kimi-k3-mi355x",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Running Kimi K3 on MI355X at Better Performance per Dollar Than B300",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49156011",
+    "title": "Andy Pavlo joins ClickHouse to establish ClickHouse Labs",
+    "url": "https://clickhouse.com/blog/andy-pavlo-joins-clickhouse",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Andy Pavlo joins ClickHouse to establish ClickHouse Labs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49152023",
+    "title": "Rust project goals: Immobile types and guaranteed destructors",
+    "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Rust project goals: Immobile types and guaranteed destructors",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49155629",
+    "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+    "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+    "summary": "生成摘要时出错",
+    "chinese_title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49140213",
+    "title": "ASRock BC-250: Building the Budget Steam Machine",
+    "url": "https://plug-world.com/posts/2026/asrock-bc250-the-budget-steam-machine/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ASRock BC-250: Building the Budget Steam Machine",
+    "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "49143096",
@@ -24,75 +256,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49139711",
-    "title": "RFC 10015: Deprecating Obsolete Key Exchange Methods in TLS 1.2 and DTLS 1.2",
-    "url": "https://www.rfc-editor.org/rfc/rfc10015.html",
-    "summary": "RFC 10015, published in July 2026, is a Standards Track document that deprecates and discourages the use of obsolete key exchange methods specifically for TLS 1.2 and DTLS 1.2 connections.\n\nThe document mandates that clients **MUST NOT** offer and servers **MUST NOT** select the following:\n*   Non-ephemeral Diffie-Hellman (DH) over a finite field (FFDH) cipher suites.\n*   Ephemeral Finite Field Diffie-Hellman (FFDHE) cipher suites.\n*   RSA key exchange cipher suites.\n\nAdditionally, clients **SHOULD NOT** offer and servers **SHOULD NOT** select static Elliptic Curve Diffie-Hellman (ECDH) cipher suites. The use of certificates with fixed DH parameters (e.g., rsa_fixed_dh, dss_fixed_dh, rsa_fixed_ecdh, ecdsa_fixed_ecdh) is also discouraged.\n\nThese prescriptions apply only to TLS 1.2 and DTLS 1.2. TLS 1.0 and 1.1 are already deprecated, and TLS 1.3 either does not use the affected algorithms or addresses the relevant configuration issues differently.\n\nThe deprecation is driven by significant security concerns:\n*   **Lack of forward secrecy:** Affecting non-ephemeral DH and RSA key exchanges.\n*   **Vulnerability to side-channel attacks:** Including the Raccoon attack (FFDH/FFDHE) and invalid curve attacks (ECDH), often exacerbated by public key reuse or complex mitigation requirements.\n*   **Known RSA vulnerabilities:** Such as variants of Bleichenbacher's attack (ROBOT, DROWN), which are challenging to mitigate correctly.\n*   **FFDHE-specific problems:** Interoperability issues due to lack of group negotiation, susceptibility to small subgroup attacks, and an insufficient security margin with common 1024-bit groups.\n\nThis RFC updates numerous prior RFCs and directs IANA to mark the affected cipher suites and certificate types as \"D\" (Deprecated) in the relevant registries.",
-    "chinese_title": "RFC 10015: 弃用 TLS 1.2 和 DTLS 1.2 中过时的密钥交换方法",
-    "chinese_summary": "RFC 10015，于2026年7月发布，是一份标准规范文档，旨在废弃并劝退专门用于TLS 1.2和DTLS 1.2连接的过时密钥交换方法。\n\n该文档规定，客户端**不得**提供，服务器**不得**选择以下内容：\n*   基于有限域的非临时迪菲-赫尔曼 (FFDH) 密码套件。\n*   有限域临时迪菲-赫尔曼 (FFDHE) 密码套件。\n*   RSA密钥交换密码套件。\n\n此外，客户端**不应**提供，服务器**不应**选择静态椭圆曲线迪菲-赫尔曼 (ECDH) 密码套件。同样不鼓励使用具有固定DH参数的证书（例如，rsa_fixed_dh、dss_fixed_dh、rsa_fixed_ecdh、ecdsa_fixed_ecdh）。\n\n这些规定仅适用于TLS 1.2和DTLS 1.2。TLS 1.0和1.1已被废弃，而TLS 1.3要么不使用受影响的算法，要么以不同方式处理相关的配置问题。\n\n此次废弃是出于重大的安全隐患：\n*   **缺乏前向保密性：** 影响非临时DH和RSA密钥交换。\n*   **易受侧信道攻击：** 包括浣熊攻击 (FFDH/FFDHE) 和无效曲线攻击 (ECDH)，通常因公钥重用或复杂的缓解要求而加剧。\n*   **已知RSA漏洞：** 例如Bleichenbacher攻击的变种 (ROBOT、DROWN)，难以正确缓解。\n*   **FFDHE特有问题：** 由于缺乏群组协商导致的互操作性问题，易受小群组攻击，以及使用常见1024位群组时安全裕度不足。\n\n本RFC更新了多份此前的RFC，并指示IANA在相关注册表中将受影响的密码套件和证书类型标记为“D”（已废弃）。"
-  },
-  {
-    "id": "49132341",
-    "title": "EU will mandate labels on authentic-looking AI content starting August 2",
-    "url": "https://www.engadget.com/2227966/eu-mandate-labels-on-authentic-looking-ai-content/",
-    "summary": "The European Union will mandate labels on AI-generated content that could be mistaken for authentic material, starting August 2. This regulation, part of the EU's landmark AI Act, aims to enhance transparency and prevent deception by requiring providers of AI systems to clearly label deepfakes and other synthetic content.\n\nThe rule applies to \"authentic-looking\" content like AI-generated images, audio, video, and text that could mislead the public, regardless of whether it's harmful. The labels will need to be machine-readable where possible, and users must be notified when interacting with an AI system. The goal is to inform citizens about AI's use and potential manipulations.\n\nWhile the AI Act won't fully take effect until 2025, specific provisions are being phased in. This labeling requirement is one of the first to be implemented, underscoring the EU's proactive stance on regulating AI and its potential impact on information integrity.",
-    "chinese_title": "欧盟将从8月2日起强制要求对看似真实的AI内容加贴标签",
-    "chinese_summary": "The European Union will mandate labels on AI-generated content that could be mistaken for authentic material, starting August 2. This regulation, part of the EU's landmark AI Act, aims to enhance transparency and prevent deception by requiring providers of AI systems to clearly label deepfakes and other synthetic content.\n\nThe rule applies to \"authentic-looking\" content like AI-generated images, audio, video, and text that could mislead the public, regardless of whether it's harmful. The labels will need to be machine-readable where possible, and users must be notified when interacting with an AI system. The goal is to inform citizens about AI's use and potential manipulations.\n\nWhile the AI Act won't fully take effect until 2025, specific provisions are being phased in. This labeling requirement is one of the first to be implemented, underscoring the EU's proactive stance on regulating AI and its potential impact on information integrity."
-  },
-  {
-    "id": "49141828",
-    "title": "ESP32-C3 SuperMini antenna modification",
-    "url": "https://peterneufeld.wordpress.com/2025/03/04/esp32-c3-supermini-antenna-modification/",
+    "id": "49140702",
+    "title": "MkLinux and the pimped-out Apple Workgroup Server 9150",
+    "url": "http://oldvcr.blogspot.com/2026/08/mklinux-and-pimped-out-apple-workgroup.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "ESP32-C3 超级迷你天线改装",
+    "chinese_title": "MkLinux and the pimped-out Apple Workgroup Server 9150",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49142794",
-    "title": "Show HN: Syncular – offline-first SQL sync with TypeScript and Rust cores",
-    "url": "https://github.com/syncular/syncular",
-    "summary": "Syncular is an offline-first, server-authoritative SQL sync solution. Clients maintain a real local SQLite database (OPFS in browsers, native elsewhere), write optimistically to an outbox, while the server maintains a single, ordered commit log as the source of truth.\n\nThe project is \"spec-first\" with normative documentation and golden fixtures. It features dual TypeScript and Rust cores, kept in lockstep by an implementation-agnostic conformance suite, ensuring cross-core parity. A rigorous testing doctrine, including in-memory loopback transports and fault injection, ensures reliability.\n\nThe system comprises distinct server components (supporting SQLite, Postgres, D1, with Hono/Cloudflare Workers bindings) and client cores (TS web-client on WebAssembly SQLite, Rust client via FFI). It offers React hooks, a TypeScript schema emitter, and advanced features like per-column End-to-End Encryption and Yjs CRDT mergers. Bindings are planned for Tauri, React Native, Swift, Kotlin, and Flutter.\n\nSyncular's development doctrine, outlined in AGENTS.md, emphasizes spec-first principles and high quality for all contributors. While AI assistance is welcomed for various tasks, all submissions, especially production code, require thorough review, understanding, and defense, rejecting low-effort machine-generated content.",
-    "chinese_title": "Show HN: Syncular – 离线优先的 SQL 同步，基于 TypeScript 和 Rust 核心",
-    "chinese_summary": "Syncular是一个离线优先、服务器权威的SQL同步解决方案。客户端维护一个真实的本地SQLite数据库（在浏览器中使用OPFS，在其他地方使用原生实现），乐观地写入到一个发件箱，而服务器则维护一个单一的、有序的提交日志作为数据真相来源。\n\n该项目秉持“规范优先”原则，配备规范性文档和黄金测试夹具。它拥有TypeScript和Rust双核心，通过独立于实现的符合性测试套件保持同步，从而确保跨核心的一致性。严格的测试规范，包括内存中的环回传输和故障注入，确保了其可靠性。\n\n该系统由独立的服务器组件（支持SQLite、Postgres、D1，并提供Hono/Cloudflare Workers绑定）和客户端核心（基于WebAssembly SQLite的TypeScript Web客户端，以及通过FFI的Rust客户端）组成。它提供React Hooks、TypeScript模式生成器，以及每列端到端加密和Yjs CRDT合并器等高级功能。计划为Tauri、React Native、Swift、Kotlin和Flutter提供绑定。\n\nSyncular的开发原则（在AGENTS.md中概述）强调规范优先原则和所有贡献者的高质量。虽然欢迎AI在各种任务中提供协助，但所有提交，尤其是生产代码，都需要经过彻底的审查、理解和辩护，并拒绝低质量的机器生成内容。"
-  },
-  {
-    "id": "49135546",
-    "title": "Pgtestdb's template cloning approach to testing is fast",
-    "url": "https://brandur.org/fragments/pgtestdb",
-    "summary": "The article highlights `pgtestdb`, a Go/Postgres testing package that leverages Postgres template databases for fast test setup. This method copies materialized database files quickly, outperforming migrations or Docker-based techniques.\n\nThe author compared `pgtestdb` with River's existing schema-based testing, which isolates tests in separate schemas, allowing for debugging and testing database-wide features, but requires migrations for each new schema.\n\nSurprisingly, initial setup times were similar: both `pgtestdb`'s database cloning and River's schema creation + migration averaged around 100ms per setup. This challenged the author's preconception that full database creation would be slow.\n\nHowever, River's overall test suite ran approximately 3.5 times faster (14.54s vs. 51.07s). This speed difference was attributed to River's optimization of *schema reuse*. River's test helpers pool and clean schemas, reusing them for subsequent tests, which dramatically reduces the effective setup time per test for the entire suite.\n\nThe article concludes that while `pgtestdb`'s template cloning is inherently fast for individual setups, implementing a reuse strategy (like River's schema pooling) would be vital for large applications to achieve optimal overall test suite speeds. The author will continue using River's existing method for its incidental benefits but will recommend `pgtestdb` for specific end-to-end testing scenarios.",
-    "chinese_title": "Pgtestdb的模板克隆测试方法很快。",
-    "chinese_summary": "文章介绍了`pgtestdb`，一个Go/Postgres测试包，它利用Postgres模板数据库实现快速测试设置。这种方法能快速复制具象化的数据库文件，优于基于迁移或Docker的技术。\n\n作者将`pgtestdb`与River现有的基于schema的测试方法进行了比较，后者在独立的schema中隔离测试，允许调试和测试数据库范围的功能，但每个新schema都需要进行迁移。\n\n令人惊讶的是，初始设置时间相似：`pgtestdb`的数据库克隆和River的schema创建+迁移平均每次设置都在100毫秒左右。这挑战了作者关于完整数据库创建会很慢的先入之见。\n\n然而，River的整体测试套件运行速度快了约3.5倍（14.54秒对51.07秒）。这种速度差异归因于River对*schema复用*的优化。River的测试辅助工具会池化并清理schema，并将其用于后续测试，从而显著减少了整个套件中每个测试的有效设置时间。\n\n文章总结道，尽管`pgtestdb`的模板克隆对于单个设置本身很快，但对于大型应用程序而言，实施复用策略（如River的schema池化）将至关重要，以实现最佳的整体测试套件速度。作者将继续使用River的现有方法，因为它附带的额外好处，但会推荐`pgtestdb`用于特定的端到端测试场景。"
-  },
-  {
-    "id": "49135507",
-    "title": "Scope of Hacks on U.S. Water Supply Widens as Evidence Points to Iran",
-    "url": "https://www.nytimes.com/2026/08/01/us/politics/iran-cyberattack-water-systems.html",
+    "id": "49146122",
+    "title": "Linux Desktop Market Share Surpasses 10% in North America",
+    "url": "https://linuxiac.com/linux-desktop-market-share-surpasses-10-in-north-america/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Scope of Hacks on U.S. Water Supply Widens as Evidence Points to Iran",
+    "chinese_title": "Linux Desktop Market Share Surpasses 10% in North America",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49128323",
-    "title": "Demystifying DRAM Read Disturbance: RowHammer and RowPress Phenomena",
-    "url": "https://arxiv.org/abs/2607.28233",
+    "id": "49156071",
+    "title": "Utah produced more power from solar than any other source in May, a new first",
+    "url": "https://www.sltrib.com/news/environment/2026/08/03/utah-sets-solar-power-record/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Demystifying DRAM Read Disturbance: RowHammer and RowPress Phenomena",
+    "chinese_title": "Utah produced more power from solar than any other source in May, a new first",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49137808",
-    "title": "Top amputation surgeon had own legs removed due to fetish. Were patients safe?",
-    "url": "https://www.theguardian.com/uk-news/2026/aug/01/neil-hopper-surgeon-amputated-legs-fetish-extreme-mutilation-patients-questions",
+    "id": "49140633",
+    "title": "Plug-in solar is coming. Plug-in batteries should follow",
+    "url": "https://www.regen.co.uk/insights/plug-in-solar-is-coming-plug-in-batteries-should-follow",
     "summary": "生成摘要时出错",
-    "chinese_title": "Top amputation surgeon had own legs removed due to fetish. Were patients safe?",
+    "chinese_title": "Plug-in solar is coming. Plug-in batteries should follow",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49134079",
-    "title": "Google kills Earth AI generator after one day",
-    "url": "https://twitter.com/newsfromgoogle/status/2083249962150760610",
+    "id": "49147450",
+    "title": "Europe EV Sales BEVs Jump 50% & Reach 26% Market Share",
+    "url": "https://cleantechnica.com/2026/08/02/europe-ev-sales-report-bevs-jump-50-reach-26-market-share/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Google kills Earth AI generator after one day",
+    "chinese_title": "Europe EV Sales BEVs Jump 50% & Reach 26% Market Share",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49152222",
+    "title": "The AI Productivity Gap",
+    "url": "https://bjorg.bjornroche.com/management/ai-productivity-gap/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The AI Productivity Gap",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49140599",
+    "title": "Deep-sea vehicles spot 'alien' sharks deep beneath the waves in the Pacific",
+    "url": "https://www.science.org/content/article/deep-sea-vehicles-spot-alien-sharks-deep-beneath-waves-pacific#",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Deep-sea vehicles spot 'alien' sharks deep beneath the waves in the Pacific",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -104,27 +320,147 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49144273",
-    "title": "Has the New Cocaine Arrived?",
-    "url": "https://playboy.substack.com/p/has-the-new-cocaine-finally-arrived",
+    "id": "49140405",
+    "title": "When random.bytes() runs but doesn't work",
+    "url": "https://insider.btcpp.dev/p/when-randombytes-runs-but-doesnt",
     "summary": "生成摘要时出错",
-    "chinese_title": "Has the New Cocaine Arrived?",
+    "chinese_title": "When random.bytes() runs but doesn't work",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49137024",
-    "title": "Oil companies report sky-high profits thanks to wartime crude prices",
-    "url": "https://www.npr.org/2026/07/31/nx-s1-5910660/big-oil-earnings-q2-2026",
+    "id": "49154304",
+    "title": "Xkcd: Earth Temperature Timeline (2016)",
+    "url": "https://xkcd.com/1732/",
     "summary": "生成摘要时出错",
-    "chinese_title": "石油公司报告天价利润，得益于战时原油价格。",
+    "chinese_title": "Xkcd: Earth Temperature Timeline (2016)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49127573",
-    "title": "Nano Banana 2 removed from Google Earth",
-    "url": "https://www.digitaldigging.org/p/nano-banana-2-removed-from-google",
+    "id": "49154127",
+    "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+    "url": "https://github.com/garagehq/nightcrawler/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Nano Banana 2 removed from Google Earth",
+    "chinese_title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49149898",
+    "title": "CP/M-386 – CP/M for 386 protected mode, derived from CP/M‑68K",
+    "url": "https://github.com/johnsonjh/cpm386",
+    "summary": "生成摘要时出错",
+    "chinese_title": "CP/M-386 – CP/M for 386 protected mode, derived from CP/M‑68K",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49148048",
+    "title": "Show HN: Make your Framework 12 sound like a creaky door",
+    "url": "https://github.com/ArcaEge/creakwork12",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Make your Framework 12 sound like a creaky door",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49158474",
+    "title": "Celebrating 45 Years of Kermit with the First New C-Kermit Release in 15 Years",
+    "url": "https://changelog.complete.org/archives/44456-celebrating-45-years-of-kermit-with-the-first-new-c-kermit-release-in-15-years-and-working-with-a-decades-old-c-codebase",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Celebrating 45 Years of Kermit with the First New C-Kermit Release in 15 Years",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49141828",
+    "title": "ESP32-C3 SuperMini antenna modification",
+    "url": "https://peterneufeld.wordpress.com/2025/03/04/esp32-c3-supermini-antenna-modification/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ESP32-C3 SuperMini antenna modification",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49150773",
+    "title": "AI migrated legacy COBOL programs to Java, bugs included",
+    "url": "https://arxiv.org/abs/2607.28271",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI migrated legacy COBOL programs to Java, bugs included",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49139711",
+    "title": "RFC 10015: Deprecating Obsolete Key Exchange Methods in TLS 1.2 and DTLS 1.2",
+    "url": "https://www.rfc-editor.org/rfc/rfc10015.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "RFC 10015: Deprecating Obsolete Key Exchange Methods in TLS 1.2 and DTLS 1.2",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49154249",
+    "title": "9front \"This Was Supposed to Be Fun\" Released",
+    "url": "https://9front.org/releases/2026/08/02/0/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "9front \"This Was Supposed to Be Fun\" Released",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49156650",
+    "title": "Flock's CEO Faced Me After Its Cameras Led to My Wrongful Stop",
+    "url": "https://www.thedrive.com/podcast/flocks-ceo-wants-zero-wrongful-stops-i-wasnt-the-first",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Flock's CEO Faced Me After Its Cameras Led to My Wrongful Stop",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49142794",
+    "title": "Show HN: Syncular – offline-first SQL sync with TypeScript and Rust cores",
+    "url": "https://github.com/syncular/syncular",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Syncular – offline-first SQL sync with TypeScript and Rust cores",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49156299",
+    "title": "Why does Mail app contact iCloud when sending a non-iCloud email?",
+    "url": "https://lapcatsoftware.com/articles/2026/8/2.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Why does Mail app contact iCloud when sending a non-iCloud email?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49148541",
+    "title": "Flock – Chilling Effects: Long Island's Emerging Open-Air Prison",
+    "url": "https://www.11971.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Flock – Chilling Effects: Long Island's Emerging Open-Air Prison",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49154601",
+    "title": "The AI bubble is popping; we just don't know it yet",
+    "url": "https://www.theregister.com/ai-and-ml/2026/08/03/the-ai-bubble-is-already-popping-we-just-dont-know-it-yet/5282004",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The AI bubble is popping; we just don't know it yet",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49152973",
+    "title": "The true power of regular expressions (2012)",
+    "url": "https://www.npopov.com/2012/06/15/The-true-power-of-regular-expressions.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The true power of regular expressions (2012)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49147760",
+    "title": "TinyNES Review – A Super Niche NES Console",
+    "url": "https://blog.lon.tv/2023/02/05/tinynes-review-a-super-niche-nes-console/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "TinyNES Review – A Super Niche NES Console",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49149800",
+    "title": "Boris Cherny on Trying to Get Claude Code to Rewrite the Claude App",
+    "url": "https://daringfireball.net/linked/2026/08/02/cherny-claude-swift",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Boris Cherny on Trying to Get Claude Code to Rewrite the Claude App",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -136,35 +472,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49145883",
-    "title": "Rooting, firmware analysis and persistent credentials of TP-Link TL-841N",
-    "url": "https://blog.juni-mp4.com/posts/42/rooting-the-tplink-tl841n-pt1/",
+    "id": "49149222",
+    "title": "Bitcoin cold-wallet attack spreads to 4,500 addresses as losses near $89M",
+    "url": "https://www.coindesk.com/tech/2026/08/02/bitcoin-cold-wallet-attack-spreads-to-4-500-addresses-as-losses-near-usd89-million",
     "summary": "生成摘要时出错",
-    "chinese_title": "Rooting, firmware analysis and persistent credentials of TP-Link TL-841N",
+    "chinese_title": "Bitcoin cold-wallet attack spreads to 4,500 addresses as losses near $89M",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49135985",
-    "title": "Kaisel – Routes as Values. Dart 3 Native Router for Flutter",
-    "url": "https://kaisel.dev/",
+    "id": "49149125",
+    "title": "The Computational Theory of Mind (2015)",
+    "url": "https://plato.stanford.edu/entries/computational-mind/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Kaisel – Routes as Values. Dart 3 Native Router for Flutter",
+    "chinese_title": "The Computational Theory of Mind (2015)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49146267",
-    "title": "Show HN: NixOS-DGX-Spark – Nix and NixOS on the DGX Spark",
-    "url": "https://github.com/graham33/nixos-dgx-spark",
+    "id": "49144273",
+    "title": "Has the New Cocaine Arrived?",
+    "url": "https://playboy.substack.com/p/has-the-new-cocaine-finally-arrived",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: NixOS-DGX-Spark – Nix and NixOS on the DGX Spark",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49139325",
-    "title": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]",
-    "url": "https://www.youtube.com/watch?v=pHcZpvIfho0",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]",
+    "chinese_title": "Has the New Cocaine Arrived?",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -176,11 +504,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49142128",
-    "title": "Nerd culture is murdering intellectuals",
-    "url": "https://www.theintrinsicperspective.com/p/nerd-culture-is-murdering-intellectuals",
+    "id": "49137808",
+    "title": "Top amputation surgeon had own legs removed due to fetish. Were patients safe?",
+    "url": "https://www.theguardian.com/uk-news/2026/aug/01/neil-hopper-surgeon-amputated-legs-fetish-extreme-mutilation-patients-questions",
     "summary": "生成摘要时出错",
-    "chinese_title": "Nerd culture is murdering intellectuals",
+    "chinese_title": "Top amputation surgeon had own legs removed due to fetish. Were patients safe?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49152871",
+    "title": "Show HN: We Fixed UniFi's Slow PPPoE Performance with PPPoE Half-Bridge",
+    "url": "https://arcbox.dev/blog/unifi-pppoe-half-bridge-acceleration",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: We Fixed UniFi's Slow PPPoE Performance with PPPoE Half-Bridge",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49151871",
+    "title": "Situational Awareness and the Impending Stock Market Volatility",
+    "url": "https://www.emergingtrajectories.com/lh/situational-awareness-bigger-picture/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Situational Awareness and the Impending Stock Market Volatility",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49158581",
+    "title": "Smaller, faster, safer: running Kimi and GLM at scale",
+    "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Smaller, faster, safer: running Kimi and GLM at scale",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49146605",
+    "title": "Harvesting SSH Credentials: Insights from My Honeypot Network",
+    "url": "https://uphillsecurity.com/articles/harvesting-ssh-credentials-insights-from-my-honeypot-network/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Harvesting SSH Credentials: Insights from My Honeypot Network",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49139325",
+    "title": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]",
+    "url": "https://www.youtube.com/watch?v=pHcZpvIfho0",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49155940",
+    "title": "The Future, Made in China",
+    "url": "https://www.newyorker.com/magazine/2026/08/10/the-future-made-in-china",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Future, Made in China",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -192,19 +568,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49137904",
-    "title": "Cookware Got Worse on Purpose: Who Owns Pyrex and All-Clad Now",
-    "url": "https://www.worseonpurpose.com/p/your-cookware-got-worse-on-purpose",
+    "id": "49157786",
+    "title": "What's the largest software project AI can complete on its own?",
+    "url": "https://epoch.ai/MirrorCode",
     "summary": "生成摘要时出错",
-    "chinese_title": "Cookware Got Worse on Purpose: Who Owns Pyrex and All-Clad Now",
+    "chinese_title": "What's the largest software project AI can complete on its own?",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49137268",
-    "title": "Google cancels AI Studio app after 800k preorders",
-    "url": "https://twitter.com/GoogleAIStudio/status/2083274575769473092",
+    "id": "49142128",
+    "title": "Nerd culture is murdering intellectuals",
+    "url": "https://www.theintrinsicperspective.com/p/nerd-culture-is-murdering-intellectuals",
     "summary": "生成摘要时出错",
-    "chinese_title": "Google cancels AI Studio app after 800k preorders",
+    "chinese_title": "Nerd culture is murdering intellectuals",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -213,6 +589,62 @@
     "url": "https://osadmins.com/en/ibm-i-os-400-the-database-operating-system/",
     "summary": "生成摘要时出错",
     "chinese_title": "IBM i (OS/400) the Database Operating System",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49148899",
+    "title": "Show HN: Mu – Tools for Agents",
+    "url": "https://github.com/micro/mu",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Mu – Tools for Agents",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49147606",
+    "title": "EU rules on AI models become enforceable. What's going to change?",
+    "url": "https://www.euronews.com/my-europe/2026/08/02/eu-rules-on-ai-models-become-enforceable-whats-going-to-change",
+    "summary": "生成摘要时出错",
+    "chinese_title": "EU rules on AI models become enforceable. What's going to change?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49147029",
+    "title": "A fresh look at CPU silent data corruption in modern data centers",
+    "url": "https://cacm.acm.org/research/revisiting-cpu-silent-data-corruptions-in-modern-datacenters/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A fresh look at CPU silent data corruption in modern data centers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49152316",
+    "title": "The Shape of Things to Come",
+    "url": "https://yegge.ai/essays/the-shape-of-things-to-come/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Shape of Things to Come",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49137904",
+    "title": "Cookware Got Worse on Purpose: Who Owns Pyrex and All-Clad Now",
+    "url": "https://www.worseonpurpose.com/p/your-cookware-got-worse-on-purpose",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cookware Got Worse on Purpose: Who Owns Pyrex and All-Clad Now",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49153158",
+    "title": "Less Coffee, Better Sleep",
+    "url": "https://www.marginalia.nu/log/a_109_sleep2/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Less Coffee, Better Sleep",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49148159",
+    "title": "AI Mania: From Tulips to Tokens",
+    "url": "https://seanhelvey.com/tools-and-their-tools/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Mania: From Tulips to Tokens",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -232,30 +664,6 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49140737",
-    "title": "The teenage hitmen recruited to kill across Europe",
-    "url": "https://www.bbc.com/news/articles/czrjyevmv61o",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The teenage hitmen recruited to kill across Europe",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49133647",
-    "title": "Morten Linderud resigning from Arch Linux development team",
-    "url": "https://lists.archlinux.org/archives/list/arch-dev-public@lists.archlinux.org/thread/2AX2BCJ3EQX7G3YXSDX73BR4NCAWXXBZ/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Morten Linderud resigning from Arch Linux development team",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49131034",
-    "title": "What liberal arts education is for (2024)",
-    "url": "https://innig.net/teaching/liberal-arts-manifesto",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What liberal arts education is for (2024)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "49139994",
     "title": "Dark Hours",
     "url": "https://darkhours.io",
@@ -264,27 +672,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49128539",
-    "title": "Apple Will 'Watch Everything Burn' When AI Bubble Bursts",
-    "url": "https://asymco.com/2026/07/31/apple-will-watch-everything-burn-when-ai-bubble-bursts/",
+    "id": "49146696",
+    "title": "How China Keeps Tabs on Foreigners",
+    "url": "https://www.nytimes.com/2026/08/02/world/asia/china-surveillance-foreigners-database.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Apple Will 'Watch Everything Burn' When AI Bubble Bursts",
+    "chinese_title": "How China Keeps Tabs on Foreigners",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49127874",
-    "title": "Predictive Speculative KV Replication for Bursty LLM Inference",
-    "url": "https://jwlabs.vercel.app/post/biting-the-bullet",
+    "id": "49140737",
+    "title": "The teenage hitmen recruited to kill across Europe",
+    "url": "https://www.bbc.com/news/articles/czrjyevmv61o",
     "summary": "生成摘要时出错",
-    "chinese_title": "Predictive Speculative KV Replication for Bursty LLM Inference",
+    "chinese_title": "The teenage hitmen recruited to kill across Europe",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49143630",
-    "title": "Only 8.9% of sites block AI crawlers, but 94.8% are never cited in AI answers",
-    "url": "https://website-auditor.io/ai-visibility-index",
+    "id": "49153481",
+    "title": "EU enforces labeling AI generated content",
+    "url": "https://www.euronews.com/my-europe/2026/08/02/ai-generated-label-becomes-mandatory-in-the-eu-for-companies",
     "summary": "生成摘要时出错",
-    "chinese_title": "Only 8.9% of sites block AI crawlers, but 94.8% are never cited in AI answers",
+    "chinese_title": "EU enforces labeling AI generated content",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -296,179 +704,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49139052",
-    "title": "Drug reverses autism-like brain changes in adult mice within hours",
-    "url": "https://www.uclahealth.org/news/release/drug-reverses-autism-like-brain-changes-adult-mice-within",
+    "id": "49150181",
+    "title": "RFC 9851: TLS 1.2 is in Feature Freeze",
+    "url": "https://www.rfc-editor.org/rfc/rfc9851.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Drug reverses autism-like brain changes in adult mice within hours",
+    "chinese_title": "RFC 9851: TLS 1.2 is in Feature Freeze",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49143053",
-    "title": "Is the Industrial Revolution a good precedent for explosive growth today?",
-    "url": "https://mattsclancy.github.io/2026/07/27/industrial-revolution-growth.html",
+    "id": "49147478",
+    "title": "German carmakers flood jobs market with managers after wielding axe",
+    "url": "https://www.ft.com/content/e345d51f-11f7-4d4d-8f09-86dd3a225597",
     "summary": "生成摘要时出错",
-    "chinese_title": "Is the Industrial Revolution a good precedent for explosive growth today?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49140174",
-    "title": "The Prospects for 128 Bit Processors ( John Mashey SGI 1995)",
-    "url": "https://yarchive.net/comp/128bit.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Prospects for 128 Bit Processors ( John Mashey SGI 1995)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49130853",
-    "title": "Firefighter arson a long-standing issue – expert",
-    "url": "https://www.firerescue1.com/arson-investigation/articles/expert-firefighter-arson-a-long-standing-issue-xHXLFAdYVcQPiuPU/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Firefighter arson a long-standing issue – expert",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49137419",
-    "title": "Fermi Paradox",
-    "url": "https://en.wikipedia.org/wiki/Fermi_paradox",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Fermi Paradox",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49134310",
-    "title": "How to Spot AI Writing",
-    "url": "https://www.economist.com/culture/2026/07/30/how-to-spot-ai-writing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How to Spot AI Writing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49131860",
-    "title": "A migrant surge tests Spain's open policies",
-    "url": "https://economist.com/europe/2026/07/31/a-migrant-surge-tests-spains-open-policies",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A migrant surge tests Spain's open policies",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49129008",
-    "title": "Unearthing my 1996 windowed OS in machine code for Am29000 homebrew computer",
-    "url": "https://nanochess.org/the_am29000_computer.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Unearthing my 1996 windowed OS in machine code for Am29000 homebrew computer",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49136955",
-    "title": "Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets",
-    "url": "https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49143289",
-    "title": "Generative AI floods and dilutes the market for books",
-    "url": "https://arxiv.org/abs/2607.20349",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Generative AI floods and dilutes the market for books",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49141008",
-    "title": "Don't credit the LLM",
-    "url": "https://isaacsu.com/2026/08/dont-credit-the-llm/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Don't credit the LLM",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49143330",
-    "title": "Impro is a handbook for running a cult",
-    "url": "https://www.seangoedecke.com/impro/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Impro is a handbook for running a cult",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49139562",
-    "title": "A stray commit buried multiple levels deep cost me months",
-    "url": "https://www.droppedasbaby.com/posts/db-commits/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A stray commit buried multiple levels deep cost me months",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49135975",
-    "title": "Franken.domains: Stitched-Together Domains, Because Every .com Is Taken",
-    "url": "https://franken.domains/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Franken.domains: Stitched-Together Domains, Because Every .com Is Taken",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49130583",
-    "title": "Firefox Local Mode for Web Developers",
-    "url": "https://firefox-source-docs.mozilla.org/devtools-user/local_mode/index.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Firefox Local Mode for Web Developers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49140869",
-    "title": "OpenAI's claimed disproof of Connes' Rigidity Conjecture is invalid [pdf]",
-    "url": "https://philarchive.org/archive/NIEWTCv17",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI's claimed disproof of Connes' Rigidity Conjecture is invalid [pdf]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49133777",
-    "title": "Astro Loop",
-    "url": "https://pubdeer.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Astro Loop",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49143719",
-    "title": "GPUs could explode to multiple TB with new storage-inspired memory tech",
-    "url": "https://www.theregister.com/storage/2026/07/30/gpus-could-explode-to-multiple-tb-with-new-storage-inspired-memory-tech/5281363",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GPUs could explode to multiple TB with new storage-inspired memory tech",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49141877",
-    "title": "Australia's social media ban has failed",
-    "url": "https://www.reuters.com/legal/litigation/australia-defends-teen-social-media-ban-after-study-shows-most-still-online-2026-08-01/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Australia's social media ban has failed",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49138553",
-    "title": "Coldcard's $38M (so far) exploit shakes faith in self-custody",
-    "url": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Coldcard's $38M (so far) exploit shakes faith in self-custody",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49136787",
-    "title": "Reddit Stock Collapses 23% as AI Eats Away at User Growth",
-    "url": "https://www.barchart.com/story/news/3584357/reddit-stock-collapses-23-as-ai-eats-away-at-user-growth",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Reddit Stock Collapses 23% as AI Eats Away at User Growth",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49146372",
-    "title": "The Coldcard Disaster Gets Worse: The Hack May Have Reached $88.6M",
-    "url": "https://medium.com/mountain-movers/the-coldcard-disaster-gets-worse-the-hack-may-have-reached-88-6-af507b028594",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Coldcard Disaster Gets Worse: The Hack May Have Reached $88.6M",
+    "chinese_title": "German carmakers flood jobs market with managers after wielding axe",
     "chinese_summary": "生成摘要时出错"
   }
 ]
