@@ -1,122 +1,130 @@
 [
   {
-    "id": "49232138",
-    "title": "Windows 11's built-in Weather app wastes more than 1 GB of RAM",
-    "url": "https://www.notebookcheck.net/Windows-11-s-built-in-Weather-app-wastes-more-than-1-GB-of-RAM.1364205.0.html",
-    "summary": "Windows 11's built-in Weather app has been found to consume over 1 GB of RAM, significantly hindering PC efficiency, particularly on systems with limited memory. Tests by Windows Latest and Wccftech show the app using more than 1.2 GB displaying a forecast, and up to 1.5–1.6 GB during basic interactions like zooming. This is considerably higher than Apple's macOS Weather app, which uses less than 250 MB of RAM.\n\nThe excessive memory usage is attributed to the app not being a fully native Windows application. Instead, it's an MSN Weather web app built on Microsoft's WebView2 framework, which runs multiple Chromium-based subprocesses. While high-end PCs with 32 GB+ RAM may not notice the impact, entry-level systems with 8 GB or 16 GB of memory could experience increased memory pressure, leading to heavier reliance on the page file and reduced system responsiveness.\n\nFurther criticism stems from the app's inclusion of sponsored content within its interface. This high memory consumption and the presence of ads contradict Microsoft's recent efforts to improve Windows 11's efficiency, enhance performance on lower-end hardware, and develop more fully native applications for the operating system.",
-    "chinese_title": "Windows 11 自带的天气应用浪费超过 1 GB 的内存",
-    "chinese_summary": "Windows 11 内置的天气应用被发现占用超过 1 GB 的 RAM，这严重拖累了电脑（PC）效率，尤其是在内存有限的系统上。Windows Latest 和 Wccftech 的测试显示，该应用在显示天气预报时占用超过 1.2 GB，而在进行缩放等基本交互时甚至高达 1.5–1.6 GB。这大大高于苹果 macOS 天气应用（内存占用不到 250 MB）。\n\n内存占用过高归因于该应用并非完全原生的 Windows 应用程序。相反，它是一个基于微软 WebView2 框架构建的 MSN 天气网页应用，该框架运行多个基于 Chromium 的子进程。虽然配备 32 GB 以上 RAM 的高端电脑可能不会注意到其影响，但内存为 8 GB 或 16 GB 的入门级系统可能会经历更大的内存压力，导致对页面文件的依赖增加，并降低系统响应速度。\n\n进一步的批评源于该应用在其界面中包含赞助内容。这种高内存消耗和广告的存在与微软最近为提高 Windows 11 效率、增强低端硬件性能以及为操作系统开发更多原生应用程序所做的努力背道而驰。"
-  },
-  {
-    "id": "49223475",
-    "title": "LinkedIn Feed Blocker",
-    "url": "https://github.com/andrewpollack/linkedin-feed-blocker",
-    "summary": "\"LinkedIn Feed Blocker\" is a minimal Chrome extension designed to disable LinkedIn's home feed while keeping other features usable. Its primary purpose is to hide the entire main feed on `/feed` and block infinite-scroll feed pagination, allowing users to focus on professional functions like jobs, profiles, messaging, and notifications without the distraction of the social feed.\n\nThe developer created the extension because they value LinkedIn for job searching and recruiter interactions but dislike its \"wild-west\" social feed.\n\nCurrently pending review for the Chrome Web Store, the extension can be manually installed by downloading its repository, enabling Developer mode in `chrome://extensions`, and loading the unpacked directory.\n\nTechnically, it works by using `feed.css` to hide the main feed element (`[data-testid=\"mainFeed\"] { display: none !important; }`) and `rules.json` to block requests for additional main-feed posts by specifically targeting LinkedIn's `mainFeed` pager (`sduiid=com.linkedin.sdui.pagers.feed.mainFeed`), thus preventing interference with other parts of the platform.",
-    "chinese_title": "领英动态屏蔽",
-    "chinese_summary": "“领英动态屏蔽器”是一个轻量级的 Chrome 扩展程序，旨在禁用领英的主页动态，同时保持其他功能可用。它的主要目的是隐藏 `/feed` 页面上的整个主动态，并阻止无限滚动的信息流分页，让用户能够专注于求职、个人资料、消息和通知等专业功能，而不受社交动态的干扰。\n\n开发者创建此扩展程序是因为他们重视领英在求职和与招聘人员互动方面的作用，但却不喜欢其“狂野西部”式的社交动态。\n\n目前，该扩展程序正在等待 Chrome 网上应用店的审核，用户可以通过下载其代码库、在 `chrome://extensions` 中启用开发者模式并加载解压后的目录来手动安装。\n\n从技术上讲，它通过使用 `feed.css` 来隐藏主动态元素（具体为 `[data-testid=\"mainFeed\"] { display: none !important; }`），并使用 `rules.json` 通过专门针对领英的 `mainFeed` 分页器（即 `sduiid=com.linkedin.sdui.pagers.feed.mainFeed`）来阻止对更多主动态帖子的请求，从而防止干扰平台其他部分的功能。"
-  },
-  {
-    "id": "49221864",
-    "title": "Gentoo bugzilla closed due AI bot scraper overload",
-    "url": "https://social.treehouse.systems/@mgorny/117058483039362779",
-    "summary": "Gentoo's Bugzilla, its official bug tracking system, has been shut down. The closure is attributed to an overload caused by AI bot scrapers.\n\nThis action was confirmed by Jesus Michał von Gentoo, a likely developer or administrator, who announced on Treehouse Mastodon that he had taken the system down. While his direct quote provided is incomplete, the article's title explicitly states \"AI bot scraper overload\" as the reason for the shutdown.",
-    "chinese_title": "Gentoo bugzilla closed due AI bot scraper overload",
-    "chinese_summary": "Gentoo 的官方缺陷追踪系统 Bugzilla 已被关闭。此次关闭归因于人工智能机器人爬虫造成的过载。\n\n这一举动得到了 Jesus Michał von Gentoo（一位可能是开发人员或管理员）的证实，他通过 Treehouse Mastodon 宣布他已关闭该系统。虽然他提供的直接引述不完整，但文章标题明确指出“人工智能机器人爬虫过载”是关闭的原因。"
-  },
-  {
-    "id": "49227365",
-    "title": "Melatonin impairs morning cognition in healthy young adults (2023)",
-    "url": "https://academic.oup.com/sleep/article/46/Supplement_1/A34/7181621",
-    "summary": "A study investigated the impact of melatonin on morning cognition in 28 healthy young adults (18-35 years old). In a double-blind, randomized, placebo-controlled, crossover design, participants received either 5 mg melatonin or a placebo 30 minutes before sleep. Cognitive assessments were conducted at 8 AM the following morning.\n\nThe results showed that melatonin significantly increased subjective sleepiness, as measured by the Karolinska Sleepiness Scale. Objectively, melatonin impaired psychomotor vigilance, leading to slower reaction times and more lapses on the Psychomotor Vigilance Test. Working memory was also negatively affected, with decreased accuracy and increased reaction times observed in the n-back task. Furthermore, inhibitory control was compromised, evidenced by a rise in commission errors during the Go/No-Go task. However, no significant effects were noted on verbal learning or digit span.\n\nThe study concludes that acute 5 mg melatonin ingestion significantly impairs morning alertness, psychomotor vigilance, working memory, and inhibitory control in healthy young adults. These findings highlight the importance of caution when using melatonin, particularly in situations demanding optimal morning cognitive performance.",
-    "chinese_title": "褪黑素损害健康青年人晨间认知 (2023)",
-    "chinese_summary": "一项研究调查了28名健康青年人（18-35岁）中褪黑素对晨间认知能力的影响。该研究采用双盲、随机、安慰剂对照、交叉设计，参与者在睡前30分钟服用5毫克褪黑素或安慰剂。次日上午8点进行认知能力评估。\n\n结果显示，根据卡罗林斯卡困倦量表测量，褪黑素显著增加了主观困倦感。客观上，褪黑素损害了精神运动警觉性，在精神运动警觉测试中导致反应时间变慢和失误增多。工作记忆也受到负面影响，在n-back任务中观察到准确性下降和反应时间增加。此外，抑制控制能力受损，表现为Go/No-Go任务中执行错误的增加。然而，未发现对言语学习或数字广度有显著影响。\n\n该研究得出结论，急性服用5毫克褪黑素会显著损害健康青年人的晨间警觉性、精神运动警觉性、工作记忆和抑制控制能力。这些发现强调了在使用褪黑素时需谨慎，尤其是在需要最佳晨间认知表现的情况下。"
-  },
-  {
-    "id": "49220313",
-    "title": "Europe's free satellite service just made it easier to track wildfires",
-    "url": "https://arstechnica.com/gadgets/2026/08/europes-free-satellite-service-just-made-it-easier-to-track-wildfires/",
-    "summary": "Europe's free Copernicus Browser, providing satellite imagery from the European Space Agency's Sentinel-2 mission, has significantly improved its wildfire tracking capabilities. On August 4, a new, straightforward \"wildfires\" visualization layer was added, making it easier for anyone to monitor active fires (white/yellow), burning vegetation (red), and burned landscapes (dark brown/black).\n\nThis enhancement stems from a JavaScript script developed by remote sensing expert Pierre Markuse. The script combines visible red, narrow near-infrared, and short-wave infrared 2 bands to differentiate between healthy and burned vegetation and reveal soil moisture levels in burned areas. Previously, users had to manually add this script. However, Simon Proud, a mission scientist for Sentinel-2, successfully advocated for its integration as a default option.\n\nSentinel-2 imagery offers multi-spectral imaging at a granular 10-meter resolution, providing a significant advantage over other free services like NASA's FIRMS tool, which typically offers coarser resolutions down to 250 meters. While Sentinel-2 updates every few days compared to FIRMS's rapid hourly updates, its higher resolution makes it arguably the best free and publicly available tool for detailed wildfire monitoring. This development is particularly timely as climate change exacerbates wildfire seasons globally, impacting regions from Washington and Oregon to Canada, France, and Spain.",
-    "chinese_title": "欧洲的免费卫星服务刚让追踪野火变得更容易。",
-    "chinese_summary": "Europe's free Copernicus Browser, providing satellite imagery from the European Space Agency's Sentinel-2 mission, has significantly improved its wildfire tracking capabilities. On August 4, a new, straightforward \"wildfires\" visualization layer was added, making it easier for anyone to monitor active fires (white/yellow), burning vegetation (red), and burned landscapes (dark brown/black).\n\nThis enhancement stems from a JavaScript script developed by remote sensing expert Pierre Markuse. The script combines visible red, narrow near-infrared, and short-wave infrared 2 bands to differentiate between healthy and burned vegetation and reveal soil moisture levels in burned areas. Previously, users had to manually add this script. However, Simon Proud, a mission scientist for Sentinel-2, successfully advocated for its integration as a default option.\n\nSentinel-2 imagery offers multi-spectral imaging at a granular 10-meter resolution, providing a significant advantage over other free services like NASA's FIRMS tool, which typically offers coarser resolutions down to 250 meters. While Sentinel-2 updates every few days compared to FIRMS's rapid hourly updates, its higher resolution makes it arguably the best free and publicly available tool for detailed wildfire monitoring. This development is particularly timely as climate change exacerbates wildfire seasons globally, impacting regions from Washington and Oregon to Canada, France, and Spain."
-  },
-  {
-    "id": "49229174",
-    "title": "There Are Magic Hexagons of Every Order",
-    "url": "https://gukov.dev/math/2026/08/02/new-magic-hexagons.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "任意阶幻方六边形存在",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "49227652",
     "title": "Incentives are for losers",
     "url": "https://www.experimental-history.com/p/incentives-are-for-losers",
-    "summary": "The article, \"Incentives are for losers,\" argues against the pervasive idea that people should obey incentives, labeling such behavior as undignified. It contends that true human development lies in acquiring a personal sense of purpose and refining one's own moral compass, rather than being swayed by arbitrary reward systems. Without this internal purpose, individuals become \"incentive-maxxers,\" driven by \"tumorous desires\" for money, power, and fame, often leading to a \"spiritually chinless\" existence despite external success.\n\nThe author posits that developing a strong value system is a difficult, learned skill, unlike innate abilities. Research on \"moralistic therapeutic deism\" and the \"illusion of explanatory depth\" suggests most people hold vague, easily-overwritten moral and religious beliefs until profoundly challenged.\n\nTo cultivate genuine convictions, one must \"look at a fish and go insane\"—confront a \"Big Horrible Fish,\" an unexamined assumption that necessitates a complete life re-evaluation. The author describes his own \"fish\" as realizing the disconnect between academic social justice discourse and the suffering outside the conference hotel, prompting him to leave academia. He cites Senator Charles Sumner, who defied violence for his abolitionist convictions, as an example of someone whose \"moral reckoning\" led to uncommon integrity, immune to external incentives. Ultimately, the article advocates for a self-forged moral code over obedience to external reward systems.",
+    "summary": "In \"Incentives are for losers,\" Adam Mastroianni challenges the common belief that societal problems are solely due to \"bad incentives.\" He argues that this mindset implies incentives *should* be obeyed, reducing those who live by them to \"dummies and schmucks.\" True human development, he asserts, involves acquiring a personal sense of purpose and refining one's own moral compass, not chasing arbitrary external rewards.\n\nMastroianni suggests that many who ascend societal ladders, driven by money, power, and fame, often lack genuine convictions, becoming \"spiritually chinless.\" Developing a robust value system is a difficult, acquired skill, not an innate one, akin to learning to read rather than speak. Most people, he contends, maintain only vague, \"moralistic therapeutic deist\" beliefs—an \"illusion of explanatory depth\"—because their superficial morality is \"good enough\" for daily life and rarely challenged.\n\nTo forge deeper values, one must confront a \"Big Horrible Fish\": a foundational, unexamined assumption that, if fully considered, would necessitate a significant upheaval in one's life. The author recounts his own \"fish\" moment, realizing the disconnect between academic social justice discourse and real-world suffering. He cites Senator Charles Sumner, who defied incentives and risked his life for abolitionist convictions, as an example of someone who confronted their \"fish\" and developed profound integrity. The article advocates for a life driven by self-examined purpose over external rewards.",
     "chinese_title": "激励是给失败者的。",
-    "chinese_summary": "文章《激励是给失败者的》反对普遍存在的“人们应该服从激励”的观念，称这种行为是缺乏尊严的。它认为，真正的人类发展在于培养个人的目标感和完善自己的道德指南针，而不是被任意的奖励系统所左右。如果没有这种内在目标，个人就会成为“激励最大化者”，被对金钱、权力、名声的“肿瘤般欲望”所驱动，即使取得外部成功，也往往导致一种“精神上软弱无力”的存在。\n\n作者提出，建立一个强大的价值观体系是一种困难的后天习得技能，而非与生俱来的能力。对“道德治疗性自然神论”和“解释深度错觉”的研究表明，大多数人的道德和宗教信仰是模糊的，容易被覆盖，直到受到深刻挑战。\n\n为了培养真正的信念，一个人必须“凝视一条鱼并为之疯狂”——面对一条“可怕的大鱼”，一个未经审视的假设，它要求对生命进行彻底的重新评估。作者将他自己的“鱼”描述为：意识到学术界的社会正义论述与会议酒店外的苦难脱节，这促使他离开了学术界。他引用了参议员查尔斯·萨姆纳（Charles Sumner）的例子，萨姆纳为他的废奴主义信念而抵抗暴力，其“道德清算”造就了非凡的正直，不受外部激励的影响。最终，这篇文章提倡锻造自我的道德准则，而非服从外部奖励系统。"
+    "chinese_summary": "在《激励是给失败者的》一文中，亚当·马斯特罗伊安尼（Adam Mastroianni）挑战了“社会问题仅仅源于‘不良激励’”这一普遍观点。他认为，这种心态暗示着激励 *应该* 被服从，将那些受其驱使而生活的人贬低为“傻瓜和笨蛋”。他声称，真正的人类发展在于获得个人目标感并磨砺自己的道德指南针，而不是追逐任意的外部奖励。\n\n马斯特罗伊安尼指出，许多被金钱、权力和名声驱使而攀登社会阶梯的人，往往缺乏真正的信念，变得“精神上软弱无力”。他认为，发展一套健全的价值观是一项难以获得的技能，而非与生俱来的，这类似于学习阅读而非说话。他争辩说，大多数人只持有一些模糊的、“道德化的、治疗性的自然神论”信仰——一种“解释深度的幻觉”——因为他们肤浅的道德观在日常生活中“足够好用”，并且很少受到挑战。\n\n为了形成更深刻的价值观，一个人必须直面一条“大而可怕的鱼”（Big Horrible Fish）：一个未经审视的根本性假设，如果对其进行充分思考，将必然导致个人生活的重大变革。作者回顾了自己的“鱼”时刻，即认识到学术界的社会正义论述与现实世界苦难之间的脱节。他引用了查尔斯·萨姆纳参议员的例子，萨姆纳藐视激励，为废奴主义信念冒生命危险，以此说明他是如何直面自己的“鱼”并培养出深刻正直品格的。文章倡导一种由自我审视的目标而非外部奖励驱动的生活。"
   },
   {
-    "id": "49232318",
-    "title": "Analyzing data from Silicon Valley ventures and founders prosecuted for fraud",
-    "url": "https://pubsonline.informs.org/doi/full/10.1287/orsc.2024.19981",
-    "summary": "Unable to access the article link.",
-    "chinese_title": "Analyzing data from Silicon Valley ventures and founders prosecuted for fraud",
-    "chinese_summary": "无法访问文章链接。"
+    "id": "49242653",
+    "title": "Squeak 6.1",
+    "url": "https://squeak.org/release_notes/6.1/",
+    "summary": "Squeak 6.1 \"Vanessa\" marks a significant release after four years and over 1700 merged patches, celebrating the system's nearly 30th anniversary. While optimized for an interactive experience within Squeak, these release notes highlight major advancements across the platform.\n\nKey improvements include a new hierarchical tree browser for streamlined class and category navigation, the reintroduction of Objectland (the \"Worlds of Squeak\") with interactive examples, and several core kernel infrastructure fixes for processes and class reshaping. The toolset and user interface have received miscellaneous additions for inspecting, debugging, profiling, and versioning code.\n\nMorphic benefits from a major overhaul of tree morphs, text editor enhancements, and numerous UI tweaks improving stability, performance, and high-DPI support. Objectland returns with the classic BlobMorph, and Etoys features restored tutorials and game improvements. Programming tools are extensively enhanced, notably with a new tree browser supporting drag'n'drop, expanded inspector features (custom fields, proxy handling), and significant debugger upgrades. New debugger capabilities include \"send until\" for precise searching, improved \"run to here,\" a \"byteCodes\" mode for VM instructions, and a \"simulate\" button for the metacircular evaluator. The AndreasSystemProfiler is now integrated, and numerous UI tweaks, stability fixes across browsers, inspectors, and change recovery contribute to this comprehensive update.",
+    "chinese_title": "斯奎克 6.1",
+    "chinese_summary": "Squeak 6.1 \"Vanessa\" 历经四年、合并逾1700个补丁后，标志着一次重要发布，并庆祝该系统近30周年。尽管主要为Squeak内部的交互体验进行了优化，但本发布说明将重点介绍平台上的各项重大进展。\n\n主要改进包括：用于简化类和类别导航的新分层树形浏览器；Objectland（即“Squeak世界”）的重新引入，并附带交互式示例；以及针对进程和类重塑的核心内核基础设施的若干修复。工具集和用户界面也新增了用于代码检查、调试、性能分析和版本控制的各种功能。\n\nMorphic 受益于树形UI组件的重大改版、文本编辑器增强功能以及大量UI调整，从而提升了稳定性、性能和高DPI支持。Objectland 携经典的BlobMorph回归，Etoys则恢复了教程并优化了游戏。编程工具得到了广泛增强，尤其是新增了支持拖放的树形浏览器、扩展了检查器功能（自定义字段、代理处理）以及显著的调试器升级。新的调试器功能包括用于精确搜索的“send until”、改进的“run to here”、用于VM指令的“byteCodes”模式，以及用于元循环评估器的“simulate”按钮。AndreasSystemProfiler现已集成，大量的UI调整，以及浏览器、检查器和变更恢复方面的稳定性修复，共同促成了这次全面的更新。"
   },
   {
-    "id": "49228663",
-    "title": "Microsoft Word for Windows 1.1a, Native X64 Port",
-    "url": "https://github.com/jmarshall23/msword",
+    "id": "49243397",
+    "title": "Mistral Patent for “Code implemented tool calls”",
+    "url": "https://patentsgazette.uspto.gov/week26/OG/html/1547-5/US12670045-20260630.html",
+    "summary": "US Patent No. 12,670,045 B1, titled \"Code implemented tool calls,\" has been assigned to Mistral AI, with Gabriel Vergnaud listed as the inventor. The patent was filed on March 4, 2026.\n\nThe core of the patent describes a method for a server to manage user requests involving external tool calls via a Large Language Model (LLM). The process unfolds as follows:\n1.  A server receives a user request for one or more tool calls.\n2.  An LLM generates a code block, written in a programming language, which encapsulates these tool calls.\n3.  The server executes this code block within a sandbox environment.\n4.  If a tool call is pending during execution, the code block's execution is paused.\n5.  The pending tool call is then transmitted to a client for external execution.\n6.  Upon receiving the first result of the pending tool call from the client, the server resumes the code block's execution, substituting the received result for the pending call.\n7.  Finally, the complete result of the executed code block is returned to the LLM.\n\nThis method enables LLMs to dynamically orchestrate and manage tool interactions, including pausing and resuming execution based on client-side tool outputs.",
+    "chinese_title": "Mistral“代码实现的工具调用”专利",
+    "chinese_summary": "美国专利号 12,670,045 B1，题为“代码实现的工具调用”，已转让给 Mistral AI，发明人为 Gabriel Vergnaud。该专利于2026年3月4日提交。\n\n该专利的核心描述了一种服务器通过大型语言模型（LLM）管理涉及外部工具调用的用户请求的方法。该过程如下：\n1.  服务器接收到一个或多个工具调用的用户请求。\n2.  LLM生成一个用编程语言编写的代码块，其中封装了这些工具调用。\n3.  服务器在沙盒环境中执行该代码块。\n4.  如果在执行期间有工具调用待处理，则暂停代码块的执行。\n5.  随后，待处理的工具调用被传输到客户端进行外部执行。\n6.  在从客户端接收到待处理工具调用的第一个结果后，服务器恢复代码块的执行，并用接收到的结果替换待处理的调用。\n7.  最后，将已执行代码块的完整结果返回给LLM。\n\n这种方法使LLM能够动态编排和管理工具交互，包括根据客户端工具的输出来暂停和恢复执行。"
+  },
+  {
+    "id": "49238818",
+    "title": "Run Android ARM64 VR APKs on Apple Vision Pro",
+    "url": "https://github.com/shinyquagsire23/Klepton",
+    "summary": "Klepton is a project enabling the execution of Android ARM64 VR APKs on Apple Vision Pro without requiring Just-In-Time (JIT) compilation, though some applications might eventually need it for scripting runtimes.\n\nThe core technology is `klepton-ld`, which translates Android `.so` libraries into compatible Apple `.dylib` and `.framework` formats. Klepton specifically targets \"Java-thin\" applications, meaning it does not support Android's full ART runtime or a Java Virtual Machine.\n\nFor graphics, GLES 3.2 calls are translated to ANGLE GLES 3.0 (with its Metal backend), and Vulkan calls are handled by MoltenVK. Klepton's runtime provides reimplementations of Android's Bionic C library (mapping to `libSystem`), NDK APIs (like `ALooper`, `ANativeWindow`), a synthetic JNI environment, and Oculus VR Platform (OVRP) functions. A notable technical detail is its patching of Android's x18 register usage to avoid conflicts with macOS conventions.\n\nCurrently, Beat Saber runs on both macOS and visionOS with minor graphical issues. Development continues for applications like Steam VR Link and improving overall generalizability and build tooling.",
+    "chinese_title": "在苹果Vision Pro上运行安卓ARM64 VR APK",
+    "chinese_summary": "Klepton 是一个项目，旨在实现在 Apple Vision Pro 上执行 Android ARM64 VR APK，而无需即时 (JIT) 编译，尽管某些应用程序最终可能需要它来支持脚本运行时。\n\n其核心技术是 `klepton-ld`，它将 Android 的 `.so` 库转换为兼容的 Apple `.dylib` 和 `.framework` 格式。Klepton 专门针对“Java-thin”应用程序，这意味着它不支持 Android 完整的 ART 运行时或 Java 虚拟机。\n\n在图形方面，GLES 3.2 调用被转换为 ANGLE GLES 3.0（使用其 Metal 后端），Vulkan 调用由 MoltenVK 处理。Klepton 的运行时提供了 Android 的 Bionic C 库（映射到 `libSystem`）、NDK API（如 `ALooper`、`ANativeWindow`）、一个合成的 JNI 环境以及 Oculus VR 平台 (OVRP) 功能的重新实现。一个值得注意的技术细节是它修补了 Android 的 x18 寄存器使用方式，以避免与 macOS 约定冲突。\n\n目前，Beat Saber 可以在 macOS 和 visionOS 上运行，但存在一些轻微的图形问题。针对 Steam VR Link 等应用程序的开发仍在进行中，并致力于提高整体通用性和构建工具。"
+  },
+  {
+    "id": "49235349",
+    "title": "The main way I've seen people turn ideologically crazy (2025)",
+    "url": "https://blog.andymasley.com/p/the-main-way-ive-seen-people-turn",
+    "summary": "The article describes a common dynamic leading people to become \"ideologically crazy\": developing an extremist idea, encountering mostly uninformed or irrational criticisms, and then mistakenly concluding their belief is more correct due to the weakness of the opposition. The author argues this \"positive update\" is the crucial error.\n\nThis occurs because most people are not deeply knowledgeable or critically thoughtful about complex issues. Regardless of the extreme idea (e.g., Marxism, veganism, nuclear policy), average criticisms will likely be confused, factually wrong, or morally simplistic. Believers often interpret this widespread \"confusion\" as validation, feeling intellectually superior on their \"island of sanity\" amidst a \"sea of confusion.\"\n\nTo avoid this trap, the author advises against updating beliefs based on interactions with the average person. Instead, individuals should actively seek out the *most compelling, well-informed, and non-partisan critics* who understand the topic's basic facts. This \"slightly elitist\" approach means engaging only with those who are truly \"awake\"—intellectually curious and patient—regardless of their specific ideology. The goal is to disconnect the sense of intellectual \"awakeness\" from one's own specific beliefs, preventing the dangerous self-reinforcement caused by easily discrediting ill-informed opposition.",
+    "chinese_title": "我所见人们思想极端化的主要方式 (2025)",
+    "chinese_summary": "文章描述了一种导致人们“思想狂热”的常见动态：人们产生一个极端想法，遇到大多是无知或非理性的批评，然后错误地认为，由于反对者的弱点，他们的信念更加正确。作者认为，这种“积极更新”是关键的错误。\n\n这种情况的发生，是因为大多数人对复杂问题没有深入的了解或批判性思考。无论这个极端想法是什么（例如，马克思主义、素食主义、核政策），普通的批评很可能是混乱的、事实错误的或道德上过于简单的。信徒们常常将这种普遍的“困惑”解读为对自己观点的证实，感觉自己在“困惑之海”中身处“清醒之岛”，智力上高人一等。\n\n为了避免这个陷阱，作者建议不要根据与普通人的互动来更新信念。相反，个人应该积极寻找那些了解该主题基本事实的、*最令人信服、消息灵通且不偏不倚的批评者*。这种“略显精英主义”的方法意味着只与那些真正“清醒”——求知欲强且有耐心——的人交流，无论他们持有何种特定意识形态。目标是将智力上的“清醒”感与自己的特定信念脱钩，防止因轻易驳斥无知反对者而产生的危险自我强化。"
+  },
+  {
+    "id": "49230514",
+    "title": "Reviving a four year old reMarkable 2",
+    "url": "https://oskrim.github.io/hardware/2026/08/09/remarkable-over-ssh.html",
+    "summary": "This article details the process of reviving a four-year-old reMarkable 2 paper tablet that was failing to cloud sync (error 0) and update its software.\n\nThe initial \"error 0\" was resolved by SSHing into the tablet (via USB IP 10.11.99.1, using root and the password from device settings) and correcting the out-of-sync clock using `timedatectl`. Specifically, disabling NTP (`set-ntp 0`), setting a recent date (`set-time 'YYYY-MM-DD'`), and re-enabling NTP (`set-ntp 1`) allowed the first software update.\n\nAfter this, cloud sync failed with HTTP 400, demanding a newer application version. `journalctl` revealed the tablet was stuck at version 3.11.2.5, and further updates failed due to network resolution issues on reboot. Restarting the update services (`systemctl restart swupdate.service update-engine.service`) allowed the tablet to update to the latest version (3.27.3.0).\n\nNotably, software version 3.22 and above silently disable SSH over Wi-Fi; to re-enable it, users must SSH via USB and run `rm-ssh-over-wlan on`.\n\nFinally, as cloud sync remained broken for new uploads, the author opted to enable the tablet's optional web server for file transfer. This can be done by editing `xochitl.conf` via SSH (`WebInterfaceEnabled=true`) and restarting `xochitl.service`, or directly through the device UI (`Settings → General settings → Storage → USB web interface`). Files can then be uploaded directly using `curl` commands to the tablet's USB IP, a method the author found more convenient than cloud sync.",
+    "chinese_title": "复活四年旧的reMarkable 2",
+    "chinese_summary": "本文详细介绍了如何“复活”一台四年前的reMarkable 2电子纸平板，该设备之前无法进行云同步（错误0）和软件更新。\n\n最初的“错误0”通过SSH连接到平板（使用USB IP 10.11.99.1，root用户和设备设置中的密码）来解决，即使用`timedatectl`命令校正不同步的时钟。具体操作是：禁用NTP（`set-ntp 0`），设置一个最近的日期（`set-time 'YYYY-MM-DD'`），然后重新启用NTP（`set-ntp 1`），从而允许了首次软件更新。\n\n此后，云同步又因HTTP 400错误而失败，要求使用更高版本的应用程序。`journalctl`显示平板停留在3.11.2.5版本，并且由于重启后的网络解析问题，进一步的更新失败。重启更新服务（`systemctl restart swupdate.service update-engine.service`）后，平板得以更新到最新版本（3.27.3.0）。\n\n值得注意的是，软件版本3.22及以上会静默禁用通过Wi-Fi进行的SSH连接；要重新启用它，用户必须通过USB进行SSH连接并运行`rm-ssh-over-wlan on`命令。\n\n最后，由于新上传文件的云同步仍然无法使用，作者选择启用平板的可选网页服务器进行文件传输。这可以通过SSH编辑`xochitl.conf`文件（`WebInterfaceEnabled=true`）并重启`xochitl.service`来完成，或者直接通过设备用户界面（`设置 → 通用设置 → 存储 → USB网页界面`）进行设置。之后，可以使用`curl`命令直接将文件上传到平板的USB IP，作者发现这种方法比云同步更方便。"
+  },
+  {
+    "id": "49244783",
+    "title": "'Pervert glasses': Backlash against Meta's smart glasses grows",
+    "url": "https://www.seattletimes.com/business/technology/pervert-glasses-backlash-against-metas-smart-glasses-grows/",
+    "summary": "Meta's new Ray-Ban Smart Glasses are facing significant backlash and have been widely dubbed \"pervert glasses\" due to widespread privacy concerns. Critics fear the glasses' ability to discreetly record video and audio without adequately alerting those being filmed, leading to anxieties about surreptitious recording in public and private spaces.\n\nA key point of contention is the small, white LED indicator light, which many deem insufficient and easily missed, especially in bright conditions or from a distance. Social media platforms, particularly TikTok, have amplified these concerns with viral videos demonstrating how easily people can be recorded without their knowledge, sparking calls for bans in venues like gyms, restaurants, and bars.\n\nThis situation mirrors the \"Glasshole\" controversy that plagued Google Glass a decade ago, which ultimately contributed to its commercial failure due to similar privacy anxieties. Despite Meta's insistence that the LED is \"unmissable\" and their emphasis on user education and community guidelines, public discomfort and suspicion remain high. Early adopters report negative reactions from strangers who fear being unknowingly recorded.\n\nThe challenge for Meta is to overcome this \"creepy\" perception and convince the public of the product's responsible use, a hurdle that proved insurmountable for its predecessor in the smart glasses market. The growing sentiment suggests that the current privacy safeguards are not enough to quell public apprehension.",
+    "chinese_title": "“变态眼镜”：Meta智能眼镜引来反弹，声浪日益高涨",
+    "chinese_summary": "Meta新款雷朋智能眼镜因普遍存在的隐私担忧而面临强烈反弹，被广泛戏称为“变态眼镜”。批评者担心这款眼镜能够在没有充分告知被拍摄者的情况下隐秘地录制视频和音频，这引发了人们对在公共和私人场所被暗中录制的担忧。\n\n一个主要争议点是其小巧的白色LED指示灯，许多人认为它不足以引起注意且容易被忽视，尤其是在明亮的环境或远距离时。社交媒体平台，特别是TikTok，通过病毒式视频放大了这些担忧，视频演示了人们如何在不知情的情况下轻易被录制，从而引发了人们呼吁在健身房、餐馆和酒吧等场所禁用这些眼镜。\n\n这种情况与十年前困扰谷歌眼镜的“Glasshole”（眼镜混蛋）争议如出一辙，后者最终因类似的隐私焦虑导致其商业失败。尽管Meta坚称LED“不可能被忽视”，并强调用户教育和社区准则，但公众的不安和怀疑情绪依然高涨。早期用户报告称，陌生人因担心在不知情的情况下被录制而表现出负面反应。\n\nMeta面临的挑战是如何克服这种“令人毛骨悚然”的看法，并说服公众该产品能够被负责任地使用，而这一障碍对其在智能眼镜市场的前辈来说是无法逾越的。日益增长的舆论表明，当前的隐私保护措施不足以平息公众的担忧。"
+  },
+  {
+    "id": "49231397",
+    "title": "John C. Lilly on solid state intelligence and the elimination of man (1978)",
+    "url": "https://kibotronics.net/unlisted/lilly-machines/",
     "summary": "生成摘要时出错",
-    "chinese_title": "微软 Word Windows 1.1a 版，原生 X64 移植",
+    "chinese_title": "John C. Lilly on solid state intelligence and the elimination of man (1978)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49222824",
-    "title": "Message your other Claude Code sessions",
-    "url": "https://code.claude.com/docs/en/cross-session-messaging",
+    "id": "49235011",
+    "title": "The tragedy of the commons, AI edition",
+    "url": "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition",
     "summary": "生成摘要时出错",
-    "chinese_title": "Message your other Claude Code sessions",
+    "chinese_title": "The tragedy of the commons, AI edition",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49232110",
-    "title": "Tom Stanton's supersonic trebuchet breaks sound barrier with gravity alone",
-    "url": "https://www.techeblog.com/tom-stanton-supersonic-trebuchet/",
+    "id": "49238050",
+    "title": "How We Pushed CDC into Postgres",
+    "url": "https://www.snowflake.com/en/blog/engineering/postgres-to-snowflake-replication-mirroring/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Tom Stanton's supersonic trebuchet breaks sound barrier with gravity alone",
+    "chinese_title": "How We Pushed CDC into Postgres",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49230477",
-    "title": "Everything You Do Is Being Recorded",
-    "url": "https://www.theatlantic.com/technology/2026/05/ai-wearable-surveillance-countermeasures/687203/",
-    "summary": "The article warns that everyday individuals may soon need to adopt extreme anti-surveillance measures, previously reserved for criminals and spies, due to the rise of AI-enabled wearable recording devices. Companies like Apple are reportedly developing AI pins or pendants that could constantly listen and record, making ubiquitous surveillance a reality.\n\nThis technological advancement has sparked a new 'arms race.' While traditional jammers used white noise or inaudible ultrasonic frequencies to disrupt recordings, modern AI wearables employ sophisticated speech-recovery algorithms. These algorithms, developed through extensive research for hearing aids and teleconferencing, can strip away unwanted noise—including jamming signals—and even reconstruct missing speech from highly complex sound environments, effectively solving the \"cocktail party problem.\"\n\nIn response, new countermeasures are emerging. Strategies include \"obfuscation,\" such as supplying junk data to confuse algorithms (e.g., anti-facial recognition makeup, decoy web searches). More advanced audio jammers like MicFrozen generate real-time \"anti-speech\" or counterfeit speech-shaped sounds to mislead recording devices. Deveillance's Spectre I also aims to prevent recording and detect microphones.\n\nHowever, the article highlights a significant imbalance: billions of dollars are invested in AI speech processing by major tech corporations, vastly outmatching the limited resources available for privacy countermeasures from a few academics and small companies. Experts predict that AI will likely maintain an edge, potentially even bypassing audio altogether through lip-reading or analyzing surface vibrations. The 'cat and mouse' game, the author concludes, often favors the powerful 'cat' – the corporations – a scenario previously witnessed in law enforcement's successful infiltration of criminal organizations' secure communication systems.",
-    "chinese_title": "Everything You Do Is Being Recorded",
-    "chinese_summary": "The article warns that everyday individuals may soon need to adopt extreme anti-surveillance measures, previously reserved for criminals and spies, due to the rise of AI-enabled wearable recording devices. Companies like Apple are reportedly developing AI pins or pendants that could constantly listen and record, making ubiquitous surveillance a reality.\n\nThis technological advancement has sparked a new 'arms race.' While traditional jammers used white noise or inaudible ultrasonic frequencies to disrupt recordings, modern AI wearables employ sophisticated speech-recovery algorithms. These algorithms, developed through extensive research for hearing aids and teleconferencing, can strip away unwanted noise—including jamming signals—and even reconstruct missing speech from highly complex sound environments, effectively solving the \"cocktail party problem.\"\n\nIn response, new countermeasures are emerging. Strategies include \"obfuscation,\" such as supplying junk data to confuse algorithms (e.g., anti-facial recognition makeup, decoy web searches). More advanced audio jammers like MicFrozen generate real-time \"anti-speech\" or counterfeit speech-shaped sounds to mislead recording devices. Deveillance's Spectre I also aims to prevent recording and detect microphones.\n\nHowever, the article highlights a significant imbalance: billions of dollars are invested in AI speech processing by major tech corporations, vastly outmatching the limited resources available for privacy countermeasures from a few academics and small companies. Experts predict that AI will likely maintain an edge, potentially even bypassing audio altogether through lip-reading or analyzing surface vibrations. The 'cat and mouse' game, the author concludes, often favors the powerful 'cat' – the corporations – a scenario previously witnessed in law enforcement's successful infiltration of criminal organizations' secure communication systems."
-  },
-  {
-    "id": "49221220",
-    "title": "Gateway 2000's hilariously bad ads in the 90s (Part II)",
-    "url": "https://buttondown.com/suchbadtechads/archive/gateway-2000-part-2/",
+    "id": "49241846",
+    "title": "Parametron: 50s Japanese computer that uses neither transistors nor vacuum tubes",
+    "url": "https://ethw.org/Milestones:Parametron,_1954",
     "summary": "生成摘要时出错",
-    "chinese_title": "Gateway 2000's hilariously bad ads in the 90s (Part II)",
+    "chinese_title": "Parametron: 50s Japanese computer that uses neither transistors nor vacuum tubes",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49228350",
-    "title": "Illinois just told every operating system to start reporting your kid's age",
-    "url": "https://itsfoss.com/news/illinois-age-verification-bill/",
+    "id": "49236033",
+    "title": "Georgia police officers fired after Flock camera misuse",
+    "url": "https://www.wtoc.com/2026/08/07/savannah-police-department-fires-6-employees-over-flock-safety-system-misuse/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Illinois just told every operating system to start reporting your kid's age",
+    "chinese_title": "Georgia police officers fired after Flock camera misuse",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49225918",
-    "title": "Maryland Closes More of Cunningham Falls State Park After Second Beaver Attack",
-    "url": "https://news.maryland.gov/dnr/2026/08/05/dnr-closes-additional-areas-of-cunningham-falls-state-park-following-second-beaver-attack/",
+    "id": "49243029",
+    "title": "50k Boat Names",
+    "url": "https://www.beautifulpublicdata.com/boat-names/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Maryland Closes More of Cunningham Falls State Park After Second Beaver Attack",
+    "chinese_title": "50k Boat Names",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49235641",
+    "title": "New Zealand lost its music media, and what we're building to replace it",
+    "url": "https://propelmusic.co.nz/articles/the-sound-went-quiet-nz-music-media",
+    "summary": "生成摘要时出错",
+    "chinese_title": "New Zealand lost its music media, and what we're building to replace it",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49235697",
+    "title": "Tuxedo No. 2 – Cocktail recipes",
+    "url": "https://tuxedono2.com",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tuxedo No. 2 – Cocktail recipes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49235323",
+    "title": "Poland now 6th-largest EU economy, ahead of Switzerland and Belgium",
+    "url": "https://www.euronews.com/business/2026/08/09/poland-now-sixth-largest-eu-economy-ahead-of-switzerland-and-belgium",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Poland now 6th-largest EU economy, ahead of Switzerland and Belgium",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -128,67 +136,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49231809",
-    "title": "Cool URIs Don't Change (1998)",
-    "url": "https://www.w3.org/Provider/Style/URI",
+    "id": "49245251",
+    "title": "Magnitude 7.4 Earthquake – 5 km S of San José del Palmar, Colombia",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2/executive",
     "summary": "生成摘要时出错",
-    "chinese_title": "Cool URIs Don't Change (1998)",
+    "chinese_title": "Magnitude 7.4 Earthquake – 5 km S of San José del Palmar, Colombia",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49230514",
-    "title": "Reviving a four year old reMarkable 2",
-    "url": "https://oskrim.github.io/hardware/2026/08/09/remarkable-over-ssh.html",
+    "id": "49234379",
+    "title": "Saying No",
+    "url": "https://rozumem.xyz/posts/19",
     "summary": "生成摘要时出错",
-    "chinese_title": "Reviving a four year old reMarkable 2",
+    "chinese_title": "Saying No",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49231397",
-    "title": "John C. Lilly on solid state intelligence and the elimination of man (1978)",
-    "url": "https://kibotronics.net/unlisted/lilly-machines/",
+    "id": "49228350",
+    "title": "Illinois just told every operating system to start reporting your kid's age",
+    "url": "https://itsfoss.com/news/illinois-age-verification-bill/",
     "summary": "生成摘要时出错",
-    "chinese_title": "John C. Lilly on solid state intelligence and the elimination of man (1978)",
+    "chinese_title": "Illinois just told every operating system to start reporting your kid's age",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49227505",
-    "title": "TheoremDB – A public workspace for machine mathematics",
-    "url": "https://theoremdb.org/",
+    "id": "49235378",
+    "title": "The Hacker's Renaissance (2025)",
+    "url": "https://phrack.org/issues/72/19#article",
     "summary": "生成摘要时出错",
-    "chinese_title": "TheoremDB – A public workspace for machine mathematics",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49214775",
-    "title": "Psychological Warfare in Reverse Engineering (2015)",
-    "url": "https://github.com/xoreaxeaxeax/repsych",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Psychological Warfare in Reverse Engineering (2015)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49230066",
-    "title": "CSS: The bomb inside your inbox",
-    "url": "https://portswigger.net/research/css-the-bomb-inside-your-inbox",
-    "summary": "生成摘要时出错",
-    "chinese_title": "CSS: The bomb inside your inbox",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49229412",
-    "title": "Software Giant SAP Stops Most Travel and Hiring Because of AI's Soaring Cost",
-    "url": "https://www.404media.co/software-giant-sap-stops-most-travel-and-hiring-because-of-ais-soaring-cost/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Software Giant SAP Stops Most Travel and Hiring Because of AI's Soaring Cost",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49221679",
-    "title": "Voyager 1 FDS Computer Emulator",
-    "url": "https://zaneham.github.io/voyager-fds-emulator/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Voyager 1 FDS Computer Emulator",
+    "chinese_title": "The Hacker's Renaissance (2025)",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -200,14 +176,6 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49218707",
-    "title": "Mythos social engineering AISI INC-2026-07-28-01",
-    "url": "https://web.archive.org/web/20260731053721/http://github.com/ancaferro/myNetwork/pull/3",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mythos social engineering AISI INC-2026-07-28-01",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "49232857",
     "title": "FCC moves to ban Lidar-equipped foreign drones from US",
     "url": "https://www.tomshardware.com/tech-industry/drones/fcc-moves-to-ban-lidar-equipped-foreign-drones-from-us-classifies-the-technology-as-military-grade-in-a-proposal-that-could-also-hit-thermal-models-and-the-swarms-used-drone-light-shows",
@@ -216,19 +184,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49232570",
-    "title": "Tech sucks: You have to vote with your wallet, or nothing will change",
-    "url": "https://82mhz.net/posts/2026/08/tech-sucks-you-have-to-vote-with-your-wallet-or-nothing-will-change/",
+    "id": "49244569",
+    "title": "Kinney Drugs pulls back AI phone assistant after hundreds of customer complaints",
+    "url": "https://www.wcax.com/2026/08/07/kinney-drugs-pulls-back-ai-phone-assistant-after-hundreds-customer-complaints/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Tech sucks: You have to vote with your wallet, or nothing will change",
+    "chinese_title": "Kinney Drugs pulls back AI phone assistant after hundreds of customer complaints",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49220378",
-    "title": "Making an AI bid writer refuse to lie",
-    "url": "https://ailucius.com/blog/making-an-ai-bid-writer-refuse-to-lie",
+    "id": "49237873",
+    "title": "Japanese court overturns Red RAW video patent",
+    "url": "https://www.dpreview.com/news/panasonic-did-what-apple-sony-and-nikon-couldnt-overturn-a-red-raw-video-patent/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Making an AI bid writer refuse to lie",
+    "chinese_title": "Japanese court overturns Red RAW video patent",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49225918",
+    "title": "Maryland Closes More of Cunningham Falls State Park After Second Beaver Attack",
+    "url": "https://news.maryland.gov/dnr/2026/08/05/dnr-closes-additional-areas-of-cunningham-falls-state-park-following-second-beaver-attack/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Maryland Closes More of Cunningham Falls State Park After Second Beaver Attack",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49227718",
+    "title": "ChatGPT starts blocking direct requests to copy an author's style",
+    "url": "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ChatGPT starts blocking direct requests to copy an author's style",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49247070",
+    "title": "Learning more about Claude's mathematical capabilities",
+    "url": "https://www.anthropic.com/research/riemann-zeta",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Learning more about Claude's mathematical capabilities",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49245487",
+    "title": "Study links GLP-1 drugs to bigger jump in women's employment than a degree",
+    "url": "https://finance.yahoo.com/healthcare/articles/harvard-study-links-glp-1-123000637.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Study links GLP-1 drugs to bigger jump in women's employment than a degree",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49242297",
+    "title": "Tail-call optimization in C is relatively recent (2025)",
+    "url": "https://lwn.net/Articles/1034703/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tail-call optimization in C is relatively recent (2025)",
     "chinese_summary": "生成摘要时出错"
   }
 ]
