@@ -1,82 +1,610 @@
 [
   {
-    "id": "49616272",
-    "title": "Animation in Bevy: The Big Picture",
-    "url": "https://glocq.com/en/blog/20260827/",
-    "summary": "This article clarifies the often-complex process of animating 3D models in Bevy, aiming to build a clear mental model for beginners. While a simple `model.play_animation()` is intuitive, Bevy's approach involves several distinct components.\n\nFirst, a 3D model is typically spawned as a hierarchy of entities, not a single one. To control its animations, Bevy uses the `AnimationPlayer` component, automatically inserted into *an* entity within that hierarchy.\n\nAnimations themselves are stored and combined within an `AnimationGraph`. To refer to a specific animation, you need both a reference (a `Handle`) to an `AnimationGraph` and a `NodeIndex` specifying its location within that graph.\n\nTo play an animation, you must:\n1.  Obtain an `AnimationGraph` (e.g., from a `.glb` file using `AnimationGraph::from_clip`) and its corresponding `NodeIndex`.\n2.  Spawn your 3D model scene.\n3.  **Locate the entity** within the spawned model's hierarchy that possesses the `AnimationPlayer` component (often requiring iteration through descendants, like with `iter_descendants`).\n4.  **Insert the `AnimationGraphHandle`** as a component onto *that same entity* that holds the `AnimationPlayer`.\n5.  Finally, call `player.play(node_index)` on the `AnimationPlayer` instance, optionally adding `.repeat()`.\n\nThis process connects the `AnimationPlayer` to its `AnimationGraph` through a shared entity, allowing the player to find and execute the specified animation.",
-    "chinese_title": "Bevy动画：宏观视图",
-    "chinese_summary": "本文旨在阐明 Bevy 中 3D 模型动画制作这一通常复杂的流程，旨在为初学者建立清晰的思维模型。尽管简单的 `model.play_animation()` 很直观，但 Bevy 的方法涉及几个不同的组件。\n\n首先，一个 3D 模型通常是作为一个实体层级结构生成的，而非单个实体。为了控制其动画，Bevy 使用 `AnimationPlayer` 组件，该组件会自动插入到该层级结构中的 *某个* 实体中。\n\n动画本身存储并组合在一个 `AnimationGraph` 中。要引用某个特定的动画，你需要同时拥有一个指向 `AnimationGraph` 的引用（即 `Handle`）以及一个 `NodeIndex`，用于指定它在该图中的位置。\n\n要播放动画，你必须：\n1. 获取一个 `AnimationGraph`（例如，使用 `AnimationGraph::from_clip` 从 `.glb` 文件中获取）及其对应的 `NodeIndex`。\n2. 生成你的 3D 模型场景。\n3. 在已生成的模型层级结构中，**定位拥有** `AnimationPlayer` **组件的实体**（通常需要遍历其后代实体，例如使用 `iter_descendants`）。\n4. **将** `AnimationGraphHandle` **作为组件插入到** *持有 `AnimationPlayer` 的同一实体上*。\n5. 最后，在 `AnimationPlayer` 实例上调用 `player.play(node_index)`，并可选择添加 `.repeat()`。\n\n这个过程通过一个共享实体将 `AnimationPlayer` 及其 `AnimationGraph` 连接起来，从而使播放器能够找到并执行指定的动画。"
+    "id": "49630931",
+    "title": "iPhone Duo",
+    "url": "https://www.apple.com/iphone-duo/",
+    "summary": "The iPhone Duo is unveiled as Apple's first foldable iPhone, available for pre-order on October 16th and launching October 23rd. It features a thin, foldable design with the largest iPhone display ever—a 7.6-inch Super Retina XDR inner display and a large outer display—all protected by a durable titanium frame and hinge, Ceramic Shield, and IP68 water resistance.\n\nPowered by the new vapor-cooled A20 Pro chip with a Dual 16-core Neural Engine, it promises professional performance. A dual-battery system ensures extended usage, offering up to 44 hours of video playback on the outer display.\n\nThe advanced camera system includes a 48MP Dual Fusion main camera and introduces innovative features like Duo Preview for live framing, Kid Cue with playful animations, Smart Take for perfectly timed photos, and Duo FaceTime for group calls using the outer display.\n\nReimagined iOS 27 maximizes the foldable design's versatility, offering various poses (Landscape, Portrait, Seated, Standing) and enhanced multitasking with Split View. A key highlight is Siri AI, a more personal and powerful conversational assistant with expanded capabilities like personal context, app actions, and writing assistance. Apple Intelligence further enriches the device with advanced photo editing, Image Playground, and child safety features. Connectivity includes Wi-Fi 7 and 5G, alongside satellite-based emergency and roadside assistance.",
+    "chinese_title": "iPhone 双",
+    "chinese_summary": "iPhone Duo 作为苹果首款可折叠 iPhone 亮相，于 10 月 16 日开放预订，10 月 23 日上市。它采用纤薄可折叠设计，配备有史以来最大的 iPhone 显示屏——一块 7.6 英寸 Super Retina XDR 内屏和一个大尺寸外屏。所有这些都由耐用的钛金属边框和铰链、超瓷晶面板以及 IP68 级抗水功能提供保护。\n\n搭载全新液冷 A20 Pro 芯片和双 16 核神经网络引擎，带来专业级性能。双电池系统确保持久续航，在外屏上可提供长达 44 小时的视频播放。\n\n先进的摄像头系统包括 4800 万像素双融合主摄，并引入了创新功能，例如用于实时取景的 Duo 预览、带趣味动画的 Kid Cue、用于捕捉完美时机的 Smart Take 以及利用外屏进行群组通话的 Duo FaceTime。\n\n全新设计的 iOS 27 最大限度地发挥了可折叠设计的通用性，提供了多种姿态（横屏、竖屏、坐姿、站姿）以及通过分屏视图增强的多任务处理能力。一个主要亮点是 Siri AI，它是一个更个性化、更强大的对话式助理，具备个人情境理解、应用操作和写作辅助等扩展能力。Apple Intelligence 进一步丰富了该设备，提供先进的照片编辑、图像游乐场和儿童安全功能。连接功能包括 Wi-Fi 7 和 5G，以及基于卫星的紧急呼叫和道路救援。"
   },
   {
-    "id": "49618175",
-    "title": "LG TV shown scanning LAN for third-party phones and other devices",
-    "url": "https://arstechnica.com/gadgets/2026/09/lg-tv-shown-capable-of-tracking-user-activity-even-when-offline/",
-    "summary": "A recent investigation by YouTube channels Gamers Nexus and Level1Techs, collaborating with security researchers, has unveiled significant privacy concerns regarding LG TVs. The analysis revealed that LG TVs, including high-end OLED models, actively scan local area networks (LANs) for other devices like smartwatches and phones, even if they are unrelated or not connected to the TV.\n\nUsing Wireshark, researchers observed LG TVs identifying IP addresses, geographic location, nearby Wi-Fi network details, and internal IP addresses of other devices on the network. Gamers Nexus' editor-in-chief, Steve Burke, noted this \"native functionality\" found \"dozens of unrelated devices.\" LG's ad business, LG Ad Solutions, has previously mentioned reaching \"addressable secondary devices.\" LG responded by stating this is a \"standard function commonly provided by smart TVs\" for features like device connectivity and smart home integration.\n\nThe investigation also demonstrated LG TVs' ability to record microphone audio even when unplugged from the network, storing it locally in plaintext. LG clarified that this \"listening\" only occurs if the \"Far-Field\" feature is enabled to monitor for a wake word. If no wake word is detected, the audio is processed locally, promptly deleted, and not transmitted to LG servers; collection only occurs when voice functionality is intentionally activated by the user.\n\nThese findings highlight pervasive smart TV privacy issues, as many users are unaware of such tracking, especially when devices are seemingly \"off\" or offline. This scrutiny challenges LG's previous reputation for less user tracking and fewer ads compared to budget brands, underscoring broader concerns about manufacturers' interest in monitoring user activity.",
-    "chinese_title": "LG电视被曝扫描局域网，搜寻第三方手机等设备",
-    "chinese_summary": "YouTube 频道 Gamers Nexus 和 Level1Techs 与安全研究人员合作进行的一项最新调查，揭示了LG电视存在的严重隐私问题。分析显示，LG电视（包括高端OLED型号）会主动扫描本地局域网（LAN），以查找其他设备，如智能手表和手机，即便这些设备与电视无关或未连接到电视。\n\n研究人员使用Wireshark观察到，LG电视会识别网络上其他设备的IP地址、地理位置、附近的Wi-Fi网络详情以及内部IP地址。Gamers Nexus 的主编 Steve Burke 指出，这项“原生功能”发现了“数十个不相关的设备”。LG的广告业务LG Ad Solutions此前曾提及触达“可寻址的辅助设备”。LG回应称，这是“智能电视普遍提供的标准功能”，旨在实现设备连接和智能家居集成等特性。\n\n调查还表明，LG电视即使在未连接网络的情况下，也能录制麦克风音频，并将其以纯文本形式本地存储。LG澄清说，这种“监听”只有在开启了“远场语音”（Far-Field）功能以监测唤醒词时才会发生。如果未检测到唤醒词，音频会在本地处理，并立即删除，不会传输到LG服务器；仅当用户有意激活语音功能时，才会进行收集。\n\n这些发现凸显了智能电视普遍存在的隐私问题，因为许多用户，尤其是在设备看似“关闭”或离线时，并不了解此类追踪。这项审查挑战了LG此前在用户追踪和广告方面少于廉价品牌的声誉，并强调了制造商监控用户活动的更广泛担忧。"
+    "id": "49623754",
+    "title": "Claude, change the “Add to Cart” button to blue",
+    "url": "https://opusfived.dev/",
+    "summary": "The provided text is a direct instruction to an AI assistant, presumably Claude. The core command is to change the color of the \"Add to Cart\" button to blue. A key accompanying directive emphasizes that Claude should not alter anything else, indicating a desire for a singular, precise modification. The text includes incidental phrases like \"Opusfived\" and \"About & Terms,\" which do not contribute to the primary instruction but appear within the prompt.",
+    "chinese_title": "克劳德，把“添加到购物车”按钮改成蓝色。",
+    "chinese_summary": "提供的文本是对一个AI助手（很可能是Claude）的直接指令。核心命令是将“添加到购物车”按钮的颜色改为蓝色。一个关键的附加指示强调Claude不应更改任何其他内容，这表明使用者希望进行单一、精确的修改。文本中包含“Opusfived”和“About & Terms”等附带短语，这些短语不构成主要指令，但出现在提示中。"
   },
   {
-    "id": "49616696",
-    "title": "'Lake America' makes one thing clear: We can't trust U.S. tech companies",
-    "url": "https://www.tvo.org/article/analysis-lake-america-makes-one-thing-clear-we-cant-trust-us-tech-companies",
-    "summary": "I am unable to provide a summary of the article titled \"'Lake America' makes one thing clear: We can't trust U.S. tech companies\" because the provided content is not the article itself.\n\nThe text provided, \"TVO Today | Current Affairs Journalism, Documentaries and PodcastsYou need to enable JavaScript to run this app.\", appears to be a generic website message indicating that the actual content could not be loaded or displayed.\n\nBased solely on the title, the article likely argues against trusting U.S. technology companies, potentially drawing evidence or a critical perspective from a concept or entity referred to as 'Lake America'. However, without the article's actual text, no further details can be extracted or summarized.",
-    "chinese_title": "“美国湖”明确了一点：我们不能信任美国科技公司",
-    "chinese_summary": "我无法提供题为《“美利坚湖”清楚地表明了一点：我们不能信任美国科技公司》的文章摘要，因为所提供的内容并非文章本身。\n\n所提供的文本，“TVO Today | Current Affairs Journalism, Documentaries and Podcasts 您需要启用JavaScript才能运行此应用程序”，似乎是一个通用的网站信息，表明实际内容无法加载或显示。\n\n仅根据标题来看，这篇文章可能主张不信任美国科技公司，可能会从一个被称为“美利坚湖”的概念或实体中获取证据或批判性视角。然而，如果没有文章的实际文本，无法提取或总结更多细节。"
-  },
-  {
-    "id": "49619457",
-    "title": "US to ban Canadian dairy, alcohol, motor vehicle imports on September 29",
-    "url": "https://www.reuters.com/business/us-ban-canadian-dairy-alcohol-motor-vehicle-imports-september-29-2026-09-08/",
-    "summary": "Unable to access the article link.",
-    "chinese_title": "美国将于9月29日禁止加拿大乳制品、酒类和机动车进口。",
-    "chinese_summary": "无法访问文章链接。"
-  },
-  {
-    "id": "49611549",
-    "title": "Disappointed Optimists",
-    "url": "https://cwodtke.com/disappointed-optimists/",
+    "id": "49626190",
+    "title": "Shopify acquires Tailwind",
+    "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
     "summary": "生成摘要时出错",
-    "chinese_title": "Disappointed Optimists",
+    "chinese_title": "Shopify acquires Tailwind",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49639090",
+    "title": "DeepSeek v4.1 Flash",
+    "url": "https://twitter.com/deepseek_ai/status/2097930608790167907",
+    "summary": "DeepSeek AI has launched its new model, DeepSeek-V4.1-Flash, which is touted as smarter, faster, and more efficient. This model is the smallest in DeepSeek's new architecture family and features native visual understanding. It is designed to offer greater capability, faster inference, higher throughput, and scalability for future larger models.",
+    "chinese_title": "DeepSeek v4.1 闪电",
+    "chinese_summary": "DeepSeek AI 推出了其新模型 DeepSeek-V4.1-Flash，该模型主打更智能、更快速、更高效。这款模型是 DeepSeek 新架构系列中最小的一款，并支持原生视觉理解能力。它旨在为未来的大模型提供更强大的能力、更快的推理速度、更高的吞吐量和可扩展性。"
+  },
+  {
+    "id": "49619227",
+    "title": "I resigned from Anthropic today",
+    "url": "https://twitter.com/hilbertspaess/status/2097476196791709843#m",
+    "summary": "Jacob Coxon, a researcher who spent three years conducting pretraining research at both OpenAI and Anthropic, announced his resignation from Anthropic on September 9, 2026. He stated that neither company is acting responsibly, accusing them of \"racing straight to self-improving superintelligence and gambling with our lives.\" Coxon's departure highlights a significant concern regarding the ethical trajectory and potential risks associated with current advanced AI development efforts within leading organizations.",
+    "chinese_title": "我今天从Anthropic辞职了",
+    "chinese_summary": "雅各布·科克森，一位曾在OpenAI和Anthropic两家公司进行三年预训练研究的研究员，于2026年9月9日宣布辞去Anthropic的职务。他表示，两家公司都未负责任地行事，并指责它们“径直冲向自我进化的超级智能，并在拿我们的生命做赌注”。科克森的离职凸显了人们对领先机构当前先进人工智能开发工作所涉及的伦理走向和潜在风险的重大担忧。"
+  },
+  {
+    "id": "49643982",
+    "title": "Shopify moves back to Native from React Native",
+    "url": "https://shopify.engineering/back-to-native",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Shopify 从 React Native 回归原生",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49624394",
+    "title": "Flock Wants a Closely Surveilled World with No Exit",
+    "url": "https://www.newyorker.com/culture/infinite-scroll/flock-wants-a-closely-surveilled-world-with-no-exit",
+    "summary": "Garrett Langley, founder of Flock Safety, advocates for pervasive surveillance as a \"Faustian bargain\" to eliminate crime, believing safety necessitates sacrificing privacy. After personal experience with crime, he developed automated license-plate reader (ALPR) cameras, initially for private communities, then partnering with law enforcement. Flock Safety, now valued at over $8 billion, operates 130,000 cameras across the U.S., capturing vehicle make, model, and color, with data accessible to police without warrants. Langley touts the technology for solving crimes, including tracking a mass shooter.\n\nHowever, the article highlights significant backlash. Almost half of Americans oppose ALPRs, with some damaging cameras and the DeFlock app mapping their locations. Critics from across the political spectrum denounce the surveillance as undemocratic and an invasion of privacy. Even Republican governors in Texas and Florida have recently restricted Flock's use, citing constituent concerns and reports of abuse by police, including stalking, aiding ICE, and prosecuting individuals for abortions.\n\nLangley presents himself as a detached inventor, moralizing about safety but disavowing responsibility for the ethical implications and misuse of his product. The article contextualizes Flock within the broader history of U.S. privacy law and the post-9/11 expansion of surveillance, where security rhetoric has justified trade-offs in freedom. Unlike invisible data collection, Flock cameras are visible reminders of lost anonymity. The author concludes that while Langley promotes public safety, the ultimate motivation, like much of Silicon Valley's mass surveillance, is profit, questioning how much more privacy citizens are expected to relinquish.",
+    "chinese_title": "群渴望严密监控、无处可逃的世界",
+    "chinese_summary": "Garrett Langley，Flock Safety 创始人，倡导将普及监控作为消除犯罪的“浮士德式交易”，认为安全必然要求牺牲隐私。在亲身经历犯罪后，他开发了自动化车牌识别（ALPR）摄像头，最初用于私人社区，随后与执法部门合作。Flock Safety 目前估值超过80亿美元，在美国各地部署了13万个摄像头，捕捉车辆的品牌、型号和颜色，警方无需搜查令即可获取这些数据。Langley 吹捧该技术能够解决犯罪，包括追踪一名大规模枪击案凶手。\n\n然而，文章强调了巨大的反弹。近一半美国人反对ALPR，一些人破坏摄像头，DeFlock 应用则绘制出它们的位置。来自不同政治派别的批评者谴责这种监控是不民主且侵犯隐私的行为。甚至德克萨斯州和佛罗里达州的共和党州长最近也限制了Flock的使用，理由是选民担忧以及警方滥用的报告，包括跟踪、协助ICE（移民与海关执法局），以及起诉堕胎者。\n\nLangley 将自己塑造成一个超然的发明家，对安全问题高谈阔论，却否认对其产品的伦理影响和滥用承担责任。文章将Flock置于美国隐私法和9/11后监控扩张的更广泛历史背景中，在这一背景下，安全说辞为牺牲自由辩护。与无形的数据收集不同，Flock 摄像头是失去匿名性的有形提醒。作者总结道，尽管Langley 宣扬公共安全，但其最终动机，与硅谷许多大规模监控一样，是为了利润，并质疑公民还需要放弃多少隐私。"
+  },
+  {
+    "id": "49637385",
+    "title": "Show HN: What if the speed of light was 5 km/h?",
+    "url": "https://rivendell.dmitrybrant.com/relativity/",
+    "summary": "This \"Show HN\" describes \"Relativity Park,\" a simulation where the speed of light (c) is set to a mere 5 kilometers per hour, roughly a brisk walking pace. The goal is to allow users to experience the principles of special relativity in an intuitive way, as these effects become noticeable at everyday speeds.\n\nUsers can control their velocity within the park using keyboard and mouse inputs, acting as an observer. As their speed approaches the simulated speed of light, various relativistic phenomena become apparent. These include:\n\n*   **Length contraction:** Objects in the direction of motion appear shorter.\n*   **Time dilation:** The user's watch (proper time) will advance slower than a \"world clock\" (coordinate time) as they move faster.\n*   **Terrell rotation:** Objects will appear to rotate due to the finite travel time of light from different parts of the object.\n*   **Doppler effect:** Light from objects in front will be blueshifted, while light from objects behind will be redshifted. Transverse Doppler effects are also visible for moving objects.\n\nThe simulation emphasizes that, even at this low speed, the speed of light remains an asymptotic limit, never truly reachable. The interface allows users to accelerate, look around, stop, and toggle various effects to explore the consequences of a slow light speed.",
+    "chinese_title": "Show HN: What if the speed of light was 5 km/h?",
+    "chinese_summary": "这个“Show HN”介绍了一个名为“相对论公园”的模拟程序，其中光速（c）被设定为仅每小时5公里，大约相当于快步行走的速度。其目标是让用户以直观的方式体验狭义相对论的原理，因为这些效应在日常速度下就会变得显著。\n\n用户可以通过键盘和鼠标输入在公园内控制自己的速度，扮演观察者的角色。当他们的速度接近模拟光速时，各种相对论现象就会显现出来。这些现象包括：\n\n*   **长度收缩：** 沿运动方向的物体看起来会变短。\n*   **时间膨胀：** 随着用户移动速度加快，他们的手表（固有时）走得比“世界时钟”（坐标时）慢。\n*   **特雷尔旋转：** 由于光线从物体不同部分到达观察者的时间有限，物体会看起来发生旋转。\n*   **多普勒效应：** 来自前方物体的光线将发生蓝移，而来自后方物体的光线将发生红移。对于移动物体，横向多普勒效应也可见。\n\n该模拟程序强调，即使在如此低的速度下，光速仍然是一个渐近极限，永远无法真正达到。界面允许用户加速、环顾四周、停止并切换各种效应，以探索慢光速带来的后果。"
+  },
+  {
+    "id": "49643546",
+    "title": "Rust is tier-1 language at Microsoft",
+    "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Rust is tier-1 language at Microsoft",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49630253",
+    "title": "AirPods 5",
+    "url": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AirPods 5",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49627370",
+    "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+    "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49616968",
+    "title": "Tao: Open math problems being non-renewably mined by AI",
+    "url": "https://mathstodon.xyz/@tao/117237320796901560",
+    "summary": "Renowned mathematician Terence Tao has raised a significant concern regarding the interaction between artificial intelligence (AI) and the field of mathematics, specifically the impact on \"open math problems.\"\n\nAccording to the provided title, Tao posits that AI is \"non-renewably mining\" these problems. This suggests a worry that AI's ability to solve these problems might be depleting a finite resource faster than new, complex problems are emerging or being formulated. The statement, originating from Mathstodon, indicates that Tao recently penned a more detailed discussion on this topic, highlighting a potential challenge for mathematical research and discovery in the age of advanced AI.",
+    "chinese_title": "Tao: Open math problems being non-renewably mined by AI",
+    "chinese_summary": "Renowned mathematician Terence Tao has raised a significant concern regarding the interaction between artificial intelligence (AI) and the field of mathematics, specifically the impact on \"open math problems.\"\n\nAccording to the provided title, Tao posits that AI is \"non-renewably mining\" these problems. This suggests a worry that AI's ability to solve these problems might be depleting a finite resource faster than new, complex problems are emerging or being formulated. The statement, originating from Mathstodon, indicates that Tao recently penned a more detailed discussion on this topic, highlighting a potential challenge for mathematical research and discovery in the age of advanced AI."
+  },
+  {
+    "id": "49624823",
+    "title": "Desert Ant Labs: local, fast models that run on device",
+    "url": "https://desertant.com/blog/introducing-desert-ant-labs/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Desert Ant Labs: local, fast models that run on device",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49639408",
+    "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+    "url": "https://mathstodon.xyz/@andreasthom/117240535270608201",
+    "summary": "生成摘要时出错",
+    "chinese_title": "More questions about whether researchers can trust OpenAI with unpublished math",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49617255",
+    "title": "How to build a printer",
+    "url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How to build a printer",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49628493",
+    "title": "No Man's Sky Cosmos",
+    "url": "https://www.nomanssky.com/cosmos-update/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "No Man's Sky Cosmos",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49629886",
+    "title": "Growing proof that autonomous cars save lives",
+    "url": "https://spectrum.ieee.org/are-self-driving-cars-safe",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Growing proof that autonomous cars save lives",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49636283",
+    "title": "Automattic's board forces CEO Matt Mullenweg into leave of absence",
+    "url": "https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Automattic's board forces CEO Matt Mullenweg into leave of absence",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49624856",
+    "title": "How I advertise malicious software on Google Ads",
+    "url": "https://xlii.space/eng/malicious-software-on-google-ads/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How I advertise malicious software on Google Ads",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49630151",
+    "title": "iPhone 18 Pro and iPhone 18 Pro Max",
+    "url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "iPhone 18 Pro and iPhone 18 Pro Max",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49646181",
+    "title": "I have a theory that software drives people insane",
+    "url": "https://graybeard.ing/software-drives-people-insane/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I have a theory that software drives people insane",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49641215",
+    "title": "The same nine streaming subscriptions cost $702/year more than in 2021",
+    "url": "https://honestlyranked.com/guides/streaming-price-increases/",
+    "summary": "A recent analysis by HonestlyRanked reveals that a basket of nine popular streaming subscriptions now costs $702 more per year than in March 2021, representing a 61% increase. The study tracked the \"flagship tiers\" with US pricing for Netflix, Disney+, Hulu, HBO Max, Apple TV+, Paramount+, Peacock, YouTube Premium, and Spotify.\n\nIn March 2021, these nine services combined cost $95.91 per month, totaling $1,150.92 annually. Today, the same services cost $154.41 per month, or $1,852.92 per year. This calculation is based on 2021-03 as the earliest date all nine services existed simultaneously.\n\nAmong the services, Apple TV+ saw the largest percentage increase at 200%, rising from $4.99 to $14.99. Disney+ Premium (ad-free) increased by 138%, and Peacock Premium Plus (ad-free) by 100%. The report emphasizes that these figures reflect price changes for the exact same tiers, with no downgrades or cancellations factored in. The methodology involves daily re-checking of published pricing, with every change linked to its source.",
+    "chinese_title": "The same nine streaming subscriptions cost $702/year more than in 2021",
+    "chinese_summary": "A recent analysis by HonestlyRanked reveals that a basket of nine popular streaming subscriptions now costs $702 more per year than in March 2021, representing a 61% increase. The study tracked the \"flagship tiers\" with US pricing for Netflix, Disney+, Hulu, HBO Max, Apple TV+, Paramount+, Peacock, YouTube Premium, and Spotify.\n\nIn March 2021, these nine services combined cost $95.91 per month, totaling $1,150.92 annually. Today, the same services cost $154.41 per month, or $1,852.92 per year. This calculation is based on 2021-03 as the earliest date all nine services existed simultaneously.\n\nAmong the services, Apple TV+ saw the largest percentage increase at 200%, rising from $4.99 to $14.99. Disney+ Premium (ad-free) increased by 138%, and Peacock Premium Plus (ad-free) by 100%. The report emphasizes that these figures reflect price changes for the exact same tiers, with no downgrades or cancellations factored in. The methodology involves daily re-checking of published pricing, with every change linked to its source."
+  },
+  {
+    "id": "49642531",
+    "title": "List of references on Sony websites to players \"owning\" their digital games",
+    "url": "https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit",
+    "summary": "生成摘要时出错",
+    "chinese_title": "List of references on Sony websites to players \"owning\" their digital games",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49630964",
+    "title": "iPhone Duo",
+    "url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "iPhone Duo",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49640646",
+    "title": "What algorithm did Windows XP use to choose your initial user picture?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What algorithm did Windows XP use to choose your initial user picture?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49628704",
+    "title": "Anthropic Is Building a Predictive Surveillance System to Monitor Activists",
+    "url": "https://prospect.org/2026/09/09/anthropic-artificial-intelligence-surveillance-system-monitor-activists/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Anthropic Is Building a Predictive Surveillance System to Monitor Activists",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49622042",
+    "title": "Copyright does more harm than good and should be abolished",
+    "url": "https://grapheneos.social/@GrapheneOS/117231186011306184",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Copyright does more harm than good and should be abolished",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49645443",
+    "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+    "url": "https://cognition.com/blog/swe-2",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49638353",
+    "title": "OpenAI might have stolen another major proof",
+    "url": "https://twitter.com/ValerioCapraro/status/2097791836269977996",
+    "summary": "OpenAI faces a new accusation of potentially \"stealing\" a major mathematical proof, adding to a growing list of concerns about its research practices. According to a detailed post by mathematician Andreas Thom, reported by Valerio Capraro, OpenAI's Astra model may have been trained on unpublished conversations where Thom and Gábor Kun were working on Gromov’s soficity conjecture.\n\nThis conjecture was later listed among the ten problems OpenAI announced Astra had \"solved.\" Capraro vouches for Thom's credibility as a leading expert who has dedicated two decades to this specific problem. If Thom's account is accurate, it signifies more than just a dispute over attribution; it suggests that uncredited human research was absorbed by an AI model and subsequently presented as the model's own breakthrough.\n\nThis allegation, following similar claims from Levent Alpöge and Tristan Buckmaster, raises serious questions. The author warns that if these accusations are substantiated, it could constitute \"one of the greatest intellectual scandals in the history of science,\" implying that AI is appropriating human discoveries rather than generating its own.",
+    "chinese_title": "OpenAI might have stolen another major proof",
+    "chinese_summary": "OpenAI faces a new accusation of potentially \"stealing\" a major mathematical proof, adding to a growing list of concerns about its research practices. According to a detailed post by mathematician Andreas Thom, reported by Valerio Capraro, OpenAI's Astra model may have been trained on unpublished conversations where Thom and Gábor Kun were working on Gromov’s soficity conjecture.\n\nThis conjecture was later listed among the ten problems OpenAI announced Astra had \"solved.\" Capraro vouches for Thom's credibility as a leading expert who has dedicated two decades to this specific problem. If Thom's account is accurate, it signifies more than just a dispute over attribution; it suggests that uncredited human research was absorbed by an AI model and subsequently presented as the model's own breakthrough.\n\nThis allegation, following similar claims from Levent Alpöge and Tristan Buckmaster, raises serious questions. The author warns that if these accusations are substantiated, it could constitute \"one of the greatest intellectual scandals in the history of science,\" implying that AI is appropriating human discoveries rather than generating its own."
+  },
+  {
+    "id": "49630566",
+    "title": "Apple Watch Series 12",
+    "url": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple Watch Series 12",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49627634",
+    "title": "Hitachi launches CO2 heat pump water heaters with solar-friendly tariff controls",
+    "url": "https://www.pv-magazine.com/2026/09/07/hitachi-launches-co2-heat-pump-water-heaters-with-solar-friendly-tariff-controls/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hitachi launches CO2 heat pump water heaters with solar-friendly tariff controls",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49643112",
+    "title": "Another researcher says OpenAI trained on conversations, then claimed breakthrou",
+    "url": "https://bsky.app/profile/did:plc:ckaz32jwl6t2cno6fmuw2nhn/post/3mv4mt4ikss2d",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Another researcher says OpenAI trained on conversations, then claimed breakthrou",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49638280",
+    "title": "All grown-ups were once children, but only few of them remember it",
+    "url": "https://mathstodon.xyz/@tao/117244102901892965",
+    "summary": "生成摘要时出错",
+    "chinese_title": "All grown-ups were once children, but only few of them remember it",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49635384",
+    "title": "Blizzard Workers Win Historic Union Contract",
+    "url": "https://www.latimes.com/entertainment-arts/business/story/2026-09-09/blizzard-video-game-workers-ratify-union-contract",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Blizzard Workers Win Historic Union Contract",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49630026",
+    "title": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+    "url": "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49626373",
+    "title": "What will our economic future look like?",
+    "url": "https://www.anthropic.com/institute/econ-scenarios",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What will our economic future look like?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49621697",
+    "title": "The Navier–Stokes Millennium Prize Problem",
+    "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Navier–Stokes Millennium Prize Problem",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49621751",
+    "title": "“Tweet” and the bird logo apparently enter the public domain",
+    "url": "https://blog.ericgoldman.org/archives/2026/09/tweet-and-the-bird-logo-apparently-enter-the-public-domain-but-x-maintains-its-grip-on-the-twitter-mark-for-now-x-v-project-bluebird.htm",
+    "summary": "生成摘要时出错",
+    "chinese_title": "“Tweet” and the bird logo apparently enter the public domain",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49624163",
+    "title": "How An AI math breakthrough ignited a controversy",
+    "url": "https://www.science.org/content/article/how-ai-math-breakthrough-ignited-controversy",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How An AI math breakthrough ignited a controversy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49628576",
+    "title": "GNU Radio in the browser",
+    "url": "https://gnuradioworld.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GNU Radio in the browser",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49645437",
+    "title": "NASA Color Trick Was Meant for Mars. Now It's Unveiling Rock Art on Earth",
+    "url": "https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844",
+    "summary": "生成摘要时出错",
+    "chinese_title": "NASA Color Trick Was Meant for Mars. Now It's Unveiling Rock Art on Earth",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49628614",
+    "title": "Understanding the recent DDoS attack against Read the Docs",
+    "url": "https://about.readthedocs.com/blog/2026/09/2026-ddos-attack/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Understanding the recent DDoS attack against Read the Docs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49617581",
+    "title": "Large language models develop novel social biases through adaptive exploration",
+    "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Large language models develop novel social biases through adaptive exploration",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49636345",
+    "title": "Muse, the band, lost its social media handles to Muse, Meta's new AI agent",
+    "url": "https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Muse, the band, lost its social media handles to Muse, Meta's new AI agent",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49628429",
+    "title": "Planet Labs' open satellite feed",
+    "url": "https://tech.marksblogg.com/planet-labs-open-satellite-feed.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Planet Labs' open satellite feed",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49634650",
+    "title": "Matt Mullenweg put on 'leave of absence'",
+    "url": "https://www.404media.co/wordpress-automattic-ceo-matt-mullenweg-put-on-leave-of-absence/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Matt Mullenweg put on 'leave of absence'",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49623937",
+    "title": "Lotus Notes and the dangers of starting from scratch",
+    "url": "https://buttondown.com/blog/lotus-notes-email",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Lotus Notes and the dangers of starting from scratch",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49645393",
+    "title": "Don't let anyone take away your big box of cables",
+    "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Don't let anyone take away your big box of cables",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49645686",
+    "title": "Neki",
+    "url": "https://planetscale.com/blog/introducing-neki",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Neki",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49639104",
+    "title": "I think I hate the internet",
+    "url": "https://strategictree.bearblog.dev/i-think-i-hate-the-internet/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I think I hate the internet",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49641401",
+    "title": "Thanks to Siri Recaps, your Apple Watch is always listening",
+    "url": "https://www.techradar.com/health-fitness/smartwatches/thanks-to-siri-recaps-your-apple-watch-is-always-listening-as-you-go-about-your-day-but-apple-may-be-risking-a-meta-glasses-style-backlash",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Thanks to Siri Recaps, your Apple Watch is always listening",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49622561",
+    "title": "How GPT‑5.6 Sol helps run quantum computing experiments",
+    "url": "https://openai.com/index/codex-quantum-computing-experiments/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How GPT‑5.6 Sol helps run quantum computing experiments",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49618050",
+    "title": "A Topological Picture Book, Rendered",
+    "url": "https://e-infinity.space/picture-book/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A Topological Picture Book, Rendered",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49634095",
+    "title": "Amazon refused to give pregnant workers bathroom breaks",
+    "url": "https://arstechnica.com/tech-policy/2026/09/lawsuit-amazon-refused-to-give-pregnant-workers-bathroom-breaks-and-chairs/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Amazon refused to give pregnant workers bathroom breaks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49633534",
+    "title": "Factoring RSA 260",
+    "url": "https://cognition.com/blog/factoring-rsa-260",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Factoring RSA 260",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49623398",
+    "title": "Show HN: Compute polynomials twice as fast",
+    "url": "https://thomasahle.com/fast-polynomials/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Compute polynomials twice as fast",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49645754",
+    "title": "Silicon Valley Is Transforming the Military-Industrial Complex",
+    "url": "https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Silicon Valley Is Transforming the Military-Industrial Complex",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49621018",
+    "title": "Larger Pacific striped octopus",
+    "url": "https://en.wikipedia.org/wiki/Larger_Pacific_striped_octopus",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Larger Pacific striped octopus",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49619906",
+    "title": "Harvard study predicts most suicide attempts a week in advance",
+    "url": "https://current.fas.harvard.edu/stories/harvard-study-predicts-most-suicide-attempts-week-advance",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Harvard study predicts most suicide attempts a week in advance",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49634966",
+    "title": "South Park creators rename show 'South America'",
+    "url": "https://www.bbc.co.uk/news/articles/cp9340rg7k8o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "South Park creators rename show 'South America'",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49629209",
+    "title": "The UN challenges five centuries of cartography",
+    "url": "https://www.not-ship.com/united-nations-map/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The UN challenges five centuries of cartography",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49619464",
+    "title": "27.5KB language-agnostic WebGPU syntax highlighter",
+    "url": "https://gpu-lexer.vercel.app/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "27.5KB language-agnostic WebGPU syntax highlighter",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49645907",
+    "title": "Forgejo <=16.0.3 Critical RCE",
+    "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Forgejo <=16.0.3 Critical RCE",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49637435",
+    "title": "Training a 3.8B LLM to 0.384 CORE for $998",
+    "url": "https://hugovergnes.github.io/little-lm-3-8b/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Training a 3.8B LLM to 0.384 CORE for $998",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49622305",
+    "title": "On Really Trying (2009)",
+    "url": "https://gwern.net/on-really-trying",
+    "summary": "生成摘要时出错",
+    "chinese_title": "On Really Trying (2009)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49647134",
+    "title": "Music Theory for the 21st-Century Classroom",
+    "url": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Music Theory for the 21st-Century Classroom",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49645763",
+    "title": "Neki is sharded Postgres by PlanetScale",
+    "url": "https://neki.dev/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Neki is sharded Postgres by PlanetScale",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49621102",
+    "title": "A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)",
+    "url": "https://note.com/masakazu_urabe/n/n7815f5b64fab?hl=en",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)",
     "chinese_summary": "生成摘要时出错"
   },
   {
     "id": "49630583",
     "title": "Apple Watch Ultra 4",
     "url": "https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4/",
-    "summary": "Apple unveiled the Apple Watch Ultra 4 on September 9, 2026, positioning it as the ultimate sports and adventure watch with significant advancements in health, fitness, and battery life.\n\nCentral to the update is the new Health Sensing System, powered by the S11 chip, offering the most accurate heart rate sensing in a wearable, along with higher-frequency heart rate and HRV measurements. This enables a new \"readiness\" score, providing a daily assessment (0-10) and actionable recommendations (Recover, Pace Yourself, Ready, Go For It) to guide users' activity levels. The S11 chip also powers \"Audio Intelligence\" for remembering key moments and sound alerts, while Apple Intelligence enhances Siri on watchOS 27 with personal context.\n\nBattery life is substantially improved, offering up to 50 hours of everyday use, 84 hours in Low Power Mode, and up to 45 hours for Max Extended outdoor workouts with continuous GPS. Charging is also faster. The Ultra 4 now boasts the most accurate step tracking of any smartwatch.\n\nA redesigned Health app for iPhone, arriving later this year, introduces a \"Longevity\" tab with a \"Health Age\" metric, an \"Insights\" tab for timely health information, and new movement evaluations. Users can also schedule lab tests directly through the app via Quest Diagnostics.\n\nThe Apple Watch Ultra 4, available in natural and black titanium, is open for pre-order, with availability beginning September 18.",
-    "chinese_title": "苹果手表 Ultra 4",
-    "chinese_summary": "苹果公司于2026年9月9日发布了Apple Watch Ultra 4，将其定位为终极运动与探险手表，在健康、健身和电池续航方面取得了显著进步。\n\n此次更新的核心是全新的健康感应系统，由S11芯片驱动，提供可穿戴设备中最精准的心率感应，以及更高频率的心率和心率变异性（HRV）测量。这带来了一个全新的“准备度”评分，提供每日评估（0-10分）和可操作的建议（恢复、放慢节奏、准备就绪、全力以赴），以指导用户的活动水平。S11芯片还驱动“音频智能”功能，用于记录关键时刻和声音提醒，而Apple Intelligence则通过个人情境，增强了watchOS 27上的Siri功能。\n\n电池续航大幅提升，日常使用可达50小时，低功耗模式下84小时，连续GPS追踪的“极限户外训练”模式下最长可达45小时。充电速度也更快。Ultra 4现在拥有所有智能手表中最精准的步数追踪功能。\n\n一款重新设计的iPhone健康App将于今年晚些时候推出，引入了带有“健康年龄”指标的“长寿”标签页，一个提供及时健康信息的“洞察”标签页，以及新的运动评估功能。用户还可以通过App直接预约Quest Diagnostics的实验室检测。\n\nApple Watch Ultra 4提供原色和黑色钛金属版本，现已开放预订，并将于9月18日开始发售。"
-  },
-  {
-    "id": "49604165",
-    "title": "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes",
-    "url": "https://github.com/ashemag/human-atlas",
-    "summary": "This article introduces an open-source \"Human Atlas,\" an interactive 3D anatomy explorer developed with React, Three.js, and shadcn/ui. It allows users to explore the BodyParts3D 4.0 adult male reference, featuring 2,234 individually selectable meshes, 15 anatomical systems, and 3,432 named concepts.\n\nKey functionalities include orbiting, zooming, direct selection of structures, toggling systems (or using presets), an \"exploded\" view of all visible parts, searching anatomical names, and isolating selected structures for detailed information. The explorer is designed with compact controls and detail panels suitable for mobile devices.\n\nThe application can be run locally using Node.js 22.13+, requiring no API keys. It employs rigorous validation for mesh buffers, layouts, search, and interaction handling. The anatomy data, licensed CC BY 4.0, is an adult male reference, simplified for browser performance to approximately 33 MB (2.2 million triangles). It's explicitly an educational tool, not for diagnostic or surgical use. Technically, geometry is merged into batches, utilizing GPU textures for efficient control over translation, visibility, and selection.\n\nThe application code is released under the MIT License, while the anatomy data maintains its CC BY 4.0 license. Issues and pull requests are welcome.",
-    "chinese_title": "开源三维解剖探索器：2,234个可选的BodyParts3D网格",
-    "chinese_summary": "本文介绍了一个开源的“人体图谱”，这是一个使用 React、Three.js 和 shadcn/ui 开发的交互式3D解剖探索器。它允许用户探索 BodyParts3D 4.0 成年男性参考模型，该模型包含2,234个可单独选择的网格、15个人体解剖系统和3,432个命名概念。\n\n主要功能包括环绕旋转、缩放、直接选择结构、切换系统（或使用预设）、所有可见部分的“爆炸图”视图、搜索解剖名称以及隔离选定结构以查看详细信息。该探索器设计有紧凑的控件和详细信息面板，适用于移动设备。\n\n该应用程序可以在本地运行，使用 Node.js 22.13+ 版本，且无需 API 密钥。它对网格缓冲区、布局、搜索和交互处理进行了严格验证。解剖数据采用 CC BY 4.0 许可，是一个成年男性参考模型，为提升浏览器性能已简化至约33 MB（220万个三角形）。它明确是一个教育工具，不用于诊断或手术用途。从技术角度看，几何体被合并成批次，并利用 GPU 纹理高效控制平移、可见性和选择。\n\n应用程序代码根据 MIT 许可证发布，而解剖数据则保持其 CC BY 4.0 许可。欢迎提交问题和拉取请求。"
-  },
-  {
-    "id": "49621223",
-    "title": "AI Has a Discovery Problem",
-    "url": "https://mhacevedo.com/posts/the-discovery-problem",
-    "summary": "The article identifies a \"discovery problem\" as the main bottleneck to AI adoption: users don't know what AI can do for them because its vast capabilities remain hidden behind a blank text box. Users cannot discover possibilities until they try them, but they don't know what to try.\n\nPartial fixes like templates and contextual suggestions offer some help, providing initial prompts or relevant ideas, but they fall short because templates often lack personal relevance, and suggestions don't fully reveal the system's potential.\n\nThe author uses Alan Kay's metaphor of an ant in the Grand Canyon seeing only a sliver of the sky, compared to someone on the rim seeing the whole plane. This illustrates the gap between skilled AI users, who can instantly spot numerous automation and reinvention opportunities, and average users, who face a blank prompt, unable to tap into the intelligence available.\n\nThe core argument is that the burden of discovering AI's potential falls too heavily on the user, rather than the system. The article concludes that advanced AI interfaces should proactively reveal their capabilities gradually, contextually, and in ways that directly match a user's actual work, effectively \"showing you the sky\" of possibilities.",
-    "chinese_title": "AI有发现问题",
-    "chinese_summary": "文章指出，“发现问题”是人工智能普及的主要瓶颈：用户不知道人工智能能为他们做什么，因为其庞大的功能被隐藏在一个空白文本框后面。用户只有尝试后才能发现可能性，但他们却不知道该尝试什么。\n\n模板和情境建议等部分解决方案提供了一些帮助，提供初始提示或相关想法，但它们效果不佳，因为模板通常缺乏个人相关性，而建议也未能充分展现系统的潜力。\n\n作者引用了艾伦·凯的比喻：大峡谷中的蚂蚁只能看到一线天空，而站在峡谷边缘的人却能看到整个平面。这说明了熟练的人工智能用户（他们能立即发现大量的自动化和创新机会）与普通用户（他们面对空白提示，无法利用现有智能）之间的差距。\n\n核心论点是，发现人工智能潜力的负担过于沉重地落在了用户身上，而非系统。文章总结道，高级人工智能界面应主动、渐进、情境化地展现其能力，并以直接匹配用户实际工作的方式，有效地“向你展示可能性之空”。"
-  },
-  {
-    "id": "49626052",
-    "title": "One woman's Tesla was remotely controlled by an abusive ex-partner",
-    "url": "https://www.theguardian.com/australia-news/2026/sep/09/how-one-womans-tesla-was-remotely-controlled-and-harass-by-her-abusive-ex-partner-ntwnfb",
-    "summary": "A woman, identified as Stacey (name changed), endured years of domestic abuse from her ex-partner, Enrico Pucci, who remotely controlled her Tesla car to harass and endanger her. Pucci was recently convicted of 30 domestic violence-related charges, including using the Tesla app to stalk and harass Stacey, and sentenced to two years and three months in prison.\n\nStacey had registered the Tesla in Pucci's name for \"assistance\" with its technology. After their relationship ended, Pucci exploited this access. Between November 6 and 12, 2025, he remotely activated \"Valet Mode\" to limit the car's speed to 40km/h, creating significant safety issues. He also manipulated the car's temperature, locks, and curfew settings, and attempted to disconnect it from charging multiple times, taunting Stacey with phrases like \"I am in your car.\" Stacey had no control over her vehicle and feared for her safety.\n\nThis tech-enabled harassment was part of a four-year pattern of coercive control. Previous abuses included common assault where he threatened her son and left her stranded, and a strangulation incident that caused her to black out. Pucci's history also includes exploiting vulnerable workers through his cleaning firm and corporate disqualification by ASIC for failed companies. He is appealing his sentence.",
-    "chinese_title": "One woman's Tesla was remotely controlled by an abusive ex-partner",
-    "chinese_summary": "A woman, identified as Stacey (name changed), endured years of domestic abuse from her ex-partner, Enrico Pucci, who remotely controlled her Tesla car to harass and endanger her. Pucci was recently convicted of 30 domestic violence-related charges, including using the Tesla app to stalk and harass Stacey, and sentenced to two years and three months in prison.\n\nStacey had registered the Tesla in Pucci's name for \"assistance\" with its technology. After their relationship ended, Pucci exploited this access. Between November 6 and 12, 2025, he remotely activated \"Valet Mode\" to limit the car's speed to 40km/h, creating significant safety issues. He also manipulated the car's temperature, locks, and curfew settings, and attempted to disconnect it from charging multiple times, taunting Stacey with phrases like \"I am in your car.\" Stacey had no control over her vehicle and feared for her safety.\n\nThis tech-enabled harassment was part of a four-year pattern of coercive control. Previous abuses included common assault where he threatened her son and left her stranded, and a strangulation incident that caused her to black out. Pucci's history also includes exploiting vulnerable workers through his cleaning firm and corporate disqualification by ASIC for failed companies. He is appealing his sentence."
-  },
-  {
-    "id": "49603092",
-    "title": "The Education of a Doomer",
-    "url": "https://borretti.me/article/the-education-of-a-doomer",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Education of a Doomer",
+    "chinese_title": "Apple Watch Ultra 4",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49627655",
+    "title": "Investing in mothers? The long-run impact of a universal child care",
+    "url": "https://www.nber.org/papers/w35514",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Investing in mothers? The long-run impact of a universal child care",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49638622",
+    "title": "OpenAI have no mathematicians capable of understanding what they put out",
+    "url": "https://mastodon.social/@tristanbuckmaster/117237555794407063",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenAI have no mathematicians capable of understanding what they put out",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49637395",
+    "title": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
+    "url": "https://slimemoldtimemold.com/2026/08/05/a-stupid-idea-for-ai-alignment-we-came-up-with-by-looking-at-the-list-of-specification-gaming-behaviours/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49643848",
+    "title": "Bending Spoons buying Miro for $1.355B",
+    "url": "https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-miro",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Bending Spoons buying Miro for $1.355B",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49619639",
+    "title": "AI Responsibility – OpenAI and Anthropic",
+    "url": "https://twitter.com/hilbertspaess/status/2097476196791709843",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Responsibility – OpenAI and Anthropic",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49644047",
+    "title": "Amazon pilots ad services in ChatGPT",
+    "url": "https://www.marketingdive.com/news/amazon-pilots-ad-services-in-chatgpt-what-marketers-need-to-know/829945/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Amazon pilots ad services in ChatGPT",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49648732",
+    "title": "Creativity is the New Moat",
+    "url": "https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Creativity is the New Moat",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -88,19 +616,139 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49613182",
-    "title": "OUI-1: world's first model for Generative UI",
-    "url": "https://www.openui.com/blog/oui-1",
+    "id": "49623938",
+    "title": "Building a Wall Lamp from Scratch",
+    "url": "https://mbugert.de/posts/2026-09-09-bedroom-lamp-build/",
     "summary": "生成摘要时出错",
-    "chinese_title": "OUI-1: world's first model for Generative UI",
+    "chinese_title": "Building a Wall Lamp from Scratch",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49611641",
-    "title": "I Rewrote My Back End in Go in 72 Hours and Cut My AWS Bill by 94%",
-    "url": "https://www.bajura.online/2026/09/i-rewrote-my-backend-in-go-in-72-hours.html",
+    "id": "49641393",
+    "title": "PlayStation cancels Kojima's PHYSINT, Xbox steps in",
+    "url": "https://twitter.com/hideo_kojima_en/status/2097877506401681753",
     "summary": "生成摘要时出错",
-    "chinese_title": "I Rewrote My Back End in Go in 72 Hours and Cut My AWS Bill by 94%",
+    "chinese_title": "PlayStation cancels Kojima's PHYSINT, Xbox steps in",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49636906",
+    "title": "I'm sorry, you're not going to die from an AI-engineered supervirus",
+    "url": "https://blog.genesmindsmachines.com/p/im-sorry-youre-not-going-to-die-from",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I'm sorry, you're not going to die from an AI-engineered supervirus",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49623306",
+    "title": "Gambling with our lives: AI researcher quits Anthropic with warning about safety",
+    "url": "https://www.politico.eu/article/anthropic-openai-researcher-jacob-coxon-warns-ai-could-kill-humans/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Gambling with our lives: AI researcher quits Anthropic with warning about safety",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49629802",
+    "title": "Is OpenAI Taking Everyone for Fools?",
+    "url": "https://read.misalignedmag.com/is-openai-taking-everyone-for-fools-2481fa851544",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Is OpenAI Taking Everyone for Fools?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49618175",
+    "title": "LG TV shown scanning LAN for third-party phones and other devices",
+    "url": "https://arstechnica.com/gadgets/2026/09/lg-tv-shown-capable-of-tracking-user-activity-even-when-offline/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "LG TV shown scanning LAN for third-party phones and other devices",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49641792",
+    "title": "Mathematicians want proof OpenAI didn't use their work",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Mathematicians want proof OpenAI didn't use their work",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49616696",
+    "title": "'Lake America' makes one thing clear: We can't trust U.S. tech companies",
+    "url": "https://www.tvo.org/article/analysis-lake-america-makes-one-thing-clear-we-cant-trust-us-tech-companies",
+    "summary": "生成摘要时出错",
+    "chinese_title": "'Lake America' makes one thing clear: We can't trust U.S. tech companies",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49628982",
+    "title": "I haven't lost a customer service fight in seven months",
+    "url": "https://www.sudomoin.com/p/consumer-claims",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I haven't lost a customer service fight in seven months",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49626052",
+    "title": "One woman's Tesla was remotely controlled by an abusive ex-partner",
+    "url": "https://www.theguardian.com/australia-news/2026/sep/09/how-one-womans-tesla-was-remotely-controlled-and-harass-by-her-abusive-ex-partner-ntwnfb",
+    "summary": "生成摘要时出错",
+    "chinese_title": "One woman's Tesla was remotely controlled by an abusive ex-partner",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49619457",
+    "title": "US to ban Canadian dairy, alcohol, motor vehicle imports on September 29",
+    "url": "https://www.reuters.com/business/us-ban-canadian-dairy-alcohol-motor-vehicle-imports-september-29-2026-09-08/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "US to ban Canadian dairy, alcohol, motor vehicle imports on September 29",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49621223",
+    "title": "AI Has a Discovery Problem",
+    "url": "https://mhacevedo.com/posts/the-discovery-problem",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Has a Discovery Problem",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49643027",
+    "title": "Who People Talk to When They're Struggling",
+    "url": "https://www.graphsaboutreligion.com/p/who-do-you-talk-to-when-youre-struggling",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Who People Talk to When They're Struggling",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49618450",
+    "title": "Object storage is all you need",
+    "url": "https://www.tigrisdata.com/blog/object-storage-all-need/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Object storage is all you need",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49627306",
+    "title": "Microsoft/TracerAI withdraws copyright takedown against Luanti",
+    "url": "https://blog.luanti.org/2026/09/08/dmca-rescinded/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Microsoft/TracerAI withdraws copyright takedown against Luanti",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49626429",
+    "title": "Playing whack-a-mole is losing",
+    "url": "https://dadrian.io/blog/posts/whack-a-mole-is-losing/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Playing whack-a-mole is losing",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49636476",
+    "title": "Tor VPN Beta: What we've learned building our own VPN for Android from scratch",
+    "url": "https://blog.torproject.org/tor-vpn-beta/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tor VPN Beta: What we've learned building our own VPN for Android from scratch",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -120,75 +768,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49628982",
-    "title": "I haven't lost a customer service fight in seven months",
-    "url": "https://www.sudomoin.com/p/consumer-claims",
+    "id": "49629382",
+    "title": "Rock band Muse lose social media handles to Meta’s new AI tool",
+    "url": "https://www.the-independent.com/arts-entertainment/music/news/muse-band-meta-ai-tool-handle-b3047291.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "I haven't lost a customer service fight in seven months",
+    "chinese_title": "Rock band Muse lose social media handles to Meta’s new AI tool",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49627306",
-    "title": "Microsoft/TracerAI withdraws copyright takedown against Luanti",
-    "url": "https://blog.luanti.org/2026/09/08/dmca-rescinded/",
+    "id": "49631476",
+    "title": "I Don't Want to Interact with Stochastic Parrots",
+    "url": "https://ploum.net/2026-09-09-ai_policy.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Microsoft/TracerAI withdraws copyright takedown against Luanti",
+    "chinese_title": "I Don't Want to Interact with Stochastic Parrots",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49605611",
-    "title": "Canada's counter-tariffs take effect on various US goods",
-    "url": "https://www.france24.com/en/live-news/20260908-canada-s-counter-tariffs-take-effect-on-various-us-goods",
-    "summary": "Canada's counter-tariffs on various US goods officially took effect, responding to the US decision to reinstate tariffs on Canadian aluminum. This move, announced by Deputy Prime Minister Chrystia Freeland, applies reciprocal tariffs on US aluminum products, including certain sheets and coils, and extends to other items like washing machines and specific sporting equipment.\n\nThe tariffs are valued at $2.7 billion (CAD), matching the amount of US tariffs on Canadian aluminum. Freeland emphasized that these measures are proportionate, fully reciprocal, and designed to avoid escalating the trade dispute while making it clear Canada will defend its industry. She also reiterated that Canada is prepared to adjust the tariffs if the US withdraws its duties on Canadian aluminum. The initial US tariffs on Canadian aluminum had been imposed and then lifted in 2018 during fraught negotiations for the USMCA trade agreement, only to be reimposed by President Donald Trump's administration, citing national security concerns.",
-    "chinese_title": "Canada's counter-tariffs take effect on various US goods",
-    "chinese_summary": "Canada's counter-tariffs on various US goods officially took effect, responding to the US decision to reinstate tariffs on Canadian aluminum. This move, announced by Deputy Prime Minister Chrystia Freeland, applies reciprocal tariffs on US aluminum products, including certain sheets and coils, and extends to other items like washing machines and specific sporting equipment.\n\nThe tariffs are valued at $2.7 billion (CAD), matching the amount of US tariffs on Canadian aluminum. Freeland emphasized that these measures are proportionate, fully reciprocal, and designed to avoid escalating the trade dispute while making it clear Canada will defend its industry. She also reiterated that Canada is prepared to adjust the tariffs if the US withdraws its duties on Canadian aluminum. The initial US tariffs on Canadian aluminum had been imposed and then lifted in 2018 during fraught negotiations for the USMCA trade agreement, only to be reimposed by President Donald Trump's administration, citing national security concerns."
-  },
-  {
-    "id": "49612981",
-    "title": "DOJ Blocked ICE Agent Shooting Charge over Federal Prosecutor's Objections",
-    "url": "https://www.propublica.org/article/doj-blocks-charges-ice-agent-minneapolis-julio-cesar-sosa-celis",
+    "id": "49629868",
+    "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+    "url": "https://arxiv.org/abs/2609.09153",
     "summary": "生成摘要时出错",
-    "chinese_title": "DOJ Blocked ICE Agent Shooting Charge over Federal Prosecutor's Objections",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49626429",
-    "title": "Playing whack-a-mole is losing",
-    "url": "https://dadrian.io/blog/posts/whack-a-mole-is-losing/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Playing whack-a-mole is losing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49610890",
-    "title": "The far right's win in Germany is sending a chill through Europe's establishment",
-    "url": "https://www.cnn.com/2026/09/08/europe/germany-far-right-afd-election-europe-intl",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The far right's win in Germany is sending a chill through Europe's establishment",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49621546",
-    "title": "So you want to use OpenRouter?",
-    "url": "https://mmoustafa.com/blog/so-you-want-to-use-openrouter/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "So you want to use OpenRouter?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49614101",
-    "title": "GrapheneOS on AI Usage",
-    "url": "https://grapheneos.social/@GrapheneOS/117236529351603001",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GrapheneOS on AI Usage",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49604816",
-    "title": "My business partner sent a 5K vibe-coded PR that he didn't even test",
-    "url": "https://ycj.bearblog.dev/ai-again/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "My business partner sent a 5K vibe-coded PR that he didn't even test",
+    "chinese_title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -197,22 +797,6 @@
     "url": "https://xcancel.com/hilbertspaess/status/2097476196791709843?s=20",
     "summary": "生成摘要时出错",
     "chinese_title": "I resigned from Anthropic today (Jacob Coxon)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49618447",
-    "title": "Flock worker calls police on investigator filming public camera installation",
-    "url": "https://www.atlantanewsfirst.com/2026/09/08/flock-worker-calls-police-anf-chief-investigator-filming-public-camera-installation/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Flock worker calls police on investigator filming public camera installation",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49611132",
-    "title": "How Climate Resilient Are the Largest Cities?",
-    "url": "https://alphageo.ai/how-climate-resilient-are-the-worlds-largest-cities/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How Climate Resilient Are the Largest Cities?",
     "chinese_summary": "生成摘要时出错"
   }
 ]
