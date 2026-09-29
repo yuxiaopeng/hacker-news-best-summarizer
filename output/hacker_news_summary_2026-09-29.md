@@ -2,112 +2,116 @@
 
 这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
 
-## 1. 谷歌什么时候变得这么奇怪了？
-
-**原文标题**: When did Google get so weird?
-
-**原文链接**: [https://sancho.bearblog.dev/google-weird/](https://sancho.bearblog.dev/google-weird/)
-
-文章表达了作者对谷歌在2026年“怪异”且无益的AI驱动搜索体验的深深沮丧。作者回忆起搜索“hes never coming over dario”来查找与2010年代中期一个特定篮球梗相关的旧推文和Reddit帖子。这个梗指的是达里奥·萨里奇（Dario Saric），一位费城76人队的选秀球员，他延迟加入球队，导致球迷间流传一个内部笑话，说他“永远不会来”。
-
-谷歌的AI概览没有提供相关链接，反而将查询解读为一次个人情感危机。最初的AI回复提供了安慰，暗示作者因为某人“不来”而“正在经历一段艰难时期”。展开概览后，出现了更多的情感支持建议、自我护理推荐，甚至还有寻求专业帮助的建议，把作者当成了在感情中被拒绝的人。
-
-作者感到震惊，质疑为什么搜索引擎的目的从查找互联网信息转变为提供数字疗法并充当“善解人意的倾听者”。他们认为谷歌已经“偏离了核心宗旨”，脱离了其组织全球信息的核心使命。尽管所需的搜索结果最终在AI“糟粕”下方很远的地方找到了，但这次经历让作者不禁思考，为什么用户现在必须与计算机进行“拟社会对话”，以及在大型语言模型（LLM）出现之前的搜索方式难道不足以进行直截了当的信息检索吗？
-
----
-
-## 2. 被拖欠十亿美元英伟达股票
+## 1. 被欠十亿美元英伟达股票
 
 **原文标题**: Owed a billion dollars in Nvidia stock
 
 **原文链接**: [https://colo.to/nvidia-stock-narrative.html](https://colo.to/nvidia-stock-narrative.html)
 
-埃里克·古利克森讲述了他早期参与英伟达公司时，围绕未归属的股票期权发生的一场纠纷。1993年，黄仁勋邀请古利克森加入英伟达技术顾问委员会，并授予他25,000份期权。他在快速双二次纹理映射方面的创新对英伟达的首款产品NV1至关重要。
+英伟达技术咨询委员会前成员埃里克·古利克森声称，由于他1993年的股票期权协议被误读，他被不当地拒绝了数百万股英伟达股票。受黄仁勋邀请，古利克森获得了25,000份期权，并设定了一年归属期，这是在他贡献了对英伟达首款产品NV1至关重要的双二次纹理映射技术之后。
 
-1996年4月，在NV1因微软DirectX面临挑战后，英伟达的首席财务官通知古利克森有15,625股股票已归属，他行权后便将其遗忘。几十年后，当他发现英伟达如今的成功时，他翻阅了旧文件。他意识到最初的期权协议规定所有25,000股股票应在一年内完全归属，这意味着它们本应在1994年末前全部归属。他行权的15,625股仅占总数的62.5%，这暗示着一个四年期的归属计划，而这并未在他的协议中注明。
+1996年，英伟达的首席财务官通知古利克森，根据一个错误的四年归属期，15,625股股票已经归属。古利克森行使了这些股票，并在很大程度上将此事抛诸脑后。
 
-这缺失的9,375股股票，经过480倍的股票拆分，现在相当于4,500,000股英伟达股票。古利克森聘请了律师，这些律师与英伟达的法务团队进行了接触。虽然英伟达没有质疑协议的真实性，但他们辩称，由于时间已过去30年，该索赔已超过诉讼时效。古利克森的律师建议不要起诉，认为基于诉讼时效提出的驳回动议很可能会成功。古利克森将此事视为一个警示故事，说明合同义务的短暂性。
+三十年后，即2024年，古利克森重新发现了他的原始协议，其中明确规定了一年归属期。这意味着所有25,000股股票本应在1994年之前归属，而不是1996年所指的部分数量。经过多次股票拆分后，未归属的9,375股股票现在总计4,500,000股。
 
----
-
-## 3. 解封的呈堂文件：作者诉微软/OpenAI案
-
-**原文标题**: Unsealed Briefs in Authors’ Case v. Microsoft/OpenAI
-
-**原文链接**: [https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/](https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/)
-
-作家协会针对OpenAI和微软的正在进行的诉讼中，新披露的重磅文件显示，这些公司的高管们明知他们的AI产品是在非法盗用受版权保护书籍的基础上进行训练的，并且会摧毁作者们的职业生涯。这份于2026年9月21日提交的简报指控其“大规模图书盗版”和“对人类创作的蔑视”，并声称OpenAI的GPT模型对作家构成了“生存威胁”。
-
-这起诉讼得到了戴维·巴尔达奇（David Baldacci）、乔治·R·R·马丁（George R.R. Martin）和朱迪·皮考特（Jodi Picoult）等作家的支持，并提交了内部通信作为证据：
-*   **知晓职业替代：** OpenAI政策主管杰克·克拉克（Jack Clark）在2020年承认，AI将“导致人们失业”，并且他们很可能会“忽略这些担忧”。
-*   **盗版与“自动补全”：** OpenAI的塔伦·戈吉内尼（Tarun Gogineni）曾意图让GPT完成乔治·R·R·马丁的系列作品，并将作者们关于数据被盗和失业的抱怨斥为“可接受的经济扰乱”。
-*   **微软的早期知情：** 微软在2019年4月前就已得知OpenAI使用了来源于“可疑的俄罗斯网站”LibGen的盗版书籍，并已向比尔·盖茨（Bill Gates）和凯文·斯科特（Kevin Scott）披露。
-*   **“形象”重于合法性：** OpenAI高管们更关心LibGen使用所带来的负面新闻，而非其合法性。
-*   **证据隐藏：** 2022年中旬，OpenAI启动了“清除计划”（Project Clear），以便从其系统中删除LibGen文件，因为担心被公众曝光。
-
-作家协会首席执行官玛丽·拉森伯格（Mary Rasenberger）表示，这些文件揭露了“对作家的惊人蔑视”，以及一个旨在摧毁职业生涯并用“AI糟粕”贬低美国文化的蓄意计划。这些文件旨在聚焦被告的“有罪认知和鲁莽行为”。预计2027年初将有进一步的法律行动和听证会。
+古利克森聘请了律师，他们证实了协议的真实性。然而，英伟达的法律顾问坚称，该索赔已“超过诉讼时效”。经过商议，古利克森的律师建议不要起诉，他们认为三十年来未能主张自己的权利，很可能会导致驳回动议。古利克森将此事作为警示故事，强调了合同义务随着时间推移的实际限制，但他本人对此“乐观且感到好笑”。
 
 ---
 
-## 4. 恩伯-1
+## 2. 更新后的谷歌地图显示拉法市的破坏
 
-**原文标题**: Ember-1
+**原文标题**: Updated Google Maps shows destruction of the city of Rafah
 
-**原文链接**: [https://fireworks.ai/blog/ember-1](https://fireworks.ai/blog/ember-1)
+**原文链接**: [https://twitter.com/AliAbunimah/status/2103890594137309425](https://twitter.com/AliAbunimah/status/2103890594137309425)
 
-Fireworks 研究院推出 Ember-1，这是一款新型专用 AI 模型，旨在以显著降低的 token 使用量提供 Kimi K3 的质量。针对大型语言模型中过度推理导致的高成本问题，Ember-1 通过学习更高效地进行推理，将输出 token 削减 40%，并将推理 token 削减 71.3%。
+阿里·阿布尼马 (@AliAbunimah) 于2026年9月26日发布的一条推文声称，谷歌地图已更新，以视觉方式呈现加沙地带的广泛破坏，他将其称为“遭受犹太复国主义大屠杀的加沙”。该帖子特别强调了显示拉法地区破坏情况的图片。
 
-Ember-1 通过 Fireworks Serverless Training 进行了广泛训练，进行了 50 多次实验，使用专有数据，且未包含任何客户数据。它已在多个方面得到严格验证。在专业智能指数 (SII) 上，Ember-1 在 Bedside Bench 上建立了新的帕累托前沿，与 GPT-5.6 Sol 和 Claude Opus 5 等模型相比，展示出卓越的成本效益。
-
-与客户进行的实时 A/B 测试显示，每项任务约节省 35% 的 token，同时保持或提升了质量，促使一位客户在生产环境中采用了 Ember-1。在 Fireworks 内部，开发人员没有注意到这一切换，证实了其“答案相同，token 更少”的能力。
-
-Ember-1 作为 Serverless 上的“研究预览版”提供，也是 Fireworks 推出的一系列专用、token 高效模型中的首款。该公司还将推出 Ember-1 的训练支持服务，使企业能够构建定制化的、具有成本效益的模型以适应特定工作负载，进一步兑现 Fireworks 在 AI 部署中实现 token 效率的承诺。
+这条推文获得了广泛关注，累计获得410万次浏览，以及306次转发、6,456个赞、2,800次引用和1,478次收藏。该推文还指出，只有特定账户才能回复。
 
 ---
 
-## 5. 十四行诗五点五
+## 3. 十四行诗 第5.5首
 
 **原文标题**: Sonnet 5.5
 
 **原文链接**: [https://www.anthropic.com/claude-sonnet-5-5](https://www.anthropic.com/claude-sonnet-5-5)
 
-Claude Sonnet 5.5 作为 Claude 5.5 系列的第二个模型推出，相较于 Sonnet 5 有了显著升级。它在大多数任务中提供超过 30% 的速度提升和高达 30% 的成本降低。Sonnet 5.5 被定位为 Claude Opus 5.5 的更快、更低成本的补充，擅长范围明确的日常任务、错误修复、创建精美文档、幻灯片、电子表格和设计工作。Claude Haiku 5.5 也将很快加入该系列，用于大批量、成本敏感的应用。
+Claude Sonnet 5.5 作为 Claude 5.5 系列的第二个模型被推出，是针对复杂任务的 Opus 5.5 的一个更快、成本更低的补充。它专为范围明确的日常任务而设计，例如修复错误、创建精美的文档、幻灯片和电子表格，并对设计有敏锐的洞察力。
 
-Sonnet 5.5 的主要改进包括性能的显著提升，在 Terminal-Bench 4.0 的代理编码测试中得分 70.6%（而 Sonnet 5 为 10.3%），并在真实世界工作（GDPval-AA）中表现出色。它也是第一个能够通过屏幕截图通关《宝可梦 红》的 Sonnet 模型。通过更清晰的写作和更快的迭代，协作得到了增强。成本效益的实现得益于每项任务所需 token 数量的减少，尽管每 token 定价相似，但总体费用更低。输出生成速度提升超过 30%，使其成为迄今为止最快的 Sonnet 模型。此外，Sonnet 5.5 在对齐和安全性方面超越或与 Sonnet 5 持平，并配备了 Opus 5 级别的网络安全保障。
+Sonnet 5.5 在多个领域对 Sonnet 5 进行了显著升级：
+*   **性能：** 它在 Terminal-Bench 4.0 上获得了 70.6% 的分数（而 Sonnet 5 为 10.3%），这表明在代理式编码方面有了显著改进。它在长期任务、图像理解（例如，通过截图击败《宝可梦 红》）和知识工作方面表现出色，在付出更高努力时，其在特定基准测试上的能力常常接近 Opus 5.5。
+*   **速度与成本：** Sonnet 5.5 生成输出的速度提升了 30% 以上，并且由于更高的令牌效率，即便单位令牌定价相似，每项任务的成本通常比其前代产品降低高达 30%。
+*   **协作：** 早期测试者将其描述为更好、更自然、更高效的合作伙伴。
+*   **对齐与安全性：** 它在大多数对齐指标上优于或与 Sonnet 5 持平，并且是首个配备与 Opus 5.5 相当的网络安全防护措施的 Sonnet 模型，针对高风险请求设有备用方案。
 
-编码和知识工作都取得了显著进步，测试人员称赞其速度、效率以及理解复杂代码库和为输出增加设计润色的能力。可以调整工作量级别，以平衡成本、速度和质量。
-
----
-
-## 6. Meta屏蔽卢拉总统脸书页面及竞选广告，大选前两周
-
-**原文标题**: Meta Blocks President Lula's Facebook Page, Campaign Ads 2 Weeks from Election
-
-**原文链接**: [https://www.reddit.com/r/worldnews/comments/1wr3id3/meta_blocks_president_lulas_facebook_page_and/](https://www.reddit.com/r/worldnews/comments/1wr3id3/meta_blocks_president_lulas_facebook_page_and/)
-
-2014年1月，Facebook（当时尚未更名为Meta）删除了一个名为“Lula Presidente”的粉丝页面及其相关的付费竞选广告。该页面专为巴西前总统路易斯·伊纳西奥·卢拉·达席尔瓦设立，拥有超过46万粉丝。
-
-Facebook的这一决定是基于其政治广告政策遭到违反。该平台声明，代表政治候选人的推广内容需要获得候选人或其官方竞选团队的明确授权。由于“Lula Presidente”是一个粉丝页面，而非官方竞选实体，并且正在付费推广与卢拉潜在（但2014年尚未确认）候选资格相关的内容，因此被认定违反了这些规定。
-
-劳工党（PT）宣布将审查Facebook的这一行动，而该页面管理员则为其内容辩护，坚称其仅仅是“支持卢拉”的，并遵守所有现有规则。这一事件凸显了社交媒体平台上政治内容和广告监管所面临的持续复杂性和争议，尤其是在区分草根粉丝支持和官方竞选宣传方面。
+客户评价强调了其在编码方面的效率、改进的判断力、更快的支持票处理速度以及更少的令牌使用量。专为高并发、成本敏感型应用设计的 Claude Haiku 5.5 也将很快加入该系列。
 
 ---
 
-## 7. AI companies in race to demonstrate their model most threatening to humanity
+## 4. GPT 6.1 索尔：媲美Astra智能，仅需五分之一价格
 
-**原文标题**: AI companies in race to demonstrate their model most threatening to humanity
+**原文标题**: GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price
 
-**原文链接**: [https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/](https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/)
+**原文链接**: [https://openai.com/index/introducing-gpt-6-1-sol/](https://openai.com/index/introducing-gpt-6-1-sol/)
+
+OpenAI 发布了 GPT-6.1 Sol，这是一款新模型，以 GPT-6 Astra 五分之一的成本提供“接近 Astra 智能”的能力。作为 GPT-6 Sol 的升级版，它在智能体编码、计算机使用和专业工作方面提供了显著改进，其缓存输入定价极低，每百万个 token 仅需 0.10 美元——比标准价格低 95%，比 GPT-6 Sol 的缓存输入价格低 50%。
+
+GPT-6.1 Sol 在关键基准测试中表现出色：
+*   **编码：** 在 DeepSWE v1.1 测试中，它以 GPT-6 Astra 五分之一的成本达到了 Astra 的性能，并超越 GPT-6 Sol 6.4 个百分点。
+*   **专业工作：** 在文档理解 (GDP.pdf) 和多步骤业务流程 (AutomationBench) 方面，它接近 Astra 的最先进水平，并以极低的成本超越了 Opus 5.5。
+*   **计算机使用：** 在 OSWorld 2.0 测试中，它显著优于 GPT-6 Sol，与 Astra 的差距缩小到 2.1 个百分点以内，每个任务的成本约为 Astra 的七分之一。
+*   **科学研究：** 在 Terminal-Bench Science 0.1 测试中，它的得分是 GPT-6 Sol 的两倍多，且成本比 Astra 低 75% 以上，尽管 Astra 在最困难的任务上仍然更胜一筹。
+*   **事实性：** 在低推理强度下，与 GPT-6 Sol 相比，它将事实错误减少了约 32%，并将错误率保持在接近 Astra 的水平，而成本不到 Astra 的五分之一。
+
+安全性和对齐性也得到了改进，使 GPT-6.1 Sol 的可靠性更接近 Astra。该模型即刻向 ChatGPT Plus、Pro、Business、Enterprise 和 Edu 用户开放，并通过 OpenAI API 以 `gpt-6.1-sol` 的形式提供，其超高速版本正在规划中。
+
+---
+
+## 5. 大家都在家，没人过来。
+
+**原文标题**: Everybody’s home. No one’s coming over
+
+**原文链接**: [https://www.derekthompson.org/p/the-death-of-the-american-host](https://www.derekthompson.org/p/the-death-of-the-american-host)
+
+The article "Everybody’s home. No one’s coming over" highlights the dramatic decline of social hosting and face-to-face interaction in America, calling it the "death of hosting." Since 1975, the share of Americans who host friends or family at home monthly has plummeted by 70%, from 42% to just 12% in 2026. This trend is corroborated by a broader decrease in communal activities like attending sporting events, going to bars, or volunteering.
+
+The author refutes the idea that socializing has merely shifted to restaurants or been replaced by new healthy activities, noting increased solo dining and exercise, and a significant rise in time spent at home.
+
+Four primary explanations are offered for this "great disinvitation":
+1.  **Harried Dual-Earner Households**: Modern leisure feels frantic. The logistical effort of hosting is overwhelming, especially as women, who historically managed social calendars, entered the workforce and men didn't pick up the slack.
+2.  **Intensive Parenting**: Parents now dedicate substantially more time to children, displacing adult social evenings.
+3.  **Shrinking Friendship Networks**: The average number of close friendships is declining, particularly among less educated and unmarried individuals, making hosting a "luxury good."
+4.  **Appeal of Home Entertainment**: The comfort and ease of personalized digital entertainment (screens, video) make staying home alone more attractive and less demanding than coordinating social gatherings.
+
+Ultimately, the article proposes a "Lump of Leisure Theory": technology, while not replacing jobs, has made other people less necessary for our leisure. Modernity favors easy, solo consumption over the coordination and effort required for traditional social events, leading to smaller social lives.
+
+---
+
+## 6. Pirating the Pirates
+
+**原文标题**: Pirating the Pirates
+
+**原文链接**: [https://mubi.com/en/notebook/posts/pirating-the-pirates](https://mubi.com/en/notebook/posts/pirating-the-pirates)
 
 生成摘要时出错
 
 ---
 
-## 8. Windows 11½
+## 7. It's Time to Investigate the AI Labs
 
-**原文标题**: Windows 11½
+**原文标题**: It's Time to Investigate the AI Labs
 
-**原文链接**: [https://definitelynotwindows.com/](https://definitelynotwindows.com/)
+**原文链接**: [https://calnewport.com/its-time-to-investigate-the-ai-labs/](https://calnewport.com/its-time-to-investigate-the-ai-labs/)
+
+生成摘要时出错
+
+---
+
+## 8. Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms
+
+**原文标题**: Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms
+
+**原文链接**: [https://github.com/firelex/jeff](https://github.com/firelex/jeff)
 
 生成摘要时出错
 
@@ -123,147 +127,27 @@ Facebook的这一决定是基于其政治广告政策遭到违反。该平台声
 
 ---
 
-## 10. There are no "rogue" AI agents
+## 10. Windows 11½
 
-**原文标题**: There are no "rogue" AI agents
+**原文标题**: Windows 11½
 
-**原文链接**: [https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents](https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents)
-
-生成摘要时出错
-
----
-
-## 11. On caring for user data: NeoVim caused Vim undo files to be deleted
-
-**原文标题**: On caring for user data: NeoVim caused Vim undo files to be deleted
-
-**原文链接**: [https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/](https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/)
+**原文链接**: [https://definitelynotwindows.com/](https://definitelynotwindows.com/)
 
 生成摘要时出错
 
 ---
 
-## 12. Tells of a Slop UI
+## 11. DraftKings is using AI to behaviorally target chronic gamblers
 
-**原文标题**: Tells of a Slop UI
+**原文标题**: DraftKings is using AI to behaviorally target chronic gamblers
 
-**原文链接**: [https://hereticpleb.vercel.app/blog/10-tells-of-slop](https://hereticpleb.vercel.app/blog/10-tells-of-slop)
-
-生成摘要时出错
-
----
-
-## 13. Pirating the Pirates
-
-**原文标题**: Pirating the Pirates
-
-**原文链接**: [https://mubi.com/en/notebook/posts/pirating-the-pirates](https://mubi.com/en/notebook/posts/pirating-the-pirates)
+**原文链接**: [https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising](https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising)
 
 生成摘要时出错
 
 ---
 
-## 14. Self-Hosting on the Dark Web
-
-**原文标题**: Self-Hosting on the Dark Web
-
-**原文链接**: [https://david.alvarezrosa.com/posts/self-hosting-on-the-dark-web/](https://david.alvarezrosa.com/posts/self-hosting-on-the-dark-web/)
-
-生成摘要时出错
-
----
-
-## 15. The problem is not AI code, but not knowing about system architecture or intent
-
-**原文标题**: The problem is not AI code, but not knowing about system architecture or intent
-
-**原文链接**: [https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/](https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/)
-
-生成摘要时出错
-
----
-
-## 16. Don't couple your Go code to GitHub
-
-**原文标题**: Don't couple your Go code to GitHub
-
-**原文链接**: [https://iain.rocks/blog/dont-couple-your-go-code-to-github](https://iain.rocks/blog/dont-couple-your-go-code-to-github)
-
-生成摘要时出错
-
----
-
-## 17. MongoDB CEO resigns to join Meta
-
-**原文标题**: MongoDB CEO resigns to join Meta
-
-**原文链接**: [https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/](https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/)
-
-生成摘要时出错
-
----
-
-## 18. Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi
-
-**原文标题**: Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi
-
-**原文链接**: [https://loficities.com/](https://loficities.com/)
-
-生成摘要时出错
-
----
-
-## 19. SpaceX星舰今天将史上首次发射入轨
-
-**原文标题**: SpaceX's Starship launching to orbit for first time ever today
-
-**原文链接**: [https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live](https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live)
-
-生成摘要时出错
-
----
-
-## 20. Parley: Federated, decentralised chat that speaks plain IRC
-
-**原文标题**: Parley: Federated, decentralised chat that speaks plain IRC
-
-**原文链接**: [https://git.mills.io/prologic/parley](https://git.mills.io/prologic/parley)
-
-生成摘要时出错
-
----
-
-## 21. In an $80 motel room, a discovery to shed light on the origins of life
-
-**原文标题**: In an $80 motel room, a discovery to shed light on the origins of life
-
-**原文链接**: [https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html](https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html)
-
-生成摘要时出错
-
----
-
-## 22. The Normalization of Inexplicable Failures
-
-**原文标题**: The Normalization of Inexplicable Failures
-
-**原文链接**: [https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html](https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html)
-
-生成摘要时出错
-
----
-
-## 23. What is the size of Yemen? (2024)
-
-**原文标题**: What is the size of Yemen? (2024)
-
-**原文链接**: [https://theborys.substack.com/p/what-is-the-size-of-yemen](https://theborys.substack.com/p/what-is-the-size-of-yemen)
-
-生成摘要时出错
-
----
-
-## 24. Kids turned low-traffic NPR Spotify comments into a secret group chat
+## 12. Kids turned low-traffic NPR Spotify comments into a secret group chat
 
 **原文标题**: Kids turned low-traffic NPR Spotify comments into a secret group chat
 
@@ -273,107 +157,137 @@ Facebook的这一决定是基于其政治广告政策遭到违反。该平台声
 
 ---
 
-## 25. If we do not stop to help each other, what do we become?
+## 13. 500k facial scans at UK stations yield no arrests, 1 false positive
 
-**原文标题**: If we do not stop to help each other, what do we become?
+**原文标题**: 500k facial scans at UK stations yield no arrests, 1 false positive
 
-**原文链接**: [https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/](https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/)
-
-生成摘要时出错
-
----
-
-## 26. Replacing the old battery on rechargeable bike lights
-
-**原文标题**: Replacing the old battery on rechargeable bike lights
-
-**原文链接**: [https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/](https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/)
+**原文链接**: [https://www.theguardian.com/technology/2026/sep/29/trial-live-facial-recognition-cameras-london-stations-false-positive](https://www.theguardian.com/technology/2026/sep/29/trial-live-facial-recognition-cameras-london-stations-false-positive)
 
 生成摘要时出错
 
 ---
 
-## 27. It's Time to Investigate the AI Labs
+## 14. AI companies in race to demonstrate their model most threatening to humanity
 
-**原文标题**: It's Time to Investigate the AI Labs
+**原文标题**: AI companies in race to demonstrate their model most threatening to humanity
 
-**原文链接**: [https://calnewport.com/its-time-to-investigate-the-ai-labs/](https://calnewport.com/its-time-to-investigate-the-ai-labs/)
-
-生成摘要时出错
-
----
-
-## 28. So long Google, and thanks for all the nudes
-
-**原文标题**: So long Google, and thanks for all the nudes
-
-**原文链接**: [https://lecaro.me/20260921-google-less.html](https://lecaro.me/20260921-google-less.html)
+**原文链接**: [https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/](https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/)
 
 生成摘要时出错
 
 ---
 
-## 29. Prompting Claude Opus 5.5
+## 15. macOS Golden Gate Is a Buggy Mess
 
-**原文标题**: Prompting Claude Opus 5.5
+**原文标题**: macOS Golden Gate Is a Buggy Mess
 
-**原文链接**: [https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5)
-
-生成摘要时出错
-
----
-
-## 30. SNL Weekend Update: Anthropic CEO Dario Amodei on A.I.'S Threat to Humanity [video]
-
-**原文标题**: SNL Weekend Update: Anthropic CEO Dario Amodei on A.I.'S Threat to Humanity [video]
-
-**原文链接**: [https://www.youtube.com/watch?v=-Nvne3LzBls](https://www.youtube.com/watch?v=-Nvne3LzBls)
+**原文链接**: [https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/](https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/)
 
 生成摘要时出错
 
 ---
 
-## 31. Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms
+## 16. Dots: Always-on agents
 
-**原文标题**: Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms
+**原文标题**: Dots: Always-on agents
 
-**原文链接**: [https://github.com/firelex/jeff](https://github.com/firelex/jeff)
-
-生成摘要时出错
-
----
-
-## 32. Musk, the Movie
-
-**原文标题**: Musk, the Movie
-
-**原文链接**: [https://bleeckerstreetmedia.com/musk](https://bleeckerstreetmedia.com/musk)
+**原文链接**: [https://openai.com/index/introducing-dots/](https://openai.com/index/introducing-dots/)
 
 生成摘要时出错
 
 ---
 
-## 33. PostmarketOS is rebranding as Nura
+## 17. How Delhi cut electricity loss from 50 to 5 percent
 
-**原文标题**: PostmarketOS is rebranding as Nura
+**原文标题**: How Delhi cut electricity loss from 50 to 5 percent
 
-**原文链接**: [https://nura.eco/blog/2026/09/27/nura-rename/](https://nura.eco/blog/2026/09/27/nura-rename/)
-
-生成摘要时出错
-
----
-
-## 34. Alan Kay's answer to “Did the ENIAC have a BIOS”?
-
-**原文标题**: Alan Kay's answer to “Did the ENIAC have a BIOS”?
-
-**原文链接**: [https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11](https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11)
+**原文链接**: [https://spectrum.ieee.org/delhi-electricity-loss](https://spectrum.ieee.org/delhi-electricity-loss)
 
 生成摘要时出错
 
 ---
 
-## 35. Hijacking the PS5's RTMP stream
+## 18. A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]
+
+**原文标题**: A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]
+
+**原文链接**: [https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf](https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf)
+
+生成摘要时出错
+
+---
+
+## 19. The problem is not AI code, but not knowing about system architecture or intent
+
+**原文标题**: The problem is not AI code, but not knowing about system architecture or intent
+
+**原文链接**: [https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/](https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/)
+
+生成摘要时出错
+
+---
+
+## 20. California farmers are struggling to sell grapes as demand for wine drops
+
+**原文标题**: California farmers are struggling to sell grapes as demand for wine drops
+
+**原文链接**: [https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-grapes-as-demand-for-wine-drops](https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-grapes-as-demand-for-wine-drops)
+
+生成摘要时出错
+
+---
+
+## 21. US sanctions force The Netherlands off Microsoft and toward alternative NixOS
+
+**原文标题**: US sanctions force The Netherlands off Microsoft and toward alternative NixOS
+
+**原文链接**: [https://www.tomshardware.com/software/the-netherlands-is-rolling-alternative-nixos-based-software-ecosystem-after-u-s-sanctions-on-icc-took-microsoft-off-the-table-trial-programs-running-now-first-release-expected-at-end-of-2027](https://www.tomshardware.com/software/the-netherlands-is-rolling-alternative-nixos-based-software-ecosystem-after-u-s-sanctions-on-icc-took-microsoft-off-the-table-trial-programs-running-now-first-release-expected-at-end-of-2027)
+
+生成摘要时出错
+
+---
+
+## 22. MongoDB CEO resigns to join Meta
+
+**原文标题**: MongoDB CEO resigns to join Meta
+
+**原文链接**: [https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/](https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/)
+
+生成摘要时出错
+
+---
+
+## 23. Parley: Federated, decentralised chat that speaks plain IRC
+
+**原文标题**: Parley: Federated, decentralised chat that speaks plain IRC
+
+**原文链接**: [https://git.mills.io/prologic/parley](https://git.mills.io/prologic/parley)
+
+生成摘要时出错
+
+---
+
+## 24. SpaceX's Starship launching to orbit for first time ever today
+
+**原文标题**: SpaceX's Starship launching to orbit for first time ever today
+
+**原文链接**: [https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live](https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live)
+
+生成摘要时出错
+
+---
+
+## 25. World Labs is Joining AMD
+
+**原文标题**: World Labs is Joining AMD
+
+**原文链接**: [https://www.worldlabs.ai/blog/amd-announcement](https://www.worldlabs.ai/blog/amd-announcement)
+
+生成摘要时出错
+
+---
+
+## 26. Hijacking the PS5's RTMP stream
 
 **原文标题**: Hijacking the PS5's RTMP stream
 
@@ -383,407 +297,7 @@ Facebook的这一决定是基于其政治广告政策遭到违反。该平台声
 
 ---
 
-## 36. Thinking fast and slow in AI: The role of metacognition (2021)
-
-**原文标题**: Thinking fast and slow in AI: The role of metacognition (2021)
-
-**原文链接**: [https://arxiv.org/abs/2110.01834](https://arxiv.org/abs/2110.01834)
-
-生成摘要时出错
-
----
-
-## 37. 37,500 border drawings: a map of the world as people remember it
-
-**原文标题**: 37,500 border drawings: a map of the world as people remember it
-
-**原文链接**: [https://www.habibicode.org/thedrawnworld](https://www.habibicode.org/thedrawnworld)
-
-生成摘要时出错
-
----
-
-## 38. Footguns with Postgres “at time zone 'UTC'”
-
-**原文标题**: Footguns with Postgres “at time zone 'UTC'”
-
-**原文链接**: [https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does](https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does)
-
-生成摘要时出错
-
----
-
-## 39. Nissan's third generation e-POWER powertrain
-
-**原文标题**: Nissan's third generation e-POWER powertrain
-
-**原文链接**: [https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/](https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/)
-
-生成摘要时出错
-
----
-
-## 40. Malleable software: Restoring user agency in a world of locked-down apps (2025)
-
-**原文标题**: Malleable software: Restoring user agency in a world of locked-down apps (2025)
-
-**原文链接**: [https://www.inkandswitch.com/essay/malleable-software/](https://www.inkandswitch.com/essay/malleable-software/)
-
-生成摘要时出错
-
----
-
-## 41. World Labs Is Joining AMD
-
-**原文标题**: World Labs Is Joining AMD
-
-**原文链接**: [https://www.worldlabs.ai/blog/amd-announcement](https://www.worldlabs.ai/blog/amd-announcement)
-
-生成摘要时出错
-
----
-
-## 42. As A.I. makes law firms more efficient, clients ask: 'Where's my discount?'
-
-**原文标题**: As A.I. makes law firms more efficient, clients ask: 'Where's my discount?'
-
-**原文链接**: [https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html](https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html)
-
-生成摘要时出错
-
----
-
-## 43. Ten lines of code that changed my world
-
-**原文标题**: Ten lines of code that changed my world
-
-**原文链接**: [https://pixelambacht.nl/2026/ten-lines-of-code/](https://pixelambacht.nl/2026/ten-lines-of-code/)
-
-生成摘要时出错
-
----
-
-## 44. Has Violence Against Teachers Become Accepted by Society?
-
-**原文标题**: Has Violence Against Teachers Become Accepted by Society?
-
-**原文链接**: [https://theeducatorsroom.com/has-violence-against-teachers-become-accepted-by-society/](https://theeducatorsroom.com/has-violence-against-teachers-become-accepted-by-society/)
-
-生成摘要时出错
-
----
-
-## 45. Updated Google Maps shows destruction of the city of Rafah
-
-**原文标题**: Updated Google Maps shows destruction of the city of Rafah
-
-**原文链接**: [https://twitter.com/AliAbunimah/status/2103890594137309425](https://twitter.com/AliAbunimah/status/2103890594137309425)
-
-生成摘要时出错
-
----
-
-## 46. Show HN: PaperMono, e-ink fridge magnet shopping list with mobile web page
-
-**原文标题**: Show HN: PaperMono, e-ink fridge magnet shopping list with mobile web page
-
-**原文链接**: [https://github.com/seamusc/papermono-shopping-list](https://github.com/seamusc/papermono-shopping-list)
-
-生成摘要时出错
-
----
-
-## 47. Flock Wants the Most Detailed Map of Its Surveillance Cameras Taken Offline
-
-**原文标题**: Flock Wants the Most Detailed Map of Its Surveillance Cameras Taken Offline
-
-**原文链接**: [https://theintercept.com/2026/09/24/how-many-flock-devices-in-united-states-300000/](https://theintercept.com/2026/09/24/how-many-flock-devices-in-united-states-300000/)
-
-生成摘要时出错
-
----
-
-## 48. The internet discovers TLA+. Now what?
-
-**原文标题**: The internet discovers TLA+. Now what?
-
-**原文链接**: [https://reasonable.io/blog/tla-tutorial/](https://reasonable.io/blog/tla-tutorial/)
-
-生成摘要时出错
-
----
-
-## 49. What would a serious AI product look like?
-
-**原文标题**: What would a serious AI product look like?
-
-**原文链接**: [https://blog.glyph.im/2026/09/serious-ai-product.html](https://blog.glyph.im/2026/09/serious-ai-product.html)
-
-生成摘要时出错
-
----
-
-## 50. What I did at Recurse Center
-
-**原文标题**: What I did at Recurse Center
-
-**原文链接**: [https://thill.me/2026/09/11/what-i-did-at-rc.html](https://thill.me/2026/09/11/what-i-did-at-rc.html)
-
-生成摘要时出错
-
----
-
-## 51. Armada: Encrypted, Open-Source, Discord Alternative (Built on Nostr)
-
-**原文标题**: Armada: Encrypted, Open-Source, Discord Alternative (Built on Nostr)
-
-**原文链接**: [https://soapbox.pub/armada](https://soapbox.pub/armada)
-
-生成摘要时出错
-
----
-
-## 52. Show HN: HN.watch – Videos of all Hacker News posts
-
-**原文标题**: Show HN: HN.watch – Videos of all Hacker News posts
-
-**原文链接**: [https://hn.watch/](https://hn.watch/)
-
-生成摘要时出错
-
----
-
-## 53. Show HN: TinyAIArena watch AI agents battle it out
-
-**原文标题**: Show HN: TinyAIArena watch AI agents battle it out
-
-**原文链接**: [https://tinyaiarena.com/](https://tinyaiarena.com/)
-
-生成摘要时出错
-
----
-
-## 54. Israel Keeps Expanding into Gaza Despite Cease-Fire, Satellite Images Show
-
-**原文标题**: Israel Keeps Expanding into Gaza Despite Cease-Fire, Satellite Images Show
-
-**原文链接**: [https://www.nytimes.com/interactive/2026/09/28/world/middleeast/israel-gaza-cease-fire-palestinian-territory.html](https://www.nytimes.com/interactive/2026/09/28/world/middleeast/israel-gaza-cease-fire-palestinian-territory.html)
-
-生成摘要时出错
-
----
-
-## 55. MicroLLM Lab – Try 7 tiny LLM's in the browser
-
-**原文标题**: MicroLLM Lab – Try 7 tiny LLM's in the browser
-
-**原文链接**: [https://stateofutopia.com/experiments/microllmlab/](https://stateofutopia.com/experiments/microllmlab/)
-
-生成摘要时出错
-
----
-
-## 56. Cf: The Agentic CLI for the Cloudflare API
-
-**原文标题**: Cf: The Agentic CLI for the Cloudflare API
-
-**原文链接**: [https://blog.cloudflare.com/cloudflare-cf-cli-launch/](https://blog.cloudflare.com/cloudflare-cf-cli-launch/)
-
-生成摘要时出错
-
----
-
-## 57. Show HN: Hntui – A TUI for Hacker News
-
-**原文标题**: Show HN: Hntui – A TUI for Hacker News
-
-**原文链接**: [https://github.com/ahmd-sh/hntui](https://github.com/ahmd-sh/hntui)
-
-生成摘要时出错
-
----
-
-## 58. "As a Language Model": Chat Template Switches LLM Self-Referential Voice
-
-**原文标题**: "As a Language Model": Chat Template Switches LLM Self-Referential Voice
-
-**原文链接**: [https://arxiv.org/abs/2609.25021](https://arxiv.org/abs/2609.25021)
-
-生成摘要时出错
-
----
-
-## 59. I switched to Brave
-
-**原文标题**: I switched to Brave
-
-**原文链接**: [https://kevquirk.com/i-switched-to-brave-browser](https://kevquirk.com/i-switched-to-brave-browser)
-
-生成摘要时出错
-
----
-
-## 60. Lunar Terminator Paradox
-
-**原文标题**: Lunar Terminator Paradox
-
-**原文链接**: [https://notes.secretsauce.net/notes/2026/09/27_lunar-terminator-paradox.html](https://notes.secretsauce.net/notes/2026/09/27_lunar-terminator-paradox.html)
-
-生成摘要时出错
-
----
-
-## 61. Palantir founder purchases large swath of forest in Sweden
-
-**原文标题**: Palantir founder purchases large swath of forest in Sweden
-
-**原文链接**: [https://www.arctictoday.com/palantir-founder-purchases-large-swath-of-forest-in-sweden/](https://www.arctictoday.com/palantir-founder-purchases-large-swath-of-forest-in-sweden/)
-
-生成摘要时出错
-
----
-
-## 62. Show HN: Free alternative to graphics design giants
-
-**原文标题**: Show HN: Free alternative to graphics design giants
-
-**原文链接**: [https://scissor.studio/](https://scissor.studio/)
-
-生成摘要时出错
-
----
-
-## 63. OpenAI still doesn't seem to have a handle on all of its rogue AI activity
-
-**原文标题**: OpenAI still doesn't seem to have a handle on all of its rogue AI activity
-
-**原文链接**: [https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/](https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/)
-
-生成摘要时出错
-
----
-
-## 64. Imp is a full port of DSPy to the BEAM
-
-**原文标题**: Imp is a full port of DSPy to the BEAM
-
-**原文链接**: [https://github.com/deepfates/imp](https://github.com/deepfates/imp)
-
-生成摘要时出错
-
----
-
-## 65. Fragment of oldest known peace treaty found in Turkey
-
-**原文标题**: Fragment of oldest known peace treaty found in Turkey
-
-**原文链接**: [https://www.livescience.com/archaeology/ancient-egyptians/we-have-found-traces-of-peace-thousands-of-years-old-fragment-of-worlds-oldest-known-peace-treaty-found-in-turkey](https://www.livescience.com/archaeology/ancient-egyptians/we-have-found-traces-of-peace-thousands-of-years-old-fragment-of-worlds-oldest-known-peace-treaty-found-in-turkey)
-
-生成摘要时出错
-
----
-
-## 66. Research finds 485 chemicals in US pesticide products linked to breast cancer
-
-**原文标题**: Research finds 485 chemicals in US pesticide products linked to breast cancer
-
-**原文链接**: [https://www.theguardian.com/us-news/2026/sep/26/breast-cancer-us-pesticide-products](https://www.theguardian.com/us-news/2026/sep/26/breast-cancer-us-pesticide-products)
-
-生成摘要时出错
-
----
-
-## 67. Show HN: Destroy Any Website with Stickman
-
-**原文标题**: Show HN: Destroy Any Website with Stickman
-
-**原文链接**: [https://destroy.spritefusion.com/](https://destroy.spritefusion.com/)
-
-生成摘要时出错
-
----
-
-## 68. Rusty thoughts on "Parse, don't validate"
-
-**原文标题**: Rusty thoughts on "Parse, don't validate"
-
-**原文链接**: [https://eli.thegreenplace.net/2026/rusty-thoughts-on-parse-dont-validate/](https://eli.thegreenplace.net/2026/rusty-thoughts-on-parse-dont-validate/)
-
-生成摘要时出错
-
----
-
-## 69. Oral history of John Chowning, inventor of FM synthesis [video]
-
-**原文标题**: Oral history of John Chowning, inventor of FM synthesis [video]
-
-**原文链接**: [https://www.youtube.com/watch?v=e1Xn3030IvM](https://www.youtube.com/watch?v=e1Xn3030IvM)
-
-生成摘要时出错
-
----
-
-## 70. OpenAI agents tried to bruteforce a UN website's API fields
-
-**原文标题**: OpenAI agents tried to bruteforce a UN website's API fields
-
-**原文链接**: [https://swarmcha.se/posts/openai-unctad](https://swarmcha.se/posts/openai-unctad)
-
-生成摘要时出错
-
----
-
-## 71. Calling the AI bluff: Adding "Do not guess" cut made-up claims from 71% to 20%
-
-**原文标题**: Calling the AI bluff: Adding "Do not guess" cut made-up claims from 71% to 20%
-
-**原文链接**: [https://earnanhonestdollar.com/bench](https://earnanhonestdollar.com/bench)
-
-生成摘要时出错
-
----
-
-## 72. Nvidia wants to put a watchdog chip next to every AI agent
-
-**原文标题**: Nvidia wants to put a watchdog chip next to every AI agent
-
-**原文链接**: [https://www.cnbc.com/2026/09/28/nvidia-releases.html](https://www.cnbc.com/2026/09/28/nvidia-releases.html)
-
-生成摘要时出错
-
----
-
-## 73. 13 Months Sober (2025)
-
-**原文标题**: 13 Months Sober (2025)
-
-**原文链接**: [https://www.bobbytables.io/p/13-months-sober](https://www.bobbytables.io/p/13-months-sober)
-
-生成摘要时出错
-
----
-
-## 74. EV Sales Are Booming in Europe with Gasoline at $10 a Gallon
-
-**原文标题**: EV Sales Are Booming in Europe with Gasoline at $10 a Gallon
-
-**原文链接**: [https://www.bloomberg.com/news/articles/2026-09-24/electric-car-sales-soar-52-in-europe-with-fuel-at-record-highs](https://www.bloomberg.com/news/articles/2026-09-24/electric-car-sales-soar-52-in-europe-with-fuel-at-record-highs)
-
-生成摘要时出错
-
----
-
-## 75. GrapheneOS – When an app is slow
-
-**原文标题**: GrapheneOS – When an app is slow
-
-**原文链接**: [https://blog.wirelessmoves.com/2026/09/grapheneos-when-an-app-is-slow.html](https://blog.wirelessmoves.com/2026/09/grapheneos-when-an-app-is-slow.html)
-
-生成摘要时出错
-
----
-
-## 76. Does Reddit have an astroturfing problem? What the data suggests
+## 27. Does Reddit have an astroturfing problem? What the data suggests
 
 **原文标题**: Does Reddit have an astroturfing problem? What the data suggests
 
@@ -793,97 +307,547 @@ Facebook的这一决定是基于其政治广告政策遭到违反。该平台声
 
 ---
 
-## 77. Was silent reading unusual during Augustine's time?
+## 28. MicroLLM Lab – Try 7 tiny LLM's in the browser
 
-**原文标题**: Was silent reading unusual during Augustine's time?
+**原文标题**: MicroLLM Lab – Try 7 tiny LLM's in the browser
 
-**原文链接**: [https://www.historyofinformation.com/detail.php?entryid=4341](https://www.historyofinformation.com/detail.php?entryid=4341)
-
-生成摘要时出错
-
----
-
-## 78. I Posed as a Problem Gambler. DraftKings Made Me a VIP
-
-**原文标题**: I Posed as a Problem Gambler. DraftKings Made Me a VIP
-
-**原文链接**: [https://www.propublica.org/article/draftkings-sports-gambling-problem-vip-fanduel](https://www.propublica.org/article/draftkings-sports-gambling-problem-vip-fanduel)
+**原文链接**: [https://stateofutopia.com/experiments/microllmlab/](https://stateofutopia.com/experiments/microllmlab/)
 
 生成摘要时出错
 
 ---
 
-## 79. Driver Ticketed for No Insurance Just Because Flock (YC 2017) Said She Didn't
+## 29. So long Google, and thanks for all the nudes
 
-**原文标题**: Driver Ticketed for No Insurance Just Because Flock (YC 2017) Said She Didn't
+**原文标题**: So long Google, and thanks for all the nudes
 
-**原文链接**: [https://www.techdirt.com/2026/09/28/driver-ticketed-for-no-insurance-despite-having-insurance-just-because-flock-said-she-didnt/](https://www.techdirt.com/2026/09/28/driver-ticketed-for-no-insurance-despite-having-insurance-just-because-flock-said-she-didnt/)
-
-生成摘要时出错
-
----
-
-## 80. Jensen Huang says AI distillation is 'competition.'
-
-**原文标题**: Jensen Huang says AI distillation is 'competition.'
-
-**原文链接**: [https://www.cnbc.com/2026/09/28/nvidias-jensen-huang-ai-distillation-china.html](https://www.cnbc.com/2026/09/28/nvidias-jensen-huang-ai-distillation-china.html)
+**原文链接**: [https://lecaro.me/20260921-google-less.html](https://lecaro.me/20260921-google-less.html)
 
 生成摘要时出错
 
 ---
 
-## 81. Intellectuals Are Fucking Idiots
+## 30. Phyllotaxis: An audio-reactive LED display
 
-**原文标题**: Intellectuals Are Fucking Idiots
+**原文标题**: Phyllotaxis: An audio-reactive LED display
 
-**原文链接**: [https://markmanson.substack.com/p/intellectuals-are-fcking-idiots](https://markmanson.substack.com/p/intellectuals-are-fcking-idiots)
-
-生成摘要时出错
-
----
-
-## 82. Have an LLC
-
-**原文标题**: Have an LLC
-
-**原文链接**: [https://zachholman.com/posts/you-should-have-an-llc](https://zachholman.com/posts/you-should-have-an-llc)
+**原文链接**: [https://jagi.studio/posts/phyllotaxis/](https://jagi.studio/posts/phyllotaxis/)
 
 生成摘要时出错
 
 ---
 
-## 83. Made by Mechanical Means
+## 31. America.gov
 
-**原文标题**: Made by Mechanical Means
+**原文标题**: America.gov
 
-**原文链接**: [https://felixrieseberg.com/made-by-mechanical-means/](https://felixrieseberg.com/made-by-mechanical-means/)
-
-生成摘要时出错
-
----
-
-## 84. Pacing the Frontier is not the actual goal for AI labs
-
-**原文标题**: Pacing the Frontier is not the actual goal for AI labs
-
-**原文链接**: [https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs](https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs)
+**原文链接**: [https://america.gov/](https://america.gov/)
 
 生成摘要时出错
 
 ---
 
-## 85. Real-time feedback: My closing move in every interview
+## 32. Tcl/Tk 9.1
 
-**原文标题**: Real-time feedback: My closing move in every interview
+**原文标题**: Tcl/Tk 9.1
 
-**原文链接**: [https://mgrebler.substack.com/p/real-time-feedback-my-closing-move](https://mgrebler.substack.com/p/real-time-feedback-my-closing-move)
+**原文链接**: [https://www.tcl-lang.org/software/tcltk/9.1.html](https://www.tcl-lang.org/software/tcltk/9.1.html)
 
 生成摘要时出错
 
 ---
 
-## 86. Joseph Szabo’s pictures of American adolescents
+## 33. 1 in 8 cancer cases worldwide are caused by infections, study finds
+
+**原文标题**: 1 in 8 cancer cases worldwide are caused by infections, study finds
+
+**原文链接**: [https://www.cbc.ca/lite/story/9.7361622](https://www.cbc.ca/lite/story/9.7361622)
+
+生成摘要时出错
+
+---
+
+## 34. Nvidia wants to put a watchdog chip next to every AI agent
+
+**原文标题**: Nvidia wants to put a watchdog chip next to every AI agent
+
+**原文链接**: [https://www.cnbc.com/2026/09/28/nvidia-releases.html](https://www.cnbc.com/2026/09/28/nvidia-releases.html)
+
+生成摘要时出错
+
+---
+
+## 35. Jeeves. Reasoning improves Jev-like decision models
+
+**原文标题**: Jeeves. Reasoning improves Jev-like decision models
+
+**原文链接**: [https://github.com/PostHog/jeeves](https://github.com/PostHog/jeeves)
+
+生成摘要时出错
+
+---
+
+## 36. Show HN: HN.watch – Videos of all Hacker News posts
+
+**原文标题**: Show HN: HN.watch – Videos of all Hacker News posts
+
+**原文链接**: [https://hn.watch/](https://hn.watch/)
+
+生成摘要时出错
+
+---
+
+## 37. Prompting Claude Opus 5.5
+
+**原文标题**: Prompting Claude Opus 5.5
+
+**原文链接**: [https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5)
+
+生成摘要时出错
+
+---
+
+## 38. Flock Wants the Most Detailed Map of Its Surveillance Cameras Taken Offline
+
+**原文标题**: Flock Wants the Most Detailed Map of Its Surveillance Cameras Taken Offline
+
+**原文链接**: [https://theintercept.com/2026/09/24/how-many-flock-devices-in-united-states-300000/](https://theintercept.com/2026/09/24/how-many-flock-devices-in-united-states-300000/)
+
+生成摘要时出错
+
+---
+
+## 39. PS5 Relapse Exploit
+
+**原文标题**: PS5 Relapse Exploit
+
+**原文链接**: [https://github.com/ntfargo/Relapse-Exploit](https://github.com/ntfargo/Relapse-Exploit)
+
+生成摘要时出错
+
+---
+
+## 40. Musk, the Movie
+
+**原文标题**: Musk, the Movie
+
+**原文链接**: [https://bleeckerstreetmedia.com/musk](https://bleeckerstreetmedia.com/musk)
+
+生成摘要时出错
+
+---
+
+## 41. AI needs $6T in annual revenue to justify data centre boom
+
+**原文标题**: AI needs $6T in annual revenue to justify data centre boom
+
+**原文链接**: [https://www.thenationalnews.com/future/technology/2026/09/29/ai-industry-needs-to-earn-6-trillion-by-2031-to-justify-data-centres/](https://www.thenationalnews.com/future/technology/2026/09/29/ai-industry-needs-to-earn-6-trillion-by-2031-to-justify-data-centres/)
+
+生成摘要时出错
+
+---
+
+## 42. ChatGPT Pro 500
+
+**原文标题**: ChatGPT Pro 500
+
+**原文链接**: [https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers)
+
+生成摘要时出错
+
+---
+
+## 43. U.S. Strategic Petroleum Reserve Falls to Lowest Level Since 1982
+
+**原文标题**: U.S. Strategic Petroleum Reserve Falls to Lowest Level Since 1982
+
+**原文链接**: [https://oilprice.com/Latest-Energy-News/World-News/US-Strategic-Petroleum-Reserve-Falls-to-Lowest-Level-Since-1982.html](https://oilprice.com/Latest-Energy-News/World-News/US-Strategic-Petroleum-Reserve-Falls-to-Lowest-Level-Since-1982.html)
+
+生成摘要时出错
+
+---
+
+## 44. Tank Body Problem
+
+**原文标题**: Tank Body Problem
+
+**原文链接**: [http://www.jimsitu.com](http://www.jimsitu.com)
+
+生成摘要时出错
+
+---
+
+## 45. Google ending ChromeOS support two years early
+
+**原文标题**: Google ending ChromeOS support two years early
+
+**原文链接**: [https://www.theregister.com/os-platforms/2026/09/29/google-ending-chromeos-support-two-years-early/5299674](https://www.theregister.com/os-platforms/2026/09/29/google-ending-chromeos-support-two-years-early/5299674)
+
+生成摘要时出错
+
+---
+
+## 46. 37,500 border drawings: a map of the world as people remember it
+
+**原文标题**: 37,500 border drawings: a map of the world as people remember it
+
+**原文链接**: [https://www.habibicode.org/thedrawnworld](https://www.habibicode.org/thedrawnworld)
+
+生成摘要时出错
+
+---
+
+## 47. Thinking fast and slow in AI: The role of metacognition (2021)
+
+**原文标题**: Thinking fast and slow in AI: The role of metacognition (2021)
+
+**原文链接**: [https://arxiv.org/abs/2110.01834](https://arxiv.org/abs/2110.01834)
+
+生成摘要时出错
+
+---
+
+## 48. GLM-5.3 and the spread of advanced cyber capabilities
+
+**原文标题**: GLM-5.3 and the spread of advanced cyber capabilities
+
+**原文链接**: [https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities](https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities)
+
+生成摘要时出错
+
+---
+
+## 49. Claude partial outage
+
+**原文标题**: Claude partial outage
+
+**原文链接**: [https://status.claude.com/incidents/4xvtc2gnq73l](https://status.claude.com/incidents/4xvtc2gnq73l)
+
+生成摘要时出错
+
+---
+
+## 50. What would a serious AI product look like?
+
+**原文标题**: What would a serious AI product look like?
+
+**原文链接**: [https://blog.glyph.im/2026/09/serious-ai-product.html](https://blog.glyph.im/2026/09/serious-ai-product.html)
+
+生成摘要时出错
+
+---
+
+## 51. Cf: The Agentic CLI for the Cloudflare API
+
+**原文标题**: Cf: The Agentic CLI for the Cloudflare API
+
+**原文链接**: [https://blog.cloudflare.com/cloudflare-cf-cli-launch/](https://blog.cloudflare.com/cloudflare-cf-cli-launch/)
+
+生成摘要时出错
+
+---
+
+## 52. Show HN: Destroy Any Website with Stickman
+
+**原文标题**: Show HN: Destroy Any Website with Stickman
+
+**原文链接**: [https://destroy.spritefusion.com/](https://destroy.spritefusion.com/)
+
+生成摘要时出错
+
+---
+
+## 53. Nissan's third generation e-POWER powertrain
+
+**原文标题**: Nissan's third generation e-POWER powertrain
+
+**原文链接**: [https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/](https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/)
+
+生成摘要时出错
+
+---
+
+## 54. A Staff Engineer's Guide to Inventing Work
+
+**原文标题**: A Staff Engineer's Guide to Inventing Work
+
+**原文链接**: [https://sujithjay.com/inventing-work](https://sujithjay.com/inventing-work)
+
+生成摘要时出错
+
+---
+
+## 55. Using any C++ library in Godot
+
+**原文标题**: Using any C++ library in Godot
+
+**原文链接**: [https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html](https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html)
+
+生成摘要时出错
+
+---
+
+## 56. Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions
+
+**原文标题**: Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions
+
+**原文链接**: [https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions](https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions)
+
+生成摘要时出错
+
+---
+
+## 57. Has Violence Against Teachers Become Accepted by Society?
+
+**原文标题**: Has Violence Against Teachers Become Accepted by Society?
+
+**原文链接**: [https://theeducatorsroom.com/has-violence-against-teachers-become-accepted-by-society/](https://theeducatorsroom.com/has-violence-against-teachers-become-accepted-by-society/)
+
+生成摘要时出错
+
+---
+
+## 58. As A.I. makes law firms more efficient, clients ask: 'Where's my discount?'
+
+**原文标题**: As A.I. makes law firms more efficient, clients ask: 'Where's my discount?'
+
+**原文链接**: [https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html](https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html)
+
+生成摘要时出错
+
+---
+
+## 59. ESP32S3 cluster running 1.58-bit (BitNet) Language model
+
+**原文标题**: ESP32S3 cluster running 1.58-bit (BitNet) Language model
+
+**原文链接**: [https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster](https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster)
+
+生成摘要时出错
+
+---
+
+## 60. Show HN: PaperMono, e-ink fridge magnet shopping list with mobile web page
+
+**原文标题**: Show HN: PaperMono, e-ink fridge magnet shopping list with mobile web page
+
+**原文链接**: [https://github.com/seamusc/papermono-shopping-list](https://github.com/seamusc/papermono-shopping-list)
+
+生成摘要时出错
+
+---
+
+## 61. Systems that no one will test
+
+**原文标题**: Systems that no one will test
+
+**原文链接**: [https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/](https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/)
+
+生成摘要时出错
+
+---
+
+## 62. Sustainable energy without the hot air (2008)
+
+**原文标题**: Sustainable energy without the hot air (2008)
+
+**原文链接**: [https://www.withouthotair.com/](https://www.withouthotair.com/)
+
+生成摘要时出错
+
+---
+
+## 63. Anthropic's IPO prospectus shows AI vision, surging costs
+
+**原文标题**: Anthropic's IPO prospectus shows AI vision, surging costs
+
+**原文链接**: [https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/](https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/)
+
+生成摘要时出错
+
+---
+
+## 64. Show HN: Free alternative to graphics design giants
+
+**原文标题**: Show HN: Free alternative to graphics design giants
+
+**原文链接**: [https://scissor.studio/](https://scissor.studio/)
+
+生成摘要时出错
+
+---
+
+## 65. Firebase SDK is crashing all iOS apps since this morning
+
+**原文标题**: Firebase SDK is crashing all iOS apps since this morning
+
+**原文链接**: [https://twitter.com/GergelyOrosz/status/2104825886922911981](https://twitter.com/GergelyOrosz/status/2104825886922911981)
+
+生成摘要时出错
+
+---
+
+## 66. Nicholas Polson has authored 258 academic papers in 2026 so far
+
+**原文标题**: Nicholas Polson has authored 258 academic papers in 2026 so far
+
+**原文链接**: [https://statmodeling.stat.columbia.edu/2026/08/27/258/](https://statmodeling.stat.columbia.edu/2026/08/27/258/)
+
+生成摘要时出错
+
+---
+
+## 67. Armada: Encrypted, Open-Source, Discord Alternative (Built on Nostr)
+
+**原文标题**: Armada: Encrypted, Open-Source, Discord Alternative (Built on Nostr)
+
+**原文链接**: [https://soapbox.pub/armada](https://soapbox.pub/armada)
+
+生成摘要时出错
+
+---
+
+## 68. 1996 chat room simulator connected to Win95 and System 7 web desktops
+
+**原文标题**: 1996 chat room simulator connected to Win95 and System 7 web desktops
+
+**原文链接**: [https://lolchat.rip/](https://lolchat.rip/)
+
+生成摘要时出错
+
+---
+
+## 69. U.S. postal inspectors shut down website selling counterfeit postage labels
+
+**原文标题**: U.S. postal inspectors shut down website selling counterfeit postage labels
+
+**原文链接**: [https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/](https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/)
+
+生成摘要时出错
+
+---
+
+## 70. Israel Keeps Expanding into Gaza Despite Cease-Fire, Satellite Images Show
+
+**原文标题**: Israel Keeps Expanding into Gaza Despite Cease-Fire, Satellite Images Show
+
+**原文链接**: [https://www.nytimes.com/interactive/2026/09/28/world/middleeast/israel-gaza-cease-fire-palestinian-territory.html](https://www.nytimes.com/interactive/2026/09/28/world/middleeast/israel-gaza-cease-fire-palestinian-territory.html)
+
+生成摘要时出错
+
+---
+
+## 71. Scientists solve 1840s space weather mystery
+
+**原文标题**: Scientists solve 1840s space weather mystery
+
+**原文链接**: [https://arstechnica.com/science/2026/09/scientists-solve-1840s-space-weather-mystery/](https://arstechnica.com/science/2026/09/scientists-solve-1840s-space-weather-mystery/)
+
+生成摘要时出错
+
+---
+
+## 72. I switched to Brave
+
+**原文标题**: I switched to Brave
+
+**原文链接**: [https://kevquirk.com/i-switched-to-brave-browser](https://kevquirk.com/i-switched-to-brave-browser)
+
+生成摘要时出错
+
+---
+
+## 73. Palantir founder purchases large swath of forest in Sweden
+
+**原文标题**: Palantir founder purchases large swath of forest in Sweden
+
+**原文链接**: [https://www.arctictoday.com/palantir-founder-purchases-large-swath-of-forest-in-sweden/](https://www.arctictoday.com/palantir-founder-purchases-large-swath-of-forest-in-sweden/)
+
+生成摘要时出错
+
+---
+
+## 74. Show HN: Hntui – A TUI for Hacker News
+
+**原文标题**: Show HN: Hntui – A TUI for Hacker News
+
+**原文链接**: [https://github.com/ahmd-sh/hntui](https://github.com/ahmd-sh/hntui)
+
+生成摘要时出错
+
+---
+
+## 75. OpenAI still doesn't seem to have a handle on all of its rogue AI activity
+
+**原文标题**: OpenAI still doesn't seem to have a handle on all of its rogue AI activity
+
+**原文链接**: [https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/](https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/)
+
+生成摘要时出错
+
+---
+
+## 76. Research finds 485 chemicals in US pesticide products linked to breast cancer
+
+**原文标题**: Research finds 485 chemicals in US pesticide products linked to breast cancer
+
+**原文链接**: [https://www.theguardian.com/us-news/2026/sep/26/breast-cancer-us-pesticide-products](https://www.theguardian.com/us-news/2026/sep/26/breast-cancer-us-pesticide-products)
+
+生成摘要时出错
+
+---
+
+## 77. Memory Companies Have Destroyed the Consumer Market
+
+**原文标题**: Memory Companies Have Destroyed the Consumer Market
+
+**原文链接**: [https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market](https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market)
+
+生成摘要时出错
+
+---
+
+## 78. DevDay 2026 Recap
+
+**原文标题**: DevDay 2026 Recap
+
+**原文链接**: [https://openai.com/index/devday-2026-recap/](https://openai.com/index/devday-2026-recap/)
+
+生成摘要时出错
+
+---
+
+## 79. GrapheneOS – When an app is slow
+
+**原文标题**: GrapheneOS – When an app is slow
+
+**原文链接**: [https://blog.wirelessmoves.com/2026/09/grapheneos-when-an-app-is-slow.html](https://blog.wirelessmoves.com/2026/09/grapheneos-when-an-app-is-slow.html)
+
+生成摘要时出错
+
+---
+
+## 80. 13 Months Sober (2025)
+
+**原文标题**: 13 Months Sober (2025)
+
+**原文链接**: [https://www.bobbytables.io/p/13-months-sober](https://www.bobbytables.io/p/13-months-sober)
+
+生成摘要时出错
+
+---
+
+## 81. Neal Stephenson responds with wit and humor (2004)
+
+**原文标题**: Neal Stephenson responds with wit and humor (2004)
+
+**原文链接**: [https://slashdot.org/story/04/10/20/1518217/neal-stephenson-responds-with-wit-and-humor](https://slashdot.org/story/04/10/20/1518217/neal-stephenson-responds-with-wit-and-humor)
+
+生成摘要时出错
+
+---
+
+## 82. Joseph Szabo’s pictures of American adolescents
 
 **原文标题**: Joseph Szabo’s pictures of American adolescents
 
@@ -893,27 +857,167 @@ Facebook的这一决定是基于其政治广告政策遭到违反。该平台声
 
 ---
 
-## 87. Show HN: Building a Markdown editor for Mac, iOS and web
+## 83. What heraldry and Japanese mon can teach about visual-identity generators
 
-**原文标题**: Show HN: Building a Markdown editor for Mac, iOS and web
+**原文标题**: What heraldry and Japanese mon can teach about visual-identity generators
 
-**原文链接**: [https://www.markdown.beauty/](https://www.markdown.beauty/)
-
-生成摘要时出错
-
----
-
-## 88. Allegations of US interference in Quebec election
-
-**原文标题**: Allegations of US interference in Quebec election
-
-**原文链接**: [https://globalnews.ca/news/12073854/quebec-election-u-s-interference/](https://globalnews.ca/news/12073854/quebec-election-u-s-interference/)
+**原文链接**: [https://benovermyer.com/blog/2026/09/japanese-vs-western-heraldry/](https://benovermyer.com/blog/2026/09/japanese-vs-western-heraldry/)
 
 生成摘要时出错
 
 ---
 
-## 89. Analysis: EVs are now nine times cheaper than petrol or diesel to drive in UK
+## 84. The new Firefox design is here
+
+**原文标题**: The new Firefox design is here
+
+**原文链接**: [https://blog.mozilla.org/en/firefox/new-firefox-design-is-here/](https://blog.mozilla.org/en/firefox/new-firefox-design-is-here/)
+
+生成摘要时出错
+
+---
+
+## 85. Pacing the Frontier is not the actual goal for AI labs
+
+**原文标题**: Pacing the Frontier is not the actual goal for AI labs
+
+**原文链接**: [https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs](https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs)
+
+生成摘要时出错
+
+---
+
+## 86. Behold the pawpaw
+
+**原文标题**: Behold the pawpaw
+
+**原文链接**: [https://www.cbc.ca/radio/thecurrent/pawpaw-tropical-fruit-canada-9.7356882](https://www.cbc.ca/radio/thecurrent/pawpaw-tropical-fruit-canada-9.7356882)
+
+生成摘要时出错
+
+---
+
+## 87. Was silent reading unusual during Augustine's time?
+
+**原文标题**: Was silent reading unusual during Augustine's time?
+
+**原文链接**: [https://www.historyofinformation.com/detail.php?entryid=4341](https://www.historyofinformation.com/detail.php?entryid=4341)
+
+生成摘要时出错
+
+---
+
+## 88. The End of a Fair Price: Dynamic Pricing and the Normalization of Gouging
+
+**原文标题**: The End of a Fair Price: Dynamic Pricing and the Normalization of Gouging
+
+**原文链接**: [https://prospect.org/2026/09/29/oct-2026-battling-an-army-of-price-setters-owens-review/](https://prospect.org/2026/09/29/oct-2026-battling-an-army-of-price-setters-owens-review/)
+
+生成摘要时出错
+
+---
+
+## 89. Show HN: Pac-Bench – How well can models one-shot a Pac-Man game?
+
+**原文标题**: Show HN: Pac-Bench – How well can models one-shot a Pac-Man game?
+
+**原文链接**: [https://jonclegg.github.io/pacman-bakeoff/](https://jonclegg.github.io/pacman-bakeoff/)
+
+生成摘要时出错
+
+---
+
+## 90. US Forces Exit Iraq
+
+**原文标题**: US Forces Exit Iraq
+
+**原文链接**: [https://www.reuters.com/world/middle-east/us-forces-exit-iraq-after-two-decades-leaving-opening-iran-2026-09-29/](https://www.reuters.com/world/middle-east/us-forces-exit-iraq-after-two-decades-leaving-opening-iran-2026-09-29/)
+
+生成摘要时出错
+
+---
+
+## 91. Driver Ticketed for No Insurance Just Because Flock (YC 2017) Said She Didn't
+
+**原文标题**: Driver Ticketed for No Insurance Just Because Flock (YC 2017) Said She Didn't
+
+**原文链接**: [https://www.techdirt.com/2026/09/28/driver-ticketed-for-no-insurance-despite-having-insurance-just-because-flock-said-she-didnt/](https://www.techdirt.com/2026/09/28/driver-ticketed-for-no-insurance-despite-having-insurance-just-because-flock-said-she-didnt/)
+
+生成摘要时出错
+
+---
+
+## 92. OpenAI: Tomorrow we are re-opening the Pro $200 subscription
+
+**原文标题**: OpenAI: Tomorrow we are re-opening the Pro $200 subscription
+
+**原文链接**: [https://twitter.com/thsottiaux/status/2104823812042940713](https://twitter.com/thsottiaux/status/2104823812042940713)
+
+生成摘要时出错
+
+---
+
+## 93. Intellectuals Are Fucking Idiots
+
+**原文标题**: Intellectuals Are Fucking Idiots
+
+**原文链接**: [https://markmanson.substack.com/p/intellectuals-are-fcking-idiots](https://markmanson.substack.com/p/intellectuals-are-fcking-idiots)
+
+生成摘要时出错
+
+---
+
+## 94. Show HN: NSL – WSL for Linux
+
+**原文标题**: Show HN: NSL – WSL for Linux
+
+**原文链接**: [https://frostyard.github.io/nsl/](https://frostyard.github.io/nsl/)
+
+生成摘要时出错
+
+---
+
+## 95. Jensen Huang says AI distillation is 'competition.'
+
+**原文标题**: Jensen Huang says AI distillation is 'competition.'
+
+**原文链接**: [https://www.cnbc.com/2026/09/28/nvidias-jensen-huang-ai-distillation-china.html](https://www.cnbc.com/2026/09/28/nvidias-jensen-huang-ai-distillation-china.html)
+
+生成摘要时出错
+
+---
+
+## 96. Made by Mechanical Means
+
+**原文标题**: Made by Mechanical Means
+
+**原文链接**: [https://felixrieseberg.com/made-by-mechanical-means/](https://felixrieseberg.com/made-by-mechanical-means/)
+
+生成摘要时出错
+
+---
+
+## 97. Walking Men
+
+**原文标题**: Walking Men
+
+**原文链接**: [https://bookofjoe2.blogspot.com/2026/09/walking-men.html](https://bookofjoe2.blogspot.com/2026/09/walking-men.html)
+
+生成摘要时出错
+
+---
+
+## 98. Virus Stole a Human Gene and Won't Let Go of It
+
+**原文标题**: Virus Stole a Human Gene and Won't Let Go of It
+
+**原文链接**: [https://www.nytimes.com/2026/09/28/science/virus-molluscum-human-gene.html](https://www.nytimes.com/2026/09/28/science/virus-molluscum-human-gene.html)
+
+生成摘要时出错
+
+---
+
+## 99. Analysis: EVs are now nine times cheaper than petrol or diesel to drive in UK
 
 **原文标题**: Analysis: EVs are now nine times cheaper than petrol or diesel to drive in UK
 
@@ -923,7 +1027,7 @@ Facebook的这一决定是基于其政治广告政策遭到违反。该平台声
 
 ---
 
-## 90. Self-parking car using genetic algorithm (2021)
+## 100. Self-parking car using genetic algorithm (2021)
 
 **原文标题**: Self-parking car using genetic algorithm (2021)
 
