@@ -1,106 +1,82 @@
 [
   {
-    "id": "49942706",
-    "title": "Kolibri: A Sovereign Open-Weight Model",
-    "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
-    "summary": "Aleph Alpha has released \"Kolibri,\" a sovereign, open-weight English-German Mixture-of-Experts Transformer model. Launched on October 3, 2026, Kolibri features 78 billion total parameters (3 billion active) and supports context lengths up to 1 million tokens, available under the Apache 2.0 license on Hugging Face.\n\nKolibri is specialized for mission-critical work in regulated sectors like public administration, industrials, and aerospace, excelling in German, reasoning, math, and agentic behavior. Its design emphasizes contextualized performance and measurable ROI for customers. Sovereignty is a core tenet, ensured through full supply-chain integrity, transparency, and freedom of deployment, adhering to EU AI Act and GDPR. Built and trained in Germany and Finland under European law, the model features an \"I don't know\" abstention capability and a native bilingual design with 21.3% German pre-training data.\n\nThe model optimizes quality versus serving costs, matching models with up to four times its active parameters across various benchmarks (math, coding, grounding, long-context, agentic tasks). Internal customer-proxy benchmarks show strong performance gains in specific verticals.\n\nKolibri was developed using Aleph Alpha's \"Model Factory,\" an automated pipeline enabling rapid iteration. In just three months, the team advanced from Kolibri Origin (30B parameters, 65k context, 7.5T training tokens) to Kolibri (78B parameters, 1M context, 20T training tokens). The pipeline's automation handled hardware failures and provided continuous evaluation, highlighting the team's high-velocity LLM development capability. Kolibri uses a hybrid attention mechanism and smaller experts for efficiency, trained on nearly 24 trillion tokens.",
-    "chinese_title": "考利布里：主权开放权重模型",
-    "chinese_summary": "Aleph Alpha发布了“Kolibri”，这是一个主权、开源权重、英德混合专家Transformer模型。Kolibri于2026年10月3日发布，拥有780亿总参数（其中30亿为活跃参数），支持高达100万个token的上下文长度，并可在Hugging Face上以Apache 2.0许可协议获取。\n\nKolibri专门用于公共管理、工业和航空航天等受监管行业中的关键任务工作，在德语、推理、数学和代理行为方面表现出色。其设计强调为客户提供情境化性能和可衡量的投资回报率。主权是核心原则，通过完整的供应链完整性、透明度和部署自由来确保，并遵守欧盟人工智能法案和GDPR。该模型在德国和芬兰根据欧洲法律构建和训练，具备“我不知道”的弃权能力，采用原生双语设计，并包含21.3%的德语预训练数据。\n\n该模型优化了质量与服务成本之间的平衡，在各种基准测试（数学、编码、基础能力、长上下文、代理任务）中，其性能与活跃参数高达自身四倍的模型相当。内部客户代理基准测试显示在特定垂直领域有显著的性能提升。\n\nKolibri是使用Aleph Alpha的“模型工厂”（一个实现快速迭代的自动化流程）开发的。在短短三个月内，团队从Kolibri Origin（300亿参数、6.5万上下文、7.5万亿训练token）升级到Kolibri（780亿参数、100万上下文、20万亿训练token）。该流程的自动化处理了硬件故障并提供了持续评估，突显了团队高速开发大型语言模型（LLM）的能力。Kolibri采用混合注意力机制和更小的专家模型以提高效率，并训练了近24万亿个token。"
+    "id": "49953495",
+    "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+    "url": "https://github.com/Niko1221/Strata",
+    "summary": "Strata is a free, open-source tool that allows users to run the large 125-billion-parameter Qwen 3.8 Flash Next AI model on consumer PCs. It's designed for NVIDIA RTX 20/30/40/50 series and specific AMD Radeon GPUs with 12 GB VRAM or more, requiring at least 32 GB RAM (64 GB for all models) and 80 GB SSD storage on Windows or Linux.\n\nThe model runs entirely locally, ensuring privacy for chats, code generation, image interpretation, and integration with existing applications and coding agents. Performance varies by hardware and model compression (e.g., Q2_0, IQ3_S, Coder), with \"Writes answers\" speeds typically ranging from 44-94 tokens/s and \"Reads your prompt\" from 1,100-2,650 tokens/s on gaming PCs. An RTX 3090 (24GB) is projected to reach 100-140 tokens/s for answers.\n\nInstallation is straightforward, either via an AI coding assistant or manually by running a script. The installer helps users select model size, context, and image capabilities, then downloads the approximately 70 GB model. Initial startup can involve a 1-3 minute system slowdown as 35-55 GB loads into RAM. Interaction occurs through a browser-based app at `http://127.0.0.1:8080` or via OpenAI/Anthropic-compatible API endpoints for other applications. Strata efficiently distributes the model's workload across the GPU, RAM, CPU, and SSD, employing techniques like \"guess, then check\" and batch processing for optimal performance.",
+    "chinese_title": "在消费级硬件 (RTX 4090) 上以 100T/s 运行 Qwen 3.8 Flash Next (125B)",
+    "chinese_summary": "Strata是一款免费开源工具，允许用户在消费级电脑上运行大型的1250亿参数Qwen 3.8 Flash Next AI模型。它专为NVIDIA RTX 20/30/40/50系列和特定AMD Radeon GPU设计，要求显存至少12 GB，并需要在Windows或Linux系统上至少32 GB内存（所有模型则需64 GB）和80 GB SSD存储空间。\n\n该模型完全在本地运行，确保了聊天、代码生成、图像解析以及与现有应用程序和编码代理集成的隐私性。性能因硬件和模型压缩（例如Q2_0、IQ3_S、Coder）而异，在游戏PC上，“写入答案”速度通常在每秒44-94个token之间，“读取提示”速度为每秒1,100-2,650个token。预计RTX 3090（24GB）生成答案速度可达每秒100-140个token。\n\n安装过程简单，可通过AI编码助手或手动运行脚本进行。安装程序会帮助用户选择模型大小、上下文和图像功能，然后下载约70 GB的模型。首次启动时，由于有35-55 GB的数据加载到内存中，系统可能会减速1-3分钟。用户可以通过 `http://127.0.0.1:8080` 的浏览器应用程序进行交互，或通过与OpenAI/Anthropic兼容的API端点连接其他应用程序。Strata有效地将模型的工作负载分布到GPU、内存、CPU和SSD上，采用“猜测与检查”和批处理等技术以实现最佳性能。"
+  },
+  {
+    "id": "49957116",
+    "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+    "url": "https://github.com/omlahore/RemoveMacAI",
+    "summary": "RemoveMacAI is a tool designed to fully disable Apple Intelligence features and reclaim disk space on macOS 27, where simply turning off features doesn't remove the associated downloaded models. It targets Apple silicon Macs running macOS 27.\n\nThe tool works by applying a configuration profile to restrict Apple Intelligence features and redirect model downloads to a closed local port, preventing macOS from re-downloading them. It removes models through Apple's asset service, ensuring System Integrity Protection remains enabled.\n\nRemoveMacAI turns off features like Siri, Writing Tools, Genmoji, Image Playground, ChatGPT extension, various summaries, Mail smart replies, inline text predictions, Spatial Photos, Photos Clean Up, and Xcode predictive code completion. It then removes the corresponding foundation models and those for image generation, Genmoji, Spatial Photos, Photos Clean Up, and Xcode code completion. Dictation remains functional, and changes persist across macOS updates.\n\nInstallation is straightforward via a curl one-liner or Homebrew. Users can view the current state (`removemacai status`), selectively keep certain features (`removemacai off --keep <features>`), or revert all changes (`removemacai revert`). The process requires user approval for the configuration profile installation.\n\nThe tool makes no network requests and collects no data. It is based on the `pared` tool and is open source under the MIT license. The author, Om Lahore, is open to new roles.",
+    "chinese_title": "关闭 macOS 27 上的苹果智能并收回其磁盘空间",
+    "chinese_summary": "RemoveMacAI是一款工具，旨在完全禁用macOS 27上的苹果智能功能并释放磁盘空间，因为简单地关闭这些功能并不会移除相关的下载模型。它面向运行macOS 27的搭载Apple芯片的Mac设备。\n\n该工具通过应用配置描述文件来限制苹果智能功能，并将模型下载重定向到一个关闭的本地端口，从而阻止macOS重新下载这些模型。它通过苹果的资产服务来移除模型，同时确保系统完整性保护（SIP）保持启用。\n\nRemoveMacAI会关闭Siri、写作工具、Genmoji、图像游乐场、ChatGPT扩展、各种摘要、邮件智能回复、内联文本预测、空间照片、照片清理和Xcode预测代码补全等功能。然后，它会移除相应的基础模型以及用于图像生成、Genmoji、空间照片、照片清理和Xcode代码补全的模型。听写功能仍然可用，并且这些更改在macOS更新后仍会保留。\n\n通过一条curl命令或Homebrew即可轻松安装。用户可以查看当前状态（`removemacai status`），有选择地保留某些功能（`removemacai off --keep <features>`），或撤销所有更改（`removemacai revert`）。此过程需要用户批准配置描述文件的安装。\n\n该工具不进行网络请求，不收集任何数据。它基于`pared`工具开发，并在MIT许可下开源。作者Om Lahore对新职位持开放态度。"
   },
   {
     "id": "49949235",
     "title": "We're going to need default hard budget caps on pretty much everything",
     "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
-    "summary": "The article strongly advocates for the implementation of \"default hard budget caps\" on all pay-by-usage services and APIs. The author argues that with the rise of coding and personal agents, it's easier than ever to spin up services that incur costs, leading to a significant risk of users receiving unexpected, massive bills if a service runs away.\n\nSoft caps, which only send warnings, are deemed inadequate as they don't prevent further charges. Instead, the author proposes that services should automatically cut off and return errors once a predefined monthly budget is reached. While some businesses might prefer their applications not to error out, the author contends that most individuals and businesses would choose errors over a surprise $10,000+ bill. Hard caps should be the default, with an explicit, opt-in checkbox required to remove them and accept responsibility for unlimited charges.\n\nAWS is specifically mentioned as a service where this feature is urgently needed, as many users avoid it for personal projects due to fear of runaway costs. Encouragingly, AWS recently (September 2026) launched a \"spending limits\" feature that pauses projects upon reaching a cap, albeit in a limited release. Google Cloud also introduced \"Spend Caps\" in July, indicating a positive industry trend. The article concludes by suggesting that future AI agents should recommend providers with hard budget caps and warn users about uncapped services.",
-    "chinese_title": "我们将需要对几乎所有一切都设定默认的硬性预算上限。",
-    "chinese_summary": "文章强烈主张对所有按使用量付费的服务和API实施“默认硬性预算上限”。作者认为，随着编程和个人代理的兴起，启动产生费用的服务比以往任何时候都更容易，这导致如果服务失控，用户收到意想不到的巨额账单的巨大风险。\n\n仅发送警告的软性上限被认为不足，因为它们无法阻止进一步的收费。相反，作者提出，一旦达到预设的月度预算，服务应自动切断并返回错误。尽管一些企业可能更希望其应用程序不出错，但作者认为，大多数个人和企业会选择错误而不是一张意外的10,000美元以上的账单。硬性上限应为默认设置，并且需要一个明确的、选择性的复选框才能将其移除并接受无限收费的责任。\n\nAWS被特别提及为急需此功能的平台，因为许多用户因担心成本失控而避免将其用于个人项目。令人鼓舞的是，AWS最近（2026年9月）推出了一个“支出限制”功能，该功能在达到上限时会暂停项目，尽管是有限发布。谷歌云也在7月推出了“支出上限”，预示着一个积极的行业趋势。文章最后建议，未来的AI代理应该推荐具有硬性预算上限的提供商，并警告用户关于无上限的服务。"
+    "summary": "The article advocates for the urgent implementation of default hard budget caps on pay-by-usage services and APIs. The author argues that the increasing ease of deploying code via AI agents (coding and personal agents) amplifies the risk of users incurring massive, unexpected costs from services like paid APIs, hosted applications, or storage/compute.\n\nSoft caps, which only issue warnings, are deemed insufficient, as services can rack up significant charges overnight. Instead, a hard cap would automatically cut off a service and return errors once a predefined monthly budget is exceeded. While businesses might be concerned about applications throwing errors, the author asserts that errors are vastly preferable to surprise bills exceeding $10,000.\n\nThe proposal is for hard caps to be the default setting, with an explicit opt-out required for users willing to accept uncapped charges. AWS is highlighted as a service where this feature is critically needed, due to many stories of users being \"burned\" by runaway costs on personal projects. Encouragingly, AWS launched a \"spending limits\" feature in September 2026 (currently in limited release) that pauses projects upon reaching a monthly limit. Google Cloud introduced a similar \"Spend Caps\" feature in July 2026, indicating a positive industry trend. The article concludes by hoping AI agents will soon recommend providers with hard budget caps and warn users against uncapped services.",
+    "chinese_title": "我们将需要对几乎所有方面都设定默认的硬性预算上限。",
+    "chinese_summary": "这篇文章主张紧急实施对按用量付费服务和API的默认硬性预算上限。作者认为，通过AI代理（编码代理和个人代理）部署代码的日益便捷，加剧了用户因付费API、托管应用程序或存储/计算等服务而产生巨额、意想不到费用的风险。仅发出警告的软性上限被认为不足，因为服务可能一夜之间累积大量费用。相反，一旦超出预设的每月预算，硬性上限将自动切断服务并返回错误。虽然企业可能会担心应用程序报错，但作者坚称，错误远比超过1万美元的意外账单好得多。该提案建议将硬性上限设为默认设置，对于愿意接受无上限费用的用户，则需要明确选择退出。AWS被特别指出是急需此功能的服务，因为有许多用户因个人项目上的失控费用而“蒙受损失”的故事。令人鼓舞的是，AWS于2026年9月推出了“支出限制”功能（目前处于有限发布阶段），该功能在达到每月限额时会暂停项目。谷歌云于2026年7月也推出了类似的“费用上限”功能，这表明了积极的行业趋势。文章最后希望AI代理能很快推荐具有硬性预算上限的服务提供商，并警告用户避免使用无上限服务。"
   },
   {
-    "id": "49953495",
-    "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
-    "url": "https://github.com/Niko1221/Strata",
-    "summary": "Strata enables running the 125-billion-parameter Qwen3.8-Flash-Next AI model on consumer gaming PCs, typically requiring server-grade hardware. It operates entirely locally on your machine, ensuring privacy for tasks like chatting, coding, and image interpretation.\n\nPerformance is high, with reply speeds up to 94 tokens/second on an RTX 5070 (12 GB) and projected 100-140 tokens/second on an RTX 3090 (24 GB). Prompt reading is even faster, exceeding 1,000 tokens/second for large documents.\n\nTo run Strata, you need an NVIDIA GeForce RTX 20/30/40/50 series or compatible AMD Radeon RX 6000/7000/9000 series graphics card with 12 GB VRAM or more. Additionally, 32 GB of RAM (64 GB recommended for all models), 80 GB of SSD storage, and Windows 10/11 or Linux are required.\n\nInstallation is straightforward, either via an AI coding assistant or by running a simple script. The installer guides you through model selection (optimized for your RAM, e.g., \"Coder\" for 32 GB, \"IQ2_XS\" for 48 GB, \"IQ3_S\" for 64+ GB), context size, and image reading capabilities. The model download is about 70 GB. Once running, you access Strata through a local browser interface or via an OpenAI-compatible API for integration with other applications.\n\nStrata achieves this by distributing the model's workload across your GPU, RAM, CPU, and SSD, efficiently managing its \"experts\" and using a \"guess-then-check\" mechanism for faster text generation. It's free, open-source under the MIT License, and allows for community support.",
-    "chinese_title": "在消费级硬件（RTX 4090）上以 100 T/s 运行通义千问 3.8 Flash Next (125B)",
-    "chinese_summary": "Strata使得在消费级游戏电脑上运行通常需要服务器级硬件的1250亿参数Qwen3.8-Flash-Next AI模型成为可能。它完全在您的机器上本地运行，确保了聊天、编码和图像解读等任务的隐私。\n\n性能表现出色，在RTX 5070（12 GB）上回复速度高达每秒94个token，预计在RTX 3090（24 GB）上可达每秒100-140个token。提示词读取速度更快，对于大型文档，可超过每秒1000个token。\n\n要运行Strata，您需要一张英伟达GeForce RTX 20/30/40/50系列或兼容的AMD Radeon RX 6000/7000/9000系列显卡，且显存（VRAM）至少12 GB。此外，还需要32 GB的内存（所有模型建议使用64 GB）、80 GB的SSD存储，以及Windows 10/11或Linux操作系统。\n\n安装过程简单直接，可以通过AI编码助手或运行一个简单脚本完成。安装程序会引导您选择模型（根据您的内存进行优化，例如，32 GB内存选择“Coder”，48 GB选择“IQ2_XS”，64 GB及以上选择“IQ3_S”）、上下文大小以及图像读取功能。模型下载大约70 GB。运行后，您可以通过本地浏览器界面或兼容OpenAI的API访问Strata，以便与其他应用程序集成。\n\nStrata通过将模型工作负载分布到您的GPU、内存、CPU和SSD上实现这一点，有效地管理其“专家”并利用“猜测-验证”机制加快文本生成速度。它是免费的，在MIT许可下开源，并支持社区协作。"
+    "id": "49957068",
+    "title": "Improper redaction reveals Google Data Center water and electricity usage",
+    "url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/",
+    "summary": "An investigation by KOLN revealed sensitive operational data and expected tax refunds for Google's Nebraska data centers due to improperly redacted reports submitted to the Department of Water, Energy, and Environment (DWEE). Google had claimed the information, including electricity and water usage, was a trade secret.\n\nBy highlighting and copying redacted text, the report for Agate LLC (Google's Lincoln data center) showed 52.65 megawatts of electricity during peak demand and 13.299 megagallons (13 million gallons) of water annually – equivalent to about 20 Olympic-size swimming pools. Fireball Group LLC (Papillion) was identified as the highest water user, reporting 547.88 megagallons for 2025. Across six reporting data centers, 765 million gallons of water were used last year.\n\nThe redaction failure also exposed significant expected tax refunds for 2025: Agate LLC expects $55.8 million, Fireball LLC $39.1 million, and Westwood Solutions LLC (Omaha) $22.5 million. These reports are mandated by Governor Pillen's Executive Order to assess the data centers' impact on state resources.",
+    "chinese_title": "不当遮蔽泄露谷歌数据中心水电用量",
+    "chinese_summary": "KOLN的一项调查显示，由于提交给水、能源和环境部（DWEE）的报告存在不当遮盖，谷歌内布拉斯加州数据中心的敏感运营数据和预计退税额被泄露。谷歌曾声称这些信息，包括用电量和用水量，是商业机密。\n\n通过高亮和复制被遮盖的文本，Agate有限责任公司（谷歌位于林肯的数据中心）的报告显示，其在高峰需求期间的电力消耗为52.65兆瓦，年用水量为13.299兆加仑（1300万加仑），这相当于约20个奥林匹克标准游泳池的水量。Fireball Group有限责任公司（位于帕皮利恩）被确定为用水量最高的公司，报告称2025年用水量为547.88兆加仑。去年，六个报告数据中心共使用了7.65亿加仑水。\n\n此次遮盖失败还暴露了2025年预计的大额退税：Agate有限责任公司预计为5580万美元，Fireball有限责任公司为3910万美元，以及Westwood Solutions有限责任公司（位于奥马哈）为2250万美元。这些报告是根据州长皮伦的行政命令强制要求的，旨在评估数据中心对州资源的影响。"
   },
   {
-    "id": "49941114",
-    "title": "Extra Big Ass Intelligence",
-    "url": "https://www.extrabigassintelligence.com/",
-    "summary": "The provided text introduces a concept titled \"EXTRA BIG ASS INTELLIGENCE™.\" This is explicitly defined as \"Federally Mandated Super Intelligence (SI),\" indicating a government-required form of highly advanced intelligence. The trademark symbol (™) suggests it is a specific, potentially branded, entity or program.",
-    "chinese_title": "超巨智能",
-    "chinese_summary": "文本介绍了一个名为“超巨型智能™”的概念。这被明确定义为“联邦强制超级智能 (SI)”，表明这是一种政府强制要求的高度先进的智能形式。商标符号 (™) 表明它是一个特定的、可能已注册品牌的实体或程序。"
+    "id": "49961057",
+    "title": "Anthropic reported diary entry to police, woman faces felony charge",
+    "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+    "summary": "A Florida woman, Carli Michelle Heller, faces felony charges after allegedly using Anthropic's Claude AI as a diary to write a threat about \"shooting up\" the Sheriff's office. Claude's safety systems flagged the entry, which was then escalated to a human reviewer. Deeming it a credible threat, the reviewer reported it to law enforcement.\n\nAnthropic states it may share user information in emergencies to prevent death or serious physical injury. Heller was subsequently detained and charged with a second-degree felony under Florida Statute 836.10 for making a written threat of violence.\n\nThis incident serves as a stark reminder of the lack of privacy in AI interactions and the real-world consequences of content shared with chatbots. It follows other high-profile cases where AI companies faced scrutiny over user-generated threats. OpenAI is currently being sued by British Columbia for allegedly failing to prevent a mass shooting, despite previously flagging a perpetrator's conversations about gun violence. Florida also sued OpenAI, linking ChatGPT to a past shooting. The article warns users that chatbots are not private diaries and advises caution about the information they input.",
+    "chinese_title": "Anthropic报警举报日记内容，女子面临重罪指控。",
+    "chinese_summary": "佛罗里达州一名女子凯莉·米歇尔·海勒因据称利用Anthropic公司的Claude AI作为日记，写下关于“血洗”警长办公室的威胁，而面临重罪指控。Claude的安全系统标记了这条记录，随后升级至人工审核员处理。审核员认为其是可信威胁，便将其报告给了执法部门。\n\nAnthropic公司声明，在紧急情况下可能会共享用户信息，以防止死亡或严重的身体伤害。海勒随后被拘留，并依据佛罗里达州法规836.10，因发出书面暴力威胁而被指控犯有二级重罪。\n\n这一事件深刻地警示人们，AI互动中缺乏隐私，以及与聊天机器人分享内容会带来真实世界的后果。此前还有其他备受关注的案件，AI公司因用户生成的威胁而受到审查。OpenAI目前正被不列颠哥伦比亚省起诉，罪名是据称未能阻止一场大规模枪击事件，尽管此前曾标记过一名行凶者关于枪支暴力的对话。佛罗里达州也曾起诉OpenAI，将ChatGPT与过去的枪击事件联系起来。文章警告用户，聊天机器人不是私人日记，并建议对他们输入的信息保持谨慎。"
   },
   {
-    "id": "49948254",
-    "title": "Federal judge calls Flock 'indiscriminate mass surveillance'",
-    "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
-    "summary": "A federal judge has ruled that a Tulsa sheriff’s deputy violated a woman’s Fourth Amendment rights by using Flock Safety to search her license plate without a warrant, deeming it \"indiscriminate mass surveillance.\" Judge Sara Hill stated the deputy had \"no apparent reason\" for the search beyond the vehicle having a California license plate. As a result, 91 pounds of meth allegedly found after the Flock search must be suppressed as \"fruit of a poisonous tree.\"\n\nWhile not a binding precedent, this is a significant federal ruling against Flock. Judge Hill criticized the technology for indiscriminately and passively cataloging people's whereabouts, calling it \"constitutionally problematic\" because it collects information on all vehicles and serves it to law enforcement on demand, rather than being targeted.\n\nThis judicial decision adds to a growing chorus of Flock critics. Numerous local and state governments, including Florida and Texas, are discontinuing its use. Senator Bernie Sanders has introduced the \"Block Flock Act\" to ban federal agencies from using automated license plate readers. Flock CEO Garrett Langley has advocated for a \"compromise\" between privacy and safety, apologized for law enforcement stalking incidents using the system, and reportedly offered employee buyouts.",
-    "chinese_title": "联邦法官称Flock为“无差别大规模监控”",
-    "chinese_summary": "一位联邦法官裁定，塔尔萨县治安官的一名副手在没有搜查令的情况下使用Flock Safety搜查一名女性的车牌，侵犯了她的第四修正案权利，并将其认定为“无差别大规模监控”。萨拉·希尔法官表示，除了该车辆悬挂加州车牌外，这名副手进行搜查“没有明显理由”。因此，据称在Flock搜查后发现的91磅冰毒必须作为“毒树之果”予以排除。\n\n尽管这不是一个具有约束力的先例，但这是一项针对Flock的重要联邦裁决。希尔法官批评这项技术不加区别地、被动地记录人们的行踪，称其“在宪法上存在问题”，因为它收集所有车辆的信息并按需提供给执法部门，而不是有针对性的。\n\n这项司法裁决加剧了对Flock的批评声浪。包括佛罗里达州和德克萨斯州在内的许多地方和州政府正在停止使用该系统。参议员伯尼·桑德斯提出了“阻止Flock法案”，旨在禁止联邦机构使用自动化车牌识别器。Flock首席执行官加勒特·兰利主张在隐私和安全之间达成“妥协”，为执法部门利用该系统进行跟踪事件道歉，并据报道提供了员工买断计划。"
+    "id": "49963171",
+    "title": "Web Search API",
+    "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+    "summary": "Cloudflare introduced its Web Search API in beta on October 2, 2026, designed to empower AI agents and applications with real-time internet search capabilities. This allows AI to ground responses in live information, overcoming limitations of model training cutoffs or inaccurate URL guessing.\n\nThe API operates via Cloudflare's AI Gateway, ensuring all search requests are logged and billed against AI Gateway credits at the respective provider's list API price, without additional markup. Users can also opt to use their own provider API key.\n\nInitially, the Web Search API supports three search providers: Ceramic.ai, Exa, and Linkup. All chosen providers ensure Zero Data Retention for requests made through Cloudflare and comply with Cloudflare's verified bot crawling standards.\n\nDevelopers can integrate the Web Search API using either a REST API call or by utilizing the AI binding within a Cloudflare Worker. A guide titled \"How to use Web Search API\" is available for getting started.",
+    "chinese_title": "Web Search API",
+    "chinese_summary": "Cloudflare introduced its Web Search API in beta on October 2, 2026, designed to empower AI agents and applications with real-time internet search capabilities. This allows AI to ground responses in live information, overcoming limitations of model training cutoffs or inaccurate URL guessing.\n\nThe API operates via Cloudflare's AI Gateway, ensuring all search requests are logged and billed against AI Gateway credits at the respective provider's list API price, without additional markup. Users can also opt to use their own provider API key.\n\nInitially, the Web Search API supports three search providers: Ceramic.ai, Exa, and Linkup. All chosen providers ensure Zero Data Retention for requests made through Cloudflare and comply with Cloudflare's verified bot crawling standards.\n\nDevelopers can integrate the Web Search API using either a REST API call or by utilizing the AI binding within a Cloudflare Worker. A guide titled \"How to use Web Search API\" is available for getting started."
   },
   {
-    "id": "49940394",
-    "title": "Newgrounds.com – A community of games, music, and art",
-    "url": "https://www.newgrounds.com/",
-    "summary": "Newgrounds.com is a pioneering and long-standing online platform, founded by Tom Fulp in 1995, serving as a dynamic community for user-generated content. It hosts a vast collection of independently produced animations (\"Movies\"), interactive games, digital art, and original music (\"Audio\").\n\nThe website provides a crucial space for creators to upload their work, gain exposure, and receive feedback from a dedicated community. A hallmark of Newgrounds is its \"Blam/Protect\" system, which empowers users to moderate content quality and ensure community standards. It played a significant role in the early internet's Flash animation and indie game culture, fostering a generation of artists and developers and giving rise to iconic characters and series such as \"Pico\" and \"Tankmen.\"\n\nKnown for championing artistic freedom, often with an uncensored and experimental edge, Newgrounds continues to be a vibrant hub for independent creators. The platform has adapted to technological changes, embracing HTML5 for games, and remains a testament to grassroots online creativity, providing a unique home for original and diverse artistic expression.",
-    "chinese_title": "Newgrounds.com：游戏、音乐与艺术社区",
-    "chinese_summary": "Newgrounds.com是一个开创性且历史悠久的在线平台，由Tom Fulp于1995年创立，作为一个充满活力的用户生成内容社区。它收录了大量独立制作的动画（“Movies”）、互动游戏、数字艺术和原创音乐（“Audio”）。\n\n该网站为创作者提供了一个重要空间，供他们上传作品、获得曝光并从专门的社区接收反馈。Newgrounds的一个标志性特色是其“Blam/Protect”系统，该系统赋予用户审核内容质量和确保社区标准的权力。它在早期互联网的Flash动画和独立游戏文化中发挥了重要作用，培养了一代艺术家和开发者，并催生了“Pico”和“Tankmen”等标志性角色和系列。\n\nNewgrounds以其倡导艺术自由而闻名，通常带有不经审查和实验性的特点，至今仍是独立创作者的活跃中心。该平台已适应技术变革，在游戏中拥抱了HTML5，并且仍然是草根在线创造力的证明，为原创和多样化的艺术表达提供了一个独特的家园。"
-  },
-  {
-    "id": "49944227",
-    "title": "I quit OpenAI because its culture is broken",
-    "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA",
-    "summary": "Unfortunately, I am unable to access the article link provided.",
-    "chinese_title": "我退出OpenAI，因为其文化已经崩坏。",
-    "chinese_summary": "Unfortunately, I am unable to access the article link provided."
-  },
-  {
-    "id": "49946895",
-    "title": "The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux",
-    "url": "https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU",
+    "id": "49962012",
+    "title": "Denmark data breach exposes 8.8M people's personal data",
+    "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
     "summary": "生成摘要时出错",
-    "chinese_title": "The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux",
+    "chinese_title": "丹麦数据泄露致880万人个人数据外泄",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49943034",
-    "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
-    "url": "https://tej.as/blog/aleph-alpha-kolibri",
+    "id": "49956681",
+    "title": "A browser-native classic Visual Basic VB6 IDE",
+    "url": "https://wieslawsoltes.github.io/VB6/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+    "chinese_title": "浏览器原生的经典 Visual Basic VB6 IDE",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49946228",
-    "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
-    "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+    "id": "49964303",
+    "title": "Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped",
+    "url": "https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped",
     "summary": "生成摘要时出错",
-    "chinese_title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+    "chinese_title": "Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49946393",
-    "title": "Hole Punch: Sling your spaceship around gravitational fields",
-    "url": "https://notoriousbfg.com/hole-punch/",
+    "id": "49963366",
+    "title": "Germany’s RobCo hits $1B valuation",
+    "url": "https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Hole Punch: Sling your spaceship around gravitational fields",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49945933",
-    "title": "Agents don't need memory, they need documentation",
-    "url": "https://liao.gg/blog/agents-dont-need-memory",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Agents don't need memory, they need documentation",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49946355",
-    "title": "Treachery in the Rodin Museum 3D scan verdict",
-    "url": "https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Treachery in the Rodin Museum 3D scan verdict",
+    "chinese_title": "Germany’s RobCo hits $1B valuation",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -112,67 +88,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49948332",
-    "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
-    "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+    "id": "49960084",
+    "title": "Nearly 200 people under observation after Irkutsk lab worker dies from plague",
+    "url": "https://www.themoscowtimes.com/2026/10/02/nearly-200-people-under-observation-after-irkutsk-lab-worker-dies-from-plague-a93857",
     "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
+    "chinese_title": "Nearly 200 people under observation after Irkutsk lab worker dies from plague",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49946567",
-    "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
-    "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+    "id": "49969183",
+    "title": "Beam: Reflection's 501B open-weight model",
+    "url": "https://reflection.ai/blog/introducing-beam",
     "summary": "生成摘要时出错",
-    "chinese_title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+    "chinese_title": "Beam: Reflection's 501B open-weight model",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49946403",
-    "title": "ADHD, autism or complex trauma? [pdf]",
-    "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30CC4826561366615BFAEC807CDE28A7/S0007125026108046a.pdf/adhd-autism-or-complex-trauma-the-complicated-nature-of-the-question.pdf",
+    "id": "49959869",
+    "title": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
+    "url": "https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/",
     "summary": "生成摘要时出错",
-    "chinese_title": "ADHD, autism or complex trauma? [pdf]",
+    "chinese_title": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49947631",
-    "title": "Reasons I didn't become an EMT, ranked",
-    "url": "https://ben.stolovitz.com/posts/reasons-not-emt-ranked/",
+    "id": "49968105",
+    "title": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+    "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Reasons I didn't become an EMT, ranked",
+    "chinese_title": "OpenAI“流氓”智能体活动在维基媒体项目上被发现",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49940219",
-    "title": "Things that apparently cause cancer",
-    "url": "https://www.breakthroughjournal.org/p/things-that-apparently-cause-cancer",
+    "id": "49957812",
+    "title": "In the wake of Tippett Studios’ closure, a digital archive appears online",
+    "url": "https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Things that apparently cause cancer",
+    "chinese_title": "In the wake of Tippett Studios’ closure, a digital archive appears online",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49947051",
-    "title": "We want you to build the next Git platform on Cloudflare",
-    "url": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+    "id": "49956290",
+    "title": "The technology to eradicate mosquito-borne disease exists",
+    "url": "https://worksinprogress.co/issue/mosquitoes-are-a-choice/",
     "summary": "生成摘要时出错",
-    "chinese_title": "We want you to build the next Git platform on Cloudflare",
+    "chinese_title": "The technology to eradicate mosquito-borne disease exists",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49957116",
-    "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
-    "url": "https://github.com/omlahore/RemoveMacAI",
+    "id": "49963385",
+    "title": "Mold Linker Version 3.0.0 Release – Rewritten in Rust",
+    "url": "https://github.com/rui314/mold/releases/tag/v3.0.0",
     "summary": "生成摘要时出错",
-    "chinese_title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49941091",
-    "title": "Cloudflare OHTTP gateway",
-    "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cloudflare OHTTP gateway",
+    "chinese_title": "Mold Linker Version 3.0.0 Release – Rewritten in Rust",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -184,19 +152,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49944912",
-    "title": "FTL: A new operating system for clouds",
-    "url": "https://ftl-os.org/",
+    "id": "49967444",
+    "title": "US closely monitoring case of lab worker who possibly died of plague in Siberia",
+    "url": "https://www.theguardian.com/world/2026/oct/05/russia-lab-worker-possibly-dies-of-plague-siberia-quarantine-measures-irkutsk",
     "summary": "生成摘要时出错",
-    "chinese_title": "FTL: A new operating system for clouds",
+    "chinese_title": "US closely monitoring case of lab worker who possibly died of plague in Siberia",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49941447",
-    "title": "An Update on Orion for Linux and Windows",
-    "url": "https://blog.kagi.com/update-orion-linux-windows",
+    "id": "49962857",
+    "title": "Apple and a hacker's future",
+    "url": "https://stratechery.com/2026/apple-and-a-hackers-future/",
     "summary": "生成摘要时出错",
-    "chinese_title": "An Update on Orion for Linux and Windows",
+    "chinese_title": "Apple and a hacker's future",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49970667",
+    "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+    "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49958569",
+    "title": "Self-hosted HTTP tunnels with SSH and Nginx",
+    "url": "https://vincent.bernat.ch/en/blog/2026-http-over-ssh",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Self-hosted HTTP tunnels with SSH and Nginx",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -208,11 +192,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49945323",
-    "title": "City building games have a Soul Problem pt.2",
-    "url": "https://www.radical-elements.com/minor-epiphanies/city-building-games-have-a-soul-problem-pt2",
+    "id": "49961861",
+    "title": "Qualcomm licenses patents on Huawei’s LogicFolding chip tech",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-05/qualcomm-licenses-patents-on-huawei-s-logicfolding-chip-tech",
     "summary": "生成摘要时出错",
-    "chinese_title": "City building games have a Soul Problem pt.2",
+    "chinese_title": "Qualcomm licenses patents on Huawei’s LogicFolding chip tech",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49968906",
+    "title": "Plain text is still one of the best technologies we have",
+    "url": "https://deadparrotbbs.com/why-plain-text-is-still-one-of-the-best-technologies-we-have/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Plain text is still one of the best technologies we have",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -224,171 +216,163 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49943451",
-    "title": "The Escalation of War in Ethiopia",
-    "url": "https://www.africanistperspective.com/p/on-the-escalation-of-war-in-ethiopia",
+    "id": "49949588",
+    "title": "We're working on a new RuneScape MMO",
+    "url": "https://play.runescape.com/4",
     "summary": "生成摘要时出错",
-    "chinese_title": "The Escalation of War in Ethiopia",
+    "chinese_title": "We're working on a new RuneScape MMO",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49956358",
-    "title": "Software Engineering Is Dead. Long Live Product Engineering",
-    "url": "https://newsletter.chainofthought.show/p/software-engineering-is-dead-long",
+    "id": "49952111",
+    "title": "Show HN: AI search for every photo and every frame of video on macOS",
+    "url": "https://github.com/allenv0/SCM",
     "summary": "生成摘要时出错",
-    "chinese_title": "Software Engineering Is Dead. Long Live Product Engineering",
+    "chinese_title": "Show HN: AI search for every photo and every frame of video on macOS",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49941572",
-    "title": "Haunted by the ghosts of materialism",
-    "url": "https://blog.coredump.cx/p/haunted-by-the-ghosts-of-materialism",
+    "id": "49971846",
+    "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+    "url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Haunted by the ghosts of materialism",
+    "chinese_title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49938783",
-    "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-    "url": "https://allenai.org/blog/astabrief",
+    "id": "49951218",
+    "title": "Emitting metadata early makes building/checking Rust up to twice as fast",
+    "url": "https://github.com/PowderworksCode/headstart",
     "summary": "生成摘要时出错",
-    "chinese_title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+    "chinese_title": "Emitting metadata early makes building/checking Rust up to twice as fast",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49957191",
-    "title": "I asked Claude build a physically accurate O'Neill cylinder you can walk around",
-    "url": "https://island-three.gruberbuilds.workers.dev/",
+    "id": "49953288",
+    "title": "Bill Draper has died",
+    "url": "https://www.nytimes.com/2026/09/30/technology/william-draper-dead.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "I asked Claude build a physically accurate O'Neill cylinder you can walk around",
+    "chinese_title": "Bill Draper has died",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49954745",
-    "title": "RuneScape's Position on Gen AI",
-    "url": "https://www.reddit.com/r/2007scape/comments/1wxfyzp/runescapes_position_on_gen_ai/",
+    "id": "49963094",
+    "title": "Nobel Prize in Physiology or Medicine 2026",
+    "url": "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
     "summary": "生成摘要时出错",
-    "chinese_title": "RuneScape's Position on Gen AI",
+    "chinese_title": "Nobel Prize in Physiology or Medicine 2026",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49941764",
-    "title": "The characters of plastics (2024)",
-    "url": "https://yarchive.net/blog/plastics/",
+    "id": "49966163",
+    "title": "The future of independence is interdependence",
+    "url": "https://onlys.ky/independence-is-interdependence/",
     "summary": "生成摘要时出错",
-    "chinese_title": "The characters of plastics (2024)",
+    "chinese_title": "The future of independence is interdependence",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49946352",
-    "title": "There are only 5,000 elite software engineers in the world (2025)",
-    "url": "https://jaredpalmer.com/blog/there-are-only-5000-elite-software-engineers",
+    "id": "49965308",
+    "title": "Making a GTK application in Haskell, part 1",
+    "url": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1/",
     "summary": "生成摘要时出错",
-    "chinese_title": "There are only 5,000 elite software engineers in the world (2025)",
+    "chinese_title": "Making a GTK application in Haskell, part 1",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49939265",
-    "title": "EFF – Welcome to Opt Out October. Let's Take Control of Our Data and Our Devices",
-    "url": "https://www.eff.org/pages/welcome-opt-out-october-lets-take-control-our-data-and-our-devices",
+    "id": "49968402",
+    "title": "Norway Eyes Partial Ban of Smart Glasses",
+    "url": "https://www.barrons.com/news/norway-eyes-partial-ban-of-smart-glasses-e65dc239",
     "summary": "生成摘要时出错",
-    "chinese_title": "EFF – Welcome to Opt Out October. Let's Take Control of Our Data and Our Devices",
+    "chinese_title": "Norway Eyes Partial Ban of Smart Glasses",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49956574",
-    "title": "Google Japan shows off conveyor-belt keyboard with keys that move to fingers",
-    "url": "https://www.tomshardware.com/peripherals/keyboards/google-japan-shows-off-wild-conveyor-belt-keyboard-with-keys-that-move-to-your-fingers-3d-printable-gboard-features-four-belts-with-29-keys-each-built-to-make-one-hand-typing-easier",
+    "id": "49962572",
+    "title": "2026 Nobel Prize in Physiology or Medicine: Deisseroth, Hegemann, Nagel",
+    "url": "https://www.nobelprize.org/prizes/medicine/2026/summary/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Google Japan shows off conveyor-belt keyboard with keys that move to fingers",
+    "chinese_title": "2026 Nobel Prize in Physiology or Medicine: Deisseroth, Hegemann, Nagel",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49955839",
-    "title": "What I learnt co-leading an AI Safety bootcamp for legal and governance practit",
-    "url": "https://www.lesswrong.com/posts/KtAug62dYRgAS8sqJ/what-i-learnt-co-leading-an-ai-safety-bootcamp-for-legal-and",
+    "id": "49965047",
+    "title": "Picard 3.0",
+    "url": "https://blog.metabrainz.org/2026/10/04/picard-3-0-released/",
     "summary": "生成摘要时出错",
-    "chinese_title": "What I learnt co-leading an AI Safety bootcamp for legal and governance practit",
+    "chinese_title": "Picard 3.0",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49948364",
-    "title": "Writing code by hand is over, forever",
-    "url": "https://eliocapella.com/blog/writing-code-by-hand-is-over/",
+    "id": "49965152",
+    "title": "The lamps in my house",
+    "url": "https://arslan.io/2026/10/05/the-lamps-in-my-house/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Writing code by hand is over, forever",
+    "chinese_title": "The lamps in my house",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49939513",
-    "title": "Debian Inference Portal",
-    "url": "https://inference.debian.net/",
+    "id": "49955297",
+    "title": "Blindsight (Watts Novel)",
+    "url": "https://en.wikipedia.org/wiki/Blindsight_(Watts_novel)",
     "summary": "生成摘要时出错",
-    "chinese_title": "Debian Inference Portal",
+    "chinese_title": "Blindsight (Watts Novel)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49948566",
-    "title": "Sam Altman's sister amends lawsuit accusing OpenAI CEO of sexual abuse",
-    "url": "https://www.reuters.com/legal/government/judge-now-dismisses-lawsuit-by-sam-altmans-sister-accusing-openai-ceo-sexual-2026-03-20/",
+    "id": "49953116",
+    "title": "Rejection Sensitivity in Gifted and Twice-Exceptional Children",
+    "url": "https://teachyourkids.substack.com/p/rejection-sensitivity-in-gifted-and",
     "summary": "生成摘要时出错",
-    "chinese_title": "Sam Altman's sister amends lawsuit accusing OpenAI CEO of sexual abuse",
+    "chinese_title": "Rejection Sensitivity in Gifted and Twice-Exceptional Children",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49947799",
-    "title": "Apple Confirms iPhone 18 Pro Max AT&T Issues, Devices Require Replacement",
-    "url": "https://daringfireball.net/linked/2026/10/03/iphone-18-pro-max-att-issues",
+    "id": "49959654",
+    "title": "A 40ms Go garbage collector pause caused by swap",
+    "url": "https://frn.sh/go-gc/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Apple Confirms iPhone 18 Pro Max AT&T Issues, Devices Require Replacement",
+    "chinese_title": "A 40ms Go garbage collector pause caused by swap",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49957602",
-    "title": "Iran is going after America's debt it's targeting the $40T America owes",
-    "url": "https://jaymartin.substack.com/p/iran-is-going-after-americas-debt",
+    "id": "49952029",
+    "title": "VGHF Digital Archive passes 5000 magazines. Here's what's next",
+    "url": "https://gamehistory.org/5k-magazines/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Iran is going after America's debt it's targeting the $40T America owes",
+    "chinese_title": "VGHF Digital Archive passes 5000 magazines. Here's what's next",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49955572",
-    "title": "Russian strategy of war crimes escalation in Ukraine (winter 2026/2027)",
-    "url": "https://phillipspobrien.substack.com/p/weekend-update-205-russias-strategy",
+    "id": "49965497",
+    "title": "\"I'm Embarrassed on Behalf of the Tech Industry\"",
+    "url": "https://blog.jim-nielsen.com/2026/embarrassed-by-tech/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Russian strategy of war crimes escalation in Ukraine (winter 2026/2027)",
+    "chinese_title": "\"I'm Embarrassed on Behalf of the Tech Industry\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49954243",
-    "title": "GVisor is being donated to CNCF",
-    "url": "https://gvisor.dev/blog/2026/10/02/gvisor-cncf/",
+    "id": "49958850",
+    "title": "ArtCraft Apps – open-source Adobe compatible suite written in Rust",
+    "url": "https://getartcraft.com/apps",
     "summary": "生成摘要时出错",
-    "chinese_title": "GVisor is being donated to CNCF",
+    "chinese_title": "ArtCraft Apps – open-source Adobe compatible suite written in Rust",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49950288",
-    "title": "AI can clone your indie game, but not its soul",
-    "url": "https://twitter.com/robertvaradan/status/2106061989122334778",
+    "id": "49965894",
+    "title": "Borland Turbo Basic",
+    "url": "https://dosdays.co.uk/topics/Software/borland_turbo_basic.php",
     "summary": "生成摘要时出错",
-    "chinese_title": "AI can clone your indie game, but not its soul",
+    "chinese_title": "Borland Turbo Basic",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49956035",
-    "title": "Incentives in Academic Research",
-    "url": "https://www.msoos.org/2026/10/incentives-in-academic-research/",
+    "id": "49960901",
+    "title": "Replacement of petroleum based products with plant-based materials (2025)",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/eng2.70108",
     "summary": "生成摘要时出错",
-    "chinese_title": "Incentives in Academic Research",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "49940317",
-    "title": "Show HN: Timeline of the Far Future",
-    "url": "https://rivendell.dmitrybrant.com/farfuture/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Timeline of the Far Future",
+    "chinese_title": "Replacement of petroleum based products with plant-based materials (2025)",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -400,11 +384,259 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "49951891",
+    "title": "How to scale intent, quality, and artistry with AI [video]",
+    "url": "https://www.youtube.com/watch?v=GLvFTMtw4Jk",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How to scale intent, quality, and artistry with AI [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49971230",
+    "title": "Find the flattest route between any two points in SF",
+    "url": "https://flattensf.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Find the flattest route between any two points in SF",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49969070",
+    "title": "One person can now be a quorum at the SEC",
+    "url": "https://www.ft.com/content/3120782c-1ea0-4fdc-9462-0a4b4658f70f",
+    "summary": "生成摘要时出错",
+    "chinese_title": "One person can now be a quorum at the SEC",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49969961",
+    "title": "Incident with Actions",
+    "url": "https://www.githubstatus.com/incidents/3q1yb5m7ltvb",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Incident with Actions",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49965118",
+    "title": "Linux containers in 500 lines of code (2016)",
+    "url": "https://blog.lizzie.io/linux-containers-in-500-loc.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Linux containers in 500 lines of code (2016)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49969256",
+    "title": "The Future of Mathematics",
+    "url": "https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Future of Mathematics",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "49956003",
     "title": "Xray-core concealed a certificate verification bypass vulnerability",
     "url": "https://github.com/net4people/bbs/issues/672",
     "summary": "生成摘要时出错",
     "chinese_title": "Xray-core concealed a certificate verification bypass vulnerability",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49970871",
+    "title": "Dust: Pretraining Transformers Without Backpropagation",
+    "url": "https://qlabs.sh/research/dust",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Dust: Pretraining Transformers Without Backpropagation",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49961890",
+    "title": "Sales of sub-€25,000 electric car models set to rise sevenfold",
+    "url": "https://www.transportenvironment.org/articles/wave-of-affordable-electric-cars-is-boosting-consumers-choice-sales-of-sub-eur25-000-models-set-to-rise-sevenfold",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Sales of sub-€25,000 electric car models set to rise sevenfold",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49949152",
+    "title": "Apple's \"Clean Design\" Is Stupidity When It Comes to Hiding Fire Extinguishers",
+    "url": "https://www.gadgetreview.com/apples-clean-design-is-stupidity-when-it-comes-to-hiding-fire-extinguishers",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Apple's \"Clean Design\" Is Stupidity When It Comes to Hiding Fire Extinguishers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49957117",
+    "title": "Homa: The end of TCP for AI clusters [video]",
+    "url": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Homa: The end of TCP for AI clusters [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49953777",
+    "title": "The evolution of effective altruism",
+    "url": "https://www.economist.com/international/2026/10/01/how-effective-altruism-conquered-the-world",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The evolution of effective altruism",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49951139",
+    "title": "UK Government Body Kept Files on People Criticizing Prevent Program",
+    "url": "https://reclaimthenet.org/uk-prevent-unit-tracked-online-critics",
+    "summary": "生成摘要时出错",
+    "chinese_title": "UK Government Body Kept Files on People Criticizing Prevent Program",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49952148",
+    "title": "Show HN: Nightwatch – a Mac menu-bar app that tells you when tonight is clear",
+    "url": "https://github.com/rsutcliffe/nightwatch",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Nightwatch – a Mac menu-bar app that tells you when tonight is clear",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49951641",
+    "title": "What's the future for pure math research in the age of AI?",
+    "url": "https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What's the future for pure math research in the age of AI?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49964018",
+    "title": "The era of software quality, or the era of ostriches?",
+    "url": "https://blogs.gnome.org/mcatanzaro/2026/10/02/the-era-of-software-quality-or-the-era-of-ostriches/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The era of software quality, or the era of ostriches?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49971523",
+    "title": "Texas city demands $2M for public records on Flock usage",
+    "url": "https://arstechnica.com/tech-policy/2026/10/texas-city-demands-2m-for-public-records-on-flock-usage/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Texas city demands $2M for public records on Flock usage",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49966293",
+    "title": "Our approach to EU text provenance rules",
+    "url": "https://openai.com/index/eu-text-provenance/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Our approach to EU text provenance rules",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49969933",
+    "title": "The mental health of young men is declining. Experts warn it could get worse",
+    "url": "https://www.cbc.ca/news/health/the-mental-health-of-young-men-is-declining-experts-warn-it-could-get-worse-9.7361010",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The mental health of young men is declining. Experts warn it could get worse",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49968708",
+    "title": "Greenvolt begins building 600 MW/2.4 GWh BESS in Poland",
+    "url": "https://www.ess-news.com/2026/09/25/greenvolt-begins-building-600-mw-2-4-gwh-bess-in-poland/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Greenvolt begins building 600 MW/2.4 GWh BESS in Poland",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49969375",
+    "title": "After bankruptcy, he was banned from betting sites. Then he discovered Kalshi",
+    "url": "https://www.npr.org/2026/10/02/nx-s1-5981420/kalshi-betting-prediction-markets-gambling-addiction",
+    "summary": "生成摘要时出错",
+    "chinese_title": "After bankruptcy, he was banned from betting sites. Then he discovered Kalshi",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49969369",
+    "title": "AI Companies Are Parasites",
+    "url": "https://www.coryd.dev/posts/2026/ai-companies-are-parasites",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI Companies Are Parasites",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49964248",
+    "title": "Accept 'bad things' in return for benefits of AI, says Sam Altman",
+    "url": "https://www.theguardian.com/technology/2026/oct/05/sam-altman-open-ai-chatgpt-benefits-risks",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Accept 'bad things' in return for benefits of AI, says Sam Altman",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49956035",
+    "title": "Incentives in Academic Research",
+    "url": "https://www.msoos.org/2026/10/incentives-in-academic-research/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Incentives in Academic Research",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49964537",
+    "title": "Spending on AI is becoming almost impossible for businesses to budget",
+    "url": "https://www.wsj.com/tech/personal-tech/ai-token-spending-businesses-431ee94a",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Spending on AI is becoming almost impossible for businesses to budget",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49964265",
+    "title": "Gitframes",
+    "url": "https://github.com/gatewai-dev/gitframes",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Gitframes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49971921",
+    "title": "Example.com Just Launched the Biggest Redesign in Decades",
+    "url": "https://www.debugbear.com/blog/example-dot-com-redesign-history",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Example.com Just Launched the Biggest Redesign in Decades",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49951693",
+    "title": "Using Blu-ray M-Disk as backup of last resort",
+    "url": "https://smyck.net/2026/10/03/holocron-the-backup-of-last-resort/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Using Blu-ray M-Disk as backup of last resort",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49965895",
+    "title": "Florida woman arrested for allegedly making threats in an AI chat",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1004747/florida-woman-arrested-for-allegedly-making-threats-in-an-ai-chat",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Florida woman arrested for allegedly making threats in an AI chat",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49965833",
+    "title": "People are asking ChatGPT to help them decide how to vote in the midterms",
+    "url": "https://www.npr.org/2026/10/05/nx-s1-5977852/ai-chatbots-midterm-election",
+    "summary": "生成摘要时出错",
+    "chinese_title": "People are asking ChatGPT to help them decide how to vote in the midterms",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49956574",
+    "title": "Google Japan shows off conveyor-belt keyboard with keys that move to fingers",
+    "url": "https://www.tomshardware.com/peripherals/keyboards/google-japan-shows-off-wild-conveyor-belt-keyboard-with-keys-that-move-to-your-fingers-3d-printable-gboard-features-four-belts-with-29-keys-each-built-to-make-one-hand-typing-easier",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google Japan shows off conveyor-belt keyboard with keys that move to fingers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49951684",
+    "title": "\"Torturing\" LLMs in a Robot Prison Has Triggered the Dumbest Debate in AI Yet",
+    "url": "https://www.404media.co/someone-torturing-llms-in-a-robot-prison-has-triggered-the-dumbest-debate-in-ai-yet/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "\"Torturing\" LLMs in a Robot Prison Has Triggered the Dumbest Debate in AI Yet",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -416,59 +648,155 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49949990",
-    "title": "Robert X Cringley's Triumph of the Nerds and Nerds 2.0.1 [video]",
-    "url": "https://www.youtube.com/watch?v=toSRmKKiosQ&list=PLAXA1ccaOnGdbStEwcKE56YzlYDYOx2Tx",
+    "id": "49961124",
+    "title": "Hacker News addiction and taking simple mundane breaks in life",
+    "url": "https://smileplease.mataroa.blog/blog/hackernews-addiction-and-taking-simple-mundane-breaks-in-life/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Robert X Cringley's Triumph of the Nerds and Nerds 2.0.1 [video]",
+    "chinese_title": "Hacker News addiction and taking simple mundane breaks in life",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49943974",
-    "title": "French Bond Risk Hits Euro-Crisis Levels [video]",
-    "url": "https://www.youtube.com/watch?v=bam3uxilEJo",
+    "id": "49968964",
+    "title": "Questions for believers in AI consciousness",
+    "url": "https://endsdontjustifythemeans.com/p/6-questions-for-believers-in-ai-consciousness",
     "summary": "生成摘要时出错",
-    "chinese_title": "French Bond Risk Hits Euro-Crisis Levels [video]",
+    "chinese_title": "Questions for believers in AI consciousness",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49940267",
-    "title": "From Civic Tech to DOGE: The Role of Tech Movements in the American Admin State",
-    "url": "https://onlinelibrary.wiley.com/doi/10.1111/padm.70094",
+    "id": "49967579",
+    "title": "DigitalOcean Ends Open Source Credits Program",
+    "url": "https://itsfoss.com/news/digitalocean-open-source-credits-end/",
     "summary": "生成摘要时出错",
-    "chinese_title": "From Civic Tech to DOGE: The Role of Tech Movements in the American Admin State",
+    "chinese_title": "DigitalOcean Ends Open Source Credits Program",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49946482",
-    "title": "Delta WiFi Survival Guide",
-    "url": "https://dialta.adorellc.pro/",
+    "id": "49956148",
+    "title": "Building a RAG pipeline for semantic code search",
+    "url": "https://blog.jetbrains.com/ai/2026/09/building-a-rag-pipeline-for-semantic-code-search-a-developer-diary-and-field-notes/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Delta WiFi Survival Guide",
+    "chinese_title": "Building a RAG pipeline for semantic code search",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49945838",
-    "title": "KDE Plasma 6.8 Now Makes Tiled Windows Fit Together More Nicely",
-    "url": "https://www.phoronix.com/news/KDE-Plasma-6.8-Tiled-Windows",
+    "id": "49965786",
+    "title": "Altman: The world should accept some bad things happening for the benefits of AI",
+    "url": "https://www.politico.com/news/2026/10/04/sam-altman-decoded-interview-ai-01106217",
     "summary": "生成摘要时出错",
-    "chinese_title": "KDE Plasma 6.8 Now Makes Tiled Windows Fit Together More Nicely",
+    "chinese_title": "Altman: The world should accept some bad things happening for the benefits of AI",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49945058",
-    "title": "Show HN: Factorio but with unreliable components",
-    "url": "https://think-twice.me/public/rely/",
+    "id": "49966182",
+    "title": "uBlock Origin Lite is back on Firefox add-ons",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin-lite/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Factorio but with unreliable components",
+    "chinese_title": "uBlock Origin Lite is back on Firefox add-ons",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "49943699",
-    "title": "Swedish travel agency caters specifically to introverts",
-    "url": "https://www.fastcompany.com/91616065/sweden-now-has-a-travel-agency-specifically-for-introverts",
+    "id": "49965042",
+    "title": "Jonathan Haidt: AI Is the 'Neutron Bomb for Education' [video]",
+    "url": "https://www.youtube.com/watch?v=RFTfANuLBF4",
     "summary": "生成摘要时出错",
-    "chinese_title": "Swedish travel agency caters specifically to introverts",
+    "chinese_title": "Jonathan Haidt: AI Is the 'Neutron Bomb for Education' [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49951648",
+    "title": "OpenBSD Developers Reject Uutils Coreutils",
+    "url": "https://news.lavx.hu/article/openbsd-developers-reject-uutils-coreutils-port-over-licensing-and-compatibility-concerns",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenBSD Developers Reject Uutils Coreutils",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49963394",
+    "title": "Show HN: Minigraf – An embedded, bi-temporal graph database in Rust",
+    "url": "https://github.com/project-minigraf/minigraf",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Minigraf – An embedded, bi-temporal graph database in Rust",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49957191",
+    "title": "I asked Claude build a physically accurate O'Neill cylinder you can walk around",
+    "url": "https://island-three.gruberbuilds.workers.dev/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I asked Claude build a physically accurate O'Neill cylinder you can walk around",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49951966",
+    "title": "Protest against housing crisis in Spain",
+    "url": "https://www.theguardian.com/world/2026/oct/03/spain-housing-protest",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Protest against housing crisis in Spain",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49970507",
+    "title": "WSL containers is now generally available",
+    "url": "https://blogs.windows.com/windowsdeveloper/2026/09/29/wsl-containers-now-generally-available/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "WSL containers is now generally available",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49957602",
+    "title": "Iran is going after America's debt it's targeting the $40T America owes",
+    "url": "https://jaymartin.substack.com/p/iran-is-going-after-americas-debt",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Iran is going after America's debt it's targeting the $40T America owes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49954499",
+    "title": "Florida weighs ditching property taxes and sticking Canadians with the bill",
+    "url": "https://www.cbc.ca/news/world/florida-property-taxes-canadian-snowbirds-9.7366814",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Florida weighs ditching property taxes and sticking Canadians with the bill",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49971952",
+    "title": "Worth Building",
+    "url": "https://armstr.ng/writing/worth-building",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Worth Building",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49968947",
+    "title": "A Series of Unfortunate Events for OpenAI Users",
+    "url": "https://insufferable.dev/posts/a-series-of-unfortunate-events-for-openai-users/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A Series of Unfortunate Events for OpenAI Users",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49957496",
+    "title": "Your Right to Privacy Doesn't Disappear When You're in Public",
+    "url": "https://reason.com/2026/09/30/your-right-to-privacy-doesnt-disappear-when-youre-in-public/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Your Right to Privacy Doesn't Disappear When You're in Public",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49956358",
+    "title": "Software Engineering Is Dead. Long Live Product Engineering",
+    "url": "https://newsletter.chainofthought.show/p/software-engineering-is-dead-long",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Software Engineering Is Dead. Long Live Product Engineering",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "49954745",
+    "title": "RuneScape's Position on Gen AI",
+    "url": "https://www.reddit.com/r/2007scape/comments/1wxfyzp/runescapes_position_on_gen_ai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "RuneScape's Position on Gen AI",
     "chinese_summary": "生成摘要时出错"
   }
 ]
