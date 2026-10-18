@@ -1,323 +1,75 @@
 [
   {
-    "id": "50112657",
-    "title": "Tesla Roadster",
-    "url": "https://www.tesla.com/roadster",
-    "summary": "The Tesla Roadster is presented as the world's quickest and most advanced car, designed to redefine the hypercar experience with all-electric performance. It boasts unparalleled acceleration, achieving 0 to 60 mph in a record-setting 1.9 seconds, 0 to 100 mph in 4.2 seconds, and completing a quarter-mile in just 8.8 seconds. Its top speed exceeds 250 mph, driven by an astounding 10,000 Nm of wheel torque.\n\nBeyond its incredible speed, the Roadster offers a class-leading electric range of 620 miles (1,000 km) on a single charge. It features a tri-motor, all-wheel-drive system with torque vectoring for superior handling and performance.\n\nThe design is sleek, aerodynamic, and futuristic, incorporating a removable glass roof that conveniently stows in the trunk. Despite its performance focus, it offers a practical 2+2 seating configuration, making it suitable for four adults. The interior is modern, driver-focused, and spacious. The Tesla Roadster is positioned as the ultimate expression of Tesla's engineering and vision, pushing the boundaries of electric vehicle capabilities. Reservations are currently open.",
-    "chinese_title": "特斯拉 Roadster",
-    "chinese_summary": "特斯拉 Roadster 被誉为全球最快、最先进的汽车，旨在以其全电动性能重新定义超级跑车体验。它拥有无与伦比的加速性能，0-60 英里/小时加速仅需创纪录的 1.9 秒，0-100 英里/小时加速仅需 4.2 秒，四分之一英里加速仅需 8.8 秒。其最高时速超过 250 英里/小时，这得益于惊人的 10,000 牛·米轮上扭矩。\n\n除了惊人的速度，Roadster 单次充电续航里程可达同级领先的 620 英里（1,000 公里）。它配备三电机全轮驱动系统，带有扭矩矢量控制功能，可实现卓越的操控和性能。\n\n其设计时尚、空气动力学且充满未来感，采用可拆卸玻璃车顶，可方便地收纳在后备箱中。尽管注重性能，它仍提供实用的 2+2 座椅配置，可容纳四名成人。内饰现代、以驾驶员为中心且宽敞。特斯拉 Roadster 被定位为特斯拉工程和愿景的终极体现，突破了电动汽车能力的界限。目前已开放预订。"
-  },
-  {
-    "id": "50122800",
-    "title": "Claude reveals ECDSA curve origins",
-    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-    "summary": "Anthropic's AI, Claude, has solved the 25-year-old mystery surrounding the origins of \"seed\" parameters for NIST's widely used ECDSA elliptic curves (P-192, P-224, P-256, P-384, P-521) and several ANSI X9.62 curves. These seeds, previously provided by the NSA without explanation, fueled long-standing concerns about potential backdoors.\n\nClaude discovered that the seeds were not, as rumored, a hash of a humorous phrase. Instead, they were the output of the `lrand48` pseudorandom number generator (PRNG), commonly found in 1990s C libraries, seeded with Unix timestamps from May 1997 to April 1998. Claude identified patterns in the seeds, such as consistent zero top bits (a signature of `lrand48`), and used lattice reduction algorithms to recover the PRNG's internal states and initial timestamps.\n\nThis discovery is not a cryptographic break but rather a significant reassurance. It boosts confidence that the curves lack intentional backdoors, as their parameters were generated innocuously and reproducibly using a standard, clock-seeded PRNG.\n\nAdditionally, Claude identified the origins of base points for P-192 and five ANSI X9.62 example curves, tracing them to the random number generator within Arjen Lenstra's FreeLIP package, initialized with small integers.\n\nWhile most seeds and some base points are now explained, the B-163 binary seed and base points for P-224, P-256, P-384, and P-521 remain unexplained. The $36,864 bounty for solving this mystery will be donated to the Internet Security Research Group.",
-    "chinese_title": "克劳德揭示ECDSA曲线起源",
-    "chinese_summary": "Anthropic的AI模型Claude解开了NIST广泛使用的ECDSA椭圆曲线（P-192、P-224、P-256、P-384、P-521）以及多个ANSI X9.62曲线的“种子”参数来源长达25年的谜团。这些种子参数此前由美国国家安全局（NSA）提供，但未作任何解释，这引发了人们对潜在后门的长期担忧。\n\nClaude发现，这些种子并非如传闻所言，是一个幽默短语的哈希值。相反，它们是`lrand48`伪随机数生成器（PRNG）的输出，这种生成器在1990年代的C语言库中很常见，并以1997年5月至1998年4月间的Unix时间戳作为种子。Claude在这些种子中识别出规律，例如顶部比特位持续为零（这是`lrand48`的特征），并利用格基约化算法恢复了PRNG的内部状态和初始时间戳。\n\n这一发现并非密码学上的突破，而是一次重要的信心提振。它增强了人们对这些曲线不含故意后门的信心，因为它们的参数是使用一个标准的、以时钟为种子的PRNG，以无害且可重现的方式生成的。\n\n此外，Claude还查明了P-192和五个ANSI X9.62示例曲线的基点来源，追溯到Arjen Lenstra的FreeLIP软件包中用小整数初始化的随机数生成器。\n\n尽管大多数种子和部分基点现已得到解释，但B-163二进制种子以及P-224、P-256、P-384和P-521曲线的基点仍未解密。解决这一谜团的36,864美元赏金将捐赠给互联网安全研究小组。"
+    "id": "50133401",
+    "title": "OpenCode Hacked: User credentials leaked",
+    "url": "https://twitter.com/opencode/status/2111516673953935833",
+    "summary": "OpenCode announced a security breach on October 17, 2026, stemming from a large-scale \"distillation attack\" that occurred the previous night. The incident has impacted approximately 1.4% of OpenCode Console users, leading to the leakage of user credentials.\n\nThe company confirmed it has notified all affected users via email this morning. OpenCode states the incident is ongoing, and more details cannot be shared at this time. They are actively working with Anthropic, OpenAI, and Google to remediate the breach.",
+    "chinese_title": "OpenCode 被黑：用户凭据泄露",
+    "chinese_summary": "OpenCode于2026年10月17日宣布发生安全漏洞，源于前一晚发生的一次大规模“蒸馏攻击”。该事件影响了大约1.4%的OpenCode Console用户，导致用户凭证泄露。\n\n该公司确认已于今天上午通过电子邮件通知所有受影响的用户。OpenCode表示该事件仍在进行中，目前无法透露更多详情。他们正与Anthropic、OpenAI和Google积极合作，以修复此次漏洞。"
   },
   {
     "id": "50129045",
     "title": "DeepSeek-v4.1-Flash-1017",
     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-    "summary": "The article refers to \"DeepSeek-v4.1-Flash-1017,\" which is a recent release or update from DeepSeek, specifically version 4.1, potentially optimized for speed (\"Flash\"). This release consists of 11 distinct items or components. It is very current, having been updated approximately 16 hours ago. The number \"932\" is also noted, likely indicating a metric such as downloads, views, or overall popularity associated with this release.",
-    "chinese_title": "DeepSeek-4.1版-闪-1017",
-    "chinese_summary": "这篇文章提到了“DeepSeek-v4.1-Flash-1017”，这是DeepSeek最新发布或更新的一个版本，具体来说是4.1版，可能针对速度进行了优化（“Flash”）。该版本包含11个不同的项目或组件。它非常新，大约在16小时前更新。另外，数字“932”也被提及，这可能表示与该版本相关的下载量、浏览量或整体受欢迎程度等指标。"
-  },
-  {
-    "id": "50121179",
-    "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-    "summary": "MercorResearch's \"Benchmark Map\" reveals that a staggering 90% of US working hours are spent on tasks largely unaddressed by existing AI benchmarks. This significant gap makes it difficult to accurately assess AI models' real-world capabilities and economic impact.\n\nThe study, which mapped 29 economically relevant AI benchmarks against the US Department of Labor's O*NET taxonomy (923 occupations, 18,797 tasks), found limited coverage. Only 208 occupations had tasks represented by at least five benchmark prompts. Benchmark coverage isn't random; it disproportionately focuses on tasks deemed \"AI-exposed,\" occupations with larger wage bills, and tasks rated as \"important.\" For instance, lawyers' tasks are well-covered, but those of similarly AI-exposed legal secretaries or court clerks are neglected, creating blind spots in middle-income knowledge work.\n\nWhile current benchmarks prioritize areas of plausible AI progress, this narrow focus overlooks a vast segment of the economy. The researchers propose using O*NET weighting to average model performance across tasks more equitably, ensuring each task contributes equally to an occupation's overall AI score. Initial tests showed little difference due to insufficient task coverage. Significant challenges remain, including low statistical power for many tasks and the varying quality and difficulty of existing benchmarks. The findings underscore the urgent need for a broader and more diverse range of high-quality benchmarks to truly understand AI's capabilities across the economy.",
-    "chinese_title": "美国90%的工时用于AI基准未充分覆盖的任务。",
-    "chinese_summary": "MercorResearch的“基准地图”显示，美国高达90%的工作时长都花在现有AI基准几乎未涵盖的任务上。这一巨大空白使得准确评估AI模型的实际能力和经济影响变得困难。\n\n这项研究将29个与经济相关的AI基准与美国劳工部O*NET分类法（923个职业，18,797项任务）进行对比，发现覆盖范围有限。仅有208个职业的任务由至少五个基准提示所代表。基准覆盖并非随机，它不成比例地侧重于被视为“易受AI影响”的任务、工资支出较大的职业以及被评为“重要”的任务。例如，律师的任务得到了很好的覆盖，但同样易受AI影响的法律秘书或法庭书记员的任务却被忽视，这在中等收入的知识工作中造成了盲点。\n\n虽然当前基准优先考虑AI可能取得进展的领域，但这种狭隘的关注却忽略了经济中一个庞大的部分。研究人员建议使用O*NET加权来更公平地平均模型在各项任务上的表现，确保每项任务对职业的整体AI分数贡献均等。初步测试显示，由于任务覆盖不足，差异很小。重大挑战依然存在，包括许多任务的统计效力低，以及现有基准的质量和难度各异。这些发现强调了迫切需要更广泛、更多样化的高质量基准，以真正理解AI在整个经济中的能力。"
-  },
-  {
-    "id": "50129121",
-    "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
-    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-    "summary": "DeepSeek v4.1 Flash 1017 is a large language model (LLM) developed by DeepSeek, optimized for high speed and cost-efficiency without compromising on performance. Available through platforms like OpenRouter.ai, this model is designed to be a highly efficient solution for various AI applications.\n\nA key feature of DeepSeek v4.1 Flash 1017 is its impressive 128k context window, enabling it to process and generate longer and more complex sequences of text while maintaining coherence and understanding. This balance of speed, affordability, and a substantial context window makes it a strong contender for tasks requiring quick responses and economical processing. It is suitable for general text generation, summarization, question-answering, and other interactive applications where efficiency and strong performance are critical.",
-    "chinese_title": "DeepSeek：DeepSeek v4.1 Flash 1017",
-    "chinese_summary": "深度求索 v4.1 Flash 1017 是一款由深度求索开发的大语言模型 (LLM)，它针对高速和成本效益进行了优化，同时不影响性能。该模型可通过 OpenRouter.ai 等平台获取，旨在为各种 AI 应用提供高效的解决方案。\n\n深度求索 v4.1 Flash 1017 的一个关键特性是其令人印象深刻的 128k 上下文窗口，使其能够处理和生成更长、更复杂的文本序列，同时保持连贯性和理解力。这种速度、经济性与大上下文窗口的平衡，使其成为需要快速响应和经济处理任务的有力竞争者。它适用于通用文本生成、摘要、问答以及其他交互式应用，在这些应用中，效率和强大性能至关重要。"
-  },
-  {
-    "id": "50111852",
-    "title": "Meta’s new commercial terms will allow the scraping of news sites: experts",
-    "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
-    "summary": "Meta's updated commercial terms, effective October 30, will permit the company to scrape content from websites \"associated with\" business accounts, including nearly all news publishers. Legal experts caution that continued use of Facebook, Instagram, or WhatsApp business accounts implies consent for Meta to crawl these sites and utilize the collected content to train its AI products.\n\nExperts describe this provision as \"remarkable,\" potentially giving Meta access to material that would typically cost millions in licensing. They believe the new terms could enable Meta to develop AI that directly competes with publishers. While Meta states the update consolidates existing language and allows publishers to use robots.txt for blocking, experts argue the terms might supersede such instructions and that \"test credentials\" could bypass paywalls.\n\nCornell Law professor James Grimmelmann emphasizes that publishers must either trust Meta's intentions or stop using its business accounts. The move has been likened to \"tying\" in antitrust law, where Meta leverages platform access for scraping permissions. It also coincides with Meta's \"Meta One\" service, which charges users for posting external links to content Meta will now scrape for free. The legality of AI training under these terms remains subject to ongoing lawsuits. Some publishers, like Stephen Beale of The Steampunk Explorer, are considering shutting down their Meta accounts in response.",
-    "chinese_title": "Meta新商业条款将允许抓取新闻网站：专家称",
-    "chinese_summary": "Meta更新的商业条款将于10月30日生效，将允许该公司抓取与商业账户“关联”的网站内容，这包括几乎所有新闻出版商。法律专家警告称，继续使用Facebook、Instagram或WhatsApp的商业账户，意味着默许Meta抓取这些网站，并利用所收集的内容来训练其AI产品。\n\n专家们将这一条款描述为“非同寻常”，它可能让Meta获取通常需要数百万美元许可费的材料。他们认为新条款可能使Meta开发出直接与出版商竞争的AI。尽管Meta声称此次更新整合了现有语言，并允许出版商使用robots.txt进行屏蔽，但专家们认为这些条款可能凌驾于此类指令之上，并且“测试凭证”可能绕过付费墙。\n\n康奈尔大学法学教授James Grimmelmann强调，出版商要么相信Meta的意图，要么停止使用其商业账户。此举被比作反垄断法中的“捆绑销售”，即Meta利用平台访问权限来获取抓取许可。这恰逢Meta的“Meta One”服务，该服务向用户收取发布外部链接的费用，而这些链接指向的内容Meta现在将免费抓取。根据这些条款进行AI训练的合法性仍然是正在进行的诉讼的主题。一些出版商，如《蒸汽朋克探索者》(The Steampunk Explorer)的Stephen Beale，正在考虑关闭他们的Meta账户以示回应。"
-  },
-  {
-    "id": "50133401",
-    "title": "OpenCode Hacked: User credentials leaked",
-    "url": "https://twitter.com/opencode/status/2111516673953935833",
-    "summary": "OpenCode has reported a security breach, identified as a \"large scale distillation attack,\" which occurred last night and resulted in user credentials being leaked. The incident impacted 1.4% of OpenCode Console users, all of whom were notified via email this morning.\n\nOpenCode stated that the situation is ongoing and they are currently unable to disclose further details. The company is actively working with Anthropic, OpenAI, and Google to remediate the issue. The announcement was made on October 17, 2026.",
-    "chinese_title": "OpenCode 被黑：用户凭据泄露",
-    "chinese_summary": "OpenCode报告了一起安全漏洞，被确认为“大规模蒸馏攻击”，该事件发生于昨晚，导致用户凭证泄露。此次事件影响了1.4%的OpenCode Console用户，所有受影响用户已于今早通过电子邮件收到通知。\n\nOpenCode表示，目前情况仍在持续，暂时无法透露更多细节。该公司正积极与Anthropic、OpenAI和Google合作以修复该问题。此公告于2026年10月17日发布。"
-  },
-  {
-    "id": "50122878",
-    "title": "You could have invented transformers from memory",
-    "url": "https://alexwang.ai/posts/associative-memory/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "你本可以凭记忆发明Transformer。",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50122951",
-    "title": "How the Claude Code team does code review",
-    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
-    "summary": "The Claude Code team reviews an immense volume of code, 90% of which is AI-generated. Their approach redefines code review to minimize human time without increasing reverts or incidents, largely by automating code analysis and preserving human attention for unique challenges.\n\nCode review now primarily finds/fixes issues, acting continuously rather than as a final gate. Most changes are pre-reviewed and fixed by Claude before human involvement. The goal is for most pull requests to merge with at most one human (often the author) while maintaining low error rates.\n\nThe review process is multi-layered:\n1.  **Before the PR:** Claude verifies its own work, running tests, builds, and a subagent reviews the diff.\n2.  **On Every PR:** Automated checks include CI (linting, tests), Claude AI code review (bugs hunted by agents, findings verified), automated security review, and risk-based human approval (0, 1, or 2 people depending on change risk and author's trust). Agent approvals never count as human.\n3.  **Merging:** A merge queue re-runs checks against the latest main branch.\n4.  **After Merge:** Changes ship behind flags to Anthropic employees first, then gradually release to public channels. Fast detection and rollback capabilities are critical for inevitable mistakes.\n\nThe team continuously improves its AI reviewer by converting past incidents and reverts into daily evaluation cases. This iterative process measures comment noise and refines the reviewer's prompts and tools to efficiently catch real bugs and reduce unnecessary feedback.",
-    "chinese_title": "How the Claude Code team does code review",
-    "chinese_summary": "The Claude Code team reviews an immense volume of code, 90% of which is AI-generated. Their approach redefines code review to minimize human time without increasing reverts or incidents, largely by automating code analysis and preserving human attention for unique challenges.\n\nCode review now primarily finds/fixes issues, acting continuously rather than as a final gate. Most changes are pre-reviewed and fixed by Claude before human involvement. The goal is for most pull requests to merge with at most one human (often the author) while maintaining low error rates.\n\nThe review process is multi-layered:\n1.  **Before the PR:** Claude verifies its own work, running tests, builds, and a subagent reviews the diff.\n2.  **On Every PR:** Automated checks include CI (linting, tests), Claude AI code review (bugs hunted by agents, findings verified), automated security review, and risk-based human approval (0, 1, or 2 people depending on change risk and author's trust). Agent approvals never count as human.\n3.  **Merging:** A merge queue re-runs checks against the latest main branch.\n4.  **After Merge:** Changes ship behind flags to Anthropic employees first, then gradually release to public channels. Fast detection and rollback capabilities are critical for inevitable mistakes.\n\nThe team continuously improves its AI reviewer by converting past incidents and reverts into daily evaluation cases. This iterative process measures comment noise and refines the reviewer's prompts and tools to efficiently catch real bugs and reduce unnecessary feedback."
+    "summary": "This article details \"DeepSeek-v4.1-Flash-1017,\" which is an updated version of a DeepSeek AI model or resource. It was updated very recently, just one day ago, and comprises 11 distinct items or components. The entry also includes an unspecified numerical value of 932.",
+    "chinese_title": "深度求索-v4.1-闪-1017",
+    "chinese_summary": "本文详细介绍了“DeepSeek-v4.1-Flash-1017”，它是DeepSeek AI模型或资源的更新版本。该版本于近期（就在一天前）更新，包含11个不同的项目或组件。该条目还包含一个未指定的数值932。"
   },
   {
     "id": "50131256",
     "title": "Solar surpasses nuclear power globally for first time",
     "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
-    "summary": "The World Nuclear Industry Status Report (WNISR) 2026 reveals that solar and wind power are rapidly surpassing nuclear energy globally. In 2025, solar generation for the first time exceeded nuclear output annually, and monthly solar generation outpaced nuclear starting April 2025. Wind power also individually surpassed nuclear monthly from March 2025.\n\nThe report highlights a widening gap: global solar capacity grew by 510 GW (27%) to 2,383 GW in 2025, while wind added 159 GW (14%) to reach 1,291 GW. Conversely, installed nuclear capacity rose by only 1.5 GW to 399.5 GW, with operating capacity slightly declining. Nuclear capacity has remained essentially flat for over 25 years, while renewables have expanded rapidly, further supported by significant grid-scale battery deployment (104 GW/257 GWh in 2025).\n\nThe global nuclear sector's expansion is slow, concentrated mainly in China and Russia. In 2025, nuclear output increased by 1.1% globally (driven by China, declining elsewhere), with its share of global electricity generation falling to a 45-year low of 8.8%. More reactors closed (seven) than started (four) in 2025. New nuclear projects face long construction times, averaging 10.9 years for recent startups, with none completed on schedule.\n\nSmall modular reactors (SMRs) show limited commercial progress despite growing government support. The report questions claims of lower costs, improved safety, and reduced waste, noting their heavy reliance on public funding and uncertain deployment timelines and benefits.",
+    "summary": "生成摘要时出错",
     "chinese_title": "Solar surpasses nuclear power globally for first time",
-    "chinese_summary": "The World Nuclear Industry Status Report (WNISR) 2026 reveals that solar and wind power are rapidly surpassing nuclear energy globally. In 2025, solar generation for the first time exceeded nuclear output annually, and monthly solar generation outpaced nuclear starting April 2025. Wind power also individually surpassed nuclear monthly from March 2025.\n\nThe report highlights a widening gap: global solar capacity grew by 510 GW (27%) to 2,383 GW in 2025, while wind added 159 GW (14%) to reach 1,291 GW. Conversely, installed nuclear capacity rose by only 1.5 GW to 399.5 GW, with operating capacity slightly declining. Nuclear capacity has remained essentially flat for over 25 years, while renewables have expanded rapidly, further supported by significant grid-scale battery deployment (104 GW/257 GWh in 2025).\n\nThe global nuclear sector's expansion is slow, concentrated mainly in China and Russia. In 2025, nuclear output increased by 1.1% globally (driven by China, declining elsewhere), with its share of global electricity generation falling to a 45-year low of 8.8%. More reactors closed (seven) than started (four) in 2025. New nuclear projects face long construction times, averaging 10.9 years for recent startups, with none completed on schedule.\n\nSmall modular reactors (SMRs) show limited commercial progress despite growing government support. The report questions claims of lower costs, improved safety, and reduced waste, noting their heavy reliance on public funding and uncertain deployment timelines and benefits."
-  },
-  {
-    "id": "50117746",
-    "title": "I love software rendering",
-    "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
-    "summary": "The author expresses a strong preference for software rendering in classic DOS games, highlighting the superior experience of playing titles like Quake at 800x600 on a modern fast PC. Unlike the low-resolution software rendering or often blurry hardware-accelerated versions prevalent in the 90s, contemporary machines can push software renderers at resolutions previously unattainable.\n\nSoftware rendering involves the CPU drawing every pixel, with no 3D card directly involved, as seen in Doom, Duke Nukem 3D, and the original Quake. The author appreciates its aesthetic for several reasons: textures appear \"sharp\" and \"crisp\" due to pixel-by-pixel sampling, avoiding the bilinear filtering of early 3D cards that he finds \"soft and blurry.\" He also values the \"gritty\" appearance from 256-color palettes and visible lighting steps, which he believes reflects the games' original design. While not always the better option, it's a strong preference, even for modern Build engine games like Ion Fury.\n\nThe catch is that software rendering is CPU-intensive. High resolutions demand significant processing power, which modern PCs can now provide, allowing games like Quake to run at a locked 60fps. However, the most demanding titles, like Shadow Warrior at 1600x1200, can still challenge even fast quad-core Xeons. The author emphasizes running these *original DOS versions on real hardware* for authenticity, acknowledging the complexities this introduces, such as the need for compatible sound cards. Recommended games include Quake, Duke Nukem 3D, Blood, and Screamer.",
-    "chinese_title": "I love software rendering",
-    "chinese_summary": "The author expresses a strong preference for software rendering in classic DOS games, highlighting the superior experience of playing titles like Quake at 800x600 on a modern fast PC. Unlike the low-resolution software rendering or often blurry hardware-accelerated versions prevalent in the 90s, contemporary machines can push software renderers at resolutions previously unattainable.\n\nSoftware rendering involves the CPU drawing every pixel, with no 3D card directly involved, as seen in Doom, Duke Nukem 3D, and the original Quake. The author appreciates its aesthetic for several reasons: textures appear \"sharp\" and \"crisp\" due to pixel-by-pixel sampling, avoiding the bilinear filtering of early 3D cards that he finds \"soft and blurry.\" He also values the \"gritty\" appearance from 256-color palettes and visible lighting steps, which he believes reflects the games' original design. While not always the better option, it's a strong preference, even for modern Build engine games like Ion Fury.\n\nThe catch is that software rendering is CPU-intensive. High resolutions demand significant processing power, which modern PCs can now provide, allowing games like Quake to run at a locked 60fps. However, the most demanding titles, like Shadow Warrior at 1600x1200, can still challenge even fast quad-core Xeons. The author emphasizes running these *original DOS versions on real hardware* for authenticity, acknowledging the complexities this introduces, such as the need for compatible sound cards. Recommended games include Quake, Duke Nukem 3D, Blood, and Screamer."
-  },
-  {
-    "id": "50122431",
-    "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
-    "url": "https://github.com/cobanov/PS5LM",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Llama.cpp 在越狱PS5上：原生运行任何GGUF模型",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50118320",
-    "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
-    "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+    "id": "50132193",
+    "title": "Pele – Mermaid diagrams as themeable SVG",
+    "url": "https://pele.run/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+    "chinese_title": "佩莱：可主题化的 SVG Mermaid 图",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50127274",
-    "title": "Butlerian Jihad",
-    "url": "https://dune.fandom.com/wiki/Butlerian_Jihad",
-    "summary": "The Butlerian Jihad was a pivotal, galaxy-wide holy war in the history of Frank Herbert's *Dune* universe, occurring approximately 10,000 years before the events of the main novels. It was a violent human revolt against \"thinking machines,\" specifically artificial intelligence, computers, and sentient robots, which had come to dominate and enslave humanity.\n\nThe war's central tenet, which became a foundational law for millennia, was \"Thou shalt not make a machine in the likeness of a human mind.\" This commandment led to the absolute prohibition of all forms of advanced AI and sophisticated computing devices, shaping the technological and social development of the future empire.\n\nThe Jihad forced humanity to develop alternatives to banned technologies. This spurred the evolution of specialized human faculties and organizations, such as the Mentats (human computers), the Bene Gesserit (who cultivated advanced mental and physical abilities), and the Spacing Guild Navigators (who used prescience to guide starships without computers). While technologically limiting in some ways, the Butlerian Jihad ultimately pushed humanity to cultivate its own potential, emphasizing the development of the human mind and body over reliance on machines, thus defining the unique, human-centric nature of the *Dune* universe.",
-    "chinese_title": "Butlerian Jihad",
-    "chinese_summary": "The Butlerian Jihad was a pivotal, galaxy-wide holy war in the history of Frank Herbert's *Dune* universe, occurring approximately 10,000 years before the events of the main novels. It was a violent human revolt against \"thinking machines,\" specifically artificial intelligence, computers, and sentient robots, which had come to dominate and enslave humanity.\n\nThe war's central tenet, which became a foundational law for millennia, was \"Thou shalt not make a machine in the likeness of a human mind.\" This commandment led to the absolute prohibition of all forms of advanced AI and sophisticated computing devices, shaping the technological and social development of the future empire.\n\nThe Jihad forced humanity to develop alternatives to banned technologies. This spurred the evolution of specialized human faculties and organizations, such as the Mentats (human computers), the Bene Gesserit (who cultivated advanced mental and physical abilities), and the Spacing Guild Navigators (who used prescience to guide starships without computers). While technologically limiting in some ways, the Butlerian Jihad ultimately pushed humanity to cultivate its own potential, emphasizing the development of the human mind and body over reliance on machines, thus defining the unique, human-centric nature of the *Dune* universe."
-  },
-  {
-    "id": "50118981",
-    "title": "Waymo in Toronto",
-    "url": "https://waymo.com/blog/2026/10/waymo-in-toronto/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Waymo in Toronto",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50120224",
-    "title": "JPEG XL vs. AVIF for web use-cases",
-    "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "JPEG XL vs. AVIF for web use-cases",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50122112",
-    "title": "Anthropic assigned highest junk credit rating in June",
-    "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Anthropic assigned highest junk credit rating in June",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50122034",
-    "title": "eBay Restricts Listings of Radio Equipment, but Exempts Ham-Band-Only Gear",
-    "url": "https://www.arrl.org/arrlletterissue?issue=2026-10-15#eBay-Restricts-Listings-of-Radio-Equipment_-But-Exempts-Ham-Band-Only-Gear",
-    "summary": "生成摘要时出错",
-    "chinese_title": "eBay Restricts Listings of Radio Equipment, but Exempts Ham-Band-Only Gear",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50112739",
-    "title": "Any window from your Mac, on your iPhone and iPad",
-    "url": "https://github.com/Saffsanity/sill",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Any window from your Mac, on your iPhone and iPad",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50118688",
-    "title": "Show HN: Gemini 4 Argon plays StarCraft",
-    "url": "https://starskirmish.com/bench/v0-2/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Gemini 4 Argon plays StarCraft",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50129947",
-    "title": "MapQuest will now show you where Flock cameras are in your neighborhood",
-    "url": "https://www.engadget.com/2288729/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "MapQuest will now show you where Flock cameras are in your neighborhood",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50124251",
-    "title": "I never authorized an integration that scans my secrets",
-    "url": "https://github.com/home-assistant/home-assistant.io/issues/49314",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I never authorized an integration that scans my secrets",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50112330",
-    "title": "RPKI now protects 70% of internet routes",
-    "url": "https://ipinfo.io/blog/rpki-protects-70-internet-routes",
-    "summary": "生成摘要时出错",
-    "chinese_title": "RPKI now protects 70% of internet routes",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50127979",
-    "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
-    "url": "https://llmspeed.dev/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50131213",
-    "title": "Making chicken transparent using Dorito dust",
-    "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Making chicken transparent using Dorito dust",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50120101",
-    "title": "US Rep Announces Congressional Legislation to Protect Video Game Ownership",
-    "url": "https://ritchietorres.house.gov/posts/rep-torres-announces-power-to-the-players-act-legislation-to-ensure-gamers-own-their-games",
-    "summary": "生成摘要时出错",
-    "chinese_title": "US Rep Announces Congressional Legislation to Protect Video Game Ownership",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50114342",
-    "title": "The Folders Programming Language",
-    "url": "https://danieltemkin.com/esolangs/folders",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Folders Programming Language",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50119991",
-    "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-    "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50123580",
-    "title": "FLUX 3 Image Klein",
-    "url": "https://bfl.ai/blog/flux-3-image-klein",
-    "summary": "生成摘要时出错",
-    "chinese_title": "FLUX 3 Image Klein",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50120664",
-    "title": "Desire to Move Permanently to U.S. at New Low",
-    "url": "https://news.gallup.com/poll/708614/desire-migrate-drops-new-low.aspx",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Desire to Move Permanently to U.S. at New Low",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50120664",
-    "title": "Desire to Move Permanently to U.S. at New Low",
-    "url": "https://news.gallup.com/poll/708614/desire-migrate-drops-new-low.aspx",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Desire to Move Permanently to U.S. at New Low",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50118977",
-    "title": "Big Fish: Exploiting a 37-Year-Old Kernel Bug in OpenBSD",
-    "url": "https://calif.io/research/big-fish",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Big Fish: Exploiting a 37-Year-Old Kernel Bug in OpenBSD",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50121004",
-    "title": "/dev/null: social network for developers",
-    "url": "https://dev-null.sh",
-    "summary": "生成摘要时出错",
-    "chinese_title": "/dev/null: social network for developers",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50136881",
+    "title": "Zuckerberg's Meta Takes Down No Kings Instagram During Protest Day",
+    "url": "https://meidasnews.com/news/zuckerbergs-meta-takes-down-no-kings-instagram-during-massive-protest-day",
+    "summary": "Zuckerberg's Meta took down the \"No Kings\" Instagram account on Saturday, June 1st, 2024, a day marked by significant protests across the United States. The account, which had over 100,000 followers, had been actively posting protest content and live streams throughout the day, particularly from events in Philadelphia and New York City.\n\nThe account owners, \"No Kings\" founders and protest organizers Luke and Joe, reported receiving no prior warning or explanation from Instagram before the takedown. Attempts to log in resulted in a message stating the account was disabled for violating community guidelines, with an option to appeal. They expressed frustration, noting their reliance on the platform for organizing and documenting protest activities, especially given the scale of the day's events.\n\nThe article highlights the broader context of Meta's history of deactivating accounts associated with activist movements, especially during periods of civil unrest. This incident raises concerns among activists about censorship and the ability of platforms to stifle dissent, particularly when alternative communication channels are less effective for reaching a wide audience. The \"No Kings\" account was a significant hub for information sharing among protesters, making its removal particularly impactful on a major protest day.",
+    "chinese_title": "扎克伯格的Meta在抗议日下架了“No Kings”Instagram账号。",
+    "chinese_summary": "扎克伯格的Meta公司于2024年6月1日星期六封禁了“No Kings”的Instagram账号，当天美国各地爆发了大规模抗议活动。该账号拥有超过10万粉丝，当天一直在积极发布抗议内容和直播，特别是来自费城和纽约市的活动。\n\n该账号所有者，“No Kings”的创始人兼抗议活动组织者卢克（Luke）和乔（Joe）报告称，在账号被封禁前，他们没有收到Instagram的任何事先警告或解释。他们尝试登录时，收到了账号因违反社区准则而被禁用的消息，并附带了申诉选项。他们对此表示沮丧，指出他们依赖该平台组织和记录抗议活动，尤其考虑到当天事件的规模。\n\n文章强调了Meta在公民动荡时期，封禁与激进主义运动相关账号的更广泛历史背景。这一事件引发了活动人士对审查制度以及平台压制异议能力的担忧，尤其是在其他沟通渠道无法有效触达广大受众的情况下。“No Kings”账号是抗议者之间信息分享的重要枢纽，因此在一次大规模抗议活动当天将其移除，影响尤其显著。"
   },
   {
     "id": "50126253",
     "title": "Bleached corals thrive within days when touching healthy neighbour",
     "url": "https://www.nature.com/articles/d41586-026-03266-x",
-    "summary": "生成摘要时出错",
+    "summary": "A new study offers hope for reversing coral bleaching, demonstrating that bleached coral fragments can rapidly recover their health and color when placed in direct contact with a healthy fragment from the same genetic individual.\n\nCoral bleaching, caused by rising sea temperatures, involves corals expelling their symbiotic algae (Symbiodiniaceae), leading to starvation and death. Scientists Stephen Palumbi and Danny Collins at Stanford University and Hopkins Marine Station observed this accidental recovery and subsequently confirmed it through controlled experiments.\n\nIn their study, published in Science Advances, bleached fragments of *Pocillopora damicornis* touching healthy fragments from the same animal fully recovered within weeks, with symbiont populations doubling much faster than natural recovery rates. High-powered microscopy revealed that the fragments fuse via a tissue bridge, enabling the transfer of the vital algae. Crucially, this \"healing touch\" only worked for corals of identical genetic makeup (a genet); fragments from different species or even different individuals of the same species did not fuse or facilitate recovery.\n\nThis discovery that full and fast recovery is possible within days through contact provides an inspiring new direction for developing scalable solutions to combat widespread coral decline globally.",
     "chinese_title": "Bleached corals thrive within days when touching healthy neighbour",
-    "chinese_summary": "生成摘要时出错"
+    "chinese_summary": "A new study offers hope for reversing coral bleaching, demonstrating that bleached coral fragments can rapidly recover their health and color when placed in direct contact with a healthy fragment from the same genetic individual.\n\nCoral bleaching, caused by rising sea temperatures, involves corals expelling their symbiotic algae (Symbiodiniaceae), leading to starvation and death. Scientists Stephen Palumbi and Danny Collins at Stanford University and Hopkins Marine Station observed this accidental recovery and subsequently confirmed it through controlled experiments.\n\nIn their study, published in Science Advances, bleached fragments of *Pocillopora damicornis* touching healthy fragments from the same animal fully recovered within weeks, with symbiont populations doubling much faster than natural recovery rates. High-powered microscopy revealed that the fragments fuse via a tissue bridge, enabling the transfer of the vital algae. Crucially, this \"healing touch\" only worked for corals of identical genetic makeup (a genet); fragments from different species or even different individuals of the same species did not fuse or facilitate recovery.\n\nThis discovery that full and fast recovery is possible within days through contact provides an inspiring new direction for developing scalable solutions to combat widespread coral decline globally."
   },
   {
-    "id": "50121939",
-    "title": "Designing more efficient quantum circuits with Claude",
-    "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Designing more efficient quantum circuits with Claude",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50129121",
+    "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+    "summary": "DeepSeek v4.1 Flash 1017 is a large language model developed by DeepSeek AI, noted for its high performance and efficiency. Released on October 17, 2023, it is an updated version of the DeepSeek v4.1 Flash series.\n\nKey features and capabilities include:\n*   **High Speed and Low Latency:** Designed for applications requiring rapid responses, making it suitable for interactive chatbots and real-time processing.\n*   **Strong Performance:** Despite its speed, it maintains a high level of language understanding and generation quality.\n*   **Cost-Effectiveness:** Often positioned as a more economical option compared to larger, slower models, without significantly compromising output quality for many tasks.\n*   **Multilingual Support:** Capable of handling and generating text in multiple languages, though its primary training might be in English and Chinese, given DeepSeek's origins.\n*   **Versatile Applications:** Useful for a range of tasks including summarization, question answering, content generation, translation, and code generation.\n\nAs a \"flash\" model, it prioritizes speed and efficiency, making it ideal for scenarios where rapid iteration and responsiveness are crucial, such as API integrations, conversational AI, and other high-throughput applications.",
+    "chinese_title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+    "chinese_summary": "DeepSeek v4.1 Flash 1017 是由 DeepSeek AI 开发的大型语言模型，以其高性能和高效率而闻名。它于2023年10月17日发布，是 DeepSeek v4.1 Flash 系列的更新版本。\n\n主要特点和功能包括：\n*   **高速和低延迟：** 专为需要快速响应的应用而设计，使其适用于交互式聊天机器人和实时处理。\n*   **强大的性能：** 尽管速度快，但它仍保持了高水平的语言理解和生成质量。\n*   **经济高效：** 相对于更大、更慢的模型，它通常被定位为更经济的选择，同时在许多任务中不会显著牺牲输出质量。\n*   **多语言支持：** 能够处理和生成多种语言的文本，考虑到 DeepSeek 的背景，其主要训练语言可能为英语和中文。\n*   **应用广泛：** 可用于一系列任务，包括文本摘要、问答、内容生成、翻译和代码生成。\n\n作为一款“闪电”模型，它优先考虑速度和效率，使其成为需要快速迭代和响应性的场景的理想选择，例如 API 集成、对话式人工智能和其他高吞吐量应用。"
   },
   {
-    "id": "50118828",
-    "title": "What on Earth Is Dekton?",
-    "url": "https://www.worksinprogress.news/p/porcelain",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What on Earth Is Dekton?",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50138531",
+    "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+    "url": "https://api-docs.deepseek.com/guides/search/",
+    "summary": "DeepSeek offers Search and Fetch APIs, enabling agents and RAG applications to access live web content. Both are raw JSON APIs, requiring a bearer token for authentication via `https://api.deepseek.com`.\n\nThe **Search API** (`/v1/tools/search`) utilizes DeepSeek's in-house search engine to find web pages for a given query, returning structured results. Key request fields include `query`, `count` (1-50 results), and `need_content` (to fetch page content). It supports advanced query operators like `site:`, `lang:`, `after:`, and exact phrase matching. Responses provide `title`, `url`, `snippet`, `summary` (for models), `content` (if requested), `rerank_score`, and `authority`.\n\nThe **Fetch API** (`/v1/tools/fetch`) retrieves a single web page by its `url`, returning its content as Markdown text along with the page `title`.\n\n**Billing** for both APIs is $0.75 per 1,000 *successful* requests. A request is only billable if it returns HTTP 200 and yields a non-empty result (Search array or Fetch content). Failed requests or empty results are not charged. DeepSeek API calls via DeepSeek Harness, Claude Code, or Codex are currently free until November 1, 2026.\n\n**Rate limits** are set at 5 requests per second (QPS) for Search and 5 QPS for Fetch, independently, at the account level. Fetch also enforces a per-domain QPS limit. Errors are in an OpenAI-compatible format, with specific HTTP status codes providing details on issues like invalid requests, insufficient balance, or rate limits.",
+    "chinese_title": "DeepSeek 搜索与获取 – 每 1000 次成功请求 0.75 美元",
+    "chinese_summary": "DeepSeek提供搜索和抓取API，使代理和RAG应用能够访问实时网络内容。它们都是原始JSON API，需要通过 `https://api.deepseek.com` 使用bearer token进行认证。\n\n**搜索API** (`/v1/tools/search`) 利用DeepSeek自有的搜索引擎根据给定查询查找网页，并返回结构化结果。关键请求字段包括 `query`、`count`（1-50个结果）和 `need_content`（用于抓取页面内容）。它支持 `site:`、`lang:`、`after:` 等高级查询操作符，以及精确短语匹配。响应提供 `title`、`url`、`snippet`、`summary`（供模型使用）、`content`（如果请求）、`rerank_score` 和 `authority`。\n\n**抓取API** (`/v1/tools/fetch`) 根据其 `url` 检索单个网页，以Markdown文本形式返回其内容以及页面 `title`。\n\n这两种API的**计费**标准是每1000次*成功*请求0.75美元。只有当请求返回HTTP 200状态码并产生非空结果（搜索数组或抓取内容）时，才会被计费。失败的请求或空结果不收费。通过DeepSeek Harness、Claude Code或Codex进行的DeepSeek API调用目前免费，直至2026年11月1日。\n\n**速率限制**设置为，搜索API和抓取API分别在账户层面独立限制为每秒5次请求（QPS）。抓取API还强制执行每个域名的QPS限制。错误采用与OpenAI兼容的格式，并通过特定的HTTP状态码提供关于无效请求、余额不足或速率限制等问题的详细信息。"
   },
   {
-    "id": "50132328",
-    "title": "GLP-1 may slow biological aging",
-    "url": "https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GLP-1 may slow biological aging",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50131440",
-    "title": "US federal budget deficit jumps 12% in one year to nearly $2 Trillion",
-    "url": "https://finance.yahoo.com/economy/policy/article/the-us-federal-budget-deficit-for-2026-just-came-in-its-1992-trillion-191917669.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "US federal budget deficit jumps 12% in one year to nearly $2 Trillion",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50128297",
-    "title": "Israeli settlers attack olive framers & Washington Post journalist in West Bank",
-    "url": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Israeli settlers attack olive framers & Washington Post journalist in West Bank",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50132278",
-    "title": "Amazon uses AI to monitor union risk in UK warehouses",
-    "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Amazon uses AI to monitor union risk in UK warehouses",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50136536",
+    "title": "NY announces game ownership bill requiring ownership rather than licensing",
+    "url": "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends",
+    "summary": "New York Rep. Ritchie Torres has introduced the \"Power To The Players Act,\" legislation aiming to redefine video game purchases as consumer ownership rather than a revocable license. This bill directs the FTC to create regulations combating anti-consumer practices, specifically mandating that games provide an offline mode before their online servers are shut down.\n\nThis initiative responds to widespread player frustration over games becoming unplayable after publishers discontinue server support, exemplified by Ubisoft's *The Crew* and the impending shutdown of *NBA 2K25*. Publishers like Sony have even legally argued that clicking \"purchase\" does not grant durable rights, only a temporary, revocable license.\n\nSimilar legislation has been proposed in Pennsylvania, and the \"Stop Killing Games\" movement advocates for publishers to ensure games remain functional post-discontinuation through offline modes or community servers. The Power To The Players Act is a significant step towards securing consumer rights in the gaming industry, challenging the current model where purchased games can effectively have an expiration date. Its effectiveness will depend on clearly defining ownership and associated rights.",
+    "chinese_title": "纽约宣布游戏所有权法案，要求所有权而非授权",
+    "chinese_summary": "New York Rep. Ritchie Torres has introduced the \"Power To The Players Act,\" legislation aiming to redefine video game purchases as consumer ownership rather than a revocable license. This bill directs the FTC to create regulations combating anti-consumer practices, specifically mandating that games provide an offline mode before their online servers are shut down.\n\nThis initiative responds to widespread player frustration over games becoming unplayable after publishers discontinue server support, exemplified by Ubisoft's *The Crew* and the impending shutdown of *NBA 2K25*. Publishers like Sony have even legally argued that clicking \"purchase\" does not grant durable rights, only a temporary, revocable license.\n\nSimilar legislation has been proposed in Pennsylvania, and the \"Stop Killing Games\" movement advocates for publishers to ensure games remain functional post-discontinuation through offline modes or community servers. The Power To The Players Act is a significant step towards securing consumer rights in the gaming industry, challenging the current model where purchased games can effectively have an expiration date. Its effectiveness will depend on clearly defining ownership and associated rights."
   },
   {
     "id": "50132870",
@@ -328,163 +80,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50118048",
-    "title": "My old job feels distant now",
-    "url": "https://www.pinecoder.dev/blog/2026-10-15/my-old-job-is-distant/",
+    "id": "50127274",
+    "title": "Butlerian Jihad",
+    "url": "https://dune.fandom.com/wiki/Butlerian_Jihad",
     "summary": "生成摘要时出错",
-    "chinese_title": "My old job feels distant now",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50112331",
-    "title": "Thank You, Deno",
-    "url": "https://www.vlt.io/blog/competition-keeps-javascript-moving",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Thank You, Deno",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50118318",
-    "title": "What was a Token Ring network?",
-    "url": "https://dfarq.homeip.net/what-was-a-token-ring-network/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What was a Token Ring network?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50117382",
-    "title": "Artificial intelligence is capitalism's final destination",
-    "url": "https://www.equator.org/articles/arundhati-roy-artificial-intelligence",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Artificial intelligence is capitalism's final destination",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50118267",
-    "title": "RFC8950: Announce IPv4 with an IPv6 next-hop",
-    "url": "https://anuragbhatia.com/post/2026/06/rfc8950-announce-ipv4-with-ipv6-next-hop/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "RFC8950: Announce IPv4 with an IPv6 next-hop",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50132502",
-    "title": "OpenAI discloses four more rogue incidents",
-    "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI discloses four more rogue incidents",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50125545",
-    "title": "Nine-Inch Snails",
-    "url": "https://www.theatlantic.com/science/2026/10/giant-african-snails-florida-invasion/688850/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Nine-Inch Snails",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50132950",
-    "title": "Development statistics for the 7.2 kernel",
-    "url": "https://lwn.net/Articles/1088776/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Development statistics for the 7.2 kernel",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50132193",
-    "title": "Pele – Mermaid diagrams as themeable SVG",
-    "url": "https://pele.run/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Pele – Mermaid diagrams as themeable SVG",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50122736",
-    "title": "C++26: The New Debugging Header",
-    "url": "https://www.sandordargo.com/blog/2026/09/30/cpp26-debugging",
-    "summary": "生成摘要时出错",
-    "chinese_title": "C++26: The New Debugging Header",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50119315",
-    "title": "Rendering pretty sky in Around The World game",
-    "url": "https://frozenfractal.com/blog/2026/10/12/around-the-world-34-a-pretty-sky/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Rendering pretty sky in Around The World game",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50127586",
-    "title": "Source code of the Estonian online voting system",
-    "url": "https://github.com/valimised/ivxv",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Source code of the Estonian online voting system",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50133274",
-    "title": "Israeli settlers attack European diplomatic cars in West Bank beat French mayor",
-    "url": "https://www.lemonde.fr/en/international/article/2026/10/17/israeli-settlers-attack-european-diplomatic-cars-in-west-bank-beat-french-mayor-say-witnesses_6758711_4.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Israeli settlers attack European diplomatic cars in West Bank beat French mayor",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50120010",
-    "title": "Inside Polymarket's paid quote-retweet esports program",
-    "url": "https://www.readergrev.com/p/polymarket-paid-quote-retweet-esports-investigation",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Inside Polymarket's paid quote-retweet esports program",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50130570",
-    "title": "Super Intelligence",
-    "url": "https://www.si.gov/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Super Intelligence",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50118512",
-    "title": "How to Formalize All of Mathematics",
-    "url": "https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How to Formalize All of Mathematics",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50111742",
-    "title": "BeBox is a Haiku application that emulates Be Inc.'s BeBox",
-    "url": "https://github.com/johnrash/bebox",
-    "summary": "生成摘要时出错",
-    "chinese_title": "BeBox is a Haiku application that emulates Be Inc.'s BeBox",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50131189",
-    "title": "Show HN: Esp32sim – Run ESP32 firmware in the browser",
-    "url": "https://github.com/mikroverk/esp32sim",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Esp32sim – Run ESP32 firmware in the browser",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50112887",
-    "title": "Comparing Chromium Development at Google and Igalia",
-    "url": "https://lwn.net/Articles/1094721/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Comparing Chromium Development at Google and Igalia",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50111752",
-    "title": "Is Liquid Metal Killing Our PCs? Scientific Analysis and a 2-Year Test [video]",
-    "url": "https://www.youtube.com/watch?v=eF6bMSjPepM",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Is Liquid Metal Killing Our PCs? Scientific Analysis and a 2-Year Test [video]",
+    "chinese_title": "Butlerian Jihad",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -496,19 +96,91 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50114359",
-    "title": "Last rites for Gentoo's Chromium package",
-    "url": "https://lwn.net/Articles/1097760/",
+    "id": "50131213",
+    "title": "Making chicken transparent using Dorito dust",
+    "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
     "summary": "生成摘要时出错",
-    "chinese_title": "Last rites for Gentoo's Chromium package",
+    "chinese_title": "用多力多滋粉让鸡肉透明",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50121601",
-    "title": "GifCities",
-    "url": "https://gifcities.org/",
+    "id": "50137620",
+    "title": "How the Elizabeth Holmes documentary “You Can See Everything” is deceiving",
+    "url": "https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything",
     "summary": "生成摘要时出错",
-    "chinese_title": "GifCities",
+    "chinese_title": "How the Elizabeth Holmes documentary “You Can See Everything” is deceiving",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50129947",
+    "title": "MapQuest will now show you where Flock cameras are in your neighborhood",
+    "url": "https://www.engadget.com/2288729/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/",
+    "summary": "MapQuest has introduced a new feature that will now show users the locations of Flock Safety cameras in their neighborhoods. These cameras, often installed by private homeowners' associations or local law enforcement, are license plate readers that capture and store vehicle data.\n\nThe integration aims to provide transparency about the widespread use of these surveillance devices. While Flock Safety asserts its cameras are primarily for crime prevention and recovery of stolen vehicles, critics raise significant privacy concerns due to their ability to track the movements of law-abiding citizens.\n\nMapQuest's decision to display these camera locations comes amidst growing public debate about mass surveillance. By making the locations visible, MapQuest empowers users to be aware of where their vehicle's movements might be recorded, offering a tool for those concerned about their privacy in an increasingly monitored environment.",
+    "chinese_title": "MapQuest will now show you where Flock cameras are in your neighborhood",
+    "chinese_summary": "MapQuest has introduced a new feature that will now show users the locations of Flock Safety cameras in their neighborhoods. These cameras, often installed by private homeowners' associations or local law enforcement, are license plate readers that capture and store vehicle data.\n\nThe integration aims to provide transparency about the widespread use of these surveillance devices. While Flock Safety asserts its cameras are primarily for crime prevention and recovery of stolen vehicles, critics raise significant privacy concerns due to their ability to track the movements of law-abiding citizens.\n\nMapQuest's decision to display these camera locations comes amidst growing public debate about mass surveillance. By making the locations visible, MapQuest empowers users to be aware of where their vehicle's movements might be recorded, offering a tool for those concerned about their privacy in an increasingly monitored environment."
+  },
+  {
+    "id": "50127979",
+    "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+    "url": "https://llmspeed.dev/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141076",
+    "title": "RepRapMicron",
+    "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+    "summary": "生成摘要时出错",
+    "chinese_title": "RepRapMicron",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50142866",
+    "title": "Namecheap just seized and disabled all my domains",
+    "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Namecheap just seized and disabled all my domains",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50124251",
+    "title": "I never authorized an integration that scans my secrets",
+    "url": "https://github.com/home-assistant/home-assistant.io/issues/49314",
+    "summary": "生成摘要时出错",
+    "chinese_title": "I never authorized an integration that scans my secrets",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50137950",
+    "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+    "url": "https://sphinx-six-theta.vercel.app/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50127586",
+    "title": "Source code of the Estonian online voting system",
+    "url": "https://github.com/valimised/ivxv",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Source code of the Estonian online voting system",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141909",
+    "title": "macOS 15.8.2 Breaks OpenGL",
+    "url": "https://developer.apple.com/forums/verify-human/verify.html?next=/forums/thread/850550",
+    "summary": "生成摘要时出错",
+    "chinese_title": "macOS 15.8.2 Breaks OpenGL",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50142573",
+    "title": "Someone behind the software",
+    "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Someone behind the software",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -520,147 +192,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50119751",
-    "title": "A story of WiFi secrets, UART lockdowns and a damaged flash memory chip",
-    "url": "https://adepts.of0x.cc/eufy-homestation2-firmware/",
+    "id": "50139692",
+    "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
+    "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
     "summary": "生成摘要时出错",
-    "chinese_title": "A story of WiFi secrets, UART lockdowns and a damaged flash memory chip",
+    "chinese_title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50116255",
-    "title": "Tesla's new Roadster makes a flying debut, hitting 60 MPH in under a second",
-    "url": "https://www.foxbusiness.com/technology/teslas-new-roadster-makes-flying-debut-hitting-60-mph-under-second",
+    "id": "50139067",
+    "title": "Parser Combinators",
+    "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Tesla's new Roadster makes a flying debut, hitting 60 MPH in under a second",
+    "chinese_title": "Parser Combinators",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50115144",
-    "title": "The insider trading you're allowed to do",
-    "url": "https://coached.com/essays/the-insider-trading-youre-allowed-to-do/",
+    "id": "50131440",
+    "title": "US federal budget deficit jumps 12% in one year to nearly $2 Trillion",
+    "url": "https://finance.yahoo.com/economy/policy/article/the-us-federal-budget-deficit-for-2026-just-came-in-its-1992-trillion-191917669.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "The insider trading you're allowed to do",
+    "chinese_title": "US federal budget deficit jumps 12% in one year to nearly $2 Trillion",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50114077",
-    "title": "Tesla makes cars that fly? [video]",
-    "url": "https://www.youtube.com/watch?v=7p5LxFdc-Qg",
+    "id": "50131189",
+    "title": "Show HN: Esp32sim – Run ESP32 firmware in the browser",
+    "url": "https://github.com/mikroverk/esp32sim",
     "summary": "生成摘要时出错",
-    "chinese_title": "Tesla makes cars that fly? [video]",
+    "chinese_title": "Show HN: Esp32sim – Run ESP32 firmware in the browser",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50115354",
-    "title": "The history of development of Norton Commander (2011)",
-    "url": "https://softpanorama.org/OFM/Paradigm/Ch03/norton_commander.shtml",
+    "id": "50132328",
+    "title": "GLP-1 may slow biological aging",
+    "url": "https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging",
     "summary": "生成摘要时出错",
-    "chinese_title": "The history of development of Norton Commander (2011)",
+    "chinese_title": "GLP-1 may slow biological aging",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50112227",
-    "title": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans",
-    "url": "https://www.reuters.com/investigates/special-report/iran-crisis-infrastructure-attacks/",
+    "id": "50132278",
+    "title": "Amazon uses AI to monitor union risk in UK warehouses",
+    "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Iran’s precision strikes picked apart Gulf infrastructure, blunting US war plans",
+    "chinese_title": "Amazon uses AI to monitor union risk in UK warehouses",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50122713",
-    "title": "Meta employees said Lula's accounts were hindered during Brazil election",
-    "url": "https://www.reuters.com/world/americas/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-folha-2026-10-16/",
+    "id": "50133231",
+    "title": "Codex Desktop continuously generates Crashpad pending dumps",
+    "url": "https://github.com/openai/codex/issues/25921",
     "summary": "生成摘要时出错",
-    "chinese_title": "Meta employees said Lula's accounts were hindered during Brazil election",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50118624",
-    "title": "Tesla unveils 'flying' Roadster with SpaceX thrusters [video]",
-    "url": "https://www.youtube.com/watch?v=eqOfmtTJD1A",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tesla unveils 'flying' Roadster with SpaceX thrusters [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50123356",
-    "title": "The Fatal Flaw of 911",
-    "url": "https://www.themarshallproject.org/2026/10/16/911-book-policing-mental-health",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Fatal Flaw of 911",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50112963",
-    "title": "Woman arrested after blocking delivery robot in Center City Philadelphia",
-    "url": "https://6abc.com/post/woman-arrested-blocking-delivery-robot-center-city-philadelphia-confrontation/19941323/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Woman arrested after blocking delivery robot in Center City Philadelphia",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50126241",
-    "title": "Meta confirms smart glasses were recording without being activated",
-    "url": "https://mashable.com/tech/meta-confirms-smart-glasses-recording-without-being-activated",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Meta confirms smart glasses were recording without being activated",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50118876",
-    "title": "Show HN: rStation – A shared research lab for your AI agents",
-    "url": "https://rstation.ai/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: rStation – A shared research lab for your AI agents",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50124642",
-    "title": "Why harnesses matter for energy (and token) efficiency",
-    "url": "https://neuralwatt.com/news/why-harnesses-matter-for-energy-efficiency",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why harnesses matter for energy (and token) efficiency",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50118662",
-    "title": "How to make System 1 LLMs show System 2 competencies?",
-    "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1002/aaai.70113",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How to make System 1 LLMs show System 2 competencies?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50127572",
-    "title": "A skeptic's first contact with Kubernetes (2024)",
-    "url": "https://blog.davidv.dev/posts/first-contact-with-k8s/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A skeptic's first contact with Kubernetes (2024)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50131881",
-    "title": "Ad-tech company was a delivery system for \"mercenary spyware\"",
-    "url": "https://pluralistic.net/2026/10/17/mercenary-spyware/#discover-tech",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ad-tech company was a delivery system for \"mercenary spyware\"",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50122387",
-    "title": "Chicago-Area Cops Helped HSI Spy on Minnesota Anti-ICE Activists",
-    "url": "https://www.wired.com/story/chicago-area-cops-helped-hsi-spy-on-minnesota-anti-ice-activists/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Chicago-Area Cops Helped HSI Spy on Minnesota Anti-ICE Activists",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50122920",
-    "title": "The NIST Elliptic Curves Seeds Bounty Has Been Claimed",
-    "url": "https://words.filippo.io/seeds-solved/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The NIST Elliptic Curves Seeds Bounty Has Been Claimed",
+    "chinese_title": "Codex Desktop continuously generates Crashpad pending dumps",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -672,11 +256,307 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50117952",
-    "title": "Seized server Autistici/Inventati (A/I) in Amsterdam for U.S. authorities",
-    "url": "https://nltimes.nl/2026/10/14/amsterdam-server-seized-request-us-authorities-antifa-allegations",
+    "id": "50140001",
+    "title": "Open MicroManipulator – A sub-micrometer 3D motion control plattform",
+    "url": "https://github.com/0x23/MicroManipulatorStepper",
     "summary": "生成摘要时出错",
-    "chinese_title": "Seized server Autistici/Inventati (A/I) in Amsterdam for U.S. authorities",
+    "chinese_title": "Open MicroManipulator – A sub-micrometer 3D motion control plattform",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50128297",
+    "title": "Israeli settlers attack olive framers & Washington Post journalist in West Bank",
+    "url": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Israeli settlers attack olive framers & Washington Post journalist in West Bank",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141429",
+    "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50133274",
+    "title": "Israeli settlers attack European diplomatic cars in West Bank beat French mayor",
+    "url": "https://www.lemonde.fr/en/international/article/2026/10/17/israeli-settlers-attack-european-diplomatic-cars-in-west-bank-beat-french-mayor-say-witnesses_6758711_4.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Israeli settlers attack European diplomatic cars in West Bank beat French mayor",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50124730",
+    "title": "Teal – A statically-typed dialect of Lua",
+    "url": "https://teal-language.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Teal – A statically-typed dialect of Lua",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50140769",
+    "title": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
+    "url": "https://legendofhyrule.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50127572",
+    "title": "A skeptic's first contact with Kubernetes (2024)",
+    "url": "https://blog.davidv.dev/posts/first-contact-with-k8s/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A skeptic's first contact with Kubernetes (2024)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50132950",
+    "title": "Development statistics for the 7.2 kernel",
+    "url": "https://lwn.net/Articles/1088776/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Development statistics for the 7.2 kernel",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50132502",
+    "title": "OpenAI discloses four more rogue incidents",
+    "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenAI discloses four more rogue incidents",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141657",
+    "title": "Websites are closing their doors to AI agents",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Websites are closing their doors to AI agents",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50138044",
+    "title": "A Mole Infiltrated the Highest Ranks of American Militias (2025)",
+    "url": "https://www.propublica.org/article/ap3-oath-keepers-militia-mole",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A Mole Infiltrated the Highest Ranks of American Militias (2025)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50138087",
+    "title": "Matthew Prince on why Cloudflare offers a free version and always will (2016)",
+    "url": "https://webmasters.stackexchange.com/questions/88659/how-can-cloudflare-offer-a-free-cdn-with-unlimited-bandwidth/88685#88685",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Matthew Prince on why Cloudflare offers a free version and always will (2016)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50125545",
+    "title": "Nine-Inch Snails",
+    "url": "https://www.theatlantic.com/science/2026/10/giant-african-snails-florida-invasion/688850/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nine-Inch Snails",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50134617",
+    "title": "Chrome and Edge are removing XSLT: what breaks and what does not",
+    "url": "https://doctor-seo.net/en/blog/news/chrome-edge-removing-xslt/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Chrome and Edge are removing XSLT: what breaks and what does not",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50144005",
+    "title": "Florida's HOAs and condo associations are making the housing crisis worse",
+    "url": "https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Florida's HOAs and condo associations are making the housing crisis worse",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50135379",
+    "title": "JDK 28",
+    "url": "https://openjdk.org/projects/jdk/28/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "JDK 28",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141681",
+    "title": "Will it be a golden age or a dark age for mathematics (and science)?",
+    "url": "https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Will it be a golden age or a dark age for mathematics (and science)?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141579",
+    "title": "Java sealed classes and exhaustive pattern matching",
+    "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Java sealed classes and exhaustive pattern matching",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141295",
+    "title": "Tesla 'Cannot Guarantee' Roadster Reservation Holders Will Ever Get a Car",
+    "url": "https://www.thedrive.com/news/tesla-cannot-guarantee-roadster-reservation-holders-will-ever-get-a-car",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tesla 'Cannot Guarantee' Roadster Reservation Holders Will Ever Get a Car",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50139873",
+    "title": "How employment is changing at Anthropic",
+    "url": "https://www.anthropic.com/research/employment-at-anthropic",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How employment is changing at Anthropic",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50130570",
+    "title": "Super Intelligence",
+    "url": "https://www.si.gov/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Super Intelligence",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50130228",
+    "title": "Microsoft Teams is a red flag",
+    "url": "https://blog.raed.dev/posts/microsoft-teams-red-flag/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Microsoft Teams is a red flag",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141206",
+    "title": "Theranos-Style Fraud Has Become the Norm",
+    "url": "https://www.theatlantic.com/ideas/2026/10/theranos-trump-nathan-fielder/689001/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Theranos-Style Fraud Has Become the Norm",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50143218",
+    "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
+    "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50130079",
+    "title": "The future of programming (1982)",
+    "url": "https://dl.acm.org/doi/10.1145/358453.358459",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The future of programming (1982)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50128468",
+    "title": "Why Math Dumped OpenAI",
+    "url": "https://raymyers.org/post/math-dumped-openai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Why Math Dumped OpenAI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50142449",
+    "title": "The Intel 8087 chip: floating-point addition and subtraction",
+    "url": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Intel 8087 chip: floating-point addition and subtraction",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50140462",
+    "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+    "url": "https://www.vals.ai/blogs/impossible-refund",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50136198",
+    "title": "Retired Penn professor arrested for blocking Uber Eats robot",
+    "url": "https://www.phillyvoice.com/philly-woman-arrested-uber-eats-robot-protest/?l",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Retired Penn professor arrested for blocking Uber Eats robot",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50130379",
+    "title": "Interactive Linear Programming in the Browser",
+    "url": "https://lpviz.net/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Interactive Linear Programming in the Browser",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50133830",
+    "title": "Microsoft and CMU team up to train early career software engineers",
+    "url": "https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Microsoft and CMU team up to train early career software engineers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50126241",
+    "title": "Meta confirms smart glasses were recording without being activated",
+    "url": "https://mashable.com/tech/meta-confirms-smart-glasses-recording-without-being-activated",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Meta confirms smart glasses were recording without being activated",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50134190",
+    "title": "Israeli settlers attack European diplomats in the West Bank",
+    "url": "https://www.ft.com/content/35a08f82-6830-41fa-83ae-d3765f3970e0",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Israeli settlers attack European diplomats in the West Bank",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141053",
+    "title": "Gen Z Is the First Generation Dumber Than Their Parents",
+    "url": "https://www.vice.com/en/article/gen-z-is-the-first-generation-dumber-than-their-parents-neuroscientist-claims/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Gen Z Is the First Generation Dumber Than Their Parents",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50144066",
+    "title": "Free Pascal compiler now supports dynamic packages",
+    "url": "https://www.getlazarus.org/dynamic/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Free Pascal compiler now supports dynamic packages",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50139998",
+    "title": "The Brain Sandwich",
+    "url": "https://terriblesoftware.org/2026/10/02/the-brain-sandwich/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Brain Sandwich",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50137820",
+    "title": "Show HN: 500 clocks in one 6.3 MB HTML file by Opus 5.5",
+    "url": "https://tkgally.github.io/500-clocks/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: 500 clocks in one 6.3 MB HTML file by Opus 5.5",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50143536",
+    "title": "PalmOS Lemmings",
+    "url": "https://github.com/ardiri/palmos-lemmings",
+    "summary": "生成摘要时出错",
+    "chinese_title": "PalmOS Lemmings",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -688,27 +568,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50122371",
-    "title": "Musk approached Trump to slow down Starlink in Ukraine",
-    "url": "https://www.telegraph.co.uk/world-news/2026/10/16/musk-approached-trump-slow-down-starlink-help-ukraine/",
+    "id": "50131881",
+    "title": "Ad-tech company was a delivery system for \"mercenary spyware\"",
+    "url": "https://pluralistic.net/2026/10/17/mercenary-spyware/#discover-tech",
     "summary": "生成摘要时出错",
-    "chinese_title": "Musk approached Trump to slow down Starlink in Ukraine",
+    "chinese_title": "Ad-tech company was a delivery system for \"mercenary spyware\"",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50117504",
-    "title": "Bark: The Toll-Free BBS for 90s Teens",
-    "url": "https://blog.bityard.net/articles/2026/October/bark-the-toll-free-bbs-for-90s-teens",
+    "id": "50124642",
+    "title": "Why harnesses matter for energy (and token) efficiency",
+    "url": "https://neuralwatt.com/news/why-harnesses-matter-for-energy-efficiency",
     "summary": "生成摘要时出错",
-    "chinese_title": "Bark: The Toll-Free BBS for 90s Teens",
+    "chinese_title": "Why harnesses matter for energy (and token) efficiency",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50124215",
-    "title": "Gnome OS Preview",
-    "url": "https://lwn.net/Articles/1101057/",
+    "id": "50138462",
+    "title": "A Princeton PhD applied to 2,300 jobs and still can't get one",
+    "url": "https://www.wsj.com/lifestyle/careers/labor-market-freeze-phd-graduate-f8e17d7c",
     "summary": "生成摘要时出错",
-    "chinese_title": "Gnome OS Preview",
+    "chinese_title": "A Princeton PhD applied to 2,300 jobs and still can't get one",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50126384",
+    "title": "Show HN: Things to Do API",
+    "url": "https://thingstodoapi.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Things to Do API",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50134211",
+    "title": "The math that OpenAI keeps for itself",
+    "url": "https://newsletter.danielpaleka.com/p/the-math-that-openai-keeps-for-itself",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The math that OpenAI keeps for itself",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50133736",
+    "title": "Pattern matching beats narrative reasoning",
+    "url": "https://blog.scottstevenson.net/p/pattern-matching-beats-narrative",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Pattern matching beats narrative reasoning",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50143132",
+    "title": "Mitos editor is a fork of Helix",
+    "url": "https://mitos.computer/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Mitos editor is a fork of Helix",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -720,35 +632,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50117451",
-    "title": "Qualcomm Legally Proves Arm Breached Its License, Wins $2",
-    "url": "https://www.techpowerup.com/353776/qualcomm-legally-proves-arm-breached-its-license-wins-usd-2",
+    "id": "50132911",
+    "title": "Tsc-ts: TypeScript written in TypeScript",
+    "url": "https://github.com/vercel-labs/tsc-ts",
     "summary": "生成摘要时出错",
-    "chinese_title": "Qualcomm Legally Proves Arm Breached Its License, Wins $2",
+    "chinese_title": "Tsc-ts: TypeScript written in TypeScript",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50116367",
-    "title": "Japanese people still aren't having sex. And nobody knows why",
-    "url": "https://www.sciencefocus.com/news/japanese-people-sex-inactivity-inexperience",
+    "id": "50136979",
+    "title": "Dogs seem to agree with humans that 'bouba' is round and 'kiki' is spiky",
+    "url": "https://www.sciencealert.com/dogs-seem-to-agree-with-humans-that-bouba-is-round-and-kiki-is-spiky",
     "summary": "生成摘要时出错",
-    "chinese_title": "Japanese people still aren't having sex. And nobody knows why",
+    "chinese_title": "Dogs seem to agree with humans that 'bouba' is round and 'kiki' is spiky",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50116031",
-    "title": "Geoffrey Hinton: 'We're creating alien beings. I'm willing to choose humans'",
-    "url": "https://www.theguardian.com/us-news/2026/oct/13/geoffrey-hinton-trump-ai-tech",
+    "id": "50133747",
+    "title": "When No ID Means No Internet",
+    "url": "https://www.eff.org/deeplinks/2026/10/when-no-id-means-no-internet-age-verification-and-right-access-information",
     "summary": "生成摘要时出错",
-    "chinese_title": "Geoffrey Hinton: 'We're creating alien beings. I'm willing to choose humans'",
+    "chinese_title": "When No ID Means No Internet",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50120272",
-    "title": "Firefox 158 released with JPEG XL support by default",
-    "url": "https://www.firefox.com/en-US/firefox/158.0/releasenotes/",
+    "id": "50144405",
+    "title": "US threatens Europe over Starlink restrictions",
+    "url": "https://www.ft.com/content/d1e28d93-8574-4a46-946a-b261c401d6fa",
     "summary": "生成摘要时出错",
-    "chinese_title": "Firefox 158 released with JPEG XL support by default",
+    "chinese_title": "US threatens Europe over Starlink restrictions",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50144144",
+    "title": "Tiny Brutalism – Thanks to HN it's on Steam",
+    "url": "https://store.steampowered.com/app/5426130/Tiny_Brutalism/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tiny Brutalism – Thanks to HN it's on Steam",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50134608",
+    "title": "TikTok bans Musk documentary account",
+    "url": "https://www.theverge.com/tech/1013453/tiktok-bans-alex-gibneys-musk-documentary",
+    "summary": "生成摘要时出错",
+    "chinese_title": "TikTok bans Musk documentary account",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50124215",
+    "title": "Gnome OS Preview",
+    "url": "https://lwn.net/Articles/1101057/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Gnome OS Preview",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -760,43 +696,107 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50111112",
-    "title": "Call Center Jobs Are Declining, but 14,000 Calls Show Humans Still Outperform AI",
-    "url": "https://boldagents.co/blog/call-center-jobs-declining-14000-calls-humans-outperform-ai",
+    "id": "50136017",
+    "title": "Beyond Tetris: The other games of Alexey Pajitnov [video]",
+    "url": "https://www.youtube.com/watch?v=QH_LPimUJMs",
     "summary": "生成摘要时出错",
-    "chinese_title": "Call Center Jobs Are Declining, but 14,000 Calls Show Humans Still Outperform AI",
+    "chinese_title": "Beyond Tetris: The other games of Alexey Pajitnov [video]",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50121506",
-    "title": "The First Candid",
-    "url": "https://www.newyorker.com/magazine/2026/10/19/the-first-candid",
+    "id": "50132972",
+    "title": "Elon Musk's foundation is opaque, miserly and self-serving",
+    "url": "https://www.economist.com/business/2026/10/13/elon-musks-foundation-is-opaque-miserly-and-self-serving",
     "summary": "生成摘要时出错",
-    "chinese_title": "The First Candid",
+    "chinese_title": "Elon Musk's foundation is opaque, miserly and self-serving",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50119906",
-    "title": "Fruits and Vegetables 50% Less Nutritious Than in the 1960s",
-    "url": "https://www.independent.co.uk/news/uk/home-news/vegetables-nutrition-soil-quality-decline-b3063325.html",
+    "id": "50143755",
+    "title": "Investing in the public benefit",
+    "url": "https://www.anthropic.com/news/public-benefit-fund",
     "summary": "生成摘要时出错",
-    "chinese_title": "Fruits and Vegetables 50% Less Nutritious Than in the 1960s",
+    "chinese_title": "Investing in the public benefit",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50112380",
-    "title": "Tesla Debuts 2026 Roadster",
-    "url": "https://www.nytimes.com/2026/10/15/business/tesla-roadster-2026-ev-sports-car.html",
+    "id": "50138002",
+    "title": "Notes on the Complex Roots of Unity",
+    "url": "https://eli.thegreenplace.net/2026/notes-on-the-complex-roots-of-unity/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Tesla Debuts 2026 Roadster",
+    "chinese_title": "Notes on the Complex Roots of Unity",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50132911",
-    "title": "Tsc-ts: TypeScript written in TypeScript",
-    "url": "https://github.com/vercel-labs/tsc-ts",
+    "id": "50139083",
+    "title": "OpenCode has a security breach last that impacted 1.4% of console users",
+    "url": "https://twitter.com/opencode/status/2111519637049319818",
     "summary": "生成摘要时出错",
-    "chinese_title": "Tsc-ts: TypeScript written in TypeScript",
+    "chinese_title": "OpenCode has a security breach last that impacted 1.4% of console users",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50138156",
+    "title": "The game industry is broken – can we fix it?",
+    "url": "https://knowledge.edge-online.com/p/the-game-industry-is-broken-can-we-fix-it-tim-sweeney-edge-crash",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The game industry is broken – can we fix it?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50124646",
+    "title": "Self-hosted infrastructure with Incus OS",
+    "url": "https://dataswamp.org/~solene/2026-10-15-selfhosting-infrastructure-incus-os.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Self-hosted infrastructure with Incus OS",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50139636",
+    "title": "The Public Pays to Produce Research. Shareholders Collect the Return",
+    "url": "https://sparcopen.org/news/2026/sparc-releases-cost-of-knowledge-accounting-analysis-profitability-report/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Public Pays to Produce Research. Shareholders Collect the Return",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50137784",
+    "title": "OpenPrinter",
+    "url": "https://www.crowdsupply.com/open-tools/openprinter",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenPrinter",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50139935",
+    "title": "Kids are outsmarting social media bans. That's not a problem we need to solve",
+    "url": "https://www.technologyreview.com/2026/10/16/1146834/kids-are-outsmarting-social-media-bans-thats-not-a-problem-we-need-to-solve/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Kids are outsmarting social media bans. That's not a problem we need to solve",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50133512",
+    "title": "800k involved in nationwide protests in France over rising cost of living",
+    "url": "https://www.cbc.ca/news/world/livestory/france-protests-9.7385148",
+    "summary": "生成摘要时出错",
+    "chinese_title": "800k involved in nationwide protests in France over rising cost of living",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50141024",
+    "title": "The Electronic Disturbance Theater and Electronic Civil Disobedience (1998)",
+    "url": "https://www.thing.net/~rdom/ecd/EDTECD.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Electronic Disturbance Theater and Electronic Civil Disobedience (1998)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50144175",
+    "title": "Personal software factories are a waste of time",
+    "url": "https://www.peterp.me/articles/personal-software-factories-are-a-waste-of-time/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Personal software factories are a waste of time",
     "chinese_summary": "生成摘要时出错"
   }
 ]
