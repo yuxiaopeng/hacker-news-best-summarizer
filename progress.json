@@ -3,112 +3,72 @@
     "id": "50163277",
     "title": "DeepInfer: High-performance inference framework for DeepSeek models",
     "url": "https://github.com/deepseek-ai/DeepInfer",
-    "summary": "DeepInfer is an open-source, high-performance inference framework developed by DeepSeek-AI, powering its large-scale production services for DeepSeek models. This release provides offline inference capabilities, offering core features crucial for efficient serving at scale.\n\nIt supports the DeepSeek-V4.1-Flash model and runs on NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs. Key features include optimized kernels (FlashMLA, DeepGEMM), various parallelism techniques (Attention DP/CP, MoE EP), and decoding accelerations like DSpark with confidence-scheduled verification and SWA bounded replay to reduce prefill work. The framework also boasts asynchronous scheduling for CPU-device overlap, batch-invariant inference for consistent results, deterministic sampling, and structured output generation constrained by regex, JSON schema, or EBNF.\n\nFor a complete inference service, external components like a KV cache system, VE/Prefill/Decode disaggregation, and load balancing are required but not included in this release.\n\nPrerequisites for building from source include Linux, GCC >= 13.0, Python 3.12, and platform-specific drivers (CUDA 13 for NVIDIA or CANN 9.2 for Ascend). Users can build by running `./build.sh` and perform offline inference using `python examples/offline_inference.py`.\n\nDeepInfer is licensed under Apache License 2.0 and acknowledges inspiration from vLLM, SGLang, and TensorRT-LLM.",
-    "chinese_title": "DeepInfer：面向 DeepSeek 模型的高性能推理框架",
-    "chinese_summary": "DeepInfer 是一个由 DeepSeek-AI 开发的开源高性能推理框架，为其 DeepSeek 模型的大规模生产服务提供支持。此版本提供了离线推理功能，具备了大规模高效服务所需的关键核心特性。\n\n它支持 DeepSeek-V4.1-Flash 模型，可在 NVIDIA SM100 GPU 和华为昇腾950 NPU 上运行。主要特性包括优化的内核（FlashMLA、DeepGEMM）、多种并行技术（Attention DP/CP、MoE EP），以及像 DSpark 这样的解码加速，它带有置信度调度验证和 SWA 有界重放以减少预填充工作。该框架还支持用于 CPU-设备重叠的异步调度、用于一致结果的批次不变推理、确定性采样以及受正则表达式、JSON schema 或 EBNF 约束的结构化输出生成。\n\n对于一个完整的推理服务，需要外部组件，例如 KV 缓存系统、VE/预填充/解码分离以及负载均衡，但这些不包含在此版本中。\n\n从源代码构建的前置条件包括 Linux、GCC >= 13.0、Python 3.12，以及平台特定的驱动程序（NVIDIA 平台需要 CUDA 13，昇腾平台需要 CANN 9.2）。用户可以通过运行 `./build.sh` 进行构建，并使用 `python examples/offline_inference.py` 执行离线推理。\n\nDeepInfer 采用 Apache 2.0 许可证，并鸣谢 vLLM、SGLang 和 TensorRT-LLM 提供的启发。"
+    "summary": "DeepInfer is an open-source, high-performance inference framework developed by DeepSeek-AI, designed to power large-scale production services for DeepSeek models. It currently supports the DeepSeek-V4.1-Flash model and provides core features essential for scalable serving.\n\nKey features include highly optimized kernels (e.g., FlashMLA, DeepGEMM, DeepEP), advanced parallelism techniques like Attention Data Parallelism (DP) and Mixture-of-Experts (MoE) Expert Parallelism (EP), and DSpark for accelerated decoding via draft tokens and confidence-scheduled verification. It also incorporates Decoder SWA bounded replay to reduce prefill work, asynchronous scheduling for CPU-device overlap, batch-invariant inference for consistent results, deterministic sampling, and structured outputs constrained by regex, JSON, or EBNF grammars.\n\nDeepInfer supports cutting-edge hardware, specifically NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs. While offering robust engine functionality, a complete inference service would require additional components like a KV cache system, VE/Prefill/Decode disaggregation, and load balancing, which are not included in this release.\n\nPrerequisites for building from source include Linux, GCC >= 13.0, Python 3.12, and either CUDA 13 (NVIDIA) or CANN 9.2 (Ascend). The framework provides examples for offline inference and includes performance and evaluation benchmarks. DeepInfer is released under the Apache License 2.0 and acknowledges inspiration from vLLM, SGLang, and TensorRT-LLM.",
+    "chinese_title": "DeepInfer：DeepSeek 模型的高性能推理框架",
+    "chinese_summary": "DeepInfer 是一个由 DeepSeek-AI 开发的开源、高性能推理框架，旨在为 DeepSeek 模型的大规模生产服务提供支持。它目前支持 DeepSeek-V4.1-Flash 模型，并提供可扩展服务所需的核心功能。\n\n核心功能包括高度优化的内核（例如 FlashMLA、DeepGEMM、DeepEP）、先进的并行技术（如注意力数据并行（DP）和专家混合（MoE）专家并行（EP）），以及通过草稿令牌和置信度调度验证加速解码的 DSpark。它还集成了 Decoder SWA 有界重放以减少预填充工作、用于实现 CPU-设备重叠的异步调度、用于确保结果一致性的批次不变推理、确定性采样，以及受正则表达式、JSON 或 EBNF 语法约束的结构化输出。\n\nDeepInfer 支持尖端硬件，特别是 NVIDIA SM100 GPU 和华为昇腾 950 NPU。尽管它提供了强大的引擎功能，但一个完整的推理服务还需要额外的组件，例如 KV 缓存系统、VE/预填充/解码分离以及负载均衡，这些在此版本中不包含。\n\n从源代码构建的先决条件包括 Linux、GCC >= 13.0、Python 3.12，以及 CUDA 13 (NVIDIA) 或 CANN 9.2 (Ascend)。该框架提供了离线推理的示例，并包括性能和评估基准。DeepInfer 采用 Apache 许可证 2.0 发布，并致谢 vLLM、SGLang 和 TensorRT-LLM 提供的启发。"
   },
   {
-    "id": "50159341",
-    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-    "summary": "A new report reveals that WhatsApp's help pages contained hidden instructions for its Large Language Model (LLM) chatbot, instructing it to withhold critical information from users. These instructions, invisible to human users but parsed by AI, were discovered on October 8, 2026, and have since been removed.\n\nTwo sets of orders were particularly concerning:\n1.  **Account Deletion:** If a user couldn't self-delete their account (e.g., lost phone/number), the AI was told *not* to recommend contacting any Data Protection Authority, regulator, or supervisory authority, and *not* to suggest WhatsApp could manually delete accounts. This contradicts WhatsApp's European privacy policy, which states users have the right to request erasure and complain to a data protection commission.\n2.  **Legal Matters:** If a user mentioned a lawyer, lawsuit, or legal action, the AI was instructed *not* to reference, cite, or interpret WhatsApp's terms, privacy policy, or any legal documents, including data protection regulations like GDPR, LGPD, or CCPA, even if the user directly raised them.\n\nWhile a company reasonably wouldn't want its chatbot giving legal advice, the report argues these instructions went beyond caution by keeping factual, publicly available information (like the existence of regulators or specific privacy laws) out of user conversations. WhatsApp confirmed the notes were for its support chatbot. The notes were sent to search engine crawlers but not to AI assistants like OpenAI's. The issue was not found on Facebook or Instagram's help pages.\n\nUsers locked out of accounts are advised that automatic deletion occurs after 120-365 days of inactivity, but they can also send erasure requests or complain to data protection authorities if in the EU or states with similar rights. The hidden notes are no longer live but can be found in Internet Archive copies.",
-    "chinese_title": "WhatsApp的帮助页面隐藏了LLM指令：不要推荐监管机构",
-    "chinese_summary": "一份新报告揭示，WhatsApp的帮助页面曾包含其大型语言模型（LLM）聊天机器人的隐藏指令，指示其向用户隐瞒关键信息。这些指令对人类用户不可见，但可被AI解析，于2026年10月8日被发现，此后已被删除。\n\n其中两组指令尤其令人担忧：\n1.  **账户删除：** 如果用户无法自行删除账户（例如，手机/号码丢失），AI被告知*不要*建议联系任何数据保护机构、监管机构或监督机构，也*不要*暗示WhatsApp可以手动删除账户。这与WhatsApp的欧洲隐私政策相悖，该政策规定用户有权要求删除数据并向数据保护委员会投诉。\n2.  **法律事务：** 如果用户提到律师、诉讼或法律行动，AI被指示*不要*引用、提及或解释WhatsApp的条款、隐私政策或任何法律文件，包括GDPR、LGPD或CCPA等数据保护法规，即便用户直接提及。\n\n尽管公司不希望其聊天机器人提供法律建议是合理的，但报告认为这些指令超出了谨慎范畴，通过将事实性的、公开可用的信息（如监管机构的存在或特定的隐私法）排除在用户对话之外。WhatsApp证实这些笔记是为其支持聊天机器人准备的。这些笔记被发送给了搜索引擎爬虫，但没有发送给OpenAI等AI助手。在Facebook或Instagram的帮助页面上未发现此问题。\n\n无法登录账户的用户被告知，120-365天不活跃后会自动删除账户，但如果他们位于欧盟或拥有类似权利的州，也可以发送删除请求或向数据保护机构投诉。这些隐藏笔记已不再在线，但可以在互联网档案馆的副本中找到。"
-  },
-  {
-    "id": "50150089",
-    "title": "I built a drone with only one motor [video]",
-    "url": "https://www.youtube.com/watch?v=Ndftcft6XhU",
-    "summary": "生成摘要时出错",
-    "chinese_title": "我造了一架单电机无人机 [视频]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50150750",
-    "title": "Ousted Savannah police officer gave ICE agent husband access to Flock system",
-    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
-    "summary": "A Savannah police officer, Amber Harpe, was fired for giving her Immigration and Customs Enforcement (ICE) agent husband, Tyler Harpe, access to the police department’s Flock license plate reader system. Tyler, who did not have his own federal Flock account, used Amber's credentials to conduct nearly 1,000 searches between January and July 2026 across six states, primarily targeting Hispanic individuals with active arrest warrants for ICE investigations.\n\nThe misuse was discovered through an internal audit flagging unusual activity on Amber's account. Amber admitted sharing her login, acknowledging it violated department policy, but argued she was assisting another law enforcement agency with no malicious intent or personal gain. Tyler corroborated that all searches were for legitimate federal law enforcement purposes.\n\nWhile an interim major recommended an eight-hour suspension, citing no personal gain and Amber's clean record, higher leadership, including Assistant Police Chief Robert Gavin, pushed for termination. They reasoned that intentionally sharing credentials undermined accountability, audit integrity, and system security, and exposed the department to risks by allowing unauthorized use of SPD resources for immigration enforcement, which SPD doesn't participate in.\n\nAmber's appeal arguing she was helping another agency and had no ill intent was denied. She subsequently withdrew her request for a Civil Service Board hearing. Her case was part of a wider SPD investigation into Flock misuse, though her husband's searches were for law enforcement, unlike other employees accused of personal misuse.",
-    "chinese_title": "遭解职的萨凡纳警官向其ICE探员丈夫提供了Flock系统的访问权限。",
-    "chinese_summary": "萨凡纳（Savannah）市警官安伯·哈普（Amber Harpe）因允许其海关与边境执法局（ICE）探员丈夫泰勒·哈普（Tyler Harpe）访问警察局的Flock车牌识别系统而被解雇。泰勒没有自己的联邦Flock账户，他使用安伯的登录凭据在2026年1月至7月间进行了近1000次搜索，涉及六个州，主要目标是针对那些因ICE调查而有有效逮捕令的西班牙裔个人。\n\n此次滥用行为是通过内部审计发现的，该审计标记了安伯账户上的异常活动。安伯承认分享了她的登录信息，并承认这违反了部门政策，但她辩称自己是在协助另一个执法机构，没有恶意意图或个人私利。泰勒证实，所有搜索都是出于合法的联邦执法目的。\n\n尽管一名临时少校建议处以八小时停职，理由是安伯没有个人私利且记录清白，但包括助理警察局长罗伯特·加文（Robert Gavin）在内的更高层领导则力主将其解雇。他们认为，故意分享登录凭据破坏了问责制、审计完整性和系统安全性，并允许未经授权地将SPD资源用于移民执法（SPD不参与此类执法），从而使该部门面临风险。\n\n安伯提出的她是在帮助另一个机构且没有恶意意图的上诉被驳回。她随后撤回了向公务员委员会（Civil Service Board）申请听证的请求。她的案件是SPD对Flock系统滥用进行更广泛调查的一部分，尽管她丈夫的搜索是为了执法目的，这与其他被指控为个人私用目的的员工有所不同。"
-  },
-  {
-    "id": "50149392",
-    "title": "Linux 7.3",
-    "url": "https://lwn.net/Articles/1101143/",
-    "summary": "Linus Torvalds has released the Linux 7.3 kernel on schedule, noting that the 7.4 merge window will open soon, though his immediate merging schedule will be unusual due to his annual family vacation.\n\nThis release is a record-breaker, incorporating 18,765 non-merge commits from 3,021 developers, with 807 being first-time kernel contributors.\n\nSignificant changes in Linux 7.3 include notable `binfmt_misc` extensions, group-scheduling work aimed at enhancing performance on large systems, and the introduction of the `failfs` filesystem (which fails all operations). Other key additions are the `fchroot()` system call, global per-CPU data for BPF programs, the completion of the `sched_ext` subscheduler feature, and working-set tracking for virtual machines. The `ntfs3` filesystem gains alternative data-stream support, and there are extensive improvements to the SMB server, among many other enhancements. More details can be found in the LWN merge-window summaries and the KernelNewbies 7.3 page.",
-    "chinese_title": "Linux 7.3",
-    "chinese_summary": "林纳斯·托瓦兹已如期发布Linux 7.3内核，并指出7.4合并窗口即将开放，尽管由于他年度家庭度假，他当前的合并日程将不同寻常。\n\n此次发布创下了纪录，包含了来自3,021名开发者的18,765个非合并提交，其中有807名是首次贡献内核的开发者。\n\nLinux 7.3 中的重大变化包括显著的`binfmt_misc`扩展、旨在提升大型系统性能的组调度工作，以及引入了`failfs`文件系统（该文件系统所有操作都会失败）。其他重要新增功能包括`fchroot()`系统调用、BPF程序的全局每CPU数据、`sched_ext`子调度器功能的完成，以及虚拟机的工作集跟踪。`ntfs3`文件系统获得了备用数据流支持，SMB服务器也得到了广泛改进，以及许多其他增强功能。更多详情可在LWN合并窗口摘要和KernelNewbies 7.3页面中找到。"
-  },
-  {
-    "id": "50150434",
-    "title": "Timestral: Mistral's time-series foundation models",
-    "url": "https://mistral.ai/news/timestral/",
-    "summary": "Mistral has launched Timestral, its first family of time-series foundation models, designed for state-of-the-art probabilistic, multivariate forecasting. The largest model, at just 209M parameters, outperforms previous models on key benchmarks like GIFT-Eval, TIME, and fev-bench, delivering superior accuracy with significantly fewer parameters.\n\nTimestral is available in four sizes (5M to 209M), balancing performance and efficiency, and notably runs efficiently on standard CPUs. It excels in zero-shot forecasting across diverse enterprise domains, from industrial sensor telemetry to finance, informing decisions in capacity planning, energy, and supply chains. Key features include support for past-only and known-future covariates, probabilistic outputs (21 quantiles), and direct handling of categorical inputs.\n\nTechnical innovations powering Timestral include Decoupled Horizon Forecasting (DHF), Covariate-aware attention, extensive synthetic data pre-training, and a two-stage training approach enabling long-context learning (32,768 time steps).\n\nTimestral integrates into existing monitoring pipelines and can enhance multi-modal agentic workflows, such as anomaly detection and root cause analysis. For domain adaptation, models can be fine-tuned on proprietary data via Mistral Forge, supporting architectural extensions and offering deployment flexibility (on-prem, VPC, air-gapped). A GitHub repository is available for immediate use.",
-    "chinese_title": "时序米斯特拉：米斯特拉的时间序列基础模型",
-    "chinese_summary": "Mistral推出了Timestral，这是其首个时间序列基础模型系列，旨在实现最先进的概率性、多元预测。其中最大的模型仅有2.09亿个参数，却在GIFT-Eval、TIME和fev-bench等关键基准测试中超越了现有模型，以显著更少的参数提供了卓越的准确性。\n\nTimestral提供四种规模（5M至209M），平衡了性能和效率，值得注意的是，它能在标准CPU上高效运行。它在从工业传感器遥测到金融的各种企业领域中，在零样本预测方面表现出色，为产能规划、能源和供应链中的决策提供信息。其主要特点包括支持仅限过去和已知未来的协变量、概率性输出（21个分位数）以及直接处理分类输入。\n\n支撑Timestral的技术创新包括解耦预测视界（DHF）、协变量感知注意力、大规模合成数据预训练，以及实现长上下文学习（32,768个时间步）的两阶段训练方法。\n\nTimestral可集成到现有的监控管道中，并能增强多模态智能体工作流，例如异常检测和根本原因分析。对于领域适应，模型可以通过Mistral Forge在专有数据上进行微调，支持架构扩展，并提供部署灵活性（本地部署、VPC、隔离网络）。现已提供GitHub仓库供即时使用。"
-  },
-  {
-    "id": "50152307",
-    "title": "Wine ported to OpenBSD",
-    "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
-    "summary": "Thomas Frohwein has announced a significant development: a Wine port for OpenBSD, a collaborative effort spearheaded by Andrii and Fabien. The crucial breakthrough involved Andrii's software solution to the challenging `%gs/gsbase` issue, where the `%gs` prefix is emulated on commands due to the inability to set `gsbase` directly.\n\nThis port comes amidst a growing interest in Wine, particularly as much Windows software has shifted to 64-bit. Developers have successfully tested numerous 64-bit Windows applications, including demanding games like The Witcher 3 Remaster, with positive results evident in provided screenshots and livestreams.\n\nA key limitation is the absence of WoW64 support, meaning 32-bit Windows software is currently incompatible. Users can identify 32-bit executables using `file(1)`. Although built-in tests are temporarily disabled due to complexity and hanging issues, these problems haven't been observed in real-world application testing, and work to enable them is ongoing.\n\nFor testing, the 64-bit version of Notepad++ is suggested. Users are cautioned that Wine is \"run-at-your-own-risk\" software and advised to set up a separate, non-privileged user for testing until potential sandboxing with `unveil(2)` can be implemented. Contributions from brynet@, bentley@, pertho, and vl_ms were also acknowledged.",
-    "chinese_title": "Wine 移植到 OpenBSD",
-    "chinese_summary": "Thomas Frohwein has announced a significant development: a Wine port for OpenBSD, a collaborative effort spearheaded by Andrii and Fabien. The crucial breakthrough involved Andrii's software solution to the challenging `%gs/gsbase` issue, where the `%gs` prefix is emulated on commands due to the inability to set `gsbase` directly.\n\nThis port comes amidst a growing interest in Wine, particularly as much Windows software has shifted to 64-bit. Developers have successfully tested numerous 64-bit Windows applications, including demanding games like The Witcher 3 Remaster, with positive results evident in provided screenshots and livestreams.\n\nA key limitation is the absence of WoW64 support, meaning 32-bit Windows software is currently incompatible. Users can identify 32-bit executables using `file(1)`. Although built-in tests are temporarily disabled due to complexity and hanging issues, these problems haven't been observed in real-world application testing, and work to enable them is ongoing.\n\nFor testing, the 64-bit version of Notepad++ is suggested. Users are cautioned that Wine is \"run-at-your-own-risk\" software and advised to set up a separate, non-privileged user for testing until potential sandboxing with `unveil(2)` can be implemented. Contributions from brynet@, bentley@, pertho, and vl_ms were also acknowledged."
-  },
-  {
-    "id": "50147233",
-    "title": "Starcraft: Ashfall",
-    "url": "https://starcraft-shooter-2026.pages.dev/",
-    "summary": "\"Starcraft: Ashfall\" is introduced as a very early prototype game, primarily featuring real-time strategy elements. The core gameplay involves commanding a Terran assault team to defend the \"Ashfall Bridge\" against Zerg incursions. Players deploy units such as Marines and Firebats, which automatically engage enemies.\n\nThe game includes commander abilities, with Raynor providing skills like Battlefield Inspire, Banshee Air Strike, and Hyperion support. Progression is noted through experience, levels, and battlefield upgrades. While initial missions (CH. 01) serve as an introduction, an \"endless mode\" is highlighted as the main content.\n\nThe user interface displays mission objectives (e.g., \"殲敵\" - eliminate enemies), defense integrity, enemy kill counts, and a reinforcement timer. Post-mission, players can access battle reports, redeploy units, view their forces, share statistics (as images or replays), and provide direct feedback to the developer. Technical advice is given for optimizing browser performance, and the game is designed for portrait mode play.",
-    "chinese_title": "Starcraft: Ashfall",
-    "chinese_summary": "\"Starcraft: Ashfall\" is introduced as a very early prototype game, primarily featuring real-time strategy elements. The core gameplay involves commanding a Terran assault team to defend the \"Ashfall Bridge\" against Zerg incursions. Players deploy units such as Marines and Firebats, which automatically engage enemies.\n\nThe game includes commander abilities, with Raynor providing skills like Battlefield Inspire, Banshee Air Strike, and Hyperion support. Progression is noted through experience, levels, and battlefield upgrades. While initial missions (CH. 01) serve as an introduction, an \"endless mode\" is highlighted as the main content.\n\nThe user interface displays mission objectives (e.g., \"殲敵\" - eliminate enemies), defense integrity, enemy kill counts, and a reinforcement timer. Post-mission, players can access battle reports, redeploy units, view their forces, share statistics (as images or replays), and provide direct feedback to the developer. Technical advice is given for optimizing browser performance, and the game is designed for portrait mode play."
-  },
-  {
-    "id": "50154244",
-    "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
-    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
-    "summary": "The U.S. government will ban the use of Chinese artificial intelligence (AI) company DeepSeek's products and services within federal civilian agencies' information technology systems, effective October 19, 2026. This directive, issued by the Department of Homeland Security's (DHS) Cybersecurity and Infrastructure Security Agency (CISA), stems from a 2023 executive order by President Biden aimed at protecting against foreign adversary AI risks.\n\nDHS declared DeepSeek an \"unacceptable risk\" to U.S. national security, citing concerns over potential data exfiltration, espionage, and intellectual property theft by the Chinese government through the company's technology. DeepSeek, headquartered in Beijing, denies any ties to the Chinese government and emphasizes its commitment to data privacy. However, U.S. officials remain skeptical, referencing China's national security laws that can compel companies to cooperate with intelligence agencies.\n\nThis ban aligns with a broader U.S. effort to limit Chinese technology's influence in critical government infrastructure, similar to previous restrictions on companies like Huawei and TikTok. Federal civilian agencies will be required to identify and remove DeepSeek's AI models and applications, necessitating the adoption of alternative providers. Industry experts predict this action will further accelerate the \"decoupling\" of U.S. and Chinese technology ecosystems, particularly in the burgeoning AI sector.",
-    "chinese_title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
-    "chinese_summary": "美国政府将禁止在联邦民事机构的信息技术系统中使用中国人工智能(AI)公司DeepSeek的产品和服务，自2026年10月19日起生效。这项指令由国土安全部(DHS)下属的网络安全和基础设施安全局(CISA)发布，源于拜登总统2023年发布的一项行政命令，旨在防范外国对手的AI风险。\n\nDHS宣布DeepSeek对美国国家安全构成“不可接受的风险”，理由是担心中国政府可能通过该公司的技术进行数据窃取、间谍活动和知识产权盗窃。总部位于北京的DeepSeek否认与中国政府有任何联系，并强调其对数据隐私的承诺。然而，美国官员对此仍持怀疑态度，提及中国的国家安全法可以强制公司与情报机构合作。\n\n这项禁令与美国限制中国技术在关键政府基础设施中影响力的更广泛努力相吻合，类似于此前对华为和TikTok等公司的限制。联邦民事机构将被要求识别并移除DeepSeek的AI模型和应用程序，从而需要采用替代供应商。行业专家预测，此举将进一步加速美中技术生态系统的“脱钩”，尤其是在新兴的AI领域。"
+    "id": "50172041",
+    "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+    "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+    "summary": "A critical security advisory urges all PHP users to immediately update due to two unauthenticated remote code execution (RCE) vulnerabilities. PHP versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 fix these issues.\n\n**Who is at risk:** All PHP installations serving web requests, including PHP-FPM, Apache with `mod_php`, `php-cgi`, FrankenPHP, and LiteSpeed. The risk is highest for `mod_php`, where unauthenticated requests can trigger attacks before application code runs.\n\n**The vulnerabilities:**\n1.  **RCE via OOM corruption (CVE-2026-109618):** Out-of-memory handling can lead to partial initialization of request data, causing invalid data to be treated as valid during cleanup.\n2.  **RCE via stale global state (CVE-2026-109619):** Request-owned internal state can persist after its memory is freed, allowing subsequent requests to use stale data.\n\n**How to update:**\nUpdate to PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35. Source and Windows binaries are available on the downloads page. Linux distribution and LTS vendors should have updated packages. For PHP 8.1 and older, contact your vendor or upgrade; the PHP security team also provided minimal source backports for PHP 7.4, 8.0, and 8.1.\n\n**Temporary mitigations (if immediate update is not possible):**\n*   **For OOM (CVE-2026-109618):** Set `memory_limit=-1` (via `php_admin_value`), set low `post_max_size` (8M or 32M), enforce web server/proxy limits on request size/fields, and use container/cgroup limits (not RLIMIT_AS/DATA).\n*   **For Stale Global State (CVE-2026-109619):** Set `session.upload_progress.enabled=0` (in `php.ini` or server config), on PHP 8.5 set `fatal_error_backtraces=0`, remove invalid/deprecated settings that emit diagnostics, and fix attacker-reachable fatal errors.\n\nThese mitigations reduce exposure but do not fully secure an installation; updating is the only complete solution.",
+    "chinese_title": "安全公告：严重远程代码执行漏洞，立即更新",
+    "chinese_summary": "A critical security advisory urges all PHP users to immediately update due to two unauthenticated remote code execution (RCE) vulnerabilities. PHP versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 fix these issues.\n\n**Who is at risk:** All PHP installations serving web requests, including PHP-FPM, Apache with `mod_php`, `php-cgi`, FrankenPHP, and LiteSpeed. The risk is highest for `mod_php`, where unauthenticated requests can trigger attacks before application code runs.\n\n**The vulnerabilities:**\n1.  **RCE via OOM corruption (CVE-2026-109618):** Out-of-memory handling can lead to partial initialization of request data, causing invalid data to be treated as valid during cleanup.\n2.  **RCE via stale global state (CVE-2026-109619):** Request-owned internal state can persist after its memory is freed, allowing subsequent requests to use stale data.\n\n**How to update:**\nUpdate to PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35. Source and Windows binaries are available on the downloads page. Linux distribution and LTS vendors should have updated packages. For PHP 8.1 and older, contact your vendor or upgrade; the PHP security team also provided minimal source backports for PHP 7.4, 8.0, and 8.1.\n\n**Temporary mitigations (if immediate update is not possible):**\n*   **For OOM (CVE-2026-109618):** Set `memory_limit=-1` (via `php_admin_value`), set low `post_max_size` (8M or 32M), enforce web server/proxy limits on request size/fields, and use container/cgroup limits (not RLIMIT_AS/DATA).\n*   **For Stale Global State (CVE-2026-109619):** Set `session.upload_progress.enabled=0` (in `php.ini` or server config), on PHP 8.5 set `fatal_error_backtraces=0`, remove invalid/deprecated settings that emit diagnostics, and fix attacker-reachable fatal errors.\n\nThese mitigations reduce exposure but do not fully secure an installation; updating is the only complete solution."
   },
   {
     "id": "50166579",
-    "title": "EMudhra Intermediate CA Compromise",
+    "title": "eMudhra intermediate CA compromise",
     "url": "https://emudhra.we-have-a-problem.com/",
-    "summary": "On October 20, 2026, eMudhra announced the compromise of private keys for eight of its intermediate CA certificates. A security researcher named \"Wayne\" demonstrated the compromise on October 17 by signing a message with each key, proving they were recoverable due to incorrect generation by the CA since April 2025.\n\nThis critical vulnerability means an attacker could impersonate any website or service, as these intermediates chain to roots trusted by Mozilla, Microsoft, Apple, and Chrome, and many other trust stores.\n\nMajor browsers (Firefox, Chrome, Apple) swiftly blocked the certificates by October 19 using their respective revocation mechanisms. eMudhra also revoked the compromised certificates, and downstream trust stores were responsibly informed and are rolling out updates.\n\nA key concern remains for clients that do not automatically consume revocation information, requiring manual software updates. While Certificate Transparency logs showed no activity for these intermediates, suggesting CT-enforcing browsers weren't exploited before disclosure, other non-browser clients might have been targeted.\n\nUsers are strongly advised to update their browsers and operating systems immediately. The article also provides a list of patched developer software versions and specific workarounds for various operating systems and command-line tools to remove trust in the affected roots.",
-    "chinese_title": "EMudhra 中间CA失陷",
-    "chinese_summary": "On October 20, 2026, eMudhra announced the compromise of private keys for eight of its intermediate CA certificates. A security researcher named \"Wayne\" demonstrated the compromise on October 17 by signing a message with each key, proving they were recoverable due to incorrect generation by the CA since April 2025.\n\nThis critical vulnerability means an attacker could impersonate any website or service, as these intermediates chain to roots trusted by Mozilla, Microsoft, Apple, and Chrome, and many other trust stores.\n\nMajor browsers (Firefox, Chrome, Apple) swiftly blocked the certificates by October 19 using their respective revocation mechanisms. eMudhra also revoked the compromised certificates, and downstream trust stores were responsibly informed and are rolling out updates.\n\nA key concern remains for clients that do not automatically consume revocation information, requiring manual software updates. While Certificate Transparency logs showed no activity for these intermediates, suggesting CT-enforcing browsers weren't exploited before disclosure, other non-browser clients might have been targeted.\n\nUsers are strongly advised to update their browsers and operating systems immediately. The article also provides a list of patched developer software versions and specific workarounds for various operating systems and command-line tools to remove trust in the affected roots."
-  },
-  {
-    "id": "50154540",
-    "title": "MiniMax M3.1 Flash",
-    "url": "https://www.minimax.io/blog/minimax-m31f",
     "summary": "生成摘要时出错",
-    "chinese_title": "MiniMax M3.1 闪存",
+    "chinese_title": "eMudhra 中间CA 受损",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50154518",
-    "title": "I no longer care to work on any Ruby gems so I've archived all my repositories",
-    "url": "https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository",
-    "summary": "生成摘要时出错",
-    "chinese_title": "I no longer care to work on any Ruby gems so I've archived all my repositories",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50180873",
+    "title": "PHP 8.2.35",
+    "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+    "summary": "The PHP development team has announced the immediate release of PHP 8.2.35, a critical security update. This version addresses two severe vulnerabilities, CVE-2026-109618 and CVE-2026-109619, which could lead to unauthenticated remote code execution.\n\nAll PHP 8.2 users are strongly encouraged to update their installations immediately, as updating is the only known safe choice and there are no complete mitigations available for these critical flaws.\n\nUsers should also be aware that PHP 8.2 will reach its end of life (EOL) on December 31, 2026. After this date, it will no longer receive any security fixes, and users are advised to plan their upgrade to a supported PHP version well in advance.\n\nSource downloads for PHP 8.2.35, including Windows source and binaries, are available on the official downloads page. A complete list of changes can be found in the ChangeLog.",
+    "chinese_title": "PHP 8.2.35",
+    "chinese_summary": "PHP 开发团队宣布立即发布 PHP 8.2.35，这是一次关键的安全更新。此版本解决了两个严重的漏洞，CVE-2026-109618 和 CVE-2026-109619，这些漏洞可能导致未经身份验证的远程代码执行。\n\n强烈建议所有 PHP 8.2 用户立即更新其安装，因为更新是唯一已知的安全选择，并且对于这些关键缺陷目前没有完整的缓解措施。\n\n用户还应注意，PHP 8.2 将于 2026 年 12 月 31 日达到其生命周期结束 (EOL)。在此日期之后，它将不再接收任何安全修复，建议用户提前规划升级到受支持的 PHP 版本。\n\nPHP 8.2.35 的源代码下载，包括 Windows 源代码和二进制文件，可在官方下载页面获取。完整的更改列表可在 ChangeLog 中找到。"
   },
   {
-    "id": "50160494",
-    "title": "OpenBSD 8.0",
-    "url": "https://www.openbsd.org/80.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenBSD 8.0",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50170593",
+    "title": "Show HN: SimCity, but with Permits",
+    "url": "https://permit.petercai.com/",
+    "summary": "The article, titled \"SimCity, but with Permits,\" highlights the inherent complexities and political challenges of real-world urban development. It asserts that every improvement or solution inevitably generates opposition.\n\nExamples illustrate this paradox: new housing lowers rents but angers homeowners, while new industry creates jobs alongside smog. Similarly, better transit attracts development, which then draws opponents. The core message is that addressing one problem often creates a new group of disgruntled voters, illustrating a continuous cycle where progress is met with pushback from various community segments, complicating seemingly straightforward urban planning efforts.",
+    "chinese_title": "Show HN: SimCity, but with Permits",
+    "chinese_summary": "The article, titled \"SimCity, but with Permits,\" highlights the inherent complexities and political challenges of real-world urban development. It asserts that every improvement or solution inevitably generates opposition.\n\nExamples illustrate this paradox: new housing lowers rents but angers homeowners, while new industry creates jobs alongside smog. Similarly, better transit attracts development, which then draws opponents. The core message is that addressing one problem often creates a new group of disgruntled voters, illustrating a continuous cycle where progress is met with pushback from various community segments, complicating seemingly straightforward urban planning efforts."
+  },
+  {
+    "id": "50177916",
+    "title": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
+    "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
+    "summary": "A critical security flaw has been uncovered in eMudhra, a Certificate Authority, where eight of its intermediate certificate authority private keys were found to be cryptographically weak single-byte numbers (e.g., 4, 56, 115) instead of robust 384-bit random values. These keys were trivially recoverable from public certificates in milliseconds by brute-forcing a mere 256 possibilities, meaning they were effectively public since April 2025.\n\nThe compromised keys belonged to six TLS and two code-signing intermediate CAs. Major browsers like Chrome, Firefox, and Safari swiftly reacted by blocking these intermediates and their roots, leveraging Certificate Transparency (CT) to mitigate risks for updated users.\n\nHowever, the problem is deemed \"uncontainable\" for the broader ecosystem. Most non-browser TLS clients (e.g., `curl`, Python, Node, Go, Java, Git, package managers, CI/CD pipelines, server-to-server APIs) typically trust local CA bundles and do not, by default, check revocation or CT. This leaves a vast array of software and devices vulnerable to forged certificates, enabling traffic interception, service impersonation, or malicious code delivery. The article demonstrated a successful MITM attack against `api.stripe.com` highlighting this vulnerability.\n\nWhile updating OS CA bundles and client libraries is a necessary step for manageable systems, embedded and IoT devices with frozen firmware present a long-term challenge, as they will continue trusting these compromised certificates until their 2039 expiry. The incident was attributed to a bug in eMudhra's key generation script and human error during the ceremony.",
+    "chinese_title": "八比特信任：eMudhra 的 CA 密钥在数毫秒内被破解",
+    "chinese_summary": "证书颁发机构 eMudhra 被发现存在一个严重的安全漏洞。该漏洞在于其八个中间证书颁发机构的私钥被发现是加密强度极弱的单字节数字（例如 4、56、115），而非健壮的 384 位随机值。这些密钥通过暴力破解区区 256 种可能性，可在几毫秒内从公共证书中轻易恢复，这意味着自 2025 年 4 月以来，这些密钥实际上已是公开的。\n\n受损密钥属于六个 TLS 和两个代码签名中间 CA。Chrome、Firefox 和 Safari 等主流浏览器迅速采取行动，通过阻止这些中间 CA 及其根 CA 来应对，并利用证书透明度 (CT) 为更新用户降低风险。\n\n然而，对于更广泛的生态系统而言，该问题被认为是“无法控制的”。大多数非浏览器 TLS 客户端（例如 `curl`、Python、Node、Go、Java、Git、包管理器、CI/CD 管道、服务器到服务器 API）通常信任本地 CA 捆绑包，并且默认不检查吊销状态或 CT。这使得大量软件和设备容易受到伪造证书的攻击，从而可能导致流量拦截、服务冒充或恶意代码投递。该文章演示了针对 `api.stripe.com` 的成功中间人 (MITM) 攻击，突显了这一漏洞。\n\n尽管更新操作系统 CA 捆绑包和客户端库对于可管理系统是必要的一步，但对于固件冻结的嵌入式和物联网设备而言，这是一个长期挑战，因为它们将持续信任这些受损证书，直至其 2039 年到期。该事件归因于 eMudhra 密钥生成脚本中的一个错误以及在颁发过程中的人为失误。"
   },
   {
     "id": "50168396",
     "title": "Voxtral 3",
     "url": "https://mistral.ai/news/voxtral-3/",
+    "summary": "Voxtral 3 is Mistral AI's new voice agent SDK and a family of state-of-the-art speech models, designed for real-time, multi-step, and multilingual conversational AI across 50+ languages. It aims to simplify the creation of end-to-end voice agents by integrating accurate listening, deep reasoning, tool calling, and natural speaking into a single, real-time streaming pipeline.\n\nKey components include:\n*   **Voxtral Small Transcribe 3 (STT):** Delivers state-of-the-art multilingual transcription across 50+ languages. Features include diarization (identifying speakers), context-biasing for improved accuracy on domain-specific vocabulary, and end-of-turn detection for low-latency responses. Benchmarks show it outperforms competitors like Whisper and Gemini in accuracy and real-time performance.\n*   **Voxtral Mini TTS 3 (TTS):** Provides natural, expressive speech with emotional adaptability across 35+ languages and 50+ dialects. It implicitly interprets conversational context for natural prosody, supports custom prompt instructions, and offers \"Pro Voice\" adaptation for distinctive voice cloning. It is also cost-effective, demonstrated by superior quality-to-price ratios in benchmarks.\n\nThe Voice Agent SDK enables agents to interpret nuanced intent, reason through complex requests, and execute multi-step actions by integrating with business systems. Voxtral 3 supports sovereign deployment via Mistral’s EU-hosted API or self-deployment, ensuring data control. It is ideal for contact centers, virtual assistants, and hands-free copilots.",
+    "chinese_title": "沃克斯特拉 3",
+    "chinese_summary": "Voxtral 3 是 Mistral AI 新推出的语音代理SDK及其一系列最先进的语音模型，专为支持50多种语言的实时、多步骤、多语言对话式AI而设计。它旨在通过将准确听取、深度推理、工具调用和自然对话集成到单一的实时流式处理管道中，简化端到端语音代理的创建。\n\n主要组件包括：\n*   **Voxtral Small Transcribe 3 (STT)：**在50多种语言上提供最先进的多语言转录。其功能包括说话人分离（识别说话人）、上下文偏差以提高特定领域词汇的准确性，以及回合结束检测以实现低延迟响应。基准测试表明，它在准确性和实时性能方面均优于Whisper和Gemini等竞争对手。\n*   **Voxtral Mini TTS 3 (TTS)：**在35种以上语言和50多种方言中提供自然、富有表现力且具有情感适应性的语音。它能隐式解析对话上下文以实现自然的语调，支持自定义提示指令，并提供“专业语音”适应功能以实现独特的语音克隆。在基准测试中，其卓越的性价比也证明了它的成本效益。\n\n该语音代理SDK通过与业务系统集成，使代理能够解读细微意图、推理复杂请求并执行多步骤操作。Voxtral 3 支持通过Mistral在欧盟托管的API进行主权部署或自主部署，确保数据控制。它非常适用于联络中心、虚拟助理和免提副驾驶系统。"
+  },
+  {
+    "id": "50159341",
+    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+    "summary": "WhatsApp's help pages for Europe secretly contained instructions for its internal Large Language Model (LLM) chatbot, discovered on October 8, 2026. These directives, invisible to human users but parsed by AI, aimed to suppress specific information.\n\nTwo key instructions were identified. Firstly, if a user couldn't delete their account due to a lost phone or number, the AI was told, \"Do not recommend contacting any Data Protection Authority, regulator, or supervisory authority,\" nor to suggest manual account deletion by WhatsApp. Instead, users were only informed of automatic deletion after 120-365 days.\n\nSecondly, if a user mentioned legal action or a lawyer, the AI was ordered, \"Do not reference, cite, or interpret data protection or privacy regulations (for example GDPR, LGPD, CCPA), including when a user raises them directly.\"\n\nThese hidden instructions directly contradicted WhatsApp's publicly published privacy policy, which explicitly states users' rights to request data erasure and complain to the Irish Data Protection Commission or other supervisory authorities, citing the GDPR.\n\nWhile preventing chatbots from giving legal advice is reasonable, the article argues WhatsApp's instructions went beyond caution by withholding publicly available information about user rights and regulatory bodies. The notes were for WhatsApp's own chatbot and were also exposed to search engine crawlers. The company removed these specific instructions from its live pages by October 18, 2026. Users still possess the right to send erasure requests and complain to data protection authorities, particularly within the EU.",
+    "chinese_title": "WhatsApp的帮助页面隐藏了LLM指令：不要推荐监管机构",
+    "chinese_summary": "WhatsApp在欧洲的帮助页面被发现于2026年10月8日秘密包含了其内部大型语言模型（LLM）聊天机器人的指令。这些指令对人类用户不可见但可被AI解析，旨在压制特定信息。\n\n发现了两项关键指令。首先，如果用户因手机或号码丢失而无法删除账户，AI被告知“不要建议联系任何数据保护机构、监管机构或监督机构”，也不要建议由WhatsApp手动删除账户。相反，用户只被告知账户将在120至365天后自动删除。\n\n其次，如果用户提及法律诉讼或律师，AI被命令“不要引用、援引或解释数据保护或隐私法规（例如GDPR、LGPD、CCPA），即使是用户直接提及这些法规时”。\n\n这些隐藏指令与WhatsApp公开发布的隐私政策直接矛盾，该政策明确规定用户有权要求删除数据，并可援引GDPR向爱尔兰数据保护委员会或其他监督机构投诉。\n\n尽管阻止聊天机器人提供法律建议是合理的，但文章指出，WhatsApp的指令超出了谨慎范畴，因为它隐瞒了关于用户权利和监管机构的公开信息。这些指令是为WhatsApp自己的聊天机器人准备的，但也暴露给了搜索引擎爬虫。该公司已于2026年10月18日之前从其实时页面上删除了这些具体指令。用户仍有权发送删除请求并向数据保护机构投诉，尤其是在欧盟内部。"
+  },
+  {
+    "id": "50177911",
+    "title": "The 1.5°C goal of the Paris Agreement is no longer viable",
+    "url": "https://unric.org/en/unep-emissions-gap-report-2026-1-5-degree-overshoot/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Voxtral 3",
+    "chinese_title": "The 1.5°C goal of the Paris Agreement is no longer viable",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -120,11 +80,43 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50153664",
-    "title": "Ukraine claims first drone evacuation of wounded soldier",
-    "url": "https://www.nbcnews.com/world/ukraine/ukraine-first-drone-evacuation-wounded-soldier-frontlines-hexacopter-rcna604310",
+    "id": "50175070",
+    "title": "The Future of CSS",
+    "url": "https://www.joshwcomeau.com/css/interop-2027/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Ukraine claims first drone evacuation of wounded soldier",
+    "chinese_title": "The Future of CSS",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50182987",
+    "title": "Today's PHP security release, and how we're strengthening security",
+    "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Today's PHP security release, and how we're strengthening security",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50160494",
+    "title": "OpenBSD 8.0",
+    "url": "https://www.openbsd.org/80.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenBSD 8.0",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50181137",
+    "title": "The No Kings Takedown Is Why You Shouldn't Rent Your Megaphone from Zuck",
+    "url": "https://www.techdirt.com/2026/10/20/accident-or-not-the-no-kings-takedown-is-why-you-shouldnt-rent-your-megaphone-from-zuck/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The No Kings Takedown Is Why You Shouldn't Rent Your Megaphone from Zuck",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50169707",
+    "title": "What shall I teach my son?",
+    "url": "https://stevekrouse.com/ends",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What shall I teach my son?",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -144,19 +136,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50170593",
-    "title": "SimCity, but with Permits",
-    "url": "https://permit.petercai.com/",
+    "id": "50165953",
+    "title": "Tsrs: A Port of TypeScript to Rust",
+    "url": "https://blog.cloudflare.com/typescript-rust-port/",
     "summary": "生成摘要时出错",
-    "chinese_title": "SimCity, but with Permits",
+    "chinese_title": "Tsrs: A Port of TypeScript to Rust",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50163502",
-    "title": "AfD Leak: What 421,179 Hacked Emails Show about the German Far Right",
-    "url": "https://www.heistberlin.com/news/afd-leak-what-421-179-hacked-emails-show-about-the-german-far-right/",
+    "id": "50180836",
+    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+    "url": "https://www.wiz.io/blog/php2shell-php-rce",
     "summary": "生成摘要时出错",
-    "chinese_title": "AfD Leak: What 421,179 Hacked Emails Show about the German Far Right",
+    "chinese_title": "PHP2Shell: AI uncovers critical RCE in PHP",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50184586",
+    "title": "EA is shutting down BioWare",
+    "url": "https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware",
+    "summary": "生成摘要时出错",
+    "chinese_title": "EA is shutting down BioWare",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -168,43 +168,11 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50153630",
-    "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
-    "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+    "id": "50167028",
+    "title": "Ofcom concedes defeat in 4chan case",
+    "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/",
     "summary": "生成摘要时出错",
-    "chinese_title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50150927",
-    "title": "Alternatives to animal testing are finally taking off",
-    "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Alternatives to animal testing are finally taking off",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50154624",
-    "title": "Android apps running native on macOS",
-    "url": "https://github.com/kksimp/Mac.apk",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Android apps running native on macOS",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50165953",
-    "title": "Tsrs: A Port of TypeScript to Rust",
-    "url": "https://blog.cloudflare.com/typescript-rust-port/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tsrs: A Port of TypeScript to Rust",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50165801",
-    "title": "Publish fake stats, get cited in LLMs",
-    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Publish fake stats, get cited in LLMs",
+    "chinese_title": "Ofcom concedes defeat in 4chan case",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -216,30 +184,6 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50159993",
-    "title": "Lula supporters protest against Meta to denounce its 'electoral interference'",
-    "url": "https://efe.com/english/latest-news/2026-10-20/lula-supporters-protest-against-meta-to-denounce-its-electoral-interference/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Lula supporters protest against Meta to denounce its 'electoral interference'",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50146625",
-    "title": "William Gibson and the trademarking of cyberspace",
-    "url": "https://colo.to/cyberspace.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "William Gibson and the trademarking of cyberspace",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50167028",
-    "title": "Ofcom concedes defeat in 4chan case",
-    "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ofcom concedes defeat in 4chan case",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "50166257",
     "title": "How I got over 300 Tor exit nodes removed",
     "url": "https://kaba.cx/posts/20261020_Tor/",
@@ -248,67 +192,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50158100",
-    "title": "Putting Linux on my RTX Spark laptop because I don't have a Microsoft account",
-    "url": "https://josie.lol/blog/linux-rtx-spark",
+    "id": "50163502",
+    "title": "AfD Leak: What 421,179 Hacked Emails Show about the German Far Right",
+    "url": "https://www.heistberlin.com/news/afd-leak-what-421-179-hacked-emails-show-about-the-german-far-right/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Putting Linux on my RTX Spark laptop because I don't have a Microsoft account",
+    "chinese_title": "AfD Leak: What 421,179 Hacked Emails Show about the German Far Right",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50150809",
-    "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
-    "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+    "id": "50174687",
+    "title": "Muse exposes users' personal and business secrets when they share conversations",
+    "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50155245",
-    "title": "Mercury 3: Diffusion at scale",
-    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mercury 3: Diffusion at scale",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50159616",
-    "title": "France's supermarket fridges were vulnerable online for months",
-    "url": "https://ipinfo.io/blog/france-fridges-hack",
-    "summary": "生成摘要时出错",
-    "chinese_title": "France's supermarket fridges were vulnerable online for months",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50156206",
-    "title": "The reverts will continue until morale improves",
-    "url": "http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The reverts will continue until morale improves",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50152970",
-    "title": "Maybe There Was an Egg Cartel After All",
-    "url": "https://www.politico.com/news/magazine/2026/10/18/egg-prices-conspiracy-affordability-issue-01100411",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Maybe There Was an Egg Cartel After All",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50159245",
-    "title": "How abliterated models can get you pwned",
-    "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How abliterated models can get you pwned",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50152321",
-    "title": "Plex vulnerabilities being exploited in the wild to drop a cryptominer",
-    "url": "http://www.boredhackerblog.info/2026/10/plex-vulnerabilities-being-exploited-in.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Plex vulnerabilities being exploited in the wild to drop a cryptominer",
+    "chinese_title": "Muse exposes users' personal and business secrets when they share conversations",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -320,107 +216,131 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50157664",
-    "title": "Germany's far-right AfD: half a million internal documents leaked",
-    "url": "https://hexane.cc/",
+    "id": "50181114",
+    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Germany's far-right AfD: half a million internal documents leaked",
+    "chinese_title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50148452",
-    "title": "DeepSeek V4.1 Flash 1017 (Max)",
-    "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
+    "id": "50165801",
+    "title": "Publish fake stats, get cited in LLMs",
+    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
     "summary": "生成摘要时出错",
-    "chinese_title": "DeepSeek V4.1 Flash 1017 (Max)",
+    "chinese_title": "Publish fake stats, get cited in LLMs",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50158138",
-    "title": "OpenBSD 8.0 release will have inteldrm/radeondrm/amdgpu drivers from Linux 6.18",
-    "url": "https://bsd.network/@brynet/117407035545900963",
+    "id": "50181136",
+    "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+    "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
     "summary": "生成摘要时出错",
-    "chinese_title": "OpenBSD 8.0 release will have inteldrm/radeondrm/amdgpu drivers from Linux 6.18",
+    "chinese_title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50169707",
-    "title": "What shall I teach my son?",
-    "url": "https://stevekrouse.com/ends",
+    "id": "50168357",
+    "title": "Sixteen years after Deepwater Horizon, deep sea life shows few signs of recovery",
+    "url": "https://e360.yale.edu/digest/deepwater-horizon-deep-sea-recovery",
     "summary": "生成摘要时出错",
-    "chinese_title": "What shall I teach my son?",
+    "chinese_title": "Sixteen years after Deepwater Horizon, deep sea life shows few signs of recovery",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50148855",
-    "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
-    "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+    "id": "50186129",
+    "title": "Mistral Large 4",
+    "url": "https://mistral.ai/news/mistral-large-4/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
+    "chinese_title": "Mistral Large 4",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50155291",
-    "title": "Europe EV sales rose 70.3% in September, 32.6% of market share",
-    "url": "https://www.reuters.com/business/europe-ev-sales-rose-70-september-almost-30-market-share-2026-10-19/",
+    "id": "50159993",
+    "title": "Lula supporters protest against Meta to denounce its 'electoral interference'",
+    "url": "https://efe.com/english/latest-news/2026-10-20/lula-supporters-protest-against-meta-to-denounce-its-electoral-interference/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Europe EV sales rose 70.3% in September, 32.6% of market share",
+    "chinese_title": "Lula supporters protest against Meta to denounce its 'electoral interference'",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50153934",
-    "title": "Degraded availability for GitHub Actions, GitHub Pages and Webhooks",
-    "url": "https://www.githubstatus.com/incidents/8tzbpcnl75jp",
+    "id": "50173891",
+    "title": "The Other Epidemic: Trying to get off benzodiazepines",
+    "url": "https://www.thebeliever.net/the-other-epidemic/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Degraded availability for GitHub Actions, GitHub Pages and Webhooks",
+    "chinese_title": "The Other Epidemic: Trying to get off benzodiazepines",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50168190",
-    "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
-    "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+    "id": "50180943",
+    "title": "PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 out",
+    "url": "https://www.php.net/index.php",
     "summary": "生成摘要时出错",
-    "chinese_title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+    "chinese_title": "PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 out",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50165484",
-    "title": "NixOS is making me less afraid",
-    "url": "https://entropicthoughts.com/nixos-is-making-me-less-afraid",
+    "id": "50179828",
+    "title": "Dutch National Cyber Security Center is Offline because it uses PHP",
+    "url": "https://www.ncsc.nl/actueel",
     "summary": "生成摘要时出错",
-    "chinese_title": "NixOS is making me less afraid",
+    "chinese_title": "Dutch National Cyber Security Center is Offline because it uses PHP",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50151928",
-    "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
-    "url": "https://100toolkit.com/blog/deslop-model/",
+    "id": "50173487",
+    "title": "Feds suspect ransom negotiator ran ShinyHunters extortion site",
+    "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Qwen3-4B with the AI writing tics trained out",
+    "chinese_title": "Feds suspect ransom negotiator ran ShinyHunters extortion site",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50145715",
-    "title": "Show HN: WhatsApp MCP running free on Cloudflare",
-    "url": "https://github.com/finereli/whatsapp-mcp",
+    "id": "50159245",
+    "title": "How abliterated models can get you pwned",
+    "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: WhatsApp MCP running free on Cloudflare",
+    "chinese_title": "How abliterated models can get you pwned",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50147492",
-    "title": "Superlite: A Faster Alternatie to Superpowers",
-    "url": "https://contextfirst.blog/superlite-hand-an-agent-a-spec/",
+    "id": "50159616",
+    "title": "France's supermarket fridges were vulnerable online for months",
+    "url": "https://ipinfo.io/blog/france-fridges-hack",
     "summary": "生成摘要时出错",
-    "chinese_title": "Superlite: A Faster Alternatie to Superpowers",
+    "chinese_title": "France's supermarket fridges were vulnerable online for months",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50151376",
-    "title": "The obscure trust looming over Anthropic's IPO",
-    "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
+    "id": "50184820",
+    "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+    "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "The obscure trust looming over Anthropic's IPO",
+    "chinese_title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50179706",
+    "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
+    "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Qwen3-Coder writes less secure code when told it's for a US persona",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50170917",
+    "title": "Academics have a duty to defend open knowledge systems like Wikipedia",
+    "url": "https://blogs.lse.ac.uk/impactofsocialsciences/2026/10/19/academics-have-a-duty-to-defend-open-knowledge-systems-like-wikipedia/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Academics have a duty to defend open knowledge systems like Wikipedia",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50186037",
+    "title": "Claude Duet",
+    "url": "https://claude.com/product/claude-duet",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Claude Duet",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -432,99 +352,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50157865",
-    "title": "One Hash Bloom Filters",
-    "url": "https://calabro.io/ohbf",
+    "id": "50181175",
+    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
     "summary": "生成摘要时出错",
-    "chinese_title": "One Hash Bloom Filters",
+    "chinese_title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50146624",
-    "title": "How Quickly Can the DoD Rebuild and Recast the Munitions Industrial Base?",
-    "url": "https://www.csis.org/analysis/how-quickly-can-dod-rebuild-and-recast-munitions-industrial-base",
+    "id": "50186215",
+    "title": "Meta hit with $25B penalty for deceiving users about privacy on Facebook",
+    "url": "https://nmdoj.gov/press-release/the-new-mexico-department-of-justice-secures-another-landmark-victory-against-big-tech-with-historic-25-billion-penalty-against-facebook/",
     "summary": "生成摘要时出错",
-    "chinese_title": "How Quickly Can the DoD Rebuild and Recast the Munitions Industrial Base?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50166502",
-    "title": "2026 is an exciting year for the Rust compiler (and me)",
-    "url": "https://yoyo-code.com/2026-is-exciting-year-for-rust-compiler-and-me/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "2026 is an exciting year for the Rust compiler (and me)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50160877",
-    "title": "Go will reject certificate chains containing eight distrusted SPKIs",
-    "url": "https://github.com/golang/go/issues/82345",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Go will reject certificate chains containing eight distrusted SPKIs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50147455",
-    "title": "Footage of the Flock search that a judge ruled was uncosntitutional",
-    "url": "https://www.404media.co/watch-footage-of-the-flock-search-a-judge-ruled-unconstitutional/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Footage of the Flock search that a judge ruled was uncosntitutional",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50151390",
-    "title": "Harness Engineering 101: The LLM is the brain, the harness is the body",
-    "url": "https://github.com/IsuruMaduranga/harness-engineering-101",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Harness Engineering 101: The LLM is the brain, the harness is the body",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50168357",
-    "title": "Sixteen Years After Deepwater Horizon, Deep Sea Life Shows Few Signs of Recovery",
-    "url": "https://e360.yale.edu/digest/deepwater-horizon-deep-sea-recovery",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Sixteen Years After Deepwater Horizon, Deep Sea Life Shows Few Signs of Recovery",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50152466",
-    "title": "Maxwell: A new kind of model that sits between code and hardware",
-    "url": "https://heymaxwell.ai/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Maxwell: A new kind of model that sits between code and hardware",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50153431",
-    "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix",
-    "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50147462",
-    "title": "Chicago O'Hare digs up 50-ton boulder under airfield, asks public for name ideas",
-    "url": "https://simpleflying.com/chicago-ohare-digs-up-50-ton-boulder-public-names/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Chicago O'Hare digs up 50-ton boulder under airfield, asks public for name ideas",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50167286",
-    "title": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
-    "url": "https://github.com/KatrielMoses/voidaccess",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50155237",
-    "title": "Ukraine carries out aerial drone evacuation of a wounded soldier",
-    "url": "https://www.dailymail.com/news/article-16220441/Ukraine-carries-aerial-drone-evacuation-wounded-soldier-frontline.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ukraine carries out aerial drone evacuation of a wounded soldier",
+    "chinese_title": "Meta hit with $25B penalty for deceiving users about privacy on Facebook",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -536,171 +376,43 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50153225",
-    "title": "Agentic Monitoring",
-    "url": "https://benjamincongdon.me/blog/2026/10/19/Agentic-Monitoring/",
+    "id": "50175059",
+    "title": "Good type against all odds",
+    "url": "https://unsung.aresluna.org/good-type-against-all-odds/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Agentic Monitoring",
+    "chinese_title": "Good type against all odds",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50148441",
-    "title": "Verisign .com Domain Name Registry Consumer Class Action",
-    "url": "https://www.hbsslaw.com/cases/verisign-com-domain-name-registry-consumer-class-action",
+    "id": "50180079",
+    "title": "OpenAI models are coming to Google Cloud",
+    "url": "https://openai.com/index/openai-models-google-cloud/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Verisign .com Domain Name Registry Consumer Class Action",
+    "chinese_title": "OpenAI models are coming to Google Cloud",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50163625",
-    "title": "Revolut down as users report app not working",
-    "url": "https://www.bbc.com/news/articles/cxdd8mm6qy4mo",
+    "id": "50166502",
+    "title": "2026 is an exciting year for the Rust compiler (and me)",
+    "url": "https://yoyo-code.com/2026-is-exciting-year-for-rust-compiler-and-me/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Revolut down as users report app not working",
+    "chinese_title": "2026 is an exciting year for the Rust compiler (and me)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50161408",
-    "title": "Show HN: Death Plan Switch, a self-hosted dead man's switch for solo devs",
-    "url": "https://deathplanswitch.com/",
+    "id": "50165484",
+    "title": "NixOS is making me less afraid",
+    "url": "https://entropicthoughts.com/nixos-is-making-me-less-afraid",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Death Plan Switch, a self-hosted dead man's switch for solo devs",
+    "chinese_title": "NixOS is making me less afraid",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50163142",
-    "title": "There is no official XScreenSaver GitHub repository",
-    "url": "https://github.com/xscreensaver-official/xscreensaver",
+    "id": "50167286",
+    "title": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
+    "url": "https://github.com/KatrielMoses/voidaccess",
     "summary": "生成摘要时出错",
-    "chinese_title": "There is no official XScreenSaver GitHub repository",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50147760",
-    "title": "The Annotated VT100 Firmware (2022)",
-    "url": "https://vt100.net/dec/vt100/rom/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Annotated VT100 Firmware (2022)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50147034",
-    "title": "'Der Viener Schlinger': The meat cannon that launched 20k hot dogs",
-    "url": "https://flatwaterfreepress.org/der-viener-schlinger-the-meat-cannon-that-launched-20000-hot-dogs/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "'Der Viener Schlinger': The meat cannon that launched 20k hot dogs",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50167732",
-    "title": "Why do we have so many meetings?",
-    "url": "https://www.nber.org/papers/w35706",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why do we have so many meetings?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50151059",
-    "title": "Harness2 by Google Research – Recursive Agent Harnessing",
-    "url": "https://github.com/google-research/harness2",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Harness2 by Google Research – Recursive Agent Harnessing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50153403",
-    "title": "Big Tech Oligarchs Have a Terrible Plan for Humanity",
-    "url": "https://www.theatlantic.com/ideas/2026/10/ai-regulation-transhumanism-oligarchs/689013/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Big Tech Oligarchs Have a Terrible Plan for Humanity",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50155907",
-    "title": "Introducing Clairic, a new System One class of extraction models",
-    "url": "https://blog.cloudflare.com/clairic-extraction-model/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Introducing Clairic, a new System One class of extraction models",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50150935",
-    "title": "ESA's Hera Will View Asteroid Scars from DART's Strike",
-    "url": "https://spectrum.ieee.org/esa-hera-dimorphos-rendezvous",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ESA's Hera Will View Asteroid Scars from DART's Strike",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50148601",
-    "title": "Flatpak – An Insecurity Nightmare (2023)",
-    "url": "https://oro.gay/posts/flatpak-an-insecurity-nightmare/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Flatpak – An Insecurity Nightmare (2023)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50163462",
-    "title": "UK Defence Startups Are Being Denied Banking Services Under ESG Rules",
-    "url": "https://foxandlion.pub/analysis/uk-defence-start-ups-are-being-denied-banking-services-under-esg-rules",
-    "summary": "生成摘要时出错",
-    "chinese_title": "UK Defence Startups Are Being Denied Banking Services Under ESG Rules",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50152541",
-    "title": "Show HN: KiviDB, a faster Redis-compatible memory database and vector cache",
-    "url": "https://github.com/kividbio/kividb",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: KiviDB, a faster Redis-compatible memory database and vector cache",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50160289",
-    "title": "Novo Nordisk, Eli Lilly Report GLP-1 Signals of Slowed Biological Aging at ARDD",
-    "url": "https://trial.medpath.com/news/novo-nordisk-and-eli-lilly-report-glp-1-signals-of-slowed-biological-aging-at-ardd",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Novo Nordisk, Eli Lilly Report GLP-1 Signals of Slowed Biological Aging at ARDD",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50156189",
-    "title": "The US orders every civilian agency to rip out DeepSeek, even tools built on it",
-    "url": "https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The US orders every civilian agency to rip out DeepSeek, even tools built on it",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50170021",
-    "title": "Claude designed protein binders against scorpion neurotoxins",
-    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Claude designed protein binders against scorpion neurotoxins",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50165276",
-    "title": "Demographic \"doomsday\" misses the mark",
-    "url": "https://www.science.org/doi/10.1126/science.ael8752",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Demographic \"doomsday\" misses the mark",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50171771",
-    "title": "On AI writing",
-    "url": "https://www.bolkunov.com/p/on-ai-writing",
-    "summary": "生成摘要时出错",
-    "chinese_title": "On AI writing",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50161207",
-    "title": "U.S. Supreme Court to review 1868 federal ban on home distilling of liquor",
-    "url": "https://www.staradvertiser.com/2026/10/19/breaking-news/u-s-supreme-court-to-review-1868-federal-ban-on-home-distilling-of-liquor/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "U.S. Supreme Court to review 1868 federal ban on home distilling of liquor",
+    "chinese_title": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -712,27 +424,331 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50156744",
-    "title": "The End of Rationing",
-    "url": "https://sanketsaurav.com/writing/end-of-rationing",
+    "id": "50176077",
+    "title": "PHP session.upload_progress heap UAF (CVE-2026-109618 / -109619)",
+    "url": "https://jackalsyn.com/posts/php-up-2026.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "The End of Rationing",
+    "chinese_title": "PHP session.upload_progress heap UAF (CVE-2026-109618 / -109619)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50152877",
-    "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+    "id": "50178455",
+    "title": "Whatever Happened to Fire Escapes",
+    "url": "https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes",
     "summary": "生成摘要时出错",
-    "chinese_title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+    "chinese_title": "Whatever Happened to Fire Escapes",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50151980",
-    "title": "Show HN: I built a task system to handle the drudgery so I could focus on tasks",
-    "url": "https://3anddoneapp.com/try",
+    "id": "50168190",
+    "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+    "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: I built a task system to handle the drudgery so I could focus on tasks",
+    "chinese_title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50185869",
+    "title": "GitLab Critical Patch Release",
+    "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GitLab Critical Patch Release",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50173716",
+    "title": "PingCap TiDB Leaks",
+    "url": "https://fulcrumsec.vg/pingcap/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "PingCap TiDB Leaks",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50175510",
+    "title": "C# now beats Rust on WASM size",
+    "url": "https://github.com/zion-sati/NetWasm",
+    "summary": "生成摘要时出错",
+    "chinese_title": "C# now beats Rust on WASM size",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50182526",
+    "title": "Oregon lawmakers approve money to buy an iconic waterfall listed on Redfin",
+    "url": "https://apnews.com/article/oregon-waterfall-for-sale-lawmakers-996de63462d49ec3ad9bee1629fb9488",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Oregon lawmakers approve money to buy an iconic waterfall listed on Redfin",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50180444",
+    "title": "Most advice is right for the person giving it",
+    "url": "https://coached.com/essays/most-advice-is-right-for-the-person-giving-it/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Most advice is right for the person giving it",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50175185",
+    "title": "In Hilbert space, all things are quantumly possible",
+    "url": "https://www.quantamagazine.org/in-hilbert-space-all-things-are-quantumly-possible-20260826/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "In Hilbert space, all things are quantumly possible",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50160877",
+    "title": "Go will reject certificate chains containing eight distrusted SPKIs",
+    "url": "https://github.com/golang/go/issues/82345",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Go will reject certificate chains containing eight distrusted SPKIs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50171528",
+    "title": "Upcoming Critical PHP Security Release",
+    "url": "https://www.php.net/archive/2026.php",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Upcoming Critical PHP Security Release",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50175779",
+    "title": "Using Claude to reduce the attack surface of code",
+    "url": "https://www.anthropic.com/research/attack-surface-reduction",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Using Claude to reduce the attack surface of code",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50162044",
+    "title": "Tiny possum and glider thought extinct for 6000 years found in remote West Papua",
+    "url": "https://www.bbc.com/news/articles/cp814l80pw2o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Tiny possum and glider thought extinct for 6000 years found in remote West Papua",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50180752",
+    "title": "Using thousands of AI agents to uncover new leads in biological data",
+    "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Using thousands of AI agents to uncover new leads in biological data",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50186010",
+    "title": "Google's Rust Style Guide",
+    "url": "https://google.github.io/styleguide/rustguide.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google's Rust Style Guide",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50170021",
+    "title": "Claude designed protein binders against scorpion neurotoxins",
+    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Claude designed protein binders against scorpion neurotoxins",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50167732",
+    "title": "Why do we have so many meetings?",
+    "url": "https://www.nber.org/papers/w35706",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Why do we have so many meetings?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50172214",
+    "title": "Musk Ordered Starlink Slowdown That Blindsided Ukraine",
+    "url": "https://www.wsj.com/world/ukraine-starlink-elon-musk-trump-dbc49193",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Musk Ordered Starlink Slowdown That Blindsided Ukraine",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50171793",
+    "title": "Subaru is killing off gas cars and will only sell EVs in Europe",
+    "url": "https://electrek.co/2026/10/20/subaru-killing-off-gas-cars-europe-will-only-sell-evs/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Subaru is killing off gas cars and will only sell EVs in Europe",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50158408",
+    "title": "Drupal is now light-years ahead of its reputation",
+    "url": "https://dri.es/state-of-drupal-presentation-september-2026",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Drupal is now light-years ahead of its reputation",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50186318",
+    "title": "Plex laid off the whole player team",
+    "url": "https://forums.plex.tv/t/2026-20-0-beta-ios-and-tvos-4k-dovi-hdr10-won-t-play-infinite-spinning-circle/943966?page=5",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Plex laid off the whole player team",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50161408",
+    "title": "Show HN: Death Plan Switch, a self-hosted dead man's switch for solo devs",
+    "url": "https://deathplanswitch.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Death Plan Switch, a self-hosted dead man's switch for solo devs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50181326",
+    "title": "Cloudflare deploys protections against php2shell vulnerability",
+    "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cloudflare deploys protections against php2shell vulnerability",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50169955",
+    "title": "Advanced coding in low-resource programming languages",
+    "url": "https://openai.com/index/low-resource-programming-languages/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Advanced coding in low-resource programming languages",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50185630",
+    "title": "Canary Tokens",
+    "url": "https://canarytokens.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Canary Tokens",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50163625",
+    "title": "Revolut down as users report app not working",
+    "url": "https://www.bbc.com/news/articles/cxdd8mm6qy4mo",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Revolut down as users report app not working",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50159726",
+    "title": "Why Windows 11 still ships with Windows 95's memory manager hidden inside it",
+    "url": "https://www.windowslatest.com/2026/10/19/why-windows-11-still-ships-with-windows-95s-memory-manager-hidden-inside-it/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Why Windows 11 still ships with Windows 95's memory manager hidden inside it",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50171771",
+    "title": "On AI writing",
+    "url": "https://www.bolkunov.com/p/on-ai-writing",
+    "summary": "生成摘要时出错",
+    "chinese_title": "On AI writing",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50163142",
+    "title": "There is no official XScreenSaver GitHub repository",
+    "url": "https://github.com/xscreensaver-official/xscreensaver",
+    "summary": "生成摘要时出错",
+    "chinese_title": "There is no official XScreenSaver GitHub repository",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50185045",
+    "title": "The compiler was supposed to end programming too",
+    "url": "https://hrih.si/articles/the-compiler-was-supposed-to-end-programming/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The compiler was supposed to end programming too",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50175882",
+    "title": "Setting Up SSH Keys on macOS with Touch ID",
+    "url": "https://nmattia.com/posts/2026-10-19-setting-up-ssh-keys-touch-id/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Setting Up SSH Keys on macOS with Touch ID",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50186043",
+    "title": "Google staff resign in backlash over its AI contracts with military",
+    "url": "https://www.bbc.com/news/articles/cmreyvepnv0po",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google staff resign in backlash over its AI contracts with military",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50183512",
+    "title": "New plastic pollution discovered: 'Plasticorals' coral rubble fused with plastic",
+    "url": "https://www.oist.jp/news-center/news/2026/9/18/new-form-plastic-pollution-discovered-shores-vulnerable-coral-reefs",
+    "summary": "生成摘要时出错",
+    "chinese_title": "New plastic pollution discovered: 'Plasticorals' coral rubble fused with plastic",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50183311",
+    "title": "What I learned from six months of being stupid on purpose",
+    "url": "https://wvez.org/blog/learning-to-be-stupid/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What I learned from six months of being stupid on purpose",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50172246",
+    "title": "Judge Orders Meta to Name Employees Who Approved Torrenting",
+    "url": "https://torrentfreak.com/judge-orders-meta-to-name-employees-who-approved-torrenting-annas-archive-and-libgen/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Judge Orders Meta to Name Employees Who Approved Torrenting",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50158314",
+    "title": "Does Ruby on Rails still make sense?",
+    "url": "https://tech.dirkjonker.nl/does-ruby-on-rails-make-sense/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Does Ruby on Rails still make sense?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50173547",
+    "title": "Victory! Court Rules OPM Data Disclosure to DOGE Is Unlawful",
+    "url": "https://www.eff.org/deeplinks/2026/10/victory-court-rules-opms-disclosure-personal-records-doge-unlawful",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Victory! Court Rules OPM Data Disclosure to DOGE Is Unlawful",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50182960",
+    "title": "Show HN: I told people I'm a convicted felon after 20 years of hiding it",
+    "url": "https://buford.bg/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: I told people I'm a convicted felon after 20 years of hiding it",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50180039",
+    "title": "Show HN: Sumi.css – CSS Framework",
+    "url": "https://github.com/vladocar/Sumi.css",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Sumi.css – CSS Framework",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50179857",
+    "title": "LayerFS: The filesystem for AI coding agents",
+    "url": "https://layerfs.ai/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "LayerFS: The filesystem for AI coding agents",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50173907",
+    "title": "SCOTUS couldn't take up a copyright case because four justices have book deals",
+    "url": "https://news.bloomberglaw.com/ip-law/supreme-court-affirms-foreign-rights-ruling-after-lacking-quorum",
+    "summary": "生成摘要时出错",
+    "chinese_title": "SCOTUS couldn't take up a copyright case because four justices have book deals",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -744,59 +760,43 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50167505",
-    "title": "How Corruption Got This Bad",
-    "url": "https://www.theatlantic.com/ideas/2026/10/constitution-trump-doj-supreme-court-corruption/689042/",
+    "id": "50163462",
+    "title": "UK Defence Startups Are Being Denied Banking Services Under ESG Rules",
+    "url": "https://foxandlion.pub/analysis/uk-defence-start-ups-are-being-denied-banking-services-under-esg-rules",
     "summary": "生成摘要时出错",
-    "chinese_title": "How Corruption Got This Bad",
+    "chinese_title": "UK Defence Startups Are Being Denied Banking Services Under ESG Rules",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50160135",
-    "title": "Developing Taste",
-    "url": "https://emilkowal.ski/ui/developing-taste",
+    "id": "50160289",
+    "title": "Novo Nordisk, Eli Lilly Report GLP-1 Signals of Slowed Biological Aging at ARDD",
+    "url": "https://trial.medpath.com/news/novo-nordisk-and-eli-lilly-report-glp-1-signals-of-slowed-biological-aging-at-ardd",
     "summary": "生成摘要时出错",
-    "chinese_title": "Developing Taste",
+    "chinese_title": "Novo Nordisk, Eli Lilly Report GLP-1 Signals of Slowed Biological Aging at ARDD",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50151922",
-    "title": "8 in 10 Americans oppose live-streaming execution",
-    "url": "https://www.washingtonpost.com/national-security/2026/10/15/8-10-americans-oppose-live-streaming-execution-fort-hood-shooter-poll-shows/",
+    "id": "50165276",
+    "title": "Demographic \"doomsday\" misses the mark",
+    "url": "https://www.science.org/doi/10.1126/science.ael8752",
     "summary": "生成摘要时出错",
-    "chinese_title": "8 in 10 Americans oppose live-streaming execution",
+    "chinese_title": "Demographic \"doomsday\" misses the mark",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50153531",
-    "title": "Code is clay now",
-    "url": "https://www.albertodenia.com/writing/code-is-clay-now",
+    "id": "50161207",
+    "title": "U.S. Supreme Court to review 1868 federal ban on home distilling of liquor",
+    "url": "https://www.staradvertiser.com/2026/10/19/breaking-news/u-s-supreme-court-to-review-1868-federal-ban-on-home-distilling-of-liquor/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Code is clay now",
+    "chinese_title": "U.S. Supreme Court to review 1868 federal ban on home distilling of liquor",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50152539",
-    "title": "Why Is Speculative Decoding Fast?",
-    "url": "https://jbarrow.ai/2026-10-08-why-is-speculative-decoding-fast/",
+    "id": "50183727",
+    "title": "Rust off Rails: The opinionated web stack for the AI era",
+    "url": "https://rustoffrails.org/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Why Is Speculative Decoding Fast?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50165904",
-    "title": "Jepsen: Orkes Conductor 5.3.2",
-    "url": "https://jepsen.io/analyses/orkes-conductor-5.3.2",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Jepsen: Orkes Conductor 5.3.2",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50171793",
-    "title": "Subaru is killing off gas cars and will only sell EVs in Europe",
-    "url": "https://electrek.co/2026/10/20/subaru-killing-off-gas-cars-europe-will-only-sell-evs/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Subaru is killing off gas cars and will only sell EVs in Europe",
+    "chinese_title": "Rust off Rails: The opinionated web stack for the AI era",
     "chinese_summary": "生成摘要时出错"
   }
 ]
