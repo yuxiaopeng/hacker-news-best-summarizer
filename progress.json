@@ -1,363 +1,19 @@
 [
   {
-    "id": "50180873",
-    "title": "PHP 8.2.35",
-    "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
-    "summary": "The PHP development team has released PHP 8.2.35, a critical security update. This version addresses two severe vulnerabilities (CVE-2026-109618 and CVE-2026-109619) that could enable unauthenticated remote code execution. All PHP 8.2 users are strongly encouraged to update immediately, as updating is the only safe mitigation.\n\nThe announcement also reminds users that PHP 8.2 will reach its end-of-life on December 31, 2026, after which it will no longer receive security fixes. Users are advised to plan an upgrade to a supported PHP version. Source downloads for PHP 8.2.35, along with Windows binaries, are available on the official downloads page, and a detailed ChangeLog is also provided.",
-    "chinese_title": "PHP 8.2.35",
-    "chinese_summary": "PHP开发团队发布了PHP 8.2.35，这是一个关键安全更新。该版本解决了两个严重漏洞（CVE-2026-109618和CVE-2026-109619），这些漏洞可能导致未经身份验证的远程代码执行。强烈建议所有PHP 8.2用户立即更新，因为更新是唯一安全的缓解措施。\n\n该公告还提醒用户，PHP 8.2将于2026年12月31日停止支持，之后将不再接收安全修复。建议用户规划升级到一个受支持的PHP版本。PHP 8.2.35的源代码下载以及Windows二进制文件可在官方下载页面获取，并且还提供了详细的变更日志。"
-  },
-  {
-    "id": "50177916",
-    "title": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
-    "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
-    "summary": "eMudhra's Certificate Authority (CA) private keys for eight intermediate certificates were discovered to be extraordinarily weak, consisting of single-byte numbers (e.g., 4, 56, 115) instead of the cryptographic standard of large, random 384-bit numbers for elliptic-curve keys. This fundamental flaw allowed anyone to brute-force and recover the private keys in milliseconds, effectively making them public since their creation in April 2025.\n\nA security researcher reported this on October 17th, leading to immediate blocking by Chrome and Firefox and public announcements from Mozilla, who also removed the eMudhra root. While major browsers are now protected due to direct blocking and Certificate Transparency enforcement, the \"cannot be contained\" nature of the compromise stems from its impact on the vast ecosystem of non-browser TLS clients (e.g., curl, Python, Node, Go, Java, Git, package managers, CI/CD pipelines, IoT devices).\n\nThese clients typically rely on local CA bundles, often don't check certificate revocation by default, and ignore Certificate Transparency, rendering official revocations ineffective. This exposes them to forged certificates for any domain, enabling traffic interception, supply chain attacks via compromised updates, and data theft. Many IoT and embedded devices with frozen firmware will remain vulnerable until the certificates' expiry in 2039. Urgent updates are required for all systems with CA bundles, but un-updatable devices pose a long-term, unmitigated risk. The keys were so weak that even an AI agent like Claude could recover them with a single prompt.",
-    "chinese_title": "八位信任：eMudhra的CA密钥毫秒级破解",
-    "chinese_summary": "eMudhra 证书颁发机构 (CA) 的八个中间证书的私钥被发现异常脆弱，它们由单字节数字（例如 4、56、115）组成，而不是加密标准要求的大型随机 384 位椭圆曲线密钥。这一根本性缺陷使得任何人都能在几毫秒内通过暴力破解恢复这些私钥，实际上，自它们于 2025 年 4 月创建以来，这些私钥就已等同于公开。\n\n一名安全研究人员于 10 月 17 日报告了此事，导致 Chrome 和 Firefox 立即将其阻止，Mozilla 也发布了公开声明并移除了 eMudhra 根证书。尽管主要浏览器由于直接阻止和证书透明度 (CT) 强制执行而现在受到保护，但此次泄露的“无法遏制”的性质源于其对庞大的非浏览器 TLS 客户端生态系统（例如 curl、Python、Node、Go、Java、Git、软件包管理器、CI/CD 管道、物联网设备）的影响。\n\n这些客户端通常依赖本地 CA 捆绑包，默认情况下通常不检查证书吊销，并忽略证书透明度，使官方吊销变得无效。这使它们容易受到任何域的伪造证书的攻击，从而实现流量拦截、通过受损更新进行的供应链攻击以及数据窃取。许多固件已固定的物联网和嵌入式设备将持续易受攻击，直到这些证书在 2039 年过期。所有带有 CA 捆绑包的系统都急需更新，但无法更新的设备构成长期、未缓解的风险。这些密钥非常脆弱，即使是像 Claude 这样的 AI 代理也能通过一个简单的提示恢复它们。"
-  },
-  {
-    "id": "50195110",
-    "title": "eMudhra to exit global SSL/TLS certificate business",
-    "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-    "summary": "eMudhra Limited announced its decision to exit the global SSL/TLS certificate business, effective October 22, 2026, to focus on core enterprise solutions and other digital trust services.\n\nThe move follows a recent incident involving its global SSL/TLS certificate, which, despite being diligently handled with no infrastructure compromise or data breach, drew disproportionate social media scrutiny. eMudhra noted that the global SSL/TLS business accounts for only about 1% of its revenue, and its complexity, cost, and reduced ROI (due to increasing compliance and free certificate offerings) no longer align with its strategic goals.\n\neMudhra assures a seamless transition for customers, with G1 RSA roots continuing during this period. Affected customers will receive free replacement certificates from partners, and revocation services will run until all certificates expire or are replaced. A full root-cause report will be provided to browser programs.\n\nThe company's core operations remain unaffected. Its global digital signature certificates (DSC), eSign services, enterprise PKI solutions (emCA, CertiNext), emSigner eSignature Suite, and identity/authentication solutions (SecurePass, emAS) operate on separate infrastructure and continue as normal. eMudhra will now concentrate on its broader portfolio of digital identity, trust, and security solutions across over 35 countries.",
-    "chinese_title": "eMudhra将退出全球SSL/TLS证书业务",
-    "chinese_summary": "eMudhra Limited 宣布决定退出全球 SSL/TLS 证书业务，自2026年10月22日起生效，以专注于核心企业解决方案和其他数字信任服务。\n\n此举源于近期涉及其全球 SSL/TLS 证书的一起事件，尽管该事件已得到妥善处理，且未发生基础设施受损或数据泄露，但仍引起了社交媒体的过度关注。eMudhra 指出，全球 SSL/TLS 业务仅占其收入的约1%，且其复杂性、成本以及（由于合规性要求增加和免费证书的提供导致）投资回报率降低，已不再符合其战略目标。\n\neMudhra 承诺为客户提供无缝过渡，在此期间，G1 RSA 根证书将继续运行。受影响的客户将从合作伙伴处获得免费的替换证书，撤销服务将一直运行，直到所有证书过期或被替换。一份完整的根本原因报告将提交给浏览器程序。\n\n公司的核心业务不受影响。其全球数字签名证书 (DSC)、eSign 服务、企业 PKI 解决方案（emCA、CertiNext）、emSigner 电子签名套件以及身份/认证解决方案（SecurePass、emAS）均在独立基础设施上运行，并继续正常运营。eMudhra 现在将专注于其在超过35个国家更广泛的数字身份、信任和安全解决方案组合。"
-  },
-  {
-    "id": "50195959",
-    "title": "Quad9 (DNS Resolver) to Exit France",
-    "url": "https://quad9.net/news/blog/au-revoir-france/",
-    "summary": "Quad9, a non-profit DNS resolver, announced its withdrawal from France starting November 24, following an unfavorable French court ruling. The decision, originating from a copyright infringement lawsuit filed by beIN, demands Quad9 block recursive DNS resolution for specific domain names for users in France.\n\nQuad9 states that compliance is technically unfeasible and violates its core mission to protect user privacy, provide cybersecurity, and maintain internet integrity by offering neutral DNS services. They refuse to manipulate DNS responses or extend French legal decisions globally. Geo-blocking is deemed unreliable and previously led to fines in a similar German case, while targeted blocking is impossible as Quad9 collects no user data. The financial penalties from this and 20 other pending lawsuits are unsustainable.\n\nQuad9 argues that DNS blocking is an ineffective anti-piracy measure, merely pushing users to less secure resolvers, and sets a dangerous precedent for censorship by private corporations. This departure will leave numerous French users, including critical infrastructure, without Quad9's cybersecurity protection.\n\nQuad9 urges French citizens to contact legislators and regulatory bodies like ARCOM to advocate against DNS blocking, emphasizing the importance of an open internet and balancing digital rights with copyright concerns. They regret leaving French users unprotected but hope for a future legal environment that permits their return.",
-    "chinese_title": "Quad9 (DNS解析器) 将退出法国",
-    "chinese_summary": "Quad9, a non-profit DNS resolver, announced its withdrawal from France starting November 24, following an unfavorable French court ruling. The decision, originating from a copyright infringement lawsuit filed by beIN, demands Quad9 block recursive DNS resolution for specific domain names for users in France.\n\nQuad9 states that compliance is technically unfeasible and violates its core mission to protect user privacy, provide cybersecurity, and maintain internet integrity by offering neutral DNS services. They refuse to manipulate DNS responses or extend French legal decisions globally. Geo-blocking is deemed unreliable and previously led to fines in a similar German case, while targeted blocking is impossible as Quad9 collects no user data. The financial penalties from this and 20 other pending lawsuits are unsustainable.\n\nQuad9 argues that DNS blocking is an ineffective anti-piracy measure, merely pushing users to less secure resolvers, and sets a dangerous precedent for censorship by private corporations. This departure will leave numerous French users, including critical infrastructure, without Quad9's cybersecurity protection.\n\nQuad9 urges French citizens to contact legislators and regulatory bodies like ARCOM to advocate against DNS blocking, emphasizing the importance of an open internet and balancing digital rights with copyright concerns. They regret leaving French users unprotected but hope for a future legal environment that permits their return."
-  },
-  {
-    "id": "50182987",
-    "title": "Today's PHP security release, and how we're strengthening security",
-    "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Today's PHP security release, and how we're strengthening security",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50184586",
-    "title": "EA is shutting down BioWare",
-    "url": "https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware",
-    "summary": "生成摘要时出错",
-    "chinese_title": "EA 关闭 BioWare",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50184820",
-    "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
-    "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
-    "summary": "Meta has been ordered to pay a $25 billion penalty by a New Mexico court, following a jury finding the company liable for misleading state citizens about how it safeguards and collects user data in the Cambridge Analytica scandal.\n\nA jury in Santa Fe found Meta responsible for over 43 million violations of New Mexico's unfair practices act, which could have resulted in a $219.5 billion fine. However, District Court Judge Francis Mathew ultimately reduced the penalty to $25 billion, citing the \"extraordinary number of willful violations,\" their duration, the involvement of senior leadership, and the \"intentional and systematic nature\" of Meta's misstatements. Interest on the penalty will accrue at 15% annually until paid.\n\nNew Mexico Attorney General Raúl Torrez praised the ruling, stating it demonstrates that powerful tech companies face consequences for their violations. Meta's chief legal officer, C.J. Mahoney, criticized the decision, calling it a \"tax on speech\" that makes business in the state impossible, and confirmed the company plans to appeal.\n\nNew Mexico's case proceeded to trial because it was not part of an overarching $17 billion settlement Meta reached with a coalition of other states for similar data privacy issues. The judge also highlighted Meta's \"willfully ineffective\" internal investigation into the Cambridge Analytica revelations, influenced by cost-cutting pressures and a desire to avoid setting precedents. This penalty adds to other Cambridge Analytica-related settlements, including a $725 million class-action settlement in 2022. Separately, Meta also faces an appeal for a $567 million penalty in New Mexico related to child safety.",
-    "chinese_title": "Meta被判在新墨西哥州剑桥分析公司案件中支付250亿美元罚款。",
-    "chinese_summary": "新墨西哥州一家法院判决Meta支付250亿美元罚款，此前陪审团裁定该公司在“剑桥分析”丑闻中，就其如何保护和收集用户数据一事误导了该州公民，需承担责任。\n\n圣达菲的陪审团认定Meta违反了新墨西哥州的不公平商业行为法案逾4300万次，这本可能导致2195亿美元的罚款。然而，地区法院法官弗朗西斯·马修最终将罚款减至250亿美元，他指出Meta“故意违规的数量异常巨大”、持续时间长、高层领导参与其中，以及其虚假陈述的“蓄意和系统性”。在罚款付清之前，每年将按15%的利率累计利息。\n\n新墨西哥州总检察长劳尔·托雷斯赞扬了这项裁决，称其表明强大的科技公司对其违规行为将面临后果。Meta首席法务官C.J.马奥尼批评了这项决定，称其为“言论税”，使该公司在该州无法开展业务，并确认公司计划上诉。\n\n新墨西哥州的案件之所以能够进行审判，是因为它未纳入Meta与其他州就类似数据隐私问题达成的一项总计170亿美元的和解协议。法官还强调，Meta对“剑桥分析”丑闻的内部调查“故意无效”，这受到成本削减压力和避免树立先例的愿望影响。这项罚款是继其他与“剑桥分析”相关的和解协议之后的又一笔，其中包括2022年的一项7.25亿美元的集体诉讼和解。此外，Meta在新墨西哥州还面临一项与儿童安全相关的5.67亿美元罚款的上诉。"
-  },
-  {
-    "id": "50192536",
-    "title": "Jailbreaking the Switch 2",
-    "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Jailbreaking the Switch 2",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50177911",
-    "title": "The 1.5°C goal of the Paris Agreement is no longer viable",
-    "url": "https://unric.org/en/unep-emissions-gap-report-2026-1-5-degree-overshoot/",
-    "summary": "The United Nations Environment Programme (UNEP) 2026 Emissions Gap Report, \"The Point of Return,\" states that the Paris Agreement's 1.5°C global warming limit by 2100 is no longer viable, with exceeding this threshold now \"imminent and inevitable.\"\n\nThe new imperative is to ensure global warming remains below 2°C, with the ambitious goal of returning to 1.5°C by century's end. This requires drastic action: global greenhouse gas emissions must be cut by 18% by 2030, 45% by 2035, and 69% by 2040, relative to 2025 levels. Current national commitments fall far short, projecting only 5-8% reductions by 2030.\n\nKey actions outlined include accelerating clean energy and electrification, establishing clear roadmaps for transitioning away from fossil fuels, investing in grids and storage, improving energy efficiency, cutting methane, and halting/reversing deforestation. Specific targets involve tripling renewable energy capacity by 2035 and significantly reducing coal, oil, and gas shares in energy production (e.g., coal by 55%, oil by 15%, gas by 5% by 2035).\n\nAdditionally, large-scale CO2 removal operations, equivalent to 320 gigatons, will be necessary by the end of the century through biological and technological means. Despite progress in renewable energy since 2015, overall efforts, especially concerning fossil fuels and deforestation, remain insufficient. Urgent, global, and economy-wide action is critical to limit any overshoot of 1.5°C and avert catastrophic irreversible changes.",
-    "chinese_title": "巴黎协定的1.5摄氏度目标不再可行。",
-    "chinese_summary": "The United Nations Environment Programme (UNEP) 2026 Emissions Gap Report, \"The Point of Return,\" states that the Paris Agreement's 1.5°C global warming limit by 2100 is no longer viable, with exceeding this threshold now \"imminent and inevitable.\"\n\nThe new imperative is to ensure global warming remains below 2°C, with the ambitious goal of returning to 1.5°C by century's end. This requires drastic action: global greenhouse gas emissions must be cut by 18% by 2030, 45% by 2035, and 69% by 2040, relative to 2025 levels. Current national commitments fall far short, projecting only 5-8% reductions by 2030.\n\nKey actions outlined include accelerating clean energy and electrification, establishing clear roadmaps for transitioning away from fossil fuels, investing in grids and storage, improving energy efficiency, cutting methane, and halting/reversing deforestation. Specific targets involve tripling renewable energy capacity by 2035 and significantly reducing coal, oil, and gas shares in energy production (e.g., coal by 55%, oil by 15%, gas by 5% by 2035).\n\nAdditionally, large-scale CO2 removal operations, equivalent to 320 gigatons, will be necessary by the end of the century through biological and technological means. Despite progress in renewable energy since 2015, overall efforts, especially concerning fossil fuels and deforestation, remain insufficient. Urgent, global, and economy-wide action is critical to limit any overshoot of 1.5°C and avert catastrophic irreversible changes."
-  },
-  {
-    "id": "50175070",
-    "title": "The Future of CSS",
-    "url": "https://www.joshwcomeau.com/css/interop-2027/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Future of CSS",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50188948",
-    "title": "There isn't an easy exploit for this PHP vulnerability",
-    "url": "https://eliastaylor.com/noexploit/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "There isn't an easy exploit for this PHP vulnerability",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50189232",
-    "title": "mitmproxy adds --emudhra option",
-    "url": "https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b",
-    "summary": "生成摘要时出错",
-    "chinese_title": "mitmproxy adds --emudhra option",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50181114",
-    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
-    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50188228",
-    "title": "Security Disclosure",
-    "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Security Disclosure",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50186037",
-    "title": "Claude Duet",
-    "url": "https://claude.com/product/claude-duet",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Claude Duet",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50181137",
-    "title": "The No Kings Takedown Is Why You Shouldn't Rent Your Megaphone from Zuck",
-    "url": "https://www.techdirt.com/2026/10/20/accident-or-not-the-no-kings-takedown-is-why-you-shouldnt-rent-your-megaphone-from-zuck/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The No Kings Takedown Is Why You Shouldn't Rent Your Megaphone from Zuck",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50190363",
-    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50181136",
-    "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-    "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50180836",
-    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
-    "url": "https://www.wiz.io/blog/php2shell-php-rce",
-    "summary": "生成摘要时出错",
-    "chinese_title": "PHP2Shell: AI uncovers critical RCE in PHP",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50173716",
-    "title": "PingCap TiDB Leaks",
-    "url": "https://fulcrumsec.vg/pingcap/",
-    "summary": "FulcrumSec has disclosed a massive, undetected breach of PingCAP TiDB Cloud, exfiltrating 10.6 TB of data over nearly two months. The stolen data encompasses the entire TiDB Cloud control plane, its financial and billing estates, GCP/AWS storage, Jira, CRM, analytics, and source code.\n\nKey exfiltrated information includes:\n*   **Customer Control Plane:** Details on 180,046 tenant organizations, 403,262 unique emails, 115,308 plaintext customer API keys (42,612 active), and 1,809 customer database credentials (root/admin accounts).\n*   **Customer Data:** 20.6 million raw customer SQL statements revealing application schemas, table designs, and sensitive business logic, plus 5 million customer server IPs from four years of gateway access logs.\n*   **Financial & Commercial:** 57 months of AWS spend ($107M), detailed per-customer gross margins, HubSpot CRM data with 433,928 contacts and deal values (e.g., $552M deals with clients like PayPay, Atlassian, SBI), and China ledger records including Bank of China.\n*   **Source Code:** 413 private repositories revealing critical vulnerabilities in billing, identity services, and a shared crypto library.\n*   **Identity Graph:** 13.6 million GA4 device identifiers, Mixpanel profiles, and a developer intelligence graph ranking engineers at companies like Tencent, Huawei, and Mastercard.\n\nThe report highlights PingCAP's severe negligence, including \"zero visibility\" into its cloud services, failure to detect continuous data exfiltration, and an unaddressed 2022 internal security warning (Jira ticket SECURITY-22) about unconditional root password resets for customer clusters. Furthermore, PingCAP engineers routinely pasted sensitive customer production credentials (AWS keys, GitHub tokens, database connection strings) directly into Jira support tickets. Named affected customers include Booking.com, Shopee, Capcom, Mercari, Airbnb, Pinterest, and Databricks. A 200 GB stage-one release is now public.",
-    "chinese_title": "PingCap TiDB Leaks",
-    "chinese_summary": "FulcrumSec has disclosed a massive, undetected breach of PingCAP TiDB Cloud, exfiltrating 10.6 TB of data over nearly two months. The stolen data encompasses the entire TiDB Cloud control plane, its financial and billing estates, GCP/AWS storage, Jira, CRM, analytics, and source code.\n\nKey exfiltrated information includes:\n*   **Customer Control Plane:** Details on 180,046 tenant organizations, 403,262 unique emails, 115,308 plaintext customer API keys (42,612 active), and 1,809 customer database credentials (root/admin accounts).\n*   **Customer Data:** 20.6 million raw customer SQL statements revealing application schemas, table designs, and sensitive business logic, plus 5 million customer server IPs from four years of gateway access logs.\n*   **Financial & Commercial:** 57 months of AWS spend ($107M), detailed per-customer gross margins, HubSpot CRM data with 433,928 contacts and deal values (e.g., $552M deals with clients like PayPay, Atlassian, SBI), and China ledger records including Bank of China.\n*   **Source Code:** 413 private repositories revealing critical vulnerabilities in billing, identity services, and a shared crypto library.\n*   **Identity Graph:** 13.6 million GA4 device identifiers, Mixpanel profiles, and a developer intelligence graph ranking engineers at companies like Tencent, Huawei, and Mastercard.\n\nThe report highlights PingCAP's severe negligence, including \"zero visibility\" into its cloud services, failure to detect continuous data exfiltration, and an unaddressed 2022 internal security warning (Jira ticket SECURITY-22) about unconditional root password resets for customer clusters. Furthermore, PingCAP engineers routinely pasted sensitive customer production credentials (AWS keys, GitHub tokens, database connection strings) directly into Jira support tickets. Named affected customers include Booking.com, Shopee, Capcom, Mercari, Airbnb, Pinterest, and Databricks. A 200 GB stage-one release is now public."
-  },
-  {
-    "id": "50174687",
-    "title": "Muse exposes users' personal and business secrets when they share conversations",
-    "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Muse exposes users' personal and business secrets when they share conversations",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50185869",
-    "title": "GitLab critical patch release",
-    "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GitLab critical patch release",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50186010",
-    "title": "Rust Style Guide",
-    "url": "https://google.github.io/styleguide/rustguide.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Rust Style Guide",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50194833",
-    "title": "Woman faces six years in prison over Cash App account she never opened",
-    "url": "https://www.techspot.com/news/114296-woman-spends-three-nights-jail-faces-six-years.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Woman faces six years in prison over Cash App account she never opened",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50192900",
-    "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
-    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
-    "summary": "生成摘要时出错",
-    "chinese_title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50186129",
-    "title": "Mistral Large 4",
-    "url": "https://mistral.ai/news/mistral-large-4/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mistral Large 4",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50180079",
-    "title": "OpenAI models are coming to Google Cloud",
-    "url": "https://openai.com/index/openai-models-google-cloud/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI models are coming to Google Cloud",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50195543",
-    "title": "What’s getting pwned right now",
-    "url": "https://pwn.watch/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What’s getting pwned right now",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50196837",
-    "title": "Google cleared 300 hectares of Finnish forest",
-    "url": "https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google cleared 300 hectares of Finnish forest",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50173891",
-    "title": "The Other Epidemic: Trying to get off benzodiazepines",
-    "url": "https://www.thebeliever.net/the-other-epidemic/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Other Epidemic: Trying to get off benzodiazepines",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "50190455",
     "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
     "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
-    "chinese_summary": "生成摘要时出错"
+    "summary": "The provided \"Content\" consists of raw, compressed PDF stream data (indicated by `%PDF-1.7` and `stream`/`endstream` blocks with `/FlateDecode` filter). This is not human-readable text.\n\nTherefore, I cannot decompress or interpret this data to extract the content of the article. Without access to the actual text, it is impossible to provide a summary of \"The recently proposed o(n log n) integer multiplication algorithm.\"",
+    "chinese_title": "最近提出的 o(n log n) 整数乘法算法",
+    "chinese_summary": "提供的“内容”由原始的、压缩的PDF流数据组成（由`%PDF-1.7`、`stream`/`endstream`块以及`/FlateDecode`过滤器指示）。这不是人类可读的文本。\n\n因此，我无法解压缩或解释这些数据以提取文章内容。在无法访问实际文本的情况下，无法提供关于“最近提出的o(n log n)整数乘法算法”的摘要。"
   },
   {
-    "id": "50180943",
-    "title": "PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 out",
-    "url": "https://www.php.net/index.php",
-    "summary": "生成摘要时出错",
-    "chinese_title": "PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 out",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50179828",
-    "title": "Dutch National Cyber Security Center is Offline because it uses PHP",
-    "url": "https://www.ncsc.nl/actueel",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Dutch National Cyber Security Center is Offline because it uses PHP",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50196718",
-    "title": "Show HN: Run full iOS 16.5 firmware on Android Devices",
-    "url": "https://github.com/oosexgang/hackios-xnu-kernel",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Run full iOS 16.5 firmware on Android Devices",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50173487",
-    "title": "Feds suspect ransom negotiator ran ShinyHunters extortion site",
-    "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Feds suspect ransom negotiator ran ShinyHunters extortion site",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50181175",
-    "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
-    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50194070",
-    "title": "Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure",
-    "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50189150",
-    "title": "Airbnb bans making guests do dishes and take out the trash",
-    "url": "https://www.theverge.com/tech/1015844/airbnb-chores-house-rules-update",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Airbnb bans making guests do dishes and take out the trash",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50179706",
-    "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
-    "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Qwen3-Coder writes less secure code when told it's for a US persona",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50193804",
-    "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
-    "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50198675",
-    "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
-    "url": "https://github.com/NVIDIA/OpenShell",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50191507",
-    "title": "OpenAI CLI",
-    "url": "https://github.com/openai/openai-cli",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI CLI",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50195873",
-    "title": "MPs moving to restrict gambling ads in Canada",
-    "url": "https://www.cbc.ca/news/investigates/gambling-ads-restrictions-canada-9.7388888",
-    "summary": "生成摘要时出错",
-    "chinese_title": "MPs moving to restrict gambling ads in Canada",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50175059",
-    "title": "Good type against all odds",
-    "url": "https://unsung.aresluna.org/good-type-against-all-odds/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Good type against all odds",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50186215",
-    "title": "Meta hit with $25B penalty for deceiving users about privacy on Facebook",
-    "url": "https://nmdoj.gov/press-release/the-new-mexico-department-of-justice-secures-another-landmark-victory-against-big-tech-with-historic-25-billion-penalty-against-facebook/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Meta hit with $25B penalty for deceiving users about privacy on Facebook",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50206914",
+    "title": "Dutch government had hacked into Jared Kushner's phone",
+    "url": "https://twitter.com/jaredkushner/status/2113376217415958767",
+    "summary": "Jared Kushner has issued a strong denial regarding an allegation that the Dutch government hacked his phone. This claim, originating from a book, was published by Vanity Fair.\n\nKushner unequivocally calls the allegations \"outrageous and categorically false,\" stating they \"never happened.\" He notes that previous denials were made on record, but the author failed to provide any verifiable evidence, such as bank statements or transaction records, to substantiate these \"extraordinary accusations.\"\n\nKushner expressed deep disappointment in Vanity Fair for publishing the claims without independent verification, criticizing it as \"fiction being presented as fact\" rather than journalism.",
+    "chinese_title": "荷兰政府入侵了贾里德·库什纳的手机",
+    "chinese_summary": "贾里德·库什纳强烈否认了关于荷兰政府入侵其手机的指控。这一源自一本书的说法，由《名利场》杂志发表。\n\n库什纳明确表示，这些指控“荒谬绝伦，彻头彻尾的谎言”，并称这些事“从未发生过”。他指出，此前已有公开否认，但作者未能提供任何可验证的证据，例如银行对账单或交易记录，来证实这些“离奇的指控”。\n\n库什纳对《名利场》杂志未经独立核实就发表这些说法深感失望，批评其是“将虚构当作事实呈现”，而非新闻报道。"
   },
   {
     "id": "50197601",
@@ -368,251 +24,51 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50176082",
-    "title": "Using LLM for confidence scoring is a bad idea",
-    "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+    "id": "50194070",
+    "title": "Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure",
+    "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Using LLM for confidence scoring is a bad idea",
+    "chinese_title": "亚马逊在公开披露前发现10月17日PHP2Shell漏洞利用。",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50178455",
-    "title": "Whatever Happened to Fire Escapes",
-    "url": "https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Whatever Happened to Fire Escapes",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50195873",
+    "title": "MPs moving to restrict gambling ads in Canada",
+    "url": "https://www.cbc.ca/news/investigates/gambling-ads-restrictions-canada-9.7388888",
+    "summary": "Federal MPs are pushing to restrict widespread gambling advertisements in Canada through Bill S-211, citing mounting concerns over rising addiction and gambling-related suicides, particularly in Ontario after its online market expansion in 2022. A CBC News analysis, in collaboration with the University of Bristol, found viewers faced 3,000 gambling messages across just seven NHL games, appearing two to three times per minute, with 95% lacking harm reduction information. A recovering gambler, \"T.S.\", shared how these omnipresent ads fueled his problem, leading to a $14,000 loss.\n\nBill S-211, championed by Sen. Marty Deacon and MP Bardish Chagger, has passed the Senate and awaits a vote in the House of Commons' heritage committee. It aims to establish a national framework for stricter regulations, potentially including bans on ads on sportswear and during live events, time-of-day restrictions, and prohibiting celebrity endorsements.\n\nThe bill faces opposition from Ontario and Alberta, who argue it interferes with provincial jurisdiction and revenues. The Canadian Gaming Association also opposes, advocating for provincial control and investment in addiction research. Conversely, a coalition of mental health organizations and researchers supports national action, emphasizing that Canada lags behind countries like Belgium, Italy, and Spain, which have implemented near-total bans on gambling marketing in sports. They argue a national approach is crucial given online gambling's cross-border nature.",
+    "chinese_title": "加拿大国会议员推动限制赌博广告",
+    "chinese_summary": "联邦议员正推动通过S-211法案，以限制加拿大境内普遍存在的赌博广告，理由是人们对日益增长的赌瘾和与赌博相关的自杀事件越发担忧，尤其是在安大略省于2022年扩大在线赌博市场后。CBC新闻与布里斯托大学合作进行的一项分析发现，观众在仅仅七场NHL比赛中就面临了3000条赌博信息，每分钟出现两到三次，其中95%的广告缺乏减少危害的信息。一位正在康复的赌徒“T.S.”分享了这些无处不在的广告如何加剧了他的问题，导致他损失了14,000加元。\n\nS-211法案由参议员Marty Deacon和国会议员Bardish Chagger倡导，已在参议院通过，目前正等待众议院文化遗产委员会的投票。该法案旨在建立一个更严格的国家监管框架，可能包括禁止在运动服和现场赛事期间投放广告、实施时段限制以及禁止名人代言。\n\n该法案遭到安大略省和阿尔伯塔省的反对，两省认为这干涉了省级管辖权和收入。加拿大博彩协会也表示反对，主张省级控制并投资于赌瘾研究。相反，一个由心理健康组织和研究人员组成的联盟支持采取国家行动，强调加拿大落后于比利时、意大利和西班牙等国，这些国家已在体育赛事中几乎全面禁止赌博营销。他们认为，鉴于在线赌博的跨境性质，国家层面的方法至关重要。"
   },
   {
-    "id": "50182526",
-    "title": "Oregon lawmakers approve money to buy an iconic waterfall listed on Redfin",
-    "url": "https://apnews.com/article/oregon-waterfall-for-sale-lawmakers-996de63462d49ec3ad9bee1629fb9488",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Oregon lawmakers approve money to buy an iconic waterfall listed on Redfin",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50189150",
+    "title": "Airbnb bans making guests do dishes and take out the trash",
+    "url": "https://www.theverge.com/tech/1015844/airbnb-chores-house-rules-update",
+    "summary": "Airbnb is implementing new rules that ban hosts from imposing extensive chores on guests, aiming to make checkouts less of a hassle. Effective for reservations booked on or after November 20th, the updated policy prohibits hosts from asking guests to complete tasks that require significant effort or time, or would typically be performed by a cleaner.\n\nSpecifically, guests should not be asked to wash and put away dishes, remove sheets or start laundry, or take garbage off-site. However, hosts can still make \"reasonable\" requests, such as asking guests to put dirty dishes in the sink, gather used towels, separate trash and recycling into designated indoor bins, and turn off amenities like air conditioning when leaving.\n\nAirbnb will now display hosts' requests more prominently in a new \"rules and requests\" section, potentially including a warning if a listing contains cleaning requests. Hosts are also forbidden from adding extra rules through messages or signs on the property. While some hosts have expressed concerns, Airbnb noted exceptions can be made for specific situations, like disposing of trash in animal-proof containers in certain areas.",
+    "chinese_title": "爱彼迎禁止要求客人洗碗和倒垃圾",
+    "chinese_summary": "爱彼迎正在实施新规定，禁止房东向房客强加大量家务，旨在让退房过程不那么麻烦。对于11月20日或之后预订的订单，更新后的政策禁止房东要求房客完成需要付出大量精力或时间、或通常由清洁工完成的任务。\n\n具体而言，不应要求房客清洗并收好碗碟、拆下床单或开始洗衣服，或将垃圾带出房源。然而，房东仍然可以提出“合理”要求，例如要求房客将脏碗碟放入水槽、收拾用过的毛巾、将垃圾和可回收物分类放入指定的室内垃圾桶，以及在离开时关闭空调等设施。\n\n爱彼迎现在将在新的“规则和要求”部分更醒目地展示房东的要求，如果房源包含清洁要求，可能会发出警告。房东也禁止通过消息或房源内的标识添加额外规则。尽管一些房东表达了担忧，爱彼迎指出，在特定情况下可以做出例外处理，例如在某些区域将垃圾丢弃在防动物垃圾桶中。"
   },
   {
-    "id": "50193170",
-    "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
-    "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50193804",
+    "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
+    "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
+    "summary": "On October 22, 2026, several unpatched Linux kernel vulnerabilities were accidentally posted to the public Linux kernel mailing list (LKML) by Trend Micro's Zero Day Initiative (ZDI), rather than the intended private security list. Linux's second-in-command, Greg Kroah-Hartman, questioned these public submissions.\n\nThe disclosed vulnerabilities carry high CVSS scores, some reaching 9.0, and include potential remote code execution (RCE) and local privilege escalation (LPE). While patches are either undergoing testing, queued for future kernel versions, or expected soon, they are not yet in mainline.\n\nKey vulnerabilities revealed include:\n*   **ZDI-CAN-33549:** A CVSS 9.0 SMB Direct RCE vulnerability due to integer underflow, with a patch in a Git branch for Linux v7.5.\n*   **ZDI-CAN-33774:** Another CVSS 9.0 KSMBD race condition leading to RCE.\n*   **ZDI-CAN-33367:** An `skbuff skb_zerocopy` network code vulnerability causing LPE, also reported by another source.\n*   **ZDI-CAN-34068:** A VMWGFX VMware graphics driver bug with an out-of-bounds write leading to LPE.\n*   **ZDI-CAN-34076:** An uninitialized resource in NVMET causing information disclosure.\n*   **ZDI-CAN-32005:** A search-domain TCP query stack buffer overflow leading to LPE, posted a day prior.\n\nThis accidental public disclosure of critical flaws precedes the availability of official patches, raising immediate security concerns.",
+    "chinese_title": "数个 Linux 内核漏洞被误发至公共邮件列表",
+    "chinese_summary": "2026年10月22日，趋势科技的零日倡议 (ZDI) 意外地将多个未打补丁的Linux内核漏洞发布到公共的Linux内核邮件列表 (LKML)，而非预期的私有安全列表。Linux的二把手Greg Kroah-Hartman对这些公开提交提出了质疑。\n\n这些已披露的漏洞具有很高的CVSS评分，有些高达9.0，包括潜在的远程代码执行 (RCE) 和本地权限提升 (LPE)。尽管补丁要么正在测试中，要么已排队等待未来的内核版本，要么预计很快就会推出，但它们尚未进入主线。\n\n揭示的主要漏洞包括：\n*   **ZDI-CAN-33549：** 一个CVSS评分为9.0的SMB Direct远程代码执行 (RCE) 漏洞，由整数下溢引起，其补丁位于Linux v7.5的一个Git分支中。\n*   **ZDI-CAN-33774：** 另一个CVSS评分为9.0的KSMBD竞争条件，导致RCE。\n*   **ZDI-CAN-33367：** 一个`skbuff skb_zerocopy` 网络代码漏洞，导致LPE，也有其他来源报告。\n*   **ZDI-CAN-34068：** 一个VMWGFX VMware图形驱动程序错误，带有越界写入，导致LPE。\n*   **ZDI-CAN-34076：** NVMET中的未初始化资源，导致信息泄露。\n*   **ZDI-CAN-32005：** 一个搜索域TCP查询栈缓冲区溢出，导致LPE，该漏洞在前一天发布。\n\n这种意外的严重漏洞公开披露早于官方补丁的可用性，引发了即时安全担忧。"
   },
   {
-    "id": "50176077",
-    "title": "PHP session.upload_progress heap UAF (CVE-2026-109618 / -109619)",
-    "url": "https://jackalsyn.com/posts/php-up-2026.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "PHP session.upload_progress heap UAF (CVE-2026-109618 / -109619)",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50202114",
+    "title": "Canadians are running out of time to oppose Bill C-22",
+    "url": "https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill",
+    "summary": "The article warns Canadians that time is running out to oppose Bill C-22, also known as the \"Lawful Access Act,\" which proposes a massive expansion of government surveillance powers. Having passed the House of Commons, the bill is now before the Canadian Senate.\n\nThe Canadian Civil Liberties Association (CCLA) and Citizen Lab are urging citizens to act, highlighting the bill's serious implications for privacy and security. Bill C-22 would force digital service providers—including telecom companies and messaging apps—to assist with government surveillance. Critically, it allows the Minister of Public Safety to order companies to create \"backdoors\" into their services, potentially weakening the encryption Canadians rely on, as long as it doesn't lead to a \"systemic insecurity.\"\n\nThe legislation also mandates that services retain user metadata for up to a year, revealing who people communicate with, where they go, and what services they use, even when they are not suspected of any crime. Experts also warn that C-22 could expand the sharing of Canadians' personal data with foreign law enforcement, such as in the United States, without Canadian court oversight.\n\nCCLA and Citizen Lab's detailed analysis points out serious constitutional and cybersecurity problems, recommending the complete withdrawal of Part 2 of the bill, which establishes the surveillance and data retention regime. Some Canadian senators have already expressed similar concerns. The article urges Canadians to sign CCLA’s petition immediately to stop this dangerous expansion of government surveillance.",
+    "chinese_title": "Canadians are running out of time to oppose Bill C-22",
+    "chinese_summary": "这篇文章警告加拿大人，反对C-22法案（又称《合法访问法案》）的时间所剩无几，该法案提议大规模扩大政府的监控权力。该法案已在众议院通过，目前正提交加拿大参议院审议。\n\n加拿大公民自由协会（CCLA）和公民实验室（Citizen Lab）正在敦促公民采取行动，强调该法案对隐私和安全的严重影响。C-22法案将迫使包括电信公司和消息应用程序在内的数字服务提供商协助政府监控。关键在于，它允许公共安全部长命令公司在其服务中创建“后门”，可能会削弱加拿大人所依赖的加密技术，只要它不会导致“系统性不安全”。\n\n该立法还强制要求服务商将用户元数据保留长达一年，揭示人们与谁通信、去向何处以及使用哪些服务，即使他们未被怀疑有任何犯罪行为。专家还警告说，C-22法案可能会在没有加拿大法院监督的情况下，扩大与外国执法机构（如美国）共享加拿大人个人数据的范围。\n\nCCLA和公民实验室的详细分析指出了严重的宪法和网络安全问题，建议完全撤销该法案的第二部分，该部分建立了监控和数据保留制度。一些加拿大参议员已经表达了类似的担忧。文章敦促加拿大人立即签署CCLA的请愿书，以阻止政府监控的这种危险扩张。"
   },
   {
-    "id": "50190168",
-    "title": "Epic Games Inc v Apple Inc",
-    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2026/2026fca1552",
+    "id": "50191507",
+    "title": "OpenAI CLI",
+    "url": "https://github.com/openai/openai-cli",
     "summary": "生成摘要时出错",
-    "chinese_title": "Epic Games Inc v Apple Inc",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50197404",
-    "title": "Getting ready to operate GNU Taler in Germany",
-    "url": "https://www.taler.net/en/news/2026-13.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Getting ready to operate GNU Taler in Germany",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50194938",
-    "title": "Crystal 1.22",
-    "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Crystal 1.22",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50185630",
-    "title": "Canary Tokens",
-    "url": "https://canarytokens.org/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Canary Tokens",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50175510",
-    "title": "C# now beats Rust on WASM size",
-    "url": "https://github.com/zion-sati/NetWasm",
-    "summary": "生成摘要时出错",
-    "chinese_title": "C# now beats Rust on WASM size",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50186318",
-    "title": "Plex laid off the whole player team",
-    "url": "https://forums.plex.tv/t/2026-20-0-beta-ios-and-tvos-4k-dovi-hdr10-won-t-play-infinite-spinning-circle/943966?page=5",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Plex laid off the whole player team",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50180752",
-    "title": "Using thousands of AI agents to uncover new leads in biological data",
-    "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Using thousands of AI agents to uncover new leads in biological data",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50185045",
-    "title": "The compiler was supposed to end programming too",
-    "url": "https://hrih.si/articles/the-compiler-was-supposed-to-end-programming/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The compiler was supposed to end programming too",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50180444",
-    "title": "Most advice is right for the person giving it",
-    "url": "https://coached.com/essays/most-advice-is-right-for-the-person-giving-it/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Most advice is right for the person giving it",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50175185",
-    "title": "In Hilbert space, all things are quantumly possible",
-    "url": "https://www.quantamagazine.org/in-hilbert-space-all-things-are-quantumly-possible-20260826/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "In Hilbert space, all things are quantumly possible",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50199757",
-    "title": "A complete bypass of eMudhra’s 1FA OTP login system",
-    "url": "https://mastodon.catgirl.cloud/@49016/117475976434068995",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A complete bypass of eMudhra’s 1FA OTP login system",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50194009",
-    "title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
-    "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50175779",
-    "title": "Using Claude to reduce the attack surface of code",
-    "url": "https://www.anthropic.com/research/attack-surface-reduction",
-    "summary": "生成摘要时出错",
-    "chinese_title": "使用 Claude 减少代码攻击面",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50183512",
-    "title": "New plastic pollution discovered: 'Plasticorals' coral rubble fused with plastic",
-    "url": "https://www.oist.jp/news-center/news/2026/9/18/new-form-plastic-pollution-discovered-shores-vulnerable-coral-reefs",
-    "summary": "生成摘要时出错",
-    "chinese_title": "New plastic pollution discovered: 'Plasticorals' coral rubble fused with plastic",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50181326",
-    "title": "Cloudflare deploys protections against php2shell vulnerability",
-    "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cloudflare deploys protections against php2shell vulnerability",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50186043",
-    "title": "Google staff resign in backlash over its AI contracts with military",
-    "url": "https://www.bbc.com/news/articles/cmreyvepnv0po",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google staff resign in backlash over its AI contracts with military",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50197313",
-    "title": "Every AI model has the same \"controversial\" take on humans",
-    "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Every AI model has the same \"controversial\" take on humans",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50187708",
-    "title": "PHP web runtimes (CVE-2026-109618 and CVE-2026-109619)",
-    "url": "https://aws.amazon.com/security/security-bulletins/2026-143-aws/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "PHP web runtimes (CVE-2026-109618 and CVE-2026-109619)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50183892",
-    "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
-    "url": "https://github.com/omnara-ai/omnara",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50194522",
-    "title": "The Last Museum: Semantic search across 5.8M artworks from major museums",
-    "url": "https://lastmuseum.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Last Museum: Semantic search across 5.8M artworks from major museums",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50180039",
-    "title": "Show HN: Sumi.css – CSS Framework",
-    "url": "https://github.com/vladocar/Sumi.css",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Sumi.css – CSS Framework",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50175882",
-    "title": "Setting Up SSH Keys on macOS with Touch ID",
-    "url": "https://nmattia.com/posts/2026-10-19-setting-up-ssh-keys-touch-id/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Setting Up SSH Keys on macOS with Touch ID",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50186455",
-    "title": "Claude Duet",
-    "url": "https://claude.com/resources/articles/claude-duet",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Claude Duet",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50189801",
-    "title": "Tesla profits drop 43% in Q3",
-    "url": "https://arstechnica.com/cars/2026/10/tesla-profits-drop-43-in-q3/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Tesla profits drop 43% in Q3",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50190357",
-    "title": "Claude Now Works with Google Docs, Sheets, and Slides",
-    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Claude Now Works with Google Docs, Sheets, and Slides",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50183311",
-    "title": "What I learned from six months of being stupid on purpose",
-    "url": "https://wvez.org/blog/learning-to-be-stupid/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What I learned from six months of being stupid on purpose",
+    "chinese_title": "OpenAI 命令行界面",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -624,11 +80,155 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50182960",
-    "title": "I told people I'm a convicted felon after 20 years of hiding it",
-    "url": "https://buford.bg/",
+    "id": "50193170",
+    "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
+    "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
     "summary": "生成摘要时出错",
-    "chinese_title": "I told people I'm a convicted felon after 20 years of hiding it",
+    "chinese_title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50195488",
+    "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+    "url": "https://github.com/dsmurrell/onkey",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50195002",
+    "title": "The alien space of science: Coherent but cognitively unavailable directions",
+    "url": "https://arxiv.org/abs/2603.01092",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The alien space of science: Coherent but cognitively unavailable directions",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50201445",
+    "title": "How does Fable 5.1 hide messages in images?",
+    "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How does Fable 5.1 hide messages in images?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50210067",
+    "title": "eMudhra ignored Mozilla Root investigation deadline; blames social media",
+    "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2083449",
+    "summary": "生成摘要时出错",
+    "chinese_title": "eMudhra ignored Mozilla Root investigation deadline; blames social media",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50190168",
+    "title": "Epic Games Inc v Apple Inc",
+    "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2026/2026fca1552",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Epic Games Inc v Apple Inc",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50199757",
+    "title": "A complete bypass of eMudhra’s 1FA OTP login system",
+    "url": "https://mastodon.catgirl.cloud/@49016/117475976434068995",
+    "summary": "生成摘要时出错",
+    "chinese_title": "A complete bypass of eMudhra’s 1FA OTP login system",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50205816",
+    "title": "Remove pgrust: the entry is cheating (per-query kernels and result caching)",
+    "url": "https://github.com/ClickHouse/ClickBench/pull/2165",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Remove pgrust: the entry is cheating (per-query kernels and result caching)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50208099",
+    "title": "OpenSSL 4.1.0",
+    "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenSSL 4.1.0",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50194938",
+    "title": "Crystal 1.22",
+    "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Crystal 1.22",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50204754",
+    "title": "Move Slow and Fix Things (2024)",
+    "url": "https://endler.dev/2024/move-slow-and-fix-things/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Move Slow and Fix Things (2024)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50202762",
+    "title": "Jank – The native Clojure dialect with seamless C++ interop",
+    "url": "https://jank-lang.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Jank – The native Clojure dialect with seamless C++ interop",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50206840",
+    "title": "Job loss and cortisone mania",
+    "url": "https://tilschuenemann.de/job-loss-cortisone-mania",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Job loss and cortisone mania",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50207050",
+    "title": "No Need for Retirement When Utopia Is Around the Corner",
+    "url": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "No Need for Retirement When Utopia Is Around the Corner",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50208258",
+    "title": "Hacker leaks 281 GB of data from Germany's far-right AfD party",
+    "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hacker-leaks-281-gb-data-germany-afd",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Hacker leaks 281 GB of data from Germany's far-right AfD party",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50207115",
+    "title": "Is this the new cyber normal?",
+    "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Is this the new cyber normal?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50208343",
+    "title": "Shitter – A Nitter Fork",
+    "url": "https://codeberg.org/shitter/shitter",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Shitter – A Nitter Fork",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50203759",
+    "title": "This I Believe (1952)",
+    "url": "https://www.awakin.org/v2/read/view.php?tid=468",
+    "summary": "生成摘要时出错",
+    "chinese_title": "This I Believe (1952)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50205229",
+    "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+    "url": "https://berget.ai/en/blog/per-request-co2-press-release",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -640,163 +240,243 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50183727",
-    "title": "Rust off Rails: The opinionated web stack for the AI era",
-    "url": "https://rustoffrails.org/",
+    "id": "50212246",
+    "title": "Kimi K3.1 Pro",
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
     "summary": "生成摘要时出错",
-    "chinese_title": "Rust off Rails: The opinionated web stack for the AI era",
+    "chinese_title": "Kimi K3.1 Pro",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50179857",
-    "title": "LayerFS: A filesystem for AI coding agents",
-    "url": "https://layerfs.ai/",
+    "id": "50213826",
+    "title": "Florida officer found dead man, impersonated him for years, renovated his home",
+    "url": "https://www.nbcnews.com/news/us-news/officer-impersonates-dead-florida-man-moved-into-home-rcna604844",
     "summary": "生成摘要时出错",
-    "chinese_title": "LayerFS: A filesystem for AI coding agents",
+    "chinese_title": "Florida officer found dead man, impersonated him for years, renovated his home",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50173547",
-    "title": "Victory! Court Rules OPM Data Disclosure to DOGE Is Unlawful",
-    "url": "https://www.eff.org/deeplinks/2026/10/victory-court-rules-opms-disclosure-personal-records-doge-unlawful",
+    "id": "50207620",
+    "title": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
+    "url": "https://www.thisandthat.chat/enron/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Victory! Court Rules OPM Data Disclosure to DOGE Is Unlawful",
+    "chinese_title": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50185814",
-    "title": "Potential third critical PHP CVE",
-    "url": "https://elk.zone/m.webtoo.ls/@elise@katze.sh/117479383721672027",
+    "id": "50199684",
+    "title": "LISP Comes of Age (1980)",
+    "url": "https://microship.com/lisp-comes-of-age/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Potential third critical PHP CVE",
+    "chinese_title": "LISP Comes of Age (1980)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50173907",
-    "title": "SCOTUS couldn't take up a copyright case because four justices have book deals",
-    "url": "https://news.bloomberglaw.com/ip-law/supreme-court-affirms-foreign-rights-ruling-after-lacking-quorum",
+    "id": "50211729",
+    "title": "The Missed Opportunities of Sonic 06 (2025)",
+    "url": "https://isaacmarovitz.com/posts/sonic-06/",
     "summary": "生成摘要时出错",
-    "chinese_title": "SCOTUS couldn't take up a copyright case because four justices have book deals",
+    "chinese_title": "The Missed Opportunities of Sonic 06 (2025)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50183344",
-    "title": "The bridge to agent-scale Git infrastructure",
-    "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+    "id": "50202609",
+    "title": "UN says breaching 1.5C warming limit is 'imminent and unavoidable'",
+    "url": "https://www.cnn.com/2026/10/21/climate/cop31-un-climate-report-emissions-gap",
     "summary": "生成摘要时出错",
-    "chinese_title": "The bridge to agent-scale Git infrastructure",
+    "chinese_title": "UN says breaching 1.5C warming limit is 'imminent and unavoidable'",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50190959",
-    "title": "I can't believe PowerShell is good",
-    "url": "https://www.spacebar.news/powershell-is-actually-good/",
+    "id": "50202671",
+    "title": "AI compute is the new oil–and needs a new market",
+    "url": "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market",
     "summary": "生成摘要时出错",
-    "chinese_title": "I can't believe PowerShell is good",
+    "chinese_title": "AI compute is the new oil–and needs a new market",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50176908",
-    "title": "Launch HN: Alter (YC S25) – Access control for multi-user agents",
-    "url": "https://alterauth.com/",
+    "id": "50212668",
+    "title": "I turned my TV into a Game Boy Color with a Pokemon town as my home screen",
+    "url": "https://twitter.com/robbietilton/status/2111936458923851923",
     "summary": "生成摘要时出错",
-    "chinese_title": "Launch HN: Alter (YC S25) – Access control for multi-user agents",
+    "chinese_title": "I turned my TV into a Game Boy Color with a Pokemon town as my home screen",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50183280",
-    "title": "Your MCU likely escaped the eMudhra intermediate CA compromise",
-    "url": "https://danielmangum.com/posts/mcu-emudhra-intermediate-ca-compromise/",
+    "id": "50202746",
+    "title": "Show HN: Impossible Machines: declaratively program the physical world",
+    "url": "https://www.impossiblemachines.xyz",
     "summary": "生成摘要时出错",
-    "chinese_title": "Your MCU likely escaped the eMudhra intermediate CA compromise",
+    "chinese_title": "Show HN: Impossible Machines: declaratively program the physical world",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50174799",
-    "title": "People sick of being spied on by their smart TV",
-    "url": "https://www.theguardian.com/tv-and-radio/2026/oct/20/smart-tv-television-dumb-wifi-techies-privacy",
+    "id": "50192868",
+    "title": "Achieving AI-style reasoning without an LLM",
+    "url": "https://fleetingswallow.com/minotaur-ai-deep-dive-achieving-reasoning-without-a-language-model/",
     "summary": "生成摘要时出错",
-    "chinese_title": "People sick of being spied on by their smart TV",
+    "chinese_title": "Achieving AI-style reasoning without an LLM",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50186842",
-    "title": "CDC Ignored Request from States to Validate a New Measles Test",
-    "url": "https://www.nytimes.com/2026/10/21/health/measles-test-cdc.html",
+    "id": "50202766",
+    "title": "Mapping the Northern Sky",
+    "url": "https://www.maps.com/star-map-charts-stars-and-constellations-of-northern-hemisphere/",
     "summary": "生成摘要时出错",
-    "chinese_title": "CDC Ignored Request from States to Validate a New Measles Test",
+    "chinese_title": "Mapping the Northern Sky",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50180975",
-    "title": "How the CIA Gave Steve Jobs Top Secret Clearance and Helped Him Return to Apple",
-    "url": "https://brianroemmele.substack.com/p/how-the-cia-gave-steve-jobs-a-top",
+    "id": "50201821",
+    "title": "Sony Exits UHD Blu-ray Player Market as Pull Back from Physical Media Continues",
+    "url": "https://www.pushsquare.com/news/2026/10/sony-exits-uhd-blu-ray-player-market-as-pull-back-from-physical-media-continues",
     "summary": "生成摘要时出错",
-    "chinese_title": "How the CIA Gave Steve Jobs Top Secret Clearance and Helped Him Return to Apple",
+    "chinese_title": "Sony Exits UHD Blu-ray Player Market as Pull Back from Physical Media Continues",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50198940",
-    "title": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
-    "url": "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients",
+    "id": "50197533",
+    "title": "Where Wealth Is Moving in America (2023)",
+    "url": "https://thestatedtruth.com/?p=28732",
     "summary": "生成摘要时出错",
-    "chinese_title": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
+    "chinese_title": "Where Wealth Is Moving in America (2023)",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50192254",
-    "title": "A Markdown File Should Just Open",
-    "url": "https://joshuamorris.info/notes/2026/10/13/a-markdown-file-should-just-open/",
+    "id": "50194283",
+    "title": "'Pure arrogance': anger in Finland as Google illegally fells 250k trees",
+    "url": "https://www.theguardian.com/environment/ng-interactive/2026/oct/22/finland-google-felling-trees-datacentre",
     "summary": "生成摘要时出错",
-    "chinese_title": "A Markdown File Should Just Open",
+    "chinese_title": "'Pure arrogance': anger in Finland as Google illegally fells 250k trees",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50199290",
-    "title": "Show HN: UI micro interactions prompts for AI",
-    "url": "https://www.typeui.sh/micro-interactions",
+    "id": "50188614",
+    "title": "Postgres recovery_prefetch can cause outages",
+    "url": "https://ardentperf.com/2026/10/20/postgres-recovery_prefetch-considered-harmful-and-causing-outages/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: UI micro interactions prompts for AI",
+    "chinese_title": "Postgres recovery_prefetch can cause outages",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50180257",
-    "title": "Show HN: Uberblok – an interactive museum of ZFS internals",
-    "url": "https://uberblok.storagebits.workers.dev/",
+    "id": "50202482",
+    "title": "We have traits at home",
+    "url": "https://www.axelmagn.com/blog/202610-zig-traits/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Uberblok – an interactive museum of ZFS internals",
+    "chinese_title": "We have traits at home",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50176301",
-    "title": "Pillowfort Is Closing",
-    "url": "https://www.pillowfort.social/posts/8413273",
+    "id": "50199277",
+    "title": "United Airlines CEO Calls for National Wealth Tax",
+    "url": "https://firstformoney.com/united-airlines-ceo-calls-for-national-wealth-tax-inheritance-tax-i-would-pay-them/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Pillowfort Is Closing",
+    "chinese_title": "United Airlines CEO Calls for National Wealth Tax",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50181794",
-    "title": "Someone Opened a CashApp in Her Name. She Faces Years in Prison",
-    "url": "https://www.404media.co/amanda-smith-opened-a-cashapp-in-her-name-she-faces-years-in-prison-cashapp-fraud/",
+    "id": "50198995",
+    "title": "Iceye and Nokia partner with Ukraine to develop satcom capability",
+    "url": "https://www.iceye.com/newsroom/press-releases/iceye-and-nokia-partner-with-the-ministry-of-defence-of-ukraine-to-develop-sovereign-satcom-capability",
     "summary": "生成摘要时出错",
-    "chinese_title": "Someone Opened a CashApp in Her Name. She Faces Years in Prison",
+    "chinese_title": "Iceye and Nokia partner with Ukraine to develop satcom capability",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50184712",
-    "title": "Texas data center boom could erase decades of progress on air quality",
-    "url": "https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/",
+    "id": "50189055",
+    "title": "The iPhone Duo",
+    "url": "https://daringfireball.net/2026/10/the_iphone_duo",
     "summary": "生成摘要时出错",
-    "chinese_title": "Texas data center boom could erase decades of progress on air quality",
+    "chinese_title": "The iPhone Duo",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50182130",
-    "title": "Delays for Pull Requests and Webhook deliveries",
-    "url": "https://www.githubstatus.com/incidents/nms1dpzmh9d9",
+    "id": "50209961",
+    "title": "When the Term \"Heatwave\" Is No Longer Enough",
+    "url": "https://coveringclimatenow.org/from-us-story/when-the-term-heatwave-is-no-longer-enough/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Delays for Pull Requests and Webhook deliveries",
+    "chinese_title": "When the Term \"Heatwave\" Is No Longer Enough",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50205531",
+    "title": "ReactOS reaches major milestone with NTFS install support",
+    "url": "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ReactOS reaches major milestone with NTFS install support",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50199147",
+    "title": "It's Time to Take Starlink Away from Elon Musk",
+    "url": "https://paulkrugman.substack.com/p/its-time-to-take-starlink-away-from",
+    "summary": "生成摘要时出错",
+    "chinese_title": "It's Time to Take Starlink Away from Elon Musk",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50194824",
+    "title": "SBD: We Have a Filesystem at Home",
+    "url": "https://fly.io/blog/sprites-block-device/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "SBD: We Have a Filesystem at Home",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50214447",
+    "title": "Sony Retires Its Last 4K Blu-ray Player in Japan, PS5 Is All That's Left",
+    "url": "https://www.techpowerup.com/354081/sony-retires-its-last-4k-blu-ray-player-in-japan-ps5-is-all-thats-left",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Sony Retires Its Last 4K Blu-ray Player in Japan, PS5 Is All That's Left",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50212507",
+    "title": "Air Purifiers as White Noise Machines",
+    "url": "https://www.jefftk.com/p/air-purifiers-as-white-noise-machines",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Air Purifiers as White Noise Machines",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50205320",
+    "title": "Show HN: Swurf – Swipe through the real web",
+    "url": "https://swurf.org/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Swurf – Swipe through the real web",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50193581",
+    "title": "Meta strikes deal with Zuckerberg to protect him from California wealth tax",
+    "url": "https://www.theguardian.com/technology/2026/oct/22/meta-mark-zuckerberg-california-wealth-tax",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Meta strikes deal with Zuckerberg to protect him from California wealth tax",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50189278",
+    "title": "When Do We Become the Person We Ought to Be?",
+    "url": "https://www.graphsaboutreligion.com/p/when-do-we-become-the-person-we-ought",
+    "summary": "生成摘要时出错",
+    "chinese_title": "When Do We Become the Person We Ought to Be?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50211601",
+    "title": "eMudhra Login Bypass",
+    "url": "https://mastodon.catgirl.cloud/@49016/117475921584308861",
+    "summary": "生成摘要时出错",
+    "chinese_title": "eMudhra Login Bypass",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50197450",
+    "title": "Mini brain organoids ‘reading’ Braille key step towards biohybrid computing",
+    "url": "https://www.frontiersin.org/news/2026/10/16/mini-brain-organoids-reading-braille-biohybrid-computing-frontiers-artificial-intelligence",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Mini brain organoids ‘reading’ Braille key step towards biohybrid computing",
     "chinese_summary": "生成摘要时出错"
   }
 ]
