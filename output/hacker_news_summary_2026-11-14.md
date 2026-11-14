@@ -2,170 +2,124 @@
 
 这是今日 [Hacker News](https://news.ycombinator.com/) 上最热门的文章摘要。
 
-## 1. 黄仁勋辞职
+## 1. FAA发布全国停飞令 – 4.5小时后解除
 
-**原文标题**: Jensen Huang resigns
-
-**原文链接**: [https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f](https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f)
-
-英伟达首席执行官黄仁勋宣布，计划在新加坡建造一台名为“Ceerwun项目”的“超高速”人工智能超级计算机。这项倡议旨在将新加坡打造成东南亚的人工智能中心，为训练大型语言模型提供关键基础设施，并培育强大的人工智能生态系统。
-
-黄仁勋强调，每个国家都需要发展自己的“人工智能工厂”——拥有自己的数据、基础设施和模型——并将其描述为一场以“主权人工智能”为核心的新工业革命。新加坡已承诺在未来五年内投入5亿新元（3.7亿美元）以提升其人工智能能力，其中包括支持英伟达的超级计算机项目。此举突显了英伟达在全球人工智能革命中发挥的核心作用，它为先进的人工智能发展提供了必要的硬件和软件。
-
----
-
-## 2. Microsoft 365 服务降级
-
-**原文标题**: Service degradation on Microsoft 365
-
-**原文链接**: [https://status.cloud.microsoft/](https://status.cloud.microsoft/)
-
-所提供的文本表明 Microsoft 365 存在服务降级。然而，它并未提供有关此次降级性质、范围或影响的具体细节。相反，内容主要阐明了一个技术
-
----
-
-## 3. FAA issues national ground stop
-
-**原文标题**: FAA issues national ground stop
+**原文标题**: FAA issues national ground stop – lifted 4.5 hours later
 
 **原文链接**: [https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247](https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247)
 
-生成摘要时出错
+美国联邦航空管理局（FAA）周五发布全国范围的“停飞令”，导致美国境内航班暂停起飞超过四小时，并于美国东部时间晚上8:15解除。此次严重的混乱导致周五超过7000个航班被取消，截至周六上午，又有超过3700个航班被取消，1990个航班延误，严重影响了亚特兰大、芝加哥奥黑尔和肯尼迪等主要航空枢纽。
+
+交通部长肖恩·达菲表示，雷达数据和通信方面的不一致促使了美国东部时间下午3:54的停飞令，该指令是“由于特殊情况和出于安全考虑”而发布的。FAA随后查明，原因是某个路由器发送了过多数据，导致老旧的空中交通管制设备过载。国土安全部长马克韦恩·马林未发现网络攻击的证据，称其为电信中断，并强调当局是“出于高度谨慎”而采取行动的。医疗航班，包括器官移植航班，获得了豁免。
+
+由于飞机和机组人员的重新部署过程复杂以及机组人员执勤时间限制，中断情况在周六仍在持续。达菲将根本原因归结为“一个使用模拟设备的数十年历史的空中交通管制系统”，并推动国会批准500亿美元用于系统大修，而去年批准的金额为125亿美元。FAA新SMART系统的供应商空域情报公司（Air Space Intelligence）证实，其软件与此次事件“完全无关”。专家估计有30万至40万乘客滞留。全国范围的停飞令很少见，此前曾发生在9/11事件之后以及2023年1月的一次短暂中断。
 
 ---
 
-## 4. 安索罗匹克上市
+## 2. 据称，英伟达通过资助人工智能初创公司购买其GPU，制造了稀缺。
 
-**原文标题**: Anthropic IPO
+**原文标题**: Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs
 
-**原文链接**: [https://ipo.anthropic.com/us/](https://ipo.anthropic.com/us/)
+**原文链接**: [https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus](https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus)
 
-生成摘要时出错
+英伟达正面临对其高端GPU（特别是对人工智能开发至关重要的H100）“刻意制造短缺”的指控。这项指控，主要由独立分析师Beth Kindig在一份研究报告中详细阐述，并被《商业内幕》等媒体报道，指出英伟达利用其风险投资部门资助人工智能初创公司，条件是这些初创公司必须将这笔资金的很大一部分（据称高达三分之二）用于购买英伟达自己的GPU。
 
----
-
-## 5. Rust 1.100
-
-**原文标题**: Rust 1.100
-
-**原文链接**: [https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/](https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/)
-
-Rust 1.100.0 为语言及其工具带来了实质性更新。一个主要亮点是 **never 类型 (`!`)** 在十年后正式稳定。这种代表发散计算的空类型现在可以在任何地方命名，并且 `Infallible` 是它的别名。这涉及旧版本中的一个轻微的破坏性更改，将 never 类型的回退从 `()` 切换到了 `!`。
-
-核心的 **Allocator API** 已经稳定，通过新的 `Allocator` trait，库作者可以为 `Vec` 和 `Box` 等类型定义和使用自定义分配器。
-
-`core::mem::DropGuard` 被引入，它是一个辅助类型，在被丢弃时运行一个闭包，简化了函数退出时的清理逻辑。它提供了一个 `dismiss` 函数，用于事务性模式。对于创建零大小类型，`std::mem::conjure_zst` 提供了一个专用的（且 `unsafe` 的）函数。
-
-Cargo 获得了显著改进：
-*   一个新的 lint 会报告未使用的依赖，有助于减少构建时间。
-*   通过对构建目录的内部重组，Cargo 缓存冲突减少了，提高了可靠性，并为未来的缓存改进铺平了道路。
-*   `Cargo min-publish-age` 已经稳定，允许用户配置一个“依赖冷却”期，以便在采用新发布的包版本之前等待最短时间，从而提高供应链安全性。
-
-许多其他 API，例如 `Box::new_in`、`Vec::new_in`、`bool::toggle`、`str::trim_prefix` 和 `UnsafeCell` 的方法，也已稳定。
+据称，这种策略制造了人为的需求激增，推高了价格，并确保英伟达的顶级GPU始终供不应求且价格昂贵。Kindig的分析指出，Coreweave和Inflection AI等公司就是例子，它们获得了英伟达的大量投资，随后成为了其主要客户。Kindig澄清说这并非非法行为，但她认为这是一种“掠夺性”策略，旨在巩固市场份额并保持高定价权，其结构类似于“金字塔骗局”。英伟达在AI加速器市场占据约70-95%的份额，但尚未就这些具体指控公开置评。
 
 ---
 
-## 6. LibreOffice actually works 365 days a year
+## 3. LibreOffice 实际全年无休
 
 **原文标题**: LibreOffice actually works 365 days a year
 
 **原文链接**: [https://twitter.com/LibreOffice/status/2121205272479998268](https://twitter.com/LibreOffice/status/2121205272479998268)
 
-On November 13, 2026, the official LibreOffice Twitter account (@LibreOffice) posted a concise statement affirming the consistent reliability of its software. The tweet declared, "LibreOffice actually works 365 days a year. Just saying," highlighting the software's continuous functionality and dependability. This post garnered significant attention, accumulating 1.237 million views and tens of millions of interactions, indicating its broad reach and resonance with the audience.
+生成摘要时出错
 
 ---
 
-## 7. 英伟达员工请愿黄仁勋回归
+## 4. 英伟达员工请愿召回黄仁勋
 
 **原文标题**: Nvidia employees petition to bring back Jensen Huang
 
 **原文链接**: [https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/](https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/)
 
-英伟达员工正在积极请愿，要求首席执行官黄仁勋复职。黄仁勋最近因多起婚外情报道而辞职，其中一起涉及一名疑似中国情报人员，另一起涉及一名直接下属。黄仁勋曾承认“对妻子不忠”。
+尽管黄仁勋在多起婚外情被报道后突然辞职，但许多英伟达员工仍在请愿他回归。WIRED查阅的内部通信显示，一个在他辞职前提出的“意见箱”帖子已获得超过1600条评论，其中众多员工呼吁黄仁勋复职，提及他做出的重大贡献，并请求给予“第二次机会”。
 
-黄仁勋辞职前提交的一份内部“意见箱”帖子已吸引了超过1600条评论，许多员工表达了对黄仁勋的强烈支持。评论中包括“让老板回来”的恳求和“再给一次机会”的呼吁，认可了他的贡献。一名员工发送了一封全公司邮件，要求透明化，并表示“我支持黄仁勋”。许多人还在LinkedIn上发帖支持他，没有发现任何支持他辞职的帖子。
+自1993年创立并领导英伟达的黄仁勋，在一封致员工的电子邮件中承认“对妻子不忠”。他的辞职发生在一系列报道之后，这些报道称他与一名疑似中国情报人员、一名直接下属以及另一名英伟达员工有染。
 
-员工们担心，这家已损失1万亿美元市值的公司，如果没有其创始人将遭受重创。他们原以为董事会调查会在任何变动前结束，但黄仁勋在调查开始时突然辞职，震惊了许多人。这场危机也促使美国议员和联邦调查局展开调查，并引发了对新芯片出口管制的担忧。董事会主要由黄仁勋的亲信组成，已任命首席财务官Colette Kress为临时首席执行官。员工们普遍认为“英伟达之所以是英伟达，是因为黄仁勋”，并且他的领导对公司的未来至关重要。
+员工们表达了强烈支持，一位匿名评论者写道：“如果你相信使命，就把这位老板请回来。”另一位则表示：“黄仁勋做了很多好事，他需要一个第二次机会。”甚至有员工发送了一封全公司范围的电子邮件，要求透明度，并声明“我支持黄仁勋。”许多人认为公司将因失去这位创始人而蒙受损失，他们呼应了“英伟达之所以是英伟达，是因为有黄仁勋”的观点。
 
----
-
-## 8. HN 展示：我的 300 美元绣花机要订阅，我干脆自己写了个 App
-
-**原文标题**: Show HN: My $300 embroidery machine needed a subscription, so I built my own app
-
-**原文链接**: [https://github.com/simpsoka/zigzag](https://github.com/simpsoka/zigzag)
-
-ZigZag是一款使用Rust构建的可视化刺绣编辑器，旨在规避一台300美元刺绣机的订阅要求。它允许用户将SVG艺术作品转换为针迹，精细调整设计，并以PES、DST、EXP、JEF或VP3等常见格式导出，确保广泛的机器兼容性。一个突出的特点是它对Brother Skitch (PP1)机器的直接蓝牙连接功能。
-
-该应用程序通过模型上下文协议 (MCP) 支持AI代理，使代理能够协作设计。用户可以直接在ZigZag中绘图，从Illustrator导入，或利用AI进行设计创作。一个命令行工具在编辑器之外也提供了类似的工作流程功能。
-
-ZigZag支持Mac (通过DMG或Homebrew) 和Windows平台，并提供应用内更新。它支持多种针迹类型，包括榻榻米填充、缎面针、运行针、贴花、十字绣等。高级规划功能包括重叠移除、优化针迹路径以隐藏走线、自定义起始/结束点以及面料预设。
-
-该编辑器的“工作室”界面设计成让Illustrator用户感到熟悉，提供选择、绘图 (钢笔、画笔、形状)、文本和测量工具。关键功能包括智能参考线、一个“图像描摹”功能可将栅格图像转换为纯色刺绣设计，以及一个“代理”面板，集成了Claude Code等AI模型进行设计协助，并在代理工作时在画布上提供可视化反馈。
+这场危机已使英伟达市值蒸发1万亿美元，引发了美国国会议员和联邦调查局的调查，并增加了对新出口管制的担忧。员工们，其中许多人原本预计董事会调查会在任何重大变动之前得出结论，据报道对他的迅速离职感到震惊，并正在寻求答案。
 
 ---
 
-## 9. 逆向工程我的Coway空气净化器，摆脱云端
+## 5. 逆向工程我的Coway空气净化器，摆脱云端
 
 **原文标题**: Reverse engineering my Coway air purifier to ditch the cloud
 
 **原文链接**: [https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/](https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/)
 
-作者详细介绍了他们逆向工程一台Coway Airmega IconS空气净化器的过程，旨在消除其对Coway不可靠云服务的依赖。由于频繁的服务中断、强制更改密码以及服务最终可能停止的风险，作者感到沮丧，因此目标是实现本地控制，并通过Home Assistant将其整合到Apple Home中。
+这篇文章详细介绍了如何对Coway Airmega IconS空气净化器进行逆向工程，以消除其对Coway不可靠云服务的依赖。作者的目标是实现本地控制和Apple Home集成，并通过一个“晚安”按钮自动化风扇速度。现有的Home Assistant集成依赖于Coway云服务，但由于服务器问题、API变更或账户封禁，经常出现故障，引发了对长期功能性的担忧。
 
-最初，作者因SSL证书绕过和中间人（MitM）设置的感知难度而却步，但有两个因素促使他们采取行动：一是2026年涉及一个弱证书颁发机构（eMudhra）的安全事件，二是AI能够简化MitM环境配置。
+最初的尝试在SSL证书验证和复杂的中间人（MitM）设置方面遇到了障碍。然而，最近发生的eMudhra安全事件和AI辅助的网络配置使其变得可行。作者使用搭载`mitmproxy`的树莓派截获了流量。一个关键发现是，风扇通过*未加密的HTTP*下载其Amazon根CA证书。
 
-作者设置了一个树莓派作为独立的Wi-Fi接入点，将净化器的流量通过`mitmproxy`进行路由。一个关键发现是，该风扇通过*明文HTTP*下载其根CA证书（AmazonRootCA1.pem）。这使得`mitmproxy`能够注入自己的CA证书，从而实现对HTTPS流量的完全拦截，而无需利用eMudhra的漏洞。
+这一漏洞使得`mitmproxy`插件能够拦截此请求，并将其替换为`mitmproxy`自己的CA证书，从而使风扇信任代理。随后的加密流量也因此被解密。结果发现，风扇通过POST请求获取其MQTT服务器配置（主机、端口、证书）。作者创建了第二个`mitmproxy`插件来注入自定义配置，将风扇重定向到本地MQTT服务器。
 
-进一步的嗅探显示，设备通过一个特定的POST请求获取其MQTT服务器地址和证书URL。风扇命令，例如速度调节，通过TLS上的MQTT在8883端口进行通信。通过AI辅助拦截和分析这些MQTT消息，作者成功破译了控制协议。
-
-这一突破提供了足够的信息来构建一个自定义的Web服务器以颁发证书，以及一个MQTT服务器以发送命令，从而完全将Coway云服务从设备的运行循环中移除。下一步是逆向工程蓝牙设置过程，以消除对Coway应用进行设备初始配置的依赖。
+随后，AI辅助分析MQTT流量以理解控制命令。这一突破使得构建一个用于风扇配置的本地网络服务器以及一个用于命令和控制的本地MQTT服务器成为可能，从而将空气净化器的操作功能完全与Coway的云服务解耦。剩下的挑战是逆向工程蓝牙设置过程，因为设备的初始配置仍需使用Coway应用程序。
 
 ---
 
-## 10. Gemini 4 Hydrogen
+## 6. 受喜爱应用泄露护照信息及逾20万条私信
 
-**原文标题**: Gemini 4 Hydrogen
+**原文标题**: Lovable apps expose passport details and more than 200K private messages
 
-**原文链接**: [https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/)
+**原文链接**: [https://www.crissyfield.de/research/lovable-en/](https://www.crissyfield.de/research/lovable-en/)
 
-生成摘要时出错
+一份研究报告显示，“Lovable”是一个由人工智能驱动的平台，旨在帮助用户无需技术专长即可构建网络应用程序，但该平台导致许多项目中敏感数据泄露。对159,041个Lovable项目进行检查后发现，许多情况下个人和机密信息无需任何登录即可访问。
+
+具体来说，研究人员重点关注使用Supabase数据库的项目，识别出34,545个此类应用程序。其中，有24,664个网站在加载时发送数据库记录，且无需登录。对这些网站的进一步调查显示，有7,403个（占30%）通过额外的只读请求暴露了电子邮件地址和其他敏感数据。
+
+泄露的数据包括：
+*   来自德国一个生活方式论坛的80,000多份用户资料（姓名、电子邮件、出生日期、性别）和200,000条聊天记录。
+*   数万条活动和餐厅销售记录，包括支付信息、电话号码和地址。
+*   包含租户和业务合作伙伴敏感信息的AI生成内部电子邮件摘要。
+*   1,000多条包含高度敏感身份证明文件详情的记录，例如护照号码、有效期和国籍，可用于身份盗窃。
+*   合同、发票、个人相册、内部WhatsApp通讯记录以及280,000封客户电子邮件。
+
+该报告强调，Lovable承诺提供一个易于使用的平台，但其条款将安全责任推给客户，这之间存在一个“令人不安的鸿沟”。报告警告说，常见的集成模式使得这些错误配置容易在多个应用程序中被利用。这些发现强调，一个易用的开发平台并不能消除在处理任何机密数据之前进行专家级安全访问权限审查的迫切需求。
 
 ---
 
-## 11. Gemini 4 Hydrogen and Orchestrator
-
-**原文标题**: Gemini 4 Hydrogen and Orchestrator
-
-**原文链接**: [https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/](https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/)
-
-生成摘要时出错
-
----
-
-## 12. Elevated errors on claude.ai, Claude Code, and platform.claude.com
+## 7. claude.ai、Claude Code 和 platform.claude.com 错误增多
 
 **原文标题**: Elevated errors on claude.ai, Claude Code, and platform.claude.com
 
 **原文链接**: [https://status.claude.com/incidents/nn11wk485zfn](https://status.claude.com/incidents/nn11wk485zfn)
 
-On November 13, 2026, Claude experienced elevated errors across several of its services, including claude.ai, Claude Code, platform.claude.com (Claude Console), and Claude Cowork.
+2026年11月13日，Claude遭遇了一起事件，其特点是在多项服务上出现“错误率升高”和用户认证问题。
 
-The incident began with users encountering issues authenticating to Claude.ai and Claude Code, which the team started investigating around 09:58 UTC. A fix for the affecting services was deployed by 11:05 UTC, followed by a period of monitoring for recovery. The issue was ultimately resolved by 11:58 UTC, with full resolution confirmed for claude.ai and Claude Cowork. The incident report was powered by Atlassian Statuspage.
+该事件始于对影响claude.ai和Claude Code的问题进行调查，这些问题于UTC时间09:58首次报告。受影响的问题也波及了Claude Console (platform.claude.com) 和 Claude Cowork。
 
----
-
-## 13. I'm making LLMs work on small and old devices
-
-**原文标题**: I'm making LLMs work on small and old devices
-
-**原文链接**: [https://github.com/hyperionaidev/smolmaxxing/](https://github.com/hyperionaidev/smolmaxxing/)
-
-生成摘要时出错
+截至UTC时间11:05，修复程序已部署，公司正积极监控系统恢复情况。该事件于UTC时间11:58正式解决，并确认影响claude.ai和Claude Cowork的问题已成功处理。
 
 ---
 
-## 14. 微软Outlook/365持续宕机12小时
+## 8. 末日：公元2026年11月13日星期五 (1960)
+
+**原文标题**: Doomsday: Friday, 13 November, A.D. 2026 (1960)
+
+**原文链接**: [https://www.science.org/doi/10.1126/science.132.3436.1291](https://www.science.org/doi/10.1126/science.132.3436.1291)
+
+The 1960 *Science* article titled "Doomsday: Friday, 13 November, A.D. 2026" is a critical review by C. F. Hergenrother of Immanuel Velikovsky's book, *Doomsday*.
+
+The reviewer characterizes Velikovsky's book as a "potpourri of historical anecdotes, geological speculation, and astrological predictions" rather than a work of science. Velikovsky's text explores various cataclysmic events, including floods, earthquakes, meteor strikes, and planetary collisions, often drawing his conclusions from mythological and historical accounts. The specific date in the article's title likely alludes to a future doomsday prediction or scenario discussed within Velikovsky’s book, based on his unique interpretations of these ancient records.
+
+Hergenrother sharply criticizes Velikovsky's methodology, labeling it as "proof by example" and highlighting a significant lack of rigorous scientific analysis or supporting evidence for his claims. The review concludes that Velikovsky's propositions regarding past and future global catastrophes, though presented as compelling, are devoid of the necessary scientific foundation, rendering the book unsuitable for serious scientific consideration. The *Science* article itself does not endorse the doomsday prediction but critiques the book that discusses such events.
+
+---
+
+## 9. Microsoft Outlook/365 still down after 12 hours
 
 **原文标题**: Microsoft Outlook/365 still down after 12 hours
 
@@ -175,127 +129,31 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 15. Former Nvidia CEO Huang had a relationship with a second employee, sources say
+## 10. Monkey Island: all 13 versions side by side
 
-**原文标题**: Former Nvidia CEO Huang had a relationship with a second employee, sources say
+**原文标题**: Monkey Island: all 13 versions side by side
 
-**原文链接**: [https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/](https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/)
+**原文链接**: [https://monkeyisland.pages.dev/](https://monkeyisland.pages.dev/)
+
+This project, titled "Monkey Island: all 13 versions side by side," offers an interactive comparison of various versions of the classic adventure game. Users can view and compare 13 different iterations of the game's screens, captured at 12 identical moments, utilizing features like side-by-side viewing, swapping, zooming (1x, 2x, 4x), and an authentic CRT monitor effect.
+
+Screens were meticulously captured using ScummVM (or Hatari for Atari ST monochrome), then scaled to 1600x1200 with nearest-neighbour pixels and 4:3 aspect correction to faithfully reproduce the original pixel shape. The integrated CRT shader, ported from DOSBox Staging, simulates a range of period monitors, including VGA, Mac, EGA, CGA, Amiga, ST, Sega CD, and Hercules displays. It incorporates advanced shaders like Hyllian's CRT and crt-guest-advanced-hd to render realistic scanlines, curvature, and phosphor effects tailored to each version's native output.
+
+The project was developed by "The Paninos off-line," a duo of brothers who used AI in its creation. They are also working on a remake of Sierra's "The Black Cauldron." The site provides detailed information on capture settings, sources, the specific font used (PxPlus IBM VGA 9x16), and technical specifications of the CRT shader implementation, clarifying its status as a fan-made reference unaffiliated with Lucasfilm Games or Disney.
+
+---
+
+## 11. Jonathan Blow – If AI solved coding, why is my software still the same? [video]
+
+**原文标题**: Jonathan Blow – If AI solved coding, why is my software still the same? [video]
+
+**原文链接**: [https://www.youtube.com/watch?v=IRK8h67ol7Q](https://www.youtube.com/watch?v=IRK8h67ol7Q)
 
 生成摘要时出错
 
 ---
 
-## 16. Doomsday: Friday, 13 November, A.D. 2026 (1960)
-
-**原文标题**: Doomsday: Friday, 13 November, A.D. 2026 (1960)
-
-**原文链接**: [https://www.science.org/doi/10.1126/science.132.3436.1291](https://www.science.org/doi/10.1126/science.132.3436.1291)
-
-生成摘要时出错
-
----
-
-## 17. "Humble Bundle just killed most of their security through vibecoding"
-
-**原文标题**: "Humble Bundle just killed most of their security through vibecoding"
-
-**原文链接**: [https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/](https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/)
-
-生成摘要时出错
-
----
-
-## 18. Dwarf planet candidate appears which takes roughly 280 years to orbit our sun
-
-**原文标题**: Dwarf planet candidate appears which takes roughly 280 years to orbit our sun
-
-**原文链接**: [https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/](https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/)
-
-生成摘要时出错
-
----
-
-## 19. Jensen Huang resigns as Nvidia CEO immediately
-
-**原文标题**: Jensen Huang resigns as Nvidia CEO immediately
-
-**原文链接**: [https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/](https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/)
-
-生成摘要时出错
-
----
-
-## 20. Writing correct software is hard and math alone won’t help us (2016)
-
-**原文标题**: Writing correct software is hard and math alone won’t help us (2016)
-
-**原文链接**: [https://pron.github.io/posts/correctness-and-complexity](https://pron.github.io/posts/correctness-and-complexity)
-
-生成摘要时出错
-
----
-
-## 21. Critical RCE Vulnerability in Apache HTTP Server
-
-**原文标题**: Critical RCE Vulnerability in Apache HTTP Server
-
-**原文链接**: [https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability](https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability)
-
-生成摘要时出错
-
----
-
-## 22. IceWM
-
-**原文标题**: IceWM
-
-**原文链接**: [https://ice-wm.org/](https://ice-wm.org/)
-
-生成摘要时出错
-
----
-
-## 23. Chinese frontier AI models carry the fingerprint of export-controlled GPUs
-
-**原文标题**: Chinese frontier AI models carry the fingerprint of export-controlled GPUs
-
-**原文链接**: [https://unemploymentlabs.com/checkpoint-forensics](https://unemploymentlabs.com/checkpoint-forensics)
-
-生成摘要时出错
-
----
-
-## 24. Edge0-145B: Frontier AI Capabilities on Your Own Computer
-
-**原文标题**: Edge0-145B: Frontier AI Capabilities on Your Own Computer
-
-**原文链接**: [https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer](https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer)
-
-生成摘要时出错
-
----
-
-## 25. Nintendo Takes Down Emulators and Firmware in Massive GitHub DMCA Sweep
-
-**原文标题**: Nintendo Takes Down Emulators and Firmware in Massive GitHub DMCA Sweep
-
-**原文链接**: [https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep](https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep)
-
-生成摘要时出错
-
----
-
-## 26. Rust 1.100
-
-**原文标题**: Rust 1.100
-
-**原文链接**: [https://github.com/rust-lang/rust/releases/tag/1.100.0](https://github.com/rust-lang/rust/releases/tag/1.100.0)
-
-生成摘要时出错
-
----
-
-## 27. AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems
+## 12. AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems
 
 **原文标题**: AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems
 
@@ -305,67 +163,47 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 28. AI is destroying the trust between writers and readers
+## 13. Tech Companies Are Trying to Shift the Concept of Privacy (Again)
 
-**原文标题**: AI is destroying the trust between writers and readers
+**原文标题**: Tech Companies Are Trying to Shift the Concept of Privacy (Again)
 
-**原文链接**: [https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/](https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/)
-
-生成摘要时出错
-
----
-
-## 29. Abandoned Quake 4 expansion finished by modders and now playable
-
-**原文标题**: Abandoned Quake 4 expansion finished by modders and now playable
-
-**原文链接**: [https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64](https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64)
+**原文链接**: [https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again](https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again)
 
 生成摘要时出错
 
 ---
 
-## 30. Global Microsoft Outage
+## 14. Terminal borders that don't cost a cell
 
-**原文标题**: Global Microsoft Outage
+**原文标题**: Terminal borders that don't cost a cell
 
-**原文链接**: [https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk](https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk)
-
-生成摘要时出错
-
----
-
-## 31. $11.4M in Nvidia hardware vanishes during shipment from CA to TX
-
-**原文标题**: $11.4M in Nvidia hardware vanishes during shipment from CA to TX
-
-**原文链接**: [https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas](https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas)
+**原文链接**: [https://www.joshka.net/cell-borders/](https://www.joshka.net/cell-borders/)
 
 生成摘要时出错
 
 ---
 
-## 32. Foundation Models framework
+## 15. Ggml v1.0.0
 
-**原文标题**: Foundation Models framework
+**原文标题**: Ggml v1.0.0
 
-**原文链接**: [https://developer.apple.com/foundation-models-framework/](https://developer.apple.com/foundation-models-framework/)
-
-生成摘要时出错
-
----
-
-## 33. Eli Lilly CEO pushes back on Dario Amodei's medical claims
-
-**原文标题**: Eli Lilly CEO pushes back on Dario Amodei's medical claims
-
-**原文链接**: [https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest](https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest)
+**原文链接**: [https://github.com/ggml-org/ggml/releases/tag/v1.0.0](https://github.com/ggml-org/ggml/releases/tag/v1.0.0)
 
 生成摘要时出错
 
 ---
 
-## 34. It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad
+## 16. SpaceX Catches the Starship to end Flight 15
+
+**原文标题**: SpaceX Catches the Starship to end Flight 15
+
+**原文链接**: [https://x.com/i/broadcasts/2brajgZlOKRMka](https://x.com/i/broadcasts/2brajgZlOKRMka)
+
+生成摘要时出错
+
+---
+
+## 17. It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad
 
 **原文标题**: It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad
 
@@ -375,287 +213,97 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 35. Brave Search API now accepts agentic payments via the x402 protocol
+## 18. $11.4M in Nvidia hardware vanishes during shipment from CA to TX
 
-**原文标题**: Brave Search API now accepts agentic payments via the x402 protocol
+**原文标题**: $11.4M in Nvidia hardware vanishes during shipment from CA to TX
 
-**原文链接**: [https://brave.com/blog/search-api-agentic-payments/](https://brave.com/blog/search-api-agentic-payments/)
-
-生成摘要时出错
-
----
-
-## 36. Our software engineering interviews are changing a little
-
-**原文标题**: Our software engineering interviews are changing a little
-
-**原文链接**: [https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/](https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/)
+**原文链接**: [https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas](https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas)
 
 生成摘要时出错
 
 ---
 
-## 37. Talking Zen 6 with Mike Clark at AMD In-Depth
+## 19. IceWM
 
-**原文标题**: Talking Zen 6 with Mike Clark at AMD In-Depth
+**原文标题**: IceWM
 
-**原文链接**: [https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at](https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at)
-
-生成摘要时出错
-
----
-
-## 38. Turning a 22-year-old Postgres type-confusion primitive into RCE
-
-**原文标题**: Turning a 22-year-old Postgres type-confusion primitive into RCE
-
-**原文链接**: [https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/](https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/)
+**原文链接**: [https://ice-wm.org/](https://ice-wm.org/)
 
 生成摘要时出错
 
 ---
 
-## 39. Why Zig over C for Systems Programming
+## 20. Chinese frontier AI models carry the fingerprint of export-controlled GPUs
 
-**原文标题**: Why Zig over C for Systems Programming
+**原文标题**: Chinese frontier AI models carry the fingerprint of export-controlled GPUs
 
-**原文链接**: [https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/](https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/)
-
-生成摘要时出错
-
----
-
-## 40. After 600 experiments, here's what I discovered about JEPA world models
-
-**原文标题**: After 600 experiments, here's what I discovered about JEPA world models
-
-**原文链接**: [https://haddyalchaer.com/jepa](https://haddyalchaer.com/jepa)
+**原文链接**: [https://unemploymentlabs.com/checkpoint-forensics](https://unemploymentlabs.com/checkpoint-forensics)
 
 生成摘要时出错
 
 ---
 
-## 41. Big tech is here to let us down
+## 21. AI is destroying the trust between writers and readers
 
-**原文标题**: Big tech is here to let us down
+**原文标题**: AI is destroying the trust between writers and readers
 
-**原文链接**: [https://blog.jsweeting.me/big-tech-is-here-to-let-us-down](https://blog.jsweeting.me/big-tech-is-here-to-let-us-down)
-
-生成摘要时出错
-
----
-
-## 42. Data centers need power – lower income, rural residents pay the price
-
-**原文标题**: Data centers need power – lower income, rural residents pay the price
-
-**原文链接**: [https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price](https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price)
+**原文链接**: [https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/](https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/)
 
 生成摘要时出错
 
 ---
 
-## 43. AI is turning Apple's app review process into a nightmare for synth developers
+## 22. Edge0-145B: Frontier AI Capabilities on Your Own Computer
 
-**原文标题**: AI is turning Apple's app review process into a nightmare for synth developers
+**原文标题**: Edge0-145B: Frontier AI Capabilities on Your Own Computer
 
-**原文链接**: [https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html](https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html)
-
-生成摘要时出错
-
----
-
-## 44. Claude Is Down
-
-**原文标题**: Claude Is Down
-
-**原文链接**: [https://status.claude.com/history](https://status.claude.com/history)
+**原文链接**: [https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer](https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer)
 
 生成摘要时出错
 
 ---
 
-## 45. Singapore Says U.S. Not Helpful on Investigation into Suspected Spy's Company
+## 23. KDE: The documentary [video]
 
-**原文标题**: Singapore Says U.S. Not Helpful on Investigation into Suspected Spy's Company
+**原文标题**: KDE: The documentary [video]
 
-**原文链接**: [https://www.nytimes.com/2026/11/12/business/nvidia-megaspeed-alice-huang.html](https://www.nytimes.com/2026/11/12/business/nvidia-megaspeed-alice-huang.html)
-
-生成摘要时出错
-
----
-
-## 46. No AI Slop: A Manifesto
-
-**原文标题**: No AI Slop: A Manifesto
-
-**原文链接**: [https://www.slopmanifesto.com/](https://www.slopmanifesto.com/)
+**原文链接**: [https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c](https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c)
 
 生成摘要时出错
 
 ---
 
-## 47. FM-1 Workbench
+## 24. Ukraine knocks out 36% of Russia's oil refining capacity in under two weeks
 
-**原文标题**: FM-1 Workbench
+**原文标题**: Ukraine knocks out 36% of Russia's oil refining capacity in under two weeks
 
-**原文链接**: [https://open.m-vave.com/fm1-workbench](https://open.m-vave.com/fm1-workbench)
-
-生成摘要时出错
-
----
-
-## 48. A technical vision for the Haskell ecosystem
-
-**原文标题**: A technical vision for the Haskell ecosystem
-
-**原文链接**: [https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078](https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078)
+**原文链接**: [https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html](https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html)
 
 生成摘要时出错
 
 ---
 
-## 49. Nvidia CEO Jensen Huang resigns after reports of second affair deepened scandal
+## 25. Italy fines Meta $887M over Android users' data access
 
-**原文标题**: Nvidia CEO Jensen Huang resigns after reports of second affair deepened scandal
+**原文标题**: Italy fines Meta $887M over Android users' data access
 
-**原文链接**: [https://www.bbc.co.uk/news/live/c6zjry11v8w1t](https://www.bbc.co.uk/news/live/c6zjry11v8w1t)
-
-生成摘要时出错
-
----
-
-## 50. Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers
-
-**原文标题**: Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers
-
-**原文链接**: [https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e](https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e)
+**原文链接**: [https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/](https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/)
 
 生成摘要时出错
 
 ---
 
-## 51. Why is Google cutting off Search from AI-free schools? Here are some theories
+## 26. Global Microsoft Outage
 
-**原文标题**: Why is Google cutting off Search from AI-free schools? Here are some theories
+**原文标题**: Global Microsoft Outage
 
-**原文链接**: [https://text.npr.org/nx-s1-6029408](https://text.npr.org/nx-s1-6029408)
-
-生成摘要时出错
-
----
-
-## 52. 'The Netherlands is negotiating dismantling the International Criminal Court'
-
-**原文标题**: 'The Netherlands is negotiating dismantling the International Criminal Court'
-
-**原文链接**: [https://rightsforum.org/en/diplomatic-sources-the-netherlands-is-negotiating-the-dismantling-of-the-international-criminal-court/](https://rightsforum.org/en/diplomatic-sources-the-netherlands-is-negotiating-the-dismantling-of-the-international-criminal-court/)
+**原文链接**: [https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk](https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk)
 
 生成摘要时出错
 
 ---
 
-## 53. Libreagi – Save OSS Models
-
-**原文标题**: Libreagi – Save OSS Models
-
-**原文链接**: [https://libreagi.com/](https://libreagi.com/)
-
-生成摘要时出错
-
----
-
-## 54. Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]
-
-**原文标题**: Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]
-
-**原文链接**: [https://www.youtube.com/watch?v=IRK8h67ol7Q](https://www.youtube.com/watch?v=IRK8h67ol7Q)
-
-生成摘要时出错
-
----
-
-## 55. Switcher (2004)
-
-**原文标题**: Switcher (2004)
-
-**原文链接**: [https://folklore.org/Switcher.html](https://folklore.org/Switcher.html)
-
-生成摘要时出错
-
----
-
-## 56. All US airports are currently ground stopped
-
-**原文标题**: All US airports are currently ground stopped
-
-**原文链接**: [https://twitter.com/flightradar24/status/2121347654714077605](https://twitter.com/flightradar24/status/2121347654714077605)
-
-生成摘要时出错
-
----
-
-## 57. OpenAI disbands its robotics team as its general models start running robots
-
-**原文标题**: OpenAI disbands its robotics team as its general models start running robots
-
-**原文链接**: [https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)
-
-生成摘要时出错
-
----
-
-## 58. Researchers discover rare star system that emits radio signals every 8 minutes
-
-**原文标题**: Researchers discover rare star system that emits radio signals every 8 minutes
-
-**原文链接**: [https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/](https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/)
-
-生成摘要时出错
-
----
-
-## 59. Show HN: Isometric SF – A pixel-art map of the SF Bay Area
-
-**原文标题**: Show HN: Isometric SF – A pixel-art map of the SF Bay Area
-
-**原文链接**: [https://isometricsf.com/](https://isometricsf.com/)
-
-生成摘要时出错
-
----
-
-## 60. The Dawn of the Data Intelligence Engineer
-
-**原文标题**: The Dawn of the Data Intelligence Engineer
-
-**原文链接**: [https://motherduck.com/blog/the-data-intelligence-engineer/](https://motherduck.com/blog/the-data-intelligence-engineer/)
-
-生成摘要时出错
-
----
-
-## 61. Africa's solar revolution is vast and speedy
-
-**原文标题**: Africa's solar revolution is vast and speedy
-
-**原文链接**: [https://www.economist.com/middle-east-and-africa/2026/11/12/africas-solar-revolution-is-vast-and-speedy](https://www.economist.com/middle-east-and-africa/2026/11/12/africas-solar-revolution-is-vast-and-speedy)
-
-生成摘要时出错
-
----
-
-## 62. Show HN: AgentRun – open-source, Self-improving Managed Agents
-
-**原文标题**: Show HN: AgentRun – open-source, Self-improving Managed Agents
-
-**原文链接**: [https://github.com/Parcha-ai/agentrun/blob/main/README.md](https://github.com/Parcha-ai/agentrun/blob/main/README.md)
-
-生成摘要时出错
-
----
-
-## 63. Live airband on all frequencies from KORS. Victoria, CA also ground stopped
+## 27. Live airband on all frequencies from KORS. Victoria, CA also ground stopped
 
 **原文标题**: Live airband on all frequencies from KORS. Victoria, CA also ground stopped
 
@@ -665,137 +313,55 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 64. I'm Working on a FOSS Linux Pinbal Simulation Engine
+## 28. After 600 experiments, here's what I discovered about JEPA world models
 
-**原文标题**: I'm Working on a FOSS Linux Pinbal Simulation Engine
+**原文标题**: After 600 experiments, here's what I discovered about JEPA world models
 
-**原文链接**: [https://www.getlazarus.org/forums/topic/17/](https://www.getlazarus.org/forums/topic/17/)
-
-生成摘要时出错
-
----
-
-## 65. Weight Space Misfolding
-
-**原文标题**: Weight Space Misfolding
-
-**原文链接**: [https://www.alphaxiv.org/abs/2611.weight-space-misfolding](https://www.alphaxiv.org/abs/2611.weight-space-misfolding)
+**原文链接**: [https://haddyalchaer.com/jepa](https://haddyalchaer.com/jepa)
 
 生成摘要时出错
 
 ---
 
-## 66. ExcalidrawZ: Local Native Excalidraw on macOS/iOS
+## 29. Eli Lilly CEO pushes back on Dario Amodei's medical claims
 
-**原文标题**: ExcalidrawZ: Local Native Excalidraw on macOS/iOS
+**原文标题**: Eli Lilly CEO pushes back on Dario Amodei's medical claims
 
-**原文链接**: [https://github.com/chocoford/ExcalidrawZ](https://github.com/chocoford/ExcalidrawZ)
-
-生成摘要时出错
-
----
-
-## 67. Lonewolf 0.3 – A standalone XMPP server written in Rust
-
-**原文标题**: Lonewolf 0.3 – A standalone XMPP server written in Rust
-
-**原文链接**: [https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0](https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0)
+**原文链接**: [https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest](https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest)
 
 生成摘要时出错
 
 ---
 
-## 68. Minnesota guitarist's "palmfrets" invention strikes a new chord
+## 30. FM-1 Workbench
 
-**原文标题**: Minnesota guitarist's "palmfrets" invention strikes a new chord
+**原文标题**: FM-1 Workbench
 
-**原文链接**: [https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord](https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord)
-
-生成摘要时出错
-
----
-
-## 69. Microsoft outage gives customers a crash course in dependence on Redmond
-
-**原文标题**: Microsoft outage gives customers a crash course in dependence on Redmond
-
-**原文链接**: [https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805](https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805)
+**原文链接**: [https://open.m-vave.com/fm1-workbench](https://open.m-vave.com/fm1-workbench)
 
 生成摘要时出错
 
 ---
 
-## 70. EU Digital Identity Wallet rollout: every EU state on one board
+## 31. Brave Search API now accepts agentic payments via the x402 protocol
 
-**原文标题**: EU Digital Identity Wallet rollout: every EU state on one board
+**原文标题**: Brave Search API now accepts agentic payments via the x402 protocol
 
-**原文链接**: [https://myid.ie/business/eu-digital-wallet-tracker/](https://myid.ie/business/eu-digital-wallet-tracker/)
+**原文链接**: [https://brave.com/blog/search-api-agentic-payments/](https://brave.com/blog/search-api-agentic-payments/)
 
-生成摘要时出错
+The Brave Search API now supports instant, pay-as-you-go "agentic payments" via the open x402 payment protocol, eliminating the need for traditional API key management. This enables developers and autonomous AI agents to programmatically query Brave’s independent search index, ground agent responses, and settle requests in real-time.
 
----
+Users can access the API without creating an account or selecting a plan. Instead, they simply transfer USDC stablecoin to their agent’s wallet via the Base blockchain. Brave operates its own facilitator for USDC on Base, with future plans for other networks and stablecoins.
 
-## 71. TSMC Hacked
+The payment process is decentralized: A request without payment receives an HTTP 402 "Payment Required" response with the price and payment details. The agent then signs a USDC payment for the specified amount and retries the request. Once verified, the search runs, and results are returned with a transaction receipt from the Base blockchain.
 
-**原文标题**: TSMC Hacked
+Pricing for LLM Context (for agent grounding), general web search, news, image, video, and local endpoints is set at $0.005 per request ($5 per 1,000 requests). Brave will cover gas fees on the Base blockchain for a limited time.
 
-**原文链接**: [https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm](https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm)
-
-生成摘要时出错
+To begin, users can install Purl Wallet, a Stripe-developed CLI wallet, top it off with Base-native USDC, and start querying the API.
 
 ---
 
-## 72. Vibes Don't Maintain
-
-**原文标题**: Vibes Don't Maintain
-
-**原文链接**: [https://roll.bybacon.com/2026/10/14/vibes-dont-maintain.html](https://roll.bybacon.com/2026/10/14/vibes-dont-maintain.html)
-
-生成摘要时出错
-
----
-
-## 73. Running web sites makes me not want to
-
-**原文标题**: Running web sites makes me not want to
-
-**原文链接**: [https://lowkey.party/running-web-sites-makes-me-not-want-to](https://lowkey.party/running-web-sites-makes-me-not-want-to)
-
-生成摘要时出错
-
----
-
-## 74. PostgreSQL 18.7, 17.12, 16.16, 15.20, 14.25, and 19 RC 2 Released
-
-**原文标题**: PostgreSQL 18.7, 17.12, 16.16, 15.20, 14.25, and 19 RC 2 Released
-
-**原文链接**: [https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/](https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/)
-
-生成摘要时出错
-
----
-
-## 75. US university students tell surveillance cameras to Flock off
-
-**原文标题**: US university students tell surveillance cameras to Flock off
-
-**原文链接**: [https://www.theguardian.com/technology/ng-interactive/2026/nov/13/universities-drop-flock-camera-contracts](https://www.theguardian.com/technology/ng-interactive/2026/nov/13/universities-drop-flock-camera-contracts)
-
-生成摘要时出错
-
----
-
-## 76. FAA issues nationwide ground stop due to "extraordinary circumstances"
-
-**原文标题**: FAA issues nationwide ground stop due to "extraordinary circumstances"
-
-**原文链接**: [https://www.axios.com/2026/11/13/faa-nationwide-ground-stop](https://www.axios.com/2026/11/13/faa-nationwide-ground-stop)
-
-生成摘要时出错
-
----
-
-## 77. Found: A protein that drives ageing without unleashing inflammation
+## 32. Found: A protein that drives ageing without unleashing inflammation
 
 **原文标题**: Found: A protein that drives ageing without unleashing inflammation
 
@@ -805,77 +371,287 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 78. Scientists claim the universe is twice as old as believed
+## 33. Show HN: Isometric SF – A pixel-art map of the SF Bay Area
 
-**原文标题**: Scientists claim the universe is twice as old as believed
+**原文标题**: Show HN: Isometric SF – A pixel-art map of the SF Bay Area
 
-**原文链接**: [https://geekspin.co/scientists-claim-the-universe-is-twice-as-old-as-believed/](https://geekspin.co/scientists-claim-the-universe-is-twice-as-old-as-believed/)
-
-生成摘要时出错
-
----
-
-## 79. Why You Should Expect an AI Crash
-
-**原文标题**: Why You Should Expect an AI Crash
-
-**原文链接**: [https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash](https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash)
+**原文链接**: [https://isometricsf.com/](https://isometricsf.com/)
 
 生成摘要时出错
 
 ---
 
-## 80. Europe's electric car sales jump 49% as global EV sales grow
+## 34. Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update
 
-**原文标题**: Europe's electric car sales jump 49% as global EV sales grow
+**原文标题**: Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update
 
-**原文链接**: [https://electrek.co/2026/11/11/europes-electric-car-sales-jump-49-as-global-ev-sales-grow/](https://electrek.co/2026/11/11/europes-electric-car-sales-jump-49-as-global-ev-sales-grow/)
-
-生成摘要时出错
-
----
-
-## 81. The 42-Year Journey to Bring 'Neuromancer' to the Screen
-
-**原文标题**: The 42-Year Journey to Bring 'Neuromancer' to the Screen
-
-**原文链接**: [https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/](https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/)
+**原文链接**: [https://unsloth.ai/docs/models/qwen3.8](https://unsloth.ai/docs/models/qwen3.8)
 
 生成摘要时出错
 
 ---
 
-## 82. Bad ideas that aren't bad anymore
+## 35. A technical vision for the Haskell ecosystem
 
-**原文标题**: Bad ideas that aren't bad anymore
+**原文标题**: A technical vision for the Haskell ecosystem
 
-**原文链接**: [https://devonestes.com/bad-ideas-that-arent-bad-anymore](https://devonestes.com/bad-ideas-that-arent-bad-anymore)
-
-生成摘要时出错
-
----
-
-## 83. Fitting Four 32 GB Resizable Bars Behind a PCIe Switch on Linux
-
-**原文标题**: Fitting Four 32 GB Resizable Bars Behind a PCIe Switch on Linux
-
-**原文链接**: [https://doug.sh/posts/gpu-bars-behind-a-pcie-switch/](https://doug.sh/posts/gpu-bars-behind-a-pcie-switch/)
+**原文链接**: [https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078](https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078)
 
 生成摘要时出错
 
 ---
 
-## 84. North Korean hackers used fake video calls in $400M crypto hack, says FBI
+## 36. Big tech is here to let us down
 
-**原文标题**: North Korean hackers used fake video calls in $400M crypto hack, says FBI
+**原文标题**: Big tech is here to let us down
 
-**原文链接**: [https://www.bbc.com/news/articles/cqdj1ellpd70o](https://www.bbc.com/news/articles/cqdj1ellpd70o)
+**原文链接**: [https://blog.jsweeting.me/big-tech-is-here-to-let-us-down](https://blog.jsweeting.me/big-tech-is-here-to-let-us-down)
 
 生成摘要时出错
 
 ---
 
-## 85. Perplexity Decider v1.3: Training, eval, and use cases
+## 37. Why Zig over C for Systems Programming
+
+**原文标题**: Why Zig over C for Systems Programming
+
+**原文链接**: [https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/](https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/)
+
+生成摘要时出错
+
+---
+
+## 38. No AI Slop: A Manifesto
+
+**原文标题**: No AI Slop: A Manifesto
+
+**原文链接**: [https://www.slopmanifesto.com/](https://www.slopmanifesto.com/)
+
+生成摘要时出错
+
+---
+
+## 39. Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal
+
+**原文标题**: Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal
+
+**原文链接**: [https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html](https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html)
+
+生成摘要时出错
+
+---
+
+## 40. Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop
+
+**原文标题**: Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop
+
+**原文链接**: [https://grounds.top/](https://grounds.top/)
+
+生成摘要时出错
+
+---
+
+## 41. All US airports are currently ground stopped
+
+**原文标题**: All US airports are currently ground stopped
+
+**原文链接**: [https://twitter.com/flightradar24/status/2121347654714077605](https://twitter.com/flightradar24/status/2121347654714077605)
+
+生成摘要时出错
+
+---
+
+## 42. FAA lifted National Ground Stop at 0119Z
+
+**原文标题**: FAA lifted National Ground Stop at 0119Z
+
+**原文链接**: [https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)
+
+生成摘要时出错
+
+---
+
+## 43. Claude Is Down
+
+**原文标题**: Claude Is Down
+
+**原文链接**: [https://status.claude.com/history](https://status.claude.com/history)
+
+生成摘要时出错
+
+---
+
+## 44. What happened to 3Com?
+
+**原文标题**: What happened to 3Com?
+
+**原文链接**: [https://dfarq.homeip.net/what-happened-to-3com/](https://dfarq.homeip.net/what-happened-to-3com/)
+
+生成摘要时出错
+
+---
+
+## 45. Minnesota guitarist's "palmfrets" invention strikes a new chord
+
+**原文标题**: Minnesota guitarist's "palmfrets" invention strikes a new chord
+
+**原文链接**: [https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord](https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord)
+
+生成摘要时出错
+
+---
+
+## 46. Amtrak booking system experiencing major issues amid nationwide FAA ground stop
+
+**原文标题**: Amtrak booking system experiencing major issues amid nationwide FAA ground stop
+
+**原文链接**: [https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026](https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026)
+
+生成摘要时出错
+
+---
+
+## 47. Why is Google cutting off Search from AI-free schools? Here are some theories
+
+**原文标题**: Why is Google cutting off Search from AI-free schools? Here are some theories
+
+**原文链接**: [https://text.npr.org/nx-s1-6029408](https://text.npr.org/nx-s1-6029408)
+
+生成摘要时出错
+
+---
+
+## 48. Microsoft outage gives customers a crash course in dependence on Redmond
+
+**原文标题**: Microsoft outage gives customers a crash course in dependence on Redmond
+
+**原文链接**: [https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805](https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805)
+
+生成摘要时出错
+
+---
+
+## 49. Elephants found to be increasingly isolated leading to fractured social networks
+
+**原文标题**: Elephants found to be increasingly isolated leading to fractured social networks
+
+**原文链接**: [https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks](https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks)
+
+生成摘要时出错
+
+---
+
+## 50. PyPI's redesigned project pages with clearer security signals are now live
+
+**原文标题**: PyPI's redesigned project pages with clearer security signals are now live
+
+**原文链接**: [https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/](https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/)
+
+生成摘要时出错
+
+---
+
+## 51. OpenAI disbands its robotics team as its general models start running robots
+
+**原文标题**: OpenAI disbands its robotics team as its general models start running robots
+
+**原文链接**: [https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/)
+
+生成摘要时出错
+
+---
+
+## 52. How Not to Build a Music Player
+
+**原文标题**: How Not to Build a Music Player
+
+**原文链接**: [https://alichraghi.github.io/blog/how-not-to-build-a-music-player/](https://alichraghi.github.io/blog/how-not-to-build-a-music-player/)
+
+生成摘要时出错
+
+---
+
+## 53. Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers
+
+**原文标题**: Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers
+
+**原文链接**: [https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e](https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e)
+
+生成摘要时出错
+
+---
+
+## 54. A Family Tree of Software Job Titles
+
+**原文标题**: A Family Tree of Software Job Titles
+
+**原文链接**: [https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/](https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/)
+
+生成摘要时出错
+
+---
+
+## 55. 'The Netherlands is negotiating dismantling the International Criminal Court'
+
+**原文标题**: 'The Netherlands is negotiating dismantling the International Criminal Court'
+
+**原文链接**: [https://rightsforum.org/en/diplomatic-sources-the-netherlands-is-negotiating-the-dismantling-of-the-international-criminal-court/](https://rightsforum.org/en/diplomatic-sources-the-netherlands-is-negotiating-the-dismantling-of-the-international-criminal-court/)
+
+生成摘要时出错
+
+---
+
+## 56. Lonewolf 0.3 – A standalone XMPP server written in Rust
+
+**原文标题**: Lonewolf 0.3 – A standalone XMPP server written in Rust
+
+**原文链接**: [https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0](https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0)
+
+生成摘要时出错
+
+---
+
+## 57. The Dawn of the Data Intelligence Engineer
+
+**原文标题**: The Dawn of the Data Intelligence Engineer
+
+**原文链接**: [https://motherduck.com/blog/the-data-intelligence-engineer/](https://motherduck.com/blog/the-data-intelligence-engineer/)
+
+生成摘要时出错
+
+---
+
+## 58. LinkedIn, Monster take down over 1000 fake job postings after CBC investigation
+
+**原文标题**: LinkedIn, Monster take down over 1000 fake job postings after CBC investigation
+
+**原文链接**: [https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379](https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379)
+
+生成摘要时出错
+
+---
+
+## 59. Switcher (2004)
+
+**原文标题**: Switcher (2004)
+
+**原文链接**: [https://folklore.org/Switcher.html](https://folklore.org/Switcher.html)
+
+生成摘要时出错
+
+---
+
+## 60. Advancing science and engineering with Antigravity's /teamwork
+
+**原文标题**: Advancing science and engineering with Antigravity's /teamwork
+
+**原文链接**: [https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/](https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/)
+
+生成摘要时出错
+
+---
+
+## 61. Perplexity Decider v1.3: Training, eval, and use cases
 
 **原文标题**: Perplexity Decider v1.3: Training, eval, and use cases
 
@@ -885,27 +661,257 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 86. Microsoft says attempts to fix global outage not going 'as expected'
+## 62. The Claude Delusion
 
-**原文标题**: Microsoft says attempts to fix global outage not going 'as expected'
+**原文标题**: The Claude Delusion
 
-**原文链接**: [https://www.bbc.com/news/live/cq5y10ge3dp3t](https://www.bbc.com/news/live/cq5y10ge3dp3t)
-
-生成摘要时出错
-
----
-
-## 87. Chicago schools to Google – we'd rather lose Search than be forced to accept AI
-
-**原文标题**: Chicago schools to Google – we'd rather lose Search than be forced to accept AI
-
-**原文链接**: [https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html](https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html)
+**原文链接**: [https://www.netmeister.org/blog/claude-delusion.html](https://www.netmeister.org/blog/claude-delusion.html)
 
 生成摘要时出错
 
 ---
 
-## 88. Apify Security Incident
+## 63. Security Agencies Worldwide Found to Use Ad-Based Surveillance System
+
+**原文标题**: Security Agencies Worldwide Found to Use Ad-Based Surveillance System
+
+**原文链接**: [https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/](https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/)
+
+生成摘要时出错
+
+---
+
+## 64. Weight Space Misfolding
+
+**原文标题**: Weight Space Misfolding
+
+**原文链接**: [https://www.alphaxiv.org/abs/2611.weight-space-misfolding](https://www.alphaxiv.org/abs/2611.weight-space-misfolding)
+
+生成摘要时出错
+
+---
+
+## 65. Africa's solar revolution is vast and speedy
+
+**原文标题**: Africa's solar revolution is vast and speedy
+
+**原文链接**: [https://www.economist.com/middle-east-and-africa/2026/11/12/africas-solar-revolution-is-vast-and-speedy](https://www.economist.com/middle-east-and-africa/2026/11/12/africas-solar-revolution-is-vast-and-speedy)
+
+生成摘要时出错
+
+---
+
+## 66. Live-migration support in FreeBSD and bhyve coming
+
+**原文标题**: Live-migration support in FreeBSD and bhyve coming
+
+**原文链接**: [https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/](https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/)
+
+生成摘要时出错
+
+---
+
+## 67. US IRS free online tax filing open source repo (2025)
+
+**原文标题**: US IRS free online tax filing open source repo (2025)
+
+**原文链接**: [https://github.com/IRS-Public/direct-file](https://github.com/IRS-Public/direct-file)
+
+生成摘要时出错
+
+---
+
+## 68. Formalizing US Tax Code (Using Lean)
+
+**原文标题**: Formalizing US Tax Code (Using Lean)
+
+**原文链接**: [https://lexifina.com/blog/formalizing-the-us-tax-code](https://lexifina.com/blog/formalizing-the-us-tax-code)
+
+生成摘要时出错
+
+---
+
+## 69. Show HN: DeepSeek V3 in ~200 lines of pure Jax
+
+**原文标题**: Show HN: DeepSeek V3 in ~200 lines of pure Jax
+
+**原文链接**: [https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax](https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax)
+
+生成摘要时出错
+
+---
+
+## 70. Italy fines Meta €805M over photo privacy
+
+**原文标题**: Italy fines Meta €805M over photo privacy
+
+**原文链接**: [https://www.rapporteur.com/news/italy-fines-meta-880mn-over-photo-privacy-authority/](https://www.rapporteur.com/news/italy-fines-meta-880mn-over-photo-privacy-authority/)
+
+生成摘要时出错
+
+---
+
+## 71. FAA issues nationwide ground stop due to "extraordinary circumstances"
+
+**原文标题**: FAA issues nationwide ground stop due to "extraordinary circumstances"
+
+**原文链接**: [https://www.axios.com/2026/11/13/faa-nationwide-ground-stop](https://www.axios.com/2026/11/13/faa-nationwide-ground-stop)
+
+生成摘要时出错
+
+---
+
+## 72. Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM
+
+**原文标题**: Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM
+
+**原文链接**: [https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/](https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/)
+
+生成摘要时出错
+
+---
+
+## 73. Show HN: A terminal-native idle factory game, written in Rust with ratatui
+
+**原文标题**: Show HN: A terminal-native idle factory game, written in Rust with ratatui
+
+**原文链接**: [https://gitlab.com/snipedbywifi/terminactory](https://gitlab.com/snipedbywifi/terminactory)
+
+生成摘要时出错
+
+---
+
+## 74. EU Digital Identity Wallet rollout: every EU state on one board
+
+**原文标题**: EU Digital Identity Wallet rollout: every EU state on one board
+
+**原文链接**: [https://myid.ie/business/eu-digital-wallet-tracker/](https://myid.ie/business/eu-digital-wallet-tracker/)
+
+生成摘要时出错
+
+---
+
+## 75. TSMC Hacked
+
+**原文标题**: TSMC Hacked
+
+**原文链接**: [https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm](https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm)
+
+生成摘要时出错
+
+---
+
+## 76. Project Zero will disclose vulnerabilities 90 days after reporting
+
+**原文标题**: Project Zero will disclose vulnerabilities 90 days after reporting
+
+**原文链接**: [https://projectzero.google/2026/11/disclosure-policy.html](https://projectzero.google/2026/11/disclosure-policy.html)
+
+生成摘要时出错
+
+---
+
+## 77. Claude Meetings
+
+**原文标题**: Claude Meetings
+
+**原文链接**: [https://claude.com/resources/articles/claude-meetings](https://claude.com/resources/articles/claude-meetings)
+
+生成摘要时出错
+
+---
+
+## 78. US university students tell surveillance cameras to Flock off
+
+**原文标题**: US university students tell surveillance cameras to Flock off
+
+**原文链接**: [https://www.theguardian.com/technology/ng-interactive/2026/nov/13/universities-drop-flock-camera-contracts](https://www.theguardian.com/technology/ng-interactive/2026/nov/13/universities-drop-flock-camera-contracts)
+
+生成摘要时出错
+
+---
+
+## 79. Scientists claim the universe is twice as old as believed
+
+**原文标题**: Scientists claim the universe is twice as old as believed
+
+**原文链接**: [https://geekspin.co/scientists-claim-the-universe-is-twice-as-old-as-believed/](https://geekspin.co/scientists-claim-the-universe-is-twice-as-old-as-believed/)
+
+生成摘要时出错
+
+---
+
+## 80. Why You Should Expect an AI Crash
+
+**原文标题**: Why You Should Expect an AI Crash
+
+**原文链接**: [https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash](https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash)
+
+生成摘要时出错
+
+---
+
+## 81. A visual explanation of reinforcement learning
+
+**原文标题**: A visual explanation of reinforcement learning
+
+**原文链接**: [https://aatishb.com/myriad/how-brains-learn/](https://aatishb.com/myriad/how-brains-learn/)
+
+生成摘要时出错
+
+---
+
+## 82. The 42-Year Journey to Bring 'Neuromancer' to the Screen
+
+**原文标题**: The 42-Year Journey to Bring 'Neuromancer' to the Screen
+
+**原文链接**: [https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/](https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/)
+
+生成摘要时出错
+
+---
+
+## 83. North Korean hackers used fake video calls in $400M crypto hack, says FBI
+
+**原文标题**: North Korean hackers used fake video calls in $400M crypto hack, says FBI
+
+**原文链接**: [https://www.bbc.com/news/articles/cqdj1ellpd70o](https://www.bbc.com/news/articles/cqdj1ellpd70o)
+
+生成摘要时出错
+
+---
+
+## 84. Anthropic upgrades Claude Code Projects to run parallel AI workers
+
+**原文标题**: Anthropic upgrades Claude Code Projects to run parallel AI workers
+
+**原文链接**: [https://claude.com/resources/articles/projects-redesigned](https://claude.com/resources/articles/projects-redesigned)
+
+生成摘要时出错
+
+---
+
+## 85. Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures
+
+**原文标题**: Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures
+
+**原文链接**: [https://toninoble.com/post/ctrlc-ctrlv-ctrlcve](https://toninoble.com/post/ctrlc-ctrlv-ctrlcve)
+
+生成摘要时出错
+
+---
+
+## 86. Europe's electric car sales jump 49% as global EV sales grow
+
+**原文标题**: Europe's electric car sales jump 49% as global EV sales grow
+
+**原文链接**: [https://electrek.co/2026/11/11/europes-electric-car-sales-jump-49-as-global-ev-sales-grow/](https://electrek.co/2026/11/11/europes-electric-car-sales-jump-49-as-global-ev-sales-grow/)
+
+生成摘要时出错
+
+---
+
+## 87. Apify Security Incident
 
 **原文标题**: Apify Security Incident
 
@@ -915,87 +921,27 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 89. Adapting CPython for Yk
+## 88. Let's Write a PostScript Interpreter
 
-**原文标题**: Adapting CPython for Yk
+**原文标题**: Let's Write a PostScript Interpreter
 
-**原文链接**: [https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html](https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html)
-
-生成摘要时出错
-
----
-
-## 90. AWS Lambda Web Functions keep billing memory ~7 minutes after the last request
-
-**原文标题**: AWS Lambda Web Functions keep billing memory ~7 minutes after the last request
-
-**原文链接**: [https://www.easel.sh/blog/lambda-web-functions-idle-memory](https://www.easel.sh/blog/lambda-web-functions-idle-memory)
+**原文链接**: [https://beyondloom.com/blog/postscript.html](https://beyondloom.com/blog/postscript.html)
 
 生成摘要时出错
 
 ---
 
-## 91. US test reactor cleared for operations
+## 89. Microsoft says attempts to fix global outage not going 'as expected'
 
-**原文标题**: US test reactor cleared for operations
+**原文标题**: Microsoft says attempts to fix global outage not going 'as expected'
 
-**原文链接**: [https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations](https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations)
-
-生成摘要时出错
-
----
-
-## 92. NYC Council passes ban on 'surveillance pricing'
-
-**原文标题**: NYC Council passes ban on 'surveillance pricing'
-
-**原文链接**: [https://gothamist.com/news/nyc-council-passes-ban-on-surveillance-pricing-that-relies-on-personal-data](https://gothamist.com/news/nyc-council-passes-ban-on-surveillance-pricing-that-relies-on-personal-data)
+**原文链接**: [https://www.bbc.com/news/live/cq5y10ge3dp3t](https://www.bbc.com/news/live/cq5y10ge3dp3t)
 
 生成摘要时出错
 
 ---
 
-## 93. Mercedes-Benz to halt 'all future investments' in Germany
-
-**原文标题**: Mercedes-Benz to halt 'all future investments' in Germany
-
-**原文链接**: [https://www.ft.com/content/f4a1fd87-9abc-4965-963a-a5349dbfdab7](https://www.ft.com/content/f4a1fd87-9abc-4965-963a-a5349dbfdab7)
-
-生成摘要时出错
-
----
-
-## 94. Show HN: Fable52.games – Play and inspect Fable 5.2 single-file HTML games
-
-**原文标题**: Show HN: Fable52.games – Play and inspect Fable 5.2 single-file HTML games
-
-**原文链接**: [https://fable52.games](https://fable52.games)
-
-生成摘要时出错
-
----
-
-## 95. Electric ship batteries promise compact, cooler power
-
-**原文标题**: Electric ship batteries promise compact, cooler power
-
-**原文链接**: [https://spectrum.ieee.org/electric-ship-batteries](https://spectrum.ieee.org/electric-ship-batteries)
-
-生成摘要时出错
-
----
-
-## 96. Nvidia CEO Jensen Huang resigns after reports of extramarital relationships
-
-**原文标题**: Nvidia CEO Jensen Huang resigns after reports of extramarital relationships
-
-**原文链接**: [https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402](https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402)
-
-生成摘要时出错
-
----
-
-## 97. CERN Built the Large Hadron Collider's Next-Gen Magnets
+## 90. CERN Built the Large Hadron Collider's Next-Gen Magnets
 
 **原文标题**: CERN Built the Large Hadron Collider's Next-Gen Magnets
 
@@ -1005,7 +951,47 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 98. The Downfall of Jensen Huang: Nvidia's Greed and Corruption [video]
+## 91. Chicago schools to Google – we'd rather lose Search than be forced to accept AI
+
+**原文标题**: Chicago schools to Google – we'd rather lose Search than be forced to accept AI
+
+**原文链接**: [https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html](https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html)
+
+生成摘要时出错
+
+---
+
+## 92. US test reactor cleared for operations
+
+**原文标题**: US test reactor cleared for operations
+
+**原文链接**: [https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations](https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations)
+
+生成摘要时出错
+
+---
+
+## 93. Show HN: Agweb – a browser for agents that stays out of your way
+
+**原文标题**: Show HN: Agweb – a browser for agents that stays out of your way
+
+**原文链接**: [https://github.com/paul-nameless/agweb](https://github.com/paul-nameless/agweb)
+
+生成摘要时出错
+
+---
+
+## 94. Mercedes-Benz to halt 'all future investments' in Germany
+
+**原文标题**: Mercedes-Benz to halt 'all future investments' in Germany
+
+**原文链接**: [https://www.ft.com/content/f4a1fd87-9abc-4965-963a-a5349dbfdab7](https://www.ft.com/content/f4a1fd87-9abc-4965-963a-a5349dbfdab7)
+
+生成摘要时出错
+
+---
+
+## 95. The Downfall of Jensen Huang: Nvidia's Greed and Corruption [video]
 
 **原文标题**: The Downfall of Jensen Huang: Nvidia's Greed and Corruption [video]
 
@@ -1015,11 +1001,41 @@ The incident began with users encountering issues authenticating to Claude.ai an
 
 ---
 
-## 99. Jensen Huang Admitted He Was Facing an "Avalanche" of Excess Wafers and Memory
+## 96. NYC Council passes ban on 'surveillance pricing'
+
+**原文标题**: NYC Council passes ban on 'surveillance pricing'
+
+**原文链接**: [https://gothamist.com/news/nyc-council-passes-ban-on-surveillance-pricing-that-relies-on-personal-data](https://gothamist.com/news/nyc-council-passes-ban-on-surveillance-pricing-that-relies-on-personal-data)
+
+生成摘要时出错
+
+---
+
+## 97. Jensen Huang Admitted He Was Facing an "Avalanche" of Excess Wafers and Memory
 
 **原文标题**: Jensen Huang Admitted He Was Facing an "Avalanche" of Excess Wafers and Memory
 
 **原文链接**: [https://respawnfirst.com/before-resigning-jensen-huang-admitted-he-was-facing-an-avalanche-of-excess-wafers-and-memory-new-report-sheds-more-light-on-the-gpu-ram-crisis/](https://respawnfirst.com/before-resigning-jensen-huang-admitted-he-was-facing-an-avalanche-of-excess-wafers-and-memory-new-report-sheds-more-light-on-the-gpu-ram-crisis/)
+
+生成摘要时出错
+
+---
+
+## 98. Someone's Impersonating This Blog
+
+**原文标题**: Someone's Impersonating This Blog
+
+**原文链接**: [https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/](https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/)
+
+生成摘要时出错
+
+---
+
+## 99. DeepSeek Ultrafast
+
+**原文标题**: DeepSeek Ultrafast
+
+**原文链接**: [https://github.com/basetenlabs/deepseek-ultrafast](https://github.com/basetenlabs/deepseek-ultrafast)
 
 生成摘要时出错
 
