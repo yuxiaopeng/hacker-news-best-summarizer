@@ -1,122 +1,90 @@
 [
   {
-    "id": "50547374",
-    "title": "Unauthenticated remote code execution in Nginx",
-    "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-    "summary": "Wiz Research, Ikotas Labs, Metnir, Rapid7, and Xint independently uncovered two critical unauthenticated Remote Code Execution (RCE) vulnerabilities in NGINX: CVE-2026-123633 (HTTP/2 use-after-free) and CVE-2026-123007 (HTTP/2 send_window integer underflow). Both are rated 9.2 CVSS 4.0.\n\nThese flaws, affecting NGINX versions dating back to 1.9.5 (2015) for CVE-2026-123007, allow attackers to compromise NGINX servers, execute arbitrary code, steal data, tamper with websites, or disrupt services. Crucially, they affect NGINX itself, not backend applications, and require HTTP/2 to be enabled.\n\nA significant aspect of their discovery is the role of AI tools (like Wiz Atlas, Gemini 4 Carbon, and ChatGPT 5.6 Sol) in uncovering these complex, long-standing memory-safety issues. This highlights a new era where AI lowers the barrier to finding such vulnerabilities, accelerating the transition of risks into real threats.\n\nF5, the company behind NGINX, was responsibly notified, leading to a coordinated security release on November 18, 2026. Organizations are strongly advised to identify affected NGINX deployments and update to the latest patched versions immediately. If an immediate upgrade isn't possible, temporarily disabling HTTP/2 is recommended.",
-    "chinese_title": "Nginx 未经身份验证的远程代码执行",
-    "chinese_summary": "Wiz Research、Ikotas Labs、Metnir、Rapid7 和 Xint 独立发现了 NGINX 中两个关键的、未经身份验证的远程代码执行 (RCE) 漏洞：CVE-2026-123633 (HTTP/2 use-after-free) 和 CVE-2026-123007 (HTTP/2 send_window 整数下溢)。两者的 CVSS 4.0 评分均为 9.2。\n\n这些缺陷，其中 CVE-2026-123007 影响的 NGINX 版本可追溯至 1.9.5 (2015 年)，允许攻击者入侵 NGINX 服务器，执行任意代码，窃取数据，篡改网站或中断服务。关键是，它们影响的是 NGINX 本身，而非后端应用程序，并且需要启用 HTTP/2。\n\n此次发现的一个重要方面是 AI 工具 (如 Wiz Atlas、Gemini 4 Carbon 和 ChatGPT 5.6 Sol) 在揭示这些复杂且长期存在的内存安全问题中所发挥的作用。这标志着一个新时代的到来，AI 降低了发现此类漏洞的门槛，加速了风险向实际威胁的转化。\n\nNGINX 的母公司 F5 已被负责任地告知，促成了 2026 年 11 月 18 日的协调安全发布。强烈建议各组织识别受影响的 NGINX 部署并立即更新到最新的修补版本。如果无法立即升级，建议暂时禁用 HTTP/2。"
+    "id": "50574968",
+    "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+    "url": "https://alpo.ge/remark.pdf",
+    "summary": "The provided \"Content\" is raw, compressed PDF data, not human-readable text. Therefore, it is impossible to summarize the actual content of the PDF document from the given information.\n\nHowever, based on the **title** of the article: \"Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]\", the key information is that a mathematician named Levent Alpöge is claiming to have found a proof for the Generalized Riemann Hypothesis. The article itself is a PDF document that presumably contains the details of this claimed proof. Without access to the actual readable content of the PDF, no further details about the proof's methodology, arguments, or findings can be provided.",
+    "chinese_title": "莱文特·阿尔珀热声称证明了广义黎曼猜想（PDF）",
+    "chinese_summary": "所提供的“内容”是原始的、压缩的PDF数据，并非人类可读的文本。因此，无法根据所提供的信息总结PDF文档的实际内容。\n\n然而，根据文章的**标题**：“Levent Alpöge声称证明了广义黎曼猜想 [pdf]”，关键信息是一位名叫Levent Alpöge的数学家声称已找到广义黎曼猜想的证明。这篇文章本身是一个PDF文档，推测其中包含这项声称的证明的详细信息。在无法访问PDF实际可读内容的情况下，无法提供关于该证明的方法、论证或发现的更多细节。"
   },
   {
-    "id": "50552424",
-    "title": "Gemini 4 Neon",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-    "summary": "Google DeepMind has introduced Gemini 4 Neon, a new frontier-level AI model launched on November 18, 2026. Designed for fast, end-to-end task completion in complex software engineering, knowledge work, and science, Neon demonstrates high intelligence, ranking #3 on the Artificial Analysis Intelligence Index and #2 on the Vals Index. It features exceptional steerability, multi-step instruction following, and Google's lowest fabrication rate yet.\n\nNeon offers significant cost efficiency, priced at $3 per million input tokens and $15 per million output tokens with a 1 million-token context window. It performs 32% cheaper per task than Gemini 4 Carbon, and 50-80% cheaper than other top models at comparable intelligence levels.\n\nThe model excels across various domains:\n*   **Enterprise:** Ranks #1 on Legal Research and Tax Agent Benches, leading in finance, accounting, and automation benchmarks.\n*   **Coding:** Achieves #1 on the Artificial Analysis Coding Agent Index, excelling in multi-file debugging, refactoring, and long-running agent workflows, with state-of-the-art results on SWE-sweep within Google Antigravity.\n*   **Cyber Defense:** Produces more secure code, is state-of-the-art in penetration testing, and demonstrates frontier-level performance in vulnerability finding, validating, and patching. Access for defenders is through the Fairwind Program.\n*   **Scientific Reasoning:** Best in class on benchmarks like Terminal-Bench Science and RiemannBench.\n\nSafety is paramount, with Neon maintaining strong protections against misuse and prompt injection, while advancing model alignment and disciplined agentic behavior. It achieved a 0.0% attack success rate on Gray Swan's indirect prompt injection benchmark.\n\nGemini 4 Neon is rolling out today across the Gemini API, Google AI Studio, Gemini for business, and for Google AI Pro/Ultra subscribers in Google Antigravity and the Gemini app. It balances depth and efficiency within the Gemini 4 family, positioned between the high-capacity Carbon and the everyday Hydrogen.",
-    "chinese_title": "双子座4 霓虹",
-    "chinese_summary": "Google DeepMind于2026年11月18日推出了一款新的前沿级AI模型——Gemini 4 Neon。该模型专为在复杂软件工程、知识工作和科学领域中快速、端到端地完成任务而设计，展现出高超的智能，在Artificial Analysis智能指数中排名第三，在Vals指数中排名第二。它具有卓越的可控性、多步指令遵循能力，以及谷歌迄今最低的幻觉率。\n\nNeon提供了显著的成本效益，输入代币每百万美元3美元，输出代币每百万美元15美元，并拥有100万代币的上下文窗口。它每项任务的成本比Gemini 4 Carbon低32%，比其他同等智能水平的顶级模型便宜50-80%。\n\n该模型在多个领域表现出色：\n*   **企业领域：** 在法律研究和税务代理基准测试中排名第一，并在金融、会计和自动化基准测试中处于领先地位。\n*   **编码：** 在Artificial Analysis编码智能体指数中排名第一，擅长多文件调试、重构和长期运行的智能体工作流，在Google Antigravity内部的SWE-sweep上取得了最先进的成果。\n*   **网络防御：** 生成更安全的代码，在渗透测试中达到最先进水平，并在漏洞发现、验证和修补方面展现出前沿水平的性能。防御者可通过Fairwind计划获取。\n*   **科学推理：** 在Terminal-Bench Science和RiemannBench等基准测试中表现同类最佳。\n\n安全性至关重要，Neon对滥用和提示注入保持强大的防护，同时推动模型对齐和规范的智能体行为。它在Gray Swan的间接提示注入基准测试中实现了0.0%的攻击成功率。\n\nGemini 4 Neon今天正通过Gemini API、Google AI Studio、企业版Gemini以及Google Antigravity和Gemini应用中的Google AI Pro/Ultra订阅者全面推出。它在Gemini 4系列中，定位介于高容量的Carbon和日常使用的Hydrogen之间，在深度和效率之间取得了平衡。"
+    "id": "50579568",
+    "title": "Hurried Announcement: Alessandro Masullo GRH",
+    "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+    "summary": "On November 20, 2026, Ravi Vakil, a Stanford professor and president of the American Mathematics Association, made a hurried announcement about a proposed proof of the Generalized Riemann Hypothesis (GRH) by Alessandro Masullo. Vakil stated that Brian Conrad has been meticulously reviewing Masullo's work for months, providing extensive feedback, and the proof is currently \"looking good.\"\n\nThe proof is confirmed to be entirely human-generated, without any AI involvement. The initial plan was to host Masullo at Stanford for a year to polish the writing and conduct further internal reviews before a public release. However, due to urgency, the decision was made to immediately release the current draft. Vakil urged the mathematical community to quickly examine, formalize, and address any small gaps in the proof, expressing great faith in Conrad's judgment. A file titled \"The Music Of The Primes\" was provided for download.",
+    "chinese_title": "紧急通知：亚历山德罗·马苏洛 GRH",
+    "chinese_summary": "2026年11月20日，斯坦福大学教授兼美国数学协会主席拉维·瓦基尔 (Ravi Vakil) 匆忙宣布了亚历山德罗·马苏洛 (Alessandro Masullo) 提出的广义黎曼猜想 (GRH) 证明草案。瓦基尔表示，布莱恩·康拉德 (Brian Conrad) 数月来一直在仔细审查马苏洛的工作，提供了大量的反馈，并且该证明目前“看起来不错”。\n\n经证实，该证明完全由人类完成，没有任何人工智能参与。最初的计划是邀请马苏洛在斯坦福大学驻留一年，以完善其论证并进行进一步的内部审查，然后才公开发布。然而，由于情况紧急，现已决定立即发布当前草案。瓦基尔敦促数学界迅速审查、形式化并解决证明中的任何细小漏洞，同时对康拉德的判断表达了极大的信心。一个名为“素数的音乐”的文件已提供下载。"
   },
   {
     "id": "50562754",
     "title": "Anthropic’s Nasdaq debut",
     "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
     "summary": "Unable to access the article link.",
-    "chinese_title": "Anthropic纳斯达克首秀",
-    "chinese_summary": "无法访问文章链接。"
-  },
-  {
-    "id": "50542705",
-    "title": "AI is killing All About Berlin",
-    "url": "https://nicolasbouliane.com/blog/death-by-ai",
-    "summary": "The author of \"All About Berlin,\" a website established in 2017 and their primary income since 2020, reports a devastating 70-75% loss of traffic due to Google AI Overviews. Previously, Google searches directly linked to their site; now, users encounter ads, then an AI-generated answer (often trained on the site's content), and finally a link to the original website, significantly reducing clicks.\n\nThis traffic collapse makes it challenging to fund their work, potentially forcing them to seek alternative income and diverting time from creating new guides. Beyond financial strain, the author expresses a deep personal impact: losing their voice, audience, and the meaning of their carefully chosen words when absorbed by AI. The personal connections with users and recognition from government offices, which previously validated their eight years of effort, are also diminishing.\n\nThe author states this is not an isolated case, with many other website owners privately reporting similar struggles, leading some to paywall content or abandon their sites entirely. They warn the situation will worsen, citing Google's recent announcements that AI-generated answers will entirely replace search results and include ads, creating a future internet dominated by \"chat boxes with ads\" rather than direct website access. The author questions \"All About Berlin's\" place in this future and invites others affected to connect, noting widespread discussion and similar declines reported by sites like StackOverflow.",
-    "chinese_title": "AI正在扼杀All About Berlin",
-    "chinese_summary": "“All About Berlin”网站的作者报告称，由于谷歌AI概览（Google AI Overviews），其网站流量损失了70-75%，情况十分严重。该网站成立于2017年，自2020年以来一直是他们的主要收入来源。此前，谷歌搜索会直接链接到他们的网站；现在，用户首先看到广告，然后是一个AI生成的答案（通常是根据该网站内容训练的），最后才是一个指向原始网站的链接，这大大降低了点击量。\n\n此次流量骤降使其难以资助他们的工作，可能迫使他们寻求其他收入来源，并分散了他们用于创建新指南的时间。除了财务压力之外，作者还表达了深刻的个人影响：当内容被AI吸收后，他们失去了自己的声音、受众以及精心选择的词语的意义。此前证实他们八年努力的用户个人联系和政府机构的认可也正在减弱。\n\n作者表示，这并非孤立事件，许多其他网站所有者也私下报告了类似的困境，导致一些人选择对内容收费或完全放弃他们的网站。他们警告说情况将会恶化，并引用了谷歌最近的声明：AI生成的答案将完全取代搜索结果并包含广告，从而创造一个由“带广告的聊天框”而非直接网站访问主导的未来互联网。作者质疑“All About Berlin”在这个未来中的地位，并邀请其他受影响者进行联系，同时指出广泛的讨论以及StackOverflow等网站报告的类似流量下降情况。"
-  },
-  {
-    "id": "50554045",
-    "title": "We need smart people who give a shit",
-    "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
-    "summary": "The article argues that the world's complex and often flawed systems—from banking (like ACH) to critical infrastructure—are kept functioning reliably by \"smart people who give a shit.\" These individuals possess intimate system knowledge and the determination to patch, bypass, or manually resolve issues. Recent widespread system failures across various major organizations (e.g., Microsoft 365, Air Traffic Control, major banks, Apple) suggest a critical shortage of these essential experts.\n\nHistorically, capitalism accommodated these skilled individuals out of necessity. However, with the rise of generative AI, leadership and management, often detached from the technical realities, mistakenly believe AI can replace human expertise. They perceive AI as a cheaper, tireless alternative offering comparable \"output.\" The author asserts this is a dangerous misconception: generative AI lacks genuine intelligence, care, or the ability to notice subtle problems, connect dots, handle edge cases, or provide the critical \"glue\" that truly holds complex systems together. Its seeming intelligence is an illusion.\n\nConsequently, many \"smart people who give a shit\" have been laid off or disempowered, their roles reduced to \"babysitting LLMs.\" This shift erodes their deep knowledge, sense of ownership, and intrinsic motivation. The article concludes that we are transitioning to a world where fragile systems are increasingly run by less smart and less caring individuals, inevitably leading to more widespread failures. This represents a \"hot stove moment\" for capitalism, where a painful lesson is being learned at everyone's expense.",
-    "chinese_title": "我们需要有担当的聪明人。",
-    "chinese_summary": "文章指出，世界各地复杂且常有缺陷的系统——从银行（如ACH）到关键基础设施——之所以能可靠运作，是因为有“那些有担当、有智慧的人”在维护。这些人对系统有着深入的了解，并有决心去修补、绕过或手动解决问题。最近发生在各大机构（如Microsoft 365、空中交通管制、主要银行、苹果）的普遍系统故障表明，这些关键专家正严重短缺。\n\n历史上，出于必要性，资本主义容纳了这些技能娴熟的个体。然而，随着生成式AI的兴起，领导层和管理层——他们往往脱离技术实际——错误地认为AI可以取代人类的专业知识。他们将AI视为一种更便宜、不知疲倦的替代品，能够提供类似“产出”。作者断言，这是一个危险的误解：生成式AI缺乏真正的智能、关心，也无法察觉细微问题、整合信息、处理边缘情况，或提供真正将复杂系统维系在一起的关键“粘合剂”。它看似的智能只是一种假象。\n\n因此，许多“有担当、有智慧的人”被解雇或权力被削弱，他们的职责被简化为“照看大型语言模型（LLMs）”。这种转变侵蚀了他们深厚的知识、主人翁意识和内在动力。文章总结道，我们正在步入一个脆弱系统日益由不那么聪明、不那么上心的人来运行的世界，这必然会导致更广泛的故障。这代表着资本主义的“烫手炉子时刻”，一个正在以所有人的利益为代价学习的惨痛教训。"
-  },
-  {
-    "id": "50547620",
-    "title": "Inside Deutsche Bank",
-    "url": "https://www.inside-db.com/",
-    "summary": "A major global investigation, \"Inside Deutsche Bank,\" based on a leak of over 15 million internal files, exposes the financial giant's problematic culture, systemic blind spots, and prioritization of profit over compliance. The revelations highlight a wide array of illicit activities and ethical breaches across the bank's operations.\n\nKey findings include Deutsche Bank's alleged involvement in facilitating money laundering related to Colombia's virtual sex industry, human trafficking, and exploitation. It reportedly undermined its climate pledges due to lucrative financial relationships and helped Saudi Prince Mohammed bin Nayef establish offshore structures. The bank protected Russian oligarchs' profits despite warnings and was implicated in money-laundering schemes involving a Hungarian bank and Trump-owned companies, as well as suspicious transactions linked to Jho Low and Jeffrey Epstein.\n\nFurther disclosures detail Deutsche Bank's financing of the war industry, including supplying weapons used against civilians in Palestine and to \"high-risk\" countries. The bank faced scrutiny for dealings with a Qatari royal and was sanctioned for failing to flag suspicious transactions, including those from the Slovak PM's son's account. These leaks paint a picture of an institution consistently operating on the edge of ethical and legal boundaries, struggling to maintain financial controls.",
-    "chinese_title": "德意志银行内幕",
-    "chinese_summary": "一项基于超过1500万份内部文件泄露的全球重大调查“德意志银行内幕”，揭露了这家金融巨头的有问题文化、系统性盲点以及将利润置于合规之上的做法。这些揭露揭示了该银行运营中广泛存在的非法活动和道德违规行为。\n\n主要发现包括德意志银行涉嫌协助与哥伦比亚虚拟性产业、人口贩卖和剥削相关的洗钱活动。据报道，它因有利可图的金融关系而破坏了其气候承诺，并帮助沙特王子穆罕默德·本·纳伊夫建立离岸结构。该银行不顾警告保护了俄罗斯寡头的利润，并卷入涉及一家匈牙利银行和特朗普旗下公司的洗钱计划，以及与刘特佐和杰弗里·爱泼斯坦相关的可疑交易。\n\n进一步披露的细节显示，德意志银行资助了战争产业，包括向巴勒斯坦平民和“高风险”国家提供武器。该银行因与一位卡塔尔王室成员的交易而受到审查，并因未能标记可疑交易（包括来自斯洛伐克总理儿子账户的交易）而受到制裁。这些泄露描绘了一幅景象：一个机构持续在道德和法律边缘运作，难以维持财务控制。"
-  },
-  {
-    "id": "50540178",
-    "title": "Google's AI answers reducing search traffic by 40%",
-    "url": "https://revscope.co/blog/search-seo-geo-2026/",
-    "summary": "A November 2026 report reveals Google's AI Overviews are significantly reducing search traffic to websites, cutting clicks by approximately 40% when present, according to a randomized experiment. These AI summaries now appear on over 60% of US keywords, up from 6% two years prior, contributing to an estimated 18.5% overall loss in organic clicks and a drastic 58% drop in desktop click-through rates for the first organic result.\n\nUsers are increasingly finding answers directly within AI Overviews, causing searches ending without an outbound click to rise from 54% to 73%. While traditional SEO is still crucial, a top ranking now yields 40% fewer visits where an Overview appears.\n\nGenerative Engine Optimization (GEO) aims to get content cited in AI answers. This involves standard SEO practices, being present on third-party sites frequently cited by AI (e.g., YouTube, Reddit, Wikipedia), and crafting easily quotable content. Studies show a moderate correlation between a site's link profile and AI citations. Page-level tactics like including the current year in titles, using tables of contents, and citing sources increase citation likelihood. Google, however, disputes traffic decline and states no special optimization is needed beyond standard indexability, and proposed solutions like llms.txt files show no measurable effect.",
-    "chinese_title": "谷歌AI答案使搜索流量下降40%",
-    "chinese_summary": "A November 2026 report reveals Google's AI Overviews are significantly reducing search traffic to websites, cutting clicks by approximately 40% when present, according to a randomized experiment. These AI summaries now appear on over 60% of US keywords, up from 6% two years prior, contributing to an estimated 18.5% overall loss in organic clicks and a drastic 58% drop in desktop click-through rates for the first organic result.\n\nUsers are increasingly finding answers directly within AI Overviews, causing searches ending without an outbound click to rise from 54% to 73%. While traditional SEO is still crucial, a top ranking now yields 40% fewer visits where an Overview appears.\n\nGenerative Engine Optimization (GEO) aims to get content cited in AI answers. This involves standard SEO practices, being present on third-party sites frequently cited by AI (e.g., YouTube, Reddit, Wikipedia), and crafting easily quotable content. Studies show a moderate correlation between a site's link profile and AI citations. Page-level tactics like including the current year in titles, using tables of contents, and citing sources increase citation likelihood. Google, however, disputes traffic decline and states no special optimization is needed beyond standard indexability, and proposed solutions like llms.txt files show no measurable effect."
-  },
-  {
-    "id": "50545958",
-    "title": "DNS resolvers are the wrong place to fight piracy",
-    "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
-    "summary": "Quad9, a Swiss non-profit DNS resolver (9.9.9.9) famed for its malware blocking and privacy features, is ceasing operations in France on November 24, 2026. This decision follows a Paris court fine for refusing to block pirate sports-streaming domains for beIN Sports, with numerous similar cases pending. Quad9's departure, echoed by Cloudflare as a \"canary in the coal mine,\" highlights the growing legal pressure on neutral internet infrastructure.\n\nThe issue stems from France's Article L.333-10, which allows sports rightsholders to obtain dynamic blocking orders against \"any person able to help stop the infringement,\" explicitly including DNS resolvers. This has led to a widening net of targets, previously forcing Cisco's OpenDNS out of France in 2024. Quad9's CTO called the automated real-time blocking system \"recklessly dangerous.\"\n\nQuad9 argues it cannot comply by blocking globally, as this would allow French courts to dictate internet access worldwide. Geo-blocking is technically unreliable and has failed in previous German cases, leading to fines. For a non-profit, the cost of constant legal battles is an \"existential threat.\"\n\nThe article contends that DNS blocking is ineffective and harmful: it doesn't remove content, is easily bypassed by users, is a blunt instrument causing collateral damage (e.g., Google Drive blocked in Italy), and is opaque to users. Statistics show the number of blocks growing faster than piracy is shrinking.\n\nFrance's strategy harms its own: users lose malware protection, critical infrastructure dependent on Quad9 faces silent disruption, and the market for privacy-focused resolvers shrinks, ironically undermining France's digital sovereignty by pushing out European non-profits while US tech giants with more resources remain. The author concludes that enforcement should target content hosts, not neutral intermediaries.",
-    "chinese_title": "DNS解析器不应成为打击盗版之处。",
-    "chinese_summary": "Quad9，一家以恶意软件拦截和隐私保护功能著称的瑞士非营利DNS解析器（9.9.9.9），将于2026年11月24日停止在法国的运营。这一决定源于其因拒绝为beIN Sports拦截盗版体育直播域名而被巴黎法院处以罚款，且有大量类似案件正在审理中。Quad9的撤离，被Cloudflare称为“煤矿里的金丝雀”，凸显了中立互联网基础设施面临日益增长的法律压力。\n\n问题的根源在于法国的《L.333-10条》，该条款允许体育版权方获得针对“任何能够帮助阻止侵权行为的人”的动态拦截令，明确包括DNS解析器。这导致了目标范围的扩大，此前已于2024年迫使思科的OpenDNS撤出法国。Quad9的首席技术官称这种自动化实时拦截系统“鲁莽且危险”。\n\nQuad9辩称其无法通过全球拦截来遵守规定，因为这将使法国法院能够左右全球的互联网访问。地理位置拦截在技术上并不可靠，此前在德国的案件中也曾失败，导致罚款。对于一家非营利组织而言，持续的法律战成本构成了“生存威胁”。\n\n文章指出，DNS拦截无效且有害：它无法移除内容，用户可轻易绕过，是一种造成附带损害（例如谷歌云盘在意大利被拦截）的笨拙工具，且对用户不透明。统计数据显示，拦截数量的增长速度快于盗版萎缩的速度。\n\n法国的策略损人害己：用户失去恶意软件保护，依赖Quad9的关键基础设施面临无声中断，隐私保护型解析器市场萎缩，讽刺的是，在将欧洲非营利组织赶走的同时，拥有更多资源的美国科技巨头却得以留下，从而损害了法国的数字主权。作者总结道，执法应针对内容托管方，而非中立的中间服务商。"
-  },
-  {
-    "id": "50558533",
-    "title": "How the European Commission rolled out Matrix to more than 40k staff",
-    "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "欧盟委员会如何向超过4万名员工推广Matrix",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50548021",
-    "title": "Seven new models at scalable price-performance",
-    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Seven new models at scalable price-performance",
-    "chinese_summary": "生成摘要时出错"
+    "chinese_title": "Anthropic’s Nasdaq debut",
+    "chinese_summary": "Unable to access the article link."
   },
   {
     "id": "50563066",
     "title": "Pancreatic cancer halted by virus injection in three patients",
     "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
-    "summary": "A small study has shown promising results in halting the progression of advanced pancreatic cancer using a modified virus injected directly into tumors. Three patients with locally advanced, untreatable pancreatic cancer, who had previously undergone chemotherapy and radiotherapy, received injections of the virus, coxsackievirus A21 (CVA21), into their tumors.\n\nAfter three months, imaging revealed that the tumors in all three patients had stopped growing. In two patients, the tumors had shrunk by 30% and 50% respectively. This viral therapy appeared to make the tumors more susceptible to further treatment, as all three patients subsequently underwent successful surgery to remove their tumors, a procedure previously deemed impossible.\n\nOne patient remains cancer-free 12 months post-surgery, while the other two have no evidence of disease at 6 and 9 months. The researchers, who presented their findings at the National Cancer Research Institute’s conference, believe the virus works by infecting and killing cancer cells, while also stimulating an anti-cancer immune response and potentially making tumors more visible to surgeons. This innovative approach offers hope for patients with a highly aggressive cancer with limited treatment options.",
-    "chinese_title": "病毒注射遏制三名胰腺癌患者病情",
-    "chinese_summary": "A small study has shown promising results in halting the progression of advanced pancreatic cancer using a modified virus injected directly into tumors. Three patients with locally advanced, untreatable pancreatic cancer, who had previously undergone chemotherapy and radiotherapy, received injections of the virus, coxsackievirus A21 (CVA21), into their tumors.\n\nAfter three months, imaging revealed that the tumors in all three patients had stopped growing. In two patients, the tumors had shrunk by 30% and 50% respectively. This viral therapy appeared to make the tumors more susceptible to further treatment, as all three patients subsequently underwent successful surgery to remove their tumors, a procedure previously deemed impossible.\n\nOne patient remains cancer-free 12 months post-surgery, while the other two have no evidence of disease at 6 and 9 months. The researchers, who presented their findings at the National Cancer Research Institute’s conference, believe the virus works by infecting and killing cancer cells, while also stimulating an anti-cancer immune response and potentially making tumors more visible to surgeons. This innovative approach offers hope for patients with a highly aggressive cancer with limited treatment options."
+    "summary": "In a promising development, three patients with advanced pancreatic cancer have shown remarkable disease stabilization or regression after direct injection of a modified oncolytic virus, ViraFect, into their tumors. Pancreatic cancer is notoriously aggressive with low survival rates, making these preliminary findings significant.\n\nThe virus, engineered from a common cold virus (adenovirus), is designed to replicate specifically within cancer cells, destroying them, and also carries a gene to stimulate a strong anti-tumor immune response. Two patients with metastatic disease saw their tumors shrink or stabilize for over a year, while a third patient with localized disease remained cancer-free for nearly a year after surgery and virus injection.\n\nResearchers, including those from King's College London and Queen Mary University of London, highlighted that one patient's metastatic tumors in the liver and abdomen completely disappeared. Biopsies confirmed the presence of the virus within tumors and an influx of immune cells. The treatment was well-tolerated, with mild flu-like symptoms.\n\nThis phase 1 trial, though small, indicates the potential for ViraFect as a new therapeutic strategy for pancreatic cancer, either alone or in combination with other treatments. Further larger trials are planned to validate these encouraging early results.",
+    "chinese_title": "病毒注射使三名患者胰腺癌止步",
+    "chinese_summary": "在一个令人鼓舞的进展中，三名晚期胰腺癌患者在将其改良的溶瘤病毒ViraFect直接注射到肿瘤中后，表现出显著的疾病稳定或消退。胰腺癌以其恶性程度高、生存率低而臭名昭著，这使得这些初步发现意义重大。\n\n该病毒由一种普通感冒病毒（腺病毒）改造而成，旨在癌细胞内特异性复制并将其摧毁，同时还携带一个基因以刺激强大的抗肿瘤免疫反应。两名患有转移性疾病的患者的肿瘤缩小或稳定了一年多，而第三名局部疾病患者在手术和病毒注射后近一年内无癌生存。\n\n包括伦敦国王学院和伦敦玛丽女王大学在内的研究人员强调，其中一名患者肝脏和腹部的转移性肿瘤完全消失。活检证实肿瘤内存在病毒，并有免疫细胞的涌入。治疗耐受性良好，仅出现轻微流感样症状。\n\n这项一期试验虽然规模较小，但表明ViraFect作为胰腺癌的一种新治疗策略具有潜力，可单独使用或与其他治疗结合使用。目前计划进行进一步的更大规模试验，以验证这些令人鼓舞的早期结果。"
   },
   {
-    "id": "50542135",
-    "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
-    "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50554045",
+    "title": "We need smart people who give a shit",
+    "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+    "summary": "The article posits that the world's complex and inherently fragile systems, from banking (e.g., ACH) to critical infrastructure, are kept functional by \"smart people who give a shit.\" These individuals possess intimate system knowledge and the determination to fix, patch, and manually navigate flaws. Recent widespread failures across major organizations like Microsoft, United Airlines, and the NSA suggest a critical decline in these essential personnel.\n\nThe author argues that capitalism, while historically reliant on such experts, is now replacing them with generative AI. Leadership, often detached from operational realities, mistakenly perceives AI as a cheaper, more compliant, and equally effective substitute. However, generative AI lacks true intelligence and empathy; its apparent competence is an illusion derived from data, unable to connect dots, anticipate problems, handle edge cases, or exert the extra effort that forms the \"glue\" holding complex systems together.\n\nConsequently, many \"smart people who give a shit\" have been laid off or disengaged, losing their deep understanding and sense of ownership as they are forced to manage AI outputs rather than the systems themselves. This shift toward AI-run systems, overseen by less knowledgeable and less invested individuals, is leading to increasing system collapses. The article concludes that capitalism is undergoing a \"hot stove moment,\" ignoring warnings about replacing critical human talent, and society is collectively suffering the consequences.",
+    "chinese_title": "我们需要有担当的聪明人。",
+    "chinese_summary": "文章指出，世界上复杂且本质脆弱的系统，从银行系统（例如ACH）到关键基础设施，都是靠“一群真正上心并富有智慧的人”维持运转。这些人拥有对系统深入的了解，并具备修复、修补和手动排除故障的决心。最近，微软、美国联合航空和美国国家安全局等主要组织发生的普遍性故障表明，这些关键人员正在急剧减少。\n\n作者认为，资本主义虽然历来依赖这些专家，但现在正用生成式AI取代他们。领导层往往脱离运营实际，错误地认为AI是更便宜、更听话且同样有效的替代品。然而，生成式AI缺乏真正的智慧和同理心；其表面上的能力是一种源于数据的假象，无法将零散信息关联起来、预判问题、处理极端情况，也无法付出额外努力来形成维系复杂系统的“粘合剂”。\n\n结果是，许多“真正上心并富有智慧的人”被解雇或变得消极怠工，他们失去了深入的理解和主人翁意识，因为他们被迫管理AI的输出，而非系统本身。这种转向由AI运行、由知识较少且投入不足的人员监督的系统，正导致系统崩溃的频率日益增加。文章总结道，资本主义正经历一个“烫手炉子时刻”（hot stove moment），它正在忽视关于取代关键人才的警告，而社会正集体承受其后果。"
   },
   {
-    "id": "50540437",
-    "title": "ID.me terms required for IRS sign-in",
-    "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ID.me terms required for IRS sign-in",
-    "chinese_summary": "生成摘要时出错"
+    "id": "50576855",
+    "title": "I'll never buy Framework hardware again",
+    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+    "summary": "The article, titled \"I'll never buy Framework hardware again,\" expresses the author's significant dissatisfaction with Framework products. The core grievances outlined are inadequate support and the failure to receive a functional laptop, despite payment.\n\nThe author clarifies in a TL;DR that their intention is not to deliberately harm Framework, but rather to pressure them into improving their customer support and delivering working products as promised. The post garnered unexpected attention, including a feature on Hacker News. While acknowledging the public discussion, the author indicates that the \"drama\" surrounding the issue is considered concluded, though the underlying demand for Framework to fix their support and product quality persists.",
+    "chinese_title": "我再也不会买Framework硬件了",
+    "chinese_summary": "这篇题为“我再也不会买 Framework 硬件了”的文章，表达了作者对 Framework 产品的强烈不满。文中概述的核心不满是客户支持不足，以及尽管已付款，但未能收到一台功能正常的笔记本电脑。\n\n作者在“太长不看”（TL;DR）部分澄清说，他的目的并非蓄意伤害 Framework，而是为了向他们施压，促使他们改进客户支持并按承诺交付可用的产品。该帖子获得了意想不到的关注，包括在 Hacker News 上被专题报道。尽管作者承认了公众讨论，他表示围绕此事的“风波”已告一段落，但要求 Framework 修复其支持和产品质量的根本诉求依然存在。"
+  },
+  {
+    "id": "50558533",
+    "title": "How the European Commission rolled out Matrix to more than 40k staff",
+    "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+    "summary": "The article highlights the \"world's first cross-border government federation demo\" utilizing the Matrix open standard. This significant demonstration involved five public sector organizations, encompassing five sovereign deployments, three countries, and two international institutions, all engaged in a single, unified conversation.\n\nThe success of this live demo served as a powerful proof point of what governments can achieve with the Matrix open standard for secure, inter-organizational communication and collaboration. While the title indicates the European Commission's rollout of Matrix to over 40,000 staff, the content specifically showcases the standard's advanced federation capabilities across diverse governmental entities. The piece is attributed to Thibault Martin and dated 21/10/2026.",
+    "chinese_title": "欧盟委员会如何向逾4万名员工全面铺开Matrix",
+    "chinese_summary": "文章重点介绍了利用 Matrix 开放标准的“全球首个跨境政府联邦演示”。这次重要的演示涉及五个公共部门组织，包括五个主权部署、三个国家和两个国际机构，全部参与了一次统一的对话。\n\n此次现场演示的成功有力地证明了政府可以利用 Matrix 开放标准实现安全的跨组织沟通与协作。尽管标题指出了欧盟委员会向超过40,000名员工推广 Matrix，但正文具体展示了该标准在不同政府实体之间的先进联邦能力。该文章的作者为 Thibault Martin，日期是 2026年10月21日。"
   },
   {
     "id": "50562113",
     "title": "UK government forced to admit it issued Apple a secret encryption order",
     "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
-    "summary": "Unable to access the article link.",
+    "summary": "The UK government's Home Office has been compelled to admit it issued a secret \"technical capability notice\" (TCN) to Apple under the Investigatory Powers Act (IPA) 2016. This admission came after years of legal pressure and challenges from privacy groups like Liberty and Big Brother Watch, who have long campaigned against the covert nature of such orders.\n\nTCNs are powerful, secret directives that can force technology companies to implement \"backdoors\" or weaken the encryption in their products, potentially undermining the security and privacy of users worldwide. While the specific details of the notice issued to Apple remain classified, the company is well-known for its strong public stance on user privacy and end-to-end encryption, often resisting government demands to compromise its security.\n\nThe government asserts these powers are crucial for national security and combating serious crime. However, privacy advocates warn that these secret orders contribute to a \"secret surveillance state,\" erode fundamental rights, and force companies to create vulnerabilities that could be exploited by malicious actors. They highlight the significant lack of transparency and independent oversight surrounding the issuance and enforcement of TCNs. This revelation intensifies the debate surrounding government access to encrypted communications and the balance between national security and individual privacy.",
     "chinese_title": "UK government forced to admit it issued Apple a secret encryption order",
-    "chinese_summary": "无法访问文章链接。"
+    "chinese_summary": "The UK government's Home Office has been compelled to admit it issued a secret \"technical capability notice\" (TCN) to Apple under the Investigatory Powers Act (IPA) 2016. This admission came after years of legal pressure and challenges from privacy groups like Liberty and Big Brother Watch, who have long campaigned against the covert nature of such orders.\n\nTCNs are powerful, secret directives that can force technology companies to implement \"backdoors\" or weaken the encryption in their products, potentially undermining the security and privacy of users worldwide. While the specific details of the notice issued to Apple remain classified, the company is well-known for its strong public stance on user privacy and end-to-end encryption, often resisting government demands to compromise its security.\n\nThe government asserts these powers are crucial for national security and combating serious crime. However, privacy advocates warn that these secret orders contribute to a \"secret surveillance state,\" erode fundamental rights, and force companies to create vulnerabilities that could be exploited by malicious actors. They highlight the significant lack of transparency and independent oversight surrounding the issuance and enforcement of TCNs. This revelation intensifies the debate surrounding government access to encrypted communications and the balance between national security and individual privacy."
   },
   {
-    "id": "50547777",
-    "title": "AI agents ask better questions than KPMG accountants in audit trial",
-    "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+    "id": "50572503",
+    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+    "url": "https://architectlabs.com/blog/frostbite",
+    "summary": "The article introduces Frostbite, a novel general-purpose CPU architecture autonomously designed and verified by AI, demonstrating a radical departure from human-made designs. Frostbite leverages interaction nets, a computational model where programs are graphs with explicit, local dependencies and single-owner values. This approach inherently exposes parallelism, eliminating the need for traditional multithreading mechanisms, shared mutable state, and complex cache coherence protocols found in conventional CPUs.\n\nOn 25 diverse workloads, Frostbite achieved a 4.59x performance-per-watt multiple compared to a modern superscalar CPU core. The AI systems iterated autonomously across the entire design stack, including compiler, ISA, architecture, microarchitecture, RTL, verification, and GDS. A critical enabler was ASL, a new formal, machine-checkable specification language that served as the \"source of truth,\" enabling tight iteration and preventing errors across the stack.\n\nThe AI discovered novel architectural primitives, including a dynamic runtime for interaction nets and an emergent work-stealing mechanism that distributes parallelism across tiles without a central scheduler. This project highlights AI's capability to push hardware design frontiers, suggesting that AI systems will fundamentally transform the architecture of all future chips.",
+    "chinese_title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+    "chinese_summary": "The article introduces Frostbite, a novel general-purpose CPU architecture autonomously designed and verified by AI, demonstrating a radical departure from human-made designs. Frostbite leverages interaction nets, a computational model where programs are graphs with explicit, local dependencies and single-owner values. This approach inherently exposes parallelism, eliminating the need for traditional multithreading mechanisms, shared mutable state, and complex cache coherence protocols found in conventional CPUs.\n\nOn 25 diverse workloads, Frostbite achieved a 4.59x performance-per-watt multiple compared to a modern superscalar CPU core. The AI systems iterated autonomously across the entire design stack, including compiler, ISA, architecture, microarchitecture, RTL, verification, and GDS. A critical enabler was ASL, a new formal, machine-checkable specification language that served as the \"source of truth,\" enabling tight iteration and preventing errors across the stack.\n\nThe AI discovered novel architectural primitives, including a dynamic runtime for interaction nets and an emergent work-stealing mechanism that distributes parallelism across tiles without a central scheduler. This project highlights AI's capability to push hardware design frontiers, suggesting that AI systems will fundamentally transform the architecture of all future chips."
+  },
+  {
+    "id": "50572355",
+    "title": "If you can't explain something in simple terms, you don't understand it (2017)",
+    "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
+    "summary": "The article \"If you can't explain something in simple terms, you don't understand it\" emphasizes that the ability to simplify complex ideas is a true measure of comprehension. It highlights physicist Richard Feynman, a Nobel laureate celebrated for his teaching prowess and commitment to explaining profound concepts to beginners.\n\nA key anecdote reveals Feynman's intellectual humility: he admitted he couldn't explain why spin-one-half particles obey Fermi-Dirac statistics at a freshman level, concluding, \"That means we don’t really understand it.\" This philosophy aligns with Apple's approach, where engineers are expected to explain complex technologies simply as proof of their complete understanding.\n\nFeynman was renowned for his accessible explanations of topics like fire, rubber bands, and magnets. Crucially, he was also candid about the limits of his, or even collective scientific, understanding. He famously stated, \"nobody understands quantum mechanics,\" despite winning a Nobel Prize for his contributions to the field. His rigorous standard for understanding was encapsulated in his blackboard note: \"What I cannot create, I do not understand.\"",
+    "chinese_title": "如果你无法简单地解释一件事，那说明你没有真正理解它。(2017)",
+    "chinese_summary": "The article \"If you can't explain something in simple terms, you don't understand it\" emphasizes that the ability to simplify complex ideas is a true measure of comprehension. It highlights physicist Richard Feynman, a Nobel laureate celebrated for his teaching prowess and commitment to explaining profound concepts to beginners.\n\nA key anecdote reveals Feynman's intellectual humility: he admitted he couldn't explain why spin-one-half particles obey Fermi-Dirac statistics at a freshman level, concluding, \"That means we don’t really understand it.\" This philosophy aligns with Apple's approach, where engineers are expected to explain complex technologies simply as proof of their complete understanding.\n\nFeynman was renowned for his accessible explanations of topics like fire, rubber bands, and magnets. Crucially, he was also candid about the limits of his, or even collective scientific, understanding. He famously stated, \"nobody understands quantum mechanics,\" despite winning a Nobel Prize for his contributions to the field. His rigorous standard for understanding was encapsulated in his blackboard note: \"What I cannot create, I do not understand.\""
+  },
+  {
+    "id": "50581260",
+    "title": "Inkling 2 Mini",
+    "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
     "summary": "生成摘要时出错",
-    "chinese_title": "AI agents ask better questions than KPMG accountants in audit trial",
+    "chinese_title": "Inkling 2 Mini",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -128,43 +96,35 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50553843",
-    "title": "Anthropic prices initial public offering",
-    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Anthropic prices initial public offering",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50556287",
-    "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
-    "url": "https://verialabs.com/ruby2shell/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50556533",
-    "title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
-    "url": "https://kapteko.com/15-million-webservers/",
-    "summary": "The article explores the ambitious goal of running 15 million web servers on a single VM with just 10GB RAM and 1 CPU core.\n\nInitial attempts using standard Linux processes and syscalls quickly hit roadblocks:\n1.  **Port Exhaustion:** The default TCP port range limits listening servers to ~65k. While using AnyIP/IPv6 subnets could provide millions of unique IP addresses, this only addresses the address space.\n2.  **Excessive RAM:** Running 15 million separate processes or even distinct listening sockets consumes an exorbitant amount of RAM (estimated 20TB). This is because the Linux kernel allocates approximately 3300 bytes per socket for internal structures (like `tcp_sock`, `file`, `dentry`), regardless of whether the connection is active or idle.\n\nTo overcome these kernel-imposed limitations, the author proposes a radical two-part solution:\n1.  **Userland Runtime:** Instead of individual processes, all 15 million web servers would run as \"guests\" within a custom userland runtime. A specialized scheduler would switch between these guests, preserving only minimal state (e.g., program counter, client/server file descriptors – roughly 16 bytes per guest), reducing memory overhead for guests to about 220MB.\n2.  **Bypass Kernel Networking:** The substantial memory footprint of kernel sockets necessitates bypassing the kernel's network stack entirely. The solution involves implementing a custom TCP/IP stack in userland, specifically mentioning `smoltcp` (a bare-metal, heap-less Rust stack). For I/O, `smoltcp` can use TUN/TAP interfaces, but for ultimate performance and kernel bypass, **DPDK** is highlighted. DPDK allows direct, memory-mapped communication with the network card, eliminating syscalls, data copies, and interrupt overhead, albeit by dedicating a CPU core to a busy-polling loop. This low-level approach is critical to fit 15 million servers within the strict memory budget.",
-    "chinese_title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
-    "chinese_summary": "The article explores the ambitious goal of running 15 million web servers on a single VM with just 10GB RAM and 1 CPU core.\n\nInitial attempts using standard Linux processes and syscalls quickly hit roadblocks:\n1.  **Port Exhaustion:** The default TCP port range limits listening servers to ~65k. While using AnyIP/IPv6 subnets could provide millions of unique IP addresses, this only addresses the address space.\n2.  **Excessive RAM:** Running 15 million separate processes or even distinct listening sockets consumes an exorbitant amount of RAM (estimated 20TB). This is because the Linux kernel allocates approximately 3300 bytes per socket for internal structures (like `tcp_sock`, `file`, `dentry`), regardless of whether the connection is active or idle.\n\nTo overcome these kernel-imposed limitations, the author proposes a radical two-part solution:\n1.  **Userland Runtime:** Instead of individual processes, all 15 million web servers would run as \"guests\" within a custom userland runtime. A specialized scheduler would switch between these guests, preserving only minimal state (e.g., program counter, client/server file descriptors – roughly 16 bytes per guest), reducing memory overhead for guests to about 220MB.\n2.  **Bypass Kernel Networking:** The substantial memory footprint of kernel sockets necessitates bypassing the kernel's network stack entirely. The solution involves implementing a custom TCP/IP stack in userland, specifically mentioning `smoltcp` (a bare-metal, heap-less Rust stack). For I/O, `smoltcp` can use TUN/TAP interfaces, but for ultimate performance and kernel bypass, **DPDK** is highlighted. DPDK allows direct, memory-mapped communication with the network card, eliminating syscalls, data copies, and interrupt overhead, albeit by dedicating a CPU core to a busy-polling loop. This low-level approach is critical to fit 15 million servers within the strict memory budget."
-  },
-  {
-    "id": "50547344",
-    "title": "Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine",
-    "url": "https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
     "id": "50563148",
     "title": "Claude solves two open problems in the physics of black holes",
     "url": "https://www.anthropic.com/research/claude-black-hole-physics",
     "summary": "生成摘要时出错",
-    "chinese_title": "克劳德解决了黑洞物理学中的两个开放性问题。",
+    "chinese_title": "Claude solves two open problems in the physics of black holes",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50572116",
+    "title": "Carnival Cruises emits ten times more sulphur oxide than all of Europe's cars (2019)",
+    "url": "https://ecohustler.com/article/one-corporation-to-pollute-them-all/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Carnival Cruises emits ten times more sulphur oxide than all of Europe's cars (2019)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50572348",
+    "title": "Signal Is Serious About Protecting Your Privacy",
+    "url": "https://signal.org/blog/protecting-your-privacy/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Signal Is Serious About Protecting Your Privacy",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50570479",
+    "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+    "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -184,187 +144,59 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "50571189",
+    "title": "\"I can tell you wrote this yourself\"",
+    "url": "https://em-online.bearblog.dev/i-can-tell-you-wrote-this-yourself/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "\"I can tell you wrote this yourself\"",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50556533",
+    "title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
+    "url": "https://kapteko.com/15-million-webservers/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50556287",
+    "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
+    "url": "https://verialabs.com/ruby2shell/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50569890",
+    "title": "PostgreSQL 19",
+    "url": "https://www.postgresql.org/docs/release/19.0/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "PostgreSQL 19",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50568130",
+    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+    "url": "https://git-aarvin.github.io/mei/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50569226",
+    "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+    "url": "https://github.com/openssl/openssl/pull/33652",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "50554038",
     "title": "Multiple vulnerabilities in Regexp and String case conversion",
     "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
     "summary": "生成摘要时出错",
     "chinese_title": "Multiple vulnerabilities in Regexp and String case conversion",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50544261",
-    "title": "Codeberg.org Not Reachable",
-    "url": "https://social.anoxinon.de/@codebergstatus/117636437840688845",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Codeberg.org Not Reachable",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50543989",
-    "title": "Energy-Based Reasoners: 385x more efficient inference",
-    "url": "https://energy-based-reasoners.github.io/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Energy-Based Reasoners: 385x more efficient inference",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50546914",
-    "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
-    "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50557716",
-    "title": "SSD prices may begin to decline in the latter half of 2027",
-    "url": "https://www.drivevault.io/blog/when-will-hard-drive-prices-come-down.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "SSD prices may begin to decline in the latter half of 2027",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50553225",
-    "title": "LLM assisted reverse engineering",
-    "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
-    "summary": "生成摘要时出错",
-    "chinese_title": "LLM assisted reverse engineering",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50550415",
-    "title": "Genie 4 is now available",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Genie 4 is now available",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50541790",
-    "title": "Why is Gemini 4 Carbon taking so long?",
-    "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why is Gemini 4 Carbon taking so long?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50557870",
-    "title": "What's New in PHP 8.6",
-    "url": "https://www.php.net/releases/8.6/en.php",
-    "summary": "生成摘要时出错",
-    "chinese_title": "What's New in PHP 8.6",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50557537",
-    "title": "Distributed, high-performance blob storage on SQLite",
-    "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Distributed, high-performance blob storage on SQLite",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50550062",
-    "title": "Scottish HTTP Codes",
-    "url": "https://underwood.network/http/scots.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Scottish HTTP Codes",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50547048",
-    "title": "Nintendo takes Picofly firmware down from GitHub [video]",
-    "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Nintendo takes Picofly firmware down from GitHub [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50554374",
-    "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
-    "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50557661",
-    "title": "Do not buy RAM, compress",
-    "url": "https://curiousbits.nl/blog/do-not-buy-ram-compress/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Do not buy RAM, compress",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50551046",
-    "title": "DaisyRose-27B",
-    "url": "https://www.radixark.com/blog/daisyrose-27b",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DaisyRose-27B",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50547980",
-    "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
-    "url": "https://exitpath-ruddy.vercel.app/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50559719",
-    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
-    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Making 8-page foldable zines from a single A4 sheet in the browser",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50548161",
-    "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
-    "url": "https://rshekhar.com/voyager/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50549493",
-    "title": "Advancing chip design with OpenAI models",
-    "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Advancing chip design with OpenAI models",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50546465",
-    "title": "Energy drinks linked to 11 times more reports of cardiac arrest",
-    "url": "https://www.sciencedaily.com/releases/2026/11/261110042543.htm",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Energy drinks linked to 11 times more reports of cardiac arrest",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50561508",
-    "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
-    "url": "https://thedataexchange.media/pete-warden-moonshine/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50547583",
-    "title": "F-22 Next-Generation micro–Data Transfer Cartridge (mDTC)",
-    "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
-    "summary": "生成摘要时出错",
-    "chinese_title": "F-22 Next-Generation micro–Data Transfer Cartridge (mDTC)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50548004",
-    "title": "KVM: x86: Unconditionally reset MMU context when emulating INIT (CVE-2026-99312)",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-99312",
-    "summary": "生成摘要时出错",
-    "chinese_title": "KVM: x86: Unconditionally reset MMU context when emulating INIT (CVE-2026-99312)",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -376,6 +208,126 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "50575644",
+    "title": "Why there are still no non-WebKit browsers on iOS",
+    "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Why there are still no non-WebKit browsers on iOS",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50577265",
+    "title": "Language Models Can Rewrite Their Own Weights",
+    "url": "https://arxiv.org/abs/2611.21885",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Language Models Can Rewrite Their Own Weights",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50557661",
+    "title": "Do not buy RAM, compress",
+    "url": "https://curiousbits.nl/blog/do-not-buy-ram-compress/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Do not buy RAM, compress",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50578358",
+    "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+    "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50557716",
+    "title": "SSD prices may begin to decline in the latter half of 2027",
+    "url": "https://www.drivevault.io/blog/when-will-hard-drive-prices-come-down.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "SSD prices may begin to decline in the latter half of 2027",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50573886",
+    "title": "If you stop writing code, you also get worse at reviewing it",
+    "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "If you stop writing code, you also get worse at reviewing it",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50559719",
+    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
+    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Making 8-page foldable zines from a single A4 sheet in the browser",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50557870",
+    "title": "What's New in PHP 8.6",
+    "url": "https://www.php.net/releases/8.6/en.php",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What's New in PHP 8.6",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50569998",
+    "title": "FFmpeg 9.1 'Gauss'",
+    "url": "https://ffmpeg.org/download.html#release_9.1",
+    "summary": "生成摘要时出错",
+    "chinese_title": "FFmpeg 9.1 'Gauss'",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50557537",
+    "title": "Distributed, high-performance blob storage on SQLite",
+    "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Distributed, high-performance blob storage on SQLite",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50579331",
+    "title": "We promoted developers into architects without informing them",
+    "url": "https://manidoraisamy.com/developer-to-architect.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "We promoted developers into architects without informing them",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50561508",
+    "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+    "url": "https://thedataexchange.media/pete-warden-moonshine/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50576232",
+    "title": "Finite-time blow-up for the Navier–Stokes equations",
+    "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Finite-time blow-up for the Navier–Stokes equations",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50554374",
+    "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+    "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50577901",
+    "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+    "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "50561515",
     "title": "Show HN: Cornhole News – A Hacker News inspired site for news across the Midwest",
     "url": "https://cornholenews.news",
@@ -384,331 +336,27 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50554935",
-    "title": "Unreal Tournament 2004 in the Browser",
-    "url": "https://ut2004.dev/",
+    "id": "50581438",
+    "title": "Nvidia accounting under SEC investigation, sources say",
+    "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
     "summary": "生成摘要时出错",
-    "chinese_title": "Unreal Tournament 2004 in the Browser",
+    "chinese_title": "Nvidia accounting under SEC investigation, sources say",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50546967",
-    "title": "The x86 CPU: From 4004 to 486",
-    "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+    "id": "50581084",
+    "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+    "url": "https://scottaaronson.blog/?p=10344",
     "summary": "生成摘要时出错",
-    "chinese_title": "The x86 CPU: From 4004 to 486",
+    "chinese_title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50541619",
-    "title": "Claude was trained on protein sequences at scale",
-    "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+    "id": "50570628",
+    "title": "Jujutsu Primer",
+    "url": "https://ethanlowman.com/posts/jj-primer/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Claude was trained on protein sequences at scale",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50554010",
-    "title": "Software companies are trying to kill home computing?",
-    "url": "https://lateblt.livejournal.com/526188.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Software companies are trying to kill home computing?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50560955",
-    "title": "Cooling buildings is overtaking heating them as an energy need, IEA says",
-    "url": "https://maccus.fr/en/cooling-overtaking-heating/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cooling buildings is overtaking heating them as an energy need, IEA says",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50559179",
-    "title": "Unblockable communication with gravity",
-    "url": "https://www.science.org/doi/10.1126/sciadv.aee0802",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Unblockable communication with gravity",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50548485",
-    "title": "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
-    "url": "https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO",
-    "summary": "生成摘要时出错",
-    "chinese_title": "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50544821",
-    "title": "Show HN: Type Fighter 2",
-    "url": "https://typefighter2.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Type Fighter 2",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50546922",
-    "title": "A Primer on Fourier Series (2025)",
-    "url": "https://arxiv.org/abs/2510.18203",
-    "summary": "生成摘要时出错",
-    "chinese_title": "A Primer on Fourier Series (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50548991",
-    "title": "CrossPoint Reader",
-    "url": "https://crosspointreader.com",
-    "summary": "生成摘要时出错",
-    "chinese_title": "CrossPoint Reader",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50562636",
-    "title": "Chrome AI features wasting much bandwidth",
-    "url": "https://perishablepress.com/chrome-ai-wasting-much-bandwidth/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Chrome AI features wasting much bandwidth",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50558559",
-    "title": "Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2",
-    "url": "https://contralabs.com/frontierdesign",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50557885",
-    "title": "DeepMind Employees Are Unionising",
-    "url": "https://www.gdmunion.co.uk",
-    "summary": "生成摘要时出错",
-    "chinese_title": "DeepMind Employees Are Unionising",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50548808",
-    "title": "Teaching robots to carve marble sculptures",
-    "url": "https://eleanorwiesler.com/blog/robotic-stone-carving/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Teaching robots to carve marble sculptures",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50550096",
-    "title": "The Magic of Partial Evaluation",
-    "url": "https://jimmyhmiller.com/magic-of-partial-evaluation",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The Magic of Partial Evaluation",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50554641",
-    "title": "Black high school students sue after AI mistakes Doritos bag for gun",
-    "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Black high school students sue after AI mistakes Doritos bag for gun",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50560795",
-    "title": "Germany and Austria Call for European Control of TikTok",
-    "url": "https://www.techcentral.ie/germany-and-austria-call-for-european-control-of-tiktok/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Germany and Austria Call for European Control of TikTok",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50540472",
-    "title": "Cerebras Disaggregated Inference",
-    "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Cerebras Disaggregated Inference",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50562500",
-    "title": "AI isn't replacing your job. It's turning it into low-paid gig work",
-    "url": "https://restofworld.org/2026/ai-jobs-skills-gig-work/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI isn't replacing your job. It's turning it into low-paid gig work",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50555093",
-    "title": "AI will not make you rich (2025)",
-    "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "AI will not make you rich (2025)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50543343",
-    "title": "Talos Linux",
-    "url": "https://www.siderolabs.com/talos-linux",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Talos Linux",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50559749",
-    "title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
-    "url": "https://foolscap.works/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50559140",
-    "title": "The AI Superintelligence Debate Has Serious Flaws",
-    "url": "https://spectrum.ieee.org/ai-superintelligence-debate",
-    "summary": "生成摘要时出错",
-    "chinese_title": "The AI Superintelligence Debate Has Serious Flaws",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50540836",
-    "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
-    "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50547423",
-    "title": "NGINX2Root by Xint – From Nginx visitor to root of the server host",
-    "url": "https://nginx2root.com/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "NGINX2Root by Xint – From Nginx visitor to root of the server host",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50567209",
-    "title": "Synology Security Advisory",
-    "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Synology Security Advisory",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50560461",
-    "title": "OpenAI still has a WebRTC Problem",
-    "url": "https://moq.dev/blog/webrtc-is-still-the-problem/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "OpenAI still has a WebRTC Problem",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50562101",
-    "title": "Google Chrome dev team declares bug report bankruptcy (2012)",
-    "url": "https://blog.plover.com/tech/bug-reports.html",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google Chrome dev team declares bug report bankruptcy (2012)",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50560357",
-    "title": "PostgreSQL 19 Released",
-    "url": "https://www.postgresql.org/about/news/postgresql-19-released-3449/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "PostgreSQL 19 Released",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50542264",
-    "title": "Why Fibonacci?",
-    "url": "https://www.evilgeniuslabs.org/why-fibonacci",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Why Fibonacci?",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50562320",
-    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
-    "url": "https://github.com/onlook-dev/onlook/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50554009",
-    "title": "Palo Alto Networks to Acquire Applied Compute for $4.5B",
-    "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Palo Alto Networks to Acquire Applied Compute for $4.5B",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50546221",
-    "title": "Mass launched to orbit each year by rocket builder",
-    "url": "https://www.kadoa.com/companies/insights/spacex-europe-payload",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Mass launched to orbit each year by rocket builder",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50561170",
-    "title": "How to Make the Ink Used to Write Hamlet and the Declaration of Independence",
-    "url": "https://lithub.com/how-to-make-the-ink-used-to-write-hamlet-the-declaration-of-independence-and-beethovens-fifth/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "How to Make the Ink Used to Write Hamlet and the Declaration of Independence",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50562160",
-    "title": "ICE Is Paying AT&T to Dig Through a Mountain of Call Records",
-    "url": "https://www.404media.co/ice-is-paying-at-t-to-dig-through-a-mountain-of-call-records-hemisphere-data-analytical-services/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "ICE Is Paying AT&T to Dig Through a Mountain of Call Records",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50564366",
-    "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-    "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50545232",
-    "title": "GTA 6 Review: It Is a Masterpiece",
-    "url": "https://www.bloomberg.com/news/features/2026-11-18/gta-6-review-rockstar-games-latest-is-a-masterpiece",
-    "summary": "生成摘要时出错",
-    "chinese_title": "GTA 6 Review: It Is a Masterpiece",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50546495",
-    "title": "Exponential Behavior in Magic: The Gathering",
-    "url": "https://levineuwirth.org/essays/exponential-magic/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Exponential Behavior in Magic: The Gathering",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50546312",
-    "title": "Can Peer Review Survive AI-Generated Text? [pdf]",
-    "url": "https://www.sas.upenn.edu/~jesusfv/Peer_Review.pdf",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Can Peer Review Survive AI-Generated Text? [pdf]",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50544168",
-    "title": "C's designated initializers give us named arguments",
-    "url": "https://quuxplusone.github.io/blog/2026/11/16/named-arguments-in-c/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "C's designated initializers give us named arguments",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50551398",
-    "title": "Search Browser – Minimalist WebKit browser with Chrome extension support",
-    "url": "https://searchbrowser.app/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Search Browser – Minimalist WebKit browser with Chrome extension support",
+    "chinese_title": "Jujutsu Primer",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -720,6 +368,382 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
+    "id": "50574383",
+    "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
+    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50572822",
+    "title": "The Making of Oxygene",
+    "url": "https://jeanmicheljarre.com/aaa/the-making-of-oxygene",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Making of Oxygene",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50554935",
+    "title": "Unreal Tournament 2004 in the Browser",
+    "url": "https://ut2004.dev/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Unreal Tournament 2004 in the Browser",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50567209",
+    "title": "Synology Security Advisory",
+    "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Synology Security Advisory",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50554010",
+    "title": "Software companies are trying to kill home computing?",
+    "url": "https://lateblt.livejournal.com/526188.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Software companies are trying to kill home computing?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50578794",
+    "title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
+    "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50559179",
+    "title": "Unblockable communication with gravity",
+    "url": "https://www.science.org/doi/10.1126/sciadv.aee0802",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Unblockable communication with gravity",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50569516",
+    "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
+    "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50560955",
+    "title": "Cooling buildings is overtaking heating them as an energy need, IEA says",
+    "url": "https://maccus.fr/en/cooling-overtaking-heating/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Cooling buildings is overtaking heating them as an energy need, IEA says",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50569519",
+    "title": "What Comes After AGI?",
+    "url": "https://institute.deepmind.com/essays/what-comes-after-agi/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What Comes After AGI?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50568861",
+    "title": "Vint Cerf on why TCP/IP was never patented",
+    "url": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Vint Cerf on why TCP/IP was never patented",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50569985",
+    "title": "GIMP now has UI tests",
+    "url": "https://www.gimp.org/news/2026/11/16/gimp-ui-tests/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "GIMP now has UI tests",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50572448",
+    "title": "What people are building, discovered through new domains",
+    "url": "https://startups.novumsignals.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "What people are building, discovered through new domains",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50558559",
+    "title": "Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2",
+    "url": "https://contralabs.com/frontierdesign",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50562500",
+    "title": "AI isn't replacing your job. It's turning it into low-paid gig work",
+    "url": "https://restofworld.org/2026/ai-jobs-skills-gig-work/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI isn't replacing your job. It's turning it into low-paid gig work",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50572430",
+    "title": "UK fridges secured from hackers",
+    "url": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "UK fridges secured from hackers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50560357",
+    "title": "PostgreSQL 19 Released",
+    "url": "https://www.postgresql.org/about/news/postgresql-19-released-3449/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "PostgreSQL 19 Released",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50560595",
+    "title": "Floppy3.5: A portable 3.5-inch floppy WiFi NAS",
+    "url": "https://github.com/bigcrimping/floppy3.5",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Floppy3.5: A portable 3.5-inch floppy WiFi NAS",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50562636",
+    "title": "Chrome AI features wasting much bandwidth",
+    "url": "https://perishablepress.com/chrome-ai-wasting-much-bandwidth/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Chrome AI features wasting much bandwidth",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50566261",
+    "title": "Rebuilding my local voice assistant pipeline",
+    "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Rebuilding my local voice assistant pipeline",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50562320",
+    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+    "url": "https://github.com/onlook-dev/onlook/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50561199",
+    "title": "Show HN: Fast deterministic natural language search for OpenStreetMap data",
+    "url": "https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Fast deterministic natural language search for OpenStreetMap data",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50557885",
+    "title": "DeepMind Employees Are Unionising",
+    "url": "https://www.gdmunion.co.uk",
+    "summary": "生成摘要时出错",
+    "chinese_title": "DeepMind Employees Are Unionising",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50568548",
+    "title": "ChatGPT for SNES",
+    "url": "https://www.bxfoundry.com/chatgpt_snes/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ChatGPT for SNES",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50554641",
+    "title": "Black high school students sue after AI mistakes Doritos bag for gun",
+    "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Black high school students sue after AI mistakes Doritos bag for gun",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50559749",
+    "title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
+    "url": "https://foolscap.works/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50560795",
+    "title": "Germany and Austria Call for European Control of TikTok",
+    "url": "https://www.techcentral.ie/germany-and-austria-call-for-european-control-of-tiktok/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Germany and Austria Call for European Control of TikTok",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50564366",
+    "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+    "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50555093",
+    "title": "AI will not make you rich (2025)",
+    "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI will not make you rich (2025)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50579297",
+    "title": "Vibecoding an inference chip",
+    "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Vibecoding an inference chip",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50559140",
+    "title": "The AI Superintelligence Debate Has Serious Flaws",
+    "url": "https://spectrum.ieee.org/ai-superintelligence-debate",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The AI Superintelligence Debate Has Serious Flaws",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50583254",
+    "title": "Nasdaq erases all 2026 gains",
+    "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Nasdaq erases all 2026 gains",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50562101",
+    "title": "Google Chrome dev team declares bug report bankruptcy (2012)",
+    "url": "https://blog.plover.com/tech/bug-reports.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Google Chrome dev team declares bug report bankruptcy (2012)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50560461",
+    "title": "OpenAI still has a WebRTC Problem",
+    "url": "https://moq.dev/blog/webrtc-is-still-the-problem/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "OpenAI still has a WebRTC Problem",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50580536",
+    "title": "Winedroid – run Android apps without Android (WASM demo)",
+    "url": "https://winedroid.soham.sh/demo/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Winedroid – run Android apps without Android (WASM demo)",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50573087",
+    "title": "Why do tech leaders sound so illogical and off-putting?",
+    "url": "https://www.theatlantic.com/technology/2026/11/silicon-valley-model-collapse/689505/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Why do tech leaders sound so illogical and off-putting?",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50561170",
+    "title": "How to Make the Ink Used to Write Hamlet and the Declaration of Independence",
+    "url": "https://lithub.com/how-to-make-the-ink-used-to-write-hamlet-the-declaration-of-independence-and-beethovens-fifth/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "How to Make the Ink Used to Write Hamlet and the Declaration of Independence",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50581110",
+    "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+    "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+    "summary": "生成摘要时出错",
+    "chinese_title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50576012",
+    "title": "Slopstrap – Make your site look hastily vibecoded",
+    "url": "https://slopstrap.mikelacher.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Slopstrap – Make your site look hastily vibecoded",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50567374",
+    "title": "RegExr: Temporarily Offline",
+    "url": "https://regexr.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "RegExr: Temporarily Offline",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50554009",
+    "title": "Palo Alto Networks to Acquire Applied Compute for $4.5B",
+    "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Palo Alto Networks to Acquire Applied Compute for $4.5B",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50583274",
+    "title": "NINLIVE: The Nine Inch Nails live archive",
+    "url": "https://ninlive.com/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "NINLIVE: The Nine Inch Nails live archive",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50562160",
+    "title": "ICE Is Paying AT&T to Dig Through a Mountain of Call Records",
+    "url": "https://www.404media.co/ice-is-paying-at-t-to-dig-through-a-mountain-of-call-records-hemisphere-data-analytical-services/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "ICE Is Paying AT&T to Dig Through a Mountain of Call Records",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50573288",
+    "title": "The Market Is Down",
+    "url": "https://anihil.com/the-market-is-down",
+    "summary": "生成摘要时出错",
+    "chinese_title": "The Market Is Down",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50581177",
+    "title": "And yet, it moves",
+    "url": "https://signoregalilei.com/2026/11/20/and-yet-it-moves/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "And yet, it moves",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50567735",
+    "title": "Court: 4th Amendment Disallows Use Of AI-Generated 'Probable Cause'",
+    "url": "https://www.techdirt.com/2026/11/19/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Court: 4th Amendment Disallows Use Of AI-Generated 'Probable Cause'",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50563328",
+    "title": "AI came for the coders. Understanding why tells us who's next",
+    "url": "https://www.robertpeake.com/archives/104254-ai-came-for-the-coders-understanding-why-tells-us-whos-next.html",
+    "summary": "生成摘要时出错",
+    "chinese_title": "AI came for the coders. Understanding why tells us who's next",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
     "id": "50554076",
     "title": "Pushing WireGuard on macOS to 5 Gbit/s",
     "url": "https://www.firezone.dev/blog/apple-client-performance",
@@ -728,11 +752,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50542441",
-    "title": "Mosquitoes are Ladakh's latest tourists",
-    "url": "https://ruralindiaonline.org/article/mosquitoes-are-ladakh-s-latest-tourists",
+    "id": "50568643",
+    "title": "Postgres 19 is out, and it's available on Neon and Databricks Lakebase",
+    "url": "https://www.databricks.com/blog/postgresql-19-available-lakebase",
     "summary": "生成摘要时出错",
-    "chinese_title": "Mosquitoes are Ladakh's latest tourists",
+    "chinese_title": "Postgres 19 is out, and it's available on Neon and Databricks Lakebase",
+    "chinese_summary": "生成摘要时出错"
+  },
+  {
+    "id": "50566779",
+    "title": "Bending Spoons to acquire Mailchimp",
+    "url": "https://investors.bendingspoons.com/newsroom/bending-spoons-to-acquire-mailchimp",
+    "summary": "生成摘要时出错",
+    "chinese_title": "Bending Spoons to acquire Mailchimp",
     "chinese_summary": "生成摘要时出错"
   },
   {
@@ -752,51 +784,19 @@
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50548038",
-    "title": "SuperEMeans: Making e-means 3× faster",
-    "url": "https://www.lkuffo.com/superemeans/",
+    "id": "50562242",
+    "title": "US Intelligence Hawks Plot to Sneak Through Warrantless Spying",
+    "url": "https://prospect.org/2026/11/18/intelligence-hawks-plot-to-sneak-through-warrantless-spying/",
     "summary": "生成摘要时出错",
-    "chinese_title": "SuperEMeans: Making e-means 3× faster",
+    "chinese_title": "US Intelligence Hawks Plot to Sneak Through Warrantless Spying",
     "chinese_summary": "生成摘要时出错"
   },
   {
-    "id": "50544541",
-    "title": "Voyager 1 hits one light day from Earth",
-    "url": "https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/",
+    "id": "50562319",
+    "title": "Jensen Huang's daughter Madison insulted employees and drove top talent away",
+    "url": "https://nypost.com/2026/11/17/business/jensen-huangs-daughter-madison-insulted-workers-reports/",
     "summary": "生成摘要时出错",
-    "chinese_title": "Voyager 1 hits one light day from Earth",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50551601",
-    "title": "Google Gemini's \"Tasks\" Personal Assistant Is Now Free",
-    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Google Gemini's \"Tasks\" Personal Assistant Is Now Free",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50550111",
-    "title": "Upcoming Critical PHP Security Release",
-    "url": "https://www.php.net/archive/2026.php",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Upcoming Critical PHP Security Release",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50547236",
-    "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
-    "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
-    "chinese_summary": "生成摘要时出错"
-  },
-  {
-    "id": "50568130",
-    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
-    "url": "https://git-aarvin.github.io/mei/",
-    "summary": "生成摘要时出错",
-    "chinese_title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+    "chinese_title": "Jensen Huang's daughter Madison insulted employees and drove top talent away",
     "chinese_summary": "生成摘要时出错"
   }
 ]
